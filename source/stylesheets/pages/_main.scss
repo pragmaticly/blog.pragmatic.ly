@@ -1,0 +1,21 @@
+.main .container {
+  h1, h2, h3, h4 {
+    font-family: "Museo Slab";
+  }
+
+  article {
+    padding-bottom: 80px;
+
+    .meta {
+      margin-bottom: 20px;
+    }
+  }
+
+  #disqus_thread {
+    margin-top: 40px;
+  }
+}
+
+@media print, screen and (max-width: 720px) {
+
+}

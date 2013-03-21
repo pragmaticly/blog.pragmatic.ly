@@ -1,0 +1,46 @@
+<h2 class="title">
+  <%= link_to article.title, article %>
+</h2>
+
+ <div class="meta">
+   Written by
+   <span class="author">
+     <%= author(article.data['author']).name %>
+   </span>
+   at
+   <span class="date">
+     <%= article.date.strftime("%b %d") %>
+   </span>
+</div>
+
+<div class="content">
+  <%= article.body %>
+</div>
+
+<div class="share">
+  <a href="https://twitter.com/share?url=<%= full_url(article) %>&text=<%= article.title %>" class="twitter-share-button" data-lang="en"></a>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+  <div class="fb-like" data-href="<%= full_url(article) %>" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true"></div>
+
+  <!-- Place this tag where you want the share button to render. -->
+  <div class="g-plus" data-action="share" data-annotation="bubble" data-href="<%= full_url(article) %>"></div>
+
+  <!-- Place this tag after the last share tag. -->
+  <script type="text/javascript">
+    (function() {
+      var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+      po.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+    })();
+  </script>
+
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=372859719458672";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+</div>

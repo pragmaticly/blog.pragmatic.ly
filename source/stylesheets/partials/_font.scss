@@ -1,0 +1,25 @@
+/* Font Mixin */
+
+//
+// Generate file of web fonts using these sites
+// http://www.fontsquirrel.com/fontface/generator
+// http://fontface.codeandmore.com/
+//
+
+@import "compass/css3/font-face";
+
+@mixin font-set($font_name,$font_basename, $weight: normal, $style: normal){
+
+  @include font-face(
+      "#{$font_name}",
+      font-files(
+          "#{$font_basename}.woff", woff,
+          "#{$font_basename}.ttf",  truetype,
+          "#{$font_basename}.svg",  svg),
+          "#{$font_basename}.eot",  $weight, $style);
+}
+
+
+/* @include font-set('Museo','museo500-regular-webfont', 500); */
+/* @include font-set('Museo Sans','museosans_500-webfont', 500); */
+@include font-set('Museo Slab','museo_slab_500-webfont', 500);
