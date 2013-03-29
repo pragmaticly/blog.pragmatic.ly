@@ -17,7 +17,7 @@ Feel free to try this feature by signing up at [pragmatic.ly](https://pragmatic.
 
 So far, we have already supported three VCS services: [GitHub](https://github.com), [BitBucket](https://bitbucket.org) and [Gitlab](http://gitlab.org). And more are coming. Let us know if the VCS you're using now is not in the list and you want to see it soon!
 
-##### How to setup #####
+## How to setup ##
 
 1. First, you should make sure the user name or the email is the same with what you use in your Pragmatic.ly account. If not, you can always set the setting in the project. For example:
 

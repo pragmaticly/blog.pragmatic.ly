@@ -1,20 +1,25 @@
-<h2 class="title">
-  <%= link_to article.title, article %>
-</h2>
+<header>
+  <h2 class="title">
+    <%= link_to article.title, article %>
+  </h2>
+</header>
 
- <div class="meta">
-   Written by
-   <span class="author">
-     <%= author(article.data['author']).name %>
-   </span>
-   at
-   <span class="date">
-     <%= article.date.strftime("%b %d") %>
-   </span>
-</div>
+<aside>
+  <ul class="meta">
+    <li class="date">
+      <%= article.date.strftime("%b %d, %Y") %>
+    </li>
+    <li class="author">
+     by <a href="#"><%= author(article.data['author']).name %></a>
+    </li>
+    <li class="tags"><a href="#">UI</a>, <a href="#">New Feature</a></li>
+  </ul>
+</aside>
 
 <div class="content">
   <%= article.body %>
+  
+  <p><a href="#">Read more →</a></p>
 </div>
 
 <div class="share">

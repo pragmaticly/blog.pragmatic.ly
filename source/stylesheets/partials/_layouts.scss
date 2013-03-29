@@ -1,37 +1,25 @@
-html {
-  -webkit-font-smoothing: antialiased;
-  -moz-font-smoothing: antialiased;
-}
-
 body {
-  -webkit-text-size-adjust: none;
   min-width: 480px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-body * {
-  -webkit-backface-visibility: hidden;
 }
 
 a {
   color: $linkColor;
-  @include transition(all 0.1s linear);
-  &:hover { color: #a7dbb7; }
+  &:hover { color: #333; }
 }
 
 .container {
   margin: 0 auto;
-  width: 700px;
+  width: 920px;
 }
 
 #header {
-  background: transparent url(https://pragmatic.ly/assets/head-bg.png) repeat-x;
+  background: transparent url(/images/head-bg.png) repeat-x;
   height: 55px;
   text-align: left;
 
   .logo {
-    background: transparent url(https://pragmatic.ly/assets/sprite.png) no-repeat -60px -260px;
-    width: 170px;
+    background: transparent url(/images/blog-sprite.png) no-repeat 0 -160px;
+    width: 220px;
     height: 40px;
     text-indent: -999em;
     display: inline-block;
@@ -57,108 +45,110 @@ a {
 }
 
 .main {
-  overflow: auto;
   margin-top: 30px;
-  padding-bottom: 40px;
 }
 
 #footer {
   clear: both;
-  position: relative;
-  z-index: 10;
-  height: 40px;
-  margin-top: -40px;
+  margin-top: 50px;
+  background-color: #036;
   background-color: rgba(0, 51, 102, 0.9);
   border-top: 1px solid #fff;
-  padding: 10px 0;
+  padding: 10px 0 15px;
   width: 100%;
   font-size: 13px;
   @include box-shadow(inset 0px 1px 5px rgba(0, 0, 0, 0.4));
-
-  .social-buttons {
-    float: right;
-
-    li {
-      a {
-        color: #3e8ab1;
-        padding-left: 25px;
-
-        &.social-twitter {
-          background: transparent url(https://pragmatic.ly/assets/base-sprite.png) no-repeat -60px 0;
-        }
-        &.social-facebook {
-          background: transparent url(https://pragmatic.ly/assets/base-sprite.png) no-repeat -60px -40px;
-        }
-        &.social-google {
-          background: transparent url(https://pragmatic.ly/assets/base-sprite.png) no-repeat -60px -80px;
-        }
-      }
+  
+  h5 {
+    color: #577A9C;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin: 8px 0;
+  }
+  a {
+    color: #3e8ab1;
+    &:hover {
+      color: #c8ebff;
+      text-decoration: none;
     }
   }
-
+  
+  #blog-info {
+    color: #f2f2f2;
+    @include clearfix;
+    .block {
+      padding-left: 10%;
+      width: 20%;
+      float: left;
+      &.about {
+        padding-left: 0;
+        width: 40%;
+      }
+    }
+    ul { 
+      list-style: none; 
+      margin: 0;
+      li { margin: 2px 0;}
+      a { display: inline-block; line-height: 20px; }
+    }
+  }
+  
   .footer-nav {
+    float: left;
     margin: 0;
-
     li {
       list-style: none;
       display: block;
       float: left;
       margin-right: 15px;
       color: #eaeaea;
-
+    }
+  }
+  
+  .contribs {
+    img { border-radius: 3px; margin-right: 5px;}
+  }
+  .social-buttons {
+    list-style: none;
+    li {
       a {
-        color: #c8ebff;
+        padding-left: 30px;
+        background: transparent url(/images/blog-sprite.png) no-repeat 0 0;
+        &.social-twitter {           
+          background-position: 0 -40px;
+        }                         
+        &.social-facebook {           
+          background-position: 0 -80px;
+        }                             
+        &.social-google {             
+          background-position: 0 -120px;
+        }
+        &:hover {
+          &.social-rss { background-position: 0 -20px; }
+          &.social-twitter { background-position: 0 -60px; }
+          &.social-facebook { background-position: 0 -100px; }
+          &.social-google { background-position: 0 -140px; }
+        }
       }
     }
   }
+  .copy { color: #577A9C; }
 }
 
 @media print, screen and (max-width: 1280px) {
-  body {
-    .main {
-      margin-left: 500px;
-    }
-  }
+
 }
 
 @media print, screen and (max-width: 1024px) {
-  body {
-    .masthead {
-      position: relative;
-      float: left;
-      left: 50%;
-      margin-left: -300px;
-      top: -50px;
-    }
-    .main {
-      float: left;
-      margin: 0 0 40px;
-      max-width: inherit;
-      .post { margin: 0 5%; }
-    }
-    .footer {
-      position: static;
-      .copyright { padding-bottom: 20px; }
-    }
-    .global-nav {
-      position: fixed;
-      top: 0;
-      left: 0;
-      > ul > li > a {
-        background-color: rgba(255,255,255,.4);
-        &:hover { background-color: rgba(255,255,255,.6); }
-      }
-      .social-connect {
-        margin: 0 3px 3px 0;
-        float: none;
-        > li.open > a, > li > a:hover { background-color: rgba(255,255,255,.6) !important; }
-      }
-      .dropup .dropdown-menu {
-        bottom: auto;
-        top: 100%;
-        margin: 0;
-        background-color: rgba(255,255,255,.8);
-      }
-    }
-  }
+  
 }
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+	#header .logo,
+	#footer .social-buttons li a {
+		background: url(/images/blog-sprite@2x.png) no-repeat 0 0;
+		-webkit-background-size: 250px 200px;
+		-moz-background-size: 250px 200px;
+		background-size: 250px 200px;
+		}
+	}

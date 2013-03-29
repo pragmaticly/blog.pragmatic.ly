@@ -31,7 +31,10 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png">
     <link rel="shortcut icon" sizes="16x16" href="/favicon.ico">
     <link rel="alternate" type="application/rss+xml" title="Pragmatic.ly Blog Feed" href="/feed.xml" />
-
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
     <%= stylesheet_link_tag 'application' %>
     <script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script>
     <%=  javascript_include_tag 'application' %>
@@ -48,12 +51,12 @@
   <body class="<%= page_classes %>">
     <header id="header">
       <div class="container">
-        <a href="https://pragmatic.ly" class="logo">Pragmatic.ly</a>
+        <a href="http://blog.pragmatic.ly" class="logo">Pragmatic.ly Blog</a>
 
         <ul class="top-nav">
-          <li><a href="https://pragmatic.ly/signup" rel="nofollow">
-              Try Pragmatic.ly Now <i class="icon-chevron-right"></i>
-          </a></li>
+          <li><a href="https://pragmatic.ly/tour">Tour</a></li>
+          <li><a href="https://pragmatic.ly/signup">Sign Up</a></li>
+          <li><a href="https://pragmatic.ly/login">Login</a></li>
         </ul>
       </div>
     </header>
@@ -63,20 +66,43 @@
         <%= yield %>
       </div>
     </section>
-
+    
     <footer id="footer">
       <div class="container">
-        <ul class="footer-nav social-buttons">
-          <li><a href="https://twitter.com/pragmatic_ly" class="social-twitter">Twitter</a></li>
-          <li><a href="https://facebook.com/pragmaticly" class="social-facebook">Facebook</a></li>
-          <li><a href="https://plus.google.com/109049203627299997967" class="social-google">Google+</a></li>
-        </ul>
-        <ul class="footer-nav">
-          <li>© 2012-2013 Pragmatic.ly.</li>
-          <li><a href="https://pragmatic.ly/about">About</a></li>
-          <li><a href="mailto:support@pragmatic.ly">Contact</a></li>
-        </ul>
-      </div><!-- .container -->
+        <section id="blog-info">
+          <div class="block about">
+            <h5>ABOUT</h5>
+            <p>Pragmatic.ly is a fast and easy to use project management tool featuring real time collaboration. <a href="https://pragmatic.ly/" class="cta">Learn more →</a></p>
+            <p class="copy">&copy; 2012-2013 Pragmatic.ly.</p>
+          </div>
+          <div class="block authors">
+            <h5>AUTHORS</h5>
+            <ul class="contribs">
+              <li><a href="#"><img src="/images/dingdingye.png" width="20px"> Dingding Ye</a></li>
+              <li><a href="#"><img src="/images/terrytai.png" width="20px"> Terry Tai</a></li>
+              <li><a href="#"><img src="/images/binhe.png" width="20px"> Bin He</a></li>
+            </ul>
+          </div>
+          <div class="block follow">
+            <h5>FOLLOW US</h5>
+            <ul class="social-buttons">
+              <li><a href="https://pragmatic.ly/feed" class="social-rss">RSS</a></li>
+              <li><a href="https://twitter.com/pragmatic_ly" class="social-twitter">Twitter</a></li>
+              <li><a href="https://facebook.com/pragmaticly" class="social-facebook">Facebook</a></li>
+              <li><a href="https://plus.google.com/109049203627299997967" class="social-google">Google+</a></li>
+            </ul>
+          </div>
+        </section>
+        
+        <!-- <ul class="footer-nav">
+          <li></li>
+            <li><a href="https://pragmatic.ly/about">About</a></li>
+            <li><a href="https://pragmatic.ly/terms">Terms</a></li>
+            <li><a href="https://pragmatic.ly/privacy">Privacy</a></li>
+          <li><a href="http://blog.pragmatic.ly">Blog</a></li>
+          <li><a href="http://pragmaticly.uservoice.com">Contact</a></li>
+        </ul> -->
+      </div><!-- .wrapper -->
     </footer>
 
     <!-- topics

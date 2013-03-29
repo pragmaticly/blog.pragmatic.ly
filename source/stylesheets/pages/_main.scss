@@ -1,21 +1,65 @@
-.main .container {
-  h1, h2, h3, h4 {
-    font-family: "Museo Slab";
-  }
-
-  article {
-    padding-bottom: 80px;
-
-    .meta {
-      margin-bottom: 20px;
+.main {
+  .post {
+    margin: 0 0 2.8em 0;
+    padding: 0 0 1em 20%;
+    border-bottom: 1px solid #dfdfdf;
+    aside {
+      float: left;
+      width: 20%;
+      margin: 0 0 0 -25%;
+      font-size: .85em;
+      line-height: 2;
+      color: #999;
     }
-  }
-
-  #disqus_thread {
-    margin-top: 40px;
+    .meta {
+      list-style: none;
+      font-size: 12px;
+      margin: 0;
+      .date { font-size: 14px; text-transform: uppercase; letter-spacing: 1px;}
+      a {
+        color: #999;
+        &:hover { color: #666; }
+      }
+    }
+    .title {
+      font-size: 24px;
+      line-height: 1;
+      margin-bottom: 1em;
+      a:hover { text-decoration: none; }
+    }
+    .content {
+      h1, h2 {
+        font-size: 24px;
+      }
+      h3 { font-size: 20px; }
+      h4 { font-size: 18px; }
+      h5 { font-size: 16px; }
+      h6 { font-size: 14px; }
+      p { margin: 0 40px 1.5em 0; }
+      img { margin: 1em auto; max-width: 100%; }
+      ul, ol {
+        ul, ol {
+          li { margin-bottom: 12px; font-size: .85em; line-height: 1.5em; }
+        }
+      }
+      pre { color: #666; }
+      table {
+        width: 90%;
+        margin: 0 0 1.5em 25px;
+        th { background-color: #EAF2F7; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; font-size: .8em; }
+      }
+    }
   }
 }
 
-@media print, screen and (max-width: 720px) {
-
+.share {
+  text-align: right;
+}
+.share .fb-like iframe {
+  top: -3px;
+}
+.share .fb-like > span,
+.share .twitter-share-button {
+  width: 85px !important;
 }
