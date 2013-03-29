@@ -1,6 +1,6 @@
 body {
   color: $textColor;
-  min-width: 480px;
+  min-width: 320px;
   font-size: $baseFontSize;
   line-height: $baseLineHeight;
   font-family: $baseFontFamily;
@@ -13,7 +13,8 @@ a {
 
 .container {
   margin: 0 auto;
-  width: 920px;
+  max-width: 920px;
+  padding: 0 20px;
 }
 
 #header {
@@ -157,22 +158,3 @@ a {
 	clear: both;
 	visibility: hidden;
 }
-
-
-@media print, screen and (max-width: 1280px) {
-
-}
-
-@media print, screen and (max-width: 1024px) {
-  
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 2) {
-	#header .logo,
-	#footer .social-buttons li a {
-		background: url(/images/blog-sprite@2x.png) no-repeat 0 0;
-		-webkit-background-size: 250px 200px;
-		-moz-background-size: 250px 200px;
-		background-size: 250px 200px;
-		}
-	}
