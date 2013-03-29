@@ -4,16 +4,12 @@
 @import "partials/variables";
 
 // CSS Library
-@import 'bootstrap';
-
+@import 'bootstrap.css';
 @import "rgbapng";
-@import "partials/fontawsome";
 
 // Partial
-@import "partials/font";
 @import "partials/layouts";
-@import "partials/sprites";
 
 // Page Style
-@import "pages/main";
+@import "partials/main";
 

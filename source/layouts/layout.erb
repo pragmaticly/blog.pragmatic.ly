@@ -36,8 +36,9 @@
     <![endif]-->
     
     <%= stylesheet_link_tag 'application' %>
+    <%= javascript_include_tag 'application' %>
+    
     <script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script>
-    <%=  javascript_include_tag 'application' %>
     <script type="text/javascript">var _gaq = _gaq || [];
       _gaq.push(['_setAccount', '<%= data.site.google_analytics_id %>']);
       _gaq.push(['_trackPageview']);
@@ -51,7 +52,7 @@
   <body class="<%= page_classes %>">
     <header id="header">
       <div class="container">
-        <a href="http://blog.pragmatic.ly" class="logo">Pragmatic.ly Blog</a>
+        <a href="/" class="logo">Pragmatic.ly Blog</a>
 
         <ul class="top-nav">
           <li><a href="https://pragmatic.ly/tour">Tour</a></li>
@@ -94,27 +95,9 @@
           </div>
         </section>
         
-        <!-- <ul class="footer-nav">
-          <li></li>
-            <li><a href="https://pragmatic.ly/about">About</a></li>
-            <li><a href="https://pragmatic.ly/terms">Terms</a></li>
-            <li><a href="https://pragmatic.ly/privacy">Privacy</a></li>
-          <li><a href="http://blog.pragmatic.ly">Blog</a></li>
-          <li><a href="http://pragmaticly.uservoice.com">Contact</a></li>
-        </ul> -->
       </div><!-- .wrapper -->
     </footer>
 
-    <!-- topics
-      <span class="tag">Web</span>,
-      <span class="tag">Mobile</span>,
-      <span class="tag">Programming</span>,
-      <span class="tag">Entreprenurship</span>,
-      <span class="tag">Geeky</span>
-     -->
-
-    <%= javascript_include_tag 'main' %>
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5123d9651f2e6f1f"></script>
     <%= yield_content :footer %>
   </body>
 </html>

@@ -1,5 +1,9 @@
 body {
+  color: $textColor;
   min-width: 480px;
+  font-size: $baseFontSize;
+  line-height: $baseLineHeight;
+  font-family: $baseFontFamily;
 }
 
 a {
@@ -37,8 +41,12 @@ a {
         color: #C8EBFF;
         font-size: 13px;
         padding: 4px 15px;
-        @include border-radius(12px);
+        border-radius: 12px;
         background-color: rgba(0, 0, 0, 0.1);
+        &:hover {
+          color: #fff;
+          text-decoration: none;
+        }
       }
     }
   }
@@ -46,6 +54,10 @@ a {
 
 .main {
   margin-top: 30px;
+}
+
+.pager {
+  
 }
 
 #footer {
@@ -57,7 +69,9 @@ a {
   padding: 10px 0 15px;
   width: 100%;
   font-size: 13px;
-  @include box-shadow(inset 0px 1px 5px rgba(0, 0, 0, 0.4));
+  -webkit-box-shadow: inset 0px 1px 5px rgba(0, 0, 0, 0.4);
+     -moz-box-shadow: inset 0px 1px 5px rgba(0, 0, 0, 0.4);
+          box-shadow: inset 0px 1px 5px rgba(0, 0, 0, 0.4);
   
   h5 {
     color: #577A9C;
@@ -75,7 +89,6 @@ a {
   
   #blog-info {
     color: #f2f2f2;
-    @include clearfix;
     .block {
       padding-left: 10%;
       width: 20%;
@@ -134,6 +147,17 @@ a {
   }
   .copy { color: #577A9C; }
 }
+
+// self-clear floats
+
+#footer #blog-info:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
 
 @media print, screen and (max-width: 1280px) {
 

@@ -14,8 +14,6 @@ gem "middleman-favicon-maker", :git => "git://github.com/follmann/middleman-favi
 gem "middleman-deploy"
 
 gem "compass-rgbapng"
-gem "bootstrap-sass"
-gem "sassy-buttons"
 
 # For feed.xml.builder
 gem "builder", "~> 3.0.0"
