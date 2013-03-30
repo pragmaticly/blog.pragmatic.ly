@@ -23,6 +23,7 @@ activate :blog do |blog|
   blog.paginate = true
   blog.per_page = 10
   blog.page_link = "page/:num"
+  blog.summary_length = 800
 end
 
 activate :directory_indexes

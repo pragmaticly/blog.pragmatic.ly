@@ -6,28 +6,14 @@ per_page: 5
 ---
 
 <div id="posts">
-  <% if page_number == 1 %>
-    <%
-       full_article = page_articles[0]
-       articles = page_articles[1..-1]
-     %>
-  <% else %>
-    <%
-       full_article = nil
-       articles = page_articles[0..-1]
-     %>
-  <% end %>
-  <% if full_article %>
-    <article class="post">
-      <%= partial 'shared/post', locals: { article: full_article } %>
-    </article>
-  <% end %>
   <% if articles %>
     <% articles.each_with_index do |article, i| %>
       <article class="post">
         <%= partial 'shared/post_with_summary', locals: { article: article } %>
       </article>
     <% end %>
+  <% else %>  
+    <h2>No Post Found</h2>
   <% end %>
 
   <ul class="pager">
