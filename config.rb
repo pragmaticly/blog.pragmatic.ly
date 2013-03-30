@@ -7,7 +7,7 @@ Time.zone = "Beijing"
 activate :blog do |blog|
   # blog.prefix = "blog"
   # blog.sources = ":year-:month-:day-:title.html"
-  blog.permalink = ":title"
+  blog.permalink = ":title.html"
   blog.layout = "layouts/article"
   blog.month_link = ":year/:month"
   # blog.summary_separator = /(READMORE)/
@@ -25,8 +25,6 @@ activate :blog do |blog|
   blog.page_link = "page/:num"
   blog.summary_length = 800
 end
-
-activate :directory_indexes
 
 page "/rss.xml", :layout => false
 page "/sitemap.xml", :layout => false
@@ -123,7 +121,7 @@ configure :build do
 
   # Make favicons
   # use: https://github.com/follmann/middleman-favicon-maker
-  activate :favicon_maker
+  # activate :favicon_maker
 
   # Minify
   # see: https://github.com/middleman/middleman-guides/blob/master/source/advanced/file-size-optimization.html.markdown#compressing-images
