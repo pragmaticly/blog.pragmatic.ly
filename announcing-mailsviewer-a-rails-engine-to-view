@@ -1,0 +1,258 @@
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]<!-->
+<html class="no-js" lang="zh">
+  <!--<![endif]-->
+  <head>
+    <meta charset="UTF-8">
+
+    <title>
+        Announcing mails_viewer - easiest way to test mails in Rails app
+ - Pragmatic.ly Blog
+    </title>
+
+    <meta name="description" content="The voice of The Pragmatic.ly Team sharing Nes, Thoughts & Fun.">
+    <meta name="keywords" content="  ["open source", "rails", "mail", "engine"]
+">
+    <meta name="author" content="The Pragmatic.ly Team">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="cleartype" content="on">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="apple-touch-icon-precomposed" type="image/png" sizes="57x57" href="/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" type="image/png" sizes="72x72" href="/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" type="image/png" sizes="114x114" href="/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" type="image/png" href="/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" type="image/png" href="/apple-touch-icon.png">
+
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png">
+    <link rel="shortcut icon" sizes="16x16" href="/favicon.ico">
+    <link rel="alternate" type="application/rss+xml" title="Pragmatic.ly Blog Feed" href="/feed.xml" />
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link href="/stylesheets/application.css?1364632829" media="screen" rel="stylesheet" type="text/css" />
+    <script src="/javascripts/application.js?1364632828" type="text/javascript"></script>
+
+    <script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script>
+    <script type="text/javascript">var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-4054156-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();</script>
+  </head>
+
+  <body class="announcing-mailsviewer-a-rails-engine-to-view">
+    <header id="header">
+      <div class="container">
+        <a href="/" class="logo">Pragmatic.ly Blog</a>
+
+        <ul class="top-nav">
+          <li><a href="https://pragmatic.ly/tour">Tour</a></li>
+          <li><a href="https://pragmatic.ly/signup">Sign Up</a></li>
+          <li><a href="https://pragmatic.ly/login">Login</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <section class="main">
+      <div class="container">
+          <article class="post">
+
+    <header>
+  <h2 class="title">
+    <a href="/announcing-mailsviewer-a-rails-engine-to-view">Announcing mails_viewer - easiest way to test mails in Rails app</a>
+  </h2>
+</header>
+
+<aside>
+  <ul class="meta">
+    <li class="date">
+      Sep 20, 2012
+    </li>
+    <li class="author">
+     by <a href="https://pragmatic.ly/about">Dingding Ye</a>
+    </li>
+    <li class="tags">
+      
+        <a href="/tags/open-source.html">open source</a>
+      
+        <a href="/tags/rails.html">rails</a>
+      
+        <a href="/tags/mail.html">mail</a>
+      
+        <a href="/tags/engine.html">engine</a>
+      
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <p><em>Q:</em> &ldquo;I implemented the mail template but how can I preview the mail in my machine?&rdquo;</p>
+
+<p><em>Q:</em> &ldquo;I&#39;m running out of emails to test the signup on staging server. Do you have more?&rdquo;</p>
+
+<p><em>Q:</em> &ldquo;I accidently sent the mail to <a href="mailto:test@example.com">test@example.com</a>. I thought the email adress doesn&#39;t exist!&rdquo;</p>
+
+<p>Familiar? I have been asked many times of those questions these years. The requiremeent is simple. Write mailer model, send mail and then verify every part works as expected. But when we&#39;re in non-production environment, either development machine or staging server, it&#39;s always painful to test mails. Put simple, we just want:</p>
+
+<ul>
+<li>To preview all the sent mails easily</li>
+<li>To browse the mails easily, for everyone in the team.</li>
+<li>To allow conditioned mails to real sent out.</li>
+</ul>
+
+<p>We feel the same pain at <a href="https://pragmatic.ly">Pragmatic.ly</a> and that&#39;s why we built <a href="https://github.com/pragmaticly/mails_viewer">mails_viewer</a>, a mails preview Engine which provides a table view for all mails under tmp/mails. It&#39;s a fork of tomlion&#39;s <a href="https://github.com/tomlion/mails_viewer">original code</a> and I&#39;m glad to be the maintainer. Thanks for tomlion for getting this thing started!</p>
+
+<p><img title="Mails Viewer" alt="mails_viewer" width="680" height="30" src="/images/announcing-mailsviewer-a-rails-engine-to-view/mails-viewer.png?1364633119" /></p>
+
+<p>Generally speaking, mails_viewer is a Rails engine. So it&#39;s very easy to integrate it into your rails apps. And it depends on the file delivery method of ActionMailer.</p>
+
+<h3>Usage</h3>
+
+<ol>
+<li><p>Add the gem to your Gemfile :</p>
+<div class="highlight"><pre><span class="n">gem</span> <span class="s">&quot;mails_viewer&quot;</span>
+</pre></div></li>
+<li><p>Set ActionMailer&#39;s delivery method to :file :</p>
+<div class="highlight"><pre><span class="n">config</span><span class="p">.</span><span class="n">action_mailer</span><span class="p">.</span><span class="n">delivery_method</span> <span class="o">=</span> <span class="o">:</span><span class="n">file</span>
+</pre></div></li>
+<li><p>Put this in your routes.rb:</p>
+<div class="highlight"><pre><span class="n">mount</span> <span class="n">MailsViewer</span><span class="o">::</span><span class="n">Engine</span> <span class="o">=&gt;</span> <span class="err">&#39;</span><span class="o">/</span><span class="n">delivered_mails</span><span class="err">&#39;</span>
+</pre></div></li>
+</ol>
+
+<p>Now just load up http://localhost:3000/delivered_mails</p>
+
+<h3>Advanced</h3>
+
+<p><em>Q:</em> &ldquo;I hope the mails sent to my own domain can send to my inbox and I can review it using my favorite client. Does mails_viewer support that?&rdquo;</p>
+
+<p>We have the same requirement. You can just pass a send_if Proc to the configuration and detect whether the mail object satisfy the condition or not. For example,</p>
+<div class="highlight"><pre><span class="n">config</span><span class="o">.</span><span class="n">action_mailer</span><span class="o">.</span><span class="n">delivery_method</span> <span class="o">=</span> <span class="ss">:file</span>
+<span class="n">config</span><span class="o">.</span><span class="n">action_mailer</span><span class="o">.</span><span class="n">file_settings</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="ss">location</span><span class="p">:</span> <span class="s1">&#39;tmp/mails&#39;</span><span class="p">,</span>
+  <span class="n">smtp_settings</span><span class="p">:</span> <span class="p">{</span>
+    <span class="ss">address</span><span class="p">:</span>              <span class="s2">&quot;localhost&quot;</span><span class="p">,</span>
+    <span class="ss">port</span><span class="p">:</span>                 <span class="mi">25</span><span class="p">,</span>
+    <span class="ss">domain</span><span class="p">:</span>               <span class="s1">&#39;localhost.localdomain&#39;</span><span class="p">,</span>
+    <span class="n">user_name</span><span class="p">:</span>            <span class="kp">nil</span><span class="p">,</span>
+    <span class="ss">password</span><span class="p">:</span>             <span class="kp">nil</span><span class="p">,</span>
+    <span class="ss">authentication</span><span class="p">:</span>       <span class="kp">nil</span><span class="p">,</span>
+    <span class="n">enable_starttls_auto</span><span class="p">:</span> <span class="kp">true</span>
+  <span class="p">},</span>
+  <span class="n">send_if</span><span class="p">:</span> <span class="nb">lambda</span> <span class="p">{</span> <span class="o">|</span><span class="n">mail</span><span class="o">|</span> <span class="n">mail</span><span class="o">.</span><span class="n">destinations</span><span class="o">.</span><span class="n">select</span> <span class="p">{</span> <span class="o">|</span><span class="n">address</span><span class="o">|</span> <span class="n">address</span> <span class="o">=~</span> <span class="sr">/@pragmatic.ly$/</span> <span class="p">}</span><span class="o">.</span><span class="n">any?</span> <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+<p>For more information, please check out the <a href="https://github.com/pragmaticly/mails_viewer">project page</a> on github.</p>
+
+<h3>Other Gems</h3>
+
+<p>We&#39;re not alone. There are already several gems fixing the same problem, such as <a href="https://github.com/37signals/mail_view">mail_view</a> from 37signal, <a href="https://github.com/ryanb/letter_opener">letter_opener</a> by Ryan Bytes, <a href="http://mailcatcher.me/">MailCatcher</a> by Samuel Cochran and <a href="https://github.com/myronmarston/mail_safe">mail_safe</a> by Myron Marston. However, I would say mails<em>viewer is the best fit if you need the mails to be browsable, readable and sendable easily. Your QA will love you if you use mails</em>viewer!</p>
+
+<p><br/></p>
+
+<h3>About Pragmatic.ly</h3>
+
+<p><a href="https://pragmatic.ly">Pragmatic.ly</a> is a lean collaborative project management tool aiming to help small teams make better products easier. It&#39;s the ideal and elegant project management tool for tech startups.</p>
+
+<p>Now that you&#39;ve read so far, you should follow me <a href="https://twitter.com/yedingding">@yedingding</a>!</p>
+
+</div>
+
+<div class="share">
+  <a href="https://twitter.com/share?url=http://blog.pragmatic.ly/announcing-mailsviewer-a-rails-engine-to-view&text=Announcing mails_viewer - easiest way to test mails in Rails app" class="twitter-share-button" data-lang="en"></a>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+  <div class="fb-like" data-href="http://blog.pragmatic.ly/announcing-mailsviewer-a-rails-engine-to-view" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true"></div>
+
+  <!-- Place this tag where you want the share button to render. -->
+  <div class="g-plus" data-action="share" data-annotation="bubble" data-href="http://blog.pragmatic.ly/announcing-mailsviewer-a-rails-engine-to-view"></div>
+
+  <!-- Place this tag after the last share tag. -->
+  <script type="text/javascript">
+    (function() {
+      var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+      po.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+    })();
+  </script>
+
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=372859719458672";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+</div>
+
+
+  </article>
+  
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'pragmaticlyblog'; // required: replace example with your forum shortname
+    var disqus_identifier = 'announcing-mails_viewer-easiest-way-to-test-mails-in-rails-app';
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+      </div>
+    </section>
+
+    <footer id="footer">
+      <div class="container">
+        <section id="blog-info">
+          <div class="block about">
+            <h5>ABOUT</h5>
+            <p>Pragmatic.ly is a lean collaborative project management tool which help you make better products, easier. <a href="https://pragmatic.ly/" class="cta">Learn more →</a></p>
+          </div>
+          <div class="block authors">
+            <h5>AUTHORS</h5>
+            <ul class="contribs">
+              <li><a href="#"><img src="/images/dingdingye.png" width="20px"> Dingding Ye</a></li>
+              <li><a href="#"><img src="/images/terrytai.png" width="20px"> Terry Tai</a></li>
+              <li><a href="#"><img src="/images/binhe.png" width="20px"> Bin He</a></li>
+            </ul>
+          </div>
+          <div class="block follow">
+            <h5>FOLLOW US</h5>
+            <ul class="social-buttons">
+              <li><a href="http://feeds.feedburner.com/pragmaticly" class="social-rss">RSS</a></li>
+              <li><a href="https://twitter.com/pragmatic_ly" class="social-twitter">Twitter</a></li>
+              <li><a href="https://facebook.com/pragmaticly" class="social-facebook">Facebook</a></li>
+              <li><a href="https://plus.google.com/109049203627299997967" class="social-google">Google+</a></li>
+            </ul>
+          </div>
+
+          <p class="copy">&copy; 2012-2013 Pragmatic.ly.</p>
+        </section>
+
+      </div><!-- .wrapper -->
+    </footer>
+
+    
+  </body>
+</html>

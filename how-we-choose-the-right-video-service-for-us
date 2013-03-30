@@ -1,0 +1,208 @@
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]<!-->
+<html class="no-js" lang="zh">
+  <!--<![endif]-->
+  <head>
+    <meta charset="UTF-8">
+
+    <title>
+        Video matters! But which hosting service to use?
+ - Pragmatic.ly Blog
+    </title>
+
+    <meta name="description" content="The voice of The Pragmatic.ly Team sharing Nes, Thoughts & Fun.">
+    <meta name="keywords" content="  ["marketing", "video service"]
+">
+    <meta name="author" content="The Pragmatic.ly Team">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="cleartype" content="on">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="apple-touch-icon-precomposed" type="image/png" sizes="57x57" href="/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" type="image/png" sizes="72x72" href="/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" type="image/png" sizes="114x114" href="/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" type="image/png" href="/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" type="image/png" href="/apple-touch-icon.png">
+
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png">
+    <link rel="shortcut icon" sizes="16x16" href="/favicon.ico">
+    <link rel="alternate" type="application/rss+xml" title="Pragmatic.ly Blog Feed" href="/feed.xml" />
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link href="/stylesheets/application.css?1364632829" media="screen" rel="stylesheet" type="text/css" />
+    <script src="/javascripts/application.js?1364632828" type="text/javascript"></script>
+
+    <script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script>
+    <script type="text/javascript">var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-4054156-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();</script>
+  </head>
+
+  <body class="how-we-choose-the-right-video-service-for-us">
+    <header id="header">
+      <div class="container">
+        <a href="/" class="logo">Pragmatic.ly Blog</a>
+
+        <ul class="top-nav">
+          <li><a href="https://pragmatic.ly/tour">Tour</a></li>
+          <li><a href="https://pragmatic.ly/signup">Sign Up</a></li>
+          <li><a href="https://pragmatic.ly/login">Login</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <section class="main">
+      <div class="container">
+          <article class="post">
+
+    <header>
+  <h2 class="title">
+    <a href="/how-we-choose-the-right-video-service-for-us">Video matters! But which hosting service to use?</a>
+  </h2>
+</header>
+
+<aside>
+  <ul class="meta">
+    <li class="date">
+      Sep 19, 2012
+    </li>
+    <li class="author">
+     by <a href="https://pragmatic.ly/about">Terry Tai</a>
+    </li>
+    <li class="tags">
+      
+        <a href="/tags/marketing.html">marketing</a>
+      
+        <a href="/tags/video-service.html">video service</a>
+      
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <p>Nowadays video is used extensively for introducing the products or services to the public. It&#39;s no doubt that a good video can increase the conversation rate a lot.</p>
+
+<p>As a startup, it&#39;s not easy to create a great product video like other big companies. So we recorded a toturial screencast when we launched <a href="https://pragmatic.ly">Pragmatic.ly</a> instead. Meanwhile we are working on our new attracting product video and we love the process. It&#39;s totally different experience than writing code. We will share more latter when the video is out. But in this post I will talk more about the experience about different video hosting service. We tried <a href="http://vimeo.com/">Vimeo</a>, <a href="http://sublimevideo.net/">SublimeVideo</a>, <a href="http://wistia.com/">Wistia</a> and <a href="http://www.youtube.com/">YouTube</a>.  The result is interesting and quite different than our common sense.</p>
+
+<p><img title="Vimeo" alt="Vimeo" src="/images/how-we-choose-the-right-video-service-for-us/vimeologo.svg?1364632825" /></p>
+
+<p><a href="http://vimeo.com">Vimeo</a> is our first choice because we heard many good words from others. It does act great. Both the video quality and play speed are good when watching it from Vimeo&#39;s site. But after we use an embed player on our site to play the video, we have the problem. The basic account of Vimeo doesn&#39;t have the HD embedding but that&#39;s exactly what we want. I think each penny spent on the <a href="http://vimeo.com/plus">Vimeo Plus</a> account should be worth it but before we do that, we planned to give more solutions a try. If you have sites with HD embedding videos on Vimeo, please share and I&#39;m eager to see how it works. Our video on Vimeo is <a href="https://vimeo.com/44030280">here</a>.</p>
+
+<p><img title="SublimeVideo" alt="SublimeVideo" width="162" height="40" src="/images/how-we-choose-the-right-video-service-for-us/slv.png?1364633603" /></p>
+
+<p>Strictly speaking <a href="http://sublimevideo.net/">SublimeVideo</a> is not a video hosting service. It&#39;s just a video player service. If you use SublimeVideo, you have to host your video files yourself, no matter on your own server or S3. But the good part is that you can totally control your video yourself. Size, quality, anything about the video is under your control. SublimeVideo is really a nice video player. It supports both HTML5 and Flash, almost works on any platform. The control panel is simple, neat, and it also supports simple analytics by time. The integration is also very straightforward. You just need to load a JS file from SublimeVideo and use &lt;video&gt; tag to wrap your video url and SublimeVideo will work like magic.</p>
+
+<p><img title="Wistia" alt="Wistia" width="115" height="25" src="/images/how-we-choose-the-right-video-service-for-us/wistia.png?1364633636" /></p>
+
+<p><a href="http://wistia.com">Wistia</a> is a new video service focus on powerful analytics. It can show you how your audience is watching, second by second. So we gave it a try, but after we uploading our video on it. We found the quality is not good. You could check it out <a href="http://poshboytl.wistia.com/medias/5jsseu9vom">here</a> and compare it with the one on our homepage. I browsed their documents quickly but didn&#39;t find the solution. So sorry, we quit.</p>
+
+<p><img title="Youtube" alt="youtube" width="95" height="49" src="/images/how-we-choose-the-right-video-service-for-us/youtube.png?1364633667" /></p>
+
+<p>Before we trying <a href="http://youtube.com">YouTube</a>, we used to think YouTube might not be a good place to host high quality video. But after we uploaded our video, we&#39;re shocked. The video quality is perfect, and YouTube help us to translate our video to servial copy from 240p to 720p. I think if our video has higher resolution, we will have a 1080p version too. You could watch the sample <a href="http://www.youtube.com/watch?v=OMMDL7I_eaQ&feature=youtu.be&hd=1">here</a>. To make a embed player on your site with Youtube is also very easy. We just use a iframe and set the src to video url with parameters &ldquo;autoplay=1&rdquo; and &ldquo;hd=1&rdquo;. All done. For more player customization you could check out the document <a href="http://code.google.com/apis/youtube/player_parameters.html">here</a>. And it&#39;s free of charge!</p>
+
+<p>So far we&#39;re glad with YouTube and it&#39;ll be our first choice to host Pragmatic.ly&#39;s product video and video tutorials. You could watch the final <a href="https://pragmatic.ly/">embed video on our homepage</a>.</p>
+
+<p>We hope our experience could give you some help. Do you have other recommendations? Please let us know! Thanks.</p>
+
+</div>
+
+<div class="share">
+  <a href="https://twitter.com/share?url=http://blog.pragmatic.ly/how-we-choose-the-right-video-service-for-us&text=Video matters! But which hosting service to use?" class="twitter-share-button" data-lang="en"></a>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+  <div class="fb-like" data-href="http://blog.pragmatic.ly/how-we-choose-the-right-video-service-for-us" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true"></div>
+
+  <!-- Place this tag where you want the share button to render. -->
+  <div class="g-plus" data-action="share" data-annotation="bubble" data-href="http://blog.pragmatic.ly/how-we-choose-the-right-video-service-for-us"></div>
+
+  <!-- Place this tag after the last share tag. -->
+  <script type="text/javascript">
+    (function() {
+      var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+      po.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+    })();
+  </script>
+
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=372859719458672";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+</div>
+
+
+  </article>
+  
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'pragmaticlyblog'; // required: replace example with your forum shortname
+    var disqus_identifier = 'video-matters-but-which-hosting-service-to-use';
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+      </div>
+    </section>
+
+    <footer id="footer">
+      <div class="container">
+        <section id="blog-info">
+          <div class="block about">
+            <h5>ABOUT</h5>
+            <p>Pragmatic.ly is a lean collaborative project management tool which help you make better products, easier. <a href="https://pragmatic.ly/" class="cta">Learn more →</a></p>
+          </div>
+          <div class="block authors">
+            <h5>AUTHORS</h5>
+            <ul class="contribs">
+              <li><a href="#"><img src="/images/dingdingye.png" width="20px"> Dingding Ye</a></li>
+              <li><a href="#"><img src="/images/terrytai.png" width="20px"> Terry Tai</a></li>
+              <li><a href="#"><img src="/images/binhe.png" width="20px"> Bin He</a></li>
+            </ul>
+          </div>
+          <div class="block follow">
+            <h5>FOLLOW US</h5>
+            <ul class="social-buttons">
+              <li><a href="http://feeds.feedburner.com/pragmaticly" class="social-rss">RSS</a></li>
+              <li><a href="https://twitter.com/pragmatic_ly" class="social-twitter">Twitter</a></li>
+              <li><a href="https://facebook.com/pragmaticly" class="social-facebook">Facebook</a></li>
+              <li><a href="https://plus.google.com/109049203627299997967" class="social-google">Google+</a></li>
+            </ul>
+          </div>
+
+          <p class="copy">&copy; 2012-2013 Pragmatic.ly.</p>
+        </section>
+
+      </div><!-- .wrapper -->
+    </footer>
+
+    
+  </body>
+</html>
