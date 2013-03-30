@@ -11,12 +11,12 @@
     <meta charset="UTF-8">
 
     <title>
-        Announcing Smart Time Ago
+        Released Features of Pragmatic.ly
  - Pragmatic.ly Blog
     </title>
 
     <meta name="description" content="The voice of The Pragmatic.ly Team sharing Nes, Thoughts & Fun.">
-    <meta name="keywords" content="  ["open source", "JavaScript", "jQuery", "smart-time-ago"]
+    <meta name="keywords" content="  ["Announcement", "ChangeLog"]
 ">
     <meta name="author" content="The Pragmatic.ly Team">
 
@@ -53,7 +53,7 @@
     })();</script>
   </head>
 
-  <body class="we-opened-source-smart-time-ago">
+  <body class="158983791">
     <header id="header">
       <div class="container">
         <a href="/" class="logo">Pragmatic.ly Blog</a>
@@ -72,64 +72,95 @@
 
     <header>
   <h2 class="title">
-    <a href="/we-opened-source-smart-time-ago">Announcing Smart Time Ago</a>
+    <a href="/158983791.html">Released Features of Pragmatic.ly</a>
   </h2>
 </header>
 
 <aside>
   <ul class="meta">
     <li class="date">
-      Jul 24, 2012
+      Sep 06, 2012
     </li>
     <li class="author">
      by <a href="https://pragmatic.ly/about">Terry Tai</a>
     </li>
     <li class="tags">
       
-        <a href="/tags/open-source.html">open source</a>
+        <a href="/tags/announcement.html">Announcement</a>
       
-        <a href="/tags/javascript.html">JavaScript</a>
-      
-        <a href="/tags/jquery.html">jQuery</a>
-      
-        <a href="/tags/smart-time-ago.html">smart-time-ago</a>
+        <a href="/tags/changelog.html">ChangeLog</a>
       
     </li>
   </ul>
 </aside>
 
 <div class="content">
-  <p>The relative timestamps like &ldquo;5 minutes ago&rdquo; are more and more used in web applications. So web frameworks like <a href="http://rubyonrails.com">Ruby on Rails</a> have a builtin helper method to change timestamps to relative timestamps easily on server side as following,</p>
-<div class="highlight"><pre><span class="n">time_ago_in_words</span><span class="p">(</span><span class="n">item</span><span class="o">.</span><span class="n">created_at</span><span class="p">)</span>
-</pre></div>
-<p>But If you use relative timestamps, you should update them on the client side to make sure the users always seeing the correct relative timestamps. And there is already an awesome library to do this job, which is <a href="http://timeago.yarp.com/">Timeago</a>. Thanks to Yarp.com, the author of Timeago.</p>
+  <p>August 2012 has been a big month for <a href="https://pragmatic.ly">Pragmatic.ly</a>. We did a lot of optimization and tried our best to give more benefits to our users. So we really hope our users will love what we did in last month.</p>
 
-<p>However, after trying the library in depth, we found that it doesn&#39;t fit well in <a href="https://pragmatic.ly">Pragmatic.ly</a>. As a real time single-page application, our users may not refresh the page for days, so refreshing the relative timestamps per minute is meaningless and wasteful.</p>
+<p>So let me take an opportunity to introduce the cutting-edge main changes that we have made in month of August.</p>
 
-<p>We need a more efficient solution. So we built <a href="http://pragmaticly.github.com/smart-time-ago/">Smart Time Ago</a>.</p>
+<h3>Clear Pricing Policy</h3>
 
-<h3>Why Smart</h3>
+<p>We&#39;re landing a dedicated pricing page now. It&#39;s simple and vibrant. Please don&#39;t hestigate to contacting us if you have anything more that you want to know.</p>
 
-<p>Instead of updating the relative timestamps every minute, smart-time-ago can dynamically tune the checking time interval to a proper value depending on the newest time on the page.</p>
+<p><img title="Clear Pricing Policy" alt="Clear Pricing Policy" width="240" height="160" src="/images/158983791/pricing.png?1364632825" /></p>
 
-<p>For example, if the newest time is &#39;2 hours ago&#39;, there is no need to check and update the relative timestamps per minute. Instead, 30 minutes is a better choice.</p>
+<h3>Organization Panel</h3>
 
-<p><a href="http://pragmaticly.github.com/smart-time-ago/">Smart Time Ago</a> is hosted on github under MIT License. Check it out for more details and share your feedbacks and suggestions. Thanks!</p>
+<p>We created a brief panel to list organization information which allows you to create an admin account that can handle the status of the organization easily. You can view Billing Time, All Projects Info and Team Members Information there and further it also allows you to add or remove members from your organization with this unique feature.</p>
 
-<h3>About Pragmatic.ly</h3>
+<p><img title="Organization Panel" alt="Organization Panel" width="454" height="495" src="/images/158983791/organization.png?1364632998" /></p>
 
-<p><a href="https://pragmatic.ly">Pragmatic.ly</a> is a lean collaborative project management tool aiming to help small teams make better products easier. It&#39;s the ideal and elegant project management tool for tech startups.</p>
+<h3>Manage Iterations &amp; Manage Team</h3>
+
+<p>We added two simple panels for admin to see iterations and team information. Admin could also remove members from a project and delete an iteration of a project with this feature.</p>
+
+<p><img title="Manage Iterations & Manage Team" alt="Management Iterations & Team" width="174" height="127" src="/images/158983791/management.png?1364632905" /></p>
+
+<h3>Archive Iteration</h3>
+
+<p>The iterations gradually increase as time goes on. So we have created archiving iteration function for the users to archive old iterations to make users focus on the recent working iterations. And also you could toggle to view or hide the archived iterations when you needed.</p>
+
+<p><img title="Archive Iteration" alt="Archive Iteration" width="244" height="160" src="/images/158983791/archive.png?1364632875" /></p>
+
+<h3>Relative timestamp in Notifications</h3>
+
+<p>Now it&#39;s possible for you to get up to the speed of your project with Notifications and Activity Feed. It&#39;s simpler now! We have modified the notifications design to show the comparative timestamp which can give a quick peek to gear up. We also opened source the library on github.</p>
+
+<p><img title="Relative timestamp in Notification" alt="Notifications" width="240" height="155" src="/images/158983791/notification.png?1364632825" /></p>
+
+<h3>Clickable Web Notification</h3>
+
+<p>Web notification is one of the best ways to improve the communication! It allows you to focus on the project by the same time you can receive instant notifications when anything is changed and updated. And now we move one step further, when you click these bubble notifications, it directs you to the iteration/ticket/comment where the notification is changed and updated.</p>
+
+<p><img title="Clickable Web Notification" alt="Web Notification" width="240" height="80" src="/images/158983791/webnotification.png?1364632825" /></p>
+
+<h3>Mention @somebody to bring people into the discussion</h3>
+
+<p>Want to bring somebody into the discussion? Why to think how? When you mention ‘@’followed by the person’s name in the comment by the user; particular person will be notified instantly and will be subscribed for the future updates regarding the same discussion. Still we&#39;re working on betterment of notification controls that can let the users receive the relevant events updates only.</p>
+
+<p><img title="Mention" alt="Mention" width="240" height="117" src="/images/158983791/mention.png?1364632825" /></p>
+
+<h3>Internal Connections among tickets</h3>
+
+<p>Tickets are connected! Just by adding &#39;#&#39; with ticket ID into any descriptions or comments you can auto link the ticket. By connecting the tickets, you can easily see the dependencies, duplications and related tickets at a glance. It&#39;s just a start and more is on its way.</p>
+
+<p><img title="Internal Connections among tickets" alt="Connection among tickets" width="240" height="88" src="/images/158983791/ticket-link.png?1364632825" /></p>
+
+<p><br/></p>
+
+<p>Except for the main features that we created last month, we also did a lot of small improvements and bug fixing. If you continue using <a href="https://pragmatic.ly">Pragmatic.ly</a> you will find more surprises that can wow you for sure!</p>
 
 </div>
 
 <div class="share">
-  <a href="https://twitter.com/share?url=http://blog.pragmatic.ly/we-opened-source-smart-time-ago&text=Announcing Smart Time Ago" class="twitter-share-button" data-lang="en"></a>
+  <a href="https://twitter.com/share?url=http://blog.pragmatic.ly/158983791.html&text=Released Features of Pragmatic.ly" class="twitter-share-button" data-lang="en"></a>
   <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
-  <div class="fb-like" data-href="http://blog.pragmatic.ly/we-opened-source-smart-time-ago" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true"></div>
+  <div class="fb-like" data-href="http://blog.pragmatic.ly/158983791.html" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true"></div>
 
   <!-- Place this tag where you want the share button to render. -->
-  <div class="g-plus" data-action="share" data-annotation="bubble" data-href="http://blog.pragmatic.ly/we-opened-source-smart-time-ago"></div>
+  <div class="g-plus" data-action="share" data-annotation="bubble" data-href="http://blog.pragmatic.ly/158983791.html"></div>
 
   <!-- Place this tag after the last share tag. -->
   <script type="text/javascript">
@@ -157,7 +188,7 @@
   <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
     var disqus_shortname = 'pragmaticlyblog'; // required: replace example with your forum shortname
-    var disqus_identifier = 'announcing-smart-time-ago';
+    var disqus_identifier = 'released-features-of-pragmatic-ly';
 
     /* * * DON'T EDIT BELOW THIS LINE * * */
     (function() {

@@ -17,7 +17,7 @@
     </author>
     <item>
       <title>Introducing VCS integration with Pragmatic.ly</title>
-      <link>http://blog.pragmatic.ly/integrate-version-control-system-with-pragmat</link>
+      <link>http://blog.pragmatic.ly/integrate-version-control-system-with-pragmat.html</link>
       <description type="html">&lt;p&gt;Today, we&amp;#39;re glad to introduce our new &lt;a href="http://en.wikipedia.org/wiki/Revision_control"&gt;VCS&lt;/a&gt;(Version Control System) integration with Pragmatic.ly to the public. We have released this feature to some of our users in last two months and glad to hear how they love it. I&amp;#39;m sure you&amp;#39;ll love the feature too!&lt;/p&gt;
 
 &lt;p&gt;&lt;a href="https://pragmatic.ly"&gt;Pragmatic.ly&lt;/a&gt; is a lean collaborative project management tool featuring real time collaboration. We design the tool to be developer friendly and hope to help startup teams deliver better products, easier and faster. Developers like us work with VCS such as Git or SVN every day. The new VCS integration can deeply integrate with your current development process and improve your team productivity.&lt;/p&gt;
@@ -115,7 +115,7 @@
     </item>
     <item>
       <title>Improving the usability on tickets readability and team collaboration</title>
-      <link>http://blog.pragmatic.ly/improving-the-usability-on-tickets-readabilit</link>
+      <link>http://blog.pragmatic.ly/improving-the-usability-on-tickets-readabilit.html</link>
       <description type="html">&lt;p&gt;Steve Krug&amp;#39;s instant classic book &amp;ldquo;&lt;a href="http://www.amazon.com/Dont-Make-Me-Think-Usability/dp/0321344758"&gt;Don&amp;#39;t Make Me Think&lt;/a&gt;&amp;rdquo; is one of our favorite design books. Simplicity and usability is our lifetime of pursuit on products design. With regard to single page application like &lt;a href="https://pragmatic.ly"&gt;Pragmatic.ly&lt;/a&gt;, balancing the complexity of features with the simplicity of design is indeed difficult, but we&amp;#39;re keep iterating. Here&amp;#39;re some improvements to the ticket details.&lt;/p&gt;
 
 &lt;h3&gt;Markdown Supported&lt;/h3&gt;
@@ -163,7 +163,7 @@
     </item>
     <item>
       <title>The improvement of 'Archive Iteration'</title>
-      <link>http://blog.pragmatic.ly/the-improvement-of-archive-iteration</link>
+      <link>http://blog.pragmatic.ly/the-improvement-of-archive-iteration.html</link>
       <description type="html">&lt;h3&gt;Background of &amp;#39;Archive Iteration&amp;#39; function&lt;/h3&gt;
 
 &lt;p&gt;We have released the &amp;#39;Archive Iteration&amp;#39; feature for some time.  This is a very useful feature if you use iterations the way like us. We create individual iteration for each week, and put the things we will work on in the corresponding iteration.&lt;/p&gt;
@@ -214,7 +214,7 @@
     </item>
     <item>
       <title>Pragmatic.ly team on RubyConf China 2012</title>
-      <link>http://blog.pragmatic.ly/the-presentations-we-made-on-rubyconfchina-20</link>
+      <link>http://blog.pragmatic.ly/the-presentations-we-made-on-rubyconfchina-20.html</link>
       <description type="html">&lt;p&gt;Last month the &lt;a href="https://pragmatic.ly"&gt;Pragmatic.ly&lt;/a&gt; team attent the &lt;a href="http://rubyconfchina.org"&gt;RubyConfChina 2012&lt;/a&gt; and we really had a great time there with the ruby developers came from China and also across the world.&lt;/p&gt;
 
 &lt;p&gt;The conference is very good. It&amp;#39;s also the big party of rubyist. Everyone enjoyed that much. Thanks to the organizers!&lt;/p&gt;
@@ -277,7 +277,7 @@
     </item>
     <item>
       <title>Improving Ticket Interactive</title>
-      <link>http://blog.pragmatic.ly/improving-ticket-interactive</link>
+      <link>http://blog.pragmatic.ly/improving-ticket-interactive.html</link>
       <description type="html">&lt;h3&gt;Improve the stability of ticket item in the list&lt;/h3&gt;
 
 &lt;p&gt;Users informed us that the ticket list in the center column was unstable, and we were rushing into this problem immediately.&lt;/p&gt;
@@ -334,7 +334,7 @@
     </item>
     <item>
       <title>Showing up Due Date</title>
-      <link>http://blog.pragmatic.ly/due-date-is-showing-up-in-the-ticket-list</link>
+      <link>http://blog.pragmatic.ly/due-date-is-showing-up-in-the-ticket-list.html</link>
       <description type="html">&lt;p&gt;Now you can see &lt;em&gt;due-date&lt;/em&gt; on ticket list, and capture overdue tickets easily at a glance. Here is how and why we put it this way.&lt;/p&gt;
 
 &lt;p&gt;Firstly, &lt;em&gt;due-date&lt;/em&gt; can be input in the right form, easy click and go.&lt;/p&gt;
@@ -373,7 +373,7 @@
     </item>
     <item>
       <title>Announcing mails_viewer - easiest way to test mails in Rails app</title>
-      <link>http://blog.pragmatic.ly/announcing-mailsviewer-a-rails-engine-to-view</link>
+      <link>http://blog.pragmatic.ly/announcing-mailsviewer-a-rails-engine-to-view.html</link>
       <description type="html">&lt;p&gt;&lt;em&gt;Q:&lt;/em&gt; &amp;ldquo;I implemented the mail template but how can I preview the mail in my machine?&amp;rdquo;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;Q:&lt;/em&gt; &amp;ldquo;I&amp;#39;m running out of emails to test the signup on staging server. Do you have more?&amp;rdquo;&lt;/p&gt;
@@ -450,7 +450,7 @@
     </item>
     <item>
       <title>Video matters! But which hosting service to use?</title>
-      <link>http://blog.pragmatic.ly/how-we-choose-the-right-video-service-for-us</link>
+      <link>http://blog.pragmatic.ly/how-we-choose-the-right-video-service-for-us.html</link>
       <description type="html">&lt;p&gt;Nowadays video is used extensively for introducing the products or services to the public. It&amp;#39;s no doubt that a good video can increase the conversation rate a lot.&lt;/p&gt;
 
 &lt;p&gt;As a startup, it&amp;#39;s not easy to create a great product video like other big companies. So we recorded a toturial screencast when we launched &lt;a href="https://pragmatic.ly"&gt;Pragmatic.ly&lt;/a&gt; instead. Meanwhile we are working on our new attracting product video and we love the process. It&amp;#39;s totally different experience than writing code. We will share more latter when the video is out. But in this post I will talk more about the experience about different video hosting service. We tried &lt;a href="http://vimeo.com/"&gt;Vimeo&lt;/a&gt;, &lt;a href="http://sublimevideo.net/"&gt;SublimeVideo&lt;/a&gt;, &lt;a href="http://wistia.com/"&gt;Wistia&lt;/a&gt; and &lt;a href="http://www.youtube.com/"&gt;YouTube&lt;/a&gt;.  The result is interesting and quite different than our common sense.&lt;/p&gt;
@@ -481,7 +481,7 @@
     </item>
     <item>
       <title>Released Features of Pragmatic.ly</title>
-      <link>http://blog.pragmatic.ly/158983791</link>
+      <link>http://blog.pragmatic.ly/158983791.html</link>
       <description type="html">&lt;p&gt;August 2012 has been a big month for &lt;a href="https://pragmatic.ly"&gt;Pragmatic.ly&lt;/a&gt;. We did a lot of optimization and tried our best to give more benefits to our users. So we really hope our users will love what we did in last month.&lt;/p&gt;
 
 &lt;p&gt;So let me take an opportunity to introduce the cutting-edge main changes that we have made in month of August.&lt;/p&gt;
@@ -544,7 +544,7 @@
     </item>
     <item>
       <title>A Practical Guide to Use Spine.JS in Real World App</title>
-      <link>http://blog.pragmatic.ly/a-practical-guide-to-use-spinejs-in-real-worl</link>
+      <link>http://blog.pragmatic.ly/a-practical-guide-to-use-spinejs-in-real-worl.html</link>
       <description type="html">&lt;p&gt;To give users the best possible fluid experience, we designed &lt;a href="https://pragmatic.ly"&gt;Pragmatic.ly&lt;/a&gt; and complied with the &lt;a href="http://en.wikipedia.org/wiki/Single-page_application"&gt;single page application&lt;/a&gt; standard. We believe that could make users focus on building product rather than spending time on project management itself. A wide range of technology solutions are available to make a single page application. Current trends suggest moving core application from server to client side and keeping server load at minimum for better performance by pure data APIs. &lt;a href="https://pragmatic.ly"&gt;Pragmatic.ly&lt;/a&gt; took on the challange to cater to this need by developing server side in Rails, Spine.js at client side.&lt;/p&gt;
 
 &lt;h3&gt;Why Spine.JS&lt;/h3&gt;
@@ -836,7 +836,7 @@
     </item>
     <item>
       <title>It's not perfect but it's time to integrate web notifications</title>
-      <link>http://blog.pragmatic.ly/its-not-perfect-but-its-time-to-integrate-web</link>
+      <link>http://blog.pragmatic.ly/its-not-perfect-but-its-time-to-integrate-web.html</link>
       <description type="html">&lt;p&gt;One feature &lt;a href="https://pragmatic.ly"&gt;Pragmatic.ly&lt;/a&gt; has had from the beginning is Web Notifications. When I first saw the feature in Gmail I was convinced it was a feature every web application should have. As a project management tool Pragmatic.ly should enhance collaboration and ease communication. Instant desktop-like notification is one way to achieve the goal.&lt;/p&gt;
 
 &lt;p&gt;&lt;img title="Chrome Web Notification" alt="Chrome Web Notification" width="332" height="127" src="/images/its-not-perfect-but-its-time-to-integrate-web/chrome-notification.png?1364633946" /&gt;&lt;/p&gt;
@@ -970,7 +970,7 @@
     </item>
     <item>
       <title>Announcing Smart Time Ago</title>
-      <link>http://blog.pragmatic.ly/we-opened-source-smart-time-ago</link>
+      <link>http://blog.pragmatic.ly/we-opened-source-smart-time-ago.html</link>
       <description type="html">&lt;p&gt;The relative timestamps like &amp;ldquo;5 minutes ago&amp;rdquo; are more and more used in web applications. So web frameworks like &lt;a href="http://rubyonrails.com"&gt;Ruby on Rails&lt;/a&gt; have a builtin helper method to change timestamps to relative timestamps easily on server side as following,&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;time_ago_in_words&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;item&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;created_at&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
@@ -998,7 +998,7 @@
     </item>
     <item>
       <title>Pragmatic.ly an Asana Ripoff? We say no, read why.</title>
-      <link>http://blog.pragmatic.ly/ripoff-asana-we-say-no-and-why-were-here</link>
+      <link>http://blog.pragmatic.ly/ripoff-asana-we-say-no-and-why-were-here.html</link>
       <description type="html">&lt;p&gt;Last week was a big milestone for us. After a two month private beta period we publicly launched &lt;a title="Lean Collaborative Project Management Tool" href="https://pragmatic.ly"&gt;Pragmatic.ly&lt;/a&gt;. Many thanks to our private beta users for their encouraging words and kind feedback which we used to improve Pragmatic.ly. Our users are always extremely important to us.&lt;/p&gt;
 
 &lt;blockquote&gt;
@@ -1031,7 +1031,7 @@
     </item>
     <item>
       <title>Hello World</title>
-      <link>http://blog.pragmatic.ly/hello-world</link>
+      <link>http://blog.pragmatic.ly/hello-world.html</link>
       <description type="html">&lt;p&gt;Today, we&amp;#39;re excited to announce the beta version of &lt;a title="Lean Collaborative Product Management Tool" href="https://pragmatic.ly"&gt;Pragmatic.ly&lt;/a&gt;, our new product to simplify the project management process.&lt;/p&gt;
 
 &lt;p&gt;Pragmatic.ly is a fast and easy to use project management tool featuring real time collaboration. For years of developing products, we have tried many different project management tools. However, as a small team(&amp;lt;= 10), we found that most of them are too complex to do lots of work about work and most of them don&amp;#39;t care about communication, histories which force us to use different tools for same purpose. We&amp;#39;re always imaging there will be a tool which will make the team focus on the work with maximum productivity. That&amp;#39;s why we created Pragmatic.ly.&lt;/p&gt;
