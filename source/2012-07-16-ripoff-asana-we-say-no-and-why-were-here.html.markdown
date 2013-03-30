@@ -1,7 +1,8 @@
 ---
 title: "Pragmatic.ly an Asana Ripoff? We say no, read why."
 date: 2012-07-16 21:21 +08:00
-tags: Productivity, Lean Product Management
+tags: Productivity, Product Design
+keywords: Productivity, Product Design, Lean Product Management
 author: dingding
 ---
 
@@ -20,6 +21,8 @@ Last week was a big milestone for us. After a two month private beta period we p
 We shared the launch news through social media platforms such as Twitter, Facebook, HackerNews, IRC, etc. Thanks to all the new users giving their feedback. All are highly appreciated!
 
 Something we're hearing in the feedback is that Pragmatic.ly is a "ripoff of Asana". We even appreciate this kind of feedback and still want to thank those people for visiting our site and spending some time trying out our product. Asana definitely is a genius product and an awesome service for group collaboration. We recommend the service to our friends a lot when they need a general task management tool. We love Asana when we saw it at first glance! If you need a general shared task list for your team, give [Asana](http://asana.com) a try and you'll love it too.
+
+READMORE
 
 But back to Pragmatic.ly - we were inspired by Asana but found it didn't work well for us in the software project management field. Shared task list is not such productive espeically for small agile teams. Developers need more! But on flip side, most of the project management services built for developers looks old and complex. We wanted to build a simple, modern tool that would make project management blissful for our developers.
 

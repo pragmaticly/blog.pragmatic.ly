@@ -1,7 +1,8 @@
 ---
 title: Improving Ticket Interactive
 date: 2012-12-10 19:00 +08:00
-tags: Ticket Management, UI, Lean Product Management, ChangeLog
+tags: Ticket Management, UI, ChangeLog
+keywords: Ticket Management, UI/UX, Lean Product Management, ChangeLog
 author: ben
 ---
 

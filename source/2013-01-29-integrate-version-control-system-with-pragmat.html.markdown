@@ -1,7 +1,8 @@
 ---
 title: Introducing VCS integration with Pragmatic.ly
 date: 2013-01-29 10:00 +08:00
-tags: VCS, Lean Product Management, Integration
+tags: VCS, Integration, Git
+keywords: VCS, Lean Product Management, Integration, Git
 author: terry
 ---
 

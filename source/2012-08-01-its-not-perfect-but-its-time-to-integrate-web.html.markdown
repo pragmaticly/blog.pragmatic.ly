@@ -2,6 +2,7 @@
 title: "It's not perfect but it's time to integrate web notifications"
 date: 2012-08-01 20:00 +08:00
 tags: html5 notification, JavaScript, web notification
+keywords: html5 notification, JavaScript, web notification
 author: dingding
 ---
 

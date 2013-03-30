@@ -2,6 +2,7 @@
 title: "Improving the usability on tickets readability and team collaboration"
 date: 2013-01-17 00:00 +00:00
 tags: UI, Ticket Management, Usability
+keywords: UI/UX, Ticket Management, Usability
 author: dingding
 ---
 

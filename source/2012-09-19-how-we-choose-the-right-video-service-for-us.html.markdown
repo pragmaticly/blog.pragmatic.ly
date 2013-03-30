@@ -2,6 +2,7 @@
 title: "Video matters! But which hosting service to use?"
 date: 2012-09-19 05:00 +08:00
 tags: marketing, video service
+keywords: marketing, video service
 author: terry
 ---
 

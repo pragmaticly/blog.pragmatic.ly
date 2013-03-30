@@ -1,7 +1,8 @@
 ---
 title: Showing up Due Date
 date: 2012-09-24 08:00 +08:00
-tags: Announcement, Lean Product Management Tool, ChangeLog, UI
+tags: Announcement, ChangeLog, UI
+keywords: Lean Product Management Tool, ChangeLog, UI/UX
 author: ben
 ---
 

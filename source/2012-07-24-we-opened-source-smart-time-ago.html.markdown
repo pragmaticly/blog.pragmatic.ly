@@ -2,6 +2,7 @@
 title: "Announcing Smart Time Ago"
 date: 2012-07-24 02:00 +08:00
 tags: open source, JavaScript, jQuery, smart-time-ago
+keywords: open source, JavaScript, jQuery, smart-time-ago
 author: terry
 ---
 

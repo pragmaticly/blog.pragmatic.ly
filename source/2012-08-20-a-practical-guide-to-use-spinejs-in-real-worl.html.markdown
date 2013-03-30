@@ -2,6 +2,7 @@
 title: "A Practical Guide to Use Spine.JS in Real World App"
 date: 2012-08-20 04:00 +08:00
 tags: SpineJS, JavaScript MVC, JavaScript, Spine
+keywords: SpineJS, JavaScript MVC, JavaScript, Spine
 author: dingding
 ---
 

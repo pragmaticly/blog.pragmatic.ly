@@ -2,6 +2,7 @@
 title: "Announcing mails_viewer - easiest way to test mails in Rails app"
 date: 2012-09-20 06:30 +08:00
 tags: open source, rails, mail, engine
+keywords: open source, rails, mail, engine
 author: dingding
 ---
 

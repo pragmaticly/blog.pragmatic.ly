@@ -2,6 +2,7 @@
 title: "Pragmatic.ly team on RubyConf China 2012"
 date: 2012-12-27 16:00 +08:00
 tags: RubyConfChina, Ruby, Event
+keywords: RubyConfChina, Ruby, Event
 author: terry
 ---
 
