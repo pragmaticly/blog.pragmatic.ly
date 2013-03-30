@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="zh"><![endif]-->
-<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="zh"><![endif]-->
-<!--[if IE 8]><html class="no-js lt-ie9" lang="zh"><![endif]-->
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en"><![endif]-->
 <!--[if gt IE 8]<!-->
 <html class="no-js" lang="zh">
   <!--<![endif]-->
@@ -9,12 +9,12 @@
     <meta charset="UTF-8">
 
     <title>
-      Teahour.fm
+      Pragmatic.ly Blog
     </title>
 
-    <meta name="description" content="The chinese tech podcast focusing on programming, entrepreneurship and other geeky topics.">
-    <meta name="keywords" content="chinese tech podcast,web design and development,mobile design and development,startup, entrepreneurship">
-    <meta name="author" content="Dingding Ye">
+    <meta name="description" content="The voice of The Pragmatic.ly Team sharing Nes, Thoughts & Fun.">
+    <meta name="keywords" content="Lean Product Management,Project Management Tool,Project Management Service,Group Collaboration">
+    <meta name="author" content="The Pragmatic.ly Team">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta http-equiv="cleartype" content="on">
@@ -30,12 +30,17 @@
 
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png">
     <link rel="shortcut icon" sizes="16x16" href="/favicon.ico">
-    <link rel="alternate" type="application/rss+xml" title="Teahour.fm Feed" href="/feed.xml" />
+    <link rel="alternate" type="application/rss+xml" title="Pragmatic.ly Blog Feed" href="/feed.xml" />
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 
-<link href="/stylesheets/application.css?1362979774" media="screen" rel="stylesheet" type="text/css" />    <script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script>
-    <script src="/javascripts/application.js?1363600969" type="text/javascript"></script>
+    <link href="/stylesheets/application.css?1364632829" media="screen" rel="stylesheet" type="text/css" />
+    <script src="/javascripts/application.js?1364632828" type="text/javascript"></script>
+
+    <script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script>
     <script type="text/javascript">var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-38660023-1']);
+      _gaq.push(['_setAccount', 'UA-4054156-1']);
       _gaq.push(['_trackPageview']);
       (function() {
         var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
@@ -45,96 +50,294 @@
   </head>
 
   <body class="index">
+    <header id="header">
+      <div class="container">
+        <a href="/" class="logo">Pragmatic.ly Blog</a>
 
-    <header class="masthead">
-      <hgroup>
-        <h1>Teahour.fm</h1>
-        <h2 class="tagline">Tea hour for geek's mind.</h2>
-      </hgroup>
-
-      <ul class="participants">
-          <li class="guest clock7">
-    <a href="http://kaverjody.com/" target="_blank"><img src="/images/kaverjody.png"/></a>
-  </li>
-  <li class="host clock6">
-    <a href="http://yedingding.com" target="_blank"><img src="/images/yedingding.png"/></a>
-  </li>
-  
-  <li class="guest clock5">
-    <a href="http://terrytai.com" target="_blank"><img src="/images/terry.png"/></a>
-  </li>
-  
-
-      </ul>
+        <ul class="top-nav">
+          <li><a href="https://pragmatic.ly/tour">Tour</a></li>
+          <li><a href="https://pragmatic.ly/signup">Sign Up</a></li>
+          <li><a href="https://pragmatic.ly/login">Login</a></li>
+        </ul>
+      </div>
     </header>
 
     <section class="main">
+      <div class="container">
+        <div id="posts">
+  
+    <article class="post">
+      <header>
+  <h2 class="title">
+    <a href="/integrate-version-control-system-with-pragmat/">Introducing VCS integration with Pragmatic.ly</a>
+  </h2>
+</header>
+
+<aside>
+  <ul class="meta">
+    <li class="date">
+      Jan 29, 2013
+    </li>
+    <li class="author">
+     by <a href="https://pragmatic.ly/about">Terry Tai</a>
+    </li>
+    <li class="tags">
       
-  <article class="post">
-    
-
-<div class="player">
-  <audio controls name="media">
-    <source src="http://screencasts.b0.upaiyun.com/podcasts/teahour_podcast_7.m4a" type="audio/mpeg">
-  </audio>
-
-  <ul class="actions">
-    <li><a href="http://screencasts.b0.upaiyun.com/podcasts/teahour_podcast_7.m4a"><i class="icons-download"></i></a></li>
-    <li><a href=""><i class="icons-share" data-url="/2013/03/16/agile-and-scrum-with-xuyi.html" data-title="你应该知道的 Agile 和 Scrum"></i></a></li>
+        <a href="/tags/vcs/">VCS</a>
+      
+        <a href="/tags/integration/">Integration</a>
+      
+        <a href="/tags/git/">Git</a>
+      
+    </li>
   </ul>
+</aside>
+
+<div class="content">
+  <p>Today, we&#39;re glad to introduce our new <a href="http://en.wikipedia.org/wiki/Revision_control">VCS</a>(Version Control System) integration with Pragmatic.ly to the public. We have released this feature to some of our users in last two months and glad to hear how they love it. I&#39;m sure you&#39;ll love the feature too!</p>
+
+<p><a href="https://pragmatic.ly">Pragmatic.ly</a> is a lean collaborative project management tool featuring real time collaboration. We design the tool to be developer friendly and hope to help startup teams deliver better products, easier and faster. Developers like us work with VCS such as Git or SVN every day. The new VCS integration can deeply integrate with your current development process and improve your team productivity.</p>
+
+<p>With VCS integrated into Pragmatic.ly, all the commits related to a ticket will be auto associated with that ticket and the commit message will be displayed in the activity timeline. As a result, your team will know the status update about that ticket immediately and go for a review if they want. It&#39;s a big benefit to code collobration. What&#39;s more, you can manipulate the status of tickets within your projects directly from the commit messages. There is no need to interrupt your work and visit Pragmatic.ly to mark the ticket as Completed or Accepted. Instead, let the commit message do the work!</p>
+
+<p>Feel free to try this feature by signing up at <a href="https://pragmatic.ly">pragmatic.ly</a>.</p>
+
+<p><img alt="VCS Integration" width="507" height="512" src="/images/integrate-version-control-system-with-pragmat/vcs-integration.png?1364632825" /></p>
+
+<p>So far, we have already supported three VCS services: <a href="https://github.com">GitHub</a>, <a href="https://bitbucket.org">BitBucket</a> and <a href="http://gitlab.org">Gitlab</a>. And more are coming. Let us know if the VCS you&#39;re using now is not in the list and you want to see it soon!</p>
+
+
+  <p>
+    ......
+  </p>
+  <p>
+    <a href="#">Read more →</a>
+  </p>
 </div>
 
-<h2 class="title">
-  <small>#7 released on 03/16/2013</small>
-  你应该知道的 Agile 和 Scrum
-</h2>
+    </article>
+  
+    <article class="post">
+      <header>
+  <h2 class="title">
+    <a href="/improving-the-usability-on-tickets-readabilit/">Improving the usability on tickets readability and team collaboration</a>
+  </h2>
+</header>
 
-<dl>
-  <dt>Host:</dt><dd> Dingding Ye</dd>
-  <dt>Guests:</dt><dd> 徐毅 (kaverjody), Terry Tai</dd>
-  <dt>Topic:</dt><dd> agile, scrum</dd>
-</dl>
-
-<h4>Show Notes:</h4>
-<div>
-  <p>本期由 <a href="http://yedingding.com">Dingding Ye</a> 主持，参与嘉宾有 <a href="http://kaverjody.com">徐毅</a> 和 <a href="http://terrytail.com">Terry Tai</a>。徐毅老师目前是 Nokia 公司的敏捷和精益教练，专长于大型组织(&gt;500人)的敏捷迁徙转变，著有译本 <a href="http://book.douban.com/subject/4803982/">团队之美</a>，<a href="http://book.douban.com/subject/10484469/">管理 3.0</a> 和 <a href="http://book.douban.com/subject/20507350/">Scrum 要素</a>，目前正在写作一本敏捷测试相关的书 <a href="http://www.ituring.com.cn/book/895">大测大悟</a>。本期徐毅老师到 Teahour，跟我们一起分享了他在敏捷实践，Scrum实践以及敏捷测试上的一些心得和经验。</p>
-
-<p>徐毅老师的一些联系方式:</p>
-
-<ul>
-  <li><a href="http://weibo.com/17376122">Weibo</a></li>
-  <li><a href="http://twitter.com/kaverjody">Twitter</a></li>
-  <li><a href="https://www.linkedin.com/in/kaveri">LinkedIn</a></li>
-</ul>
-
-<section class="notes">
-  <ul>
-    <li><a href="https://pragmatic.ly">Pragmatic.ly</a></li>
-    <li><a href="http://scrum.kaverjody.com/">Scrum 要素</a></li>
-    <li><a href="http://agilemanifesto.org/">敏捷宣言</a></li>
-    <li><a href="http://agilemanifesto.org/iso/zhchs/">敏捷宣言中文版</a></li>
-    <li><a href="http://scrum.org">The Home of Scrum</a></li>
-    <li><a href="http://www.extremeprogramming.org/">XP</a></li>
-    <li><a href="http://cb.hbsp.harvard.edu/cb/web/product_detail.seam;jsessionid=8D8BACDD4CC4F2F87B3CD58D2ED10332?R=86116-PDF-ENG&amp;conversationId=22181&amp;E=48834">IT 新产品开发游戏</a></li>
-    <li><a href="http://www.institute.nhs.uk/quality_and_service_improvement_tools/quality_and_service_improvement_tools/plan_do_study_act.html">PDSA: Plan, Do, Studay, Act</a></li>
-    <li><a href="http://scrumalliance.org/">Scrum Alliance</a></li>
-    <li><a href="https://www.scrum.org/Portals/0/Documents/Scrum%20Guides/Scrum%20Guide%20-%20CN.pdf">Scrum 指南</a></li>
-    <li><a href="http://en.wikipedia.org/wiki/Kanban_(development)">Kanban</a></li>
-    <li><a href="http://www.agiletestingdays.com/">Agile Testing Day</a></li>
-    <li><a href="http://skillsmatter.com/course/agile-testing/practical-agile-testing-janet-gregory">Practical Agile Testing with Janet Gregory</a></li>
-    <li><a href="http://www.amazon.com/Agile-Testing-Practical-Guide-Testers/dp/0321534468">Agile Testing</a></li>
-    <li><a href="http://pragprog.com/book/pad/practices-of-an-agile-developer">Practices of an Agile Developer</a></li>
-    <li><a href="http://pragprog.com/book/ehxta/explore-it">Explore It!</a></li>
+<aside>
+  <ul class="meta">
+    <li class="date">
+      Jan 17, 2013
+    </li>
+    <li class="author">
+     by <a href="https://pragmatic.ly/about">Dingding Ye</a>
+    </li>
+    <li class="tags">
+      
+        <a href="/tags/ui/">UI</a>
+      
+        <a href="/tags/ticket-management/">Ticket Management</a>
+      
+        <a href="/tags/usability/">Usability</a>
+      
+    </li>
   </ul>
-</section>
+</aside>
 
+<div class="content">
+  <p>Steve Krug&#39;s instant classic book &ldquo;<a href="http://www.amazon.com/Dont-Make-Me-Think-Usability/dp/0321344758">Don&#39;t Make Me Think</a>&rdquo; is one of our favorite design books. Simplicity and usability is our lifetime of pursuit on products design. With regard to single page application like <a href="https://pragmatic.ly">Pragmatic.ly</a>, balancing the complexity of features with the simplicity of design is indeed difficult, but we&#39;re keep iterating. Here&#39;re some improvements to the ticket details.</p>
+
+<h3>Markdown Supported</h3>
+
+<p>Last week is a sad week for IT world. One of the top talented internet genius <a href="http://en.wikipedia.org/wiki/Aaron_Swartz">Aaron Swartz</a> left us at 26. R.I.P Aaron Swartz! However, Aaron&#39;s contributions to the world will live forever. One of them is <a href="http://en.wikipedia.org/wiki/Markdown">Markdown</a>, a lightweight markup language designed for easy-to-read and easy-to-write.</p>
+
+
+  <p>
+    ......
+  </p>
+  <p>
+    <a href="#">Read more →</a>
+  </p>
 </div>
 
-  </article>
+    </article>
+  
+    <article class="post">
+      <header>
+  <h2 class="title">
+    <a href="/the-improvement-of-archive-iteration/">The improvement of 'Archive Iteration'</a>
+  </h2>
+</header>
+
+<aside>
+  <ul class="meta">
+    <li class="date">
+      Jan 12, 2013
+    </li>
+    <li class="author">
+     by <a href="https://pragmatic.ly/about">Terry Tai</a>
+    </li>
+    <li class="tags">
+      
+        <a href="/tags/changelog/">ChangeLog</a>
+      
+        <a href="/tags/iterations/">Iterations</a>
+      
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <h3>Background of &#39;Archive Iteration&#39; function</h3>
+
+<p>We have released the &#39;Archive Iteration&#39; feature for some time.  This is a very useful feature if you use iterations the way like us. We create individual iteration for each week, and put the things we will work on in the corresponding iteration.</p>
+
+<p>But with time growing, the Iteration List becomes longer and longer. And most cases the old iterations are not important any more and no need always display them in the Iteration list, that&#39;s why &#39;Archive Iteration&#39; feature born.</p>
+
+<h3>How to archive Iteration</h3>
+
+<p>First you just need click the iteration name which you want to archive on the left sidebar.</p>
+
+<p><img alt="Click Iteration" width="241" height="223" src="/images/the-improvement-of-archive-iteration/click-iteration.png?1364632825" /></p>
+
+<p>Then click the toothed icon at the right sidebar and you will see the &#39;Archive&#39; button. After clicking it, this iteration with  tickets in it will all be archived. A archived iteration with its tickets will all be hidden from your work space by default for reducing the interference to your current work.</p>
+
+
+  <p>
+    ......
+  </p>
+  <p>
+    <a href="#">Read more →</a>
+  </p>
+</div>
+
+    </article>
+  
+    <article class="post">
+      <header>
+  <h2 class="title">
+    <a href="/the-presentations-we-made-on-rubyconfchina-20/">Pragmatic.ly team on RubyConf China 2012</a>
+  </h2>
+</header>
+
+<aside>
+  <ul class="meta">
+    <li class="date">
+      Dec 27, 2012
+    </li>
+    <li class="author">
+     by <a href="https://pragmatic.ly/about">Terry Tai</a>
+    </li>
+    <li class="tags">
+      
+        <a href="/tags/rubyconfchina/">RubyConfChina</a>
+      
+        <a href="/tags/ruby/">Ruby</a>
+      
+        <a href="/tags/event/">Event</a>
+      
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <p>Last month the <a href="https://pragmatic.ly">Pragmatic.ly</a> team attent the <a href="http://rubyconfchina.org">RubyConfChina 2012</a> and we really had a great time there with the ruby developers came from China and also across the world.</p>
+
+<p>The conference is very good. It&#39;s also the big party of rubyist. Everyone enjoyed that much. Thanks to the organizers!</p>
+
+<p>We are very honored to present two talks on this event to share our experience in our work. And we&#39;re very happy people love the talks very much.</p>
+
+<p>Below are the two talks we present. Check them out!</p>
+
+<h3>Real Time Web by Dingding Ye</h3>
+
+<p>Dingding gave a brief introduction on real time web at the conference. As you know, <a href="https://pragmatic.ly">Pragmatic.ly</a> is a project management tool featuring real time collaboration. Dingding spends latest three years on real time web products. In his talk, Dingding explains different solutions of making web real time and how to choose the right solution based on the different requirements. You can watch the talk <a href="http://railscast-china.com/episodes/rubyconf-2012-yedingding">here</a>.</p>
+
+
+  <p>
+    ......
+  </p>
+  <p>
+    <a href="#">Read more →</a>
+  </p>
+</div>
+
+    </article>
+  
+    <article class="post">
+      <header>
+  <h2 class="title">
+    <a href="/improving-ticket-interactive/">Improving Ticket Interactive</a>
+  </h2>
+</header>
+
+<aside>
+  <ul class="meta">
+    <li class="date">
+      Dec 10, 2012
+    </li>
+    <li class="author">
+     by <a href="https://pragmatic.ly/about">Ben He</a>
+    </li>
+    <li class="tags">
+      
+        <a href="/tags/ticket-management/">Ticket Management</a>
+      
+        <a href="/tags/ui/">UI</a>
+      
+        <a href="/tags/changelog/">ChangeLog</a>
+      
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <h3>Improve the stability of ticket item in the list</h3>
+
+<p>Users informed us that the ticket list in the center column was unstable, and we were rushing into this problem immediately.</p>
+
+<p>As shown in the screenshot, we found the old list item was a interactive savage, from left to right:</p>
+
+<ol>
+<li>The ticket number will change into movable knob when hovered.</li>
+<li>The ticket status could be clicked to switch into the next.</li>
+<li>The assignee was shown as a link.</li>
+<li>The ticket title was editable when focused.</li>
+<li>The tags would be a ticket filters immediately.</li>
+<li>The little right pointer had an onhover state.</li>
+</ol>
+
+<p><img alt="Old Ticket Interactive" width="500" height="185" src="/images/improving-ticket-interactive/old-ticket-interactive.jpg?1364632825" /></p>
+
+<p>This is quite a burden to users, we&#39;d relieve it as soon as possible.</p>
+
+<p>Though the UI looks same as before, the current list item goes like this:</p>
+
+
+  <p>
+    ......
+  </p>
+  <p>
+    <a href="#">Read more →</a>
+  </p>
+</div>
+
+    </article>
+  
+  
+  
+    <ul class="pager">
+      
+      
+        <li class="next"><a href="/page/2/">Older &rarr;</a></li>
+      
+    </ul>
+  
+</div>
 
 <script type="text/javascript">
   /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-  var disqus_shortname = 'teahourfm'; // required: replace example with your forum shortname
+  var disqus_shortname = 'pragmaticlyblog'; // required: replace example with your forum shortname
 
   /* * * DON'T EDIT BELOW THIS LINE * * */
   (function () {
@@ -145,131 +348,40 @@
   }());
 </script>
 
+      </div>
     </section>
 
-    <nav>
-        <ul class="page-nav">
-    <li><a href="/2013/03/11/git-github-and-gitlab.html" class="prev"><i class="icon-angle-left"></i></a></li>
-    <li><a href="#" class="next disabled"><i class="icon-angle-right"></i></a></li>
-  </ul>
+    <footer id="footer">
+      <div class="container">
+        <section id="blog-info">
+          <div class="block about">
+            <h5>ABOUT</h5>
+            <p>Pragmatic.ly is a lean collaborative project management tool which help you make better products, easier. <a href="https://pragmatic.ly/" class="cta">Learn more →</a></p>
+          </div>
+          <div class="block authors">
+            <h5>AUTHORS</h5>
+            <ul class="contribs">
+              <li><a href="#"><img src="/images/dingdingye.png" width="20px"> Dingding Ye</a></li>
+              <li><a href="#"><img src="/images/terrytai.png" width="20px"> Terry Tai</a></li>
+              <li><a href="#"><img src="/images/binhe.png" width="20px"> Bin He</a></li>
+            </ul>
+          </div>
+          <div class="block follow">
+            <h5>FOLLOW US</h5>
+            <ul class="social-buttons">
+              <li><a href="http://feeds.feedburner.com/pragmaticly" class="social-rss">RSS</a></li>
+              <li><a href="https://twitter.com/pragmatic_ly" class="social-twitter">Twitter</a></li>
+              <li><a href="https://facebook.com/pragmaticly" class="social-facebook">Facebook</a></li>
+              <li><a href="https://plus.google.com/109049203627299997967" class="social-google">Google+</a></li>
+            </ul>
+          </div>
 
-    </nav>
+          <p class="copy">&copy; 2012-2013 Pragmatic.ly.</p>
+        </section>
 
-    <footer class="footer">
-      <div class="global-nav">
-        <ul class="social-connect">
-        <li><a href="//itunes.apple.com/cn/podcast/teahour.fm/id608387170?l=en"><i class="icons-podcast"></i></a></li>
-        <li><a href="/feed.xml"><i class="icons-rss"></i></a></li>
-        <li class="dropdown dropup" id="newsletter">
-          <a href="#newsletter" class="dropdown-toggle" data-toggle="dropdown"><i class="icons-email"></i></a>
-          <ul class="dropdown-menu" role="menu" aria-labelledby="Newsletter">
-            <li>
-              <form action="http://pragmatic.us5.list-manage1.com/subscribe/post?u=73dd7c7fe45b53ba8e6ca952d&amp;id=2bcf4ff1fe" method="post" class="validate form-inline" target="_blank" novalidate style="margin-bottom:0">
-                <label for="email">We're not going to spam but inspire you :)</label>
-                <input type="email" value="" name="EMAIL" class="email input-large" placeholder="Email" id="email" required>
-                <input type="submit" value="Subscribe" name="subscribe" class="btn btn-small btn-success">
-              </form>
-            </li>
-           </ul>
-        </li>
-
-        <li><a href="https://github.com/pragmaticly/teahour.fm"><i class="icons-github"></i></a></li>
-      </ul>
-
-        <ul class="nav">
-        <li class="dropdown dropup" id="episodes">
-          <a href="#episodes" class="dropdown-toggle" data-toggle="dropdown">Episodes</a>
-          <ul class="dropdown-menu" role="menu" aria-labelledby="Episodes">
-            
-            
-              
-              <li class="active">
-                <a href="/2013/03/16/agile-and-scrum-with-xuyi.html">#7 你应该知道的 Agile 和 Scrum</a>
-              </li>
-              
-            
-              
-              <li>
-                <a href="/2013/03/11/git-github-and-gitlab.html">#6 Git, GitHub and GitLab</a>
-              </li>
-              
-            
-              
-              <li>
-                <a href="/2013/03/05/hardware-for-developers.html">#5 Hardware for developers</a>
-              </li>
-              
-            
-              
-              <li>
-                <a href="/2013/02/19/interview-with-ashchan-on-mobile-development.html">#4 Interview with Ashchan on app development</a>
-              </li>
-              
-            
-              
-              <li>
-                <a href="/2013/02/09/personal-growth-by-xdite.html">#3 Interview with xdite on personal growth</a>
-              </li>
-              
-            
-              
-              <li>
-                <a href="/2013/02/03/learning-ruby-and-rails.html">#2 How to Learning Ruby and Rails</a>
-              </li>
-              
-            
-              
-              <li>
-                <a href="/2013/01/19/1st_beginning.html">#1 The beginning of Teahour.fm show</a>
-              </li>
-              
-            
-          </ul>
-        </li>
-        <li class="dropdown dropup" id="about">
-          <a href="#about" class="dropdown-toggle" data-toggle="dropdown">About</a>
-          <ul class="dropdown-menu" role="menu" aria-labelledby="About">
-            <li>
-              <h4>Teahour.fm</h4>
-              <p>
-                Teahour.fm 由 Terry Tai，Dingding Ye, Daniel Lv 和 Kevin Wang 主持，会专注程序员感兴趣的话题，包括 Web 设计和开发，移动应用设计和开发，创业以及一切 Geek 的话题。
-              </p>
-              <h5>We also talk on:</h5>
-              <ul class="social-buttons">
-                <li><a href="//twitter.com/teahourfm" class="social-twitter"><i class="icons-twitter"></i> Twitter</a></li>
-                <li><a href="//facebook.com/teahourfm" class="social-facebook"><i class="icons-facebook"></i> Facebook</a></li>
-                <li><a href="//weibo.com/teahourfm" class="social-weibo"><i class="icons-weibo"></i> Weibo</a></li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <!-- <li>
-          <a href="#">Category</a>
-        </li>
-        <li>
-          <a href="#">Search</a>
-        </li> -->
-      </ul>
-      </div>
-
-      <p class="copyright">
-        &copy; 2013 Teahour.fm <a href="//creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a>
-        <br />
-        Site built by <a href="//Pragmatic.ly" target="_blank" class="vendor">Pragmatic.ly</a>,
-        Logo by <a href="//weibo.com/u/1766991917" target="_blank" class="vendor">Alaia Liu</a>
-      </p>
+      </div><!-- .wrapper -->
     </footer>
 
-    <!-- topics
-      <span class="tag">Web</span>,
-      <span class="tag">Mobile</span>,
-      <span class="tag">Programming</span>,
-      <span class="tag">Entreprenurship</span>,
-      <span class="tag">Geeky</span>
-     -->
-
-    <script src="/javascripts/main.js?1363600965" type="text/javascript"></script>
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5123d9651f2e6f1f"></script>
     
   </body>
 </html>

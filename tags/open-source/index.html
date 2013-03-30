@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]<!-->
+<html class="no-js" lang="zh">
+  <!--<![endif]-->
+  <head>
+    <meta charset="UTF-8">
+
+    <title>
+      Pragmatic.ly Blog
+    </title>
+
+    <meta name="description" content="The voice of The Pragmatic.ly Team sharing Nes, Thoughts & Fun.">
+    <meta name="keywords" content="Lean Product Management,Project Management Tool,Project Management Service,Group Collaboration">
+    <meta name="author" content="The Pragmatic.ly Team">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="cleartype" content="on">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="apple-touch-icon-precomposed" type="image/png" sizes="57x57" href="/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" type="image/png" sizes="72x72" href="/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" type="image/png" sizes="114x114" href="/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" type="image/png" href="/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" type="image/png" href="/apple-touch-icon.png">
+
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png">
+    <link rel="shortcut icon" sizes="16x16" href="/favicon.ico">
+    <link rel="alternate" type="application/rss+xml" title="Pragmatic.ly Blog Feed" href="/feed.xml" />
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link href="/stylesheets/application.css?1364632829" media="screen" rel="stylesheet" type="text/css" />
+    <script src="/javascripts/application.js?1364632828" type="text/javascript"></script>
+
+    <script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script>
+    <script type="text/javascript">var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-4054156-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();</script>
+  </head>
+
+  <body class="tags tags_open-source tags_open-source_index">
+    <header id="header">
+      <div class="container">
+        <a href="/" class="logo">Pragmatic.ly Blog</a>
+
+        <ul class="top-nav">
+          <li><a href="https://pragmatic.ly/tour">Tour</a></li>
+          <li><a href="https://pragmatic.ly/signup">Sign Up</a></li>
+          <li><a href="https://pragmatic.ly/login">Login</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <section class="main">
+      <div class="container">
+        <h1 class="tag-page-title">Articles tagged '<em>open source</em>'</h1>
+
+<div id="posts">
+  
+    <article class="post">
+      <header>
+  <h2 class="title">
+    <a href="/announcing-mailsviewer-a-rails-engine-to-view/">Announcing mails_viewer - easiest way to test mails in Rails app</a>
+  </h2>
+</header>
+
+<aside>
+  <ul class="meta">
+    <li class="date">
+      Sep 20, 2012
+    </li>
+    <li class="author">
+     by <a href="https://pragmatic.ly/about">Dingding Ye</a>
+    </li>
+    <li class="tags">
+      
+        <a href="/tags/open-source/">open source</a>
+      
+        <a href="/tags/rails/">rails</a>
+      
+        <a href="/tags/mail/">mail</a>
+      
+        <a href="/tags/engine/">engine</a>
+      
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <p><em>Q:</em> &ldquo;I implemented the mail template but how can I preview the mail in my machine?&rdquo;</p>
+
+<p><em>Q:</em> &ldquo;I&#39;m running out of emails to test the signup on staging server. Do you have more?&rdquo;</p>
+
+<p><em>Q:</em> &ldquo;I accidently sent the mail to <a href="mailto:test@example.com">test@example.com</a>. I thought the email adress doesn&#39;t exist!&rdquo;</p>
+
+<p>Familiar? I have been asked many times of those questions these years. The requiremeent is simple. Write mailer model, send mail and then verify every part works as expected. But when we&#39;re in non-production environment, either development machine or staging server, it&#39;s always painful to test mails. Put simple, we just want:</p>
+
+<ul>
+<li>To preview all the sent mails easily</li>
+<li>To browse the mails easily, for everyone in the team.</li>
+<li>To allow conditioned mails to real sent out.</li>
+</ul>
+
+<p>We feel the same pain at <a href="https://pragmatic.ly">Pragmatic.ly</a> and that&#39;s why we built <a href="https://github.com/pragmaticly/mails_viewer">mails_viewer</a>, a mails preview Engine which provides a table view for all mails under tmp/mails. It&#39;s a fork of tomlion&#39;s <a href="https://github.com/tomlion/mails_viewer">original code</a> and I&#39;m glad to be the maintainer. Thanks for tomlion for getting this thing started!</p>
+
+
+  <p>
+    ......
+  </p>
+  <p>
+    <a href="#">Read more →</a>
+  </p>
+</div>
+
+    </article>
+  
+    <article class="post">
+      <header>
+  <h2 class="title">
+    <a href="/we-opened-source-smart-time-ago/">Announcing Smart Time Ago</a>
+  </h2>
+</header>
+
+<aside>
+  <ul class="meta">
+    <li class="date">
+      Jul 24, 2012
+    </li>
+    <li class="author">
+     by <a href="https://pragmatic.ly/about">Terry Tai</a>
+    </li>
+    <li class="tags">
+      
+        <a href="/tags/open-source/">open source</a>
+      
+        <a href="/tags/javascript/">JavaScript</a>
+      
+        <a href="/tags/jquery/">jQuery</a>
+      
+        <a href="/tags/smart-time-ago/">smart-time-ago</a>
+      
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <p>The relative timestamps like &ldquo;5 minutes ago&rdquo; are more and more used in web applications. So web frameworks like <a href="http://rubyonrails.com">Ruby on Rails</a> have a builtin helper method to change timestamps to relative timestamps easily on server side as following,</p>
+<div class="highlight"><pre><span class="n">time_ago_in_words</span><span class="p">(</span><span class="n">item</span><span class="o">.</span><span class="n">created_at</span><span class="p">)</span>
+</pre></div>
+<p>But If you use relative timestamps, you should update them on the client side to make sure the users always seeing the correct relative timestamps. And there is already an awesome library to do this job, which is <a href="http://timeago.yarp.com/">Timeago</a>. Thanks to Yarp.com, the author of Timeago.</p>
+
+<p>However, after trying the library in depth, we found that it doesn&#39;t fit well in <a href="https://pragmatic.ly">Pragmatic.ly</a>. As a real time single-page application, our users may not refresh the page for days, so refreshing the relative timestamps per minute is meaningless and wasteful.</p>
+
+
+  <p>
+    ......
+  </p>
+  <p>
+    <a href="#">Read more →</a>
+  </p>
+</div>
+
+    </article>
+  
+  
+  
+    <ul class="pager">
+      
+      
+    </ul>
+  
+</div>
+
+      </div>
+    </section>
+
+    <footer id="footer">
+      <div class="container">
+        <section id="blog-info">
+          <div class="block about">
+            <h5>ABOUT</h5>
+            <p>Pragmatic.ly is a lean collaborative project management tool which help you make better products, easier. <a href="https://pragmatic.ly/" class="cta">Learn more →</a></p>
+          </div>
+          <div class="block authors">
+            <h5>AUTHORS</h5>
+            <ul class="contribs">
+              <li><a href="#"><img src="/images/dingdingye.png" width="20px"> Dingding Ye</a></li>
+              <li><a href="#"><img src="/images/terrytai.png" width="20px"> Terry Tai</a></li>
+              <li><a href="#"><img src="/images/binhe.png" width="20px"> Bin He</a></li>
+            </ul>
+          </div>
+          <div class="block follow">
+            <h5>FOLLOW US</h5>
+            <ul class="social-buttons">
+              <li><a href="http://feeds.feedburner.com/pragmaticly" class="social-rss">RSS</a></li>
+              <li><a href="https://twitter.com/pragmatic_ly" class="social-twitter">Twitter</a></li>
+              <li><a href="https://facebook.com/pragmaticly" class="social-facebook">Facebook</a></li>
+              <li><a href="https://plus.google.com/109049203627299997967" class="social-google">Google+</a></li>
+            </ul>
+          </div>
+
+          <p class="copy">&copy; 2012-2013 Pragmatic.ly.</p>
+        </section>
+
+      </div><!-- .wrapper -->
+    </footer>
+
+    
+  </body>
+</html>

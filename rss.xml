@@ -1,0 +1,1055 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <id>http://blog.pragmatic.ly</id>
+    <title>Pragmatic.ly Blog</title>
+    <link>http://blog.pragmatic.ly</link>
+    <language>en-us</language>
+    <copyright>&amp;#x2117; &amp;amp; &amp;#xA9; 2012-2013 Pragmatic.ly</copyright>
+    <link href="http://blog.pragmatic.ly/"/>
+    <link href="http://blog.pragmatic.ly/feed.xml" rel="self"/>
+    <updated>2013-01-29T02:00:00Z</updated>
+    <lastBuildDate>2013-01-29T02:00:00Z</lastBuildDate>
+    <pubDate>2013-01-29T02:00:00Z</pubDate>
+    <description>The voice of The Pragmatic.ly Team sharing Nes, Thoughts &amp; Fun.</description>
+    <author>
+      <name>The Pragmatic.ly Team</name>
+    </author>
+    <item>
+      <title>Introducing VCS integration with Pragmatic.ly</title>
+      <link>http://blog.pragmatic.ly/integrate-version-control-system-with-pragmat/</link>
+      <description type="html">&lt;p&gt;Today, we&amp;#39;re glad to introduce our new &lt;a href="http://en.wikipedia.org/wiki/Revision_control"&gt;VCS&lt;/a&gt;(Version Control System) integration with Pragmatic.ly to the public. We have released this feature to some of our users in last two months and glad to hear how they love it. I&amp;#39;m sure you&amp;#39;ll love the feature too!&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://pragmatic.ly"&gt;Pragmatic.ly&lt;/a&gt; is a lean collaborative project management tool featuring real time collaboration. We design the tool to be developer friendly and hope to help startup teams deliver better products, easier and faster. Developers like us work with VCS such as Git or SVN every day. The new VCS integration can deeply integrate with your current development process and improve your team productivity.&lt;/p&gt;
+
+&lt;p&gt;With VCS integrated into Pragmatic.ly, all the commits related to a ticket will be auto associated with that ticket and the commit message will be displayed in the activity timeline. As a result, your team will know the status update about that ticket immediately and go for a review if they want. It&amp;#39;s a big benefit to code collobration. What&amp;#39;s more, you can manipulate the status of tickets within your projects directly from the commit messages. There is no need to interrupt your work and visit Pragmatic.ly to mark the ticket as Completed or Accepted. Instead, let the commit message do the work!&lt;/p&gt;
+
+&lt;p&gt;Feel free to try this feature by signing up at &lt;a href="https://pragmatic.ly"&gt;pragmatic.ly&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="VCS Integration" width="507" height="512" src="/images/integrate-version-control-system-with-pragmat/vcs-integration.png?1364632825" /&gt;&lt;/p&gt;
+
+&lt;p&gt;So far, we have already supported three VCS services: &lt;a href="https://github.com"&gt;GitHub&lt;/a&gt;, &lt;a href="https://bitbucket.org"&gt;BitBucket&lt;/a&gt; and &lt;a href="http://gitlab.org"&gt;Gitlab&lt;/a&gt;. And more are coming. Let us know if the VCS you&amp;#39;re using now is not in the list and you want to see it soon!&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h3&gt;How to setup&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;First, you should make sure the user name or the email is the same with what you use in your Pragmatic.ly account. If not, you can always set the setting in the project. For example:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;config&lt;/span&gt; &lt;span class="n"&gt;user&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;name&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;Terry Tai&amp;quot;&lt;/span&gt;
+&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;config&lt;/span&gt; &lt;span class="n"&gt;user&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;email&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;terry@pragmatic.ly&amp;quot;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Get the commit hook url on your Pragmatic.ly project setting panel and copy this url to your clipboard. We will use it as the callback url latter. Only the administrators of the project can view the settings.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Project Setting" width="232" height="166" src="/images/integrate-version-control-system-with-pragmat/project-list.png?1364632825" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Edit Project" width="481" height="396" src="/images/integrate-version-control-system-with-pragmat/edit-project.png?1364632825" /&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;As said, now Pragmatic.ly supports three services: Github, Bitbucket, Gitlab. Below are the integration steps for each service.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4&gt;&lt;strong&gt;Github&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Go to your project page on Github, click the &amp;#39;Setting&amp;#39; tag of the project to go to project setting page.(If you don&amp;#39;t see this tab, it means you don&amp;#39;t have this permission. Please contact the owner of this project on Github.)&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="GitHub Project Setting" width="209" height="147" src="/images/integrate-version-control-system-with-pragmat/github-project-setting.png?1364632825" /&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Then click the &amp;#39;Service Hooks&amp;#39;, and choose the &amp;#39;WebHook URLs&amp;#39;.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Paste the url to the field and click &amp;#39;Update settings&amp;#39;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Github WebHook" width="939" height="222" src="/images/integrate-version-control-system-with-pragmat/github-webhook.png?1364632825" /&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4&gt;Bitbucket&lt;/h4&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Go to your setting page of your project on Bitbucket and click the &amp;#39;Services&amp;#39; on side bar&lt;/li&gt;
+&lt;li&gt;Choose the the &amp;#39;POST&amp;#39; from the select box and paste the URL on the url field&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Click &amp;#39;Save&amp;#39;&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="BitBucket WebHook" width="932" height="335" src="/images/integrate-version-control-system-with-pragmat/bitbucket-webhook.png?1364632825" /&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4&gt;GitLab&lt;/h4&gt;
+
+&lt;p&gt;The Gitlab configuration is the same as GitHub. So you can refer to the section how to configure GitHub.&lt;/p&gt;
+
+&lt;h3&gt;How to use&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Associate the commits with your ticket on Pragmatic.ly.&lt;/p&gt;
+
+&lt;p&gt;For example we have a ticket whose number is 529.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Ticket Example" width="472" height="42" src="/images/integrate-version-control-system-with-pragmat/ticket-example.png?1364632825" /&gt;&lt;/p&gt;
+
+&lt;p&gt;There are two ways to associate your commits with a specify ticket.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;If you prefer to implement every new feature in a new branch, you could name a branch starting with the ticket number, such as 529&lt;em&gt;regenerate&lt;/em&gt;token. Then all commits in this branch will be automatically associated with this ticket.&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;If you want to associate the commit to a ticket no matter which branch it&amp;#39;s in, you could alway include the hash tag with the ticket number such as &amp;#39;#529&amp;#39; in your commit message. For example:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;commit&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;m&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;#529 Associate the commit with ticket 529.&amp;quot;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Manipulate the status of tickets directly from the commit message.&lt;/p&gt;
+
+&lt;p&gt;You can complete or close the tickets by using commands in your commit messages. The supported commands are as follows:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;complete (&lt;em&gt;completes, completed, resolve, resolves, resolved, solve, solves, solved, fix, fixes, fixed&lt;/em&gt;) will change the status of the specified ticket to Completed.&lt;/li&gt;
+&lt;li&gt;accept (&lt;em&gt;acceptes, accepted, close, closes, closed&lt;/em&gt;) will change the status of the specified ticket to Accepted.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Here are some examples of how to use this feature.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;commit&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;m&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;Resolved #529 This will mark 529 as Completed&amp;quot;&lt;/span&gt;
+&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;comimt&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;m&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;Closed #529 This will mark 529 as Closed&amp;quot;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+
+&lt;p&gt;We hope you enjoy this new feature, as always, any feedbacks are welcome!&lt;/p&gt;
+</description>
+      <guid>tag:blog.pragmatic.ly,article.url</guid>
+      <pubDate>2013-01-29T02:00:00Z</pubDate>
+      <category>VCS, Integration, Git</category>
+    </item>
+    <item>
+      <title>Improving the usability on tickets readability and team collaboration</title>
+      <link>http://blog.pragmatic.ly/improving-the-usability-on-tickets-readabilit/</link>
+      <description type="html">&lt;p&gt;Steve Krug&amp;#39;s instant classic book &amp;ldquo;&lt;a href="http://www.amazon.com/Dont-Make-Me-Think-Usability/dp/0321344758"&gt;Don&amp;#39;t Make Me Think&lt;/a&gt;&amp;rdquo; is one of our favorite design books. Simplicity and usability is our lifetime of pursuit on products design. With regard to single page application like &lt;a href="https://pragmatic.ly"&gt;Pragmatic.ly&lt;/a&gt;, balancing the complexity of features with the simplicity of design is indeed difficult, but we&amp;#39;re keep iterating. Here&amp;#39;re some improvements to the ticket details.&lt;/p&gt;
+
+&lt;h3&gt;Markdown Supported&lt;/h3&gt;
+
+&lt;p&gt;Last week is a sad week for IT world. One of the top talented internet genius &lt;a href="http://en.wikipedia.org/wiki/Aaron_Swartz"&gt;Aaron Swartz&lt;/a&gt; left us at 26. R.I.P Aaron Swartz! However, Aaron&amp;#39;s contributions to the world will live forever. One of them is &lt;a href="http://en.wikipedia.org/wiki/Markdown"&gt;Markdown&lt;/a&gt;, a lightweight markup language designed for easy-to-read and easy-to-write.&lt;/p&gt;
+
+&lt;p&gt;Now you can write ticket description and comments with Markdown syntax. It&amp;#39;s easy to write and rendering a good format for reading, sure supporting code highlight.&lt;/p&gt;
+
+&lt;p&gt;Get to know more about the markdown syntax, John Gruber&amp;#39;s &lt;a href="http://daringfireball.net/projects/markdown/"&gt;tutorial&lt;/a&gt; is an excellent guide. And we support &lt;a href="http://github.github.com/github-flavored-markdown/"&gt;github&amp;#39;s flavored markdown&lt;/a&gt; syntax too.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Markdown Example" width="500" height="359" src="/images/improving-the-usability-on-tickets-readabilit/markdown-example.jpg?1364632825" /&gt;&lt;/p&gt;
+
+&lt;h3&gt;Ticket fields rearranged&lt;/h3&gt;
+
+&lt;p&gt;Ticket attribute fields are mainly for manageing ticket, as well as showing what&amp;#39;s current statues of ticket. So both usability and readbility is considered when we&amp;#39;re polishing the UI.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Move tags field upper, make it into ticket content section, along with ticket titile, description, they are ticket descriptive content.&lt;/li&gt;
+&lt;li&gt;Make iteration/assignee/priority/due-date fields as visual blocks which are implicit in the editable. Also we have subtle improved the editing interactive experience.&lt;/li&gt;
+&lt;li&gt;Responsive design on ticket fields. No matter when you on extended monitor, laptop or tablet, the read and update experience of ticket keeps the same because the ticket fields will be adaptive to the resolution.&lt;/li&gt;
+&lt;li&gt;Make file drop zone a bit bigger. Much easier and comfortable to drag and drop files for uploading.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img alt="Ticket Attributes" width="500" height="278" src="/images/improving-the-usability-on-tickets-readabilit/ticket-attributes.jpg?1364632825" /&gt;&lt;/p&gt;
+
+&lt;h3&gt;Full-column scroll on ticket details&lt;/h3&gt;
+
+&lt;p&gt;We turn back to full-column scroll instead of seperated scroll.&lt;/p&gt;
+
+&lt;p&gt;Within the &lt;a href="http://blog.pragmatic.ly/improving-ticket-interactive"&gt;Improving Ticket Interactive&lt;/a&gt; release, we changed the ticket detail column to a seperated, activity-only scroll. Thanks to our lovely users who give us the feedbacks on the changes and we learn more from them! What we expect is that we should be able to review ticket info while reading and posting comments. So we made them seperated. And the activity-only scroll works very good for big screen resolution.&lt;/p&gt;
+
+&lt;p&gt;However, smaller resolution like 1280x800 is not good due to the height limitation. As a result, we turn back to full-column scroll but with some extra improvements. Based on different screen resolution, the column will be smart balanced the two section of ticket information and its activities. So far it works good.&lt;/p&gt;
+
+&lt;h3&gt;Sticky comment form&lt;/h3&gt;
+
+&lt;p&gt;Now the comment form will always be sticky on the bottom. So you can always start to write comments with a single click. No scroll needed.&lt;/p&gt;
+
+&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+
+&lt;p&gt;We hope you enjoy the changes, as always, any feedbacks are welcome!&lt;/p&gt;
+</description>
+      <guid>tag:blog.pragmatic.ly,article.url</guid>
+      <pubDate>2013-01-17T00:00:00Z</pubDate>
+      <category>UI, Ticket Management, Usability</category>
+    </item>
+    <item>
+      <title>The improvement of 'Archive Iteration'</title>
+      <link>http://blog.pragmatic.ly/the-improvement-of-archive-iteration/</link>
+      <description type="html">&lt;h3&gt;Background of &amp;#39;Archive Iteration&amp;#39; function&lt;/h3&gt;
+
+&lt;p&gt;We have released the &amp;#39;Archive Iteration&amp;#39; feature for some time.  This is a very useful feature if you use iterations the way like us. We create individual iteration for each week, and put the things we will work on in the corresponding iteration.&lt;/p&gt;
+
+&lt;p&gt;But with time growing, the Iteration List becomes longer and longer. And most cases the old iterations are not important any more and no need always display them in the Iteration list, that&amp;#39;s why &amp;#39;Archive Iteration&amp;#39; feature born.&lt;/p&gt;
+
+&lt;h3&gt;How to archive Iteration&lt;/h3&gt;
+
+&lt;p&gt;First you just need click the iteration name which you want to archive on the left sidebar.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Click Iteration" width="241" height="223" src="/images/the-improvement-of-archive-iteration/click-iteration.png?1364632825" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Then click the toothed icon at the right sidebar and you will see the &amp;#39;Archive&amp;#39; button. After clicking it, this iteration with  tickets in it will all be archived. A archived iteration with its tickets will all be hidden from your work space by default for reducing the interference to your current work.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Archive Iteration" width="193" height="165" src="/images/the-improvement-of-archive-iteration/archive-iteration.png?1364632825" /&gt;&lt;/p&gt;
+
+&lt;h3&gt;How to unarchive&lt;/h3&gt;
+
+&lt;p&gt;By default the archived iterations will be hidden. To bring them  back to your work space you just need click the toothed icon at the bottom of the left sidebar. Then click the &amp;#39;Show Archived Iterations&amp;#39; item.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Manage Iterations" width="371" height="119" src="/images/the-improvement-of-archive-iteration/manage-iterations.png?1364632825" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Then you will see the archived iterations back to your Iteration List.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Archived Iterations" width="240" height="91" src="/images/the-improvement-of-archive-iteration/archived-iterations.png?1364632825" /&gt;&lt;/p&gt;
+
+&lt;p&gt;You can do what you want like a normal iterations to them.&lt;/p&gt;
+
+&lt;p&gt;The only thing you might need care about is that when tickets move into an archived iteration they will be marked as archived. In a similar way when you move the tickets out of archived iteration, they will be marked as unarchived.&lt;/p&gt;
+
+&lt;p&gt;If you want totally unarchive a whole iteration with its tickets. Just simply click the &amp;#39;Unarchive&amp;#39; like before at the right sidebar after selecting a iteration.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Unarchive Iteration" width="225" height="161" src="/images/the-improvement-of-archive-iteration/unarchive-iteration.png?1364632825" /&gt;&lt;/p&gt;
+
+&lt;p&gt;That&amp;#39;s all. Hope this function help you organize your work better.&lt;/p&gt;
+
+&lt;p&gt;If you have any questions or feedback, feel free to let us know.&lt;/p&gt;
+
+&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+
+&lt;h3&gt;About Pragmatic.ly&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href="https://pragmatic.ly"&gt;Pragmatic.ly&lt;/a&gt; is a lean collaborative project management tool aiming to help small teams make better products easier. It&amp;#39;s the ideal and elegant project management tool for tech startups.&lt;/p&gt;
+</description>
+      <guid>tag:blog.pragmatic.ly,article.url</guid>
+      <pubDate>2013-01-12T02:00:00Z</pubDate>
+      <category>ChangeLog, Iterations</category>
+    </item>
+    <item>
+      <title>Pragmatic.ly team on RubyConf China 2012</title>
+      <link>http://blog.pragmatic.ly/the-presentations-we-made-on-rubyconfchina-20/</link>
+      <description type="html">&lt;p&gt;Last month the &lt;a href="https://pragmatic.ly"&gt;Pragmatic.ly&lt;/a&gt; team attent the &lt;a href="http://rubyconfchina.org"&gt;RubyConfChina 2012&lt;/a&gt; and we really had a great time there with the ruby developers came from China and also across the world.&lt;/p&gt;
+
+&lt;p&gt;The conference is very good. It&amp;#39;s also the big party of rubyist. Everyone enjoyed that much. Thanks to the organizers!&lt;/p&gt;
+
+&lt;p&gt;We are very honored to present two talks on this event to share our experience in our work. And we&amp;#39;re very happy people love the talks very much.&lt;/p&gt;
+
+&lt;p&gt;Below are the two talks we present. Check them out!&lt;/p&gt;
+
+&lt;h3&gt;Real Time Web by Dingding Ye&lt;/h3&gt;
+
+&lt;p&gt;Dingding gave a brief introduction on real time web at the conference. As you know, &lt;a href="https://pragmatic.ly"&gt;Pragmatic.ly&lt;/a&gt; is a project management tool featuring real time collaboration. Dingding spends latest three years on real time web products. In his talk, Dingding explains different solutions of making web real time and how to choose the right solution based on the different requirements. You can watch the talk &lt;a href="http://railscast-china.com/episodes/rubyconf-2012-yedingding"&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;And the PPT is here.&lt;/p&gt;
+
+&lt;script async class="speakerdeck-embed" data-id="a8fa0b60139201303b7512313d053576" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"&gt;&lt;/script&gt;
+
+&lt;h3&gt;How We Test Our Projects by Terry Tai&lt;/h3&gt;
+
+&lt;p&gt;Terry shared the practical experience about how we test our projects in Pragmatic.ly. We love TDD, BDD. Do things in right way! The video will release soon. Please concern about railscasts-china.com if you want to watch the video.&lt;/p&gt;
+
+&lt;p&gt;And the PPT is here.&lt;/p&gt;
+
+&lt;script async class="speakerdeck-embed" data-id="19e1abe013ca0130bc90123138154481" data-ratio="1.2518337408313" src="//speakerdeck.com/assets/embed.js"&gt;&lt;/script&gt;
+
+&lt;h3&gt;Enjoy the photos&lt;/h3&gt;
+
+&lt;p&gt;Dingding is presenting&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Dingding is Presenting" width="500" height="333" src="/images/the-presentations-we-made-on-rubyconfchina-20/dingding-presenting.jpg?1364632825" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Terry is presenting&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Terry is presenting" width="500" height="333" src="/images/the-presentations-we-made-on-rubyconfchina-20/terry-presenting.jpg?1364632825" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ben with Matz&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Ben with Matz" width="500" height="333" src="/images/the-presentations-we-made-on-rubyconfchina-20/ben-matz.jpg?1364632825" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Even food there is so RUBY&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="RUBY food" width="500" height="335" src="/images/the-presentations-we-made-on-rubyconfchina-20/ruby-food.jpg?1364632825" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Talking with Matz about Ruby when having dinner&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Dinner Talk" width="500" height="333" src="/images/the-presentations-we-made-on-rubyconfchina-20/dinner-talk.jpg?1364632825" /&gt;&lt;/p&gt;
+
+&lt;h3&gt;One more thing&lt;/h3&gt;
+
+&lt;p&gt;Pragmatic.ly team is a open team.&lt;/p&gt;
+
+&lt;p&gt;We&amp;#39;d love to share our experience and knowledge to the community, not only giving presentation, making screencasts, but also contributing to open source software.&lt;/p&gt;
+
+&lt;p&gt;RubyConf China is just beginning, hope we can meet in more conferences around the world next time.&lt;/p&gt;
+
+&lt;p&gt;See you. :)&lt;/p&gt;
+</description>
+      <guid>tag:blog.pragmatic.ly,article.url</guid>
+      <pubDate>2012-12-27T08:00:00Z</pubDate>
+      <category>RubyConfChina, Ruby, Event</category>
+    </item>
+    <item>
+      <title>Improving Ticket Interactive</title>
+      <link>http://blog.pragmatic.ly/improving-ticket-interactive/</link>
+      <description type="html">&lt;h3&gt;Improve the stability of ticket item in the list&lt;/h3&gt;
+
+&lt;p&gt;Users informed us that the ticket list in the center column was unstable, and we were rushing into this problem immediately.&lt;/p&gt;
+
+&lt;p&gt;As shown in the screenshot, we found the old list item was a interactive savage, from left to right:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;The ticket number will change into movable knob when hovered.&lt;/li&gt;
+&lt;li&gt;The ticket status could be clicked to switch into the next.&lt;/li&gt;
+&lt;li&gt;The assignee was shown as a link.&lt;/li&gt;
+&lt;li&gt;The ticket title was editable when focused.&lt;/li&gt;
+&lt;li&gt;The tags would be a ticket filters immediately.&lt;/li&gt;
+&lt;li&gt;The little right pointer had an onhover state.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img alt="Old Ticket Interactive" width="500" height="185" src="/images/improving-ticket-interactive/old-ticket-interactive.jpg?1364632825" /&gt;&lt;/p&gt;
+
+&lt;p&gt;This is quite a burden to users, we&amp;#39;d relieve it as soon as possible.&lt;/p&gt;
+
+&lt;p&gt;Though the UI looks same as before, the current list item goes like this:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The Assignee is shown as text rather than a link, since we already have a handy sidebar that contains links to team members.&lt;/li&gt;
+&lt;li&gt;The ticket title&amp;#39;s Edit In Place feature has been removed, to prevent users&amp;#39; accidental editing.&lt;/li&gt;
+&lt;li&gt;When hovering on list item, only the left knob and the right pointer will change their statuses, while others stay calm.&lt;/li&gt;
+&lt;li&gt;What&amp;#39;s left is just simple click to select, drag&amp;amp;drop to move.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;We have also changed the status naming and their section order. Do they make sense to you? Let&amp;#39;s know about your thoughts.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="New Ticket Interactive" width="500" height="346" src="/images/improving-ticket-interactive/new-ticket-interactive.jpg?1364632825" /&gt;&lt;/p&gt;
+
+&lt;h3&gt;Ticket status switching become more handy&lt;/h3&gt;
+
+&lt;p&gt;Ticket status indicates how&amp;#39;s the ticket going, it drives our daily development work. Everyday we generate todo ticket , assign it to someone, start working on it, complet it, and someone review on it. Without doubt, ticket status switching is the most frequently used in our application. We need to polish it again and again to help you more productive, now it looks like this.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="New Ticket Switch" width="500" height="277" src="/images/improving-ticket-interactive/new-ticket-switch.jpg?1364632825" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Before the improvement, the status can only switch to next status by one click on the checkbox. Now by clicking outside of the checkbox, you will get a popup menu(To Do/Start/Complete/Accept), where you can change ticket to any status. By clicking inside of the checkbox, you are switching as the old way.&lt;/p&gt;
+
+&lt;p&gt;Note that we have some new icons for representing the status, and we hope you like them. We&amp;#39;d love to hear your inspiration with the status imagery.&lt;/p&gt;
+
+&lt;p&gt;Stay tuned, we will post improvements very soon.&lt;/p&gt;
+
+&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+
+&lt;h3&gt;About Pragmatic.ly&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href="https://pragmatic.ly"&gt;Pragmatic.ly&lt;/a&gt; is a lean collaborative project management tool aiming to help small teams make better products easier. It&amp;#39;s the ideal and elegant project management tool for tech startups.&lt;/p&gt;
+</description>
+      <guid>tag:blog.pragmatic.ly,article.url</guid>
+      <pubDate>2012-12-10T11:00:00Z</pubDate>
+      <category>Ticket Management, UI, ChangeLog</category>
+    </item>
+    <item>
+      <title>Showing up Due Date</title>
+      <link>http://blog.pragmatic.ly/due-date-is-showing-up-in-the-ticket-list/</link>
+      <description type="html">&lt;p&gt;Now you can see &lt;em&gt;due-date&lt;/em&gt; on ticket list, and capture overdue tickets easily at a glance. Here is how and why we put it this way.&lt;/p&gt;
+
+&lt;p&gt;Firstly, &lt;em&gt;due-date&lt;/em&gt; can be input in the right form, easy click and go.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Due Date Selector" width="356" height="196" src="/images/due-date-is-showing-up-in-the-ticket-list/date-selector.jpg?1364632825" /&gt;&lt;/p&gt;
+
+&lt;p&gt;A ticket has &lt;em&gt;due-date&lt;/em&gt; set will show up a date tag, the visual design is different from normal tags. Basically you&amp;#39;re notified that one ticket has due on priority.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Due Date Tag" width="350" height="47" src="/images/due-date-is-showing-up-in-the-ticket-list/due-date-tag.png?1364632825" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Once a ticket is due on or overdue, this ticket item in tickets list will be highlighted and the date tag turns red. You can&amp;#39;t ignore it since the day is coming :) Hope this can push you a bit for getting things done.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Overdue Tag" width="350" height="38" src="/images/due-date-is-showing-up-in-the-ticket-list/overdue-tag.png?1364632825" /&gt;&lt;/p&gt;
+
+&lt;p&gt;When we were designing the interface of due-date, it actually came out a design like this,&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Due date draft" width="183" height="80" src="/images/due-date-is-showing-up-in-the-ticket-list/due-date-draft.png?1364632825" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Using the calendar icon (same from the editing form) to indicate that a ticket has a &lt;em&gt;due-date&lt;/em&gt;. When hover on the icon, a tooltip will show up and tell you the &lt;em&gt;due-date&lt;/em&gt;. This looks good, the UI is clean and space saving, but we gave it up, why?&lt;/p&gt;
+
+&lt;p&gt;Baring the KISS design philosophy in mind, we think we should get rid of using two UI elements to delivery one piece of information, and the extra hover action is a hassle too. So why not just using plain text let the user easy to read and less hassle to use.&lt;/p&gt;
+
+&lt;p&gt;On the other hand, we&amp;#39;d like to make the &lt;em&gt;due-date&lt;/em&gt; the same way as tags do, both as filter to find out the qualified tickets when you clicked on them. So may be a tag-like style is good for the due-date.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Due Date Overview" width="501" height="241" src="/images/due-date-is-showing-up-in-the-ticket-list/due-date-overview.png?1364632825" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Let us know how this works for you.&lt;/p&gt;
+
+&lt;h3&gt;Coming soon&lt;/h3&gt;
+
+&lt;p&gt;We&amp;#39;re working on date priority filter, which can order your tickets by due-date. Help you make a decision which ticket should be working on first. Stay tuned, we&amp;#39;ll get you posted.&lt;/p&gt;
+</description>
+      <guid>tag:blog.pragmatic.ly,article.url</guid>
+      <pubDate>2012-09-24T00:00:00Z</pubDate>
+      <category>Announcement, ChangeLog, UI</category>
+    </item>
+    <item>
+      <title>Announcing mails_viewer - easiest way to test mails in Rails app</title>
+      <link>http://blog.pragmatic.ly/announcing-mailsviewer-a-rails-engine-to-view/</link>
+      <description type="html">&lt;p&gt;&lt;em&gt;Q:&lt;/em&gt; &amp;ldquo;I implemented the mail template but how can I preview the mail in my machine?&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Q:&lt;/em&gt; &amp;ldquo;I&amp;#39;m running out of emails to test the signup on staging server. Do you have more?&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Q:&lt;/em&gt; &amp;ldquo;I accidently sent the mail to &lt;a href="mailto:test@example.com"&gt;test@example.com&lt;/a&gt;. I thought the email adress doesn&amp;#39;t exist!&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;Familiar? I have been asked many times of those questions these years. The requiremeent is simple. Write mailer model, send mail and then verify every part works as expected. But when we&amp;#39;re in non-production environment, either development machine or staging server, it&amp;#39;s always painful to test mails. Put simple, we just want:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;To preview all the sent mails easily&lt;/li&gt;
+&lt;li&gt;To browse the mails easily, for everyone in the team.&lt;/li&gt;
+&lt;li&gt;To allow conditioned mails to real sent out.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;We feel the same pain at &lt;a href="https://pragmatic.ly"&gt;Pragmatic.ly&lt;/a&gt; and that&amp;#39;s why we built &lt;a href="https://github.com/pragmaticly/mails_viewer"&gt;mails_viewer&lt;/a&gt;, a mails preview Engine which provides a table view for all mails under tmp/mails. It&amp;#39;s a fork of tomlion&amp;#39;s &lt;a href="https://github.com/tomlion/mails_viewer"&gt;original code&lt;/a&gt; and I&amp;#39;m glad to be the maintainer. Thanks for tomlion for getting this thing started!&lt;/p&gt;
+
+&lt;p&gt;&lt;img title="Mails Viewer" alt="mails_viewer" width="680" height="30" src="/images/announcing-mailsviewer-a-rails-engine-to-view/mails-viewer.png?1364632825" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Generally speaking, mails_viewer is a Rails engine. So it&amp;#39;s very easy to integrate it into your rails apps. And it depends on the file delivery method of ActionMailer.&lt;/p&gt;
+
+&lt;h3&gt;Usage&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Add the gem to your Gemfile :&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;gem&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;mails_viewer&amp;quot;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Set ActionMailer&amp;#39;s delivery method to :file :&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;config&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;action_mailer&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;delivery_method&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="n"&gt;file&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Put this in your routes.rb:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;mount&lt;/span&gt; &lt;span class="n"&gt;MailsViewer&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;Engine&lt;/span&gt; &lt;span class="o"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="err"&gt;&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;delivered_mails&lt;/span&gt;&lt;span class="err"&gt;&amp;#39;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Now just load up http://localhost:3000/delivered_mails&lt;/p&gt;
+
+&lt;h3&gt;Advanced&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Q:&lt;/em&gt; &amp;ldquo;I hope the mails sent to my own domain can send to my inbox and I can review it using my favorite client. Does mails_viewer support that?&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;We have the same requirement. You can just pass a send_if Proc to the configuration and detect whether the mail object satisfy the condition or not. For example,&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;config&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;action_mailer&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;delivery_method&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="ss"&gt;:file&lt;/span&gt;
+&lt;span class="n"&gt;config&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;action_mailer&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;file_settings&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+  &lt;span class="ss"&gt;location&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;tmp/mails&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+  &lt;span class="n"&gt;smtp_settings&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="ss"&gt;address&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;              &lt;span class="s2"&gt;&amp;quot;localhost&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+    &lt;span class="ss"&gt;port&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;                 &lt;span class="mi"&gt;25&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+    &lt;span class="ss"&gt;domain&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;               &lt;span class="s1"&gt;&amp;#39;localhost.localdomain&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+    &lt;span class="n"&gt;user_name&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;            &lt;span class="kp"&gt;nil&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+    &lt;span class="ss"&gt;password&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;             &lt;span class="kp"&gt;nil&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+    &lt;span class="ss"&gt;authentication&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;       &lt;span class="kp"&gt;nil&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+    &lt;span class="n"&gt;enable_starttls_auto&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="kp"&gt;true&lt;/span&gt;
+  &lt;span class="p"&gt;},&lt;/span&gt;
+  &lt;span class="n"&gt;send_if&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="nb"&gt;lambda&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;&lt;span class="n"&gt;mail&lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;mail&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;destinations&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;select&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;&lt;span class="n"&gt;address&lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;address&lt;/span&gt; &lt;span class="o"&gt;=~&lt;/span&gt; &lt;span class="sr"&gt;/@pragmatic.ly$/&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;any?&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;For more information, please check out the &lt;a href="https://github.com/pragmaticly/mails_viewer"&gt;project page&lt;/a&gt; on github.&lt;/p&gt;
+
+&lt;h3&gt;Other Gems&lt;/h3&gt;
+
+&lt;p&gt;We&amp;#39;re not alone. There are already several gems fixing the same problem, such as &lt;a href="https://github.com/37signals/mail_view"&gt;mail_view&lt;/a&gt; from 37signal, &lt;a href="https://github.com/ryanb/letter_opener"&gt;letter_opener&lt;/a&gt; by Ryan Bytes, &lt;a href="http://mailcatcher.me/"&gt;MailCatcher&lt;/a&gt; by Samuel Cochran and &lt;a href="https://github.com/myronmarston/mail_safe"&gt;mail_safe&lt;/a&gt; by Myron Marston. However, I would say mails&lt;em&gt;viewer is the best fit if you need the mails to be browsable, readable and sendable easily. Your QA will love you if you use mails&lt;/em&gt;viewer!&lt;/p&gt;
+
+&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+
+&lt;h3&gt;About Pragmatic.ly&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href="https://pragmatic.ly"&gt;Pragmatic.ly&lt;/a&gt; is a lean collaborative project management tool aiming to help small teams make better products easier. It&amp;#39;s the ideal and elegant project management tool for tech startups.&lt;/p&gt;
+
+&lt;p&gt;Now that you&amp;#39;ve read so far, you should follow me &lt;a href="https://twitter.com/yedingding"&gt;@yedingding&lt;/a&gt;!&lt;/p&gt;
+</description>
+      <guid>tag:blog.pragmatic.ly,article.url</guid>
+      <pubDate>2012-09-19T22:30:00Z</pubDate>
+      <category>open source, rails, mail, engine</category>
+    </item>
+    <item>
+      <title>Video matters! But which hosting service to use?</title>
+      <link>http://blog.pragmatic.ly/how-we-choose-the-right-video-service-for-us/</link>
+      <description type="html">&lt;p&gt;Nowadays video is used extensively for introducing the products or services to the public. It&amp;#39;s no doubt that a good video can increase the conversation rate a lot.&lt;/p&gt;
+
+&lt;p&gt;As a startup, it&amp;#39;s not easy to create a great product video like other big companies. So we recorded a toturial screencast when we launched &lt;a href="https://pragmatic.ly"&gt;Pragmatic.ly&lt;/a&gt; instead. Meanwhile we are working on our new attracting product video and we love the process. It&amp;#39;s totally different experience than writing code. We will share more latter when the video is out. But in this post I will talk more about the experience about different video hosting service. We tried &lt;a href="http://vimeo.com/"&gt;Vimeo&lt;/a&gt;, &lt;a href="http://sublimevideo.net/"&gt;SublimeVideo&lt;/a&gt;, &lt;a href="http://wistia.com/"&gt;Wistia&lt;/a&gt; and &lt;a href="http://www.youtube.com/"&gt;YouTube&lt;/a&gt;.  The result is interesting and quite different than our common sense.&lt;/p&gt;
+
+&lt;p&gt;&lt;img title="Vimeo" alt="Vimeo" src="/images/how-we-choose-the-right-video-service-for-us/vimeologo.svg?1364632825" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://vimeo.com"&gt;Vimeo&lt;/a&gt; is our first choice because we heard many good words from others. It does act great. Both the video quality and play speed are good when watching it from Vimeo&amp;#39;s site. But after we use an embed player on our site to play the video, we have the problem. The basic account of Vimeo doesn&amp;#39;t have the HD embedding but that&amp;#39;s exactly what we want. I think each penny spent on the &lt;a href="http://vimeo.com/plus"&gt;Vimeo Plus&lt;/a&gt; account should be worth it but before we do that, we planned to give more solutions a try. If you have sites with HD embedding videos on Vimeo, please share and I&amp;#39;m eager to see how it works. Our video on Vimeo is &lt;a href="https://vimeo.com/44030280"&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img title="SublimeVideo" alt="SublimeVideo" width="162" height="40" src="/images/how-we-choose-the-right-video-service-for-us/slv.png?1364632825" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Strictly speaking &lt;a href="http://sublimevideo.net/"&gt;SublimeVideo&lt;/a&gt; is not a video hosting service. It&amp;#39;s just a video player service. If you use SublimeVideo, you have to host your video files yourself, no matter on your own server or S3. But the good part is that you can totally control your video yourself. Size, quality, anything about the video is under your control. SublimeVideo is really a nice video player. It supports both HTML5 and Flash, almost works on any platform. The control panel is simple, neat, and it also supports simple analytics by time. The integration is also very straightforward. You just need to load a JS file from SublimeVideo and use &amp;lt;video&amp;gt; tag to wrap your video url and SublimeVideo will work like magic.&lt;/p&gt;
+
+&lt;p&gt;&lt;img title="Wistia" alt="Wistia" width="115" height="25" src="/images/how-we-choose-the-right-video-service-for-us/wistia.png?1364632825" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://wistia.com"&gt;Wistia&lt;/a&gt; is a new video service focus on powerful analytics. It can show you how your audience is watching, second by second. So we gave it a try, but after we uploading our video on it. We found the quality is not good. You could check it out &lt;a href="http://poshboytl.wistia.com/medias/5jsseu9vom"&gt;here&lt;/a&gt; and compare it with the one on our homepage. I browsed their documents quickly but didn&amp;#39;t find the solution. So sorry, we quit.&lt;/p&gt;
+
+&lt;p&gt;&lt;img title="Youtube" alt="youtube" width="95" height="49" src="/images/how-we-choose-the-right-video-service-for-us/youtube.png?1364632825" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Before we trying &lt;a href="http://youtube.com"&gt;YouTube&lt;/a&gt;, we used to think YouTube might not be a good place to host high quality video. But after we uploaded our video, we&amp;#39;re shocked. The video quality is perfect, and YouTube help us to translate our video to servial copy from 240p to 720p. I think if our video has higher resolution, we will have a 1080p version too. You could watch the sample &lt;a href="http://www.youtube.com/watch?v=OMMDL7I_eaQ&amp;feature=youtu.be&amp;hd=1"&gt;here&lt;/a&gt;. To make a embed player on your site with Youtube is also very easy. We just use a iframe and set the src to video url with parameters &amp;ldquo;autoplay=1&amp;rdquo; and &amp;ldquo;hd=1&amp;rdquo;. All done. For more player customization you could check out the document &lt;a href="http://code.google.com/apis/youtube/player_parameters.html"&gt;here&lt;/a&gt;. And it&amp;#39;s free of charge!&lt;/p&gt;
+
+&lt;p&gt;So far we&amp;#39;re glad with YouTube and it&amp;#39;ll be our first choice to host Pragmatic.ly&amp;#39;s product video and video tutorials. You could watch the final &lt;a href="https://pragmatic.ly/"&gt;embed video on our homepage&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;We hope our experience could give you some help. Do you have other recommendations? Please let us know! Thanks.&lt;/p&gt;
+</description>
+      <guid>tag:blog.pragmatic.ly,article.url</guid>
+      <pubDate>2012-09-18T21:00:00Z</pubDate>
+      <category>marketing, video service</category>
+    </item>
+    <item>
+      <title>Released Features of Pragmatic.ly</title>
+      <link>http://blog.pragmatic.ly/158983791/</link>
+      <description type="html">&lt;p&gt;August 2012 has been a big month for &lt;a href="https://pragmatic.ly"&gt;Pragmatic.ly&lt;/a&gt;. We did a lot of optimization and tried our best to give more benefits to our users. So we really hope our users will love what we did in last month.&lt;/p&gt;
+
+&lt;p&gt;So let me take an opportunity to introduce the cutting-edge main changes that we have made in month of August.&lt;/p&gt;
+
+&lt;h3&gt;Clear Pricing Policy&lt;/h3&gt;
+
+&lt;p&gt;We&amp;#39;re landing a dedicated pricing page now. It&amp;#39;s simple and vibrant. Please don&amp;#39;t hestigate to contacting us if you have anything more that you want to know.&lt;/p&gt;
+
+&lt;p&gt;&lt;img title="Clear Pricing Policy" alt="Clear Pricing Policy" width="240" height="160" src="/images/158983791/pricing.png?1364632825" /&gt;&lt;/p&gt;
+
+&lt;h3&gt;Organization Panel&lt;/h3&gt;
+
+&lt;p&gt;We created a brief panel to list organization information which allows you to create an admin account that can handle the status of the organization easily. You can view Billing Time, All Projects Info and Team Members Information there and further it also allows you to add or remove members from your organization with this unique feature.&lt;/p&gt;
+
+&lt;p&gt;&lt;img title="Organization Panel" alt="Organization Panel" width="454" height="495" src="/images/158983791/organization.png?1364632825" /&gt;&lt;/p&gt;
+
+&lt;h3&gt;Manage Iterations &amp;amp; Manage Team&lt;/h3&gt;
+
+&lt;p&gt;We added two simple panels for admin to see iterations and team information. Admin could also remove members from a project and delete an iteration of a project with this feature.&lt;/p&gt;
+
+&lt;p&gt;&lt;img title="Manage Iterations &amp; Manage Team" alt="Management Iterations &amp; Team" width="174" height="127" src="/images/158983791/management.png?1364632825" /&gt;&lt;/p&gt;
+
+&lt;h3&gt;Archive Iteration&lt;/h3&gt;
+
+&lt;p&gt;The iterations gradually increase as time goes on. So we have created archiving iteration function for the users to archive old iterations to make users focus on the recent working iterations. And also you could toggle to view or hide the archived iterations when you needed.&lt;/p&gt;
+
+&lt;p&gt;&lt;img title="Archive Iteration" alt="Archive Iteration" width="244" height="160" src="/images/158983791/archive.png?1364632825" /&gt;&lt;/p&gt;
+
+&lt;h3&gt;Relative timestamp in Notifications&lt;/h3&gt;
+
+&lt;p&gt;Now it&amp;#39;s possible for you to get up to the speed of your project with Notifications and Activity Feed. It&amp;#39;s simpler now! We have modified the notifications design to show the comparative timestamp which can give a quick peek to gear up. We also opened source the library on github.&lt;/p&gt;
+
+&lt;p&gt;&lt;img title="Relative timestamp in Notification" alt="Notifications" width="240" height="155" src="/images/158983791/notification.png?1364632825" /&gt;&lt;/p&gt;
+
+&lt;h3&gt;Clickable Web Notification&lt;/h3&gt;
+
+&lt;p&gt;Web notification is one of the best ways to improve the communication! It allows you to focus on the project by the same time you can receive instant notifications when anything is changed and updated. And now we move one step further, when you click these bubble notifications, it directs you to the iteration/ticket/comment where the notification is changed and updated.&lt;/p&gt;
+
+&lt;p&gt;&lt;img title="Clickable Web Notification" alt="Web Notification" width="240" height="80" src="/images/158983791/webnotification.png?1364632825" /&gt;&lt;/p&gt;
+
+&lt;h3&gt;Mention @somebody to bring people into the discussion&lt;/h3&gt;
+
+&lt;p&gt;Want to bring somebody into the discussion? Why to think how? When you mention ‘@’followed by the person’s name in the comment by the user; particular person will be notified instantly and will be subscribed for the future updates regarding the same discussion. Still we&amp;#39;re working on betterment of notification controls that can let the users receive the relevant events updates only.&lt;/p&gt;
+
+&lt;p&gt;&lt;img title="Mention" alt="Mention" width="240" height="117" src="/images/158983791/mention.png?1364632825" /&gt;&lt;/p&gt;
+
+&lt;h3&gt;Internal Connections among tickets&lt;/h3&gt;
+
+&lt;p&gt;Tickets are connected! Just by adding &amp;#39;#&amp;#39; with ticket ID into any descriptions or comments you can auto link the ticket. By connecting the tickets, you can easily see the dependencies, duplications and related tickets at a glance. It&amp;#39;s just a start and more is on its way.&lt;/p&gt;
+
+&lt;p&gt;&lt;img title="Internal Connections among tickets" alt="Connection among tickets" width="240" height="88" src="/images/158983791/ticket-link.png?1364632825" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+
+&lt;p&gt;Except for the main features that we created last month, we also did a lot of small improvements and bug fixing. If you continue using &lt;a href="https://pragmatic.ly"&gt;Pragmatic.ly&lt;/a&gt; you will find more surprises that can wow you for sure!&lt;/p&gt;
+</description>
+      <guid>tag:blog.pragmatic.ly,article.url</guid>
+      <pubDate>2012-09-06T00:00:00Z</pubDate>
+      <category>Announcement, ChangeLog</category>
+    </item>
+    <item>
+      <title>A Practical Guide to Use Spine.JS in Real World App</title>
+      <link>http://blog.pragmatic.ly/a-practical-guide-to-use-spinejs-in-real-worl/</link>
+      <description type="html">&lt;p&gt;To give users the best possible fluid experience, we designed &lt;a href="https://pragmatic.ly"&gt;Pragmatic.ly&lt;/a&gt; and complied with the &lt;a href="http://en.wikipedia.org/wiki/Single-page_application"&gt;single page application&lt;/a&gt; standard. We believe that could make users focus on building product rather than spending time on project management itself. A wide range of technology solutions are available to make a single page application. Current trends suggest moving core application from server to client side and keeping server load at minimum for better performance by pure data APIs. &lt;a href="https://pragmatic.ly"&gt;Pragmatic.ly&lt;/a&gt; took on the challange to cater to this need by developing server side in Rails, Spine.js at client side.&lt;/p&gt;
+
+&lt;h3&gt;Why Spine.JS&lt;/h3&gt;
+
+&lt;p&gt;There are many different JavaScript MVC frameworks such as &lt;a href="http://backbonejs.org/"&gt;Backbone.js&lt;/a&gt;, &lt;a href="http://spinejs.com/"&gt;Spine.js&lt;/a&gt;, &lt;a href="http://knockoutjs.com/"&gt;Knockout.js&lt;/a&gt;, &lt;a href="http://emberjs.com/"&gt;Ember.js&lt;/a&gt;, etc. There are too many choices and when I started Pragmatic.ly, I was struggling with the problem of which one I should pick up. Instead of wasting time on choosing I did a quick review by comparing the documents and then decided to choose Spine.js to start with. With months of development so far, I&amp;#39;m glad that Spine.js works pretty well and below are the great benefits I have found in using Spine.js.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Simple and lightweight&lt;/em&gt;. It&amp;#39;s easy to dive into the core and extend as you need to.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;MVC pattern at its core&lt;/em&gt;. It&amp;#39;s very similar to the Rails counterparts. So I&amp;#39;m very comfortable with it from the first day.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Rails integration&lt;/em&gt;. It can&amp;#39;t be easier to use Rails as the backend data API in Spine.js app. And the &lt;a href="https://github.com/maccman/spine-rails"&gt;spine-rails&lt;/a&gt; gem is another great addition.&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://alexmaccaw.com/posts/async_ui"&gt;&lt;em&gt;Asynchronous UI&lt;/em&gt;&lt;/a&gt;. Ideally UIs never block and it will automatically update the data in backend. This brings the fast and very responsive user interface.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If you want to get a brief review among different frameworks, check out &lt;a href="http://codebrief.com/2012/01/the-top-10-javascript-mvc-frameworks-reviewed/"&gt;this article&lt;/a&gt; written by Gordon L. Hemption.&lt;/p&gt;
+
+&lt;h3&gt;How we use Spine.js in Pragmatic.ly&lt;/h3&gt;
+
+&lt;p&gt;We use spine-rails to generate the Spine.app structure, very similar to Rails app structure.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;├── app
+│   ├── controllers
+│   │   ├── center
+│   │   │   ├── filter_controller.js.coffee
+│   │   │   └── tickets_controller.js.coffee
+│   │   ├── center_content_controller.coffee
+│   │   ├── comments_controller.js.coffee
+│   │   ├── header
+│   │   │   └── project_nav_controller.js.coffee
+│   │   ├── header_controller.coffee
+│   │   ├── iterations_controller.coffee
+│   │   ├── left_sidebar_controller.coffee
+│   │   ├── projects_controller.coffee
+│   │   ├── right_sidebar_controller.coffee
+│   │   ├── sidebars
+│   │   │   ├── left_iteration.js.coffee
+│   │   │   ├── left_people.js.coffee
+│   │   │   ├── right_activities.js.coffee
+│   │   │   └── right_detail_section.js.coffee
+│   │   ├── tickets_controller.coffee
+│   │   └── users_controller.js.coffee
+│   ├── index.js.coffee
+│   ├── lib
+│   │   ├── constants.js.coffee
+│   │   ├── eco-helpers.js
+│   │   └── view.js.coffee
+│   ├── models
+│   │   ├── comment.js.coffee
+│   │   ├── iteration.js.coffee
+│   │   ├── project.js.coffee
+│   │   ├── ticket.js.coffee
+│   │   └── user.js.coffee
+│   └── views
+│       ├── comments
+│       │   ├── audit.jst.eco
+│       │   ├── form.jst.eco
+│       │   └── plain.jst.eco
+│       ├── iterations
+│       │   ├── section.jst.eco
+│       │   └── show.jst.eco
+│       ├── projects
+│       │   ├── edit.jst.eco
+│       │   ├── form.jst.eco
+│       │   ├── new.jst.eco
+│       │   └── switch.jst.eco
+│       ├── tickets
+│       │   ├── section.jst.eco
+│       │   ├── show.jst.eco
+│       │   └── toolbar.jst.eco
+│       └── users
+│           ├── people.jst.eco
+│           └── show.jst.eco
+├── application.js
+├── bootstrap.js.coffee
+└── dashboard.js.coffee
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;So basically it&amp;#39;s controllers, models and views.&lt;/p&gt;
+
+&lt;h3&gt;Controllers&lt;/h3&gt;
+
+&lt;p&gt;There are two kinds of Controllers in Pragmatic.ly. In Spine, Controllers are considered the glue of an application, adding and responding to DOM events, rendering templates and ensuring that views and models are kept in sync. For example,&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nx"&gt;App&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;LeftIterationController&lt;/span&gt; &lt;span class="k"&gt;extends&lt;/span&gt; &lt;span class="nx"&gt;Spine&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;Controller&lt;/span&gt;
+  &lt;span class="nv"&gt;el: &lt;/span&gt;&lt;span class="s"&gt;&amp;#39;.sidebar #iterations&amp;#39;&lt;/span&gt;
+
+  &lt;span class="nv"&gt;elements:&lt;/span&gt;
+    &lt;span class="s"&gt;&amp;#39;ul.list&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;list&amp;#39;&lt;/span&gt;
+
+  &lt;span class="nv"&gt;constructor: &lt;/span&gt;&lt;span class="nf"&gt;-&amp;gt;&lt;/span&gt;
+    &lt;span class="k"&gt;super&lt;/span&gt;
+    &lt;span class="nx"&gt;App&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;Iteration&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;bind&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;create&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;@addIteration&lt;/span&gt;
+    &lt;span class="nx"&gt;App&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;Iteration&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;bind&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;refresh&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;@refreshIterations&lt;/span&gt;
+
+  &lt;span class="nv"&gt;release: &lt;/span&gt;&lt;span class="nf"&gt;-&amp;gt;&lt;/span&gt;
+    &lt;span class="k"&gt;super&lt;/span&gt;
+    &lt;span class="nx"&gt;App&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;Iteration&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;unbind&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;create&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;@addIteration&lt;/span&gt;
+    &lt;span class="nx"&gt;App&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;Iteration&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;unbind&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;refresh&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;@refreshIterations&lt;/span&gt;
+
+  &lt;span class="nv"&gt;addIteration: &lt;/span&gt;&lt;span class="nf"&gt;(iteration) =&amp;gt;&lt;/span&gt;
+    &lt;span class="nx"&gt;iteration&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;unbind&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+    &lt;span class="nv"&gt;view = &lt;/span&gt;&lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="nx"&gt;App&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;IterationItem&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;item: &lt;/span&gt;&lt;span class="nx"&gt;iteration&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="nx"&gt;@list&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;append&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;view&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;render&lt;/span&gt;&lt;span class="p"&gt;().&lt;/span&gt;&lt;span class="nx"&gt;el&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+  &lt;span class="nv"&gt;refreshIterations: &lt;/span&gt;&lt;span class="nf"&gt;(iterations) =&amp;gt;&lt;/span&gt;
+    &lt;span class="nx"&gt;@addIteration&lt;/span&gt; &lt;span class="nx"&gt;iteration&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="nx"&gt;iteration&lt;/span&gt; &lt;span class="k"&gt;in&lt;/span&gt; &lt;span class="nx"&gt;iterations&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;We split the page into multiple blocks and each block is a Spine Controller. Talking the above example, LeftIterationsController is the Controller to manage the iterations list in the left sidebar.&lt;/p&gt;
+
+&lt;p&gt;Then what&amp;#39;s the other kind? The answer is Routes! We extract the routes to the dedicated controllers now. It will setup the routes and respond to the navigation event. Then it will prepare the data and trigger the event to let another controller handle it to render templates. For example,&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nx"&gt;App&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;TicketsController&lt;/span&gt; &lt;span class="k"&gt;extends&lt;/span&gt; &lt;span class="nx"&gt;Spine&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;Controller&lt;/span&gt;
+  &lt;span class="nv"&gt;constructor: &lt;/span&gt;&lt;span class="nf"&gt;-&amp;gt;&lt;/span&gt;
+    &lt;span class="k"&gt;super&lt;/span&gt;
+    &lt;span class="nx"&gt;@routes&lt;/span&gt;
+      &lt;span class="s"&gt;&amp;quot;/tickets&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nx"&gt;@index&lt;/span&gt;
+      &lt;span class="s"&gt;&amp;quot;/tickets/:id&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nf"&gt;(params) -&amp;gt;&lt;/span&gt;
+        &lt;span class="nx"&gt;@show&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;params&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;id&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+  &lt;span class="nv"&gt;index: &lt;/span&gt;&lt;span class="nf"&gt;-&amp;gt;&lt;/span&gt;
+    &lt;span class="nv"&gt;tickets = &lt;/span&gt;&lt;span class="nx"&gt;App&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;Ticket&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;all&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+    &lt;span class="nx"&gt;App&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;Ticket&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;trigger&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;tickets:index&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;tickets&lt;/span&gt;
+
+  &lt;span class="nv"&gt;show: &lt;/span&gt;&lt;span class="nf"&gt;(id) -&amp;gt;&lt;/span&gt;
+    &lt;span class="nv"&gt;ticket = &lt;/span&gt;&lt;span class="nx"&gt;App&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;Ticket&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;find&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;id&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;publish&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;ticket:switch&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;ticket&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;Models&lt;/h3&gt;
+
+&lt;p&gt;Models manage data for the application. It&amp;#39;s very similar to Rails models. I just want to mention one thing though - as we moved the logic from server side to client side, there was no need to translate 1:1 on the client side. Instead, encapsulate the data into model which is suitable for the page based on the user.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nx"&gt;App&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;Project&lt;/span&gt; &lt;span class="k"&gt;extends&lt;/span&gt; &lt;span class="nx"&gt;Spine&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;Model&lt;/span&gt;
+  &lt;span class="nx"&gt;@configure&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;Project&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;id&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;name&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;description&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;owner_id&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;uid&amp;#39;&lt;/span&gt;
+  &lt;span class="nx"&gt;@extend&lt;/span&gt; &lt;span class="nx"&gt;Spine&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;Model&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;Ajax&lt;/span&gt;
+  &lt;span class="nx"&gt;@extend&lt;/span&gt; &lt;span class="nx"&gt;Spine&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;Model&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;Dirty&lt;/span&gt;
+
+  &lt;span class="nv"&gt;validate: &lt;/span&gt;&lt;span class="nf"&gt;-&amp;gt;&lt;/span&gt;
+    &lt;span class="s"&gt;&amp;#39;name required&amp;#39;&lt;/span&gt; &lt;span class="k"&gt;unless&lt;/span&gt; &lt;span class="nx"&gt;@name&lt;/span&gt;
+
+  &lt;span class="nv"&gt;inviteUser: &lt;/span&gt;&lt;span class="nf"&gt;(email) -&amp;gt;&lt;/span&gt;
+    &lt;span class="nx"&gt;App&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;Invitation&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;create&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;project_id: &lt;/span&gt;&lt;span class="nx"&gt;@id&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nv"&gt;email: &lt;/span&gt;&lt;span class="nx"&gt;email&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;Views&lt;/h3&gt;
+
+&lt;p&gt;Views are about building and maintaining the DOM elements. Views in Spine are very simple and don&amp;#39;t have the built-in UI binding. So most of the time you should let Controller observe the Model and get notified when the model changes, then update the view accordingly.&lt;/p&gt;
+
+&lt;p&gt;By doing all the view rendering client-side, you should use JavaScript templating solution to define templates for views as markup containing tempalte variables. There are a number of good candidates, such as Mustache, jQuery.tmpl and Eco.&lt;/p&gt;
+
+&lt;p&gt;I use Eco in Pragmatic.ly. The Erb-like syntax and CoffeeScript support is a big triumph. However, you should know that every eco template generates the same helpers which will increase the file size. You can use this &lt;a href="https://gist.github.com/sishen/2360781"&gt;gist&lt;/a&gt; to avoid the problem which will register the global helpers and inject into the Eco templates.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c1"&gt;# Put this file in lib/&lt;/span&gt;
+
+&lt;span class="nb"&gt;require&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;sprockets/eco_template&amp;#39;&lt;/span&gt;
+
+&lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;CleanEcoTemplate&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="ss"&gt;Sprockets&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="ss"&gt;:EcoTemplate&lt;/span&gt;
+  &lt;span class="no"&gt;FROM&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;  (function() {&amp;quot;&lt;/span&gt;
+  &lt;span class="no"&gt;TO&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;}).call(__obj);&amp;quot;&lt;/span&gt;
+
+  &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;evaluate&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;scope&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;locals&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;&amp;amp;&lt;/span&gt;&lt;span class="n"&gt;block&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="n"&gt;content&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="no"&gt;Eco&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;compile&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="n"&gt;from&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;content&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;index&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="no"&gt;FROM&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="n"&gt;to&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;content&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;rindex&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="no"&gt;TO&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="n"&gt;content&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;content&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="n"&gt;from&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;.&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;to&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="no"&gt;TO&lt;/span&gt;
+    &lt;span class="o"&gt;&amp;lt;&amp;lt;-&lt;/span&gt;&lt;span class="no"&gt;JS&lt;/span&gt;
+&lt;span class="sh"&gt;function(__obj) {&lt;/span&gt;
+&lt;span class="sh"&gt;  if (!__obj) __obj = {};&lt;/span&gt;
+&lt;span class="sh"&gt;  var __helpers = window.ecoHelpers;&lt;/span&gt;
+&lt;span class="sh"&gt;  var __out = [];&lt;/span&gt;
+&lt;span class="sh"&gt;  var __sanitize = __helpers.sanitize;&lt;/span&gt;
+&lt;span class="sh"&gt;  var __capture = __helpers.captureFor(__obj, __out);&lt;/span&gt;
+&lt;span class="sh"&gt;  var __rememberSafe = __obj.safe;&lt;/span&gt;
+&lt;span class="sh"&gt;  var __rememberEscape = __obj.escape;&lt;/span&gt;
+&lt;span class="sh"&gt;  __obj.safe = __helpers.safe;&lt;/span&gt;
+&lt;span class="sh"&gt;  __obj.escape = __helpers.escape;&lt;/span&gt;
+&lt;span class="sh"&gt;#{content}&lt;/span&gt;
+&lt;span class="sh"&gt;  __obj.safe = __rememberSafe;&lt;/span&gt;
+&lt;span class="sh"&gt;  __obj.escape = __rememberEscape;&lt;/span&gt;
+&lt;span class="sh"&gt;  return __out.join(&amp;#39;&amp;#39;);&lt;/span&gt;
+&lt;span class="sh"&gt;};&lt;/span&gt;
+&lt;span class="no"&gt;      JS&lt;/span&gt;
+  &lt;span class="k"&gt;end&lt;/span&gt;
+&lt;span class="k"&gt;end&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c1"&gt;# Put this file in config/initializers&lt;/span&gt;
+
+&lt;span class="nb"&gt;require&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;clean_eco_template&amp;#39;&lt;/span&gt;
+
+&lt;span class="no"&gt;Rails&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;application&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;assets&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;register_engine&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;.eco&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="no"&gt;CleanEcoTemplate&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="nx"&gt;Must&lt;/span&gt; &lt;span class="nx"&gt;include&lt;/span&gt; &lt;span class="nx"&gt;eco&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nx"&gt;helpers&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;js&lt;/span&gt; &lt;span class="nx"&gt;before&lt;/span&gt; &lt;span class="nx"&gt;eco&lt;/span&gt; &lt;span class="nx"&gt;files&lt;/span&gt;
+
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;global&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+  &lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;ecoHelpers&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="nx"&gt;sanitize&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;value&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+      &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;value&lt;/span&gt; &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class="nx"&gt;value&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;ecoSafe&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="nx"&gt;value&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+      &lt;span class="p"&gt;}&lt;/span&gt; &lt;span class="k"&gt;else&lt;/span&gt; &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;typeof&lt;/span&gt; &lt;span class="nx"&gt;value&lt;/span&gt; &lt;span class="o"&gt;!==&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;undefined&amp;#39;&lt;/span&gt; &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class="nx"&gt;value&lt;/span&gt; &lt;span class="o"&gt;!=&lt;/span&gt; &lt;span class="kc"&gt;null&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="nx"&gt;ecoHelpers&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;escape&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;value&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+      &lt;span class="p"&gt;}&lt;/span&gt; &lt;span class="k"&gt;else&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+      &lt;span class="p"&gt;}&lt;/span&gt;
+    &lt;span class="p"&gt;},&lt;/span&gt;
+
+    &lt;span class="nx"&gt;safe&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;value&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+      &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;value&lt;/span&gt; &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class="nx"&gt;value&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;ecoSafe&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="nx"&gt;value&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+      &lt;span class="p"&gt;}&lt;/span&gt; &lt;span class="k"&gt;else&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+        &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;!&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;typeof&lt;/span&gt; &lt;span class="nx"&gt;value&lt;/span&gt; &lt;span class="o"&gt;!==&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;undefined&amp;#39;&lt;/span&gt; &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class="nx"&gt;value&lt;/span&gt; &lt;span class="o"&gt;!=&lt;/span&gt; &lt;span class="kc"&gt;null&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt; &lt;span class="nx"&gt;value&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+        &lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;result&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="nb"&gt;String&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;value&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+        &lt;span class="nx"&gt;result&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;ecoSafe&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kc"&gt;true&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="nx"&gt;result&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+      &lt;span class="p"&gt;}&lt;/span&gt;
+    &lt;span class="p"&gt;},&lt;/span&gt;
+
+    &lt;span class="nx"&gt;escape&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;value&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+      &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;&amp;#39;&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="nx"&gt;value&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+        &lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;replace&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="sr"&gt;/&amp;amp;/g&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;&amp;amp;amp;&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+        &lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;replace&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="sr"&gt;/&amp;lt;/g&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;&amp;amp;lt;&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+        &lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;replace&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="sr"&gt;/&amp;gt;/g&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;&amp;amp;gt;&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+        &lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;replace&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="sr"&gt;/&amp;quot;/g&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;&amp;amp;quot;&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+    &lt;span class="p"&gt;},&lt;/span&gt;
+
+    &lt;span class="nx"&gt;captureFor&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;obj&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;out&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+      &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;callback&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+        &lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;length&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;out&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;length&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+        &lt;span class="nx"&gt;callback&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;call&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;obj&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="nx"&gt;ecoHelpers&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;safe&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;out&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;splice&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;length&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;out&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;length&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="nx"&gt;length&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;join&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;));&lt;/span&gt;
+      &lt;span class="p"&gt;});&lt;/span&gt;
+    &lt;span class="p"&gt;}&lt;/span&gt;
+  &lt;span class="p"&gt;};&lt;/span&gt;
+
+  &lt;span class="nx"&gt;global&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;ecoHelpers&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;ecoHelpers&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;})(&lt;/span&gt;&lt;span class="nb"&gt;window&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;Problems&lt;/h3&gt;
+
+&lt;p&gt;So that&amp;#39;s how we use Spine.js to power Pragmatic.ly. It works very well but still have some limitations.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;By default, you can only monitor the whole Model change event and update the view accordingly. For example, even the username is not changed, you still have to update the views containing that data. There is a &amp;ldquo;change:field&amp;rdquo; event in Backbone.js which allow you only to update the view when that field of data changed. I like that. So I made a plugin to support that. Check the Gist out.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nx"&gt;Spine&lt;/span&gt; &lt;span class="o"&gt;?=&lt;/span&gt; &lt;span class="nx"&gt;require&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;spine&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="nv"&gt;Include =&lt;/span&gt;
+  &lt;span class="nv"&gt;savePrevious: &lt;/span&gt;&lt;span class="nf"&gt;-&amp;gt;&lt;/span&gt;
+  &lt;span class="nx"&gt;@constructor&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;records&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;@id&lt;/span&gt;&lt;span class="p"&gt;].&lt;/span&gt;&lt;span class="nv"&gt;previousAttributes = &lt;/span&gt;&lt;span class="nx"&gt;@attributes&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+
+&lt;span class="nv"&gt;Spine.Model.Dirty =&lt;/span&gt;
+  &lt;span class="nv"&gt;extended: &lt;/span&gt;&lt;span class="nf"&gt;-&amp;gt;&lt;/span&gt;
+    &lt;span class="nx"&gt;@bind&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;refresh&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nf"&gt;-&amp;gt;&lt;/span&gt;
+    &lt;span class="nx"&gt;@each&lt;/span&gt; &lt;span class="nf"&gt;(record) -&amp;gt;&lt;/span&gt; &lt;span class="nx"&gt;record&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;savePrevious&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+
+    &lt;span class="nx"&gt;@bind&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;save&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nf"&gt;(record) -&amp;gt;&lt;/span&gt;
+      &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="nx"&gt;record&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;previousAttributes&lt;/span&gt;&lt;span class="o"&gt;?&lt;/span&gt;
+        &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="nx"&gt;key&lt;/span&gt; &lt;span class="k"&gt;in&lt;/span&gt; &lt;span class="nx"&gt;record&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;constructor&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;attributes&lt;/span&gt; &lt;span class="k"&gt;when&lt;/span&gt; &lt;span class="nx"&gt;key&lt;/span&gt; &lt;span class="k"&gt;of&lt;/span&gt; &lt;span class="nx"&gt;record&lt;/span&gt;
+          &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="nx"&gt;record&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;key&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;isnt&lt;/span&gt; &lt;span class="nx"&gt;record&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;previousAttributes&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;key&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+            &lt;span class="nx"&gt;record&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;trigger&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;change:&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nx"&gt;key&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;record&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;key&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
+      &lt;span class="nx"&gt;record&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;savePrevious&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+
+    &lt;span class="nx"&gt;@include&lt;/span&gt; &lt;span class="nx"&gt;Include&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;So the model object can bind the event &amp;ldquo;change:#{field} to trigger event when the field value is changed.&lt;/p&gt;
+
+&lt;p&gt;By default it&amp;#39;s off and if need this feature, the model should extend Spine.Model.Dirty.&lt;/p&gt;
+
+&lt;p&gt;A sample case.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nx"&gt;User&lt;/span&gt; &lt;span class="k"&gt;extends&lt;/span&gt; &lt;span class="nx"&gt;Spine&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;Model&lt;/span&gt;
+  &lt;span class="nx"&gt;@extend&lt;/span&gt; &lt;span class="nx"&gt;Spine&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;Model&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;Dirty&lt;/span&gt;
+&lt;span class="nx"&gt;end&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;The Ajax plugin in Spine.js plays very nice with backend REST APIs, such as Rails. For example, creating the model will trigger a &amp;quot;CREATE /collections&amp;rdquo; event to the server and updating the model will trigger a &amp;ldquo;PUT /collections/id&amp;rdquo; event, seemlessly. However, nested resources in Rails is very common but Spine lacks to support that. Either you have to trigger requests to top-level URL or setup the request yourself. I have done a dirty hack to support scoping. It&amp;#39;s dirty but works.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt; &lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nx"&gt;App&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;Ticket&lt;/span&gt; &lt;span class="k"&gt;extends&lt;/span&gt; &lt;span class="nx"&gt;Spine&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;Model&lt;/span&gt;
+  &lt;span class="nx"&gt;@configure&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;Ticket&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;id&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;project_id&amp;quot;&lt;/span&gt;
+
+  &lt;span class="vi"&gt;@scope: &lt;/span&gt;&lt;span class="nf"&gt;-&amp;gt;&lt;/span&gt;
+    &lt;span class="s"&gt;&amp;quot;projects/&lt;/span&gt;&lt;span class="si"&gt;#{&lt;/span&gt;&lt;span class="nx"&gt;current&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;project_id&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&lt;/span&gt;
+
+  &lt;span class="nv"&gt;scope: &lt;/span&gt;&lt;span class="nf"&gt;-&amp;gt;&lt;/span&gt;
+    &lt;span class="s"&gt;&amp;quot;projects/&lt;/span&gt;&lt;span class="si"&gt;#{&lt;/span&gt;&lt;span class="nx"&gt;@project_id&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Asynchronous UI is cool and works for 98% situations. But in a real world app you have to deal with errors like bugs or network failures. Spine doesn&amp;#39;t have the default error handling for this situation and leave all work to you. It&amp;#39;s fine but you should know that for that 2% situation, you have to spend lots of time to avoid the impact.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;Test&lt;/h3&gt;
+
+&lt;p&gt;I would like to cover how Test works in Pragmatic.ly in another post. To give a quick overview, we use &lt;a href="http://pivotal.github.com/jasmine/"&gt;Jasmine&lt;/a&gt; for JS test and &lt;a href="http://siliconforks.com/jscoverage/"&gt;JSCoverage&lt;/a&gt; for measuring code coverage. Nice pair!&lt;/p&gt;
+
+&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+
+&lt;h3&gt;About Pragmatic.ly&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href="https://pragmatic.ly"&gt;Pragmatic.ly&lt;/a&gt; is a lean collaborative project management tool aiming to help small teams make better products easier. It&amp;#39;s the ideal and elegant project management tool for tech startups.&lt;/p&gt;
+
+&lt;p&gt;Now that you&amp;#39;ve read so far, you should follow me &lt;a href="https://twitter.com/yedingding"&gt;@yedingding&lt;/a&gt;!&lt;/p&gt;
+</description>
+      <guid>tag:blog.pragmatic.ly,article.url</guid>
+      <pubDate>2012-08-19T20:00:00Z</pubDate>
+      <category>SpineJS, JavaScript MVC, JavaScript, Spine</category>
+    </item>
+    <item>
+      <title>It's not perfect but it's time to integrate web notifications</title>
+      <link>http://blog.pragmatic.ly/its-not-perfect-but-its-time-to-integrate-web/</link>
+      <description type="html">&lt;p&gt;One feature &lt;a href="https://pragmatic.ly"&gt;Pragmatic.ly&lt;/a&gt; has had from the beginning is Web Notifications. When I first saw the feature in Gmail I was convinced it was a feature every web application should have. As a project management tool Pragmatic.ly should enhance collaboration and ease communication. Instant desktop-like notification is one way to achieve the goal.&lt;/p&gt;
+
+&lt;p&gt;&lt;img title="Chrome Web Notification" alt="Chrome Web Notification" width="332" height="127" src="/images/its-not-perfect-but-its-time-to-integrate-web/chrome-notification.png?1364632825" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img title="Safari Web Notification" alt="Safari Web Notification" width="331" height="92" src="/images/its-not-perfect-but-its-time-to-integrate-web/safari-notification.png?1364632825" /&gt;&lt;/p&gt;
+
+&lt;h3&gt;Browser Support&lt;/h3&gt;
+
+&lt;p&gt;For a long time only Chrome users have been able to benefit from such features. But the release of Safari 6 in Mountain Lion has changed things for the better and now it&amp;#39;s time to integrate web notification into your application.&lt;/p&gt;
+
+&lt;table&gt;&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align="center"&gt;&lt;strong&gt;Browser&lt;/strong&gt;&lt;/th&gt;
+&lt;th align="left"&gt;&lt;strong&gt;Whether Support&lt;/strong&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;Chrome&lt;/td&gt;
+&lt;td align="left"&gt;Yes&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;Safari&lt;/td&gt;
+&lt;td align="left"&gt;Yes. version 6 in Mountain Lion only&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;Firefox&lt;/td&gt;
+&lt;td align="left"&gt;Yes. Install Plugin &lt;a href="https://code.google.com/p/ff-html5notifications"&gt;ff-html5notifications&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;IE&lt;/td&gt;
+&lt;td align="left"&gt;No. But can work in &lt;a href="https://developers.google.com/chrome/chrome-frame/"&gt;Chrome Frame&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+
+&lt;p&gt;For more list, checkout &lt;a href="https://html5test.com/compare/feature/notifications-notifications.html"&gt;https://html5test.com/compare/feature/notifications-notifications.html&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Since different browsers support the notifications in different ways, there are two specs of web notifications we need to cover. One is the &lt;a href="http://www.chromium.org/developers/design-documents/desktop-notifications/api-specification"&gt;older version&lt;/a&gt; which is implemented in latest version of Chromium, and the other is the &lt;a href="http://www.w3.org/TR/notifications/"&gt;newer version&lt;/a&gt; at W3C which safari followed. (The Firefox plugin followed the Chromium implementation). Considering safari 6 also does support the old spec, I would say it&amp;#39;s better to still stick in the old spec, at least for now.&lt;/p&gt;
+
+&lt;h3&gt;How to Use&lt;/h3&gt;
+
+&lt;p&gt;Danger Cove wrote an awesome &lt;a href="http://dangercove.github.com/html5-notifications/"&gt;demo&lt;/a&gt; on how to use HTML5 web notifications, based on the old spec. If you&amp;#39;re looking for the samples of the new spec, &lt;a href="https://developer.apple.com/library/safari/#documentation/AppleApplications/Conceptual/SafariJSProgTopics/Articles/SendingNotifications.html"&gt;safari document&lt;/a&gt; definitely is a good resource. Below are several notes from the experience I added the integration.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;The request permission dialog only shows after user interactions. Automation such as usingJavascript to click the link/button doesn&amp;#39;t work.&lt;/li&gt;
+&lt;li&gt;requestPermission requires the callback to make it work with Safari&lt;/li&gt;
+&lt;li&gt;You can interact with your application using events such as onclick, by referring window.parent. For example as in Pragmatic.ly, when user clicks the popup notification, it will show you the ticket where event happens.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Check the &lt;a href="https://gist.github.com/3233112"&gt;Gist&lt;/a&gt; to see how &lt;a href="https://pragmatic.ly"&gt;Pragmatic.ly&lt;/a&gt; integrates web notifications.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nx"&gt;Notifier&lt;/span&gt;
+  &lt;span class="nv"&gt;constructor: &lt;/span&gt;&lt;span class="nf"&gt;-&amp;gt;&lt;/span&gt;
+    &lt;span class="vi"&gt;@enableNotification = &lt;/span&gt;&lt;span class="kc"&gt;false&lt;/span&gt;
+    &lt;span class="nx"&gt;@checkOrRequirePermission&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+
+  &lt;span class="nv"&gt;hasSupport: &lt;/span&gt;&lt;span class="nf"&gt;-&amp;gt;&lt;/span&gt;
+    &lt;span class="nb"&gt;window&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;webkitNotifications&lt;/span&gt;&lt;span class="o"&gt;?&lt;/span&gt;
+
+  &lt;span class="nv"&gt;requestPermission: &lt;/span&gt;&lt;span class="nf"&gt;(cb) -&amp;gt;&lt;/span&gt;
+    &lt;span class="nb"&gt;window&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;webkitNotifications&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;requestPermission&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;cb&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+  &lt;span class="nv"&gt;setPermission: &lt;/span&gt;&lt;span class="o"&gt;=&amp;gt;&lt;/span&gt;
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="nx"&gt;@hasPermission&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+      &lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;body .notification-alert a.close&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;click&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+      &lt;span class="vi"&gt;@enableNotification = &lt;/span&gt;&lt;span class="kc"&gt;true&lt;/span&gt;
+    &lt;span class="k"&gt;else&lt;/span&gt; &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="nb"&gt;window&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;webkitNotifications&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;checkPermission&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="o"&gt;is&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;
+      &lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;body .notification-alert a.close&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;click&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+
+  &lt;span class="nv"&gt;hasPermission: &lt;/span&gt;&lt;span class="nf"&gt;-&amp;gt;&lt;/span&gt;
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="nb"&gt;window&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;webkitNotifications&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;checkPermission&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="o"&gt;is&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;
+      &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="kc"&gt;true&lt;/span&gt;
+    &lt;span class="k"&gt;else&lt;/span&gt;
+      &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="kc"&gt;false&lt;/span&gt;
+
+  &lt;span class="nv"&gt;checkOrRequirePermission: &lt;/span&gt;&lt;span class="o"&gt;=&amp;gt;&lt;/span&gt;
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="nx"&gt;@hasSupport&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+      &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="nx"&gt;@hasPermission&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+        &lt;span class="vi"&gt;@enableNotification = &lt;/span&gt;&lt;span class="kc"&gt;true&lt;/span&gt;
+      &lt;span class="k"&gt;else&lt;/span&gt;
+        &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="nb"&gt;window&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;webkitNotifications&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;checkPermission&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="o"&gt;isnt&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;
+          &lt;span class="nx"&gt;@showTooltip&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+    &lt;span class="k"&gt;else&lt;/span&gt;
+      &lt;span class="nx"&gt;console&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;log&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;Desktop notifications are not supported for this Browser/OS version yet.&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+  &lt;span class="nv"&gt;showTooltip: &lt;/span&gt;&lt;span class="nf"&gt;-&amp;gt;&lt;/span&gt;
+    &lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;body&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;append&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;JST&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;app/views/lib/notification_info&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;]())&lt;/span&gt;
+    &lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;body .notification-alert&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;on&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;click&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;a#link_enable_notifications&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nf"&gt;(e) =&amp;gt;&lt;/span&gt;
+      &lt;span class="nx"&gt;e&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;preventDefault&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+      &lt;span class="nx"&gt;@requestPermission&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;@setPermission&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+  &lt;span class="nv"&gt;visitUrl: &lt;/span&gt;&lt;span class="nf"&gt;(url) -&amp;gt;&lt;/span&gt;
+    &lt;span class="nx"&gt;Spine&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;Route&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;navigate&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;url&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+  &lt;span class="nv"&gt;notify: &lt;/span&gt;&lt;span class="nf"&gt;(avatar, title, content, url = null) -&amp;gt;&lt;/span&gt;
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="nx"&gt;@enableNotification&lt;/span&gt;
+      &lt;span class="nv"&gt;popup = &lt;/span&gt;&lt;span class="nb"&gt;window&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;webkitNotifications&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;createNotification&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;avatar&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;title&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;content&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+      &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="nx"&gt;url&lt;/span&gt;
+        &lt;span class="nv"&gt;popup.onclick = &lt;/span&gt;&lt;span class="nf"&gt;-&amp;gt;&lt;/span&gt;
+          &lt;span class="nb"&gt;window&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;parent&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;focus&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+          &lt;span class="nb"&gt;window&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;parent&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;notifier&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;visitUrl&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;url&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+      &lt;span class="nx"&gt;popup&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;show&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+      &lt;span class="nx"&gt;setTimeout&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="o"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="nx"&gt;popup&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;cancel&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="mi"&gt;12000&lt;/span&gt;
+
+&lt;span class="nb"&gt;window&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nv"&gt;Notifier = &lt;/span&gt;&lt;span class="nx"&gt;Notifier&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;Limitation&lt;/h3&gt;
+
+&lt;p&gt;While Safari 6 in Mountain Lion brings the support, it also brings some limitations, for example,&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Custom icons aren&amp;#39;t supported any more in Mountain Lion, no matter which browser you use. It&amp;#39;s controlled by the Notification Center and will always show the application icon such as Safari, Chrome. However, users in other OS doesn&amp;#39;t have the problem. Hope Apple can fix it soon.&lt;/li&gt;
+&lt;li&gt;Title is truncated to 30 characters in Mountain Lion. So does body. However, you can view the whole body in the Notification Center.&lt;/li&gt;
+&lt;li&gt;You can&amp;#39;t control how the notifications close in Mountain Lion. It&amp;#39;s taken by the Notification Center setting.&lt;/li&gt;
+&lt;li&gt;HTML Notification doesn&amp;#39;t work in Safari because the new W3C spec only have simple notification. So I suggest using simple notification only in your application.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3&gt;One More Thing&lt;/h3&gt;
+
+&lt;p&gt;If you&amp;#39;re developing Chrome extensions, do remember to add the &amp;ldquo;notifications&amp;rdquo; permission in the manifest.json. So when users install the extensions, the permission will be automatically granted. For Safari extensions, nothing needs to be added since it&amp;#39;s handled by Safari with permission auto granted.&lt;/p&gt;
+
+&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+
+&lt;h3&gt;About Pragmatic.ly&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href="https://pragmatic.ly"&gt;Pragmatic.ly&lt;/a&gt; is a lean collaborative project management tool aiming to help small teams make better products easier. It&amp;#39;s the ideal and elegant project management tool for tech startups.&lt;/p&gt;
+
+&lt;p&gt;Now that you&amp;#39;ve read so far, you should follow me &lt;a href="https://twitter.com/yedingding"&gt;@yedingding&lt;/a&gt;!&lt;/p&gt;
+</description>
+      <guid>tag:blog.pragmatic.ly,article.url</guid>
+      <pubDate>2012-08-01T12:00:00Z</pubDate>
+      <category>html5 notification, JavaScript, web notification</category>
+    </item>
+    <item>
+      <title>Announcing Smart Time Ago</title>
+      <link>http://blog.pragmatic.ly/we-opened-source-smart-time-ago/</link>
+      <description type="html">&lt;p&gt;The relative timestamps like &amp;ldquo;5 minutes ago&amp;rdquo; are more and more used in web applications. So web frameworks like &lt;a href="http://rubyonrails.com"&gt;Ruby on Rails&lt;/a&gt; have a builtin helper method to change timestamps to relative timestamps easily on server side as following,&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;time_ago_in_words&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;item&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;created_at&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;But If you use relative timestamps, you should update them on the client side to make sure the users always seeing the correct relative timestamps. And there is already an awesome library to do this job, which is &lt;a href="http://timeago.yarp.com/"&gt;Timeago&lt;/a&gt;. Thanks to Yarp.com, the author of Timeago.&lt;/p&gt;
+
+&lt;p&gt;However, after trying the library in depth, we found that it doesn&amp;#39;t fit well in &lt;a href="https://pragmatic.ly"&gt;Pragmatic.ly&lt;/a&gt;. As a real time single-page application, our users may not refresh the page for days, so refreshing the relative timestamps per minute is meaningless and wasteful.&lt;/p&gt;
+
+&lt;p&gt;We need a more efficient solution. So we built &lt;a href="http://pragmaticly.github.com/smart-time-ago/"&gt;Smart Time Ago&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3&gt;Why Smart&lt;/h3&gt;
+
+&lt;p&gt;Instead of updating the relative timestamps every minute, smart-time-ago can dynamically tune the checking time interval to a proper value depending on the newest time on the page.&lt;/p&gt;
+
+&lt;p&gt;For example, if the newest time is &amp;#39;2 hours ago&amp;#39;, there is no need to check and update the relative timestamps per minute. Instead, 30 minutes is a better choice.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://pragmaticly.github.com/smart-time-ago/"&gt;Smart Time Ago&lt;/a&gt; is hosted on github under MIT License. Check it out for more details and share your feedbacks and suggestions. Thanks!&lt;/p&gt;
+
+&lt;h3&gt;About Pragmatic.ly&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href="https://pragmatic.ly"&gt;Pragmatic.ly&lt;/a&gt; is a lean collaborative project management tool aiming to help small teams make better products easier. It&amp;#39;s the ideal and elegant project management tool for tech startups.&lt;/p&gt;
+</description>
+      <guid>tag:blog.pragmatic.ly,article.url</guid>
+      <pubDate>2012-07-23T18:00:00Z</pubDate>
+      <category>open source, JavaScript, jQuery, smart-time-ago</category>
+    </item>
+    <item>
+      <title>Pragmatic.ly an Asana Ripoff? We say no, read why.</title>
+      <link>http://blog.pragmatic.ly/ripoff-asana-we-say-no-and-why-were-here/</link>
+      <description type="html">&lt;p&gt;Last week was a big milestone for us. After a two month private beta period we publicly launched &lt;a title="Lean Collaborative Project Management Tool" href="https://pragmatic.ly"&gt;Pragmatic.ly&lt;/a&gt;. Many thanks to our private beta users for their encouraging words and kind feedback which we used to improve Pragmatic.ly. Our users are always extremely important to us.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Pragmatic.ly is an elegant project management tool. It provides us just enough features for using with a very concise and clear interface, and makes project management more enjoyable.&lt;p&gt;
+    - Yuanyi Zhang, Co-founder of &lt;a href="http://mockingbot.com"&gt;MockingBot.com&lt;/a&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;It is the first time that I don&amp;rsquo;t end up using excel spreadsheet for doing tasks management.&lt;/p&gt;
+  - Marc-Alexandre Cartiant, project manager
+&lt;/blockquote&gt;
+
+&lt;p&gt;We shared the launch news through social media platforms such as Twitter, Facebook, HackerNews, IRC, etc. Thanks to all the new users giving their feedback. All are highly appreciated!&lt;/p&gt;
+
+&lt;p&gt;Something we&amp;#39;re hearing in the feedback is that Pragmatic.ly is a &amp;ldquo;ripoff of Asana&amp;rdquo;. We even appreciate this kind of feedback and still want to thank those people for visiting our site and spending some time trying out our product. Asana definitely is a genius product and an awesome service for group collaboration. We recommend the service to our friends a lot when they need a general task management tool. We love Asana when we saw it at first glance! If you need a general shared task list for your team, give &lt;a href="http://asana.com"&gt;Asana&lt;/a&gt; a try and you&amp;#39;ll love it too.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;But back to Pragmatic.ly - we were inspired by Asana but found it didn&amp;#39;t work well for us in the software project management field. Shared task list is not such productive espeically for small agile teams. Developers need more! But on flip side, most of the project management services built for developers looks old and complex. We wanted to build a simple, modern tool that would make project management blissful for our developers.&lt;/p&gt;
+
+&lt;p&gt;Keeping simplicity in mind, we started from scratch. Following the tips from &amp;ldquo;&lt;a href="http://bootstrappingdesign.com/"&gt;Bootstrapping Design&lt;/a&gt;&amp;rdquo;, using &lt;a href="http://rubyonrails.org/"&gt;Ruby on Rails&lt;/a&gt;, &lt;a href="http://spinejs.com/"&gt;Spine.JS&lt;/a&gt; and &lt;a href="http://twitter.github.com/bootstrap"&gt;Twitter Bootstrap&lt;/a&gt;, we finally created a pragmatic way for you to manage your software projects. It&amp;#39;s a learning process from Asana and we stood on the shoulders of giants, but it&amp;#39;s definitely not a ripoff.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://pragmatic.ly/"&gt;Pragmatic.ly&lt;/a&gt; is still under heavy development and we&amp;#39;ll continue adding more value to it, such as git integration, project analytics, command line tools, etc.&lt;/p&gt;
+
+&lt;p&gt;If you&amp;#39;re looking for a project management tool to help your startup make better products easier, &lt;a href="https://pragmatic.ly"&gt;try it today&lt;/a&gt; and follow &lt;a href="https://twitter.com/pragmatic_ly"&gt;@pragmatic_ly&lt;/a&gt; to keep up with what&amp;#39;s new. Please let us know what you think and what features you’d like to see next and feel free to contact us via &lt;a href="mailto:support@pragmatic.ly"&gt;support@pragmatic.ly&lt;/a&gt; or mention &lt;a href="https://twitter.com/pragmatic_ly"&gt;@pragmatic_ly&lt;/a&gt; on twitter.&lt;/p&gt;
+</description>
+      <guid>tag:blog.pragmatic.ly,article.url</guid>
+      <pubDate>2012-07-16T13:21:00Z</pubDate>
+      <category>Productivity, Product Design</category>
+    </item>
+    <item>
+      <title>Hello World</title>
+      <link>http://blog.pragmatic.ly/hello-world/</link>
+      <description type="html">&lt;p&gt;Today, we&amp;#39;re excited to announce the beta version of &lt;a title="Lean Collaborative Product Management Tool" href="https://pragmatic.ly"&gt;Pragmatic.ly&lt;/a&gt;, our new product to simplify the project management process.&lt;/p&gt;
+
+&lt;p&gt;Pragmatic.ly is a fast and easy to use project management tool featuring real time collaboration. For years of developing products, we have tried many different project management tools. However, as a small team(&amp;lt;= 10), we found that most of them are too complex to do lots of work about work and most of them don&amp;#39;t care about communication, histories which force us to use different tools for same purpose. We&amp;#39;re always imaging there will be a tool which will make the team focus on the work with maximum productivity. That&amp;#39;s why we created Pragmatic.ly.&lt;/p&gt;
+
+&lt;p&gt;Our vision for project management is a tool where you can plan, work, communicate and review in one place with great user experience. Below are some features of Pragmatic.ly we want to share with you.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Single Page Interface&lt;/strong&gt; - Everything related to your project, including iterations, tickets, comments, are well organzied in one page. No anonying page loading, fast transition, the fluid experience of desktop app are bringing to web now. It’s clean, simple, easy and fast.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Real Time Collaboration&lt;/strong&gt; - Open the page and then you&amp;#39;re set, no reloading required. All the updates and actions related to the project such as iterations, tickets, comments will automatically shown to you in real time to keep everyone in the same page.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Notifications and Activity Feed&lt;/strong&gt; - Miss the activities while offline? It&amp;#39;s ok and you&amp;#39;re easy to catch up here. The in-page notifications will let you quickly browse what happened in the project when you&amp;#39;re away and the activity feed will let you quickly catch up what happened in an iteration and ticket.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Easy and Efficient Management&lt;/strong&gt; - The management about project is effortless and painless here to let you just focus on what matters. Stop wasting time to do &amp;#39;work about work&amp;#39; and instead work on the project itself!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Pragmatic.ly is currently in beta release and we&amp;#39;re working hard to make it simple, elegant, useful and fun. So, if you&amp;#39;re looking for a project management tool to maximize your productivity, sign up for the beta today. There are more shiny features on the way, so make sure to check back often to keep up with what&amp;#39;s new. Please let us know what you think and what features you’d like to see next and feel free to contacts us via &lt;a href="support@pragmatic.ly"&gt;support@pragmatic.ly&lt;/a&gt; or mention &lt;a href="mailto:https://twitter.com/pragmatic_ly"&gt;@pragmatic_ly&lt;/a&gt; on twitter.&lt;/p&gt;
+</description>
+      <guid>tag:blog.pragmatic.ly,article.url</guid>
+      <pubDate>2012-06-17T02:00:00Z</pubDate>
+      <category>Announcement</category>
+    </item>
+  </channel>
+</rss>
