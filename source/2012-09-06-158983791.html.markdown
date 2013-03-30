@@ -9,53 +9,53 @@ August 2012 has been a big month for [Pragmatic.ly](https://pragmatic.ly). We di
 
 So let me take an opportunity to introduce the cutting-edge main changes that we have made in month of August.
 
-##### Clear Pricing Policy #####
+### Clear Pricing Policy ###
 
 We're landing a dedicated pricing page now. It's simple and vibrant. Please don't hestigate to contacting us if you have anything more that you want to know.
 
-![Clear Pricing Policy](/158983791/pricing.png "Clear Pricing Policy")
+![Clear Pricing Policy](/images/158983791/pricing.png "Clear Pricing Policy")
 
-##### Organization Panel #####
+### Organization Panel ###
 
 We created a brief panel to list organization information which allows you to create an admin account that can handle the status of the organization easily. You can view Billing Time, All Projects Info and Team Members Information there and further it also allows you to add or remove members from your organization with this unique feature.
 
-![Organization Panel](/158983791/organization.png "Organization Panel")
+![Organization Panel](/images/158983791/organization.png "Organization Panel")
 
-##### Manage Iterations & Manage Team #####
+### Manage Iterations & Manage Team ###
 
 We added two simple panels for admin to see iterations and team information. Admin could also remove members from a project and delete an iteration of a project with this feature.
 
-![Management Iterations & Team](/158983791/management.png "Manage Iterations & Manage Team")
+![Management Iterations & Team](/images/158983791/management.png "Manage Iterations & Manage Team")
 
-##### Archive Iteration #####
+### Archive Iteration ###
 
 The iterations gradually increase as time goes on. So we have created archiving iteration function for the users to archive old iterations to make users focus on the recent working iterations. And also you could toggle to view or hide the archived iterations when you needed.
 
-![Archive Iteration](/158983791/archive.png "Archive Iteration")
+![Archive Iteration](/images/158983791/archive.png "Archive Iteration")
 
-##### Relative timestamp in Notifications #####
+### Relative timestamp in Notifications ###
 
 Now it's possible for you to get up to the speed of your project with Notifications and Activity Feed. It's simpler now! We have modified the notifications design to show the comparative timestamp which can give a quick peek to gear up. We also opened source the library on github.
 
-![Notifications](/158983791/notification.png "Relative timestamp in Notification")
+![Notifications](/images/158983791/notification.png "Relative timestamp in Notification")
 
-##### Clickable Web Notification #####
+### Clickable Web Notification ###
 
 Web notification is one of the best ways to improve the communication! It allows you to focus on the project by the same time you can receive instant notifications when anything is changed and updated. And now we move one step further, when you click these bubble notifications, it directs you to the iteration/ticket/comment where the notification is changed and updated.
 
-![Web Notification](/158983791/webnotification.png "Clickable Web Notification")
+![Web Notification](/images/158983791/webnotification.png "Clickable Web Notification")
 
-##### Mention @somebody to bring people into the discussion #####
+### Mention @somebody to bring people into the discussion ###
 
 Want to bring somebody into the discussion? Why to think how? When you mention ‘@’followed by the person’s name in the comment by the user; particular person will be notified instantly and will be subscribed for the future updates regarding the same discussion. Still we're working on betterment of notification controls that can let the users receive the relevant events updates only.
 
-![Mention](/158983791/mention.png "Mention")
+![Mention](/images/158983791/mention.png "Mention")
 
-##### Internal Connections among tickets #####
+### Internal Connections among tickets ###
 
 Tickets are connected! Just by adding '#' with ticket ID into any descriptions or comments you can auto link the ticket. By connecting the tickets, you can easily see the dependencies, duplications and related tickets at a glance. It's just a start and more is on its way.
 
-![Connection among tickets](/158983791/ticket-link.png "Internal Connections among tickets")
+![Connection among tickets](/images/158983791/ticket-link.png "Internal Connections among tickets")
 
 <br/>
 

@@ -5,7 +5,7 @@ tags: Ticket Management, UI, Lean Product Management, ChangeLog
 author: ben
 ---
 
-##### Improve the stability of ticket item in the list #####
+### Improve the stability of ticket item in the list ###
 
 Users informed us that the ticket list in the center column was unstable, and we were rushing into this problem immediately.
 
@@ -18,7 +18,7 @@ As shown in the screenshot, we found the old list item was a interactive savage,
 5. The tags would be a ticket filters immediately.
 6. The little right pointer had an onhover state.
 
-![Old Ticket Interactive](/improving-ticket-interactive/old-ticket-interactive.jpg)
+![Old Ticket Interactive](/images/improving-ticket-interactive/old-ticket-interactive.jpg)
 
 This is quite a burden to users, we'd relieve it as soon as possible.
 
@@ -31,13 +31,13 @@ Though the UI looks same as before, the current list item goes like this:
 
 We have also changed the status naming and their section order. Do they make sense to you? Let's know about your thoughts.
 
-![New Ticket Interactive](/improving-ticket-interactive/new-ticket-interactive.jpg)
+![New Ticket Interactive](/images/improving-ticket-interactive/new-ticket-interactive.jpg)
 
-##### Ticket status switching become more handy #####
+### Ticket status switching become more handy ###
 
 Ticket status indicates how's the ticket going, it drives our daily development work. Everyday we generate todo ticket , assign it to someone, start working on it, complet it, and someone review on it. Without doubt, ticket status switching is the most frequently used in our application. We need to polish it again and again to help you more productive, now it looks like this.
 
-![New Ticket Switch](/improving-ticket-interactive/new-ticket-switch.jpg)
+![New Ticket Switch](/images/improving-ticket-interactive/new-ticket-switch.jpg)
 
 Before the improvement, the status can only switch to next status by one click on the checkbox. Now by clicking outside of the checkbox, you will get a popup menu(To Do/Start/Complete/Accept), where you can change ticket to any status. By clicking inside of the checkbox, you are switching as the old way.
 
@@ -47,6 +47,6 @@ Stay tuned, we will post improvements very soon.
 
 <br/>
 
-##### About Pragmatic.ly #####
+### About Pragmatic.ly ###
 
 [Pragmatic.ly](https://pragmatic.ly) is a lean collaborative project management tool aiming to help small teams make better products easier. It's the ideal and elegant project management tool for tech startups.

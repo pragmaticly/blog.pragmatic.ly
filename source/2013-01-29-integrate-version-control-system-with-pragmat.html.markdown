@@ -13,11 +13,11 @@ With VCS integrated into Pragmatic.ly, all the commits related to a ticket will 
 
 Feel free to try this feature by signing up at [pragmatic.ly](https://pragmatic.ly).
 
-![VCS Integration](/integrate-version-control-system-with-pragmat/vcs-integration.png)
+![VCS Integration](/images/integrate-version-control-system-with-pragmat/vcs-integration.png)
 
 So far, we have already supported three VCS services: [GitHub](https://github.com), [BitBucket](https://bitbucket.org) and [Gitlab](http://gitlab.org). And more are coming. Let us know if the VCS you're using now is not in the list and you want to see it soon!
 
-## How to setup ##
+### How to setup ###
 
 1. First, you should make sure the user name or the email is the same with what you use in your Pragmatic.ly account. If not, you can always set the setting in the project. For example:
 
@@ -26,42 +26,42 @@ So far, we have already supported three VCS services: [GitHub](https://github.co
 
 2. Get the commit hook url on your Pragmatic.ly project setting panel and copy this url to your clipboard. We will use it as the callback url latter. Only the administrators of the project can view the settings.
 
-    ![Project Setting](/integrate-version-control-system-with-pragmat/project-list.png)
+    ![Project Setting](/images/integrate-version-control-system-with-pragmat/project-list.png)
 
-    ![Edit Project](/integrate-version-control-system-with-pragmat/edit-project.png)
+    ![Edit Project](/images/integrate-version-control-system-with-pragmat/edit-project.png)
 
 3. As said, now Pragmatic.ly supports three services: Github, Bitbucket, Gitlab. Below are the integration steps for each service.
 
-###### **Github** ######
+#### **Github** ####
 
 1. Go to your project page on Github, click the 'Setting' tag of the project to go to project setting page.(If you don't see this tab, it means you don't have this permission. Please contact the owner of this project on Github.)
 
-    ![GitHub Project Setting](/integrate-version-control-system-with-pragmat/github-project-setting.png)
+    ![GitHub Project Setting](/images/integrate-version-control-system-with-pragmat/github-project-setting.png)
 
 2. Then click the 'Service Hooks', and choose the 'WebHook URLs'.
 3. Paste the url to the field and click 'Update settings'.
 
-    ![Github WebHook](/integrate-version-control-system-with-pragmat/github-webhook.png)
+    ![Github WebHook](/images/integrate-version-control-system-with-pragmat/github-webhook.png)
 
-###### Bitbucket ######
+#### Bitbucket ####
 
 1. Go to your setting page of your project on Bitbucket and click the 'Services' on side bar
 2. Choose the the 'POST' from the select box and paste the URL on the url field
 3. Click 'Save'
 
-    ![BitBucket WebHook](/integrate-version-control-system-with-pragmat/bitbucket-webhook.png)
+    ![BitBucket WebHook](/images/integrate-version-control-system-with-pragmat/bitbucket-webhook.png)
 
-###### GitLab ######
+#### GitLab ####
 
 The Gitlab configuration is the same as GitHub. So you can refer to the section how to configure GitHub.
 
-##### How to use #####
+### How to use ###
 
 1. Associate the commits with your ticket on Pragmatic.ly.
 
     For example we have a ticket whose number is 529.
 
-    ![Ticket Example](/integrate-version-control-system-with-pragmat/ticket-example.png)
+    ![Ticket Example](/images/integrate-version-control-system-with-pragmat/ticket-example.png)
 
     There are two ways to associate your commits with a specify ticket.
 

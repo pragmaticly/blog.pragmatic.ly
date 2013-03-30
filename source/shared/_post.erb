@@ -12,15 +12,16 @@
     <li class="author">
      by <a href="#"><%= author(article.data['author']).name %></a>
     </li>
-    <li class="tags"><a href="#">UI</a>, <a href="#">New Feature</a></li>
+    <li class="tags">
+      <% article.tags.each do |tag| %>
+        <%= link_to tag, tag_path(tag) %>
+      <% end %>
+    </li>
   </ul>
 </aside>
 
 <div class="content">
   <%= article.body %>
-  
-  <!-- if summary is used -->
-  <p><a href="#">Read more →</a></p>
 </div>
 
 <div class="share">

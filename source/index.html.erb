@@ -2,22 +2,48 @@
 changefreq: weekly
 priority: 1
 pageable: true
-per_page: 2
+per_page: 5
 ---
 
 <div id="posts">
-  <% page_articles.each_with_index do |article, i| %>
-  <article class="post">
-    <%= partial 'shared/post', locals: { article: article } %>
-  </article>
+  <% if page_number == 1 %>
+    <%
+       full_article = page_articles[0]
+       articles = page_articles[1..-1]
+     %>
+  <% else %>
+    <%
+       full_article = nil
+       articles = page_articles[0..-1]
+     %>
   <% end %>
-  
+  <% if full_article %>
+    <article class="post">
+      <%= partial 'shared/post', locals: { article: full_article } %>
+    </article>
+  <% end %>
+  <% if articles %>
+    <% articles.each_with_index do |article, i| %>
+      <article class="post">
+        <%= partial 'shared/post_with_summary', locals: { article: article } %>
+      </article>
+    <% end %>
+  <% end %>
+
   <ul class="pager">
     <li class="previous">
-      <a href="#">&larr; Older</a>
+      <% if prev_page %>
+        <%= link_to "&larr; Newer", prev_page %>
+      <% else %>
+        <a href="#" class="disabled">&larr; Newer</a>
+      <% end %>
     </li>
     <li class="next">
-      <a href="#">Newer &rarr;</a>
+      <% if next_page %>
+        <%= link_to "Older &rarr;", next_page %>
+      <% else %>
+        <a href="#" class="disabled">Older &rarr;</a>
+      <% end %>
     </li>
   </ul>
 </div>

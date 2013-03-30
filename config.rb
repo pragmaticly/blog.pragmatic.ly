@@ -7,7 +7,6 @@ Time.zone = "Beijing"
 activate :blog do |blog|
   # blog.prefix = "blog"
   # blog.sources = ":year-:month-:day-:title.html"
-  # blog.taglink = "tags/:tag.html"
   blog.permalink = ":title"
   blog.layout = "layouts/article"
   blog.month_link = ":year/:month"
@@ -17,7 +16,8 @@ activate :blog do |blog|
   # blog.day_link = ":year/:month/:day.html"
   # blog.default_extension = ".markdown"
 
-  # blog.tag_template = "tag.html"
+  #blog.taglink = "tags/:tag.html"
+  blog.tag_template = "tag.html"
   # blog.calendar_template = "calendar.html"
 
   blog.paginate = true
@@ -37,7 +37,6 @@ page "/sitemap.xml", :layout => false
 # Susy grids in Compass
 # First: gem install susy --pre
 # require 'susy'
-require 'sassy-buttons'
 require 'rgbapng'
 
 # Change Compass configuration
@@ -81,8 +80,6 @@ activate :automatic_image_sizes
 #   end
 # end
 
-#activate :syntax
-
 # Methods defined in the helpers block are available in templates
 helpers do
   def full_url(article)
@@ -107,6 +104,8 @@ end
 set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'
 set :images_dir, 'images'
+
+activate :syntax
 
 set :markdown_engine, :redcarpet
 set :markdown, fenced_code_blocks: true, autolink: true, smartypants: true, tables: true
