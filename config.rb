@@ -31,6 +31,7 @@ activate :directory_indexes
 
 page "/rss.xml", :layout => false
 page "/sitemap.xml", :layout => false
+page "/404.html", :directory_index => false
 
 ###
 # Compass
