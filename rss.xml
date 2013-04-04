@@ -8,13 +8,56 @@
     <copyright>&amp;#x2117; &amp;amp; &amp;#xA9; 2012-2013 Pragmatic.ly</copyright>
     <link href="http://blog.pragmatic.ly/"/>
     <link href="http://blog.pragmatic.ly/feed.xml" rel="self"/>
-    <updated>2013-01-29T02:00:00Z</updated>
-    <lastBuildDate>2013-01-29T02:00:00Z</lastBuildDate>
-    <pubDate>2013-01-29T02:00:00Z</pubDate>
+    <updated>2013-03-23T09:00:00Z</updated>
+    <lastBuildDate>2013-03-23T09:00:00Z</lastBuildDate>
+    <pubDate>2013-03-23T09:00:00Z</pubDate>
     <description>The voice of The Pragmatic.ly Team sharing Nes, Thoughts &amp; Fun.</description>
     <author>
       <name>The Pragmatic.ly Team</name>
     </author>
+    <item>
+      <title>Beyonds Gravatar and set your profile picture</title>
+      <link>http://blog.pragmatic.ly/announcing-uploading-avatar</link>
+      <description type="html">&lt;p&gt;Today, we have released a minor update to our users which is you can upload your image and set as your profile picture in
+&lt;a title="Lean Collaborative Project Management Tool and Online Collaboration" href="http://pragmatic.ly"&gt;Pragmatic.ly&lt;/a&gt;
+instead of using &lt;a href="http://en.gravatar.com/"&gt;Gravatar&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The UX is very simple.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="http://cl.ly/image/2B1T1G32210z/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202013-04-03%20%E4%B8%8B%E5%8D%884.43.03.png" /&gt;&lt;/p&gt;
+
+&lt;h3&gt;Why is such a simple feature not included from the first day?&lt;/h3&gt;
+
+&lt;p&gt;You may have the question. We too! We spent some time debating whether we should include that before the public release. The
+goal of Pragmatic.ly is to provide the simplest and elegant project management experience to help you make better products easier.
+So we spent most of the time to achieve the goal and regarding to the profile picture part, we just integrated the Gravatar, the
+globally recognized avatars, in one hour.&lt;/p&gt;
+
+&lt;p&gt;Gravatr works perfectly and we enjoy the benifits very much! Even big services like &lt;a href="http://github.com"&gt;GitHub&lt;/a&gt; has only the Gravatar support till today.&lt;/p&gt;
+
+&lt;p&gt;However, when Pragmatic.ly grows, we learn a lot from our users. There are two main problems we heard with Gravatar.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Many users use the company email adress instead of personal to register on Pragmatic.ly and they don&amp;#39;t and won&amp;#39;t set an avatar on Gravatar.&lt;/li&gt;
+&lt;li&gt;We&amp;#39;re a team in China and lots of our users are chineses too. Gravatar is not widely used here.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;We found that a real avatar can improve the team&amp;#39;s collaboration and productivity. Yes, it&amp;#39;s true, :). So we think it&amp;#39;s the time to change now. It only
+took us few days to release it but we&amp;#39;re glad that we&amp;#39;re focusing on the core value and only doing those low priority features when user really needs that.&lt;/p&gt;
+
+&lt;p&gt;If you haven&amp;#39;t set your profile picture up on Pragmatic.ly yet, you should do it now. Enjoy!&lt;/p&gt;
+
+&lt;h3&gt;About Pragmatic.ly&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href="https://pragmatic.ly"&gt;Pragmatic.ly&lt;/a&gt; is a lean collaborative project management tool aiming to help small teams make better products easier.
+It&amp;#39;s the ideal and elegant project management tool for tech startups.&lt;/p&gt;
+</description>
+      <guid>tag:blog.pragmatic.ly,article.url</guid>
+      <pubDate>2013-03-23T09:00:00Z</pubDate>
+      <category>Announcement</category>
+    </item>
     <item>
       <title>Introducing VCS integration with Pragmatic.ly</title>
       <link>http://blog.pragmatic.ly/integrate-version-control-system-with-pragmat</link>
