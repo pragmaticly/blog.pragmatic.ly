@@ -11,7 +11,7 @@ instead of using [Gravatar](http://en.gravatar.com/).
 
 The UX is very simple.
 
-![](http://cl.ly/image/2B1T1G32210z/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202013-04-03%20%E4%B8%8B%E5%8D%884.43.03.png)
+![](/images/announcing-uploading-avatar/update_avatar.png)
 
 ### Why is such a simple feature not included from the first day?
 
