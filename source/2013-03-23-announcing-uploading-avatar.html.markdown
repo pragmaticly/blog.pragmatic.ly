@@ -1,7 +1,7 @@
 ---
 title: "Beyonds Gravatar and set your profile picture"
 date: 2013-03-23 17:00 +08:00
-tags: Announcement
+tags: Announcement, New feature
 author: terry
 ---
 
