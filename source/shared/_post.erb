@@ -6,11 +6,12 @@
 
 <aside>
   <ul class="meta">
-    <li class="date">
-      <%= article.date.strftime("%b %d, %Y") %>
-    </li>
+    <li class="author-photo"><a href="https://pragmatic.ly/about"><img src="/images/<%= author(article.data['author']).name.gsub(/\s+/, "-").downcase %>.png" alt=""></a></li>
     <li class="author">
      by <a href="https://pragmatic.ly/about"><%= author(article.data['author']).name %></a>
+    </li>
+    <li class="date">
+      <%= article.date.strftime("%b %d, %Y") %>
     </li>
     <li class="tags">
       <% article.tags.each do |tag| %>

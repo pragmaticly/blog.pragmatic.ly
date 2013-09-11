@@ -6,8 +6,13 @@
   <%= current_article.tags %>
 <% end %>
 
+<% content_for :cover do %>
+  <img src="/images/glyphicons-halflings-white.png" />
+<% end %>
+
+
 <% wrap_layout :layout do %>
-  <article class="post">
+  <article class="post single">
 
     <%= partial 'shared/post', locals: { article: current_article } %>
 
@@ -28,5 +33,5 @@
   </script>
 
   <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-  <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
 <% end %>

@@ -50,17 +50,41 @@
   </head>
 
   <body class="<%= page_classes %>">
-    <header id="header">
-      <div class="container">
-        <a href="/" class="logo">Pragmatic.ly Blog</a>
 
-        <ul class="top-nav">
-          <li><a href="https://pragmatic.ly/tour">Tour</a></li>
-          <li><a href="https://pragmatic.ly/signup">Sign Up</a></li>
-          <li><a href="https://pragmatic.ly/login">Login</a></li>
+    <header class="navbar navbar-fixed-top" role="banner">
+      <div class="container">
+
+        <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
+
+        <a class="brand" href="//Pragmatic.ly/" tabindex="-1">Pragmatic.ly</a>
+
+        <nav class="nav-collapse collapse" role="navigation">
+        <ul class="nav pull-right">
+          <li><a href="//Pragmatic.ly/">首页</a></li>
+          <li><a href="//Pragmatic.ly/tour">了解产品</a></li>
+          <li><a href="//Pragmatic.ly/pricing">价格方案</a></li>
+          <li><a class="login" data-target="#login-modal" data-toggle="modal" href="//Pragmatic.ly/login" role="button" type="button">登录</a></li>
+          <li class="action"><a class="signup" href="//Pragmatic.ly/signup">免费注册</a></li>
         </ul>
+        </nav>
+
       </div>
     </header>
+    
+    <section class="hero wrap-blue">
+      <div class="container header">
+        <% if yield_content(:cover).blank? %>
+           <h1 class="blog-name">官方博客</h1>
+           <p>我们一直在持续改进产品, 关注更新请<a href="/rss">订阅RSS</a></p>
+        <% else %>
+          <%= yield_content(:cover) %>
+        <% end %>
+      </div>
+    </section>
 
     <section class="main">
       <div class="container">
@@ -68,37 +92,63 @@
       </div>
     </section>
 
-    <footer id="footer">
+    <footer class="site-footer" role="contentinfo">
       <div class="container">
-        <section id="blog-info">
-          <div class="block about">
-            <h5>ABOUT</h5>
-            <p>Pragmatic.ly is a lean collaborative project management tool which help you make better products, easier. <a href="https://pragmatic.ly/" class="cta">Learn more →</a></p>
-          </div>
-          <div class="block authors">
-            <h5>AUTHORS</h5>
-            <ul class="contribs">
-              <li><a href="#"><img src="/images/dingdingye.png" width="20px"> Dingding Ye</a></li>
-              <li><a href="#"><img src="/images/terrytai.png" width="20px"> Terry Tai</a></li>
-              <li><a href="#"><img src="/images/binhe.png" width="20px"> Bin He</a></li>
+        <div class="row">
+          <div class="span2 offset2">
+            <nav>
+            <h5>网站相关</h5>
+            <ul>
+              <li><a href="//Pragmatic.ly/">首页</a></li>
+              <li><a href="//Pragmatic.ly/tour">了解产品</a></li>
+              <li><a href="//Pragmatic.ly/pricing">价格方案</a></li>
+              <li><a href="//Pragmatic.ly/privacy">隐私政策</a></li>
+              <li><a href="//Pragmatic.ly/terms">服务条款</a></li>
             </ul>
-          </div>
-          <div class="block follow">
-            <h5>FOLLOW US</h5>
-            <ul class="social-buttons">
-              <li><a href="http://feeds.feedburner.com/pragmaticly" class="social-rss">RSS</a></li>
-              <li><a href="https://twitter.com/pragmatic_ly" class="social-twitter">Twitter</a></li>
-              <li><a href="https://facebook.com/pragmaticly" class="social-facebook">Facebook</a></li>
-              <li><a href="https://plus.google.com/109049203627299997967" class="social-google">Google+</a></li>
-            </ul>
+            </nav>
           </div>
 
-          <p class="copy">&copy; 2012-2013 Pragmatic.ly.</p>
-        </section>
+          <div class="span2">
+            <nav>
+              <h5>服务支持</h5>
+              <ul>
+                <!--<li><a href="/help">帮助中心</a></li>-->
+                <li><a href="//Pragmatic.ly/get-started">新手帮助</a></li>
+                <li><a href="mailto:support@pragmatic.ly">联系我们</a></li>
+              </ul>
+            </nav>
+          </div>
 
-      </div><!-- .wrapper -->
+          <div class="span2">
+            <nav>
+              <h5>联系合作</h5>
+              <ul>
+                <li><a href="//Pragmatic.ly/about">关于我们</a></li>
+                <li><a href="mailto:press@pragmatic.ly">合作伙伴</a></li>
+                <li><a href="mailto:press@pragmatic.ly">媒体报道</a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="span2">
+            <nav>
+              <h5>关注我们</h5>
+              <ul>
+                <li><a href="http://blog.pragmatic.ly">官方博客</a></li>
+                <li><a class="social-weibo" href="http://weibo.com/pragmaticly" target="_blank">微博</a></li>
+                <li><a class="social-facebook" href="//facebook.com/pragmaticly" target="_blank">Facebook</a></li>
+                <li><a class="social-twitter" href="//twitter.com/#!/pragmatic_ly" target="_blank">Twitter</a></li>
+                <li><a class="social-google" href="//plus.google.com/109049203627299997967">Google+</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <div class="copyright">
+          <p>&copy; 2012-2013 Pragmatic.ly</p>
+        </div>
+      </div>
     </footer>
 
-    <%= yield_content :footer %>
   </body>
 </html>

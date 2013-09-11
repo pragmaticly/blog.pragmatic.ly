@@ -13,10 +13,16 @@
     }
     .meta {
       list-style: none;
-      font-size: 12px;
+      font-size: 13px;
       margin: 0;
       li { line-height: 24px; }
-      .date { font-size: 14px; text-transform: uppercase; letter-spacing: 1px;}
+      .author-photo img {
+        border-radius: 50%;
+        max-width: 80px;
+        margin-bottom: 8px;
+      }
+      .author { font-size: 13px; }
+      .date { letter-spacing: 1px; }
       a {
         color: #999;
         &:hover { color: #666; }
@@ -42,7 +48,7 @@
       }
     }
     .title {
-      font-size: 1.5em;
+      font-size: 1.7em;
       line-height: 1.3;
       margin-bottom: 1em;
       a:hover { text-decoration: none; }
@@ -68,6 +74,13 @@
         margin: 0 0 1.5em 25px;
         th { background-color: #EAF2F7; }
         th, td { border: 1px solid #ddd; padding: 8px; text-align: left; font-size: .8em; }
+      }
+    }
+  
+    &.single {
+      .title {
+        font-size: 2em;
+        a { color: #444; }
       }
     }
   }
