@@ -4,6 +4,23 @@
     margin: 0 0 2.8em 0;
     padding: 0 0 1em 20%;
     border-bottom: 1px solid #dfdfdf;
+
+    .back-link {
+      margin-left: -25%;
+      float: left;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      font-size: 1.1em;
+
+      a {
+        padding: 4px;
+        border-bottom: 1px solid;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+
     aside {
       float: left;
       width: 20%;
@@ -76,7 +93,7 @@
         th, td { border: 1px solid #ddd; padding: 8px; text-align: left; font-size: .8em; }
       }
     }
-  
+
     &.single {
       .title {
         font-size: 2em;
