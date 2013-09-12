@@ -6,10 +6,11 @@
   <%= current_article.tags %>
 <% end %>
 
-<% content_for :cover do %>
-  <img src="/images/glyphicons-halflings-white.png" />
+<% if current_article.data["cover"] %>
+  <% content_for :cover do %>
+    <%= current_article.data["cover"] %>
+  <% end %>
 <% end %>
-
 
 <% wrap_layout :layout do %>
   <article class="post single">
@@ -17,7 +18,7 @@
     <%= partial 'shared/post', locals: { article: current_article } %>
 
   </article>
-  
+
   <div id="disqus_thread"></div>
   <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
