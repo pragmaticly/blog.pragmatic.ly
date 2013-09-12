@@ -1,7 +1,5 @@
 <header class="back-link">
-  <a href="/">
-   < 回到博客主页
-  </a>
+  <%= link_to "/", "< 回到博客主页" %>
 </header>
 
 <header>
@@ -14,7 +12,7 @@
   <ul class="meta">
     <li class="author-photo">
       <a href="<%= author(article.data['author']).link %>">
-        <img src="/images/<%= author(article.data['author']).avatar %>">
+        <%= image_tag author(article.data['author']).avatar %>
       </a>
     </li>
     <li class="author">

@@ -6,8 +6,13 @@
 
 <aside>
   <ul class="meta">
+    <li class="author-photo">
+      <a href="<%= author(article.data['author']).link %>">
+        <%= image_tag author(article.data['author']).avatar %>
+      </a>
+    </li>
     <li class="author">
-     by <a href="https://pragmatic.ly/about"><%= author(article.data['author']).name %></a>
+     by <%= author(article.data['author']).name %>
     </li>
     <li class="date">
       <%= article.date.strftime("%b %d, %Y") %>

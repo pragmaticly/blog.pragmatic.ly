@@ -54,12 +54,12 @@ a {
     padding: 0;
     width: 200px;
     height: 55px;
-    background: transparent url(/images/landing-sprite.png) no-repeat -100px -120px;
+    background: transparent url("../images/landing-sprite.png") no-repeat -100px -120px;
   }
   .action {
     position: absolute;
     z-index: 1099;
-    background: transparent url(/images/landing-sprite.png) no-repeat -50px -10px;
+    background: transparent url("../images/landing-sprite.png") no-repeat -50px -10px;
     width: 95px;
     height: 95px;
     top: -10px;

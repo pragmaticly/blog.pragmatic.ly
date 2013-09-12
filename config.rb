@@ -26,6 +26,7 @@ activate :blog do |blog|
   blog.summary_length = 800
 end
 
+set :encoding, "utf-8"
 set :trailing_slash, false
 activate :directory_indexes
 
@@ -119,6 +120,9 @@ activate :livereload
 
 # Build-specific configuration
 configure :build do
+  if ENV["BLOG_PREFIX"] == "true"
+    set :http_prefix, '/blog'
+  end
 
   # Or use a different image path
   # set :http_path, "/Content/images/"
@@ -150,5 +154,10 @@ end
 
 activate :deploy do |deploy|
   deploy.method = :git
-  deploy.branch = "gh-pages"
+  
+  if ENV["BLOG_PREFIX"] == "true"
+    deploy.branch = "internal"
+  else
+    deploy.branch = "gh-pages"
+  end
 end

@@ -1,8 +1,8 @@
 @media (max-width: 979px) {
   .container,
-  .navbar-static-top .container, 
-  .navbar-fixed-top .container, 
-  .navbar-fixed-bottom .container { 
+  .navbar-static-top .container,
+  .navbar-fixed-top .container,
+  .navbar-fixed-bottom .container {
     width: auto;
   }
 }
@@ -21,7 +21,7 @@
   	.meta li:after {
   		content: "\00A0\00A0\00B7\00A0\00A0";
   	}
-  	.meta li:last-child:after {	
+  	.meta li:last-child:after {
   		content: "";
   	}
   	.meta .date { font-size: 12px; }
@@ -32,7 +32,7 @@
   .navbar .nav-collapse { display: none; }
   .main .post.single .title { font-size: 1.5em; }
   .hero { display: none; }
-  .site-footer  { 
+  .site-footer  {
     padding: 20px 0;
     .container { padding: 0 20px;}
     .row { margin: 0; }
@@ -63,7 +63,7 @@
 only screen and (min-device-pixel-ratio : 1.5) {
   .navbar .brand,
   .navbar .action {
-    background-image: url("/images/landing-sprite@2x.png");
+    background-image: url("../images/landing-sprite@2x.png");
         -moz-background-size: 800px 800px;
          -ie-background-size: 800px 800px;
           -o-background-size: 800px 800px;
