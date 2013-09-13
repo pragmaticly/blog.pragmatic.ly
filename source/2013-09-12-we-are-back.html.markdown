@@ -3,7 +3,10 @@ title: "写在 Pragmatic.ly 即将两周年"
 date: 2013-09-12 13:50 +08:00
 tags: startup, thoughts
 author: dingding
+disqus_identifier: 'we-are-back'
 ---
+
+![弯路和未来](we-are-back/detour-and-sunshine.jpg)
 
 准确说，Pragmatic.ly 从有这个想法到现在已经有 2 年了。11 年 10 月份的一个晚上跟 Daniel 和 Terry 在对我们所有用过的项目管理工具吐完槽以后，然后决定自己造一个，12 年春节前后真正当个事做，4 月底 Ben 加入，7 月份发布 Beta，先在海外做了差不多 8 个月，今年 4 月份开始调整方向，转向国内，6 月底重新上线到现在，整个过程各种状况各种弯路，但是每天都能感觉到变化，每天都是新的学习，乐在其中。
 
