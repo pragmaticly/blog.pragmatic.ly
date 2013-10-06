@@ -38,7 +38,7 @@ disqus_identifier: 'comment-via-email'
 
 首先在浏览器中打开你的 Project
 
-![project_uid](new-feature-comment-via-email/Find_project_uid.jpg)
+![project_uid](new-feature-comment-via-email/project_uid.png)
 
 找到 project 后面的数字，这里是 “421d6f9a13e6”，然后在 email 中添加一个 "project+421d6f9a13e6@info.pragmatic.ly" 的联系人。
 
@@ -54,7 +54,11 @@ disqus_identifier: 'comment-via-email'
 
 正文中的内容将作为此列表的描述内容。
 
-![email_create_list](new-feature-comment-via-email/email_create_iteration.jpg)
+发送邮箱
+
+这里要用在 Pragmatic.ly 账号中使用的注册邮箱。
+
+![email_create_list](new-feature-comment-via-email/email_create_iteration.png)
 
 发送成功后 Pragmatic.ly 将会自动为您创建任务列表
 
@@ -72,11 +76,15 @@ disqus_identifier: 'comment-via-email'
 
 正文中的内容将作为任务描述。
 
-![email_task](new-feature-comment-via-email/email_create_ticket.jpg)
+发送邮箱
+
+这里要用在 Pragmatic.ly 账号中使用的注册邮箱。
+
+![email_task](new-feature-comment-via-email/email_create_ticket.png)
 
 发送成功后 Pragmatic.ly 将会自动创建这个单一任务
 
-![ply_task](new-feature-comment-via-email/email_create_ticket.jpg)
+![ply_task](new-feature-comment-via-email/ply_create_ticket.jpg)
 
 *方便么？还需要“项目助理”？*
 
