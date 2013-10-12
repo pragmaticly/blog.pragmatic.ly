@@ -17,7 +17,7 @@ window.location_pathname = ->
   location.pathname.replace(/index.\w+$/, '')
 
 setupEvent = ->
-  mixpanel?.track_links(".nav-collapse[role=navigation] a", "click nav link", {
+  mixpanel?.track_links(".nav-collapse li a", "click nav link", {
     referrer: document.referrer
   });
 
