@@ -3,7 +3,7 @@ title: "新功能: 控制面板"
 date: 2013-10-16 08:43 +08:00
 tags: Annoucement, New Feature
 author: ben
-disqus_identifier: 'we-are-back'
+disqus_identifier: 'introduce-the-new-dashboard'
 ---
 
 ## 为什么现在才有控制面板?
