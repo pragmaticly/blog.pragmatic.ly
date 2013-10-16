@@ -112,7 +112,7 @@ set :images_dir, 'images'
 activate :syntax
 
 set :markdown_engine, :redcarpet
-set :markdown, fenced_code_blocks: true, autolink: true, smartypants: true, tables: true
+set :markdown, fenced_code_blocks: true, autolink: true, smartypants: true, tables: true, footnotes: true
 
 # Livereload
 # use: https://github.com/middleman/middleman-livereload
