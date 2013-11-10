@@ -1,0 +1,275 @@
+
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]<!-->
+<html class="no-js" lang="zh">
+  <!--<![endif]-->
+  <head>
+    <meta charset="UTF-8">
+
+    <title>
+        The improvement of 'Archive Iteration'
+ - Pragmatic.ly Blog
+    </title>
+
+    <meta name="description" content="The voice of The Pragmatic.ly Team sharing Nes, Thoughts & Fun.">
+    <meta name="keywords" content="  ["ChangeLog", "Iterations"]
+">
+    <meta name="author" content="The Pragmatic.ly Team">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="cleartype" content="on">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="apple-touch-icon-precomposed" type="image/png" sizes="57x57" href="/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" type="image/png" sizes="72x72" href="/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" type="image/png" sizes="114x114" href="/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" type="image/png" href="/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" type="image/png" href="/apple-touch-icon.png">
+
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png">
+    <link rel="shortcut icon" sizes="16x16" href="/favicon.ico">
+    <link rel="alternate" type="application/rss+xml" title="Pragmatic.ly Blog Feed" href="/feed.xml" />
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link href="/stylesheets/application.css?1384089214" media="screen" rel="stylesheet" type="text/css" />
+    <script src="/javascripts/application.js" type="text/javascript"></script>
+
+    
+    <script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script>
+    <script type="text/javascript">var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-4054156-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();</script>
+    
+
+    
+  </head>
+
+  <body class="the-improvement-of-archive-iteration the-improvement-of-archive-iteration_index">
+
+    <header class="navbar navbar-fixed-top" role="banner">
+      <div class="container">
+
+        <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
+
+        <a class="brand" href="https://pragmatic.ly/" tabindex="-1">Pragmatic.ly</a>
+
+        <nav class="nav-collapse collapse" role="navigation">
+        <ul class="nav pull-right">
+          <li><a href="https://pragmatic.ly/">首页</a></li>
+          <li><a href="https://pragmatic.ly/tour">了解产品</a></li>
+          <li><a href="https://pragmatic.ly/pricing">价格方案</a></li>
+          <li><a class="login" data-target="#login-modal" data-toggle="modal" href="https://pragmatic.ly/login" role="button" type="button">登录</a></li>
+          <li class="action"><a class="signup" href="https://pragmatic.ly/signup">免费注册</a></li>
+        </ul>
+        </nav>
+
+      </div>
+    </header>
+
+    <section class="hero wrap-blue">
+      <div class="container header">
+        
+           <h1 class="blog-name">Pragmatic.ly 官方博客</h1>
+           <p>
+            好好做产品，做好产品
+           </p>
+        
+      </div>
+    </section>
+
+    <section class="main">
+      <div class="container">
+          <article class="post single">
+
+    <header>
+  <h2 class="title">
+    <a href="/the-improvement-of-archive-iteration">The improvement of 'Archive Iteration'</a>
+  </h2>
+</header>
+
+<aside>
+  <ul class="meta">
+    <li class="author-photo">
+      <a href="http://terrytai.com">
+        <img alt="" width="120" height="120" src="/images/terry-tai.png?1384089211" />
+      </a>
+    </li>
+    <li class="author">
+     by 太檑
+    </li>
+    <li class="date">
+      Jan 12, 2013
+    </li>
+    <li class="tags">
+      
+        <a href="/tags/changelog">ChangeLog</a>
+      
+        <a href="/tags/iterations">Iterations</a>
+      
+    </li>
+    <li class="back-link">
+      <a href="/">&lsaquo; 返回博客主页</a>
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <h3>Background of &#39;Archive Iteration&#39; function</h3>
+
+<p>We have released the &#39;Archive Iteration&#39; feature for some time.  This is a very useful feature if you use iterations the way like us. We create individual iteration for each week, and put the things we will work on in the corresponding iteration.</p>
+
+<p>But with time growing, the Iteration List becomes longer and longer. And most cases the old iterations are not important any more and no need always display them in the Iteration list, that&#39;s why &#39;Archive Iteration&#39; feature born.</p>
+
+<h3>How to archive Iteration</h3>
+
+<p>First you just need click the iteration name which you want to archive on the left sidebar.</p>
+
+<p><img alt="Click Iteration" width="241" height="223" src="/images/the-improvement-of-archive-iteration/click-iteration.png?1384089211" /></p>
+
+<p>Then click the toothed icon at the right sidebar and you will see the &#39;Archive&#39; button. After clicking it, this iteration with  tickets in it will all be archived. A archived iteration with its tickets will all be hidden from your work space by default for reducing the interference to your current work.</p>
+
+<p><img alt="Archive Iteration" width="193" height="165" src="/images/the-improvement-of-archive-iteration/archive-iteration.png?1384089211" /></p>
+
+<h3>How to unarchive</h3>
+
+<p>By default the archived iterations will be hidden. To bring them  back to your work space you just need click the toothed icon at the bottom of the left sidebar. Then click the &#39;Show Archived Iterations&#39; item.</p>
+
+<p><img alt="Manage Iterations" width="371" height="119" src="/images/the-improvement-of-archive-iteration/manage-iterations.png?1384089211" /></p>
+
+<p>Then you will see the archived iterations back to your Iteration List.</p>
+
+<p><img alt="Archived Iterations" width="240" height="91" src="/images/the-improvement-of-archive-iteration/archived-iterations.png?1384089211" /></p>
+
+<p>You can do what you want like a normal iterations to them.</p>
+
+<p>The only thing you might need care about is that when tickets move into an archived iteration they will be marked as archived. In a similar way when you move the tickets out of archived iteration, they will be marked as unarchived.</p>
+
+<p>If you want totally unarchive a whole iteration with its tickets. Just simply click the &#39;Unarchive&#39; like before at the right sidebar after selecting a iteration.</p>
+
+<p><img alt="Unarchive Iteration" width="225" height="161" src="/images/the-improvement-of-archive-iteration/unarchive-iteration.png?1384089211" /></p>
+
+<p>That&#39;s all. Hope this function help you organize your work better.</p>
+
+<p>If you have any questions or feedback, feel free to let us know.</p>
+
+<p><br/></p>
+
+<h3>About Pragmatic.ly</h3>
+
+<p><a href="https://pragmatic.ly">Pragmatic.ly</a> is a lean collaborative project management tool aiming to help small teams make better products easier. It&#39;s the ideal and elegant project management tool for tech startups.</p>
+
+</div>
+
+
+  </article>
+
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'pragmaticlyblog'; // required: replace example with your forum shortname
+    var disqus_identifier = 'the-improvement-of-archive-iteration';
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+
+  <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+      </div>
+    </section>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="container">
+        <div class="row">
+          <div class="span2 offset2">
+            <nav>
+            <h5>网站相关</h5>
+            <ul>
+              <li><a href="https://pragmatic.ly/">首页</a></li>
+              <li><a href="https://pragmatic.ly/tour">了解产品</a></li>
+              <li><a href="https://pragmatic.ly/pricing">价格方案</a></li>
+              <li><a href="https://pragmatic.ly/privacy">隐私政策</a></li>
+              <li><a href="https://pragmatic.ly/terms">服务条款</a></li>
+            </ul>
+            </nav>
+          </div>
+
+          <div class="span2">
+            <nav>
+              <h5>服务支持</h5>
+              <ul>
+                <!--<li><a href="/help">帮助中心</a></li>-->
+                <li><a href="https://pragmatic.ly/get-started">新手帮助</a></li>
+                <li><a href="mailto:support@pragmatic.ly">联系我们</a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="span2">
+            <nav>
+              <h5>联系合作</h5>
+              <ul>
+                <li><a href="https://pragmatic.ly/about">关于我们</a></li>
+                <li><a href="mailto:press@pragmatic.ly">合作伙伴</a></li>
+                <li><a href="mailto:press@pragmatic.ly">媒体报道</a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="span2">
+            <nav>
+              <h5>关注我们</h5>
+              <ul>
+                <li><a href="https://pragmatic.ly/blog">官方博客</a></li>
+                <li><a class="social-weibo" href="http://weibo.com/pragmaticly" target="_blank">微博</a></li>
+                <li><a class="social-facebook" href="https://facebook.com/pragmaticly" target="_blank">Facebook</a></li>
+                <li><a class="social-twitter" href="https://twitter.com/#!/pragmatic_ly" target="_blank">Twitter</a></li>
+                <li><a class="social-google" href="https://plus.google.com/109049203627299997967">Google+</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <div class="copyright">
+          <p>&copy; 2012-2013 Pragmatic.ly</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- begin olark code -->
+    <script data-cfasync="false" type='text/javascript'>/*{literal}<![CDATA[*/
+      window.olark||(function(c){var f=window,d=document,l=f.location.protocol=="https:"?"https:":"http:",z=c.name,r="load";var nt=function(){f[z]=function(){(a.s=a.s||[]).push(arguments)};var a=f[z]._={},q=c.methods.length;while(q--){(function(n){f[z][n]=function(){f[z]("call",n,arguments)}})(c.methods[q])}a.l=c.loader;a.i=nt;a.p={0:+new Date};a.P=function(u){a.p[u]=new Date-a.p[0]};function s(){a.P(r);f[z](r)}f.addEventListener?f.addEventListener(r,s,false):f.attachEvent("on"+r,s);var ld=function(){function p(hd){hd="head";return["<",hd,"></",hd,"><",i,' onl' + 'oad="var d=',g,";d.getElementsByTagName('head')[0].",j,"(d.",h,"('script')).",k,"='",l,"//",a.l,"'",'"',"></",i,">"].join("")}var i="body",m=d[i];if(!m){return setTimeout(ld,100)}a.P(1);var j="appendChild",h="createElement",k="src",n=d[h]("div"),v=n[j](d[h](z)),b=d[h]("iframe"),g="document",e="domain",o;n.style.display="none";m.insertBefore(n,m.firstChild).id=z;b.frameBorder="0";b.id=z+"-loader";if(/MSIE[ ]+6/.test(navigator.userAgent)){b.src="javascript:false"}b.allowTransparency="true";v[j](b);try{b.contentWindow[g].open()}catch(w){c[e]=d[e];o="javascript:var d="+g+".open();d.domain='"+d.domain+"';";b[k]=o+"void(0);"}try{var t=b.contentWindow[g];t.write(p());t.close()}catch(x){b[k]=o+'d.write("'+p().replace(/"/g,String.fromCharCode(92)+'"')+'");d.close();'}a.P(2)};ld()};nt()})({loader: "static.olark.com/jsclient/loader0.js",name:"olark",methods:["configure","extend","declare","identify"]});
+/* custom configuration goes here (www.olark.com/documentation) */
+olark.identify('8594-504-10-6122');/*]]>{/literal}*/
+    </script>
+    <noscript><a
+      href="https://www.olark.com/site/8594-504-10-6122/contact"
+      title="Contact us" target="_blank">Questions? Feedback?</a>
+      powered by <a href="http://www.olark.com?welcome" title="Olark
+      live chat software">Olark live chat software</a></noscript>
+      <!-- end olark code -->
+  </body>
+</html>

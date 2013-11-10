@@ -1,0 +1,360 @@
+
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]<!-->
+<html class="no-js" lang="zh">
+  <!--<![endif]-->
+  <head>
+    <meta charset="UTF-8">
+
+    <title>
+        It's not perfect but it's time to integrate web notifications
+ - Pragmatic.ly Blog
+    </title>
+
+    <meta name="description" content="The voice of The Pragmatic.ly Team sharing Nes, Thoughts & Fun.">
+    <meta name="keywords" content="  ["html5 notification", "JavaScript", "web notification"]
+">
+    <meta name="author" content="The Pragmatic.ly Team">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="cleartype" content="on">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="apple-touch-icon-precomposed" type="image/png" sizes="57x57" href="/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" type="image/png" sizes="72x72" href="/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" type="image/png" sizes="114x114" href="/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" type="image/png" href="/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" type="image/png" href="/apple-touch-icon.png">
+
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png">
+    <link rel="shortcut icon" sizes="16x16" href="/favicon.ico">
+    <link rel="alternate" type="application/rss+xml" title="Pragmatic.ly Blog Feed" href="/feed.xml" />
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link href="/stylesheets/application.css?1384089214" media="screen" rel="stylesheet" type="text/css" />
+    <script src="/javascripts/application.js" type="text/javascript"></script>
+
+    
+    <script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script>
+    <script type="text/javascript">var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-4054156-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();</script>
+    
+
+    
+  </head>
+
+  <body class="its-not-perfect-but-its-time-to-integrate-web its-not-perfect-but-its-time-to-integrate-web_index">
+
+    <header class="navbar navbar-fixed-top" role="banner">
+      <div class="container">
+
+        <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
+
+        <a class="brand" href="https://pragmatic.ly/" tabindex="-1">Pragmatic.ly</a>
+
+        <nav class="nav-collapse collapse" role="navigation">
+        <ul class="nav pull-right">
+          <li><a href="https://pragmatic.ly/">首页</a></li>
+          <li><a href="https://pragmatic.ly/tour">了解产品</a></li>
+          <li><a href="https://pragmatic.ly/pricing">价格方案</a></li>
+          <li><a class="login" data-target="#login-modal" data-toggle="modal" href="https://pragmatic.ly/login" role="button" type="button">登录</a></li>
+          <li class="action"><a class="signup" href="https://pragmatic.ly/signup">免费注册</a></li>
+        </ul>
+        </nav>
+
+      </div>
+    </header>
+
+    <section class="hero wrap-blue">
+      <div class="container header">
+        
+           <h1 class="blog-name">Pragmatic.ly 官方博客</h1>
+           <p>
+            好好做产品，做好产品
+           </p>
+        
+      </div>
+    </section>
+
+    <section class="main">
+      <div class="container">
+          <article class="post single">
+
+    <header>
+  <h2 class="title">
+    <a href="/its-not-perfect-but-its-time-to-integrate-web">It's not perfect but it's time to integrate web notifications</a>
+  </h2>
+</header>
+
+<aside>
+  <ul class="meta">
+    <li class="author-photo">
+      <a href="http://yedingding.com">
+        <img alt="" width="120" height="120" src="/images/dingding-ye.png?1384089211" />
+      </a>
+    </li>
+    <li class="author">
+     by 叶玎玎
+    </li>
+    <li class="date">
+      Aug 01, 2012
+    </li>
+    <li class="tags">
+      
+        <a href="/tags/html5-notification">html5 notification</a>
+      
+        <a href="/tags/javascript">JavaScript</a>
+      
+        <a href="/tags/web-notification">web notification</a>
+      
+    </li>
+    <li class="back-link">
+      <a href="/">&lsaquo; 返回博客主页</a>
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <p>One feature <a href="https://pragmatic.ly">Pragmatic.ly</a> has had from the beginning is Web Notifications. When I first saw the feature in Gmail I was convinced it was a feature every web application should have. As a project management tool Pragmatic.ly should enhance collaboration and ease communication. Instant desktop-like notification is one way to achieve the goal.</p>
+
+<p><img title="Chrome Web Notification" alt="Chrome Web Notification" width="332" height="127" src="/images/its-not-perfect-but-its-time-to-integrate-web/chrome-notification.png?1384089211" /></p>
+
+<p><img title="Safari Web Notification" alt="Safari Web Notification" width="331" height="92" src="/images/its-not-perfect-but-its-time-to-integrate-web/safari-notification.png?1384089211" /></p>
+
+<h3>Browser Support</h3>
+
+<p>For a long time only Chrome users have been able to benefit from such features. But the release of Safari 6 in Mountain Lion has changed things for the better and now it&#39;s time to integrate web notification into your application.</p>
+
+<table><thead>
+<tr>
+<th align="center"><strong>Browser</strong></th>
+<th align="left"><strong>Whether Support</strong></th>
+</tr>
+</thead><tbody>
+<tr>
+<td align="center">Chrome</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="center">Safari</td>
+<td align="left">Yes. version 6 in Mountain Lion only</td>
+</tr>
+<tr>
+<td align="center">Firefox</td>
+<td align="left">Yes. Install Plugin <a href="https://code.google.com/p/ff-html5notifications">ff-html5notifications</a></td>
+</tr>
+<tr>
+<td align="center">IE</td>
+<td align="left">No. But can work in <a href="https://developers.google.com/chrome/chrome-frame/">Chrome Frame</a></td>
+</tr>
+</tbody></table>
+
+<p>For more list, checkout <a href="https://html5test.com/compare/feature/notifications-notifications.html">https://html5test.com/compare/feature/notifications-notifications.html</a>.</p>
+
+<p>Since different browsers support the notifications in different ways, there are two specs of web notifications we need to cover. One is the <a href="http://www.chromium.org/developers/design-documents/desktop-notifications/api-specification">older version</a> which is implemented in latest version of Chromium, and the other is the <a href="http://www.w3.org/TR/notifications/">newer version</a> at W3C which safari followed. (The Firefox plugin followed the Chromium implementation). Considering safari 6 also does support the old spec, I would say it&#39;s better to still stick in the old spec, at least for now.</p>
+
+<h3>How to Use</h3>
+
+<p>Danger Cove wrote an awesome <a href="http://dangercove.github.com/html5-notifications/">demo</a> on how to use HTML5 web notifications, based on the old spec. If you&#39;re looking for the samples of the new spec, <a href="https://developer.apple.com/library/safari/#documentation/AppleApplications/Conceptual/SafariJSProgTopics/Articles/SendingNotifications.html">safari document</a> definitely is a good resource. Below are several notes from the experience I added the integration.</p>
+
+<ol>
+<li>The request permission dialog only shows after user interactions. Automation such as usingJavascript to click the link/button doesn&#39;t work.</li>
+<li>requestPermission requires the callback to make it work with Safari</li>
+<li>You can interact with your application using events such as onclick, by referring window.parent. For example as in Pragmatic.ly, when user clicks the popup notification, it will show you the ticket where event happens.</li>
+</ol>
+
+<p>Check the <a href="https://gist.github.com/3233112">Gist</a> to see how <a href="https://pragmatic.ly">Pragmatic.ly</a> integrates web notifications.</p>
+<div class="highlight"><pre><span class="k">class</span> <span class="nx">Notifier</span>
+  <span class="nv">constructor: </span><span class="nf">-&gt;</span>
+    <span class="vi">@enableNotification = </span><span class="kc">false</span>
+    <span class="nx">@checkOrRequirePermission</span><span class="p">()</span>
+
+  <span class="nv">hasSupport: </span><span class="nf">-&gt;</span>
+    <span class="nb">window</span><span class="p">.</span><span class="nx">webkitNotifications</span><span class="o">?</span>
+
+  <span class="nv">requestPermission: </span><span class="nf">(cb) -&gt;</span>
+    <span class="nb">window</span><span class="p">.</span><span class="nx">webkitNotifications</span><span class="p">.</span><span class="nx">requestPermission</span> <span class="p">(</span><span class="nx">cb</span><span class="p">)</span>
+
+  <span class="nv">setPermission: </span><span class="o">=&gt;</span>
+    <span class="k">if</span> <span class="nx">@hasPermission</span><span class="p">()</span>
+      <span class="nx">$</span><span class="p">(</span><span class="s">&#39;body .notification-alert a.close&#39;</span><span class="p">).</span><span class="nx">click</span><span class="p">()</span>
+      <span class="vi">@enableNotification = </span><span class="kc">true</span>
+    <span class="k">else</span> <span class="k">if</span> <span class="nb">window</span><span class="p">.</span><span class="nx">webkitNotifications</span><span class="p">.</span><span class="nx">checkPermission</span><span class="p">()</span> <span class="o">is</span> <span class="mi">2</span>
+      <span class="nx">$</span><span class="p">(</span><span class="s">&#39;body .notification-alert a.close&#39;</span><span class="p">).</span><span class="nx">click</span><span class="p">()</span>
+
+  <span class="nv">hasPermission: </span><span class="nf">-&gt;</span>
+    <span class="k">if</span> <span class="nb">window</span><span class="p">.</span><span class="nx">webkitNotifications</span><span class="p">.</span><span class="nx">checkPermission</span><span class="p">()</span> <span class="o">is</span> <span class="mi">0</span>
+      <span class="k">return</span> <span class="kc">true</span>
+    <span class="k">else</span>
+      <span class="k">return</span> <span class="kc">false</span>
+
+  <span class="nv">checkOrRequirePermission: </span><span class="o">=&gt;</span>
+    <span class="k">if</span> <span class="nx">@hasSupport</span><span class="p">()</span>
+      <span class="k">if</span> <span class="nx">@hasPermission</span><span class="p">()</span>
+        <span class="vi">@enableNotification = </span><span class="kc">true</span>
+      <span class="k">else</span>
+        <span class="k">if</span> <span class="nb">window</span><span class="p">.</span><span class="nx">webkitNotifications</span><span class="p">.</span><span class="nx">checkPermission</span><span class="p">()</span> <span class="o">isnt</span> <span class="mi">2</span>
+          <span class="nx">@showTooltip</span><span class="p">()</span>
+    <span class="k">else</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s">&quot;Desktop notifications are not supported for this Browser/OS version yet.&quot;</span><span class="p">)</span>
+
+  <span class="nv">showTooltip: </span><span class="nf">-&gt;</span>
+    <span class="nx">$</span><span class="p">(</span><span class="s">&#39;body&#39;</span><span class="p">).</span><span class="nx">append</span><span class="p">(</span><span class="nx">JST</span><span class="p">[</span><span class="s">&quot;app/views/lib/notification_info&quot;</span><span class="p">]())</span>
+    <span class="nx">$</span><span class="p">(</span><span class="s">&#39;body .notification-alert&#39;</span><span class="p">).</span><span class="nx">on</span> <span class="s">&#39;click&#39;</span><span class="p">,</span> <span class="s">&#39;a#link_enable_notifications&#39;</span><span class="p">,</span> <span class="nf">(e) =&gt;</span>
+      <span class="nx">e</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">()</span>
+      <span class="nx">@requestPermission</span><span class="p">(</span><span class="nx">@setPermission</span><span class="p">)</span>
+
+  <span class="nv">visitUrl: </span><span class="nf">(url) -&gt;</span>
+    <span class="nx">Spine</span><span class="p">.</span><span class="nx">Route</span><span class="p">.</span><span class="nx">navigate</span><span class="p">(</span><span class="nx">url</span><span class="p">)</span>
+
+  <span class="nv">notify: </span><span class="nf">(avatar, title, content, url = null) -&gt;</span>
+    <span class="k">if</span> <span class="nx">@enableNotification</span>
+      <span class="nv">popup = </span><span class="nb">window</span><span class="p">.</span><span class="nx">webkitNotifications</span><span class="p">.</span><span class="nx">createNotification</span><span class="p">(</span><span class="nx">avatar</span><span class="p">,</span> <span class="nx">title</span><span class="p">,</span> <span class="nx">content</span><span class="p">)</span>
+      <span class="k">if</span> <span class="nx">url</span>
+        <span class="nv">popup.onclick = </span><span class="nf">-&gt;</span>
+          <span class="nb">window</span><span class="p">.</span><span class="nx">parent</span><span class="p">.</span><span class="nx">focus</span><span class="p">()</span>
+          <span class="nb">window</span><span class="p">.</span><span class="nx">parent</span><span class="p">.</span><span class="nx">notifier</span><span class="p">.</span><span class="nx">visitUrl</span><span class="p">(</span><span class="nx">url</span><span class="p">)</span>
+      <span class="nx">popup</span><span class="p">.</span><span class="nx">show</span><span class="p">()</span>
+      <span class="nx">setTimeout</span> <span class="p">(</span> <span class="o">=&gt;</span> <span class="nx">popup</span><span class="p">.</span><span class="nx">cancel</span><span class="p">()</span> <span class="p">),</span> <span class="mi">12000</span>
+
+<span class="nb">window</span><span class="p">.</span><span class="nv">Notifier = </span><span class="nx">Notifier</span>
+</pre></div>
+<h3>Limitation</h3>
+
+<p>While Safari 6 in Mountain Lion brings the support, it also brings some limitations, for example,</p>
+
+<ol>
+<li>Custom icons aren&#39;t supported any more in Mountain Lion, no matter which browser you use. It&#39;s controlled by the Notification Center and will always show the application icon such as Safari, Chrome. However, users in other OS doesn&#39;t have the problem. Hope Apple can fix it soon.</li>
+<li>Title is truncated to 30 characters in Mountain Lion. So does body. However, you can view the whole body in the Notification Center.</li>
+<li>You can&#39;t control how the notifications close in Mountain Lion. It&#39;s taken by the Notification Center setting.</li>
+<li>HTML Notification doesn&#39;t work in Safari because the new W3C spec only have simple notification. So I suggest using simple notification only in your application.</li>
+</ol>
+
+<h3>One More Thing</h3>
+
+<p>If you&#39;re developing Chrome extensions, do remember to add the &ldquo;notifications&rdquo; permission in the manifest.json. So when users install the extensions, the permission will be automatically granted. For Safari extensions, nothing needs to be added since it&#39;s handled by Safari with permission auto granted.</p>
+
+<p><br/></p>
+
+<h3>About Pragmatic.ly</h3>
+
+<p><a href="https://pragmatic.ly">Pragmatic.ly</a> is a lean collaborative project management tool aiming to help small teams make better products easier. It&#39;s the ideal and elegant project management tool for tech startups.</p>
+
+<p>Now that you&#39;ve read so far, you should follow me <a href="https://twitter.com/yedingding">@yedingding</a>!</p>
+
+</div>
+
+
+  </article>
+
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'pragmaticlyblog'; // required: replace example with your forum shortname
+    var disqus_identifier = 'it-s-not-perfect-but-it-s-time-to-integrate-web-notifications';
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+
+  <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+      </div>
+    </section>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="container">
+        <div class="row">
+          <div class="span2 offset2">
+            <nav>
+            <h5>网站相关</h5>
+            <ul>
+              <li><a href="https://pragmatic.ly/">首页</a></li>
+              <li><a href="https://pragmatic.ly/tour">了解产品</a></li>
+              <li><a href="https://pragmatic.ly/pricing">价格方案</a></li>
+              <li><a href="https://pragmatic.ly/privacy">隐私政策</a></li>
+              <li><a href="https://pragmatic.ly/terms">服务条款</a></li>
+            </ul>
+            </nav>
+          </div>
+
+          <div class="span2">
+            <nav>
+              <h5>服务支持</h5>
+              <ul>
+                <!--<li><a href="/help">帮助中心</a></li>-->
+                <li><a href="https://pragmatic.ly/get-started">新手帮助</a></li>
+                <li><a href="mailto:support@pragmatic.ly">联系我们</a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="span2">
+            <nav>
+              <h5>联系合作</h5>
+              <ul>
+                <li><a href="https://pragmatic.ly/about">关于我们</a></li>
+                <li><a href="mailto:press@pragmatic.ly">合作伙伴</a></li>
+                <li><a href="mailto:press@pragmatic.ly">媒体报道</a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="span2">
+            <nav>
+              <h5>关注我们</h5>
+              <ul>
+                <li><a href="https://pragmatic.ly/blog">官方博客</a></li>
+                <li><a class="social-weibo" href="http://weibo.com/pragmaticly" target="_blank">微博</a></li>
+                <li><a class="social-facebook" href="https://facebook.com/pragmaticly" target="_blank">Facebook</a></li>
+                <li><a class="social-twitter" href="https://twitter.com/#!/pragmatic_ly" target="_blank">Twitter</a></li>
+                <li><a class="social-google" href="https://plus.google.com/109049203627299997967">Google+</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <div class="copyright">
+          <p>&copy; 2012-2013 Pragmatic.ly</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- begin olark code -->
+    <script data-cfasync="false" type='text/javascript'>/*{literal}<![CDATA[*/
+      window.olark||(function(c){var f=window,d=document,l=f.location.protocol=="https:"?"https:":"http:",z=c.name,r="load";var nt=function(){f[z]=function(){(a.s=a.s||[]).push(arguments)};var a=f[z]._={},q=c.methods.length;while(q--){(function(n){f[z][n]=function(){f[z]("call",n,arguments)}})(c.methods[q])}a.l=c.loader;a.i=nt;a.p={0:+new Date};a.P=function(u){a.p[u]=new Date-a.p[0]};function s(){a.P(r);f[z](r)}f.addEventListener?f.addEventListener(r,s,false):f.attachEvent("on"+r,s);var ld=function(){function p(hd){hd="head";return["<",hd,"></",hd,"><",i,' onl' + 'oad="var d=',g,";d.getElementsByTagName('head')[0].",j,"(d.",h,"('script')).",k,"='",l,"//",a.l,"'",'"',"></",i,">"].join("")}var i="body",m=d[i];if(!m){return setTimeout(ld,100)}a.P(1);var j="appendChild",h="createElement",k="src",n=d[h]("div"),v=n[j](d[h](z)),b=d[h]("iframe"),g="document",e="domain",o;n.style.display="none";m.insertBefore(n,m.firstChild).id=z;b.frameBorder="0";b.id=z+"-loader";if(/MSIE[ ]+6/.test(navigator.userAgent)){b.src="javascript:false"}b.allowTransparency="true";v[j](b);try{b.contentWindow[g].open()}catch(w){c[e]=d[e];o="javascript:var d="+g+".open();d.domain='"+d.domain+"';";b[k]=o+"void(0);"}try{var t=b.contentWindow[g];t.write(p());t.close()}catch(x){b[k]=o+'d.write("'+p().replace(/"/g,String.fromCharCode(92)+'"')+'");d.close();'}a.P(2)};ld()};nt()})({loader: "static.olark.com/jsclient/loader0.js",name:"olark",methods:["configure","extend","declare","identify"]});
+/* custom configuration goes here (www.olark.com/documentation) */
+olark.identify('8594-504-10-6122');/*]]>{/literal}*/
+    </script>
+    <noscript><a
+      href="https://www.olark.com/site/8594-504-10-6122/contact"
+      title="Contact us" target="_blank">Questions? Feedback?</a>
+      powered by <a href="http://www.olark.com?welcome" title="Olark
+      live chat software">Olark live chat software</a></noscript>
+      <!-- end olark code -->
+  </body>
+</html>
