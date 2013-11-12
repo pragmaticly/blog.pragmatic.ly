@@ -40,9 +40,10 @@
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <link href="/stylesheets/application.css?1379005288" media="screen" rel="stylesheet" type="text/css" />
-    <script src="/javascripts/application.js?1364632828" type="text/javascript"></script>
+    <link href="/stylesheets/application.css?1384232016" media="screen" rel="stylesheet" type="text/css" />
+    <script src="/javascripts/application.js?1384232015" type="text/javascript"></script>
 
+    
     <script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script>
     <script type="text/javascript">var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-4054156-1']);
@@ -52,6 +53,9 @@
         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();</script>
+    
+
+    
   </head>
 
   <body class="announcing-mailsviewer-a-rails-engine-to-view announcing-mailsviewer-a-rails-engine-to-view_index">
@@ -95,13 +99,7 @@
       <div class="container">
           <article class="post single">
 
-    <header class="back-link">
-  <a href="/">
-   < 回到博客主页
-  </a>
-</header>
-
-<header>
+    <header>
   <h2 class="title">
     <a href="/announcing-mailsviewer-a-rails-engine-to-view">Announcing mails_viewer - easiest way to test mails in Rails app</a>
   </h2>
@@ -111,7 +109,7 @@
   <ul class="meta">
     <li class="author-photo">
       <a href="http://yedingding.com">
-        <img src="/images/dingding-ye.png">
+        <img alt="" width="120" height="120" src="/images/dingding-ye.png?1379005285" />
       </a>
     </li>
     <li class="author">
@@ -130,6 +128,9 @@
       
         <a href="/tags/engine">engine</a>
       
+    </li>
+    <li class="back-link">
+      <a href="/">&lsaquo; 返回博客主页</a>
     </li>
   </ul>
 </aside>
@@ -159,13 +160,13 @@
 
 <ol>
 <li><p>Add the gem to your Gemfile :</p>
-<div class="highlight"><pre><span class="n">gem</span> <span class="s">&quot;mails_viewer&quot;</span>
+<div class="highlight"><pre><span class="n">gem</span> <span class="s2">&quot;mails_viewer&quot;</span>
 </pre></div></li>
 <li><p>Set ActionMailer&#39;s delivery method to :file :</p>
-<div class="highlight"><pre><span class="n">config</span><span class="p">.</span><span class="n">action_mailer</span><span class="p">.</span><span class="n">delivery_method</span> <span class="o">=</span> <span class="o">:</span><span class="n">file</span>
+<div class="highlight"><pre><span class="n">config</span><span class="o">.</span><span class="n">action_mailer</span><span class="o">.</span><span class="n">delivery_method</span> <span class="o">=</span> <span class="ss">:file</span>
 </pre></div></li>
 <li><p>Put this in your routes.rb:</p>
-<div class="highlight"><pre><span class="n">mount</span> <span class="n">MailsViewer</span><span class="o">::</span><span class="n">Engine</span> <span class="o">=&gt;</span> <span class="err">&#39;</span><span class="o">/</span><span class="n">delivered_mails</span><span class="err">&#39;</span>
+<div class="highlight"><pre><span class="n">mount</span> <span class="ss">MailsViewer</span><span class="p">:</span><span class="ss">:Engine</span> <span class="o">=&gt;</span> <span class="s1">&#39;/delivered_mails&#39;</span>
 </pre></div></li>
 </ol>
 
@@ -207,6 +208,7 @@
 
 </div>
 
+
   </article>
 
   <div id="disqus_thread"></div>
@@ -218,12 +220,12 @@
     /* * * DON'T EDIT BELOW THIS LINE * * */
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
   </script>
 
-  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
 
       </div>

@@ -97,218 +97,242 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://pragmatic.ly/404.html</loc>
-    <lastmod>2013-09-13T00:00:00+08:00</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
+    <loc>http://pragmatic.ly/new-feature-comment-via-email</loc>
+    <lastmod>2013-10-04T14:05:00+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://pragmatic.ly/introduce-the-new-dashboard</loc>
+    <lastmod>2013-10-16T08:43:00+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://pragmatic.ly/announcing-pic-pasting</loc>
+    <lastmod>2013-11-08T01:00:00+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>http://pragmatic.ly/</loc>
-    <lastmod>2013-09-13T00:00:00+08:00</lastmod>
+    <lastmod>2013-11-12T00:00:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1</priority>
   </url>
   <url>
     <loc>http://pragmatic.ly/tags/announcement</loc>
-    <lastmod>2013-09-13T00:00:00+08:00</lastmod>
+    <lastmod>2013-11-12T00:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://pragmatic.ly/tags/productivity</loc>
-    <lastmod>2013-09-13T00:00:00+08:00</lastmod>
+    <lastmod>2013-11-12T00:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://pragmatic.ly/tags/product-design</loc>
-    <lastmod>2013-09-13T00:00:00+08:00</lastmod>
+    <lastmod>2013-11-12T00:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://pragmatic.ly/tags/open-source</loc>
-    <lastmod>2013-09-13T00:00:00+08:00</lastmod>
+    <lastmod>2013-11-12T00:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://pragmatic.ly/tags/javascript</loc>
-    <lastmod>2013-09-13T00:00:00+08:00</lastmod>
+    <lastmod>2013-11-12T00:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://pragmatic.ly/tags/jquery</loc>
-    <lastmod>2013-09-13T00:00:00+08:00</lastmod>
+    <lastmod>2013-11-12T00:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://pragmatic.ly/tags/smart-time-ago</loc>
-    <lastmod>2013-09-13T00:00:00+08:00</lastmod>
+    <lastmod>2013-11-12T00:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://pragmatic.ly/tags/html5-notification</loc>
-    <lastmod>2013-09-13T00:00:00+08:00</lastmod>
+    <lastmod>2013-11-12T00:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://pragmatic.ly/tags/web-notification</loc>
-    <lastmod>2013-09-13T00:00:00+08:00</lastmod>
+    <lastmod>2013-11-12T00:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://pragmatic.ly/tags/spinejs</loc>
-    <lastmod>2013-09-13T00:00:00+08:00</lastmod>
+    <lastmod>2013-11-12T00:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://pragmatic.ly/tags/javascript-mvc</loc>
-    <lastmod>2013-09-13T00:00:00+08:00</lastmod>
+    <lastmod>2013-11-12T00:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://pragmatic.ly/tags/spine</loc>
-    <lastmod>2013-09-13T00:00:00+08:00</lastmod>
+    <lastmod>2013-11-12T00:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://pragmatic.ly/tags/changelog</loc>
-    <lastmod>2013-09-13T00:00:00+08:00</lastmod>
+    <lastmod>2013-11-12T00:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://pragmatic.ly/tags/marketing</loc>
-    <lastmod>2013-09-13T00:00:00+08:00</lastmod>
+    <lastmod>2013-11-12T00:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://pragmatic.ly/tags/video-service</loc>
-    <lastmod>2013-09-13T00:00:00+08:00</lastmod>
+    <lastmod>2013-11-12T00:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://pragmatic.ly/tags/rails</loc>
-    <lastmod>2013-09-13T00:00:00+08:00</lastmod>
+    <lastmod>2013-11-12T00:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://pragmatic.ly/tags/mail</loc>
-    <lastmod>2013-09-13T00:00:00+08:00</lastmod>
+    <lastmod>2013-11-12T00:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://pragmatic.ly/tags/engine</loc>
-    <lastmod>2013-09-13T00:00:00+08:00</lastmod>
+    <lastmod>2013-11-12T00:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://pragmatic.ly/tags/ui</loc>
-    <lastmod>2013-09-13T00:00:00+08:00</lastmod>
+    <lastmod>2013-11-12T00:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://pragmatic.ly/tags/ticket-management</loc>
-    <lastmod>2013-09-13T00:00:00+08:00</lastmod>
+    <lastmod>2013-11-12T00:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://pragmatic.ly/tags/rubyconfchina</loc>
-    <lastmod>2013-09-13T00:00:00+08:00</lastmod>
+    <lastmod>2013-11-12T00:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://pragmatic.ly/tags/ruby</loc>
-    <lastmod>2013-09-13T00:00:00+08:00</lastmod>
+    <lastmod>2013-11-12T00:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://pragmatic.ly/tags/event</loc>
-    <lastmod>2013-09-13T00:00:00+08:00</lastmod>
+    <lastmod>2013-11-12T00:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://pragmatic.ly/tags/iterations</loc>
-    <lastmod>2013-09-13T00:00:00+08:00</lastmod>
+    <lastmod>2013-11-12T00:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://pragmatic.ly/tags/usability</loc>
-    <lastmod>2013-09-13T00:00:00+08:00</lastmod>
+    <lastmod>2013-11-12T00:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://pragmatic.ly/tags/vcs</loc>
-    <lastmod>2013-09-13T00:00:00+08:00</lastmod>
+    <lastmod>2013-11-12T00:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://pragmatic.ly/tags/integration</loc>
-    <lastmod>2013-09-13T00:00:00+08:00</lastmod>
+    <lastmod>2013-11-12T00:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://pragmatic.ly/tags/git</loc>
-    <lastmod>2013-09-13T00:00:00+08:00</lastmod>
+    <lastmod>2013-11-12T00:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://pragmatic.ly/tags/new-feature</loc>
-    <lastmod>2013-09-13T00:00:00+08:00</lastmod>
+    <lastmod>2013-11-12T00:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://pragmatic.ly/tags/.html</loc>
-    <lastmod>2013-09-13T00:00:00+08:00</lastmod>
+    <loc>http://pragmatic.ly/tags/startup</loc>
+    <lastmod>2013-11-12T00:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://pragmatic.ly/tags/.html</loc>
-    <lastmod>2013-09-13T00:00:00+08:00</lastmod>
+    <loc>http://pragmatic.ly/tags/thoughts</loc>
+    <lastmod>2013-11-12T00:00:00+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>http://pragmatic.ly/tags/annoucement</loc>
+    <lastmod>2013-11-12T00:00:00+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>http://pragmatic.ly/tags/new-feature</loc>
+    <lastmod>2013-11-12T00:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://pragmatic.ly/page/2</loc>
-    <lastmod>2013-09-13T00:00:00+08:00</lastmod>
+    <lastmod>2013-11-12T00:00:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1</priority>
   </url>
   <url>
     <loc>http://pragmatic.ly/page/3</loc>
-    <lastmod>2013-09-13T00:00:00+08:00</lastmod>
+    <lastmod>2013-11-12T00:00:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1</priority>
   </url>
   <url>
     <loc>http://pragmatic.ly/page/4</loc>
-    <lastmod>2013-09-13T00:00:00+08:00</lastmod>
+    <lastmod>2013-11-12T00:00:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1</priority>
   </url>

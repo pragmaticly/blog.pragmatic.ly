@@ -40,9 +40,10 @@
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <link href="/stylesheets/application.css?1379005288" media="screen" rel="stylesheet" type="text/css" />
-    <script src="/javascripts/application.js?1364632828" type="text/javascript"></script>
+    <link href="/stylesheets/application.css?1384232016" media="screen" rel="stylesheet" type="text/css" />
+    <script src="/javascripts/application.js?1384232015" type="text/javascript"></script>
 
+    
     <script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script>
     <script type="text/javascript">var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-4054156-1']);
@@ -52,6 +53,9 @@
         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();</script>
+    
+
+    
   </head>
 
   <body class="integrate-version-control-system-with-pragmat integrate-version-control-system-with-pragmat_index">
@@ -95,13 +99,7 @@
       <div class="container">
           <article class="post single">
 
-    <header class="back-link">
-  <a href="/">
-   < 回到博客主页
-  </a>
-</header>
-
-<header>
+    <header>
   <h2 class="title">
     <a href="/integrate-version-control-system-with-pragmat">Introducing VCS integration with Pragmatic.ly</a>
   </h2>
@@ -111,7 +109,7 @@
   <ul class="meta">
     <li class="author-photo">
       <a href="http://terrytai.com">
-        <img src="/images/terry-tai.png">
+        <img alt="" width="120" height="120" src="/images/terry-tai.png?1379005285" />
       </a>
     </li>
     <li class="author">
@@ -128,6 +126,9 @@
       
         <a href="/tags/git">Git</a>
       
+    </li>
+    <li class="back-link">
+      <a href="/">&lsaquo; 返回博客主页</a>
     </li>
   </ul>
 </aside>
@@ -151,8 +152,8 @@
 
 <ol>
 <li><p>First, you should make sure the user name or the email is the same with what you use in your Pragmatic.ly account. If not, you can always set the setting in the project. For example:</p>
-<div class="highlight"><pre><span class="err">$</span> <span class="n">git</span> <span class="n">config</span> <span class="n">user</span><span class="p">.</span><span class="n">name</span> <span class="s">&quot;Terry Tai&quot;</span>
-<span class="err">$</span> <span class="n">git</span> <span class="n">config</span> <span class="n">user</span><span class="p">.</span><span class="n">email</span> <span class="s">&quot;terry@pragmatic.ly&quot;</span>
+<div class="highlight"><pre><span class="err">$</span> <span class="n">git</span> <span class="n">config</span> <span class="n">user</span><span class="o">.</span><span class="n">name</span> <span class="s2">&quot;Terry Tai&quot;</span>
+<span class="err">$</span> <span class="n">git</span> <span class="n">config</span> <span class="n">user</span><span class="o">.</span><span class="n">email</span> <span class="s2">&quot;terry@pragmatic.ly&quot;</span>
 </pre></div></li>
 <li><p>Get the commit hook url on your Pragmatic.ly project setting panel and copy this url to your clipboard. We will use it as the callback url latter. Only the administrators of the project can view the settings.</p>
 
@@ -202,7 +203,7 @@
 <ol>
 <li>If you prefer to implement every new feature in a new branch, you could name a branch starting with the ticket number, such as 529<em>regenerate</em>token. Then all commits in this branch will be automatically associated with this ticket.</li>
 <li><p>If you want to associate the commit to a ticket no matter which branch it&#39;s in, you could alway include the hash tag with the ticket number such as &#39;#529&#39; in your commit message. For example:</p>
-<div class="highlight"><pre><span class="err">$</span> <span class="n">git</span> <span class="n">commit</span> <span class="o">-</span><span class="n">m</span> <span class="s">&quot;#529 Associate the commit with ticket 529.&quot;</span>
+<div class="highlight"><pre><span class="err">$</span> <span class="n">git</span> <span class="n">commit</span> <span class="o">-</span><span class="n">m</span> <span class="s2">&quot;#529 Associate the commit with ticket 529.&quot;</span>
 </pre></div></li>
 </ol></li>
 <li><p>Manipulate the status of tickets directly from the commit message.</p>
@@ -215,8 +216,8 @@
 </ol>
 
 <p>Here are some examples of how to use this feature.</p>
-<div class="highlight"><pre><span class="err">$</span> <span class="n">git</span> <span class="n">commit</span> <span class="o">-</span><span class="n">m</span> <span class="s">&quot;Resolved #529 This will mark 529 as Completed&quot;</span>
-<span class="err">$</span> <span class="n">git</span> <span class="n">comimt</span> <span class="o">-</span><span class="n">m</span> <span class="s">&quot;Closed #529 This will mark 529 as Closed&quot;</span>
+<div class="highlight"><pre><span class="err">$</span> <span class="n">git</span> <span class="n">commit</span> <span class="o">-</span><span class="n">m</span> <span class="s2">&quot;Resolved #529 This will mark 529 as Completed&quot;</span>
+<span class="err">$</span> <span class="n">git</span> <span class="n">comimt</span> <span class="o">-</span><span class="n">m</span> <span class="s2">&quot;Closed #529 This will mark 529 as Closed&quot;</span>
 </pre></div></li>
 </ol>
 
@@ -225,6 +226,7 @@
 <p>We hope you enjoy this new feature, as always, any feedbacks are welcome!</p>
 
 </div>
+
 
   </article>
 
@@ -237,12 +239,12 @@
     /* * * DON'T EDIT BELOW THIS LINE * * */
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
   </script>
 
-  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
 
       </div>

@@ -1,24 +1,198 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
-    <id>http://blog.pragmatic.ly</id>
+    <id>http://pragmatic.ly/blog</id>
     <title>Pragmatic.ly Blog</title>
-    <link>http://blog.pragmatic.ly</link>
+    <link>http://pragmatic.ly/blog</link>
     <language>en-us</language>
     <copyright>&amp;#x2117; &amp;amp; &amp;#xA9; 2012-2013 Pragmatic.ly</copyright>
-    <link href="http://blog.pragmatic.ly/"/>
-    <link href="http://blog.pragmatic.ly/feed.xml" rel="self"/>
-    <updated>2013-09-12T05:50:00Z</updated>
-    <lastBuildDate>2013-09-12T05:50:00Z</lastBuildDate>
-    <pubDate>2013-09-12T05:50:00Z</pubDate>
-    <description>The voice of The Pragmatic.ly Team sharing Nes, Thoughts &amp; Fun.</description>
+    <link href="http://pragmatic.ly/blog"/>
+    <link href="http://pragmatic.ly/blog/feed.xml" rel="self"/>
+    <updated>2013-11-07T17:00:00Z</updated>
+    <lastBuildDate>2013-11-07T17:00:00Z</lastBuildDate>
+    <pubDate>2013-11-07T17:00:00Z</pubDate>
+    <description>The voice of The Pragmatic.ly Team sharing News, Thoughts &amp; Fun.</description>
     <author>
       <name>The Pragmatic.ly Team</name>
     </author>
     <item>
+      <title>新功能: 通过复制粘贴就能上传图片</title>
+      <link>http://pragmatic.ly/blog/announcing-pic-pasting</link>
+      <description type="html">&lt;h2&gt;上传其它网页上的图&lt;/h2&gt;
+
+&lt;p&gt;我们深深的相信很多时候一图胜千言, 所以我们一直在简化我们的上传图片的方式.&lt;/p&gt;
+
+&lt;p&gt;如果你想上传你电脑上的图到 Pragmatic.ly, 你已经可以通过简单的&amp;quot;拖拽&amp;quot;或&amp;quot;文件选择&amp;ldquo;来搞定.
+但是如果你想上传一张你在其他网站上的图片到 Pragmatic.ly 就没那么容易了, 你还得先下载它们, 然后再上传到 Pragmatic.ly 中.&lt;/p&gt;
+
+&lt;p&gt;现在你已经不用了, 有了这个新功能, 你可以直接复制其他网页上的图片, 并在浏览器中粘贴就可以把你复制的图片上传到当前的任务中.
+遗憾的是目前只有最新版的 Chrome 支持这个功能. 不过我相信很快其他浏览器也会跟上的, 不久的将来你应该可以在大多浏览器里享用这功能.&lt;/p&gt;
+
+&lt;h2&gt;上传你的屏幕截图&lt;/h2&gt;
+
+&lt;p&gt;如果你使用 Mac 并且你想上传你的屏幕截图. 你只需要用 Command + Control + Shift + 4 来截图, 然后到 Pragmatic.ly 用 Command + v 粘贴, 就能直接把你的屏幕截图上传到你当前的任务中了.&lt;/p&gt;
+
+&lt;h2&gt;别忘了我们的任务描述支持 Markdown&lt;/h2&gt;
+
+&lt;p&gt;如果你希望在你的任务描述中引入一些图片, 你完全可以使用 Markdown 来插入图片.
+格式也很简单:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;   &lt;span class="o"&gt;![&lt;/span&gt;&lt;span class="err"&gt;描述&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="err"&gt;图片地址&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;是不是很简单?&lt;/p&gt;
+
+&lt;p&gt;Enjoy!&lt;/p&gt;
+</description>
+      <guid>tag:blog.pragmatic.ly,article.url</guid>
+      <pubDate>2013-11-07T17:00:00Z</pubDate>
+      <category>Annoucement, New Feature</category>
+    </item>
+    <item>
+      <title>新功能: 控制面板</title>
+      <link>http://pragmatic.ly/blog/introduce-the-new-dashboard</link>
+      <description type="html">&lt;h2&gt;为什么现在才有控制面板?&lt;/h2&gt;
+
+&lt;p&gt;我们一开始并没有去做这块, 除了为了保持我们产品精益化渐进外. 我们觉得控制面板不是初期用户所需的必要功能. 新用户来试用我们的产品, 最主要是要体验任务管理/团队协作的核心功能, 不放控制面板的好处是, 他创建帐户后, 可以直接了当地进入项目开始体验流程.&lt;/p&gt;
+
+&lt;p&gt;而当Pragmatic.ly 发展到现在, 已经有很大一部分用户拥有不止一个项目, 甚至同时拥有五六个项目的. 那么用户对所有的项目的统揽, 管理, 归档等需求就随之产生了.&lt;/p&gt;
+
+&lt;p&gt;好的, 那么来看看我们新打造的控制面板.&lt;/p&gt;
+
+&lt;h2&gt;卡片式布局方式&lt;/h2&gt;
+
+&lt;p&gt;&lt;img alt="Dashboard Snapshot" width="720" height="396" src="/images/introduce-the-new-dashboard/dashboard-snapshot.png?1384231969" /&gt;&lt;/p&gt;
+
+&lt;p&gt;如截图所见, 一个项目按一个卡片的形式展现, 上下两个区块用以区分「我的项目」和「参与的项目」. 「参与的项目」是你被邀请到他人的项目, 你不具有对项目的管理权限. 「我的项目」是你自己帐户下创建的项目, 你可以编辑/归档/删除项目. &lt;/p&gt;
+
+&lt;p&gt;之所以采用卡片式的展示方式, 一是项目是一个个独立单元, 相互之间数据和团队成员都是独立的, 所以用单独的卡片代表一个项目, UI上非常贴切; 二是, 控制面板作为项目入口, 快速进入项目是最常用的功能, 那么卡片这种大区块的导航, 你直接点击卡片就能进入项目, 使用起来是非常轻松愉快的.&lt;/p&gt;
+
+&lt;h2&gt;卡片的数据呈现及功能&lt;/h2&gt;
+
+&lt;p&gt;&lt;img alt="Card Annotation" width="550" height="506" src="/images/introduce-the-new-dashboard/project-card-annotation.png?1384231969" /&gt;&lt;/p&gt;
+
+&lt;p&gt;截图是控制面板里的项目卡片指示图, 你点击右上角的帮助按钮(?) 就可以看到.
+卡片上展示的信息和数据分别有:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;h4&gt;项目名称&lt;/h4&gt;
+
+&lt;p&gt;为你的项目取一个酷酷的代号, 是最具创造力的开始 :)&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;h4&gt;项目进度&lt;/h4&gt;
+
+&lt;p&gt;显而易见的进度图, 让你了解该项目的进度状况. 下面一行文字具体告知, 该项目总共有多少任务, 已经完成了多少任务.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;h4&gt;项目一周活跃度&lt;/h4&gt;
+
+&lt;p&gt;通过四种颜色(取决于你的项目模板, 可能只有三种或两种颜色), 代表任务活动的类型: 新建/开始/完成/通过审核. 
+而圆圈的大小代表活跃度, 将一天24小时划分为: 凌晨/上午/下午/晚上, 在每个时间段里统计任务的活动次数, 次数越多, 相应颜色的圆圈就越大.&lt;/p&gt;
+
+&lt;p&gt;解释起来有点复杂, 但总得来的说, 圆圈越多越大, 说明项目的活跃度越高. 之所以剥离数据细节, 用抽象的图形和颜色来呈现, 是为了轻量化信息, 让用户用感官去感知信息, 而不是去「读」数据.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;h4&gt;项目编辑和归档&lt;/h4&gt;
+
+&lt;p&gt;目前我们提供对项目的编辑/归档/删除这几项基本操作, 当然对项目的管理权限只有项目管理员才具有. 归档之后是可以取消归档还原成活跃项目, 但是删除项目会清空相关数据, 所以请谨慎使用删除操作.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Edit Menu" width="440" height="294" src="/images/introduce-the-new-dashboard/project-edit-menu.png?1384231969" /&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;新的控制面板就这些, 我们没有做得很多, 但希望做的刚刚好, 有任何反馈建议请&lt;a href="mailto:support@pragmatic.ly"&gt;Email&lt;/a&gt;我们, 持续改进是我们对产品的倾力注入.&lt;/p&gt;
+</description>
+      <guid>tag:blog.pragmatic.ly,article.url</guid>
+      <pubDate>2013-10-16T00:43:00Z</pubDate>
+      <category>Annoucement, New Feature</category>
+    </item>
+    <item>
+      <title>Pragmatic.ly 新功能通过邮件来管理项目</title>
+      <link>http://pragmatic.ly/blog/new-feature-comment-via-email</link>
+      <description type="html">&lt;p&gt;当你听到这个功能的时候，相信很多人都会有这样的反映。&amp;quot;What?&amp;ldquo;, &amp;quot;这不是一种很土的方式么？&amp;rdquo;, &amp;ldquo;为什么又回归原始的项目管理工具？&amp;rdquo;&amp;hellip;&lt;/p&gt;
+
+&lt;h2&gt;使用 Email 管理项目是一个“土”方法&lt;/h2&gt;
+
+&lt;p&gt;在原始的单一通过 Email 来追踪项目管理的方式中，很多团队通过 Email 来发送附件、查看进度、讨论问题。。。 这种方式确实很“土”，甚至是反人类的。在这样的方式中，当团队为一个 project 使用 Email 来讨论的时候，email thread 会变的非常的长，在一个 thread 中可能包括了附件、状态更新等等不同目的的 Email，更严重的是这些重要信息会被混在各种各样问题讨论的 email 中。&lt;/p&gt;
+
+&lt;p&gt;作为一个项目管理者应该如何去做？在每天 meeting 开始前花数个小时，整理 Email，然后把他们归档分类到一个 excel 文件中？ 然后再提前几个小时把这个 excel 文件分发给团队中的所有成员？管理者的时间很宝贵，或许应该雇佣一个项目管理助理来做这些琐碎的事情？别逗了，Pragmatic.ly 的存在就是为了帮你处理这些 Dirty Job.&lt;/p&gt;
+
+&lt;p&gt;你还在用邮件跟踪任务吗？是时候，使用 Pragmatic.ly 井然有序地跟踪所有信息了！&lt;/p&gt;
+
+&lt;h2&gt;那为什么又要使用这用土办法?&lt;/h2&gt;
+
+&lt;p&gt;很多团队“乐此不疲”的使用这样的方法，甚至依依不舍，是因为 Email 是一个非常方便的非即时性沟通工具。对于项目问题讨论来说，用 Email 会变的非常方便。 我们可以通过手机在任何地方回复讨论，发起讨论，甚至我们可以发一封邮件告诉我们的项目助理，“嗨，麻烦你在 excel 中加一个任务，叫做 XXXXX，把详细描述写成 XXXXX”。It sounds funny, ha?&lt;/p&gt;
+
+&lt;p&gt;目前我们通过 email 提醒来通知团队成员项目的更新状态，以及最新的留言。但是如果当我们发现一个留言需要讨论的时候，我们需要在 email 中点击链接打开网页，输入帐号密码，然后留言。。。也许我们还要忍受手机网络的速度。。。也许就是坐在电脑前，也懒得去打开一个浏览器。&lt;/p&gt;
+
+&lt;p&gt;时间就是金钱，我的朋友。我们需要的是&lt;strong&gt;正确使用工具&lt;/strong&gt;。现在你可以直接通过回复 Email 提醒来直接参与讨论。而且当你在外出的路上突然有一个新想法冒出来的时候，你可以直接发送邮件来创建任务或者列表，另外你可以在团队中取消项目助理这个职位了。&lt;/p&gt;
+
+&lt;h2&gt;回复 Email 创建留言&lt;/h2&gt;
+
+&lt;p&gt;当收到一个 email 提醒时，直接回复&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="email_reply" width="821" height="819" src="/images/new-feature-comment-via-email/Email_Reply.png?1384231969" /&gt;&lt;/p&gt;
+
+&lt;p&gt;然后它会被自动添加到相关项目留言中&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="ply_reply" width="437" height="598" src="/images/new-feature-comment-via-email/PLY_screenshot.jpg?1384231969" /&gt;&lt;/p&gt;
+
+&lt;h2&gt;发送 Email 创建 任务列表 和 单一任务&lt;/h2&gt;
+
+&lt;p&gt;首先在浏览器中打开你的 Project&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="project_uid" width="1010" height="509" src="/images/new-feature-comment-via-email/Find_project_uid.jpg?1384231969" /&gt;&lt;/p&gt;
+
+&lt;p&gt;找到 project 后面的数字，这里是 “421d6f9a13e6”，然后在 email 中添加一个 &amp;ldquo;&lt;a href="mailto:project+421d6f9a13e6@info.pragmatic.ly"&gt;project+421d6f9a13e6@info.pragmatic.ly&lt;/a&gt;&amp;rdquo; 的联系人。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;在这个项目中创建 任务列表&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;发送一封邮件到 &amp;ldquo;&lt;a href="mailto:project+421d6f9a13e6@info.pragmatic.ly"&gt;project+421d6f9a13e6@info.pragmatic.ly&lt;/a&gt;&amp;quot;，格式如下：&lt;/p&gt;
+
+&lt;p&gt;主题(subject)&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;任务列表：任务列表名称&lt;/code&gt; 或者 &lt;code&gt;Task List: Your task list name&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;正文(content)&lt;/p&gt;
+
+&lt;p&gt;正文中的内容将作为此列表的描述内容。&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="email_create_list" width="823" height="449" src="/images/new-feature-comment-via-email/email_create_iteration.jpg?1384231969" /&gt;&lt;/p&gt;
+
+&lt;p&gt;发送成功后 Pragmatic.ly 将会自动为您创建任务列表&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="ply_list" width="1069" height="386" src="/images/new-feature-comment-via-email/Ply_create_iteration.jpg?1384231969" /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;在项目中创建 单一任务&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;发送邮件到刚才设置的 project 邮件接收地址 &amp;rdquo;&lt;a href="mailto:project+421d6f9a13e6@info.pragmatic.ly"&gt;project+421d6f9a13e6@info.pragmatic.ly&lt;/a&gt;&amp;ldquo;，格式如下：&lt;/p&gt;
+
+&lt;p&gt;主题(subject)&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;任务：任务名称&lt;/code&gt; 或者 &lt;code&gt;Task: task name&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;正文(content)&lt;/p&gt;
+
+&lt;p&gt;正文中的内容将作为任务描述。&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="email_task" width="821" height="286" src="/images/new-feature-comment-via-email/email_create_ticket.jpg?1384231969" /&gt;&lt;/p&gt;
+
+&lt;p&gt;发送成功后 Pragmatic.ly 将会自动创建这个单一任务&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="ply_task" width="821" height="286" src="/images/new-feature-comment-via-email/email_create_ticket.jpg?1384231969" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;方便么？还需要“项目助理”？&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;广而告之： 20人团队项目助理，月薪 286 元，真的只要 286 哦，亲！&lt;/strong&gt;&lt;/p&gt;
+</description>
+      <guid>tag:blog.pragmatic.ly,article.url</guid>
+      <pubDate>2013-10-04T06:05:00Z</pubDate>
+      <category>Announcement, New feature</category>
+    </item>
+    <item>
       <title>写在 Pragmatic.ly 即将两周年</title>
-      <link>http://blog.pragmatic.ly/we-are-back</link>
-      <description type="html">&lt;p&gt;准确说，Pragmatic.ly 从有这个想法到现在已经有 2 年了。11 年 10 月份的一个晚上跟 Daniel 和 Terry 在对我们所有用过的项目管理工具吐完槽以后，然后决定自己造一个，12 年春节前后真正当个事做，4 月底 Ben 加入，7 月份发布 Beta，先在海外做了差不多 8 个月，今年 4 月份开始调整方向，转向国内，6 月底重新上线到现在，整个过程各种状况各种弯路，但是每天都能感觉到变化，每天都是新的学习，乐在其中。&lt;/p&gt;
+      <link>http://pragmatic.ly/blog/we-are-back</link>
+      <description type="html">&lt;p&gt;&lt;img alt="弯路和未来" width="586" height="500" src="/images/we-are-back/detour-and-sunshine.jpg?1384231969" /&gt;&lt;/p&gt;
+
+&lt;p&gt;准确说，Pragmatic.ly 从有这个想法到现在已经有 2 年了。11 年 10 月份的一个晚上跟 Daniel 和 Terry 在对我们所有用过的项目管理工具吐完槽以后，然后决定自己造一个，12 年春节前后真正当个事做，4 月底 Ben 加入，7 月份发布 Beta，先在海外做了差不多 8 个月，今年 4 月份开始调整方向，转向国内，6 月底重新上线到现在，整个过程各种状况各种弯路，但是每天都能感觉到变化，每天都是新的学习，乐在其中。&lt;/p&gt;
 
 &lt;h3&gt;那些年我们一起走过的弯路&lt;/h3&gt;
 
@@ -26,7 +200,7 @@
 
 &lt;h4&gt;过早和过多地做开发&lt;/h4&gt;
 
-&lt;p&gt;我们创始团队的构成是两个开发和一个设计，技术能力很强，市场能力很弱。当我们决定要启动这个项目的时候，我们没有去找更多的用户聊天，聆听他们的想法，而是选择直接进入了开发阶段，美其名曰解决自己的问题。我们不停得去假想用户的需求，所有人都在做开发，只到发布。而整个过程，我们甚至没有去外界透露我们的产品目标，没有去收集潜在客户，这也造成了后面的被动。也就是说，我们在整个前期过程中，没有一个清晰的特定的用户群，没有去了解这个用户群到底存在什么问题，再去打造适合他们的产品，而是做出了产品后，再去寻找那个适应于我们产品的用户群体。所以当产品发布后，我们发现推广很难做，各种阻力，因为定位不清晰，也就很难传递合适的信息给适合的人。&lt;/p&gt;
+&lt;p&gt;我们创始团队的构成是两个开发和一个设计，技术能力很强，市场能力很弱。当我们决定要启动这个项目的时候，我们没有去找更多的用户聊天，聆听他们的想法，而是选择直接进入了开发阶段，美其名曰解决自己的问题。我们不停得去假想用户的需求，所有人都在做开发，直到发布。而整个过程，我们甚至没有去外界透露我们的产品目标，没有去收集潜在客户，这也造成了后面的被动。也就是说，我们在整个前期过程中，没有一个清晰的特定的用户群，没有去了解这个用户群到底存在什么问题，再去打造适合他们的产品，而是做出了产品后，再去寻找那个适应于我们产品的用户群体。所以当产品发布后，我们发现推广很难做，各种阻力，因为定位不清晰，也就很难传递合适的信息给适合的人。&lt;/p&gt;
 
 &lt;p&gt;在 YCombinator 有个理论，在产品发布前，你应该专注并只专注两件半事情，1 开发 + 1 跟用户聊天 + 0.5 锻炼身体。了解你的用户群体，很重要。&lt;/p&gt;
 
@@ -44,7 +218,7 @@
 
 &lt;h4&gt;冷冰冰的文案&lt;/h4&gt;
 
-&lt;p&gt;去年，我们的文案很简单，介绍了 Pragmatic.ly 是什么，有哪些特性，而且还刻意限定在一个页面里，让用户不需要翻页就能了解所有信息，事实证明这是个非常糟糕的设计。我们假想着列出的一些特性就能吸引到用户，但是问题是用户永远不关心你在做啥，用户关心的是你做的东西能怎样帮助到他。所以，当一个真正的用户来到 Pragmatic.ly 上，我们应该让他看到的是 Pragmatic.ly 能怎么的帮助他更好地管理项目，更高效地工作，一个好的文案，应该要做到像在跟用户对话一样，非常有针对性，告诉目标群体我们是如何如何理解你们的问题并是如何解决这些问题的，是另外一个层面的交流。&lt;/p&gt;
+&lt;p&gt;去年，我们的文案很简单，介绍了 Pragmatic.ly 是什么，有哪些特性，而且还刻意限定在一个页面里，让用户不需要翻页就能了解所有信息，事实证明这是个非常糟糕的设计。我们假想着列出的一些特性就能吸引到用户，但是问题是用户永远不关心你在做啥，用户关心的是你做的东西能怎样帮助到他。所以，当一个真正的用户来到 Pragmatic.ly 上，我们应该让他看到的是 Pragmatic.ly 能怎么的帮助他更好地管理项目，更高效地工作，一个好的文案，应该要做到像在跟用户对话一样，非常有针对性，告诉目标群体我们是如何如何理解你的问题并是如何解决这些问题的，是另外一个层面的交流。&lt;/p&gt;
 
 &lt;p&gt;目前 Pragmatic.ly  的文案比起第一版时已经是很大的进步，信息传达更明确，也刻意有一些吸引用户的 tricks，可能还缺乏的是给用户更大信任和信心的成功案例，不过因为我们希望是真正的客户们在现身说法，所以还需要一段时间。&lt;/p&gt;
 
@@ -52,17 +226,17 @@
 
 &lt;p&gt;如同&lt;a href="http://www.36kr.com/p/205411.html"&gt;36氪的报道&lt;/a&gt;一样，我们不想打造一个企业平台的应用商店，而是以任务管理为基础，为小团队初创企业做一个真正提供价值的高效协作工具。目前国内企业级软件需求足够，但是进展行程却十分迟缓，尤其是在 Pragmatic.ly 面对的小团队市场来说，价值和价格没有做很好的匹配。人们习惯用自己看得到的能理解的来衡量一个东西的价值。比如，如果我今天买了一个游戏，那么只要今天这个游戏给我带来了快乐，我就觉得这钱花得没问题。但是像 Pragmatic.ly 这样的协作类软件，并不具有这个特性，它需要整个团队一段时间的试用，才能看到效果，才能知道是否是好东西。问题摆在眼前，在教育用户的同时，需要我们更专注，耐得住寂寞，做好长跑的准备，做精，做少，做美。&lt;/p&gt;
 
-&lt;p&gt;我们希望每一个购买 Pragmatic.ly 的客户，都是对我们产品满意的用户。如果你购买了我们的服务却没有使用起来，那么我宁愿不赚这个钱。所以，除了要让掏钱的人满意之外，我们也很注重使用者的体验感受。我们会继续保持着它的简单，没有定制，没有过多的配置，不需要培训，也能上手即用，即使是对一些非技术背景出身的人来说。在未来你可能还是不会在 Pragmatic.ly 看到知识管理系统、在线群组系统等等，但是我们会努力让任务管理体验做到极致，进度、状态，才是项目的真正立身之本。Pragmatic.ly 也不需要太聪明，限制用户做这做那。一个工具，不管怎样最终也只是一个工具，很多事情毕竟还是需要人来做，所以应该是工具去灵活地适应团队，而不是逼迫用户削履适足，反被其所俘。&lt;/p&gt;
+&lt;p&gt;我们希望每一个购买 Pragmatic.ly 的客户，都是对我们产品满意的用户。如果你购买了我们的服务却没有使用起来，那么我宁愿不赚这个钱。所以，除了要让掏钱的人满意之外，我们也很注重使用者的体验感受。我们会继续保持着它的简单，没有定制，没有过多的配置，不需要培训，也能上手即用，即使是对一些非技术背景出身的人来说。在未来你可能还是不会在 Pragmatic.ly  看到知识管理系统、在线群组系统等等，但是我们会努力让任务管理体验做到极致，进度、状态，才是项目的真正立身之本。Pragmatic.ly  也不需要太聪明，限制用户做这做那。一个工具，不管怎样最终也只是一个工具，很多事情毕竟还是需要人来做，所以应该是工具去灵活地适应团队，而不是逼迫用户削履适足，反被其所俘。&lt;/p&gt;
 
-&lt;p&gt;&amp;ldquo;因为用了 Pragmatic.ly，我们更快更简单地做出了更好的产品。&amp;rdquo; 如果听到用户跟我们说这句话，将会是对我们的最大鼓励。面向挑战，我们已经准备好了。面对改变，你们准备好了吗？&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;因为用了 Pragmatic.ly，我们更快更简单地做出了更好的产品。&amp;rdquo; 如果听到用户跟我们说这句话，将会是对我们的最大鼓励。面向挑战，我们已经准备好了。面对改变，你准备好了吗？&lt;/p&gt;
 </description>
       <guid>tag:blog.pragmatic.ly,article.url</guid>
       <pubDate>2013-09-12T05:50:00Z</pubDate>
-      <category>产品, 思考</category>
+      <category>startup, thoughts</category>
     </item>
     <item>
       <title>Beyonds Gravatar and set your profile picture</title>
-      <link>http://blog.pragmatic.ly/announcing-uploading-avatar</link>
+      <link>http://pragmatic.ly/blog/announcing-uploading-avatar</link>
       <description type="html">&lt;p&gt;Today, we have released a minor update to our users which is you can upload your image and set as your profile picture in
 &lt;a title="Lean Collaborative Project Management Tool and Online Collaboration" href="http://pragmatic.ly"&gt;Pragmatic.ly&lt;/a&gt;
 instead of using &lt;a href="http://en.gravatar.com/"&gt;Gravatar&lt;/a&gt;.&lt;/p&gt;
@@ -105,7 +279,7 @@ It&amp;#39;s the ideal and elegant project management tool for tech startups.&lt
     </item>
     <item>
       <title>Introducing VCS integration with Pragmatic.ly</title>
-      <link>http://blog.pragmatic.ly/integrate-version-control-system-with-pragmat</link>
+      <link>http://pragmatic.ly/blog/integrate-version-control-system-with-pragmat</link>
       <description type="html">&lt;p&gt;Today, we&amp;#39;re glad to introduce our new &lt;a href="http://en.wikipedia.org/wiki/Revision_control"&gt;VCS&lt;/a&gt;(Version Control System) integration with Pragmatic.ly to the public. We have released this feature to some of our users in last two months and glad to hear how they love it. I&amp;#39;m sure you&amp;#39;ll love the feature too!&lt;/p&gt;
 
 &lt;p&gt;&lt;a href="https://pragmatic.ly"&gt;Pragmatic.ly&lt;/a&gt; is a lean collaborative project management tool featuring real time collaboration. We design the tool to be developer friendly and hope to help startup teams deliver better products, easier and faster. Developers like us work with VCS such as Git or SVN every day. The new VCS integration can deeply integrate with your current development process and improve your team productivity.&lt;/p&gt;
@@ -124,8 +298,8 @@ It&amp;#39;s the ideal and elegant project management tool for tech startups.&lt
 
 &lt;ol&gt;
 &lt;li&gt;&lt;p&gt;First, you should make sure the user name or the email is the same with what you use in your Pragmatic.ly account. If not, you can always set the setting in the project. For example:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;config&lt;/span&gt; &lt;span class="n"&gt;user&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;name&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;Terry Tai&amp;quot;&lt;/span&gt;
-&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;config&lt;/span&gt; &lt;span class="n"&gt;user&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;email&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;terry@pragmatic.ly&amp;quot;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;config&lt;/span&gt; &lt;span class="n"&gt;user&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;name&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Terry Tai&amp;quot;&lt;/span&gt;
+&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;config&lt;/span&gt; &lt;span class="n"&gt;user&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;email&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;terry@pragmatic.ly&amp;quot;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Get the commit hook url on your Pragmatic.ly project setting panel and copy this url to your clipboard. We will use it as the callback url latter. Only the administrators of the project can view the settings.&lt;/p&gt;
 
@@ -175,7 +349,7 @@ It&amp;#39;s the ideal and elegant project management tool for tech startups.&lt
 &lt;ol&gt;
 &lt;li&gt;If you prefer to implement every new feature in a new branch, you could name a branch starting with the ticket number, such as 529&lt;em&gt;regenerate&lt;/em&gt;token. Then all commits in this branch will be automatically associated with this ticket.&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;If you want to associate the commit to a ticket no matter which branch it&amp;#39;s in, you could alway include the hash tag with the ticket number such as &amp;#39;#529&amp;#39; in your commit message. For example:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;commit&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;m&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;#529 Associate the commit with ticket 529.&amp;quot;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;commit&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;m&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;#529 Associate the commit with ticket 529.&amp;quot;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
 &lt;/ol&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Manipulate the status of tickets directly from the commit message.&lt;/p&gt;
@@ -188,8 +362,8 @@ It&amp;#39;s the ideal and elegant project management tool for tech startups.&lt
 &lt;/ol&gt;
 
 &lt;p&gt;Here are some examples of how to use this feature.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;commit&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;m&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;Resolved #529 This will mark 529 as Completed&amp;quot;&lt;/span&gt;
-&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;comimt&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;m&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;Closed #529 This will mark 529 as Closed&amp;quot;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;commit&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;m&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Resolved #529 This will mark 529 as Completed&amp;quot;&lt;/span&gt;
+&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;comimt&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;m&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Closed #529 This will mark 529 as Closed&amp;quot;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
@@ -203,7 +377,7 @@ It&amp;#39;s the ideal and elegant project management tool for tech startups.&lt
     </item>
     <item>
       <title>Improving the usability on tickets readability and team collaboration</title>
-      <link>http://blog.pragmatic.ly/improving-the-usability-on-tickets-readabilit</link>
+      <link>http://pragmatic.ly/blog/improving-the-usability-on-tickets-readabilit</link>
       <description type="html">&lt;p&gt;Steve Krug&amp;#39;s instant classic book &amp;ldquo;&lt;a href="http://www.amazon.com/Dont-Make-Me-Think-Usability/dp/0321344758"&gt;Don&amp;#39;t Make Me Think&lt;/a&gt;&amp;rdquo; is one of our favorite design books. Simplicity and usability is our lifetime of pursuit on products design. With regard to single page application like &lt;a href="https://pragmatic.ly"&gt;Pragmatic.ly&lt;/a&gt;, balancing the complexity of features with the simplicity of design is indeed difficult, but we&amp;#39;re keep iterating. Here&amp;#39;re some improvements to the ticket details.&lt;/p&gt;
 
 &lt;h3&gt;Markdown Supported&lt;/h3&gt;
@@ -251,7 +425,7 @@ It&amp;#39;s the ideal and elegant project management tool for tech startups.&lt
     </item>
     <item>
       <title>The improvement of 'Archive Iteration'</title>
-      <link>http://blog.pragmatic.ly/the-improvement-of-archive-iteration</link>
+      <link>http://pragmatic.ly/blog/the-improvement-of-archive-iteration</link>
       <description type="html">&lt;h3&gt;Background of &amp;#39;Archive Iteration&amp;#39; function&lt;/h3&gt;
 
 &lt;p&gt;We have released the &amp;#39;Archive Iteration&amp;#39; feature for some time.  This is a very useful feature if you use iterations the way like us. We create individual iteration for each week, and put the things we will work on in the corresponding iteration.&lt;/p&gt;
@@ -302,7 +476,7 @@ It&amp;#39;s the ideal and elegant project management tool for tech startups.&lt
     </item>
     <item>
       <title>Pragmatic.ly team on RubyConf China 2012</title>
-      <link>http://blog.pragmatic.ly/the-presentations-we-made-on-rubyconfchina-20</link>
+      <link>http://pragmatic.ly/blog/the-presentations-we-made-on-rubyconfchina-20</link>
       <description type="html">&lt;p&gt;Last month the &lt;a href="https://pragmatic.ly"&gt;Pragmatic.ly&lt;/a&gt; team attent the &lt;a href="http://rubyconfchina.org"&gt;RubyConfChina 2012&lt;/a&gt; and we really had a great time there with the ruby developers came from China and also across the world.&lt;/p&gt;
 
 &lt;p&gt;The conference is very good. It&amp;#39;s also the big party of rubyist. Everyone enjoyed that much. Thanks to the organizers!&lt;/p&gt;
@@ -365,7 +539,7 @@ It&amp;#39;s the ideal and elegant project management tool for tech startups.&lt
     </item>
     <item>
       <title>Improving Ticket Interactive</title>
-      <link>http://blog.pragmatic.ly/improving-ticket-interactive</link>
+      <link>http://pragmatic.ly/blog/improving-ticket-interactive</link>
       <description type="html">&lt;h3&gt;Improve the stability of ticket item in the list&lt;/h3&gt;
 
 &lt;p&gt;Users informed us that the ticket list in the center column was unstable, and we were rushing into this problem immediately.&lt;/p&gt;
@@ -422,7 +596,7 @@ It&amp;#39;s the ideal and elegant project management tool for tech startups.&lt
     </item>
     <item>
       <title>Showing up Due Date</title>
-      <link>http://blog.pragmatic.ly/due-date-is-showing-up-in-the-ticket-list</link>
+      <link>http://pragmatic.ly/blog/due-date-is-showing-up-in-the-ticket-list</link>
       <description type="html">&lt;p&gt;Now you can see &lt;em&gt;due-date&lt;/em&gt; on ticket list, and capture overdue tickets easily at a glance. Here is how and why we put it this way.&lt;/p&gt;
 
 &lt;p&gt;Firstly, &lt;em&gt;due-date&lt;/em&gt; can be input in the right form, easy click and go.&lt;/p&gt;
@@ -461,7 +635,7 @@ It&amp;#39;s the ideal and elegant project management tool for tech startups.&lt
     </item>
     <item>
       <title>Announcing mails_viewer - easiest way to test mails in Rails app</title>
-      <link>http://blog.pragmatic.ly/announcing-mailsviewer-a-rails-engine-to-view</link>
+      <link>http://pragmatic.ly/blog/announcing-mailsviewer-a-rails-engine-to-view</link>
       <description type="html">&lt;p&gt;&lt;em&gt;Q:&lt;/em&gt; &amp;ldquo;I implemented the mail template but how can I preview the mail in my machine?&amp;rdquo;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;Q:&lt;/em&gt; &amp;ldquo;I&amp;#39;m running out of emails to test the signup on staging server. Do you have more?&amp;rdquo;&lt;/p&gt;
@@ -486,13 +660,13 @@ It&amp;#39;s the ideal and elegant project management tool for tech startups.&lt
 
 &lt;ol&gt;
 &lt;li&gt;&lt;p&gt;Add the gem to your Gemfile :&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;gem&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;mails_viewer&amp;quot;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;gem&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;mails_viewer&amp;quot;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Set ActionMailer&amp;#39;s delivery method to :file :&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;config&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;action_mailer&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;delivery_method&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="n"&gt;file&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;config&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;action_mailer&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;delivery_method&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="ss"&gt;:file&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Put this in your routes.rb:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;mount&lt;/span&gt; &lt;span class="n"&gt;MailsViewer&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;Engine&lt;/span&gt; &lt;span class="o"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="err"&gt;&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;delivered_mails&lt;/span&gt;&lt;span class="err"&gt;&amp;#39;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;mount&lt;/span&gt; &lt;span class="ss"&gt;MailsViewer&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="ss"&gt;:Engine&lt;/span&gt; &lt;span class="o"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;/delivered_mails&amp;#39;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
@@ -538,7 +712,7 @@ It&amp;#39;s the ideal and elegant project management tool for tech startups.&lt
     </item>
     <item>
       <title>Video matters! But which hosting service to use?</title>
-      <link>http://blog.pragmatic.ly/how-we-choose-the-right-video-service-for-us</link>
+      <link>http://pragmatic.ly/blog/how-we-choose-the-right-video-service-for-us</link>
       <description type="html">&lt;p&gt;Nowadays video is used extensively for introducing the products or services to the public. It&amp;#39;s no doubt that a good video can increase the conversation rate a lot.&lt;/p&gt;
 
 &lt;p&gt;As a startup, it&amp;#39;s not easy to create a great product video like other big companies. So we recorded a toturial screencast when we launched &lt;a href="https://pragmatic.ly"&gt;Pragmatic.ly&lt;/a&gt; instead. Meanwhile we are working on our new attracting product video and we love the process. It&amp;#39;s totally different experience than writing code. We will share more latter when the video is out. But in this post I will talk more about the experience about different video hosting service. We tried &lt;a href="http://vimeo.com/"&gt;Vimeo&lt;/a&gt;, &lt;a href="http://sublimevideo.net/"&gt;SublimeVideo&lt;/a&gt;, &lt;a href="http://wistia.com/"&gt;Wistia&lt;/a&gt; and &lt;a href="http://www.youtube.com/"&gt;YouTube&lt;/a&gt;.  The result is interesting and quite different than our common sense.&lt;/p&gt;
@@ -569,7 +743,7 @@ It&amp;#39;s the ideal and elegant project management tool for tech startups.&lt
     </item>
     <item>
       <title>Released Features of Pragmatic.ly</title>
-      <link>http://blog.pragmatic.ly/158983791</link>
+      <link>http://pragmatic.ly/blog/158983791</link>
       <description type="html">&lt;p&gt;August 2012 has been a big month for &lt;a href="https://pragmatic.ly"&gt;Pragmatic.ly&lt;/a&gt;. We did a lot of optimization and tried our best to give more benefits to our users. So we really hope our users will love what we did in last month.&lt;/p&gt;
 
 &lt;p&gt;So let me take an opportunity to introduce the cutting-edge main changes that we have made in month of August.&lt;/p&gt;
@@ -632,7 +806,7 @@ It&amp;#39;s the ideal and elegant project management tool for tech startups.&lt
     </item>
     <item>
       <title>A Practical Guide to Use Spine.JS in Real World App</title>
-      <link>http://blog.pragmatic.ly/a-practical-guide-to-use-spinejs-in-real-worl</link>
+      <link>http://pragmatic.ly/blog/a-practical-guide-to-use-spinejs-in-real-worl</link>
       <description type="html">&lt;p&gt;To give users the best possible fluid experience, we designed &lt;a href="https://pragmatic.ly"&gt;Pragmatic.ly&lt;/a&gt; and complied with the &lt;a href="http://en.wikipedia.org/wiki/Single-page_application"&gt;single page application&lt;/a&gt; standard. We believe that could make users focus on building product rather than spending time on project management itself. A wide range of technology solutions are available to make a single page application. Current trends suggest moving core application from server to client side and keeping server load at minimum for better performance by pure data APIs. &lt;a href="https://pragmatic.ly"&gt;Pragmatic.ly&lt;/a&gt; took on the challange to cater to this need by developing server side in Rails, Spine.js at client side.&lt;/p&gt;
 
 &lt;h3&gt;Why Spine.JS&lt;/h3&gt;
@@ -924,7 +1098,7 @@ It&amp;#39;s the ideal and elegant project management tool for tech startups.&lt
     </item>
     <item>
       <title>It's not perfect but it's time to integrate web notifications</title>
-      <link>http://blog.pragmatic.ly/its-not-perfect-but-its-time-to-integrate-web</link>
+      <link>http://pragmatic.ly/blog/its-not-perfect-but-its-time-to-integrate-web</link>
       <description type="html">&lt;p&gt;One feature &lt;a href="https://pragmatic.ly"&gt;Pragmatic.ly&lt;/a&gt; has had from the beginning is Web Notifications. When I first saw the feature in Gmail I was convinced it was a feature every web application should have. As a project management tool Pragmatic.ly should enhance collaboration and ease communication. Instant desktop-like notification is one way to achieve the goal.&lt;/p&gt;
 
 &lt;p&gt;&lt;img title="Chrome Web Notification" alt="Chrome Web Notification" width="332" height="127" src="/images/its-not-perfect-but-its-time-to-integrate-web/chrome-notification.png?1364633946" /&gt;&lt;/p&gt;
@@ -1058,7 +1232,7 @@ It&amp;#39;s the ideal and elegant project management tool for tech startups.&lt
     </item>
     <item>
       <title>Announcing Smart Time Ago</title>
-      <link>http://blog.pragmatic.ly/we-opened-source-smart-time-ago</link>
+      <link>http://pragmatic.ly/blog/we-opened-source-smart-time-ago</link>
       <description type="html">&lt;p&gt;The relative timestamps like &amp;ldquo;5 minutes ago&amp;rdquo; are more and more used in web applications. So web frameworks like &lt;a href="http://rubyonrails.com"&gt;Ruby on Rails&lt;/a&gt; have a builtin helper method to change timestamps to relative timestamps easily on server side as following,&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;time_ago_in_words&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;item&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;created_at&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
@@ -1086,7 +1260,7 @@ It&amp;#39;s the ideal and elegant project management tool for tech startups.&lt
     </item>
     <item>
       <title>Pragmatic.ly an Asana Ripoff? We say no, read why.</title>
-      <link>http://blog.pragmatic.ly/ripoff-asana-we-say-no-and-why-were-here</link>
+      <link>http://pragmatic.ly/blog/ripoff-asana-we-say-no-and-why-were-here</link>
       <description type="html">&lt;p&gt;Last week was a big milestone for us. After a two month private beta period we publicly launched &lt;a title="Lean Collaborative Project Management Tool" href="https://pragmatic.ly"&gt;Pragmatic.ly&lt;/a&gt;. Many thanks to our private beta users for their encouraging words and kind feedback which we used to improve Pragmatic.ly. Our users are always extremely important to us.&lt;/p&gt;
 
 &lt;blockquote&gt;
@@ -1119,7 +1293,7 @@ It&amp;#39;s the ideal and elegant project management tool for tech startups.&lt
     </item>
     <item>
       <title>Hello World</title>
-      <link>http://blog.pragmatic.ly/hello-world</link>
+      <link>http://pragmatic.ly/blog/hello-world</link>
       <description type="html">&lt;p&gt;Today, we&amp;#39;re excited to announce the beta version of &lt;a title="Lean Collaborative Product Management Tool" href="https://pragmatic.ly"&gt;Pragmatic.ly&lt;/a&gt;, our new product to simplify the project management process.&lt;/p&gt;
 
 &lt;p&gt;Pragmatic.ly is a fast and easy to use project management tool featuring real time collaboration. For years of developing products, we have tried many different project management tools. However, as a small team(&amp;lt;= 10), we found that most of them are too complex to do lots of work about work and most of them don&amp;#39;t care about communication, histories which force us to use different tools for same purpose. We&amp;#39;re always imaging there will be a tool which will make the team focus on the work with maximum productivity. That&amp;#39;s why we created Pragmatic.ly.&lt;/p&gt;

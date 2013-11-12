@@ -35,9 +35,10 @@
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <link href="/stylesheets/application.css?1379005288" media="screen" rel="stylesheet" type="text/css" />
-    <script src="/javascripts/application.js?1364632828" type="text/javascript"></script>
+    <link href="/stylesheets/application.css?1384232016" media="screen" rel="stylesheet" type="text/css" />
+    <script src="/javascripts/application.js?1384232015" type="text/javascript"></script>
 
+    
     <script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script>
     <script type="text/javascript">var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-4054156-1']);
@@ -47,6 +48,9 @@
         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();</script>
+    
+
+    
   </head>
 
   <body class="page page_3 page_3_index">
@@ -93,6 +97,172 @@
     <article class="post">
       <header>
   <h2 class="title">
+    <a href="/due-date-is-showing-up-in-the-ticket-list">Showing up Due Date</a>
+  </h2>
+</header>
+
+<aside>
+  <ul class="meta">
+    <li class="author-photo">
+      <a href="http://beenhero.com">
+        <img alt="" width="120" height="120" src="/images/ben-he.png?1379005285" />
+      </a>
+    </li>
+    <li class="author">
+     by 何斌
+    </li>
+    <li class="date">
+      Sep 24, 2012
+    </li>
+    <li class="tags">
+      
+        <a href="/tags/announcement">Announcement</a>
+      
+        <a href="/tags/changelog">ChangeLog</a>
+      
+        <a href="/tags/ui">UI</a>
+      
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <p>Now you can see <em>due-date</em> on ticket list, and capture overdue tickets easily at a glance. Here is how and why we put it this way.</p>
+
+<p>Firstly, <em>due-date</em> can be input in the right form, easy click and go.</p>
+
+<p><img alt="Due Date Selector" width="356" height="196" src="/images/due-date-is-showing-up-in-the-ticket-list/date-selector.jpg?1364632825" /></p>
+
+<p>A ticket has <em>due-date</em> set will show up a date tag, the visual design is different from normal tags. Basically you&#39;re notified that one ticket has due on priority.</p>
+
+<p><img alt="Due Date Tag" width="350" height="47" src="/images/due-date-is-showing-up-in-the-ticket-list/due-date-tag.png?1364633449" /></p>
+
+<p>Once a ticket is due on or overdue, this ticket item in tickets list will be highlighted and the date tag turns red. You can&#39;t ignore it since the day is coming :) Hope this can push you a bit for getting things done.</p>
+
+<p><img alt="Overdue Tag" width="350" height="38" src="/images/due-date-is-showing-up-in-the-ticket-list/overdue-tag.png?1364633479" /></p>
+
+
+  <p>
+    ......
+  </p>
+  <p>
+    <a href="/due-date-is-showing-up-in-the-ticket-list">Read more →</a>
+  </p>
+</div>
+
+    </article>
+  
+    <article class="post">
+      <header>
+  <h2 class="title">
+    <a href="/announcing-mailsviewer-a-rails-engine-to-view">Announcing mails_viewer - easiest way to test mails in Rails app</a>
+  </h2>
+</header>
+
+<aside>
+  <ul class="meta">
+    <li class="author-photo">
+      <a href="http://yedingding.com">
+        <img alt="" width="120" height="120" src="/images/dingding-ye.png?1379005285" />
+      </a>
+    </li>
+    <li class="author">
+     by 叶玎玎
+    </li>
+    <li class="date">
+      Sep 20, 2012
+    </li>
+    <li class="tags">
+      
+        <a href="/tags/open-source">open source</a>
+      
+        <a href="/tags/rails">rails</a>
+      
+        <a href="/tags/mail">mail</a>
+      
+        <a href="/tags/engine">engine</a>
+      
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <p><em>Q:</em> &ldquo;I implemented the mail template but how can I preview the mail in my machine?&rdquo;</p>
+
+<p><em>Q:</em> &ldquo;I&#39;m running out of emails to test the signup on staging server. Do you have more?&rdquo;</p>
+
+<p><em>Q:</em> &ldquo;I accidently sent the mail to <a href="mailto:test@example.com">test@example.com</a>. I thought the email adress doesn&#39;t exist!&rdquo;</p>
+
+<p>Familiar? I have been asked many times of those questions these years. The requiremeent is simple. Write mailer model, send mail and then verify every part works as expected. But when we&#39;re in non-production environment, either development machine or staging server, it&#39;s always painful to test mails. Put simple, we just want:</p>
+
+<ul>
+<li>To preview all the sent mails easily</li>
+<li>To browse the mails easily, for everyone in the team.</li>
+<li>To allow conditioned mails to real sent out.</li>
+</ul>
+
+<p>We feel the same pain at <a href="https://pragmatic.ly">Pragmatic.ly</a> and that&#39;s why we built <a href="https://github.com/pragmaticly/mails_viewer">mails_viewer</a>, a mails preview Engine which provides a table view for all mails under tmp/mails. It&#39;s a fork of tomlion&#39;s <a href="https://github.com/tomlion/mails_viewer">original code</a> and I&#39;m glad to be the maintainer. Thanks for tomlion for getting this thing started!</p>
+
+
+  <p>
+    ......
+  </p>
+  <p>
+    <a href="/announcing-mailsviewer-a-rails-engine-to-view">Read more →</a>
+  </p>
+</div>
+
+    </article>
+  
+    <article class="post">
+      <header>
+  <h2 class="title">
+    <a href="/how-we-choose-the-right-video-service-for-us">Video matters! But which hosting service to use?</a>
+  </h2>
+</header>
+
+<aside>
+  <ul class="meta">
+    <li class="author-photo">
+      <a href="http://terrytai.com">
+        <img alt="" width="120" height="120" src="/images/terry-tai.png?1379005285" />
+      </a>
+    </li>
+    <li class="author">
+     by 太檑
+    </li>
+    <li class="date">
+      Sep 19, 2012
+    </li>
+    <li class="tags">
+      
+        <a href="/tags/marketing">marketing</a>
+      
+        <a href="/tags/video-service">video service</a>
+      
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <p>Nowadays video is used extensively for introducing the products or services to the public. It&#39;s no doubt that a good video can increase the conversation rate a lot.</p>
+
+<p>As a startup, it&#39;s not easy to create a great product video like other big companies. So we recorded a toturial screencast when we launched <a href="https://pragmatic.ly">Pragmatic.ly</a> instead. Meanwhile we are working on our new attracting product video and we love the process. It&#39;s totally different experience than writing code. We will share more latter when the video is out. But in this post I will talk more about the experience about different video hosting service. We tried <a href="http://vimeo.com/">Vimeo</a>, <a href="http://sublimevideo.net/">SublimeVideo</a>, <a href="http://wistia.com/">Wistia</a> and <a href="http://www.youtube.com/">YouTube</a>.  The result is interesting and quite different than our common sense.</p>
+
+
+  <p>
+    ......
+  </p>
+  <p>
+    <a href="/how-we-choose-the-right-video-service-for-us">Read more →</a>
+  </p>
+</div>
+
+    </article>
+  
+    <article class="post">
+      <header>
+  <h2 class="title">
     <a href="/158983791">Released Features of Pragmatic.ly</a>
   </h2>
 </header>
@@ -101,7 +271,7 @@
   <ul class="meta">
     <li class="author-photo">
       <a href="http://terrytai.com">
-        <img src="/images/terry-tai.png">
+        <img alt="" width="120" height="120" src="/images/terry-tai.png?1379005285" />
       </a>
     </li>
     <li class="author">
@@ -157,7 +327,7 @@
   <ul class="meta">
     <li class="author-photo">
       <a href="http://yedingding.com">
-        <img src="/images/dingding-ye.png">
+        <img alt="" width="120" height="120" src="/images/dingding-ye.png?1379005285" />
       </a>
     </li>
     <li class="author">
@@ -198,172 +368,7 @@
 
     </article>
   
-    <article class="post">
-      <header>
-  <h2 class="title">
-    <a href="/its-not-perfect-but-its-time-to-integrate-web">It's not perfect but it's time to integrate web notifications</a>
-  </h2>
-</header>
 
-<aside>
-  <ul class="meta">
-    <li class="author-photo">
-      <a href="http://yedingding.com">
-        <img src="/images/dingding-ye.png">
-      </a>
-    </li>
-    <li class="author">
-     by 叶玎玎
-    </li>
-    <li class="date">
-      Aug 01, 2012
-    </li>
-    <li class="tags">
-      
-        <a href="/tags/html5-notification">html5 notification</a>
-      
-        <a href="/tags/javascript">JavaScript</a>
-      
-        <a href="/tags/web-notification">web notification</a>
-      
-    </li>
-  </ul>
-</aside>
-
-<div class="content">
-  <p>One feature <a href="https://pragmatic.ly">Pragmatic.ly</a> has had from the beginning is Web Notifications. When I first saw the feature in Gmail I was convinced it was a feature every web application should have. As a project management tool Pragmatic.ly should enhance collaboration and ease communication. Instant desktop-like notification is one way to achieve the goal.</p>
-
-<p><img title="Chrome Web Notification" alt="Chrome Web Notification" width="332" height="127" src="/images/its-not-perfect-but-its-time-to-integrate-web/chrome-notification.png?1364633946" /></p>
-
-<p><img title="Safari Web Notification" alt="Safari Web Notification" width="331" height="92" src="/images/its-not-perfect-but-its-time-to-integrate-web/safari-notification.png?1364633980" /></p>
-
-<h3>Browser Support</h3>
-
-<p>For a long time only Chrome users have been able to benefit from such features. But the release of Safari 6 in Mountain Lion has changed things for the better and now it&#39;s time to integrate web notification into your application.</p>
-
-
-  <p>
-    ......
-  </p>
-  <p>
-    <a href="/its-not-perfect-but-its-time-to-integrate-web">Read more →</a>
-  </p>
-</div>
-
-    </article>
-  
-    <article class="post">
-      <header>
-  <h2 class="title">
-    <a href="/we-opened-source-smart-time-ago">Announcing Smart Time Ago</a>
-  </h2>
-</header>
-
-<aside>
-  <ul class="meta">
-    <li class="author-photo">
-      <a href="http://terrytai.com">
-        <img src="/images/terry-tai.png">
-      </a>
-    </li>
-    <li class="author">
-     by 太檑
-    </li>
-    <li class="date">
-      Jul 24, 2012
-    </li>
-    <li class="tags">
-      
-        <a href="/tags/open-source">open source</a>
-      
-        <a href="/tags/javascript">JavaScript</a>
-      
-        <a href="/tags/jquery">jQuery</a>
-      
-        <a href="/tags/smart-time-ago">smart-time-ago</a>
-      
-    </li>
-  </ul>
-</aside>
-
-<div class="content">
-  <p>The relative timestamps like &ldquo;5 minutes ago&rdquo; are more and more used in web applications. So web frameworks like <a href="http://rubyonrails.com">Ruby on Rails</a> have a builtin helper method to change timestamps to relative timestamps easily on server side as following,</p>
-<div class="highlight"><pre><span class="n">time_ago_in_words</span><span class="p">(</span><span class="n">item</span><span class="o">.</span><span class="n">created_at</span><span class="p">)</span>
-</pre></div>
-<p>But If you use relative timestamps, you should update them on the client side to make sure the users always seeing the correct relative timestamps. And there is already an awesome library to do this job, which is <a href="http://timeago.yarp.com/">Timeago</a>. Thanks to Yarp.com, the author of Timeago.</p>
-
-<p>However, after trying the library in depth, we found that it doesn&#39;t fit well in <a href="https://pragmatic.ly">Pragmatic.ly</a>. As a real time single-page application, our users may not refresh the page for days, so refreshing the relative timestamps per minute is meaningless and wasteful.</p>
-
-
-  <p>
-    ......
-  </p>
-  <p>
-    <a href="/we-opened-source-smart-time-ago">Read more →</a>
-  </p>
-</div>
-
-    </article>
-  
-    <article class="post">
-      <header>
-  <h2 class="title">
-    <a href="/ripoff-asana-we-say-no-and-why-were-here">Pragmatic.ly an Asana Ripoff? We say no, read why.</a>
-  </h2>
-</header>
-
-<aside>
-  <ul class="meta">
-    <li class="author-photo">
-      <a href="http://yedingding.com">
-        <img src="/images/dingding-ye.png">
-      </a>
-    </li>
-    <li class="author">
-     by 叶玎玎
-    </li>
-    <li class="date">
-      Jul 16, 2012
-    </li>
-    <li class="tags">
-      
-        <a href="/tags/productivity">Productivity</a>
-      
-        <a href="/tags/product-design">Product Design</a>
-      
-    </li>
-  </ul>
-</aside>
-
-<div class="content">
-  <p>Last week was a big milestone for us. After a two month private beta period we publicly launched <a title="Lean Collaborative Project Management Tool" href="https://pragmatic.ly">Pragmatic.ly</a>. Many thanks to our private beta users for their encouraging words and kind feedback which we used to improve Pragmatic.ly. Our users are always extremely important to us.</p>
-
-<blockquote>
-  <p>Pragmatic.ly is an elegant project management tool. It provides us just enough features for using with a very concise and clear interface, and makes project management more enjoyable.<p>
-    - Yuanyi Zhang, Co-founder of <a href="http://mockingbot.com">MockingBot.com</a>
-</blockquote>
-
-<blockquote>
-  <p>It is the first time that I don&rsquo;t end up using excel spreadsheet for doing tasks management.</p>
-  - Marc-Alexandre Cartiant, project manager
-</blockquote>
-
-<p>We shared the launch news through social media platforms such as Twitter, Facebook, HackerNews, IRC, etc. Thanks to all the new users giving their feedback. All are highly appreciated!</p>
-
-<p>Something we&#39;re hearing in the feedback is that Pragmatic.ly is a &ldquo;ripoff of Asana&rdquo;. We even appreciate this kind of feedback and still want to thank those people for visiting our site and spending some time trying out our product. Asana definitely is a genius product and an awesome service for group collaboration. We recommend the service to our friends a lot when they need a general task management tool. We love Asana when we saw it at first glance! If you need a general shared task list for your team, give <a href="http://asana.com">Asana</a> a try and you&#39;ll love it too.</p>
-
-
-  <p>
-    ......
-  </p>
-  <p>
-    <a href="/ripoff-asana-we-say-no-and-why-were-here">Read more →</a>
-  </p>
-</div>
-
-    </article>
-  
-  
   
     <ul class="pager">
       
@@ -384,7 +389,7 @@
   (function () {
     var s = document.createElement('script'); s.async = true;
     s.type = 'text/javascript';
-    s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+    s.src = '//' + disqus_shortname + '.disqus.com/count.js';
     (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
   }());
 </script>
