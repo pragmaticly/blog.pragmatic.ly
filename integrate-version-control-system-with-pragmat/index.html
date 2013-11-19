@@ -40,18 +40,21 @@
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <link href="/blog/stylesheets/application.css?1384232016" media="screen" rel="stylesheet" type="text/css" />
-    <script src="/blog/javascripts/application.js?1384835528" type="text/javascript"></script>
+    <link href="/stylesheets/application.css?1384232016" media="screen" rel="stylesheet" type="text/css" />
+    <script src="/javascripts/application.js?1384835627" type="text/javascript"></script>
 
     
-
+    <script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script>
+    <script type="text/javascript">var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-4054156-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();</script>
     
-    <!-- start Mixpanel -->
-    <script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f);b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==
-typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");for(g=0;g<i.length;g++)f(c,i[g]);
-b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
-    mixpanel.init("43a596021773ee49e7b13713d89c9875");</script>
-    <!-- end Mixpanel -->
+
     
   </head>
 
@@ -98,7 +101,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
 
     <header>
   <h2 class="title">
-    <a href="/blog/integrate-version-control-system-with-pragmat">Introducing VCS integration with Pragmatic.ly</a>
+    <a href="/integrate-version-control-system-with-pragmat">Introducing VCS integration with Pragmatic.ly</a>
   </h2>
 </header>
 
@@ -106,7 +109,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
   <ul class="meta">
     <li class="author-photo">
       <a href="http://terrytai.com">
-        <img alt="" width="120" height="120" src="/blog/images/terry-tai.png?1379005285" />
+        <img alt="" width="120" height="120" src="/images/terry-tai.png?1379005285" />
       </a>
     </li>
     <li class="author">
@@ -117,15 +120,15 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
     </li>
     <li class="tags">
       
-        <a href="/blog/tags/vcs">VCS</a>
+        <a href="/tags/vcs">VCS</a>
       
-        <a href="/blog/tags/integration">Integration</a>
+        <a href="/tags/integration">Integration</a>
       
-        <a href="/blog/tags/git">Git</a>
+        <a href="/tags/git">Git</a>
       
     </li>
     <li class="back-link">
-      <a href="/blog">&lsaquo; 返回博客主页</a>
+      <a href="/">&lsaquo; 返回博客主页</a>
     </li>
   </ul>
 </aside>
@@ -139,7 +142,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
 
 <p>Feel free to try this feature by signing up at <a href="https://pragmatic.ly">pragmatic.ly</a>.</p>
 
-<p><img alt="VCS Integration" width="507" height="512" src="/blog/images/integrate-version-control-system-with-pragmat/vcs-integration.png?1364633909" /></p>
+<p><img alt="VCS Integration" width="507" height="512" src="/images/integrate-version-control-system-with-pragmat/vcs-integration.png?1364633909" /></p>
 
 <p>So far, we have already supported three VCS services: <a href="https://github.com">GitHub</a>, <a href="https://bitbucket.org">BitBucket</a> and <a href="http://gitlab.org">Gitlab</a>. And more are coming. Let us know if the VCS you&#39;re using now is not in the list and you want to see it soon!</p>
 
@@ -154,9 +157,9 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
 </pre></div></li>
 <li><p>Get the commit hook url on your Pragmatic.ly project setting panel and copy this url to your clipboard. We will use it as the callback url latter. Only the administrators of the project can view the settings.</p>
 
-<p><img alt="Project Setting" width="232" height="166" src="/blog/images/integrate-version-control-system-with-pragmat/project-list.png?1364633835" /></p>
+<p><img alt="Project Setting" width="232" height="166" src="/images/integrate-version-control-system-with-pragmat/project-list.png?1364633835" /></p>
 
-<p><img alt="Edit Project" width="481" height="396" src="/blog/images/integrate-version-control-system-with-pragmat/edit-project.png?1364633735" /></p></li>
+<p><img alt="Edit Project" width="481" height="396" src="/images/integrate-version-control-system-with-pragmat/edit-project.png?1364633735" /></p></li>
 <li><p>As said, now Pragmatic.ly supports three services: Github, Bitbucket, Gitlab. Below are the integration steps for each service.</p></li>
 </ol>
 
@@ -165,11 +168,11 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
 <ol>
 <li><p>Go to your project page on Github, click the &#39;Setting&#39; tag of the project to go to project setting page.(If you don&#39;t see this tab, it means you don&#39;t have this permission. Please contact the owner of this project on Github.)</p>
 
-<p><img alt="GitHub Project Setting" width="209" height="147" src="/blog/images/integrate-version-control-system-with-pragmat/github-project-setting.png?1364633765" /></p></li>
+<p><img alt="GitHub Project Setting" width="209" height="147" src="/images/integrate-version-control-system-with-pragmat/github-project-setting.png?1364633765" /></p></li>
 <li><p>Then click the &#39;Service Hooks&#39;, and choose the &#39;WebHook URLs&#39;.</p></li>
 <li><p>Paste the url to the field and click &#39;Update settings&#39;.</p>
 
-<p><img alt="Github WebHook" width="939" height="222" src="/blog/images/integrate-version-control-system-with-pragmat/github-webhook.png?1364633801" /></p></li>
+<p><img alt="Github WebHook" width="939" height="222" src="/images/integrate-version-control-system-with-pragmat/github-webhook.png?1364633801" /></p></li>
 </ol>
 
 <h4>Bitbucket</h4>
@@ -179,7 +182,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
 <li>Choose the the &#39;POST&#39; from the select box and paste the URL on the url field</li>
 <li><p>Click &#39;Save&#39;</p>
 
-<p><img alt="BitBucket WebHook" width="932" height="335" src="/blog/images/integrate-version-control-system-with-pragmat/bitbucket-webhook.png?1364633702" /></p></li>
+<p><img alt="BitBucket WebHook" width="932" height="335" src="/images/integrate-version-control-system-with-pragmat/bitbucket-webhook.png?1364633702" /></p></li>
 </ol>
 
 <h4>GitLab</h4>
@@ -193,7 +196,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
 
 <p>For example we have a ticket whose number is 529.</p>
 
-<p><img alt="Ticket Example" width="472" height="42" src="/blog/images/integrate-version-control-system-with-pragmat/ticket-example.png?1364633870" /></p>
+<p><img alt="Ticket Example" width="472" height="42" src="/images/integrate-version-control-system-with-pragmat/ticket-example.png?1364633870" /></p>
 
 <p>There are two ways to associate your commits with a specify ticket.</p>
 
