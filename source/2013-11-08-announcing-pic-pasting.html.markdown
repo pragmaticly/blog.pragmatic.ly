@@ -1,7 +1,7 @@
 ---
 title: "新功能: 通过复制粘贴就能上传图片"
 date: 2013-11-08 01:00 +08:00
-tags: Annoucement, New Feature
+tags: Announcement, New Feature
 author: terry
 disqus_identifier: 'announcing-pic-pasting'
 ---
