@@ -40,21 +40,18 @@
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <link href="/stylesheets/application.css?1384232016" media="screen" rel="stylesheet" type="text/css" />
-    <script src="/javascripts/application.js?1384835040" type="text/javascript"></script>
+    <link href="/blog/stylesheets/application.css?1384232016" media="screen" rel="stylesheet" type="text/css" />
+    <script src="/blog/javascripts/application.js?1384835067" type="text/javascript"></script>
 
     
-    <script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script>
-    <script type="text/javascript">var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-4054156-1']);
-      _gaq.push(['_trackPageview']);
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();</script>
-    
 
+    
+    <!-- start Mixpanel -->
+    <script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f);b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==
+typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");for(g=0;g<i.length;g++)f(c,i[g]);
+b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
+    mixpanel.init("43a596021773ee49e7b13713d89c9875");</script>
+    <!-- end Mixpanel -->
     
   </head>
 
@@ -101,7 +98,7 @@
 
     <header>
   <h2 class="title">
-    <a href="/new-feature-comment-via-email">Pragmatic.ly 新功能通过邮件来管理项目</a>
+    <a href="/blog/new-feature-comment-via-email">Pragmatic.ly 新功能通过邮件来管理项目</a>
   </h2>
 </header>
 
@@ -109,7 +106,7 @@
   <ul class="meta">
     <li class="author-photo">
       <a href="http://poiyzy.github.io">
-        <img alt="" width="120" height="120" src="/images/zhuoyu-yang.png?1379005285" />
+        <img alt="" width="120" height="120" src="/blog/images/zhuoyu-yang.png?1379005285" />
       </a>
     </li>
     <li class="author">
@@ -120,13 +117,13 @@
     </li>
     <li class="tags">
       
-        <a href="/tags/announcement">Announcement</a>
+        <a href="/blog/tags/announcement">Announcement</a>
       
-        <a href="/tags/new-feature">New feature</a>
+        <a href="/blog/tags/new-feature">New feature</a>
       
     </li>
     <li class="back-link">
-      <a href="/">&lsaquo; 返回博客主页</a>
+      <a href="/blog">&lsaquo; 返回博客主页</a>
     </li>
   </ul>
 </aside>
@@ -154,17 +151,17 @@
 
 <p>当收到一个 email 提醒时，直接回复</p>
 
-<p><img alt="email_reply" width="821" height="819" src="/images/new-feature-comment-via-email/Email_Reply.png?1384231969" /></p>
+<p><img alt="email_reply" width="821" height="819" src="/blog/images/new-feature-comment-via-email/Email_Reply.png?1384231969" /></p>
 
 <p>然后它会被自动添加到相关项目留言中</p>
 
-<p><img alt="ply_reply" width="437" height="598" src="/images/new-feature-comment-via-email/PLY_screenshot.jpg?1384231969" /></p>
+<p><img alt="ply_reply" width="437" height="598" src="/blog/images/new-feature-comment-via-email/PLY_screenshot.jpg?1384231969" /></p>
 
 <h2>发送 Email 创建 任务列表 和 单一任务</h2>
 
 <p>首先在浏览器中打开你的 Project</p>
 
-<p><img alt="project_uid" width="1010" height="509" src="/images/new-feature-comment-via-email/Find_project_uid.jpg?1384231969" /></p>
+<p><img alt="project_uid" width="1010" height="509" src="/blog/images/new-feature-comment-via-email/Find_project_uid.jpg?1384231969" /></p>
 
 <p>找到 project 后面的数字，这里是 “421d6f9a13e6”，然后在 email 中添加一个 &ldquo;<a href="mailto:project+421d6f9a13e6@info.pragmatic.ly">project+421d6f9a13e6@info.pragmatic.ly</a>&rdquo; 的联系人。</p>
 
@@ -182,11 +179,11 @@
 
 <p>正文中的内容将作为此列表的描述内容。</p>
 
-<p><img alt="email_create_list" width="823" height="449" src="/images/new-feature-comment-via-email/email_create_iteration.jpg?1384231969" /></p>
+<p><img alt="email_create_list" width="823" height="449" src="/blog/images/new-feature-comment-via-email/email_create_iteration.jpg?1384231969" /></p>
 
 <p>发送成功后 Pragmatic.ly 将会自动为您创建任务列表</p>
 
-<p><img alt="ply_list" width="1069" height="386" src="/images/new-feature-comment-via-email/Ply_create_iteration.jpg?1384231969" /></p>
+<p><img alt="ply_list" width="1069" height="386" src="/blog/images/new-feature-comment-via-email/Ply_create_iteration.jpg?1384231969" /></p>
 
 <ul>
 <li>在项目中创建 单一任务</li>
@@ -202,11 +199,11 @@
 
 <p>正文中的内容将作为任务描述。</p>
 
-<p><img alt="email_task" width="821" height="286" src="/images/new-feature-comment-via-email/email_create_ticket.jpg?1384231969" /></p>
+<p><img alt="email_task" width="821" height="286" src="/blog/images/new-feature-comment-via-email/email_create_ticket.jpg?1384231969" /></p>
 
 <p>发送成功后 Pragmatic.ly 将会自动创建这个单一任务</p>
 
-<p><img alt="ply_task" width="821" height="286" src="/images/new-feature-comment-via-email/email_create_ticket.jpg?1384231969" /></p>
+<p><img alt="ply_task" width="821" height="286" src="/blog/images/new-feature-comment-via-email/email_create_ticket.jpg?1384231969" /></p>
 
 <p><em>方便么？还需要“项目助理”？</em></p>
 

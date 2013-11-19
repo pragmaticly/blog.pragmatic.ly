@@ -17,26 +17,26 @@
     </author>
     <item>
       <title>新功能：直接邀请组织成员加入项目</title>
-      <link>http://pragmatic.ly/blog/invite-user-from-organization</link>
+      <link>http://pragmatic.ly/blog/blog/invite-user-from-organization</link>
       <description type="html">&lt;p&gt;先向我们用户们表示歉意，这个功能来晚了。随着用户使用 Pragmatic.ly 的时间越来越长，项目开始增多，重复输入团队成员邮件地址来邀请用户成了一个痛点，所以我们觉得是时候开始做直接邀请组织里的成员加入项目，更方便协作。这里先解释两个概念。&lt;/p&gt;
 
 &lt;h3&gt;项目团队&lt;/h3&gt;
 
 &lt;p&gt;指当前项目里的团队人员，见边栏的团队成员列表。&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="Project Team" width="249" height="103" src="/images/invite-user-from-organization/project-team.png?1384835036" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Project Team" width="249" height="103" src="/blog/images/invite-user-from-organization/project-team.png?1384835036" /&gt;&lt;/p&gt;
 
 &lt;h3&gt;组织团队&lt;/h3&gt;
 
 &lt;p&gt;指你的组织里的团队人员，是你创建的所有项目里的项目团队人员之和，算自然人。&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="Organization Team" width="566" height="294" src="/images/invite-user-from-organization/organization-team.png?1384835036" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Organization Team" width="566" height="294" src="/blog/images/invite-user-from-organization/organization-team.png?1384835036" /&gt;&lt;/p&gt;
 
 &lt;h3&gt;具体实现&lt;/h3&gt;
 
 &lt;p&gt;下图是我们的具体实现。&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="New Invite Modal" width="455" height="340" src="/images/invite-user-from-organization/new-invite.png?1384835036" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="New Invite Modal" width="455" height="340" src="/blog/images/invite-user-from-organization/new-invite.png?1384835036" /&gt;&lt;/p&gt;
 
 &lt;p&gt;在邀请现有成员区域点击邀请以后，会直接给这位成员发送邀请加入项目邮件，很简单。另外，我们目前正在做新的项目页面设计，到时候会有更加优秀的视觉设计和交互设计，包括这里，敬请期待！&lt;/p&gt;
 
@@ -58,7 +58,7 @@
     </item>
     <item>
       <title>新功能: 通过复制粘贴就能上传图片</title>
-      <link>http://pragmatic.ly/blog/announcing-pic-pasting</link>
+      <link>http://pragmatic.ly/blog/blog/announcing-pic-pasting</link>
       <description type="html">&lt;h2&gt;上传其它网页上的图&lt;/h2&gt;
 
 &lt;p&gt;我们深深的相信很多时候一图胜千言, 所以我们一直在简化我们的上传图片的方式.&lt;/p&gt;
@@ -89,7 +89,7 @@
     </item>
     <item>
       <title>新功能: 控制面板</title>
-      <link>http://pragmatic.ly/blog/introduce-the-new-dashboard</link>
+      <link>http://pragmatic.ly/blog/blog/introduce-the-new-dashboard</link>
       <description type="html">&lt;h2&gt;为什么现在才有控制面板?&lt;/h2&gt;
 
 &lt;p&gt;我们一开始并没有去做这块, 除了为了保持我们产品精益化渐进外. 我们觉得控制面板不是初期用户所需的必要功能. 新用户来试用我们的产品, 最主要是要体验任务管理/团队协作的核心功能, 不放控制面板的好处是, 他创建帐户后, 可以直接了当地进入项目开始体验流程.&lt;/p&gt;
@@ -100,7 +100,7 @@
 
 &lt;h2&gt;卡片式布局方式&lt;/h2&gt;
 
-&lt;p&gt;&lt;img alt="Dashboard Snapshot" width="720" height="396" src="/images/introduce-the-new-dashboard/dashboard-snapshot.png?1384231969" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Dashboard Snapshot" width="720" height="396" src="/blog/images/introduce-the-new-dashboard/dashboard-snapshot.png?1384231969" /&gt;&lt;/p&gt;
 
 &lt;p&gt;如截图所见, 一个项目按一个卡片的形式展现, 上下两个区块用以区分「我的项目」和「参与的项目」. 「参与的项目」是你被邀请到他人的项目, 你不具有对项目的管理权限. 「我的项目」是你自己帐户下创建的项目, 你可以编辑/归档/删除项目. &lt;/p&gt;
 
@@ -108,7 +108,7 @@
 
 &lt;h2&gt;卡片的数据呈现及功能&lt;/h2&gt;
 
-&lt;p&gt;&lt;img alt="Card Annotation" width="550" height="506" src="/images/introduce-the-new-dashboard/project-card-annotation.png?1384231969" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Card Annotation" width="550" height="506" src="/blog/images/introduce-the-new-dashboard/project-card-annotation.png?1384231969" /&gt;&lt;/p&gt;
 
 &lt;p&gt;截图是控制面板里的项目卡片指示图, 你点击右上角的帮助按钮(?) 就可以看到.
 卡片上展示的信息和数据分别有:&lt;/p&gt;
@@ -130,7 +130,7 @@
 
 &lt;p&gt;目前我们提供对项目的编辑/归档/删除这几项基本操作, 当然对项目的管理权限只有项目管理员才具有. 归档之后是可以取消归档还原成活跃项目, 但是删除项目会清空相关数据, 所以请谨慎使用删除操作.&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="Edit Menu" width="440" height="294" src="/images/introduce-the-new-dashboard/project-edit-menu.png?1384231969" /&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;p&gt;&lt;img alt="Edit Menu" width="440" height="294" src="/blog/images/introduce-the-new-dashboard/project-edit-menu.png?1384231969" /&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;hr&gt;
@@ -143,7 +143,7 @@
     </item>
     <item>
       <title>Pragmatic.ly 新功能通过邮件来管理项目</title>
-      <link>http://pragmatic.ly/blog/new-feature-comment-via-email</link>
+      <link>http://pragmatic.ly/blog/blog/new-feature-comment-via-email</link>
       <description type="html">&lt;p&gt;当你听到这个功能的时候，相信很多人都会有这样的反映。&amp;quot;What?&amp;ldquo;, &amp;quot;这不是一种很土的方式么？&amp;rdquo;, &amp;ldquo;为什么又回归原始的项目管理工具？&amp;rdquo;&amp;hellip;&lt;/p&gt;
 
 &lt;h2&gt;使用 Email 管理项目是一个“土”方法&lt;/h2&gt;
@@ -166,17 +166,17 @@
 
 &lt;p&gt;当收到一个 email 提醒时，直接回复&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="email_reply" width="821" height="819" src="/images/new-feature-comment-via-email/Email_Reply.png?1384231969" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="email_reply" width="821" height="819" src="/blog/images/new-feature-comment-via-email/Email_Reply.png?1384231969" /&gt;&lt;/p&gt;
 
 &lt;p&gt;然后它会被自动添加到相关项目留言中&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="ply_reply" width="437" height="598" src="/images/new-feature-comment-via-email/PLY_screenshot.jpg?1384231969" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="ply_reply" width="437" height="598" src="/blog/images/new-feature-comment-via-email/PLY_screenshot.jpg?1384231969" /&gt;&lt;/p&gt;
 
 &lt;h2&gt;发送 Email 创建 任务列表 和 单一任务&lt;/h2&gt;
 
 &lt;p&gt;首先在浏览器中打开你的 Project&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="project_uid" width="1010" height="509" src="/images/new-feature-comment-via-email/Find_project_uid.jpg?1384231969" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="project_uid" width="1010" height="509" src="/blog/images/new-feature-comment-via-email/Find_project_uid.jpg?1384231969" /&gt;&lt;/p&gt;
 
 &lt;p&gt;找到 project 后面的数字，这里是 “421d6f9a13e6”，然后在 email 中添加一个 &amp;ldquo;&lt;a href="mailto:project+421d6f9a13e6@info.pragmatic.ly"&gt;project+421d6f9a13e6@info.pragmatic.ly&lt;/a&gt;&amp;rdquo; 的联系人。&lt;/p&gt;
 
@@ -194,11 +194,11 @@
 
 &lt;p&gt;正文中的内容将作为此列表的描述内容。&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="email_create_list" width="823" height="449" src="/images/new-feature-comment-via-email/email_create_iteration.jpg?1384231969" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="email_create_list" width="823" height="449" src="/blog/images/new-feature-comment-via-email/email_create_iteration.jpg?1384231969" /&gt;&lt;/p&gt;
 
 &lt;p&gt;发送成功后 Pragmatic.ly 将会自动为您创建任务列表&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="ply_list" width="1069" height="386" src="/images/new-feature-comment-via-email/Ply_create_iteration.jpg?1384231969" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="ply_list" width="1069" height="386" src="/blog/images/new-feature-comment-via-email/Ply_create_iteration.jpg?1384231969" /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;在项目中创建 单一任务&lt;/li&gt;
@@ -214,11 +214,11 @@
 
 &lt;p&gt;正文中的内容将作为任务描述。&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="email_task" width="821" height="286" src="/images/new-feature-comment-via-email/email_create_ticket.jpg?1384231969" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="email_task" width="821" height="286" src="/blog/images/new-feature-comment-via-email/email_create_ticket.jpg?1384231969" /&gt;&lt;/p&gt;
 
 &lt;p&gt;发送成功后 Pragmatic.ly 将会自动创建这个单一任务&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="ply_task" width="821" height="286" src="/images/new-feature-comment-via-email/email_create_ticket.jpg?1384231969" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="ply_task" width="821" height="286" src="/blog/images/new-feature-comment-via-email/email_create_ticket.jpg?1384231969" /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;方便么？还需要“项目助理”？&lt;/em&gt;&lt;/p&gt;
 
@@ -230,8 +230,8 @@
     </item>
     <item>
       <title>写在 Pragmatic.ly 即将两周年</title>
-      <link>http://pragmatic.ly/blog/we-are-back</link>
-      <description type="html">&lt;p&gt;&lt;img alt="弯路和未来" width="586" height="500" src="/images/we-are-back/detour-and-sunshine.jpg?1384231969" /&gt;&lt;/p&gt;
+      <link>http://pragmatic.ly/blog/blog/we-are-back</link>
+      <description type="html">&lt;p&gt;&lt;img alt="弯路和未来" width="586" height="500" src="/blog/images/we-are-back/detour-and-sunshine.jpg?1384231969" /&gt;&lt;/p&gt;
 
 &lt;p&gt;准确说，Pragmatic.ly 从有这个想法到现在已经有 2 年了。11 年 10 月份的一个晚上跟 Daniel 和 Terry 在对我们所有用过的项目管理工具吐完槽以后，然后决定自己造一个，12 年春节前后真正当个事做，4 月底 Ben 加入，7 月份发布 Beta，先在海外做了差不多 8 个月，今年 4 月份开始调整方向，转向国内，6 月底重新上线到现在，整个过程各种状况各种弯路，但是每天都能感觉到变化，每天都是新的学习，乐在其中。&lt;/p&gt;
 
@@ -277,14 +277,14 @@
     </item>
     <item>
       <title>Beyonds Gravatar and set your profile picture</title>
-      <link>http://pragmatic.ly/blog/announcing-uploading-avatar</link>
+      <link>http://pragmatic.ly/blog/blog/announcing-uploading-avatar</link>
       <description type="html">&lt;p&gt;Today, we have released a minor update to our users which is you can upload your image and set as your profile picture in
 &lt;a title="Lean Collaborative Project Management Tool and Online Collaboration" href="http://pragmatic.ly"&gt;Pragmatic.ly&lt;/a&gt;
 instead of using &lt;a href="http://en.gravatar.com/"&gt;Gravatar&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;The UX is very simple.&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="" width="550" height="420" src="/images/announcing-uploading-avatar/update_avatar.jpg?1379005285" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" width="550" height="420" src="/blog/images/announcing-uploading-avatar/update_avatar.jpg?1379005285" /&gt;&lt;/p&gt;
 
 &lt;h3&gt;Why is such a simple feature not included from the first day?&lt;/h3&gt;
 
@@ -320,7 +320,7 @@ It&amp;#39;s the ideal and elegant project management tool for tech startups.&lt
     </item>
     <item>
       <title>Introducing VCS integration with Pragmatic.ly</title>
-      <link>http://pragmatic.ly/blog/integrate-version-control-system-with-pragmat</link>
+      <link>http://pragmatic.ly/blog/blog/integrate-version-control-system-with-pragmat</link>
       <description type="html">&lt;p&gt;Today, we&amp;#39;re glad to introduce our new &lt;a href="http://en.wikipedia.org/wiki/Revision_control"&gt;VCS&lt;/a&gt;(Version Control System) integration with Pragmatic.ly to the public. We have released this feature to some of our users in last two months and glad to hear how they love it. I&amp;#39;m sure you&amp;#39;ll love the feature too!&lt;/p&gt;
 
 &lt;p&gt;&lt;a href="https://pragmatic.ly"&gt;Pragmatic.ly&lt;/a&gt; is a lean collaborative project management tool featuring real time collaboration. We design the tool to be developer friendly and hope to help startup teams deliver better products, easier and faster. Developers like us work with VCS such as Git or SVN every day. The new VCS integration can deeply integrate with your current development process and improve your team productivity.&lt;/p&gt;
@@ -329,7 +329,7 @@ It&amp;#39;s the ideal and elegant project management tool for tech startups.&lt
 
 &lt;p&gt;Feel free to try this feature by signing up at &lt;a href="https://pragmatic.ly"&gt;pragmatic.ly&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="VCS Integration" width="507" height="512" src="/images/integrate-version-control-system-with-pragmat/vcs-integration.png?1364633909" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="VCS Integration" width="507" height="512" src="/blog/images/integrate-version-control-system-with-pragmat/vcs-integration.png?1364633909" /&gt;&lt;/p&gt;
 
 &lt;p&gt;So far, we have already supported three VCS services: &lt;a href="https://github.com"&gt;GitHub&lt;/a&gt;, &lt;a href="https://bitbucket.org"&gt;BitBucket&lt;/a&gt; and &lt;a href="http://gitlab.org"&gt;Gitlab&lt;/a&gt;. And more are coming. Let us know if the VCS you&amp;#39;re using now is not in the list and you want to see it soon!&lt;/p&gt;
 
@@ -344,9 +344,9 @@ It&amp;#39;s the ideal and elegant project management tool for tech startups.&lt
 &lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Get the commit hook url on your Pragmatic.ly project setting panel and copy this url to your clipboard. We will use it as the callback url latter. Only the administrators of the project can view the settings.&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="Project Setting" width="232" height="166" src="/images/integrate-version-control-system-with-pragmat/project-list.png?1364633835" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Project Setting" width="232" height="166" src="/blog/images/integrate-version-control-system-with-pragmat/project-list.png?1364633835" /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="Edit Project" width="481" height="396" src="/images/integrate-version-control-system-with-pragmat/edit-project.png?1364633735" /&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;p&gt;&lt;img alt="Edit Project" width="481" height="396" src="/blog/images/integrate-version-control-system-with-pragmat/edit-project.png?1364633735" /&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;As said, now Pragmatic.ly supports three services: Github, Bitbucket, Gitlab. Below are the integration steps for each service.&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
@@ -355,11 +355,11 @@ It&amp;#39;s the ideal and elegant project management tool for tech startups.&lt
 &lt;ol&gt;
 &lt;li&gt;&lt;p&gt;Go to your project page on Github, click the &amp;#39;Setting&amp;#39; tag of the project to go to project setting page.(If you don&amp;#39;t see this tab, it means you don&amp;#39;t have this permission. Please contact the owner of this project on Github.)&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="GitHub Project Setting" width="209" height="147" src="/images/integrate-version-control-system-with-pragmat/github-project-setting.png?1364633765" /&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;p&gt;&lt;img alt="GitHub Project Setting" width="209" height="147" src="/blog/images/integrate-version-control-system-with-pragmat/github-project-setting.png?1364633765" /&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Then click the &amp;#39;Service Hooks&amp;#39;, and choose the &amp;#39;WebHook URLs&amp;#39;.&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Paste the url to the field and click &amp;#39;Update settings&amp;#39;.&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="Github WebHook" width="939" height="222" src="/images/integrate-version-control-system-with-pragmat/github-webhook.png?1364633801" /&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;p&gt;&lt;img alt="Github WebHook" width="939" height="222" src="/blog/images/integrate-version-control-system-with-pragmat/github-webhook.png?1364633801" /&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;h4&gt;Bitbucket&lt;/h4&gt;
@@ -369,7 +369,7 @@ It&amp;#39;s the ideal and elegant project management tool for tech startups.&lt
 &lt;li&gt;Choose the the &amp;#39;POST&amp;#39; from the select box and paste the URL on the url field&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Click &amp;#39;Save&amp;#39;&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="BitBucket WebHook" width="932" height="335" src="/images/integrate-version-control-system-with-pragmat/bitbucket-webhook.png?1364633702" /&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;p&gt;&lt;img alt="BitBucket WebHook" width="932" height="335" src="/blog/images/integrate-version-control-system-with-pragmat/bitbucket-webhook.png?1364633702" /&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;h4&gt;GitLab&lt;/h4&gt;
@@ -383,7 +383,7 @@ It&amp;#39;s the ideal and elegant project management tool for tech startups.&lt
 
 &lt;p&gt;For example we have a ticket whose number is 529.&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="Ticket Example" width="472" height="42" src="/images/integrate-version-control-system-with-pragmat/ticket-example.png?1364633870" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Ticket Example" width="472" height="42" src="/blog/images/integrate-version-control-system-with-pragmat/ticket-example.png?1364633870" /&gt;&lt;/p&gt;
 
 &lt;p&gt;There are two ways to associate your commits with a specify ticket.&lt;/p&gt;
 
@@ -418,7 +418,7 @@ It&amp;#39;s the ideal and elegant project management tool for tech startups.&lt
     </item>
     <item>
       <title>Improving the usability on tickets readability and team collaboration</title>
-      <link>http://pragmatic.ly/blog/improving-the-usability-on-tickets-readabilit</link>
+      <link>http://pragmatic.ly/blog/blog/improving-the-usability-on-tickets-readabilit</link>
       <description type="html">&lt;p&gt;Steve Krug&amp;#39;s instant classic book &amp;ldquo;&lt;a href="http://www.amazon.com/Dont-Make-Me-Think-Usability/dp/0321344758"&gt;Don&amp;#39;t Make Me Think&lt;/a&gt;&amp;rdquo; is one of our favorite design books. Simplicity and usability is our lifetime of pursuit on products design. With regard to single page application like &lt;a href="https://pragmatic.ly"&gt;Pragmatic.ly&lt;/a&gt;, balancing the complexity of features with the simplicity of design is indeed difficult, but we&amp;#39;re keep iterating. Here&amp;#39;re some improvements to the ticket details.&lt;/p&gt;
 
 &lt;h3&gt;Markdown Supported&lt;/h3&gt;
@@ -429,7 +429,7 @@ It&amp;#39;s the ideal and elegant project management tool for tech startups.&lt
 
 &lt;p&gt;Get to know more about the markdown syntax, John Gruber&amp;#39;s &lt;a href="http://daringfireball.net/projects/markdown/"&gt;tutorial&lt;/a&gt; is an excellent guide. And we support &lt;a href="http://github.github.com/github-flavored-markdown/"&gt;github&amp;#39;s flavored markdown&lt;/a&gt; syntax too.&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="Markdown Example" width="500" height="359" src="/images/improving-the-usability-on-tickets-readabilit/markdown-example.jpg?1364634481" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Markdown Example" width="500" height="359" src="/blog/images/improving-the-usability-on-tickets-readabilit/markdown-example.jpg?1364634481" /&gt;&lt;/p&gt;
 
 &lt;h3&gt;Ticket fields rearranged&lt;/h3&gt;
 
@@ -442,7 +442,7 @@ It&amp;#39;s the ideal and elegant project management tool for tech startups.&lt
 &lt;li&gt;Make file drop zone a bit bigger. Much easier and comfortable to drag and drop files for uploading.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;&lt;img alt="Ticket Attributes" width="500" height="278" src="/images/improving-the-usability-on-tickets-readabilit/ticket-attributes.jpg?1364634514" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Ticket Attributes" width="500" height="278" src="/blog/images/improving-the-usability-on-tickets-readabilit/ticket-attributes.jpg?1364634514" /&gt;&lt;/p&gt;
 
 &lt;h3&gt;Full-column scroll on ticket details&lt;/h3&gt;
 
@@ -466,7 +466,7 @@ It&amp;#39;s the ideal and elegant project management tool for tech startups.&lt
     </item>
     <item>
       <title>The improvement of 'Archive Iteration'</title>
-      <link>http://pragmatic.ly/blog/the-improvement-of-archive-iteration</link>
+      <link>http://pragmatic.ly/blog/blog/the-improvement-of-archive-iteration</link>
       <description type="html">&lt;h3&gt;Background of &amp;#39;Archive Iteration&amp;#39; function&lt;/h3&gt;
 
 &lt;p&gt;We have released the &amp;#39;Archive Iteration&amp;#39; feature for some time.  This is a very useful feature if you use iterations the way like us. We create individual iteration for each week, and put the things we will work on in the corresponding iteration.&lt;/p&gt;
@@ -477,21 +477,21 @@ It&amp;#39;s the ideal and elegant project management tool for tech startups.&lt
 
 &lt;p&gt;First you just need click the iteration name which you want to archive on the left sidebar.&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="Click Iteration" width="241" height="223" src="/images/the-improvement-of-archive-iteration/click-iteration.png?1364634235" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Click Iteration" width="241" height="223" src="/blog/images/the-improvement-of-archive-iteration/click-iteration.png?1364634235" /&gt;&lt;/p&gt;
 
 &lt;p&gt;Then click the toothed icon at the right sidebar and you will see the &amp;#39;Archive&amp;#39; button. After clicking it, this iteration with  tickets in it will all be archived. A archived iteration with its tickets will all be hidden from your work space by default for reducing the interference to your current work.&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="Archive Iteration" width="193" height="165" src="/images/the-improvement-of-archive-iteration/archive-iteration.png?1364634170" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Archive Iteration" width="193" height="165" src="/blog/images/the-improvement-of-archive-iteration/archive-iteration.png?1364634170" /&gt;&lt;/p&gt;
 
 &lt;h3&gt;How to unarchive&lt;/h3&gt;
 
 &lt;p&gt;By default the archived iterations will be hidden. To bring them  back to your work space you just need click the toothed icon at the bottom of the left sidebar. Then click the &amp;#39;Show Archived Iterations&amp;#39; item.&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="Manage Iterations" width="371" height="119" src="/images/the-improvement-of-archive-iteration/manage-iterations.png?1364634267" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Manage Iterations" width="371" height="119" src="/blog/images/the-improvement-of-archive-iteration/manage-iterations.png?1364634267" /&gt;&lt;/p&gt;
 
 &lt;p&gt;Then you will see the archived iterations back to your Iteration List.&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="Archived Iterations" width="240" height="91" src="/images/the-improvement-of-archive-iteration/archived-iterations.png?1364634201" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Archived Iterations" width="240" height="91" src="/blog/images/the-improvement-of-archive-iteration/archived-iterations.png?1364634201" /&gt;&lt;/p&gt;
 
 &lt;p&gt;You can do what you want like a normal iterations to them.&lt;/p&gt;
 
@@ -499,7 +499,7 @@ It&amp;#39;s the ideal and elegant project management tool for tech startups.&lt
 
 &lt;p&gt;If you want totally unarchive a whole iteration with its tickets. Just simply click the &amp;#39;Unarchive&amp;#39; like before at the right sidebar after selecting a iteration.&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="Unarchive Iteration" width="225" height="161" src="/images/the-improvement-of-archive-iteration/unarchive-iteration.png?1364634298" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Unarchive Iteration" width="225" height="161" src="/blog/images/the-improvement-of-archive-iteration/unarchive-iteration.png?1364634298" /&gt;&lt;/p&gt;
 
 &lt;p&gt;That&amp;#39;s all. Hope this function help you organize your work better.&lt;/p&gt;
 
@@ -517,7 +517,7 @@ It&amp;#39;s the ideal and elegant project management tool for tech startups.&lt
     </item>
     <item>
       <title>Pragmatic.ly team on RubyConf China 2012</title>
-      <link>http://pragmatic.ly/blog/the-presentations-we-made-on-rubyconfchina-20</link>
+      <link>http://pragmatic.ly/blog/blog/the-presentations-we-made-on-rubyconfchina-20</link>
       <description type="html">&lt;p&gt;Last month the &lt;a href="https://pragmatic.ly"&gt;Pragmatic.ly&lt;/a&gt; team attent the &lt;a href="http://rubyconfchina.org"&gt;RubyConfChina 2012&lt;/a&gt; and we really had a great time there with the ruby developers came from China and also across the world.&lt;/p&gt;
 
 &lt;p&gt;The conference is very good. It&amp;#39;s also the big party of rubyist. Everyone enjoyed that much. Thanks to the organizers!&lt;/p&gt;
@@ -546,23 +546,23 @@ It&amp;#39;s the ideal and elegant project management tool for tech startups.&lt
 
 &lt;p&gt;Dingding is presenting&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="Dingding is Presenting" width="500" height="333" src="/images/the-presentations-we-made-on-rubyconfchina-20/dingding-presenting.jpg?1364634818" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Dingding is Presenting" width="500" height="333" src="/blog/images/the-presentations-we-made-on-rubyconfchina-20/dingding-presenting.jpg?1364634818" /&gt;&lt;/p&gt;
 
 &lt;p&gt;Terry is presenting&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="Terry is presenting" width="500" height="333" src="/images/the-presentations-we-made-on-rubyconfchina-20/terry-presenting.jpg?1364634931" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Terry is presenting" width="500" height="333" src="/blog/images/the-presentations-we-made-on-rubyconfchina-20/terry-presenting.jpg?1364634931" /&gt;&lt;/p&gt;
 
 &lt;p&gt;Ben with Matz&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="Ben with Matz" width="500" height="333" src="/images/the-presentations-we-made-on-rubyconfchina-20/ben-matz.jpg?1364634783" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Ben with Matz" width="500" height="333" src="/blog/images/the-presentations-we-made-on-rubyconfchina-20/ben-matz.jpg?1364634783" /&gt;&lt;/p&gt;
 
 &lt;p&gt;Even food there is so RUBY&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="RUBY food" width="500" height="335" src="/images/the-presentations-we-made-on-rubyconfchina-20/ruby-food.jpg?1364634895" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="RUBY food" width="500" height="335" src="/blog/images/the-presentations-we-made-on-rubyconfchina-20/ruby-food.jpg?1364634895" /&gt;&lt;/p&gt;
 
 &lt;p&gt;Talking with Matz about Ruby when having dinner&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="Dinner Talk" width="500" height="333" src="/images/the-presentations-we-made-on-rubyconfchina-20/dinner-talk.jpg?1364634857" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Dinner Talk" width="500" height="333" src="/blog/images/the-presentations-we-made-on-rubyconfchina-20/dinner-talk.jpg?1364634857" /&gt;&lt;/p&gt;
 
 &lt;h3&gt;One more thing&lt;/h3&gt;
 
@@ -580,7 +580,7 @@ It&amp;#39;s the ideal and elegant project management tool for tech startups.&lt
     </item>
     <item>
       <title>Improving Ticket Interactive</title>
-      <link>http://pragmatic.ly/blog/improving-ticket-interactive</link>
+      <link>http://pragmatic.ly/blog/blog/improving-ticket-interactive</link>
       <description type="html">&lt;h3&gt;Improve the stability of ticket item in the list&lt;/h3&gt;
 
 &lt;p&gt;Users informed us that the ticket list in the center column was unstable, and we were rushing into this problem immediately.&lt;/p&gt;
@@ -596,7 +596,7 @@ It&amp;#39;s the ideal and elegant project management tool for tech startups.&lt
 &lt;li&gt;The little right pointer had an onhover state.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;&lt;img alt="Old Ticket Interactive" width="500" height="185" src="/images/improving-ticket-interactive/old-ticket-interactive.jpg?1364634606" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Old Ticket Interactive" width="500" height="185" src="/blog/images/improving-ticket-interactive/old-ticket-interactive.jpg?1364634606" /&gt;&lt;/p&gt;
 
 &lt;p&gt;This is quite a burden to users, we&amp;#39;d relieve it as soon as possible.&lt;/p&gt;
 
@@ -611,13 +611,13 @@ It&amp;#39;s the ideal and elegant project management tool for tech startups.&lt
 
 &lt;p&gt;We have also changed the status naming and their section order. Do they make sense to you? Let&amp;#39;s know about your thoughts.&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="New Ticket Interactive" width="500" height="346" src="/images/improving-ticket-interactive/new-ticket-interactive.jpg?1364634547" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="New Ticket Interactive" width="500" height="346" src="/blog/images/improving-ticket-interactive/new-ticket-interactive.jpg?1364634547" /&gt;&lt;/p&gt;
 
 &lt;h3&gt;Ticket status switching become more handy&lt;/h3&gt;
 
 &lt;p&gt;Ticket status indicates how&amp;#39;s the ticket going, it drives our daily development work. Everyday we generate todo ticket , assign it to someone, start working on it, complet it, and someone review on it. Without doubt, ticket status switching is the most frequently used in our application. We need to polish it again and again to help you more productive, now it looks like this.&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="New Ticket Switch" width="500" height="277" src="/images/improving-ticket-interactive/new-ticket-switch.jpg?1364634581" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="New Ticket Switch" width="500" height="277" src="/blog/images/improving-ticket-interactive/new-ticket-switch.jpg?1364634581" /&gt;&lt;/p&gt;
 
 &lt;p&gt;Before the improvement, the status can only switch to next status by one click on the checkbox. Now by clicking outside of the checkbox, you will get a popup menu(To Do/Start/Complete/Accept), where you can change ticket to any status. By clicking inside of the checkbox, you are switching as the old way.&lt;/p&gt;
 
@@ -637,24 +637,24 @@ It&amp;#39;s the ideal and elegant project management tool for tech startups.&lt
     </item>
     <item>
       <title>Showing up Due Date</title>
-      <link>http://pragmatic.ly/blog/due-date-is-showing-up-in-the-ticket-list</link>
+      <link>http://pragmatic.ly/blog/blog/due-date-is-showing-up-in-the-ticket-list</link>
       <description type="html">&lt;p&gt;Now you can see &lt;em&gt;due-date&lt;/em&gt; on ticket list, and capture overdue tickets easily at a glance. Here is how and why we put it this way.&lt;/p&gt;
 
 &lt;p&gt;Firstly, &lt;em&gt;due-date&lt;/em&gt; can be input in the right form, easy click and go.&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="Due Date Selector" width="356" height="196" src="/images/due-date-is-showing-up-in-the-ticket-list/date-selector.jpg?1364632825" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Due Date Selector" width="356" height="196" src="/blog/images/due-date-is-showing-up-in-the-ticket-list/date-selector.jpg?1364632825" /&gt;&lt;/p&gt;
 
 &lt;p&gt;A ticket has &lt;em&gt;due-date&lt;/em&gt; set will show up a date tag, the visual design is different from normal tags. Basically you&amp;#39;re notified that one ticket has due on priority.&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="Due Date Tag" width="350" height="47" src="/images/due-date-is-showing-up-in-the-ticket-list/due-date-tag.png?1364633449" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Due Date Tag" width="350" height="47" src="/blog/images/due-date-is-showing-up-in-the-ticket-list/due-date-tag.png?1364633449" /&gt;&lt;/p&gt;
 
 &lt;p&gt;Once a ticket is due on or overdue, this ticket item in tickets list will be highlighted and the date tag turns red. You can&amp;#39;t ignore it since the day is coming :) Hope this can push you a bit for getting things done.&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="Overdue Tag" width="350" height="38" src="/images/due-date-is-showing-up-in-the-ticket-list/overdue-tag.png?1364633479" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Overdue Tag" width="350" height="38" src="/blog/images/due-date-is-showing-up-in-the-ticket-list/overdue-tag.png?1364633479" /&gt;&lt;/p&gt;
 
 &lt;p&gt;When we were designing the interface of due-date, it actually came out a design like this,&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="Due date draft" width="183" height="80" src="/images/due-date-is-showing-up-in-the-ticket-list/due-date-draft.png?1364633388" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Due date draft" width="183" height="80" src="/blog/images/due-date-is-showing-up-in-the-ticket-list/due-date-draft.png?1364633388" /&gt;&lt;/p&gt;
 
 &lt;p&gt;Using the calendar icon (same from the editing form) to indicate that a ticket has a &lt;em&gt;due-date&lt;/em&gt;. When hover on the icon, a tooltip will show up and tell you the &lt;em&gt;due-date&lt;/em&gt;. This looks good, the UI is clean and space saving, but we gave it up, why?&lt;/p&gt;
 
@@ -662,7 +662,7 @@ It&amp;#39;s the ideal and elegant project management tool for tech startups.&lt
 
 &lt;p&gt;On the other hand, we&amp;#39;d like to make the &lt;em&gt;due-date&lt;/em&gt; the same way as tags do, both as filter to find out the qualified tickets when you clicked on them. So may be a tag-like style is good for the due-date.&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="Due Date Overview" width="501" height="241" src="/images/due-date-is-showing-up-in-the-ticket-list/due-date-overview.png?1364633419" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Due Date Overview" width="501" height="241" src="/blog/images/due-date-is-showing-up-in-the-ticket-list/due-date-overview.png?1364633419" /&gt;&lt;/p&gt;
 
 &lt;p&gt;Let us know how this works for you.&lt;/p&gt;
 
@@ -676,7 +676,7 @@ It&amp;#39;s the ideal and elegant project management tool for tech startups.&lt
     </item>
     <item>
       <title>Announcing mails_viewer - easiest way to test mails in Rails app</title>
-      <link>http://pragmatic.ly/blog/announcing-mailsviewer-a-rails-engine-to-view</link>
+      <link>http://pragmatic.ly/blog/blog/announcing-mailsviewer-a-rails-engine-to-view</link>
       <description type="html">&lt;p&gt;&lt;em&gt;Q:&lt;/em&gt; &amp;ldquo;I implemented the mail template but how can I preview the mail in my machine?&amp;rdquo;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;Q:&lt;/em&gt; &amp;ldquo;I&amp;#39;m running out of emails to test the signup on staging server. Do you have more?&amp;rdquo;&lt;/p&gt;
@@ -693,7 +693,7 @@ It&amp;#39;s the ideal and elegant project management tool for tech startups.&lt
 
 &lt;p&gt;We feel the same pain at &lt;a href="https://pragmatic.ly"&gt;Pragmatic.ly&lt;/a&gt; and that&amp;#39;s why we built &lt;a href="https://github.com/pragmaticly/mails_viewer"&gt;mails_viewer&lt;/a&gt;, a mails preview Engine which provides a table view for all mails under tmp/mails. It&amp;#39;s a fork of tomlion&amp;#39;s &lt;a href="https://github.com/tomlion/mails_viewer"&gt;original code&lt;/a&gt; and I&amp;#39;m glad to be the maintainer. Thanks for tomlion for getting this thing started!&lt;/p&gt;
 
-&lt;p&gt;&lt;img title="Mails Viewer" alt="mails_viewer" width="680" height="30" src="/images/announcing-mailsviewer-a-rails-engine-to-view/mails-viewer.png?1364633119" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img title="Mails Viewer" alt="mails_viewer" width="680" height="30" src="/blog/images/announcing-mailsviewer-a-rails-engine-to-view/mails-viewer.png?1364633119" /&gt;&lt;/p&gt;
 
 &lt;p&gt;Generally speaking, mails_viewer is a Rails engine. So it&amp;#39;s very easy to integrate it into your rails apps. And it depends on the file delivery method of ActionMailer.&lt;/p&gt;
 
@@ -753,24 +753,24 @@ It&amp;#39;s the ideal and elegant project management tool for tech startups.&lt
     </item>
     <item>
       <title>Video matters! But which hosting service to use?</title>
-      <link>http://pragmatic.ly/blog/how-we-choose-the-right-video-service-for-us</link>
+      <link>http://pragmatic.ly/blog/blog/how-we-choose-the-right-video-service-for-us</link>
       <description type="html">&lt;p&gt;Nowadays video is used extensively for introducing the products or services to the public. It&amp;#39;s no doubt that a good video can increase the conversation rate a lot.&lt;/p&gt;
 
 &lt;p&gt;As a startup, it&amp;#39;s not easy to create a great product video like other big companies. So we recorded a toturial screencast when we launched &lt;a href="https://pragmatic.ly"&gt;Pragmatic.ly&lt;/a&gt; instead. Meanwhile we are working on our new attracting product video and we love the process. It&amp;#39;s totally different experience than writing code. We will share more latter when the video is out. But in this post I will talk more about the experience about different video hosting service. We tried &lt;a href="http://vimeo.com/"&gt;Vimeo&lt;/a&gt;, &lt;a href="http://sublimevideo.net/"&gt;SublimeVideo&lt;/a&gt;, &lt;a href="http://wistia.com/"&gt;Wistia&lt;/a&gt; and &lt;a href="http://www.youtube.com/"&gt;YouTube&lt;/a&gt;.  The result is interesting and quite different than our common sense.&lt;/p&gt;
 
-&lt;p&gt;&lt;img title="Vimeo" alt="Vimeo" src="/images/how-we-choose-the-right-video-service-for-us/vimeologo.svg?1364632825" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img title="Vimeo" alt="Vimeo" src="/blog/images/how-we-choose-the-right-video-service-for-us/vimeologo.svg?1364632825" /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href="http://vimeo.com"&gt;Vimeo&lt;/a&gt; is our first choice because we heard many good words from others. It does act great. Both the video quality and play speed are good when watching it from Vimeo&amp;#39;s site. But after we use an embed player on our site to play the video, we have the problem. The basic account of Vimeo doesn&amp;#39;t have the HD embedding but that&amp;#39;s exactly what we want. I think each penny spent on the &lt;a href="http://vimeo.com/plus"&gt;Vimeo Plus&lt;/a&gt; account should be worth it but before we do that, we planned to give more solutions a try. If you have sites with HD embedding videos on Vimeo, please share and I&amp;#39;m eager to see how it works. Our video on Vimeo is &lt;a href="https://vimeo.com/44030280"&gt;here&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;img title="SublimeVideo" alt="SublimeVideo" width="162" height="40" src="/images/how-we-choose-the-right-video-service-for-us/slv.png?1364633603" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img title="SublimeVideo" alt="SublimeVideo" width="162" height="40" src="/blog/images/how-we-choose-the-right-video-service-for-us/slv.png?1364633603" /&gt;&lt;/p&gt;
 
 &lt;p&gt;Strictly speaking &lt;a href="http://sublimevideo.net/"&gt;SublimeVideo&lt;/a&gt; is not a video hosting service. It&amp;#39;s just a video player service. If you use SublimeVideo, you have to host your video files yourself, no matter on your own server or S3. But the good part is that you can totally control your video yourself. Size, quality, anything about the video is under your control. SublimeVideo is really a nice video player. It supports both HTML5 and Flash, almost works on any platform. The control panel is simple, neat, and it also supports simple analytics by time. The integration is also very straightforward. You just need to load a JS file from SublimeVideo and use &amp;lt;video&amp;gt; tag to wrap your video url and SublimeVideo will work like magic.&lt;/p&gt;
 
-&lt;p&gt;&lt;img title="Wistia" alt="Wistia" width="115" height="25" src="/images/how-we-choose-the-right-video-service-for-us/wistia.png?1364633636" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img title="Wistia" alt="Wistia" width="115" height="25" src="/blog/images/how-we-choose-the-right-video-service-for-us/wistia.png?1364633636" /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href="http://wistia.com"&gt;Wistia&lt;/a&gt; is a new video service focus on powerful analytics. It can show you how your audience is watching, second by second. So we gave it a try, but after we uploading our video on it. We found the quality is not good. You could check it out &lt;a href="http://poshboytl.wistia.com/medias/5jsseu9vom"&gt;here&lt;/a&gt; and compare it with the one on our homepage. I browsed their documents quickly but didn&amp;#39;t find the solution. So sorry, we quit.&lt;/p&gt;
 
-&lt;p&gt;&lt;img title="Youtube" alt="youtube" width="95" height="49" src="/images/how-we-choose-the-right-video-service-for-us/youtube.png?1364633667" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img title="Youtube" alt="youtube" width="95" height="49" src="/blog/images/how-we-choose-the-right-video-service-for-us/youtube.png?1364633667" /&gt;&lt;/p&gt;
 
 &lt;p&gt;Before we trying &lt;a href="http://youtube.com"&gt;YouTube&lt;/a&gt;, we used to think YouTube might not be a good place to host high quality video. But after we uploaded our video, we&amp;#39;re shocked. The video quality is perfect, and YouTube help us to translate our video to servial copy from 240p to 720p. I think if our video has higher resolution, we will have a 1080p version too. You could watch the sample &lt;a href="http://www.youtube.com/watch?v=OMMDL7I_eaQ&amp;feature=youtu.be&amp;hd=1"&gt;here&lt;/a&gt;. To make a embed player on your site with Youtube is also very easy. We just use a iframe and set the src to video url with parameters &amp;ldquo;autoplay=1&amp;rdquo; and &amp;ldquo;hd=1&amp;rdquo;. All done. For more player customization you could check out the document &lt;a href="http://code.google.com/apis/youtube/player_parameters.html"&gt;here&lt;/a&gt;. And it&amp;#39;s free of charge!&lt;/p&gt;
 
@@ -784,7 +784,7 @@ It&amp;#39;s the ideal and elegant project management tool for tech startups.&lt
     </item>
     <item>
       <title>Released Features of Pragmatic.ly</title>
-      <link>http://pragmatic.ly/blog/158983791</link>
+      <link>http://pragmatic.ly/blog/blog/158983791</link>
       <description type="html">&lt;p&gt;August 2012 has been a big month for &lt;a href="https://pragmatic.ly"&gt;Pragmatic.ly&lt;/a&gt;. We did a lot of optimization and tried our best to give more benefits to our users. So we really hope our users will love what we did in last month.&lt;/p&gt;
 
 &lt;p&gt;So let me take an opportunity to introduce the cutting-edge main changes that we have made in month of August.&lt;/p&gt;
@@ -793,49 +793,49 @@ It&amp;#39;s the ideal and elegant project management tool for tech startups.&lt
 
 &lt;p&gt;We&amp;#39;re landing a dedicated pricing page now. It&amp;#39;s simple and vibrant. Please don&amp;#39;t hestigate to contacting us if you have anything more that you want to know.&lt;/p&gt;
 
-&lt;p&gt;&lt;img title="Clear Pricing Policy" alt="Clear Pricing Policy" width="240" height="160" src="/images/158983791/pricing.png?1364632825" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img title="Clear Pricing Policy" alt="Clear Pricing Policy" width="240" height="160" src="/blog/images/158983791/pricing.png?1364632825" /&gt;&lt;/p&gt;
 
 &lt;h3&gt;Organization Panel&lt;/h3&gt;
 
 &lt;p&gt;We created a brief panel to list organization information which allows you to create an admin account that can handle the status of the organization easily. You can view Billing Time, All Projects Info and Team Members Information there and further it also allows you to add or remove members from your organization with this unique feature.&lt;/p&gt;
 
-&lt;p&gt;&lt;img title="Organization Panel" alt="Organization Panel" width="454" height="495" src="/images/158983791/organization.png?1364632998" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img title="Organization Panel" alt="Organization Panel" width="454" height="495" src="/blog/images/158983791/organization.png?1364632998" /&gt;&lt;/p&gt;
 
 &lt;h3&gt;Manage Iterations &amp;amp; Manage Team&lt;/h3&gt;
 
 &lt;p&gt;We added two simple panels for admin to see iterations and team information. Admin could also remove members from a project and delete an iteration of a project with this feature.&lt;/p&gt;
 
-&lt;p&gt;&lt;img title="Manage Iterations &amp; Manage Team" alt="Management Iterations &amp; Team" width="174" height="127" src="/images/158983791/management.png?1364632905" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img title="Manage Iterations &amp; Manage Team" alt="Management Iterations &amp; Team" width="174" height="127" src="/blog/images/158983791/management.png?1364632905" /&gt;&lt;/p&gt;
 
 &lt;h3&gt;Archive Iteration&lt;/h3&gt;
 
 &lt;p&gt;The iterations gradually increase as time goes on. So we have created archiving iteration function for the users to archive old iterations to make users focus on the recent working iterations. And also you could toggle to view or hide the archived iterations when you needed.&lt;/p&gt;
 
-&lt;p&gt;&lt;img title="Archive Iteration" alt="Archive Iteration" width="244" height="160" src="/images/158983791/archive.png?1364632875" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img title="Archive Iteration" alt="Archive Iteration" width="244" height="160" src="/blog/images/158983791/archive.png?1364632875" /&gt;&lt;/p&gt;
 
 &lt;h3&gt;Relative timestamp in Notifications&lt;/h3&gt;
 
 &lt;p&gt;Now it&amp;#39;s possible for you to get up to the speed of your project with Notifications and Activity Feed. It&amp;#39;s simpler now! We have modified the notifications design to show the comparative timestamp which can give a quick peek to gear up. We also opened source the library on github.&lt;/p&gt;
 
-&lt;p&gt;&lt;img title="Relative timestamp in Notification" alt="Notifications" width="240" height="155" src="/images/158983791/notification.png?1364632825" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img title="Relative timestamp in Notification" alt="Notifications" width="240" height="155" src="/blog/images/158983791/notification.png?1364632825" /&gt;&lt;/p&gt;
 
 &lt;h3&gt;Clickable Web Notification&lt;/h3&gt;
 
 &lt;p&gt;Web notification is one of the best ways to improve the communication! It allows you to focus on the project by the same time you can receive instant notifications when anything is changed and updated. And now we move one step further, when you click these bubble notifications, it directs you to the iteration/ticket/comment where the notification is changed and updated.&lt;/p&gt;
 
-&lt;p&gt;&lt;img title="Clickable Web Notification" alt="Web Notification" width="240" height="80" src="/images/158983791/webnotification.png?1364632825" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img title="Clickable Web Notification" alt="Web Notification" width="240" height="80" src="/blog/images/158983791/webnotification.png?1364632825" /&gt;&lt;/p&gt;
 
 &lt;h3&gt;Mention @somebody to bring people into the discussion&lt;/h3&gt;
 
 &lt;p&gt;Want to bring somebody into the discussion? Why to think how? When you mention ‘@’followed by the person’s name in the comment by the user; particular person will be notified instantly and will be subscribed for the future updates regarding the same discussion. Still we&amp;#39;re working on betterment of notification controls that can let the users receive the relevant events updates only.&lt;/p&gt;
 
-&lt;p&gt;&lt;img title="Mention" alt="Mention" width="240" height="117" src="/images/158983791/mention.png?1364632825" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img title="Mention" alt="Mention" width="240" height="117" src="/blog/images/158983791/mention.png?1364632825" /&gt;&lt;/p&gt;
 
 &lt;h3&gt;Internal Connections among tickets&lt;/h3&gt;
 
 &lt;p&gt;Tickets are connected! Just by adding &amp;#39;#&amp;#39; with ticket ID into any descriptions or comments you can auto link the ticket. By connecting the tickets, you can easily see the dependencies, duplications and related tickets at a glance. It&amp;#39;s just a start and more is on its way.&lt;/p&gt;
 
-&lt;p&gt;&lt;img title="Internal Connections among tickets" alt="Connection among tickets" width="240" height="88" src="/images/158983791/ticket-link.png?1364632825" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img title="Internal Connections among tickets" alt="Connection among tickets" width="240" height="88" src="/blog/images/158983791/ticket-link.png?1364632825" /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;br/&gt;&lt;/p&gt;
 
@@ -847,7 +847,7 @@ It&amp;#39;s the ideal and elegant project management tool for tech startups.&lt
     </item>
     <item>
       <title>A Practical Guide to Use Spine.JS in Real World App</title>
-      <link>http://pragmatic.ly/blog/a-practical-guide-to-use-spinejs-in-real-worl</link>
+      <link>http://pragmatic.ly/blog/blog/a-practical-guide-to-use-spinejs-in-real-worl</link>
       <description type="html">&lt;p&gt;To give users the best possible fluid experience, we designed &lt;a href="https://pragmatic.ly"&gt;Pragmatic.ly&lt;/a&gt; and complied with the &lt;a href="http://en.wikipedia.org/wiki/Single-page_application"&gt;single page application&lt;/a&gt; standard. We believe that could make users focus on building product rather than spending time on project management itself. A wide range of technology solutions are available to make a single page application. Current trends suggest moving core application from server to client side and keeping server load at minimum for better performance by pure data APIs. &lt;a href="https://pragmatic.ly"&gt;Pragmatic.ly&lt;/a&gt; took on the challange to cater to this need by developing server side in Rails, Spine.js at client side.&lt;/p&gt;
 
 &lt;h3&gt;Why Spine.JS&lt;/h3&gt;
@@ -1139,12 +1139,12 @@ It&amp;#39;s the ideal and elegant project management tool for tech startups.&lt
     </item>
     <item>
       <title>It's not perfect but it's time to integrate web notifications</title>
-      <link>http://pragmatic.ly/blog/its-not-perfect-but-its-time-to-integrate-web</link>
+      <link>http://pragmatic.ly/blog/blog/its-not-perfect-but-its-time-to-integrate-web</link>
       <description type="html">&lt;p&gt;One feature &lt;a href="https://pragmatic.ly"&gt;Pragmatic.ly&lt;/a&gt; has had from the beginning is Web Notifications. When I first saw the feature in Gmail I was convinced it was a feature every web application should have. As a project management tool Pragmatic.ly should enhance collaboration and ease communication. Instant desktop-like notification is one way to achieve the goal.&lt;/p&gt;
 
-&lt;p&gt;&lt;img title="Chrome Web Notification" alt="Chrome Web Notification" width="332" height="127" src="/images/its-not-perfect-but-its-time-to-integrate-web/chrome-notification.png?1364633946" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img title="Chrome Web Notification" alt="Chrome Web Notification" width="332" height="127" src="/blog/images/its-not-perfect-but-its-time-to-integrate-web/chrome-notification.png?1364633946" /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img title="Safari Web Notification" alt="Safari Web Notification" width="331" height="92" src="/images/its-not-perfect-but-its-time-to-integrate-web/safari-notification.png?1364633980" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img title="Safari Web Notification" alt="Safari Web Notification" width="331" height="92" src="/blog/images/its-not-perfect-but-its-time-to-integrate-web/safari-notification.png?1364633980" /&gt;&lt;/p&gt;
 
 &lt;h3&gt;Browser Support&lt;/h3&gt;
 
@@ -1273,7 +1273,7 @@ It&amp;#39;s the ideal and elegant project management tool for tech startups.&lt
     </item>
     <item>
       <title>Announcing Smart Time Ago</title>
-      <link>http://pragmatic.ly/blog/we-opened-source-smart-time-ago</link>
+      <link>http://pragmatic.ly/blog/blog/we-opened-source-smart-time-ago</link>
       <description type="html">&lt;p&gt;The relative timestamps like &amp;ldquo;5 minutes ago&amp;rdquo; are more and more used in web applications. So web frameworks like &lt;a href="http://rubyonrails.com"&gt;Ruby on Rails&lt;/a&gt; have a builtin helper method to change timestamps to relative timestamps easily on server side as following,&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;time_ago_in_words&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;item&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;created_at&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
@@ -1301,7 +1301,7 @@ It&amp;#39;s the ideal and elegant project management tool for tech startups.&lt
     </item>
     <item>
       <title>Pragmatic.ly an Asana Ripoff? We say no, read why.</title>
-      <link>http://pragmatic.ly/blog/ripoff-asana-we-say-no-and-why-were-here</link>
+      <link>http://pragmatic.ly/blog/blog/ripoff-asana-we-say-no-and-why-were-here</link>
       <description type="html">&lt;p&gt;Last week was a big milestone for us. After a two month private beta period we publicly launched &lt;a title="Lean Collaborative Project Management Tool" href="https://pragmatic.ly"&gt;Pragmatic.ly&lt;/a&gt;. Many thanks to our private beta users for their encouraging words and kind feedback which we used to improve Pragmatic.ly. Our users are always extremely important to us.&lt;/p&gt;
 
 &lt;blockquote&gt;
@@ -1334,7 +1334,7 @@ It&amp;#39;s the ideal and elegant project management tool for tech startups.&lt
     </item>
     <item>
       <title>Hello World</title>
-      <link>http://pragmatic.ly/blog/hello-world</link>
+      <link>http://pragmatic.ly/blog/blog/hello-world</link>
       <description type="html">&lt;p&gt;Today, we&amp;#39;re excited to announce the beta version of &lt;a title="Lean Collaborative Product Management Tool" href="https://pragmatic.ly"&gt;Pragmatic.ly&lt;/a&gt;, our new product to simplify the project management process.&lt;/p&gt;
 
 &lt;p&gt;Pragmatic.ly is a fast and easy to use project management tool featuring real time collaboration. For years of developing products, we have tried many different project management tools. However, as a small team(&amp;lt;= 10), we found that most of them are too complex to do lots of work about work and most of them don&amp;#39;t care about communication, histories which force us to use different tools for same purpose. We&amp;#39;re always imaging there will be a tool which will make the team focus on the work with maximum productivity. That&amp;#39;s why we created Pragmatic.ly.&lt;/p&gt;
