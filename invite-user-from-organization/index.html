@@ -12,12 +12,12 @@
     <meta charset="UTF-8">
 
     <title>
-        Introducing VCS integration with Pragmatic.ly
+        新功能：直接邀请组织成员加入项目
  - Pragmatic.ly Blog
     </title>
 
     <meta name="description" content="The voice of The Pragmatic.ly Team sharing Nes, Thoughts & Fun.">
-    <meta name="keywords" content="  ["VCS", "Integration", "Git"]
+    <meta name="keywords" content="  ["Announcement", "New Feature"]
 ">
     <meta name="author" content="The Pragmatic.ly Team">
 
@@ -58,7 +58,7 @@
     
   </head>
 
-  <body class="integrate-version-control-system-with-pragmat integrate-version-control-system-with-pragmat_index">
+  <body class="invite-user-from-organization invite-user-from-organization_index">
 
     <header class="navbar navbar-fixed-top" role="banner">
       <div class="container">
@@ -101,30 +101,28 @@
 
     <header>
   <h2 class="title">
-    <a href="/integrate-version-control-system-with-pragmat">Introducing VCS integration with Pragmatic.ly</a>
+    <a href="/invite-user-from-organization">新功能：直接邀请组织成员加入项目</a>
   </h2>
 </header>
 
 <aside>
   <ul class="meta">
     <li class="author-photo">
-      <a href="http://terrytai.com">
-        <img alt="" width="120" height="120" src="/images/terry-tai.png?1379005285" />
+      <a href="http://yedingding.com">
+        <img alt="" width="120" height="120" src="/images/dingding-ye.png?1379005285" />
       </a>
     </li>
     <li class="author">
-     by 太檑
+     by 叶玎玎
     </li>
     <li class="date">
-      Jan 29, 2013
+      Nov 19, 2013
     </li>
     <li class="tags">
       
-        <a href="/tags/vcs">VCS</a>
+        <a href="/tags/announcement">Announcement</a>
       
-        <a href="/tags/integration">Integration</a>
-      
-        <a href="/tags/git">Git</a>
+        <a href="/tags/new-feature">New Feature</a>
       
     </li>
     <li class="back-link">
@@ -134,96 +132,39 @@
 </aside>
 
 <div class="content">
-  <p>Today, we&#39;re glad to introduce our new <a href="http://en.wikipedia.org/wiki/Revision_control">VCS</a>(Version Control System) integration with Pragmatic.ly to the public. We have released this feature to some of our users in last two months and glad to hear how they love it. I&#39;m sure you&#39;ll love the feature too!</p>
+  <p>先向我们用户们表示歉意，这个功能来晚了。随着用户使用 Pragmatic.ly 的时间越来越长，项目开始增多，重复输入团队成员邮件地址来邀请用户成了一个痛点，所以我们觉得是时候开始做直接邀请组织里的成员加入项目，更方便协作。这里先解释两个概念。</p>
 
-<p><a href="https://pragmatic.ly">Pragmatic.ly</a> is a lean collaborative project management tool featuring real time collaboration. We design the tool to be developer friendly and hope to help startup teams deliver better products, easier and faster. Developers like us work with VCS such as Git or SVN every day. The new VCS integration can deeply integrate with your current development process and improve your team productivity.</p>
+<h3>项目团队</h3>
 
-<p>With VCS integrated into Pragmatic.ly, all the commits related to a ticket will be auto associated with that ticket and the commit message will be displayed in the activity timeline. As a result, your team will know the status update about that ticket immediately and go for a review if they want. It&#39;s a big benefit to code collobration. What&#39;s more, you can manipulate the status of tickets within your projects directly from the commit messages. There is no need to interrupt your work and visit Pragmatic.ly to mark the ticket as Completed or Accepted. Instead, let the commit message do the work!</p>
+<p>指当前项目里的团队人员，见边栏的团队成员列表。</p>
 
-<p>Feel free to try this feature by signing up at <a href="https://pragmatic.ly">pragmatic.ly</a>.</p>
+<p><img alt="Project Team" width="249" height="103" src="/images/invite-user-from-organization/project-team.png?1384835036" /></p>
 
-<p><img alt="VCS Integration" width="507" height="512" src="/images/integrate-version-control-system-with-pragmat/vcs-integration.png?1364633909" /></p>
+<h3>组织团队</h3>
 
-<p>So far, we have already supported three VCS services: <a href="https://github.com">GitHub</a>, <a href="https://bitbucket.org">BitBucket</a> and <a href="http://gitlab.org">Gitlab</a>. And more are coming. Let us know if the VCS you&#39;re using now is not in the list and you want to see it soon!</p>
+<p>指你的组织里的团队人员，是你创建的所有项目里的项目团队人员之和，算自然人。</p>
 
-<p></p>
+<p><img alt="Organization Team" width="566" height="294" src="/images/invite-user-from-organization/organization-team.png?1384835036" /></p>
 
-<h3>How to setup</h3>
+<h3>具体实现</h3>
+
+<p>下图是我们的具体实现。</p>
+
+<p><img alt="New Invite Modal" width="455" height="340" src="/images/invite-user-from-organization/new-invite.png?1384835036" /></p>
+
+<p>在邀请现有成员区域点击邀请以后，会直接给这位成员发送邀请加入项目邮件，很简单。另外，我们目前正在做新的项目页面设计，到时候会有更加优秀的视觉设计和交互设计，包括这里，敬请期待！</p>
+
+<h3>其他更新</h3>
+
+<p>这次的发布还修复了下面几个 bug。</p>
 
 <ol>
-<li><p>First, you should make sure the user name or the email is the same with what you use in your Pragmatic.ly account. If not, you can always set the setting in the project. For example:</p>
-<div class="highlight"><pre><span class="err">$</span> <span class="n">git</span> <span class="n">config</span> <span class="n">user</span><span class="o">.</span><span class="n">name</span> <span class="s2">&quot;Terry Tai&quot;</span>
-<span class="err">$</span> <span class="n">git</span> <span class="n">config</span> <span class="n">user</span><span class="o">.</span><span class="n">email</span> <span class="s2">&quot;terry@pragmatic.ly&quot;</span>
-</pre></div></li>
-<li><p>Get the commit hook url on your Pragmatic.ly project setting panel and copy this url to your clipboard. We will use it as the callback url latter. Only the administrators of the project can view the settings.</p>
-
-<p><img alt="Project Setting" width="232" height="166" src="/images/integrate-version-control-system-with-pragmat/project-list.png?1364633835" /></p>
-
-<p><img alt="Edit Project" width="481" height="396" src="/images/integrate-version-control-system-with-pragmat/edit-project.png?1364633735" /></p></li>
-<li><p>As said, now Pragmatic.ly supports three services: Github, Bitbucket, Gitlab. Below are the integration steps for each service.</p></li>
+<li>多附件情况下，删除一个附件后导致附件区域显示不全。</li>
+<li>新成员加入后，无法通过 @ 来补全新成员。</li>
+<li>在空间面板里面增加黑色的圆圈代表 “验收失败” 状态。</li>
 </ol>
 
-<h4><strong>Github</strong></h4>
-
-<ol>
-<li><p>Go to your project page on Github, click the &#39;Setting&#39; tag of the project to go to project setting page.(If you don&#39;t see this tab, it means you don&#39;t have this permission. Please contact the owner of this project on Github.)</p>
-
-<p><img alt="GitHub Project Setting" width="209" height="147" src="/images/integrate-version-control-system-with-pragmat/github-project-setting.png?1364633765" /></p></li>
-<li><p>Then click the &#39;Service Hooks&#39;, and choose the &#39;WebHook URLs&#39;.</p></li>
-<li><p>Paste the url to the field and click &#39;Update settings&#39;.</p>
-
-<p><img alt="Github WebHook" width="939" height="222" src="/images/integrate-version-control-system-with-pragmat/github-webhook.png?1364633801" /></p></li>
-</ol>
-
-<h4>Bitbucket</h4>
-
-<ol>
-<li>Go to your setting page of your project on Bitbucket and click the &#39;Services&#39; on side bar</li>
-<li>Choose the the &#39;POST&#39; from the select box and paste the URL on the url field</li>
-<li><p>Click &#39;Save&#39;</p>
-
-<p><img alt="BitBucket WebHook" width="932" height="335" src="/images/integrate-version-control-system-with-pragmat/bitbucket-webhook.png?1364633702" /></p></li>
-</ol>
-
-<h4>GitLab</h4>
-
-<p>The Gitlab configuration is the same as GitHub. So you can refer to the section how to configure GitHub.</p>
-
-<h3>How to use</h3>
-
-<ol>
-<li><p>Associate the commits with your ticket on Pragmatic.ly.</p>
-
-<p>For example we have a ticket whose number is 529.</p>
-
-<p><img alt="Ticket Example" width="472" height="42" src="/images/integrate-version-control-system-with-pragmat/ticket-example.png?1364633870" /></p>
-
-<p>There are two ways to associate your commits with a specify ticket.</p>
-
-<ol>
-<li>If you prefer to implement every new feature in a new branch, you could name a branch starting with the ticket number, such as 529<em>regenerate</em>token. Then all commits in this branch will be automatically associated with this ticket.</li>
-<li><p>If you want to associate the commit to a ticket no matter which branch it&#39;s in, you could alway include the hash tag with the ticket number such as &#39;#529&#39; in your commit message. For example:</p>
-<div class="highlight"><pre><span class="err">$</span> <span class="n">git</span> <span class="n">commit</span> <span class="o">-</span><span class="n">m</span> <span class="s2">&quot;#529 Associate the commit with ticket 529.&quot;</span>
-</pre></div></li>
-</ol></li>
-<li><p>Manipulate the status of tickets directly from the commit message.</p>
-
-<p>You can complete or close the tickets by using commands in your commit messages. The supported commands are as follows:</p>
-
-<ol>
-<li>complete (<em>completes, completed, resolve, resolves, resolved, solve, solves, solved, fix, fixes, fixed</em>) will change the status of the specified ticket to Completed.</li>
-<li>accept (<em>acceptes, accepted, close, closes, closed</em>) will change the status of the specified ticket to Accepted.</li>
-</ol>
-
-<p>Here are some examples of how to use this feature.</p>
-<div class="highlight"><pre><span class="err">$</span> <span class="n">git</span> <span class="n">commit</span> <span class="o">-</span><span class="n">m</span> <span class="s2">&quot;Resolved #529 This will mark 529 as Completed&quot;</span>
-<span class="err">$</span> <span class="n">git</span> <span class="n">comimt</span> <span class="o">-</span><span class="n">m</span> <span class="s2">&quot;Closed #529 This will mark 529 as Closed&quot;</span>
-</pre></div></li>
-</ol>
-
-<p><br/></p>
-
-<p>We hope you enjoy this new feature, as always, any feedbacks are welcome!</p>
+<p>如果你有任何问题和建议，随时联系我们，谢谢。</p>
 
 </div>
 
@@ -234,7 +175,7 @@
   <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
     var disqus_shortname = 'pragmaticlyblog'; // required: replace example with your forum shortname
-    var disqus_identifier = 'introducing-vcs-integration-with-pragmatic-ly';
+    var disqus_identifier = 'announcing-invite-from-organization';
 
     /* * * DON'T EDIT BELOW THIS LINE * * */
     (function() {
