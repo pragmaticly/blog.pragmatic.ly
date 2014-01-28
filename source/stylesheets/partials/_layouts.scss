@@ -20,7 +20,7 @@ a {
 .wrap-blue {
   padding: 40px 0;
   color: #FFF;
-  background-color: #A5CAD6;
+  background-color: $mainBgColor;
 }
 
 .navbar {
@@ -31,7 +31,7 @@ a {
   .nav li a {
     color: #fff;
     font-size: 18px;
-    padding: 0 10px;
+    padding: 0 15px;
     line-height: $globalNavHeight;
     text-shadow: none;
     text-align: center;
@@ -50,10 +50,10 @@ a {
     font-weight: 400;
     color: #fff;
     text-indent: -999em;
-    margin: 3px 0 0;
+    margin: 0;
     padding: 0;
     width: 200px;
-    height: 55px;
+    height: 65px;
     background: transparent url("../images/landing-sprite.png") no-repeat -100px -120px;
   }
   .action {
