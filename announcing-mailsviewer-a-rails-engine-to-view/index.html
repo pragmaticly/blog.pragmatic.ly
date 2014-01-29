@@ -40,18 +40,21 @@
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <link href="/blog/stylesheets/application.css?1391017519" media="screen" rel="stylesheet" type="text/css" />
-    <script src="/blog/javascripts/application.js?1391017586" type="text/javascript"></script>
+    <link href="/stylesheets/application.css?1391017519" media="screen" rel="stylesheet" type="text/css" />
+    <script src="/javascripts/application.js?1391018062" type="text/javascript"></script>
 
     
-
+    <script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script>
+    <script type="text/javascript">var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-4054156-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();</script>
     
-    <!-- start Mixpanel -->
-    <script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f);b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==
-typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");for(g=0;g<i.length;g++)f(c,i[g]);
-b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
-    mixpanel.init("43a596021773ee49e7b13713d89c9875");</script>
-    <!-- end Mixpanel -->
+
     
   </head>
 
@@ -98,7 +101,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
 
     <header>
   <h2 class="title">
-    <a href="/blog/announcing-mailsviewer-a-rails-engine-to-view">Announcing mails_viewer - easiest way to test mails in Rails app</a>
+    <a href="/announcing-mailsviewer-a-rails-engine-to-view">Announcing mails_viewer - easiest way to test mails in Rails app</a>
   </h2>
 </header>
 
@@ -106,7 +109,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
   <ul class="meta">
     <li class="author-photo">
       <a href="http://yedingding.com">
-        <img alt="" width="120" height="120" src="/blog/images/dingding-ye.png?1379005285" />
+        <img alt="" width="120" height="120" src="/images/dingding-ye.png?1379005285" />
       </a>
     </li>
     <li class="author">
@@ -117,17 +120,17 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
     </li>
     <li class="tags">
       
-        <a href="/blog/tags/open-source">open source</a>
+        <a href="/tags/open-source">open source</a>
       
-        <a href="/blog/tags/rails">rails</a>
+        <a href="/tags/rails">rails</a>
       
-        <a href="/blog/tags/mail">mail</a>
+        <a href="/tags/mail">mail</a>
       
-        <a href="/blog/tags/engine">engine</a>
+        <a href="/tags/engine">engine</a>
       
     </li>
     <li class="back-link">
-      <a href="/blog">&lsaquo; 返回博客主页</a>
+      <a href="/">&lsaquo; 返回博客主页</a>
     </li>
   </ul>
 </aside>
@@ -149,7 +152,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
 
 <p>We feel the same pain at <a href="https://pragmatic.ly">Pragmatic.ly</a> and that&#39;s why we built <a href="https://github.com/pragmaticly/mails_viewer">mails_viewer</a>, a mails preview Engine which provides a table view for all mails under tmp/mails. It&#39;s a fork of tomlion&#39;s <a href="https://github.com/tomlion/mails_viewer">original code</a> and I&#39;m glad to be the maintainer. Thanks for tomlion for getting this thing started!</p>
 
-<p><img title="Mails Viewer" alt="mails_viewer" width="680" height="30" src="/blog/images/announcing-mailsviewer-a-rails-engine-to-view/mails-viewer.png?1364633119" /></p>
+<p><img title="Mails Viewer" alt="mails_viewer" width="680" height="30" src="/images/announcing-mailsviewer-a-rails-engine-to-view/mails-viewer.png?1364633119" /></p>
 
 <p>Generally speaking, mails_viewer is a Rails engine. So it&#39;s very easy to integrate it into your rails apps. And it depends on the file delivery method of ActionMailer.</p>
 
