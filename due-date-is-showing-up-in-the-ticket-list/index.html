@@ -40,21 +40,18 @@
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <link href="/stylesheets/application.css?1391017519" media="screen" rel="stylesheet" type="text/css" />
-    <script src="/javascripts/application.js?1391018777" type="text/javascript"></script>
+    <link href="/blog/stylesheets/application.css?1391017519" media="screen" rel="stylesheet" type="text/css" />
+    <script src="/blog/javascripts/application.js?1391018793" type="text/javascript"></script>
 
     
-    <script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script>
-    <script type="text/javascript">var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-4054156-1']);
-      _gaq.push(['_trackPageview']);
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();</script>
-    
 
+    
+    <!-- start Mixpanel -->
+    <script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f);b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==
+typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");for(g=0;g<i.length;g++)f(c,i[g]);
+b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
+    mixpanel.init("43a596021773ee49e7b13713d89c9875");</script>
+    <!-- end Mixpanel -->
     
   </head>
 
@@ -101,7 +98,7 @@
 
     <header>
   <h2 class="title">
-    <a href="/due-date-is-showing-up-in-the-ticket-list">Showing up Due Date</a>
+    <a href="/blog/due-date-is-showing-up-in-the-ticket-list">Showing up Due Date</a>
   </h2>
 </header>
 
@@ -109,7 +106,7 @@
   <ul class="meta">
     <li class="author-photo">
       <a href="http://beenhero.com">
-        <img alt="" width="120" height="120" src="/images/ben-he.png?1379005285" />
+        <img alt="" width="120" height="120" src="/blog/images/ben-he.png?1379005285" />
       </a>
     </li>
     <li class="author">
@@ -120,15 +117,15 @@
     </li>
     <li class="tags">
       
-        <a href="/tags/announcement">Announcement</a>
+        <a href="/blog/tags/announcement">Announcement</a>
       
-        <a href="/tags/changelog">ChangeLog</a>
+        <a href="/blog/tags/changelog">ChangeLog</a>
       
-        <a href="/tags/ui">UI</a>
+        <a href="/blog/tags/ui">UI</a>
       
     </li>
     <li class="back-link">
-      <a href="/">&lsaquo; 返回博客主页</a>
+      <a href="/blog">&lsaquo; 返回博客主页</a>
     </li>
   </ul>
 </aside>
@@ -138,19 +135,19 @@
 
 <p>Firstly, <em>due-date</em> can be input in the right form, easy click and go.</p>
 
-<p><img alt="Due Date Selector" width="356" height="196" src="/images/due-date-is-showing-up-in-the-ticket-list/date-selector.jpg?1364632825" /></p>
+<p><img alt="Due Date Selector" width="356" height="196" src="/blog/images/due-date-is-showing-up-in-the-ticket-list/date-selector.jpg?1364632825" /></p>
 
 <p>A ticket has <em>due-date</em> set will show up a date tag, the visual design is different from normal tags. Basically you&#39;re notified that one ticket has due on priority.</p>
 
-<p><img alt="Due Date Tag" width="350" height="47" src="/images/due-date-is-showing-up-in-the-ticket-list/due-date-tag.png?1364633449" /></p>
+<p><img alt="Due Date Tag" width="350" height="47" src="/blog/images/due-date-is-showing-up-in-the-ticket-list/due-date-tag.png?1364633449" /></p>
 
 <p>Once a ticket is due on or overdue, this ticket item in tickets list will be highlighted and the date tag turns red. You can&#39;t ignore it since the day is coming :) Hope this can push you a bit for getting things done.</p>
 
-<p><img alt="Overdue Tag" width="350" height="38" src="/images/due-date-is-showing-up-in-the-ticket-list/overdue-tag.png?1364633479" /></p>
+<p><img alt="Overdue Tag" width="350" height="38" src="/blog/images/due-date-is-showing-up-in-the-ticket-list/overdue-tag.png?1364633479" /></p>
 
 <p>When we were designing the interface of due-date, it actually came out a design like this,</p>
 
-<p><img alt="Due date draft" width="183" height="80" src="/images/due-date-is-showing-up-in-the-ticket-list/due-date-draft.png?1364633388" /></p>
+<p><img alt="Due date draft" width="183" height="80" src="/blog/images/due-date-is-showing-up-in-the-ticket-list/due-date-draft.png?1364633388" /></p>
 
 <p>Using the calendar icon (same from the editing form) to indicate that a ticket has a <em>due-date</em>. When hover on the icon, a tooltip will show up and tell you the <em>due-date</em>. This looks good, the UI is clean and space saving, but we gave it up, why?</p>
 
@@ -158,7 +155,7 @@
 
 <p>On the other hand, we&#39;d like to make the <em>due-date</em> the same way as tags do, both as filter to find out the qualified tickets when you clicked on them. So may be a tag-like style is good for the due-date.</p>
 
-<p><img alt="Due Date Overview" width="501" height="241" src="/images/due-date-is-showing-up-in-the-ticket-list/due-date-overview.png?1364633419" /></p>
+<p><img alt="Due Date Overview" width="501" height="241" src="/blog/images/due-date-is-showing-up-in-the-ticket-list/due-date-overview.png?1364633419" /></p>
 
 <p>Let us know how this works for you.</p>
 
