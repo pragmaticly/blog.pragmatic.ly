@@ -1,10 +1,25 @@
 .main {
   .post {
     font-size: 16px;
-    line-height: 1.8;
     margin: 0 0 2.8em 0;
     padding: 0 0 1em 20%;
     border-bottom: 1px solid #dfdfdf;
+
+    .back-link {
+      margin-left: -25%;
+      float: left;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      font-size: 1.1em;
+
+      a {
+        padding: 4px;
+        border-bottom: 1px solid;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
 
     aside {
       float: left;
@@ -48,18 +63,7 @@
           }
         }
       }
-      .back-link {
-        margin: 10px auto;
-        a {
-          padding: 4px;
-          text-decoration: none;
-          &:hover {
-            color: #000;
-          }
-        }
-      }
     }
-
     .title {
       font-size: 1.7em;
       line-height: 1.3;
