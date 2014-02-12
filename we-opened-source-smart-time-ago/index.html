@@ -13,13 +13,13 @@
 
     <title>
         Announcing Smart Time Ago
- - Pragmatic.ly Blog
+ - Fengche.co Blog
     </title>
 
-    <meta name="description" content="The voice of The Pragmatic.ly Team sharing Nes, Thoughts & Fun.">
+    <meta name="description" content="The product announcements and updates of Fenche.co.">
     <meta name="keywords" content="  ["open source", "JavaScript", "jQuery", "smart-time-ago"]
 ">
-    <meta name="author" content="The Pragmatic.ly Team">
+    <meta name="author" content="The Fengche.co Team">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta http-equiv="cleartype" content="on">
@@ -40,18 +40,21 @@
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <link href="/blog/stylesheets/application.css?1391017519" media="screen" rel="stylesheet" type="text/css" />
-    <script src="/blog/javascripts/application.js?1391018793" type="text/javascript"></script>
+    <link href="/stylesheets/application.css?1392188989" media="screen" rel="stylesheet" type="text/css" />
+    <script src="/javascripts/application.js?1392188988" type="text/javascript"></script>
 
     
-
+    <script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script>
+    <script type="text/javascript">var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-4054156-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();</script>
     
-    <!-- start Mixpanel -->
-    <script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f);b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==
-typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");for(g=0;g<i.length;g++)f(c,i[g]);
-b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
-    mixpanel.init("43a596021773ee49e7b13713d89c9875");</script>
-    <!-- end Mixpanel -->
+
     
   </head>
 
@@ -84,10 +87,8 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
     <section class="hero wrap-blue">
       <div class="container header">
         
-           <h1 class="blog-name">Fengche.co 官方博客</h1>
-           <p>
-            好好做产品，做好产品
-           </p>
+           <h1 class="blog-name">「风车协作」官方博客</h1>
+           <p> 好好做产品，做好产品 </p>
         
       </div>
     </section>
@@ -98,7 +99,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
 
     <header>
   <h2 class="title">
-    <a href="/blog/we-opened-source-smart-time-ago">Announcing Smart Time Ago</a>
+    <a href="/we-opened-source-smart-time-ago">Announcing Smart Time Ago</a>
   </h2>
 </header>
 
@@ -106,7 +107,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
   <ul class="meta">
     <li class="author-photo">
       <a href="http://terrytai.com">
-        <img alt="" width="120" height="120" src="/blog/images/terry-tai.png?1379005285" />
+        <img alt="" width="120" height="120" src="/images/terry-tai.png?1379005285" />
       </a>
     </li>
     <li class="author">
@@ -117,28 +118,28 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
     </li>
     <li class="tags">
       
-        <a href="/blog/tags/open-source">open source</a>
+        <a href="/tags/open-source">open source</a>
       
-        <a href="/blog/tags/javascript">JavaScript</a>
+        <a href="/tags/javascript">JavaScript</a>
       
-        <a href="/blog/tags/jquery">jQuery</a>
+        <a href="/tags/jquery">jQuery</a>
       
-        <a href="/blog/tags/smart-time-ago">smart-time-ago</a>
+        <a href="/tags/smart-time-ago">smart-time-ago</a>
       
     </li>
     <li class="back-link">
-      <a href="/blog">&lsaquo; 返回博客主页</a>
+      <a href="/">&lsaquo; 返回博客主页</a>
     </li>
   </ul>
 </aside>
 
 <div class="content">
   <p>The relative timestamps like &ldquo;5 minutes ago&rdquo; are more and more used in web applications. So web frameworks like <a href="http://rubyonrails.com">Ruby on Rails</a> have a builtin helper method to change timestamps to relative timestamps easily on server side as following,</p>
-<div class="highlight"><pre><span class="n">time_ago_in_words</span><span class="p">(</span><span class="n">item</span><span class="o">.</span><span class="n">created_at</span><span class="p">)</span>
-</pre></div>
+<pre class="highlight ruby"><span class="n">time_ago_in_words</span><span class="p">(</span><span class="n">item</span><span class="p">.</span><span class="nf">created_at</span><span class="p">)</span>
+</pre>
 <p>But If you use relative timestamps, you should update them on the client side to make sure the users always seeing the correct relative timestamps. And there is already an awesome library to do this job, which is <a href="http://timeago.yarp.com/">Timeago</a>. Thanks to Yarp.com, the author of Timeago.</p>
 
-<p>However, after trying the library in depth, we found that it doesn&#39;t fit well in <a href="https://pragmatic.ly">Pragmatic.ly</a>. As a real time single-page application, our users may not refresh the page for days, so refreshing the relative timestamps per minute is meaningless and wasteful.</p>
+<p>However, after trying the library in depth, we found that it doesn&rsquo;t fit well in <a href="https://pragmatic.ly">Pragmatic.ly</a>. As a real time single-page application, our users may not refresh the page for days, so refreshing the relative timestamps per minute is meaningless and wasteful.</p>
 
 <p>We need a more efficient solution. So we built <a href="http://pragmaticly.github.com/smart-time-ago/">Smart Time Ago</a>.</p>
 
@@ -146,13 +147,13 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
 
 <p>Instead of updating the relative timestamps every minute, smart-time-ago can dynamically tune the checking time interval to a proper value depending on the newest time on the page.</p>
 
-<p>For example, if the newest time is &#39;2 hours ago&#39;, there is no need to check and update the relative timestamps per minute. Instead, 30 minutes is a better choice.</p>
+<p>For example, if the newest time is &lsquo;2 hours ago&rsquo;, there is no need to check and update the relative timestamps per minute. Instead, 30 minutes is a better choice.</p>
 
 <p><a href="http://pragmaticly.github.com/smart-time-ago/">Smart Time Ago</a> is hosted on github under MIT License. Check it out for more details and share your feedbacks and suggestions. Thanks!</p>
 
 <h3>About Pragmatic.ly</h3>
 
-<p><a href="https://pragmatic.ly">Pragmatic.ly</a> is a lean collaborative project management tool aiming to help small teams make better products easier. It&#39;s the ideal and elegant project management tool for tech startups.</p>
+<p><a href="https://pragmatic.ly">Pragmatic.ly</a> is a lean collaborative project management tool aiming to help small teams make better products easier. It&rsquo;s the ideal and elegant project management tool for tech startups.</p>
 
 </div>
 
