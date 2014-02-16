@@ -5,7 +5,7 @@ tags: Announcement
 author: dingding
 ---
 
-Today, we're excited to announce the beta version of [Pragmatic.ly](https://pragmatic.ly "Lean Collaborative Product Management Tool"), our new product to simplify the project management process.
+Today, we're excited to announce the beta version of [Pragmatic.ly](https://fengche.co "Lean Collaborative Product Management Tool"), our new product to simplify the project management process.
 
 Pragmatic.ly is a fast and easy to use project management tool featuring real time collaboration. For years of developing products, we have tried many different project management tools. However, as a small team(<= 10), we found that most of them are too complex to do lots of work about work and most of them don't care about communication, histories which force us to use different tools for same purpose. We're always imaging there will be a tool which will make the team focus on the work with maximum productivity. That's why we created Pragmatic.ly.
 
@@ -17,4 +17,3 @@ Our vision for project management is a tool where you can plan, work, communicat
 * **Easy and Efficient Management** - The management about project is effortless and painless here to let you just focus on what matters. Stop wasting time to do 'work about work' and instead work on the project itself!
 
 Pragmatic.ly is currently in beta release and we're working hard to make it simple, elegant, useful and fun. So, if you're looking for a project management tool to maximize your productivity, sign up for the beta today. There are more shiny features on the way, so make sure to check back often to keep up with what's new. Please let us know what you think and what features you’d like to see next and feel free to contacts us via [support@pragmatic.ly](support@pragmatic.ly) or mention [@pragmatic_ly](mailto:https://twitter.com/pragmatic_ly) on twitter.
-

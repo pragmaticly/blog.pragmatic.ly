@@ -18,7 +18,7 @@ Familiar? I have been asked many times of those questions these years. The requi
 * To browse the mails easily, for everyone in the team.
 * To allow conditioned mails to real sent out.
 
-We feel the same pain at [Pragmatic.ly](https://pragmatic.ly) and that's why we built [mails_viewer](https://github.com/pragmaticly/mails_viewer), a mails preview Engine which provides a table view for all mails under tmp/mails. It's a fork of tomlion's [original code](https://github.com/tomlion/mails_viewer) and I'm glad to be the maintainer. Thanks for tomlion for getting this thing started!
+We feel the same pain at [Pragmatic.ly](https://fengche.co) and that's why we built [mails_viewer](https://github.com/pragmaticly/mails_viewer), a mails preview Engine which provides a table view for all mails under tmp/mails. It's a fork of tomlion's [original code](https://github.com/tomlion/mails_viewer) and I'm glad to be the maintainer. Thanks for tomlion for getting this thing started!
 
 ![mails_viewer](/images/announcing-mailsviewer-a-rails-engine-to-view/mails-viewer.png "Mails Viewer")
 
@@ -73,6 +73,6 @@ We're not alone. There are already several gems fixing the same problem, such as
 
 ### About Pragmatic.ly ###
 
-[Pragmatic.ly](https://pragmatic.ly) is a lean collaborative project management tool aiming to help small teams make better products easier. It's the ideal and elegant project management tool for tech startups.
+[Pragmatic.ly](https://fengche.co) is a lean collaborative project management tool aiming to help small teams make better products easier. It's the ideal and elegant project management tool for tech startups.
 
 Now that you've read so far, you should follow me [@yedingding](https://twitter.com/yedingding)!

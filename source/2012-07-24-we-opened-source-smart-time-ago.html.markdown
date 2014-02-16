@@ -14,7 +14,7 @@ time_ago_in_words(item.created_at)
 
 But If you use relative timestamps, you should update them on the client side to make sure the users always seeing the correct relative timestamps. And there is already an awesome library to do this job, which is [Timeago](http://timeago.yarp.com/). Thanks to Yarp.com, the author of Timeago.
 
-However, after trying the library in depth, we found that it doesn't fit well in [Pragmatic.ly](https://pragmatic.ly). As a real time single-page application, our users may not refresh the page for days, so refreshing the relative timestamps per minute is meaningless and wasteful.
+However, after trying the library in depth, we found that it doesn't fit well in [Pragmatic.ly](https://fengche.co). As a real time single-page application, our users may not refresh the page for days, so refreshing the relative timestamps per minute is meaningless and wasteful.
 
 We need a more efficient solution. So we built [Smart Time Ago](http://pragmaticly.github.com/smart-time-ago/).
 
@@ -28,4 +28,4 @@ For example, if the newest time is '2 hours ago', there is no need to check and 
 
 ### About Pragmatic.ly ###
 
-[Pragmatic.ly](https://pragmatic.ly) is a lean collaborative project management tool aiming to help small teams make better products easier. It's the ideal and elegant project management tool for tech startups.
+[Pragmatic.ly](https://fengche.co) is a lean collaborative project management tool aiming to help small teams make better products easier. It's the ideal and elegant project management tool for tech startups.

@@ -6,7 +6,7 @@ keywords: SpineJS, JavaScript MVC, JavaScript, Spine
 author: dingding
 ---
 
-To give users the best possible fluid experience, we designed [Pragmatic.ly](https://pragmatic.ly) and complied with the [single page application](http://en.wikipedia.org/wiki/Single-page_application) standard. We believe that could make users focus on building product rather than spending time on project management itself. A wide range of technology solutions are available to make a single page application. Current trends suggest moving core application from server to client side and keeping server load at minimum for better performance by pure data APIs. [Pragmatic.ly](https://pragmatic.ly) took on the challange to cater to this need by developing server side in Rails, Spine.js at client side.
+To give users the best possible fluid experience, we designed [Pragmatic.ly](https://fengche.co) and complied with the [single page application](http://en.wikipedia.org/wiki/Single-page_application) standard. We believe that could make users focus on building product rather than spending time on project management itself. A wide range of technology solutions are available to make a single page application. Current trends suggest moving core application from server to client side and keeping server load at minimum for better performance by pure data APIs. [Pragmatic.ly](https://fengche.co) took on the challange to cater to this need by developing server side in Rails, Spine.js at client side.
 
 ### Why Spine.JS ###
 
@@ -313,6 +313,6 @@ I would like to cover how Test works in Pragmatic.ly in another post. To give a 
 
 ### About Pragmatic.ly ###
 
-[Pragmatic.ly](https://pragmatic.ly) is a lean collaborative project management tool aiming to help small teams make better products easier. It's the ideal and elegant project management tool for tech startups.
+[Pragmatic.ly](https://fengche.co) is a lean collaborative project management tool aiming to help small teams make better products easier. It's the ideal and elegant project management tool for tech startups.
 
 Now that you've read so far, you should follow me [@yedingding](https://twitter.com/yedingding)!

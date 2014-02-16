@@ -87,7 +87,7 @@ activate :automatic_image_sizes
 # Methods defined in the helpers block are available in templates
 helpers do
   def full_url(article)
-    "http://blog.pragmatic.ly#{article.url}"
+    "https://fengche.co/blog/#{article.url}"
   end
 
   def disqus_identifier(article)

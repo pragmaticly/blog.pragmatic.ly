@@ -6,7 +6,7 @@ keywords: html5 notification, JavaScript, web notification
 author: dingding
 ---
 
-One feature [Pragmatic.ly](https://pragmatic.ly) has had from the beginning is Web Notifications. When I first saw the feature in Gmail I was convinced it was a feature every web application should have. As a project management tool Pragmatic.ly should enhance collaboration and ease communication. Instant desktop-like notification is one way to achieve the goal.
+One feature [Pragmatic.ly](https://fengche.co) has had from the beginning is Web Notifications. When I first saw the feature in Gmail I was convinced it was a feature every web application should have. As a project management tool Pragmatic.ly should enhance collaboration and ease communication. Instant desktop-like notification is one way to achieve the goal.
 
 ![Chrome Web Notification](/images/its-not-perfect-but-its-time-to-integrate-web/chrome-notification.png "Chrome Web Notification")
 
@@ -35,7 +35,7 @@ Danger Cove wrote an awesome [demo](http://dangercove.github.com/html5-notificat
 2. requestPermission requires the callback to make it work with Safari
 3. You can interact with your application using events such as onclick, by referring window.parent. For example as in Pragmatic.ly, when user clicks the popup notification, it will show you the ticket where event happens.
 
-Check the [Gist](https://gist.github.com/3233112) to see how [Pragmatic.ly](https://pragmatic.ly) integrates web notifications.
+Check the [Gist](https://gist.github.com/3233112) to see how [Pragmatic.ly](https://fengche.co) integrates web notifications.
 
 ```coffee-script
 class Notifier
@@ -111,6 +111,6 @@ If you're developing Chrome extensions, do remember to add the "notifications" p
 
 ### About Pragmatic.ly ###
 
-[Pragmatic.ly](https://pragmatic.ly) is a lean collaborative project management tool aiming to help small teams make better products easier. It's the ideal and elegant project management tool for tech startups.
+[Pragmatic.ly](https://fengche.co) is a lean collaborative project management tool aiming to help small teams make better products easier. It's the ideal and elegant project management tool for tech startups.
 
 Now that you've read so far, you should follow me [@yedingding](https://twitter.com/yedingding)!

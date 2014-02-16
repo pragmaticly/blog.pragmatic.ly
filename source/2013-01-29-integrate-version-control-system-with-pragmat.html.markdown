@@ -1,18 +1,18 @@
 ---
-title: Introducing VCS integration with Pragmatic.ly
+title: Introducing VCS integration with Fengche.co
 date: 2013-01-29 10:00 +08:00
 tags: VCS, Integration, Git
 keywords: VCS, Lean Product Management, Integration, Git
 author: terry
 ---
 
-Today, we're glad to introduce our new [VCS](http://en.wikipedia.org/wiki/Revision_control)(Version Control System) integration with Pragmatic.ly to the public. We have released this feature to some of our users in last two months and glad to hear how they love it. I'm sure you'll love the feature too!
+Today, we're glad to introduce our new [VCS](http://en.wikipedia.org/wiki/Revision_control)(Version Control System) integration with Fengche.co to the public. We have released this feature to some of our users in last two months and glad to hear how they love it. I'm sure you'll love the feature too!
 
-[Pragmatic.ly](https://pragmatic.ly) is a lean collaborative project management tool featuring real time collaboration. We design the tool to be developer friendly and hope to help startup teams deliver better products, easier and faster. Developers like us work with VCS such as Git or SVN every day. The new VCS integration can deeply integrate with your current development process and improve your team productivity.
+[Fengche.co](https://fengche.co) is a lean collaborative project management tool featuring real time collaboration. We design the tool to be developer friendly and hope to help startup teams deliver better products, easier and faster. Developers like us work with VCS such as Git or SVN every day. The new VCS integration can deeply integrate with your current development process and improve your team productivity.
 
-With VCS integrated into Pragmatic.ly, all the commits related to a ticket will be auto associated with that ticket and the commit message will be displayed in the activity timeline. As a result, your team will know the status update about that ticket immediately and go for a review if they want. It's a big benefit to code collobration. What's more, you can manipulate the status of tickets within your projects directly from the commit messages. There is no need to interrupt your work and visit Pragmatic.ly to mark the ticket as Completed or Accepted. Instead, let the commit message do the work!
+With VCS integrated into Fengche.co, all the commits related to a ticket will be auto associated with that ticket and the commit message will be displayed in the activity timeline. As a result, your team will know the status update about that ticket immediately and go for a review if they want. It's a big benefit to code collobration. What's more, you can manipulate the status of tickets within your projects directly from the commit messages. There is no need to interrupt your work and visit Fengche.co to mark the ticket as Completed or Accepted. Instead, let the commit message do the work!
 
-Feel free to try this feature by signing up at [pragmatic.ly](https://pragmatic.ly).
+Feel free to try this feature by signing up at [Fengche.co](https://fengche.co).
 
 ![VCS Integration](/images/integrate-version-control-system-with-pragmat/vcs-integration.png)
 
@@ -22,18 +22,18 @@ READMORE
 
 ### How to setup ###
 
-1. First, you should make sure the user name or the email is the same with what you use in your Pragmatic.ly account. If not, you can always set the setting in the project. For example:
+1. First, you should make sure the user name or the email is the same with what you use in your Fengche.co account. If not, you can always set the setting in the project. For example:
 
         $ git config user.name "Terry Tai"
-        $ git config user.email "terry@pragmatic.ly"
+        $ git config user.email "terry@fengche.co"
 
-2. Get the commit hook url on your Pragmatic.ly project setting panel and copy this url to your clipboard. We will use it as the callback url latter. Only the administrators of the project can view the settings.
+2. Get the commit hook url on your Fengche.co project setting panel and copy this url to your clipboard. We will use it as the callback url latter. Only the administrators of the project can view the settings.
 
     ![Project Setting](/images/integrate-version-control-system-with-pragmat/project-list.png)
 
     ![Edit Project](/images/integrate-version-control-system-with-pragmat/edit-project.png)
 
-3. As said, now Pragmatic.ly supports three services: Github, Bitbucket, Gitlab. Below are the integration steps for each service.
+3. As said, now Fengche.co supports three services: Github, Bitbucket, Gitlab. Below are the integration steps for each service.
 
 #### **Github** ####
 
@@ -60,7 +60,7 @@ The Gitlab configuration is the same as GitHub. So you can refer to the section 
 
 ### How to use ###
 
-1. Associate the commits with your ticket on Pragmatic.ly.
+1. Associate the commits with your ticket on Fengche.co.
 
     For example we have a ticket whose number is 529.
 

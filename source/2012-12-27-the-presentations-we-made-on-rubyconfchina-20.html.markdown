@@ -6,7 +6,7 @@ keywords: RubyConfChina, Ruby, Event
 author: terry
 ---
 
-Last month the [Pragmatic.ly](https://pragmatic.ly) team attent the [RubyConfChina 2012](http://rubyconfchina.org) and we really had a great time there with the ruby developers came from China and also across the world.
+Last month the [Pragmatic.ly](https://fengche.co) team attent the [RubyConfChina 2012](http://rubyconfchina.org) and we really had a great time there with the ruby developers came from China and also across the world.
 
 The conference is very good. It's also the big party of rubyist. Everyone enjoyed that much. Thanks to the organizers!
 
@@ -16,7 +16,7 @@ Below are the two talks we present. Check them out!
 
 ### Real Time Web by Dingding Ye ###
 
-Dingding gave a brief introduction on real time web at the conference. As you know, [Pragmatic.ly](https://pragmatic.ly) is a project management tool featuring real time collaboration. Dingding spends latest three years on real time web products. In his talk, Dingding explains different solutions of making web real time and how to choose the right solution based on the different requirements. You can watch the talk [here](http://railscast-china.com/episodes/rubyconf-2012-yedingding).
+Dingding gave a brief introduction on real time web at the conference. As you know, [Pragmatic.ly](https://fengche.co) is a project management tool featuring real time collaboration. Dingding spends latest three years on real time web products. In his talk, Dingding explains different solutions of making web real time and how to choose the right solution based on the different requirements. You can watch the talk [here](http://railscast-china.com/episodes/rubyconf-2012-yedingding).
 
 And the PPT is here.
 

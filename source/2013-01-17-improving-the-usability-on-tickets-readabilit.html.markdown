@@ -6,7 +6,7 @@ keywords: UI/UX, Ticket Management, Usability
 author: dingding
 ---
 
-Steve Krug's instant classic book "[Don't Make Me Think](http://www.amazon.com/Dont-Make-Me-Think-Usability/dp/0321344758)" is one of our favorite design books. Simplicity and usability is our lifetime of pursuit on products design. With regard to single page application like [Pragmatic.ly](https://pragmatic.ly), balancing the complexity of features with the simplicity of design is indeed difficult, but we're keep iterating. Here're some improvements to the ticket details.
+Steve Krug's instant classic book "[Don't Make Me Think](http://www.amazon.com/Dont-Make-Me-Think-Usability/dp/0321344758)" is one of our favorite design books. Simplicity and usability is our lifetime of pursuit on products design. With regard to single page application like [Pragmatic.ly](https://fengche.co), balancing the complexity of features with the simplicity of design is indeed difficult, but we're keep iterating. Here're some improvements to the ticket details.
 
 ### Markdown Supported ###
 
@@ -33,7 +33,7 @@ Ticket attribute fields are mainly for manageing ticket, as well as showing what
 
 We turn back to full-column scroll instead of seperated scroll.
 
-Within the [Improving Ticket Interactive](http://blog.pragmatic.ly/improving-ticket-interactive) release, we changed the ticket detail column to a seperated, activity-only scroll. Thanks to our lovely users who give us the feedbacks on the changes and we learn more from them! What we expect is that we should be able to review ticket info while reading and posting comments. So we made them seperated. And the activity-only scroll works very good for big screen resolution.
+Within the [Improving Ticket Interactive](https://fengche.co/blog/improving-ticket-interactive) release, we changed the ticket detail column to a seperated, activity-only scroll. Thanks to our lovely users who give us the feedbacks on the changes and we learn more from them! What we expect is that we should be able to review ticket info while reading and posting comments. So we made them seperated. And the activity-only scroll works very good for big screen resolution.
 
 However, smaller resolution like 1280x800 is not good due to the height limitation. As a result, we turn back to full-column scroll but with some extra improvements. Based on different screen resolution, the column will be smart balanced the two section of ticket information and its activities. So far it works good.
 
@@ -44,4 +44,3 @@ Now the comment form will always be sticky on the bottom. So you can always star
 <br/>
 
 We hope you enjoy the changes, as always, any feedbacks are welcome!
-

@@ -6,7 +6,7 @@ keywords: Productivity, Product Design, Lean Product Management
 author: dingding
 ---
 
-Last week was a big milestone for us. After a two month private beta period we publicly launched [Pragmatic.ly](https://pragmatic.ly "Lean Collaborative Project Management Tool"). Many thanks to our private beta users for their encouraging words and kind feedback which we used to improve Pragmatic.ly. Our users are always extremely important to us.
+Last week was a big milestone for us. After a two month private beta period we publicly launched [Pragmatic.ly](https://fengche.co "Lean Collaborative Project Management Tool"). Many thanks to our private beta users for their encouraging words and kind feedback which we used to improve Pragmatic.ly. Our users are always extremely important to us.
 
 <blockquote>
   <p>Pragmatic.ly is an elegant project management tool. It provides us just enough features for using with a very concise and clear interface, and makes project management more enjoyable.<p>
@@ -28,6 +28,6 @@ But back to Pragmatic.ly - we were inspired by Asana but found it didn't work we
 
 Keeping simplicity in mind, we started from scratch. Following the tips from "[Bootstrapping Design](http://bootstrappingdesign.com/)", using [Ruby on Rails](http://rubyonrails.org/), [Spine.JS](http://spinejs.com/) and [Twitter Bootstrap](http://twitter.github.com/bootstrap), we finally created a pragmatic way for you to manage your software projects. It's a learning process from Asana and we stood on the shoulders of giants, but it's definitely not a ripoff.
 
-[Pragmatic.ly](https://pragmatic.ly/) is still under heavy development and we'll continue adding more value to it, such as git integration, project analytics, command line tools, etc.
+[Pragmatic.ly](https://fengche.co/) is still under heavy development and we'll continue adding more value to it, such as git integration, project analytics, command line tools, etc.
 
-If you're looking for a project management tool to help your startup make better products easier, [try it today](https://pragmatic.ly) and follow [@pragmatic_ly](https://twitter.com/pragmatic_ly) to keep up with what's new. Please let us know what you think and what features you’d like to see next and feel free to contact us via [support@pragmatic.ly](mailto:support@pragmatic.ly) or mention [@pragmatic_ly](https://twitter.com/pragmatic_ly) on twitter.
+If you're looking for a project management tool to help your startup make better products easier, [try it today](https://fengche.co) and follow [@pragmatic_ly](https://twitter.com/pragmatic_ly) to keep up with what's new. Please let us know what you think and what features you’d like to see next and feel free to contact us via [support@pragmatic.ly](mailto:support@pragmatic.ly) or mention [@pragmatic_ly](https://twitter.com/pragmatic_ly) on twitter.

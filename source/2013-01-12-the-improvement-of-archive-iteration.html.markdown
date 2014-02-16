@@ -48,4 +48,4 @@ If you have any questions or feedback, feel free to let us know.
 
 ### About Pragmatic.ly ###
 
-[Pragmatic.ly](https://pragmatic.ly) is a lean collaborative project management tool aiming to help small teams make better products easier. It's the ideal and elegant project management tool for tech startups.
+[Pragmatic.ly](https://fengche.co) is a lean collaborative project management tool aiming to help small teams make better products easier. It's the ideal and elegant project management tool for tech startups.

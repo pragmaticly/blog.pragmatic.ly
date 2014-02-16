@@ -6,7 +6,7 @@ keywords: ChangeLog, Product Management Tool
 author: terry
 ---
 
-August 2012 has been a big month for [Pragmatic.ly](https://pragmatic.ly). We did a lot of optimization and tried our best to give more benefits to our users. So we really hope our users will love what we did in last month.
+August 2012 has been a big month for [Pragmatic.ly](https://fengche.co). We did a lot of optimization and tried our best to give more benefits to our users. So we really hope our users will love what we did in last month.
 
 So let me take an opportunity to introduce the cutting-edge main changes that we have made in month of August.
 
@@ -60,5 +60,4 @@ Tickets are connected! Just by adding '#' with ticket ID into any descriptions o
 
 <br/>
 
-Except for the main features that we created last month, we also did a lot of small improvements and bug fixing. If you continue using [Pragmatic.ly](https://pragmatic.ly) you will find more surprises that can wow you for sure!
-
+Except for the main features that we created last month, we also did a lot of small improvements and bug fixing. If you continue using [Pragmatic.ly](https://fengche.co) you will find more surprises that can wow you for sure!
