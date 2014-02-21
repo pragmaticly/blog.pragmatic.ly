@@ -1,7 +1,7 @@
 ---
 title: "新功能：智能通知"
 date: 2014-02-17 22:45 +08:00
-tags: Announcement, 通知
+tags: Announcement, Smart Notification, New Feature, Notification, 通知
 author: roy
 disqus_identifier: 'smart-notification-announcement'
 ---
@@ -36,12 +36,44 @@ disqus_identifier: 'smart-notification-announcement'
 
 我们承诺过会让您更加专注，那么我们怎么能给您带来如此多的以外干扰呢？目前我们这样来处理，当一个任务被创建的时候，我们会延迟一分钟发送邮件提醒。如果在这个延迟的一分钟内这个相关的任务发生了其他变化，比如分配、设置优先级、设置截止日期之类的操作的话，一分钟延迟结束后我们会把所有信息汇总到一封邮件发给您。
 
-这样降低了通知的频率，并且在这一封汇总信息的邮件中，您也不回错过任何重要信息。
+这样降低了提醒的频率，并且在这一封汇总信息的邮件中，您也不会错过任何重要信息。
 
-## 设置
+## Notification 设置
 
 您可以在“个人资料”中开启或者关闭它
 
 ![setting smart notificaion](smart-notification-announcement/seting-smart-notification.png)
+
+* 邮件通知
+
+当您开启后，在 Notification Center ![Notification Center](smart-notification-announcement/notification-center.png) 中所记录发生的事情都会被通过 email 的形式发送给您。
+
+当然，正如前面所说的，我们为了避免同一 Ticket 对您的重复打扰，对于同一个任务，我做了一分钟的延迟发送处理，也就说当一个任务被创建后，不会马上发送提醒邮件，而是延迟一分钟发送。如果在这延迟的一分钟内，您对这个任务添加了描述、改变了任务列表、改变了优先级、设置了截止日期或者分配给了某个成员，这些操作，我们会以一封邮件把所有的信息都发送给您。而不会每一个操作，就给您发送一个提醒邮件。最大话的减少对您的打扰。所以我们**建议您开启此选项**。
+
+* 智能通知
+
+当您开启此项后，我们会对您的 Web 或者 Mobile 是否在线做判断。
+
+如果您使用浏览器登录了 Fengche.co 或者正在使用 Mobile 客户端，此时我们会保持 Email 提醒静默。只为您提供浏览器 Desktop Notification，
+
+![Desktop Notification](smart-notification-announcement/desktop-notification.png)
+
+并且会把重要的信息（例如：任务创建、任务分配的改变、评论信息等）保存在 Notification Center 里面。
+
+![Notification Center Details](smart-notification-announcement/notification-center-detail.png)
+
+这样您会更加专注于工作，而不被平凡的邮件所打扰。并且您也可以在 Notification Center 里面看到所有发生的事情，而不必担心“过于专注”手头的工作而错过重要信息。因此我们**建议您开启此选项**。
+
+## 改进计划
+
+我们目前提供的 Notificaiton 形式有：
+
+* Desktop Notificaiton
+* Email Notificaiton
+* Notification Center （通知中心）
+
+这里还有一个我们对其改进的 Mockup
+
+![Notification Mockup](smart-notification-announcement/notification-mockup.png)
 
 如果您有什么疑问，或者更好的建议的话，欢迎您与我们交流。
