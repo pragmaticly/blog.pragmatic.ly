@@ -35,18 +35,21 @@
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <link href="/blog/stylesheets/application.css?1392193221" media="screen" rel="stylesheet" type="text/css" />
-    <script src="/blog/javascripts/application.js?1392188988" type="text/javascript"></script>
+    <link href="/stylesheets/application.css?1392193221" media="screen" rel="stylesheet" type="text/css" />
+    <script src="/javascripts/application.js?1392188988" type="text/javascript"></script>
 
     
-
+    <script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script>
+    <script type="text/javascript">var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-4054156-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();</script>
     
-    <!-- start Mixpanel -->
-    <script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f);b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==
-typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");for(g=0;g<i.length;g++)f(c,i[g]);
-b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
-    mixpanel.init("43a596021773ee49e7b13713d89c9875");</script>
-    <!-- end Mixpanel -->
+
     
   </head>
 
@@ -92,7 +95,90 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
     <article class="post">
       <header>
   <h2 class="title">
-    <a href="/blog/new-feature-comment-via-email">新功能：更好的与邮件集成来管理项目</a>
+    <a href="/introduce-the-new-dashboard">新功能: 控制面板</a>
+  </h2>
+</header>
+
+<aside>
+  <ul class="meta">
+    <li class="author-photo">
+      <a href="http://beenhero.com">
+        <img alt="" width="120" height="120" src="/images/ben-he.png?1379005285" />
+      </a>
+    </li>
+    <li class="author">
+     by 何斌
+    </li>
+    <li class="date">
+      Oct 16, 2013
+    </li>
+    <li class="tags">
+      
+        <a href="/tags/annoucement">Annoucement</a>
+      
+        <a href="/tags/new-feature">New Feature</a>
+      
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <h2>为什么现在才有控制面板?</h2>
+
+<p>我们一开始并没有去做这块, 除了为了保持我们产品精益化渐进外. 我们觉得控制面板不是初期用户所需的必要功能. 新用户来试用我们的产品, 最主要是要体验任务管理/团队协作的核心功能, 不放控制面板的好处是, 他创建帐户后, 可以直接了当地进入项目开始体验流程.</p>
+
+<p>而当 Fengche.co 发展到现在, 已经有很大一部分用户拥有不止一个项目, 甚至同时拥有五六个项目的. 那么用户对所有的项目的统揽, 管理, 归档等需求就随之产生了.</p>
+
+<p>好的, 那么来看看我们新打造的控制面板.</p>
+
+<h2>卡片式布局方式</h2>
+
+<p><img alt="Dashboard Snapshot" width="720" height="396" src="/images/introduce-the-new-dashboard/dashboard-snapshot.png?1384231969"></p>
+
+<p>如截图所见, 一个项目按一个卡片的形式展现, 上下两个区块用以区分「我的项目」和「参与的项目」. 「参与的项目」是你被邀请到他人的项目, 你不具有对项目的管理权限. 「我的项目」是你自己帐户下创建的项目, 你可以编辑/归档/删除项目.</p>
+
+<p>之所以采用卡片式的展示方式, 一是项目是一个个独立单元, 相互之间数据和团队成员都是独立的, 所以用单独的卡片代表一个项目, UI上非常贴切; 二是, 控制面板作为项目入口, 快速进入项目是最常用的功能, 那么卡片这种大区块的导航, 你直接点击卡片就能进入项目, 使用起来是非常轻松愉快的.</p>
+
+<h2>卡片的数据呈现及功能</h2>
+
+<p><img alt="Card Annotation" width="550" height="506" src="/images/introduce-the-new-dashboard/project-card-annotation.png?1384231969"></p>
+
+<p>截图是控制面板里的项目卡片指示图, 你点击右上角的帮助按钮(?) 就可以看到.
+卡片上展示的信息和数据分别有:</p>
+
+<ul>
+<li>
+<h4>项目名称</h4>
+
+<p>为你的项目取一个酷酷的代号, 是最具创造力的开始 :)</p>
+</li>
+<li>
+<h4>项目进度</h4>
+
+<p>显而易见的进度图, 让你了解该项目的进度状况. 下面一行文字具体告知, 该项目总共有多少任务, 已经完成了多少任务.</p>
+</li>
+<li>
+<h4>项目一周活跃度</h4>
+
+<p>通过四种颜色(取决于你的项目模板, 可能只有三种或两种颜色), 代表任务活动的类型: 新建/开始/完成/通过审核.
+而圆圈的大小代表活跃度, 将一天24小时划分为: 凌晨/...</p>
+</li>
+</ul>
+
+  <p>
+    ......
+  </p>
+  <p>
+    <a href="/introduce-the-new-dashboard">Read more →</a>
+  </p>
+</div>
+
+    </article>
+  
+    <article class="post">
+      <header>
+  <h2 class="title">
+    <a href="/new-feature-comment-via-email">新功能：更好的与邮件集成来管理项目</a>
   </h2>
 </header>
 
@@ -100,7 +186,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
   <ul class="meta">
     <li class="author-photo">
       <a href="http://poiyzy.github.io">
-        <img alt="" width="120" height="120" src="/blog/images/zhuoyu-yang.png?1379005285" />
+        <img alt="" width="120" height="120" src="/images/zhuoyu-yang.png?1379005285" />
       </a>
     </li>
     <li class="author">
@@ -111,9 +197,9 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
     </li>
     <li class="tags">
       
-        <a href="/blog/tags/announcement">Announcement</a>
+        <a href="/tags/announcement">Announcement</a>
       
-        <a href="/blog/tags/new-feature">New feature</a>
+        <a href="/tags/new-feature">New feature</a>
       
     </li>
   </ul>
@@ -140,7 +226,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
     ......
   </p>
   <p>
-    <a href="/blog/new-feature-comment-via-email">Read more →</a>
+    <a href="/new-feature-comment-via-email">Read more →</a>
   </p>
 </div>
 
@@ -149,7 +235,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
     <article class="post">
       <header>
   <h2 class="title">
-    <a href="/blog/we-are-back">写在 Pragmatic.ly 即将两周年</a>
+    <a href="/we-are-back">写在 Pragmatic.ly 即将两周年</a>
   </h2>
 </header>
 
@@ -157,7 +243,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
   <ul class="meta">
     <li class="author-photo">
       <a href="http://yedingding.com">
-        <img alt="" width="120" height="120" src="/blog/images/dingding-ye.png?1379005285" />
+        <img alt="" width="120" height="120" src="/images/dingding-ye.png?1379005285" />
       </a>
     </li>
     <li class="author">
@@ -168,16 +254,16 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
     </li>
     <li class="tags">
       
-        <a href="/blog/tags/startup">startup</a>
+        <a href="/tags/startup">startup</a>
       
-        <a href="/blog/tags/thoughts">thoughts</a>
+        <a href="/tags/thoughts">thoughts</a>
       
     </li>
   </ul>
 </aside>
 
 <div class="content">
-  <p><img alt="弯路和未来" width="586" height="500" src="/blog/images/we-are-back/detour-and-sunshine.jpg?1384231969"></p>
+  <p><img alt="弯路和未来" width="586" height="500" src="/images/we-are-back/detour-and-sunshine.jpg?1384231969"></p>
 
 <p>准确说，Pragmatic.ly 从有这个想法到现在已经有 2 年了。11 年 10 月份的一个晚上跟 Daniel 和 Terry 在对我们所有用过的项目管理工具吐完槽以后，然后决定自己造一个，12 年春节前后真正当个事做，4 月底 Ben 加入，7 月份发布 Beta，先在海外做了差不多 8 个月，今年 4 月份开始调整方向，转向国内，6 月底重新上线到现在，整个过程各种状况各种弯路，但是每天都能感觉到变化，每天都是新的学习，乐在其中。</p>
 
@@ -199,7 +285,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
     ......
   </p>
   <p>
-    <a href="/blog/we-are-back">Read more →</a>
+    <a href="/we-are-back">Read more →</a>
   </p>
 </div>
 
@@ -208,7 +294,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
     <article class="post">
       <header>
   <h2 class="title">
-    <a href="/blog/announcing-uploading-avatar">Beyonds Gravatar and set your profile picture</a>
+    <a href="/announcing-uploading-avatar">Beyonds Gravatar and set your profile picture</a>
   </h2>
 </header>
 
@@ -216,7 +302,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
   <ul class="meta">
     <li class="author-photo">
       <a href="http://terrytai.com">
-        <img alt="" width="120" height="120" src="/blog/images/terry-tai.png?1379005285" />
+        <img alt="" width="120" height="120" src="/images/terry-tai.png?1379005285" />
       </a>
     </li>
     <li class="author">
@@ -227,9 +313,9 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
     </li>
     <li class="tags">
       
-        <a href="/blog/tags/announcement">Announcement</a>
+        <a href="/tags/announcement">Announcement</a>
       
-        <a href="/blog/tags/new-feature">New feature</a>
+        <a href="/tags/new-feature">New feature</a>
       
     </li>
   </ul>
@@ -242,7 +328,7 @@ instead of using <a href="http://en.gravatar.com/">Gravatar</a>.</p>
 
 <p>The UX is very simple.</p>
 
-<p><img alt="" width="550" height="420" src="/blog/images/announcing-uploading-avatar/update_avatar.jpg?1379005285" /></p>
+<p><img alt="" width="550" height="420" src="/images/announcing-uploading-avatar/update_avatar.jpg?1379005285" /></p>
 
 <h3>Why is such a simple feature not included from the first day?</h3>
 
@@ -261,7 +347,7 @@ globally recognized avatars, in one hour.</p>
     ......
   </p>
   <p>
-    <a href="/blog/announcing-uploading-avatar">Read more →</a>
+    <a href="/announcing-uploading-avatar">Read more →</a>
   </p>
 </div>
 
@@ -270,7 +356,7 @@ globally recognized avatars, in one hour.</p>
     <article class="post">
       <header>
   <h2 class="title">
-    <a href="/blog/integrate-version-control-system-with-pragmat">Introducing VCS integration with Fengche.co</a>
+    <a href="/integrate-version-control-system-with-pragmat">Introducing VCS integration with Fengche.co</a>
   </h2>
 </header>
 
@@ -278,7 +364,7 @@ globally recognized avatars, in one hour.</p>
   <ul class="meta">
     <li class="author-photo">
       <a href="http://terrytai.com">
-        <img alt="" width="120" height="120" src="/blog/images/terry-tai.png?1379005285" />
+        <img alt="" width="120" height="120" src="/images/terry-tai.png?1379005285" />
       </a>
     </li>
     <li class="author">
@@ -289,11 +375,11 @@ globally recognized avatars, in one hour.</p>
     </li>
     <li class="tags">
       
-        <a href="/blog/tags/vcs">VCS</a>
+        <a href="/tags/vcs">VCS</a>
       
-        <a href="/blog/tags/integration">Integration</a>
+        <a href="/tags/integration">Integration</a>
       
-        <a href="/blog/tags/git">Git</a>
+        <a href="/tags/git">Git</a>
       
     </li>
   </ul>
@@ -308,7 +394,7 @@ globally recognized avatars, in one hour.</p>
 
 <p>Feel free to try this feature by signing up at <a href="https://fengche.co">Fengche.co</a>.</p>
 
-<p><img alt="VCS Integration" width="507" height="512" src="/blog/images/integrate-version-control-system-with-pragmat/vcs-integration.png?1364633909" /></p>
+<p><img alt="VCS Integration" width="507" height="512" src="/images/integrate-version-control-system-with-pragmat/vcs-integration.png?1364633909" /></p>
 
 <p>So far, we have already supported three VCS services: <a href="https://github.com">GitHub</a>, <a href="https://bitbucket.org">BitBucket</a> and <a href="http://gitlab.org">Gitlab</a>. And more are coming. Let us know if the VCS you&rsquo;re using now is not in the list and you want to see it soon!</p>
 
@@ -318,58 +404,7 @@ globally recognized avatars, in one hour.</p>
     ......
   </p>
   <p>
-    <a href="/blog/integrate-version-control-system-with-pragmat">Read more →</a>
-  </p>
-</div>
-
-    </article>
-  
-    <article class="post">
-      <header>
-  <h2 class="title">
-    <a href="/blog/improving-the-usability-on-tickets-readabilit">Improving the usability on tickets readability and team collaboration</a>
-  </h2>
-</header>
-
-<aside>
-  <ul class="meta">
-    <li class="author-photo">
-      <a href="http://yedingding.com">
-        <img alt="" width="120" height="120" src="/blog/images/dingding-ye.png?1379005285" />
-      </a>
-    </li>
-    <li class="author">
-     by 叶玎玎
-    </li>
-    <li class="date">
-      Jan 17, 2013
-    </li>
-    <li class="tags">
-      
-        <a href="/blog/tags/ui">UI</a>
-      
-        <a href="/blog/tags/ticket-management">Ticket Management</a>
-      
-        <a href="/blog/tags/usability">Usability</a>
-      
-    </li>
-  </ul>
-</aside>
-
-<div class="content">
-  <p>Steve Krug’s instant classic book “<a href="http://www.amazon.com/Dont-Make-Me-Think-Usability/dp/0321344758">Don’t Make Me Think</a>” is one of our favorite design books. Simplicity and usability is our lifetime of pursuit on products design. With regard to single page application like <a href="https://fengche.co">Pragmatic.ly</a>, balancing the complexity of features with the simplicity of design is indeed difficult, but we’re keep iterating. Here’re some improvements to the ticket details.</p>
-
-<h3>Markdown Supported</h3>
-
-<p>Last week is a sad week for IT world. One of the top talented internet genius <a href="http://en.wikipedia.org/wiki/Aaron_Swartz">Aaron Swartz</a> left us at 26. R.I.P Aaron Swartz! However, Aaron’s contributions to the world will live forever. One of them is <a href="http://en.wikipedia.org/wiki/Markdown">Markdown</a>, a lightweight markup language designed for easy-to-read and easy-to-write.</p>
-
-<p>Now you can write ticket description and comments with Markdown syntax. It’s easy to write and rendering...</p>
-
-  <p>
-    ......
-  </p>
-  <p>
-    <a href="/blog/improving-the-usability-on-tickets-readabilit">Read more →</a>
+    <a href="/integrate-version-control-system-with-pragmat">Read more →</a>
   </p>
 </div>
 
@@ -379,10 +414,10 @@ globally recognized avatars, in one hour.</p>
   
     <ul class="pager">
       
-        <li class="previous"><a href="/blog/">&larr; Newer</a></li>
+        <li class="previous"><a href="/">&larr; Newer</a></li>
       
       
-        <li class="next"><a href="/blog/page/3">Older &rarr;</a></li>
+        <li class="next"><a href="/page/3">Older &rarr;</a></li>
       
     </ul>
   
