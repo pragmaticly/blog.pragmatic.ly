@@ -40,18 +40,21 @@
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <link href="/blog/stylesheets/application.css?1392193221" media="screen" rel="stylesheet" type="text/css" />
-    <script src="/blog/javascripts/application.js?1392188988" type="text/javascript"></script>
+    <link href="/stylesheets/application.css?1392193221" media="screen" rel="stylesheet" type="text/css" />
+    <script src="/javascripts/application.js?1392188988" type="text/javascript"></script>
 
     
-
+    <script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script>
+    <script type="text/javascript">var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-4054156-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();</script>
     
-    <!-- start Mixpanel -->
-    <script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f);b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==
-typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");for(g=0;g<i.length;g++)f(c,i[g]);
-b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
-    mixpanel.init("43a596021773ee49e7b13713d89c9875");</script>
-    <!-- end Mixpanel -->
+
     
   </head>
 
@@ -96,7 +99,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
 
     <header>
   <h2 class="title">
-    <a href="/blog/smart-notification-announcement">新功能：智能通知</a>
+    <a href="/smart-notification-announcement">新功能：智能通知</a>
   </h2>
 </header>
 
@@ -104,7 +107,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
   <ul class="meta">
     <li class="author-photo">
       <a href="http://poiyzy.github.io">
-        <img alt="" width="120" height="120" src="/blog/images/zhuoyu-yang.png?1379005285" />
+        <img alt="" width="120" height="120" src="/images/zhuoyu-yang.png?1379005285" />
       </a>
     </li>
     <li class="author">
@@ -115,15 +118,15 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
     </li>
     <li class="tags">
       
-        <a href="/blog/tags/announcement">Announcement</a>
+        <a href="/tags/announcement">Announcement</a>
       
-        <a href="/blog/tags/智能通知">智能通知</a>
+        <a href="/tags/智能通知">智能通知</a>
       
-        <a href="/blog/tags/通知">通知</a>
+        <a href="/tags/通知">通知</a>
       
     </li>
     <li class="back-link">
-      <a href="/blog">&lsaquo; 返回博客主页</a>
+      <a href="/">&lsaquo; 返回博客主页</a>
     </li>
   </ul>
 </aside>
@@ -135,7 +138,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
 
 <p>虽然没有太多反馈，但是我可以很诚实的告诉你，随着项目的不断迭代长大，随着团队成员的不断增长，随着这个项目的活跃越来越高，终究有一天，你会忍无可忍的。</p>
 
-<p>对于以前的方式是这样的，比如当有一个讨论被创建的时候，首先你的电脑会弹出桌面通知，然后你的邮箱会接受到邮件，如果你的其他移动设备绑定了邮箱的话，比如像我，iPad，iPhone 绑定了邮箱，并且开启实时推送的话，简直就是灾难。。。一动四响。。。</p>
+<p>对于以前的方式是这样的，比如当有一个讨论被创建的时候，首先你的电脑会弹出桌面通知，然后你的邮箱会接受到邮件，如果你的其他移动设备绑定了邮箱的话，比如像我，iPad，iPhone 绑定了邮箱，并且开启实时推送的话，简直就是灾难&hellip;一动四响&hellip;</p>
 
 <p>这绝对不是风车的目标。风车是希望“给你一个简洁的空间、不让你迷失在信息的海洋中、让你工作更加专注”！</p>
 
@@ -143,59 +146,51 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
 
 <p>首先造成这样的“通知信息轰炸”的原因有两个。一个是重复通知，一个是通知间隔频率过快。</p>
 
-<h4>重复通知</h4>
+<h4>A. 重复通知</h4>
 
 <p>当一个提醒已经被用户看到以后，如果我们继续以其他形式给用户发送重复的提醒的话，我们认为这是一种打扰。比如我正在写代码，看到了桌面通知，而且我也通过这个通知点击进入了相应的页面，那么为什么还要发邮件给我？</p>
 
-<p>这是对用户的不负责任，请原谅我们以前没有及时解决这个问题。</p>
+<p><strong>解决方案：智能通知</strong><br>
+现在我们采用这样的处理方式：当用户登录 Fengche.co 并保持在线状态，我们只推送桌面通知；只有当你处于离线状态，我们才会发送邮件通知给你。不管是哪种形式，所有的提醒都会被记录在“通知中心”里面，保证你不会错过任何重要的事情。</p>
 
-<p>目前我们采用的处理方式是这样，当用户登录 Fengche.co 后，并切保持在线状态的话，我们仅仅只推送桌面通知；只有当你离线以后，我们才会发送邮件通知给你。并且不管是那种形式，所有的提醒都会被记录在“通知中心”里面，保证你不会错过任何重要的事情。</p>
+<h4>B. 通知间隔频率过快</h4>
 
-<h4>通知间隔频率过快</h4>
+<p>有没有这样的感觉，有时候当一个“任务”被新建的时候，在一分钟之内，或者仅仅几十秒内，你会突然收到好几封邮件。比如，第一封是新建任务，第二封是这个任务分配给了你&hellip;</p>
 
-<p>有没有这样的感觉，有时候当一个“任务”被新建的时候，在一分钟之内，或者仅仅几十秒内，你会突然收到好几封邮件。比如，第一封是新建任务，但是你不知道具体的任务描述，第二封是这个任务分配给了你。</p>
+<p>也许我只需要知道有个任务被创建了，也许我现在没有时间或者精力去看这些细节，也许我现在正专注做某件事情&hellip; 总之我只需要知道有任务被创建了，但是目前不关心细节。那么这样高频率的信息轰炸对于我来说就是赤裸裸的干扰！它让我不再专注！</p>
 
-<p>也许我只需要知道有个任务被创建了，也许我现在没有时间或者精力去看这些细节，也许我现在正专注做某件事情。。。总之我只需要知道有任务被创建了，但是目前不关心细节。那么这样低频率的信息轰炸对于我来说就是赤裸裸的干扰！它让我不再专注！</p>
+<p><strong>解决方案：延迟发送</strong><br>
+现在我们这样来处理：当一个任务被创建的时候，我们会延迟一分钟发送邮件提醒。如果在这个延迟的一分钟内这个相关的任务发生了其他变化，比如分配、设置优先级、设置截止日期之类的操作的话，一分钟延迟结束后我们会把所有信息汇总到一封邮件发给你。这样降低了提醒的频率，并且在这一封汇总信息的邮件中，你也不会错过任何重要信息。</p>
 
-<p>我们承诺过会让你更加专注，那么我们怎么能给你带来如此多的以外干扰呢？目前我们这样来处理，当一个任务被创建的时候，我们会延迟一分钟发送邮件提醒。如果在这个延迟的一分钟内这个相关的任务发生了其他变化，比如分配、设置优先级、设置截止日期之类的操作的话，一分钟延迟结束后我们会把所有信息汇总到一封邮件发给你。</p>
+<h3>如何设置通知？</h3>
 
-<p>这样降低了提醒的频率，并且在这一封汇总信息的邮件中，你也不会错过任何重要信息。</p>
+<p>目前在风车里面，我们有两种不同级别的通知设置：全站邮件通知和项目邮件通知。你可以随时根据自己的需求，来相应开启或者关闭某种通知设置。</p>
 
-<h3>通知设置</h3>
-
-<p>目前在风车里面，我们有三种不同级别的通知设置：智能通知、项目邮件通知和全站邮件通知。你可以随时开启或者关闭某种通知设置。</p>
-
-<p><img alt="setting smart notificaion" width="1085" height="612" src="/blog/images/smart-notification-announcement/seting-smart-notification.png?1393271164" /></p>
+<p><img alt="setting smart notificaion" width="1085" height="612" src="/images/smart-notification-announcement/seting-smart-notification.png?1393271164" /></p>
 
 <h4>全站邮件通知</h4>
 
-<p>默认全站邮件通知是开启的，这样你就可以通过邮件了解你参与的项目中发生的一切。一旦你关闭此项，那么你将不再收到任何邮件通知。</p>
+<p>全站邮件通知设置目前安排在个人资料设置里面。默认全站邮件通知是开启的，这样你就可以通过邮件了解你参与的项目中发生的一切。一旦你关闭此项，那么你将不再收到任何邮件通知。</p>
 
-<h4>智能通知</h4>
+<p>其中「智能通知」是辅助减少信息干扰，让你更加专注于工作。当你启用此项后，如果你使用浏览器登录了网页或者正在使用移动客户端，我们会停止发送邮件通知，而只为你提供桌面通知。</p>
 
-<p>当你开启此项后，如果你使用浏览器登录了网页或者正在使用移动客户端，此时我们会停止发送邮件通知，而只为你提供桌面通知，</p>
-
-<p><img alt="Desktop Notification" width="383" height="129" src="/blog/images/smart-notification-announcement/desktop-notification.png?1393271164" /></p>
+<p><img alt="Desktop Notification" width="383" height="129" src="/images/smart-notification-announcement/desktop-notification.png?1393271164" /></p>
 
 <p>当然，所有重要的信息（例如：任务创建、任务分配的改变、评论信息等）仍然还是会保存在通知中心里面。</p>
 
-<p><img alt="Notification Center Details" width="374" height="359" src="/blog/images/smart-notification-announcement/notification-center-detail.png?1393271164" /></p>
-
-<p>这样你会更加专注于工作，而不被平凡的邮件所打扰。并且你也可以在合理的时候在通知中心里面看到所有发生的事情，而不必担心“过于专注”手头的工作而错过重要信息。因此我们<strong>建议你开启此选项</strong>。</p>
+<p><img alt="Notification Center Details" width="374" height="359" src="/images/smart-notification-announcement/notification-center-detail.png?1393271164" /></p>
 
 <h4>项目邮件通知</h4>
 
-<p><img alt="Project Notification" width="672" height="446" src="/blog/images/smart-notification-announcement/project-notification.png?1393271164" /></p>
+<p>如果你想关闭某一个项目的邮件通知，你可以在控制面板(Dashboard)那个项目卡片里去设置关闭/开启通知。当你关闭后，你将不再收到这个项目的通知邮件，但不会影响其它项目的通知。</p>
 
-<p>当你开启后，在<img alt="通知中心" width="133" height="44" src="/blog/images/smart-notification-announcement/notification-center.png?1393271164" />中所记录发生的事情都会被通过邮件的形式发送给你。当你关闭后，你将不再收到这个项目的通知邮件。</p>
-
-<p>当然，正如前面所说的，我们为了避免同一任务对你的重复打扰，对于同一个任务，做了延迟一分钟的发送处理。如果在这一分钟内，团队成员对这个任务添加了描述、改变了任务列表、改变了优先级、设置了截止日期或者分配给了你，这些操作，我们会以一封邮件把所有的信息都发送给你，最大话的减少对你的打扰。</p>
+<p><img alt="Project Notification" width="336" height="223" src="/images/smart-notification-announcement/project-notification.png?1393480657" /></p>
 
 <h3>改进计划</h3>
 
 <p>以上就是我们已有目前的通知功能，但是我们知道，它还是有不少可以改进的空间，比如一个统一的通知设置界面，比如更加细粒度的通知设置。所以，我们也正在做这些改进，下面是新的设计。</p>
 
-<p><img alt="Notification Mockup" width="469" height="475" src="/blog/images/smart-notification-announcement/notification-mockup.png?1393271164" /></p>
+<p><img alt="Notification Mockup" width="469" height="475" src="/images/smart-notification-announcement/notification-mockup.png?1393271164" /></p>
 
 <p>如果你有什么疑问，或者更好的建议的话，欢迎你与我们交流，谢谢！</p>
 
