@@ -1,6 +1,6 @@
 ---
 title: "新功能：通过邮件完成创建任务、分配任务和设置标签"
-date: 2014-03-12 16:25 +08:00
+date: 2014-03-14 16:25 +08:00
 tags: Announcement, New feature, Notification, Email
 author: roy
 disqus_identifier: 'enhancement-of-email-management'
