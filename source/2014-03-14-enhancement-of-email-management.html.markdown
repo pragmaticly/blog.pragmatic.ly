@@ -10,7 +10,7 @@ disqus_identifier: 'enhancement-of-email-management'
 
 ## 在特定任务列表下创建任务
 
-这里发送邮件的地址规则为 `project+PROJECT_ID+iteration+ITERATION_ID@info.fengche.co`
+这里发送邮件的地址规则为 `project+PROJECT_ID+ITERATION_ID@info.fengche.co`
 
 首先在浏览器中打开你的 Project
 
@@ -18,7 +18,9 @@ disqus_identifier: 'enhancement-of-email-management'
 
 这里我们可以很清楚的找到当前项目的 PROJECT_ID 和 ITERATION_ID.
 
-所以示例中正确地址应该为 `project+421d6f9a13e6+iteration+3da3196195e1@info.fengche.co`
+所以示例中正确地址应该为 `project+421d6f9a13e6+3da3196195e1@info.fengche.co`
+
+READMORE
 
 ![email create ticket](enhancement-of-email-management/email_create_ticket.png)
 
