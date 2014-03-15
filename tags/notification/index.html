@@ -35,18 +35,21 @@
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <link href="/blog/stylesheets/application.css?1392193221" media="screen" rel="stylesheet" type="text/css" />
-    <script src="/blog/javascripts/application.js?1392188988" type="text/javascript"></script>
+    <link href="/stylesheets/application.css?1392193221" media="screen" rel="stylesheet" type="text/css" />
+    <script src="/javascripts/application.js?1392188988" type="text/javascript"></script>
 
     
-
+    <script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script>
+    <script type="text/javascript">var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-4054156-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();</script>
     
-    <!-- start Mixpanel -->
-    <script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f);b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==
-typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");for(g=0;g<i.length;g++)f(c,i[g]);
-b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
-    mixpanel.init("43a596021773ee49e7b13713d89c9875");</script>
-    <!-- end Mixpanel -->
+
     
   </head>
 
@@ -87,14 +90,14 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
 
     <section class="main">
       <div class="container">
-        <h1 class="tag-page-title">Articles tagged '<em>notification</em>'</h1>
+        <h1 class="tag-page-title">Articles tagged '<em>Notification</em>'</h1>
 
 <div id="posts">
   
     <article class="post">
       <header>
   <h2 class="title">
-    <a href="/blog/updates-of-desktop-notification">更新：改进了桌面通知</a>
+    <a href="/enhancement-of-email-management">新功能：通过邮件完成创建任务、分配任务和设置标签</a>
   </h2>
 </header>
 
@@ -102,56 +105,51 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
   <ul class="meta">
     <li class="author-photo">
       <a href="http://poiyzy.github.io">
-        <img alt="" width="120" height="120" src="/blog/images/zhuoyu-yang.png?1379005285" />
+        <img alt="" width="120" height="120" src="/images/zhuoyu-yang.png?1379005285" />
       </a>
     </li>
     <li class="author">
      by 杨濯宇
     </li>
     <li class="date">
-      Mar 12, 2014
+      Mar 14, 2014
     </li>
     <li class="tags">
       
-        <a href="/blog/tags/updates">updates</a>
+        <a href="/tags/announcement">Announcement</a>
       
-        <a href="/blog/tags/notification">notification</a>
+        <a href="/tags/new-feature">New feature</a>
       
-        <a href="/blog/tags/desktop-notification">desktop notification</a>
+        <a href="/tags/notification">Notification</a>
       
-        <a href="/blog/tags/通知">通知</a>
+        <a href="/tags/email">Email</a>
       
     </li>
   </ul>
 </aside>
 
 <div class="content">
-  <p>桌面通知是用户很喜欢的一项功能，当项目中有事情发生时，会即时的通知到你，让你能专注做事，不用在风车里盯着项目，同时又不会错过任何一条重要信息。</p>
+  <p>对于 Fengche.co 中<a href="/new-feature-comment-via-email">使用邮件集成来管理项目</a>这个 Feature 应该大家已经不再陌生了。应用户要求，目前我们加强了邮件管理功能。现在您可以通过使用邮件创建任务的同时，把任务分配给某个团队成员，或者为任务设置标签。</p>
 
-<p>然而在一个大的团队中，当短时间内团队其他人有密集操作或者在讨论任务的时候，如果这个任务跟你无关，那么方便的桌面通知将会变得非常恼人，这些不停地从桌面右上角跳出来的通知会打扰到你目前专注的状态。</p>
+<h2>在特定任务列表下创建任务</h2>
 
-<p>所以为了解决这个问题，我们对桌面通知做了一些更新，希望你喜欢。</p>
+<p>这里发送邮件的地址规则为 <code>project+PROJECT_ID+ITERATION_ID@info.fengche.co</code></p>
 
-<p><img alt="Desktop Notification" width="383" height="129" src="/blog/images/smart-notification-announcement/desktop-notification.png?1393271164" /></p>
+<p>首先在浏览器中打开你的 Project</p>
 
-<p>现在，默认情况下你将只收到跟你相关的桌面通知，包括以下这些情况：</p>
+<p><img alt="find ids" width="627" height="386" src="/images/enhancement-of-email-management/find_iteration_and_project_id.png?1394735488" /></p>
 
-<ul>
-<li>当有人分配了某个分配给你的时候，你会收到弹出的桌面通知。</li>
-<li>当你负责的任务（分配给你）发生任何讨论时，你会收到弹出的桌面通知。</li>
-<li>当任何一个留言里 @ 你的名字的时候，你会收到弹出的桌面通知。</li>
-</ul>
+<p>这里我们可以很清楚的找到当前项目的 PROJECT<em>ID 和 ITERATION</em>ID.</p>
 
-<p>所以，如果讨论任务时，你希望团队某人能迅速的回应你的请求，最好的办法是在讨论中 @ 他。</p>
+<p>所以示例中正确地址应该为 <code>project+421d6f9a13e6+3da3196195e1@info.fengche.co</code></p>
 
-<p><em>如果您对此次更新有任何意见或者建议，随时联系我们，我们将会持续为您提供更加理想的使用体验</em></p>
-
+<p>
 
   <p>
     ......
   </p>
   <p>
-    <a href="/blog/updates-of-desktop-notification">Read more →</a>
+    <a href="/enhancement-of-email-management">Read more →</a>
   </p>
 </div>
 

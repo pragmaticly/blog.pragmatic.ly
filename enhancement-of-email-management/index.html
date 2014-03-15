@@ -12,12 +12,12 @@
     <meta charset="UTF-8">
 
     <title>
-        Hello World
+        新功能：通过邮件完成创建任务、分配任务和设置标签
  - 风车官方博客 | 高效团队协作工具
     </title>
 
     <meta name="description" content="记录风车的产品更新和团队思考">
-    <meta name="keywords" content="  ["Announcement"]
+    <meta name="keywords" content="  ["Announcement", "New feature", "Notification", "Email"]
 ">
     <meta name="author" content="The Fengche.co Team">
 
@@ -58,7 +58,7 @@
     
   </head>
 
-  <body class="hello-world hello-world_index">
+  <body class="enhancement-of-email-management enhancement-of-email-management_index">
 
     <header class="navbar navbar-fixed-top" role="banner">
       <div class="container">
@@ -99,26 +99,32 @@
 
     <header>
   <h2 class="title">
-    <a href="/hello-world">Hello World</a>
+    <a href="/enhancement-of-email-management">新功能：通过邮件完成创建任务、分配任务和设置标签</a>
   </h2>
 </header>
 
 <aside>
   <ul class="meta">
     <li class="author-photo">
-      <a href="http://yedingding.com">
-        <img alt="" width="120" height="120" src="/images/dingding-ye.png?1379005285" />
+      <a href="http://poiyzy.github.io">
+        <img alt="" width="120" height="120" src="/images/zhuoyu-yang.png?1379005285" />
       </a>
     </li>
     <li class="author">
-     by 叶玎玎
+     by 杨濯宇
     </li>
     <li class="date">
-      Jun 17, 2012
+      Mar 14, 2014
     </li>
     <li class="tags">
       
         <a href="/tags/announcement">Announcement</a>
+      
+        <a href="/tags/new-feature">New feature</a>
+      
+        <a href="/tags/notification">Notification</a>
+      
+        <a href="/tags/email">Email</a>
       
     </li>
     <li class="back-link">
@@ -128,20 +134,57 @@
 </aside>
 
 <div class="content">
-  <p>Today, we&rsquo;re excited to announce the beta version of <a title="Lean Collaborative Product Management Tool" href="https://fengche.co">Pragmatic.ly</a>, our new product to simplify the project management process.</p>
+  <p>对于 Fengche.co 中<a href="/new-feature-comment-via-email">使用邮件集成来管理项目</a>这个 Feature 应该大家已经不再陌生了。应用户要求，目前我们加强了邮件管理功能。现在您可以通过使用邮件创建任务的同时，把任务分配给某个团队成员，或者为任务设置标签。</p>
 
-<p>Pragmatic.ly is a fast and easy to use project management tool featuring real time collaboration. For years of developing products, we have tried many different project management tools. However, as a small team(&lt;= 10), we found that most of them are too complex to do lots of work about work and most of them don&rsquo;t care about communication, histories which force us to use different tools for same purpose. We&rsquo;re always imaging there will be a tool which will make the team focus on the work with maximum productivity. That&rsquo;s why we created Pragmatic.ly.</p>
+<h2>在特定任务列表下创建任务</h2>
 
-<p>Our vision for project management is a tool where you can plan, work, communicate and review in one place with great user experience. Below are some features of Pragmatic.ly we want to share with you.</p>
+<p>这里发送邮件的地址规则为 <code>project+PROJECT_ID+ITERATION_ID@info.fengche.co</code></p>
 
-<ul>
-<li><strong>Single Page Interface</strong> - Everything related to your project, including iterations, tickets, comments, are well organzied in one page. No anonying page loading, fast transition, the fluid experience of desktop app are bringing to web now. It’s clean, simple, easy and fast.</li>
-<li><strong>Real Time Collaboration</strong> - Open the page and then you&rsquo;re set, no reloading required. All the updates and actions related to the project such as iterations, tickets, comments will automatically shown to you in real time to keep everyone in the same page.</li>
-<li><strong>Notifications and Activity Feed</strong> - Miss the activities while offline? It&rsquo;s ok and you&rsquo;re easy to catch up here. The in-page notifications will let you quickly browse what happened in the project when you&rsquo;re away and the activity feed will let you quickly catch up what happened in an iteration and ticket.</li>
-<li><strong>Easy and Efficient Management</strong> - The management about project is effortless and painless here to let you just focus on what matters. Stop wasting time to do &lsquo;work about work&rsquo; and instead work on the project itself!</li>
-</ul>
+<p>首先在浏览器中打开你的 Project</p>
 
-<p>Pragmatic.ly is currently in beta release and we&rsquo;re working hard to make it simple, elegant, useful and fun. So, if you&rsquo;re looking for a project management tool to maximize your productivity, sign up for the beta today. There are more shiny features on the way, so make sure to check back often to keep up with what&rsquo;s new. Please let us know what you think and what features you’d like to see next and feel free to contacts us via <a href="support@pragmatic.ly">support@pragmatic.ly</a> or mention <a href="mailto:https://twitter.com/pragmatic_ly">@pragmatic_ly</a> on twitter.</p>
+<p><img alt="find ids" width="627" height="386" src="/images/enhancement-of-email-management/find_iteration_and_project_id.png?1394735488" /></p>
+
+<p>这里我们可以很清楚的找到当前项目的 PROJECT<em>ID 和 ITERATION</em>ID.</p>
+
+<p>所以示例中正确地址应该为 <code>project+421d6f9a13e6+3da3196195e1@info.fengche.co</code></p>
+
+<p></p>
+
+<p><img alt="email create ticket" width="826" height="230" src="/images/enhancement-of-email-management/email_create_ticket.png?1394901711" /></p>
+
+<p>发送邮件后，Fengche.co 将会在对应的项目的任务列表中创建刚才设置的任务</p>
+
+<p><img alt="create ticket" width="398" height="245" src="/images/enhancement-of-email-management/create_ticket_in_iteration.png?1394735488" /></p>
+
+<h2>设置标签</h2>
+
+<p>如果刚才的任务我们想设置一个标签，只需要在邮件标题后面加上 <code>#标签名称#</code> 即可。<strong>注意空格哦</strong></p>
+
+<p><img alt="email set tag" width="824" height="218" src="/images/enhancement-of-email-management/email_set_tag.png?1394901711" /></p>
+
+<p>创建任务时，设置标签</p>
+
+<p><img alt="set tag" width="398" height="274" src="/images/enhancement-of-email-management/set_tag.png?1394735488" /></p>
+
+<h2>分配给团队成员</h2>
+
+<p>如果您想在创建任务同时分配给某个团队成员，只需要在邮件标题后面加上 <code>@成员</code>。<strong>同样需要注意空格</strong></p>
+
+<p><img alt="email assign to member" width="826" height="255" src="/images/enhancement-of-email-management/email_assign_to_member.png?1394901711" /></p>
+
+<p>创建时，自动分配给指定成员</p>
+
+<p><img alt="assign to member" width="396" height="267" src="/images/enhancement-of-email-management/assign_to_member.png?1394735488" /></p>
+
+<p><em>当然您也可以同时完成上述操作</em></p>
+
+<p><img alt="email set tag and assign" width="826" height="262" src="/images/enhancement-of-email-management/email_set_tag_and_assign.png?1394901711" /></p>
+
+<p>创建任务时，同时设置标签，并分配给团队成员</p>
+
+<p><img alt="set tag and assign" width="397" height="275" src="/images/enhancement-of-email-management/set_tag_and_assign.png?1394735488" /></p>
+
+<p><strong>如果您有什么疑问，或者更好的建议的话，欢迎您与我们交流。</strong></p>
 
 </div>
 
@@ -152,7 +195,7 @@
   <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
     var disqus_shortname = 'pragmaticlyblog'; // required: replace example with your forum shortname
-    var disqus_identifier = 'hello-world';
+    var disqus_identifier = 'enhancement-of-email-management';
 
     /* * * DON'T EDIT BELOW THIS LINE * * */
     (function() {
