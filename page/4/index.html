@@ -35,18 +35,21 @@
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <link href="/blog/stylesheets/application.css?1392193221" media="screen" rel="stylesheet" type="text/css" />
-    <script src="/blog/javascripts/application.js?1392188988" type="text/javascript"></script>
+    <link href="/stylesheets/application.css?1392193221" media="screen" rel="stylesheet" type="text/css" />
+    <script src="/javascripts/application.js?1392188988" type="text/javascript"></script>
 
     
-
+    <script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script>
+    <script type="text/javascript">var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-4054156-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();</script>
     
-    <!-- start Mixpanel -->
-    <script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f);b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==
-typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");for(g=0;g<i.length;g++)f(c,i[g]);
-b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
-    mixpanel.init("43a596021773ee49e7b13713d89c9875");</script>
-    <!-- end Mixpanel -->
+
     
   </head>
 
@@ -61,15 +64,15 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
           <span class="icon-bar"></span>
         </a>
 
-        <a class="brand" href="https://fengche.co/" tabindex="-1">Fengche.co</a>
+        <a class="brand" href="https://fengcheco.com/" tabindex="-1">Fengche.co</a>
 
         <nav class="nav-collapse collapse" role="navigation">
         <ul class="nav pull-right">
-          <li><a href="https://fengche.co">首页</a></li>
-          <li><a href="https://fengche.co/tour">了解产品</a></li>
-          <li><a href="https://fengche.co/pricing">价格方案</a></li>
-          <li><a class="login" data-target="#login-modal" data-toggle="modal" href="https://fengche.co/login" role="button" type="button">登录</a></li>
-          <li class="action"><a class="signup" href="https://fengche.co/signup">免费注册</a></li>
+          <li><a href="https://fengcheco.com">首页</a></li>
+          <li><a href="https://fengcheco.com/tour">了解产品</a></li>
+          <li><a href="https://fengcheco.com/pricing">价格方案</a></li>
+          <li><a class="login" data-target="#login-modal" data-toggle="modal" href="https://fengcheco.com/login" role="button" type="button">登录</a></li>
+          <li class="action"><a class="signup" href="https://fengcheco.com/signup">免费注册</a></li>
         </ul>
         </nav>
 
@@ -92,7 +95,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
     <article class="post">
       <header>
   <h2 class="title">
-    <a href="/blog/improving-ticket-interactive">Improving Ticket Interactive</a>
+    <a href="/improving-ticket-interactive">Improving Ticket Interactive</a>
   </h2>
 </header>
 
@@ -100,7 +103,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
   <ul class="meta">
     <li class="author-photo">
       <a href="http://beenhero.com">
-        <img alt="" width="120" height="120" src="/blog/images/ben-he.png?1379005285" />
+        <img alt="" width="120" height="120" src="/images/ben-he.png?1379005285" />
       </a>
     </li>
     <li class="author">
@@ -111,11 +114,11 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
     </li>
     <li class="tags">
       
-        <a href="/blog/tags/ticket-management">Ticket Management</a>
+        <a href="/tags/ticket-management">Ticket Management</a>
       
-        <a href="/blog/tags/ui">UI</a>
+        <a href="/tags/ui">UI</a>
       
-        <a href="/blog/tags/changelog">ChangeLog</a>
+        <a href="/tags/changelog">ChangeLog</a>
       
     </li>
   </ul>
@@ -135,7 +138,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
 <li>The ticket title was editable when focused.</li>
 <li>The tags would be a ticket filters immediately.</li>
 <li>The little right pointer had an onhover state.</li>
-</ol><p><img alt="Old Ticket Interactive" width="500" height="185" src="/blog/images/improving-ticket-interactive/old-ticket-interactive.jpg?1364634606"></p>
+</ol><p><img alt="Old Ticket Interactive" width="500" height="185" src="/images/improving-ticket-interactive/old-ticket-interactive.jpg?1364634606"></p>
 
 <p>This is quite a burden to users, we’d relieve it as soon as possible.</p>
 
@@ -147,7 +150,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
     ......
   </p>
   <p>
-    <a href="/blog/improving-ticket-interactive">Read more →</a>
+    <a href="/improving-ticket-interactive">Read more →</a>
   </p>
 </div>
 
@@ -156,7 +159,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
     <article class="post">
       <header>
   <h2 class="title">
-    <a href="/blog/due-date-is-showing-up-in-the-ticket-list">Showing up Due Date</a>
+    <a href="/due-date-is-showing-up-in-the-ticket-list">Showing up Due Date</a>
   </h2>
 </header>
 
@@ -164,7 +167,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
   <ul class="meta">
     <li class="author-photo">
       <a href="http://beenhero.com">
-        <img alt="" width="120" height="120" src="/blog/images/ben-he.png?1379005285" />
+        <img alt="" width="120" height="120" src="/images/ben-he.png?1379005285" />
       </a>
     </li>
     <li class="author">
@@ -175,11 +178,11 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
     </li>
     <li class="tags">
       
-        <a href="/blog/tags/announcement">Announcement</a>
+        <a href="/tags/announcement">Announcement</a>
       
-        <a href="/blog/tags/changelog">ChangeLog</a>
+        <a href="/tags/changelog">ChangeLog</a>
       
-        <a href="/blog/tags/ui">UI</a>
+        <a href="/tags/ui">UI</a>
       
     </li>
   </ul>
@@ -190,19 +193,19 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
 
 <p>Firstly, <em>due-date</em> can be input in the right form, easy click and go.</p>
 
-<p><img alt="Due Date Selector" width="356" height="196" src="/blog/images/due-date-is-showing-up-in-the-ticket-list/date-selector.jpg?1364632825"></p>
+<p><img alt="Due Date Selector" width="356" height="196" src="/images/due-date-is-showing-up-in-the-ticket-list/date-selector.jpg?1364632825"></p>
 
 <p>A ticket has <em>due-date</em> set will show up a date tag, the visual design is different from normal tags. Basically you’re notified that one ticket has due on priority.</p>
 
-<p><img alt="Due Date Tag" width="350" height="47" src="/blog/images/due-date-is-showing-up-in-the-ticket-list/due-date-tag.png?1364633449"></p>
+<p><img alt="Due Date Tag" width="350" height="47" src="/images/due-date-is-showing-up-in-the-ticket-list/due-date-tag.png?1364633449"></p>
 
 <p>Once a ticket is due on or overdue, this ticket item in tickets list will be highlighted and the date tag turns red. You can’t ignore it since the day is coming :) Hope this can push you a bit for getting things done.</p>
 
-<p><img alt="Overdue Tag" width="350" height="38" src="/blog/images/due-date-is-showing-up-in-the-ticket-list/overdue-tag.png?1364633479"></p>
+<p><img alt="Overdue Tag" width="350" height="38" src="/images/due-date-is-showing-up-in-the-ticket-list/overdue-tag.png?1364633479"></p>
 
 <p>When we were designing the interface of due-date, it actually came out a design like this,</p>
 
-<p><img alt="Due date draft" width="183" height="80" src="/blog/images/due-date-is-showing-up-in-the-ticket-list/due-date-draft.png?1364633388"></p>
+<p><img alt="Due date draft" width="183" height="80" src="/images/due-date-is-showing-up-in-the-ticket-list/due-date-draft.png?1364633388"></p>
 
 <p>Using the calendar icon (same from the editing form) to indicate that a ticket has a <em>due-date</em>. When hover on the icon...</p>
 
@@ -210,7 +213,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
     ......
   </p>
   <p>
-    <a href="/blog/due-date-is-showing-up-in-the-ticket-list">Read more →</a>
+    <a href="/due-date-is-showing-up-in-the-ticket-list">Read more →</a>
   </p>
 </div>
 
@@ -219,7 +222,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
     <article class="post">
       <header>
   <h2 class="title">
-    <a href="/blog/announcing-mailsviewer-a-rails-engine-to-view">Announcing mails_viewer - easiest way to test mails in Rails app</a>
+    <a href="/announcing-mailsviewer-a-rails-engine-to-view">Announcing mails_viewer - easiest way to test mails in Rails app</a>
   </h2>
 </header>
 
@@ -227,7 +230,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
   <ul class="meta">
     <li class="author-photo">
       <a href="http://yedingding.com">
-        <img alt="" width="120" height="120" src="/blog/images/dingding-ye.png?1379005285" />
+        <img alt="" width="120" height="120" src="/images/dingding-ye.png?1379005285" />
       </a>
     </li>
     <li class="author">
@@ -238,13 +241,13 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
     </li>
     <li class="tags">
       
-        <a href="/blog/tags/open-source">open source</a>
+        <a href="/tags/open-source">open source</a>
       
-        <a href="/blog/tags/rails">rails</a>
+        <a href="/tags/rails">rails</a>
       
-        <a href="/blog/tags/mail">mail</a>
+        <a href="/tags/mail">mail</a>
       
-        <a href="/blog/tags/engine">engine</a>
+        <a href="/tags/engine">engine</a>
       
     </li>
   </ul>
@@ -269,7 +272,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
     ......
   </p>
   <p>
-    <a href="/blog/announcing-mailsviewer-a-rails-engine-to-view">Read more →</a>
+    <a href="/announcing-mailsviewer-a-rails-engine-to-view">Read more →</a>
   </p>
 </div>
 
@@ -278,7 +281,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
     <article class="post">
       <header>
   <h2 class="title">
-    <a href="/blog/how-we-choose-the-right-video-service-for-us">Video matters! But which hosting service to use?</a>
+    <a href="/how-we-choose-the-right-video-service-for-us">Video matters! But which hosting service to use?</a>
   </h2>
 </header>
 
@@ -286,7 +289,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
   <ul class="meta">
     <li class="author-photo">
       <a href="http://terrytai.com">
-        <img alt="" width="120" height="120" src="/blog/images/terry-tai.png?1379005285" />
+        <img alt="" width="120" height="120" src="/images/terry-tai.png?1379005285" />
       </a>
     </li>
     <li class="author">
@@ -297,9 +300,9 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
     </li>
     <li class="tags">
       
-        <a href="/blog/tags/marketing">marketing</a>
+        <a href="/tags/marketing">marketing</a>
       
-        <a href="/blog/tags/video-service">video service</a>
+        <a href="/tags/video-service">video service</a>
       
     </li>
   </ul>
@@ -310,7 +313,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
 
 <p>As a startup, it’s not easy to create a great product video like other big companies. So we recorded a toturial screencast when we launched <a href="https://fengche.co">Pragmatic.ly</a> instead. Meanwhile we are working on our new attracting product video and we love the process. It’s totally different experience than writing code. We will share more latter when the video is out. But in this post I will talk more about the experience about different video hosting service. We tried <a href="http://vimeo.com/">Vimeo</a>, <a href="http://sublimevideo.net/">SublimeVideo</a>, <a href="http://wistia.com/">Wistia</a> and <a href="http://www.youtube.com/">YouTube</a>.  The result is interesting and quite different than our common sense.</p>
 
-<p><img title="Vimeo" alt="Vimeo" src="/blog/images/how-we-choose-the-right-video-service-for-us/vimeologo.svg?1364632825"></p>
+<p><img title="Vimeo" alt="Vimeo" src="/images/how-we-choose-the-right-video-service-for-us/vimeologo.svg?1364632825"></p>
 
 <p><a href="http://vimeo.com">Vimeo</a> is our first choice because we heard many good words from others...</p>
 
@@ -318,7 +321,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
     ......
   </p>
   <p>
-    <a href="/blog/how-we-choose-the-right-video-service-for-us">Read more →</a>
+    <a href="/how-we-choose-the-right-video-service-for-us">Read more →</a>
   </p>
 </div>
 
@@ -327,7 +330,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
     <article class="post">
       <header>
   <h2 class="title">
-    <a href="/blog/158983791">Released Features of Pragmatic.ly</a>
+    <a href="/158983791">Released Features of Pragmatic.ly</a>
   </h2>
 </header>
 
@@ -335,7 +338,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
   <ul class="meta">
     <li class="author-photo">
       <a href="http://terrytai.com">
-        <img alt="" width="120" height="120" src="/blog/images/terry-tai.png?1379005285" />
+        <img alt="" width="120" height="120" src="/images/terry-tai.png?1379005285" />
       </a>
     </li>
     <li class="author">
@@ -346,9 +349,9 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
     </li>
     <li class="tags">
       
-        <a href="/blog/tags/announcement">Announcement</a>
+        <a href="/tags/announcement">Announcement</a>
       
-        <a href="/blog/tags/changelog">ChangeLog</a>
+        <a href="/tags/changelog">ChangeLog</a>
       
     </li>
   </ul>
@@ -363,7 +366,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
 
 <p>We’re landing a dedicated pricing page now. It’s simple and vibrant. Please don’t hestigate to contacting us if you have anything more that you want to know.</p>
 
-<p><img title="Clear Pricing Policy" alt="Clear Pricing Policy" width="240" height="160" src="/blog/images/158983791/pricing.png?1364632825"></p>
+<p><img title="Clear Pricing Policy" alt="Clear Pricing Policy" width="240" height="160" src="/images/158983791/pricing.png?1364632825"></p>
 
 <h3>Organization Panel</h3>
 
@@ -373,7 +376,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
     ......
   </p>
   <p>
-    <a href="/blog/158983791">Read more →</a>
+    <a href="/158983791">Read more →</a>
   </p>
 </div>
 
@@ -383,10 +386,10 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
   
     <ul class="pager">
       
-        <li class="previous"><a href="/blog/page/3">&larr; Newer</a></li>
+        <li class="previous"><a href="/page/3">&larr; Newer</a></li>
       
       
-        <li class="next"><a href="/blog/page/5">Older &rarr;</a></li>
+        <li class="next"><a href="/page/5">Older &rarr;</a></li>
       
     </ul>
   
@@ -415,11 +418,11 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
             <nav>
             <h5>网站相关</h5>
             <ul>
-              <li><a href="https://fengche.co/">首页</a></li>
-              <li><a href="https://fengche.co/tour">了解产品</a></li>
-              <li><a href="https://fengche.co/pricing">价格方案</a></li>
-              <li><a href="https://fengche.co/privacy">隐私政策</a></li>
-              <li><a href="https://fengche.co/terms">服务条款</a></li>
+              <li><a href="https://fengcheco.com/">首页</a></li>
+              <li><a href="https://fengcheco.com/tour">了解产品</a></li>
+              <li><a href="https://fengcheco.com/pricing">价格方案</a></li>
+              <li><a href="https://fengcheco.com/privacy">隐私政策</a></li>
+              <li><a href="https://fengcheco.com/terms">服务条款</a></li>
             </ul>
             </nav>
           </div>
@@ -429,7 +432,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
               <h5>服务支持</h5>
               <ul>
                 <!--<li><a href="/help">帮助中心</a></li>-->
-                <li><a href="https://fengche.co/get-started">新手帮助</a></li>
+                <li><a href="https://fengcheco.com/get-started">新手帮助</a></li>
                 <li><a href="mailto:support@fengche.co">联系我们</a></li>
               </ul>
             </nav>
@@ -439,7 +442,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
             <nav>
               <h5>联系合作</h5>
               <ul>
-                <li><a href="https://fengche.co/about">关于我们</a></li>
+                <li><a href="https://fengcheco.com/about">关于我们</a></li>
                 <li><a href="mailto:press@fengche.co">合作伙伴</a></li>
                 <li><a href="mailto:press@fengche.co">媒体报道</a></li>
               </ul>
@@ -450,7 +453,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
             <nav>
               <h5>关注我们</h5>
               <ul>
-                <li><a href="https://fengche.co/blog">官方博客</a></li>
+                <li><a href="https://fengcheco.com/blog">官方博客</a></li>
                 <li><a class="social-weibo" href="http://weibo.com/fengcheco" target="_blank">微博</a></li>
                 <li>QQ群: 162278625</li>
                 <li><a class="social-facebook" href="https://facebook.com/fengcheco" target="_blank">Facebook</a></li>
