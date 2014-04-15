@@ -1,7 +1,7 @@
 ---
 title: "新功能：打印任务和任务列表"
 date: 2014-2-12 16:10 +08:00
-tags: Annoucement, Print
+tags: Announcement, Print
 author: roy
 disqus_identifier: 'print-task-and-iteration'
 ---
