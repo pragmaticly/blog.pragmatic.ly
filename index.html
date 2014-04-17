@@ -35,18 +35,21 @@
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <link href="/blog/stylesheets/application.css?1392193221" media="screen" rel="stylesheet" type="text/css" />
-    <script src="/blog/javascripts/application.js?1392188988" type="text/javascript"></script>
+    <link href="/stylesheets/application.css?1392193221" media="screen" rel="stylesheet" type="text/css" />
+    <script src="/javascripts/application.js?1392188988" type="text/javascript"></script>
 
     
-
+    <script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script>
+    <script type="text/javascript">var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-4054156-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();</script>
     
-    <!-- start Mixpanel -->
-    <script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f);b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==
-typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");for(g=0;g<i.length;g++)f(c,i[g]);
-b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
-    mixpanel.init("43a596021773ee49e7b13713d89c9875");</script>
-    <!-- end Mixpanel -->
+
     
   </head>
 
@@ -92,7 +95,70 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
     <article class="post">
       <header>
   <h2 class="title">
-    <a href="/blog/server-324-maintenance">3 月 23 号系统维护：风车迁移到国内服务器来加速访问</a>
+    <a href="/new-feature-task-followers">新功能：协作者</a>
+  </h2>
+</header>
+
+<aside>
+  <ul class="meta">
+    <li class="author-photo">
+      <a href="http://poiyzy.github.io">
+        <img alt="" width="120" height="120" src="/images/zhuoyu-yang.png?1379005285" />
+      </a>
+    </li>
+    <li class="author">
+     by 杨濯宇
+    </li>
+    <li class="date">
+      Apr 15, 2014
+    </li>
+    <li class="tags">
+      
+        <a href="/tags/announcement">announcement</a>
+      
+        <a href="/tags/new-feature">new feature</a>
+      
+        <a href="/tags/follower">follower</a>
+      
+        <a href="/tags/协作者">协作者</a>
+      
+        <a href="/tags/新功能">新功能</a>
+      
+        <a href="/tags/任务">任务</a>
+      
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <p>原先在 Fengche.co 中我们只可以把任务分配给一个团队成员，但是在我们与用户沟通过程中发现，很多团队需要一个任务由多个成员协同完成。现在，我们为您带来了新功能，您可以为任务添加<em>协作者</em>。</p>
+
+<p>当然，如果您的团队不需要使用这个功能的话，您可以忽略此功能，它不会对您原有的工作流程带来任何影响。<strong>但是您需要注意 <a href="/updates-of-desktop-notification#notification_update">通知策略更新</a></strong>。</p>
+
+<h2>添加和删除协作者</h2>
+
+<ul>
+<li>在您打开一个任务的详细页面后，在右边栏便可以轻松找到协作者添加位置</li>
+</ul>
+
+<p><img alt="task followers" width="1274" height="438" src="/images/new-feature-task-followers/task_followers.png?1397735636" /></p>
+
+<p>
+
+  <p>
+    ......
+  </p>
+  <p>
+    <a href="/new-feature-task-followers">Read more →</a>
+  </p>
+</div>
+
+    </article>
+  
+    <article class="post">
+      <header>
+  <h2 class="title">
+    <a href="/server-324-maintenance">3 月 23 号系统维护：风车迁移到国内服务器来加速访问</a>
   </h2>
 </header>
 
@@ -100,7 +166,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
   <ul class="meta">
     <li class="author-photo">
       <a href="http://yedingding.com">
-        <img alt="" width="120" height="120" src="/blog/images/dingding-ye.png?1379005285" />
+        <img alt="" width="120" height="120" src="/images/dingding-ye.png?1379005285" />
       </a>
     </li>
     <li class="author">
@@ -111,9 +177,9 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
     </li>
     <li class="tags">
       
-        <a href="/blog/tags/maintenance">maintenance</a>
+        <a href="/tags/maintenance">maintenance</a>
       
-        <a href="/blog/tags/server">server</a>
+        <a href="/tags/server">server</a>
       
     </li>
   </ul>
@@ -133,7 +199,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
     ......
   </p>
   <p>
-    <a href="/blog/server-324-maintenance">Read more →</a>
+    <a href="/server-324-maintenance">Read more →</a>
   </p>
 </div>
 
@@ -142,7 +208,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
     <article class="post">
       <header>
   <h2 class="title">
-    <a href="/blog/enhancement-of-email-management">新功能：通过邮件完成创建任务、分配任务和设置标签</a>
+    <a href="/enhancement-of-email-management">新功能：通过邮件完成创建任务、分配任务和设置标签</a>
   </h2>
 </header>
 
@@ -150,7 +216,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
   <ul class="meta">
     <li class="author-photo">
       <a href="http://poiyzy.github.io">
-        <img alt="" width="120" height="120" src="/blog/images/zhuoyu-yang.png?1379005285" />
+        <img alt="" width="120" height="120" src="/images/zhuoyu-yang.png?1379005285" />
       </a>
     </li>
     <li class="author">
@@ -161,13 +227,13 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
     </li>
     <li class="tags">
       
-        <a href="/blog/tags/announcement">Announcement</a>
+        <a href="/tags/announcement">Announcement</a>
       
-        <a href="/blog/tags/new-feature">New feature</a>
+        <a href="/tags/new-feature">New feature</a>
       
-        <a href="/blog/tags/notification">Notification</a>
+        <a href="/tags/notification">Notification</a>
       
-        <a href="/blog/tags/email">Email</a>
+        <a href="/tags/email">Email</a>
       
     </li>
   </ul>
@@ -182,7 +248,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
 
 <p>首先在浏览器中打开你的 Project</p>
 
-<p><img alt="find ids" width="627" height="386" src="/blog/images/enhancement-of-email-management/find_iteration_and_project_id.png?1394735488" /></p>
+<p><img alt="find ids" width="627" height="386" src="/images/enhancement-of-email-management/find_iteration_and_project_id.png?1394735488" /></p>
 
 <p>这里我们可以很清楚的找到当前项目的 PROJECT<em>ID 和 ITERATION</em>ID.</p>
 
@@ -194,7 +260,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
     ......
   </p>
   <p>
-    <a href="/blog/enhancement-of-email-management">Read more →</a>
+    <a href="/enhancement-of-email-management">Read more →</a>
   </p>
 </div>
 
@@ -203,7 +269,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
     <article class="post">
       <header>
   <h2 class="title">
-    <a href="/blog/updates-of-desktop-notification">更新：改进了桌面通知</a>
+    <a href="/updates-of-desktop-notification">更新：改进了桌面通知</a>
   </h2>
 </header>
 
@@ -211,7 +277,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
   <ul class="meta">
     <li class="author-photo">
       <a href="http://poiyzy.github.io">
-        <img alt="" width="120" height="120" src="/blog/images/zhuoyu-yang.png?1379005285" />
+        <img alt="" width="120" height="120" src="/images/zhuoyu-yang.png?1379005285" />
       </a>
     </li>
     <li class="author">
@@ -222,13 +288,13 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
     </li>
     <li class="tags">
       
-        <a href="/blog/tags/updates">updates</a>
+        <a href="/tags/updates">updates</a>
       
-        <a href="/blog/tags/notification">notification</a>
+        <a href="/tags/notification">notification</a>
       
-        <a href="/blog/tags/desktop-notification">desktop notification</a>
+        <a href="/tags/desktop-notification">desktop notification</a>
       
-        <a href="/blog/tags/通知">通知</a>
+        <a href="/tags/通知">通知</a>
       
     </li>
   </ul>
@@ -241,7 +307,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
 
 <p>所以为了解决这个问题，我们对桌面通知做了一些更新，希望你喜欢。</p>
 
-<p><img alt="Desktop Notification" width="383" height="129" src="/blog/images/smart-notification-announcement/desktop-notification.png?1393271164" /></p>
+<p><img alt="Desktop Notification" width="383" height="129" src="/images/smart-notification-announcement/desktop-notification.png?1393271164" /></p>
 
 <p>现在，默认情况下你将只收到跟你相关的桌面通知，包括以下这些情况：</p>
 
@@ -260,7 +326,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
     ......
   </p>
   <p>
-    <a href="/blog/updates-of-desktop-notification">Read more →</a>
+    <a href="/updates-of-desktop-notification">Read more →</a>
   </p>
 </div>
 
@@ -269,7 +335,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
     <article class="post">
       <header>
   <h2 class="title">
-    <a href="/blog/smart-notification-announcement">新功能：智能通知</a>
+    <a href="/smart-notification-announcement">新功能：智能通知</a>
   </h2>
 </header>
 
@@ -277,7 +343,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
   <ul class="meta">
     <li class="author-photo">
       <a href="http://poiyzy.github.io">
-        <img alt="" width="120" height="120" src="/blog/images/zhuoyu-yang.png?1379005285" />
+        <img alt="" width="120" height="120" src="/images/zhuoyu-yang.png?1379005285" />
       </a>
     </li>
     <li class="author">
@@ -288,11 +354,11 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
     </li>
     <li class="tags">
       
-        <a href="/blog/tags/announcement">Announcement</a>
+        <a href="/tags/announcement">Announcement</a>
       
-        <a href="/blog/tags/智能通知">智能通知</a>
+        <a href="/tags/智能通知">智能通知</a>
       
-        <a href="/blog/tags/通知">通知</a>
+        <a href="/tags/通知">通知</a>
       
     </li>
   </ul>
@@ -330,60 +396,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
     ......
   </p>
   <p>
-    <a href="/blog/smart-notification-announcement">Read more →</a>
-  </p>
-</div>
-
-    </article>
-  
-    <article class="post">
-      <header>
-  <h2 class="title">
-    <a href="/blog/announcing-print-task-and-iteration">新功能：打印任务和任务列表</a>
-  </h2>
-</header>
-
-<aside>
-  <ul class="meta">
-    <li class="author-photo">
-      <a href="http://poiyzy.github.io">
-        <img alt="" width="120" height="120" src="/blog/images/zhuoyu-yang.png?1379005285" />
-      </a>
-    </li>
-    <li class="author">
-     by 杨濯宇
-    </li>
-    <li class="date">
-      Feb 12, 2014
-    </li>
-    <li class="tags">
-      
-        <a href="/blog/tags/annoucement">Annoucement</a>
-      
-        <a href="/blog/tags/print">Print</a>
-      
-    </li>
-  </ul>
-</aside>
-
-<div class="content">
-  <p>因为我们是一个远程团队，所以很多时候了解不到大家在一个办公室办公使用 Fengche.co 时的痛点。最近 <a href="http://knewone.com">Knewone</a> 团队反映他们在开会的时候经常需要对任务或者任务列表进行讨论，然后作出决定，分配任务或者改变完成期限等等。但是目前只能让大家抱着电脑，或者投影到墙上，不太方便。</p>
-
-<p>我们认为开会时的高效率取决与是否于专注和整体流程是否简洁。不要大动干戈的使用投影，也不要人人抱着电脑挤在一起，最简单有效的方法是打印出来和大家一起讨论，然后散掉各回各位。</p>
-
-<h2>打印任务</h2>
-
-<p>您可以在任务右上角的操作中找到它</p>
-
-<p><img alt="print-task" width="1083" height="303" src="/blog/images/print-task-and-iteration/print-task.png?1392299296" /></p>
-
-<p>
-
-  <p>
-    ......
-  </p>
-  <p>
-    <a href="/blog/announcing-print-task-and-iteration">Read more →</a>
+    <a href="/smart-notification-announcement">Read more →</a>
   </p>
 </div>
 
@@ -394,7 +407,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
     <ul class="pager">
       
       
-        <li class="next"><a href="/blog/page/2">Older &rarr;</a></li>
+        <li class="next"><a href="/page/2">Older &rarr;</a></li>
       
     </ul>
   
