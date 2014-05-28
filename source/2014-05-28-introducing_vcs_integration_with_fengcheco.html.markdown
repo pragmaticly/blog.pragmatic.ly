@@ -13,6 +13,8 @@ author: roy
 
 目前我们已经支持了 [GitHub](https://github.com/), [BitBucket](https://bitbucket.org/) 以及 [Gitlab](http://gitlab.org/)，如果您正在使用的版本控制器我们还不支持，只需联系我们，我们回尽快帮您解决。
 
+使用方法请参考[这里](/how-we-use-vcs-integration-with-fengcheco)
+
 #### 如何设置 ####
 
 1. 首先，你需要确认 Git 中所使用的用户名或者邮箱和您在 Fengche.co 账号中使用的保持一致。如果不一致，您可以在 Git 中做修改：
