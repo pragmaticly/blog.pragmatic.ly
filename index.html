@@ -35,18 +35,21 @@
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <link href="/blog/stylesheets/application.css?1392193221" media="screen" rel="stylesheet" type="text/css" />
-    <script src="/blog/javascripts/application.js?1392188988" type="text/javascript"></script>
+    <link href="/stylesheets/application.css?1392193221" media="screen" rel="stylesheet" type="text/css" />
+    <script src="/javascripts/application.js?1392188988" type="text/javascript"></script>
 
     
-
+    <script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script>
+    <script type="text/javascript">var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-4054156-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();</script>
     
-    <!-- start Mixpanel -->
-    <script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f);b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==
-typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");for(g=0;g<i.length;g++)f(c,i[g]);
-b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
-    mixpanel.init("43a596021773ee49e7b13713d89c9875");</script>
-    <!-- end Mixpanel -->
+
     
   </head>
 
@@ -92,7 +95,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
     <article class="post">
       <header>
   <h2 class="title">
-    <a href="/blog/new-feature-task-followers">新功能：协作者</a>
+    <a href="/how-we-use-vcs-integration-with-fengcheco">如何使用 VCS 集成</a>
   </h2>
 </header>
 
@@ -100,7 +103,121 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
   <ul class="meta">
     <li class="author-photo">
       <a href="http://poiyzy.github.io">
-        <img alt="" width="120" height="120" src="/blog/images/zhuoyu-yang.png?1379005285" />
+        <img alt="" width="120" height="120" src="/images/zhuoyu-yang.png?1379005285" />
+      </a>
+    </li>
+    <li class="author">
+     by 杨濯宇
+    </li>
+    <li class="date">
+      May 28, 2014
+    </li>
+    <li class="tags">
+      
+        <a href="/tags/vcs">VCS</a>
+      
+        <a href="/tags/integration">Integration</a>
+      
+        <a href="/tags/git">Git</a>
+      
+        <a href="/tags/代码库">代码库</a>
+      
+        <a href="/tags/集成">集成</a>
+      
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <p><img alt="audit commit" width="502" height="610" src="/images/vcs_integration_with_fengcheco/audit_commit.png?1401467189" /></p>
+
+<p>像我们这样的开发者每天都使用 VCS (版本控制系统) 完成工作， 比如 Git 或者 SVN 。将 VCS 融入您目前的开发过程中，可以使您更加详细精确的了解到代码情况以及项目进度，使代码和项目管理融为一体。</p>
+
+<p>设置教程请看<a href="/introducing_vcs_integration_with_fengcheco">这里</a></p>
+
+<p>
+
+  <p>
+    ......
+  </p>
+  <p>
+    <a href="/how-we-use-vcs-integration-with-fengcheco">Read more →</a>
+  </p>
+</div>
+
+    </article>
+  
+    <article class="post">
+      <header>
+  <h2 class="title">
+    <a href="/introducing_vcs_integration_with_fengcheco">如何集成 VCS</a>
+  </h2>
+</header>
+
+<aside>
+  <ul class="meta">
+    <li class="author-photo">
+      <a href="http://poiyzy.github.io">
+        <img alt="" width="120" height="120" src="/images/zhuoyu-yang.png?1379005285" />
+      </a>
+    </li>
+    <li class="author">
+     by 杨濯宇
+    </li>
+    <li class="date">
+      May 28, 2014
+    </li>
+    <li class="tags">
+      
+        <a href="/tags/vcs">VCS</a>
+      
+        <a href="/tags/integration">Integration</a>
+      
+        <a href="/tags/git">Git</a>
+      
+        <a href="/tags/代码库">代码库</a>
+      
+        <a href="/tags/集成">集成</a>
+      
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <p>我们致力于设计一款开发友好的工具，希望能够帮助使用者团队更加快速便捷的开发项目以及管理项目进度。</p>
+
+<p>像我们这样的开发者每天都使用 VCS (版本控制系统) 完成工作， 比如 Git 或者 SVN 。将 VCS 融入您目前的开发过程中，可以使您更加详细精确的了解到代码情况以及项目进度，使代码和项目管理融为一体。</p>
+
+<p><img alt="audit commit" width="502" height="610" src="/images/vcs_integration_with_fengcheco/audit_commit.png?1401467189" /></p>
+
+<p>目前我们已经支持了 <a href="https://github.com/">GitHub</a>, <a href="https://bitbucket.org/">BitBucket</a> 以及 <a href="http://gitlab.org/">Gitlab</a>，如果您正在使用的版本控制器我们还不支持，只需联系我们，我们回尽快帮您解决。</p>
+
+<p>使用方法请参考<a href="/how-we-use-vcs-integration-with-fengcheco">这里</a></p>
+
+<p>
+
+  <p>
+    ......
+  </p>
+  <p>
+    <a href="/introducing_vcs_integration_with_fengcheco">Read more →</a>
+  </p>
+</div>
+
+    </article>
+  
+    <article class="post">
+      <header>
+  <h2 class="title">
+    <a href="/new-feature-task-followers">新功能：协作者</a>
+  </h2>
+</header>
+
+<aside>
+  <ul class="meta">
+    <li class="author-photo">
+      <a href="http://poiyzy.github.io">
+        <img alt="" width="120" height="120" src="/images/zhuoyu-yang.png?1379005285" />
       </a>
     </li>
     <li class="author">
@@ -111,17 +228,17 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
     </li>
     <li class="tags">
       
-        <a href="/blog/tags/announcement">announcement</a>
+        <a href="/tags/announcement">announcement</a>
       
-        <a href="/blog/tags/new-feature">new feature</a>
+        <a href="/tags/new-feature">new feature</a>
       
-        <a href="/blog/tags/follower">follower</a>
+        <a href="/tags/follower">follower</a>
       
-        <a href="/blog/tags/协作者">协作者</a>
+        <a href="/tags/协作者">协作者</a>
       
-        <a href="/blog/tags/新功能">新功能</a>
+        <a href="/tags/新功能">新功能</a>
       
-        <a href="/blog/tags/任务">任务</a>
+        <a href="/tags/任务">任务</a>
       
     </li>
   </ul>
@@ -138,7 +255,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
 <li>在您打开一个任务的详细页面后，在右边栏便可以轻松找到协作者添加位置</li>
 </ul>
 
-<p><img alt="task followers" width="1274" height="438" src="/blog/images/new-feature-task-followers/task_followers.png?1397735636" /></p>
+<p><img alt="task followers" width="1274" height="438" src="/images/new-feature-task-followers/task_followers.png?1397735636" /></p>
 
 <p>
 
@@ -146,7 +263,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
     ......
   </p>
   <p>
-    <a href="/blog/new-feature-task-followers">Read more →</a>
+    <a href="/new-feature-task-followers">Read more →</a>
   </p>
 </div>
 
@@ -155,7 +272,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
     <article class="post">
       <header>
   <h2 class="title">
-    <a href="/blog/server-324-maintenance">3 月 23 号系统维护：风车迁移到国内服务器来加速访问</a>
+    <a href="/server-324-maintenance">3 月 23 号系统维护：风车迁移到国内服务器来加速访问</a>
   </h2>
 </header>
 
@@ -163,7 +280,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
   <ul class="meta">
     <li class="author-photo">
       <a href="http://yedingding.com">
-        <img alt="" width="120" height="120" src="/blog/images/dingding-ye.png?1379005285" />
+        <img alt="" width="120" height="120" src="/images/dingding-ye.png?1379005285" />
       </a>
     </li>
     <li class="author">
@@ -174,9 +291,9 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
     </li>
     <li class="tags">
       
-        <a href="/blog/tags/maintenance">maintenance</a>
+        <a href="/tags/maintenance">maintenance</a>
       
-        <a href="/blog/tags/server">server</a>
+        <a href="/tags/server">server</a>
       
     </li>
   </ul>
@@ -196,7 +313,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
     ......
   </p>
   <p>
-    <a href="/blog/server-324-maintenance">Read more →</a>
+    <a href="/server-324-maintenance">Read more →</a>
   </p>
 </div>
 
@@ -205,7 +322,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
     <article class="post">
       <header>
   <h2 class="title">
-    <a href="/blog/enhancement-of-email-management">新功能：通过邮件完成创建任务、分配任务和设置标签</a>
+    <a href="/enhancement-of-email-management">新功能：通过邮件完成创建任务、分配任务和设置标签</a>
   </h2>
 </header>
 
@@ -213,7 +330,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
   <ul class="meta">
     <li class="author-photo">
       <a href="http://poiyzy.github.io">
-        <img alt="" width="120" height="120" src="/blog/images/zhuoyu-yang.png?1379005285" />
+        <img alt="" width="120" height="120" src="/images/zhuoyu-yang.png?1379005285" />
       </a>
     </li>
     <li class="author">
@@ -224,13 +341,13 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
     </li>
     <li class="tags">
       
-        <a href="/blog/tags/announcement">Announcement</a>
+        <a href="/tags/announcement">Announcement</a>
       
-        <a href="/blog/tags/new-feature">New feature</a>
+        <a href="/tags/new-feature">New feature</a>
       
-        <a href="/blog/tags/notification">Notification</a>
+        <a href="/tags/notification">Notification</a>
       
-        <a href="/blog/tags/email">Email</a>
+        <a href="/tags/email">Email</a>
       
     </li>
   </ul>
@@ -245,7 +362,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
 
 <p>首先在浏览器中打开你的 Project</p>
 
-<p><img alt="find ids" width="627" height="386" src="/blog/images/enhancement-of-email-management/find_iteration_and_project_id.png?1394735488" /></p>
+<p><img alt="find ids" width="627" height="386" src="/images/enhancement-of-email-management/find_iteration_and_project_id.png?1394735488" /></p>
 
 <p>这里我们可以很清楚的找到当前项目的 PROJECT<em>ID 和 ITERATION</em>ID.</p>
 
@@ -257,143 +374,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
     ......
   </p>
   <p>
-    <a href="/blog/enhancement-of-email-management">Read more →</a>
-  </p>
-</div>
-
-    </article>
-  
-    <article class="post">
-      <header>
-  <h2 class="title">
-    <a href="/blog/updates-of-desktop-notification">更新：改进了桌面通知</a>
-  </h2>
-</header>
-
-<aside>
-  <ul class="meta">
-    <li class="author-photo">
-      <a href="http://poiyzy.github.io">
-        <img alt="" width="120" height="120" src="/blog/images/zhuoyu-yang.png?1379005285" />
-      </a>
-    </li>
-    <li class="author">
-     by 杨濯宇
-    </li>
-    <li class="date">
-      Mar 12, 2014
-    </li>
-    <li class="tags">
-      
-        <a href="/blog/tags/updates">updates</a>
-      
-        <a href="/blog/tags/notification">notification</a>
-      
-        <a href="/blog/tags/desktop-notification">desktop notification</a>
-      
-        <a href="/blog/tags/通知">通知</a>
-      
-    </li>
-  </ul>
-</aside>
-
-<div class="content">
-  <p>桌面通知是用户很喜欢的一项功能，当项目中有事情发生时，会即时的通知到你，让你能专注做事，不用在风车里盯着项目，同时又不会错过任何一条重要信息。</p>
-
-<p>然而在一个大的团队中，当短时间内团队其他人有密集操作或者在讨论任务的时候，如果这个任务跟你无关，那么方便的桌面通知将会变得非常恼人，这些不停地从桌面右上角跳出来的通知会打扰到你目前专注的状态。</p>
-
-<p>所以为了解决这个问题，我们对桌面通知做了一些更新，希望你喜欢。</p>
-
-<p><img alt="Desktop Notification" width="383" height="129" src="/blog/images/smart-notification-announcement/desktop-notification.png?1393271164" /></p>
-
-<p>现在，默认情况下你将只收到跟你相关的桌面通知，包括以下这些情况：</p>
-
-<ul>
-<li>当有人分配了某个分配给你的时候，你会收到弹出的桌面通知。</li>
-<li>当你负责的任务（分配给你）发生任何讨论时，你会收到弹出的桌面通知。</li>
-<li>当任何一个留言里 @ 你的名字的时候，你会收到弹出的桌面通知。</li>
-</ul>
-
-<p>所以，如果讨论任务时，你希望团队某人能迅速的回应你的请求，最好的办法是在讨论中 @ 他。</p>
-
-<p><em>如果您对此次更新有任何意见或者建议，随时联系我们，我们将会持续为您提供更加理想的使用体验</em></p>
-
-
-  <p>
-    ......
-  </p>
-  <p>
-    <a href="/blog/updates-of-desktop-notification">Read more →</a>
-  </p>
-</div>
-
-    </article>
-  
-    <article class="post">
-      <header>
-  <h2 class="title">
-    <a href="/blog/smart-notification-announcement">新功能：智能通知</a>
-  </h2>
-</header>
-
-<aside>
-  <ul class="meta">
-    <li class="author-photo">
-      <a href="http://poiyzy.github.io">
-        <img alt="" width="120" height="120" src="/blog/images/zhuoyu-yang.png?1379005285" />
-      </a>
-    </li>
-    <li class="author">
-     by 杨濯宇
-    </li>
-    <li class="date">
-      Feb 17, 2014
-    </li>
-    <li class="tags">
-      
-        <a href="/blog/tags/announcement">Announcement</a>
-      
-        <a href="/blog/tags/智能通知">智能通知</a>
-      
-        <a href="/blog/tags/通知">通知</a>
-      
-    </li>
-  </ul>
-</aside>
-
-<div class="content">
-  <p>关于这次的更新，也许你已经用上了。但是也许你对以前的提醒方式没有意见、也许你不在乎原来那样的提醒方式、或者也许你已经忍了很久…</p>
-
-<h3>问题</h3>
-
-<p>虽然没有太多反馈，但是我可以很诚实的告诉你，随着项目的不断迭代长大，随着团队成员的不断增长，随着这个项目的活跃越来越高，终究有一天，你会忍无可忍的。</p>
-
-<p>对于以前的方式是这样的，比如当有一个讨论被创建的时候，首先你的电脑会弹出桌面通知，然后你的邮箱会接受到邮件，如果你的其他移动设备绑定了邮箱的话，比如像我，iPad，iPhone 绑定了邮箱，并且开启实时推送的话，简直就是灾难…一动四响…</p>
-
-<p>这绝对不是风车的目标。风车是希望“给你一个简洁的空间、不让你迷失在信息的海洋中、让你工作更加专注”！</p>
-
-<h3>原因分析</h3>
-
-<p>首先造成这样的“通知信息轰炸”的原因有两个。一个是重复通知，一个是通知间隔频率过快。</p>
-
-<h4>A. 重复通知</h4>
-
-<p>当一个提醒已经被用户看到以后，如果我们继续以其他形式给用户发送重复的提醒的话，我们认为这是一种打扰。比如我正在写代码，看到了桌面通知，而且我也通过这个通知点击进入了相应的页面，那么为什么还要发邮件给我？</p>
-
-<p><strong>解决方案：智能通知</strong><br>
-现在我们采用这样的处理方式：当用户登录 Fengche.co 并保持在线状态，我们只推送桌面通知；只有当你处于离线状态，我们才会发送邮件通知给你。不管是哪种形式，所有的提醒都会被记录在“通知中心”里面，保证你不会错过任何重要的事情。</p>
-
-<h4>B. 通知间隔频率过快</h4>
-
-<p>有没有这样的感觉，有时候当一个“任务”被新建的时候，在一分钟之内，或者仅仅几十秒内，你会突然收到好几封邮件。比如，第一封是新建任务，第二封是这个任务分配给了你…</p>
-
-<p>也许我只需要知道有个任务被创建了，也许我现在没有时间或者精力去看这些细节，也许我现在正专注做某件事情… 总之我只需要知道有任务被创建了，但是目前不关心细节。那么这样高频率的信息轰炸对于我来说...</p>
-
-  <p>
-    ......
-  </p>
-  <p>
-    <a href="/blog/smart-notification-announcement">Read more →</a>
+    <a href="/enhancement-of-email-management">Read more →</a>
   </p>
 </div>
 
@@ -404,7 +385,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
     <ul class="pager">
       
       
-        <li class="next"><a href="/blog/page/2">Older &rarr;</a></li>
+        <li class="next"><a href="/page/2">Older &rarr;</a></li>
       
     </ul>
   

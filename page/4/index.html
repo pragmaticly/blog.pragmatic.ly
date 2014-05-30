@@ -35,18 +35,21 @@
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <link href="/blog/stylesheets/application.css?1392193221" media="screen" rel="stylesheet" type="text/css" />
-    <script src="/blog/javascripts/application.js?1392188988" type="text/javascript"></script>
+    <link href="/stylesheets/application.css?1392193221" media="screen" rel="stylesheet" type="text/css" />
+    <script src="/javascripts/application.js?1392188988" type="text/javascript"></script>
 
     
-
+    <script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script>
+    <script type="text/javascript">var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-4054156-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();</script>
     
-    <!-- start Mixpanel -->
-    <script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f);b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==
-typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");for(g=0;g<i.length;g++)f(c,i[g]);
-b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
-    mixpanel.init("43a596021773ee49e7b13713d89c9875");</script>
-    <!-- end Mixpanel -->
+
     
   </head>
 
@@ -92,7 +95,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
     <article class="post">
       <header>
   <h2 class="title">
-    <a href="/blog/the-improvement-of-archive-iteration">The improvement of 'Archive Iteration'</a>
+    <a href="/integrate-version-control-system-with-pragmat">Introducing VCS integration with Fengche.co</a>
   </h2>
 </header>
 
@@ -100,7 +103,115 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
   <ul class="meta">
     <li class="author-photo">
       <a href="http://terrytai.com">
-        <img alt="" width="120" height="120" src="/blog/images/terry-tai.png?1379005285" />
+        <img alt="" width="120" height="120" src="/images/terry-tai.png?1379005285" />
+      </a>
+    </li>
+    <li class="author">
+     by 太檑
+    </li>
+    <li class="date">
+      Jan 29, 2013
+    </li>
+    <li class="tags">
+      
+        <a href="/tags/vcs">VCS</a>
+      
+        <a href="/tags/integration">Integration</a>
+      
+        <a href="/tags/git">Git</a>
+      
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <p>Today, we&rsquo;re glad to introduce our new <a href="http://en.wikipedia.org/wiki/Revision_control">VCS</a>(Version Control System) integration with Fengche.co to the public. We have released this feature to some of our users in last two months and glad to hear how they love it. I&rsquo;m sure you&rsquo;ll love the feature too!</p>
+
+<p><a href="https://fengche.co">Fengche.co</a> is a lean collaborative project management tool featuring real time collaboration. We design the tool to be developer friendly and hope to help startup teams deliver better products, easier and faster. Developers like us work with VCS such as Git or SVN every day. The new VCS integration can deeply integrate with your current development process and improve your team productivity.</p>
+
+<p>With VCS integrated into Fengche.co, all the commits related to a ticket will be auto associated with that ticket and the commit message will be displayed in the activity timeline. As a result, your team will know the status update about that ticket immediately and go for a review if they want. It&rsquo;s a big benefit to code collobration. What&rsquo;s more, you can manipulate the status of tickets within your projects directly from the commit messages. There is no need to interrupt your work and visit Fengche.co to mark the ticket as Completed or Accepted. Instead, let the commit message do the work!</p>
+
+<p>Feel free to try this feature by signing up at <a href="https://fengche.co">Fengche.co</a>.</p>
+
+<p><img alt="VCS Integration" width="507" height="512" src="/images/integrate-version-control-system-with-pragmat/vcs-integration.png?1364633909" /></p>
+
+<p>So far, we have already supported three VCS services: <a href="https://github.com">GitHub</a>, <a href="https://bitbucket.org">BitBucket</a> and <a href="http://gitlab.org">Gitlab</a>. And more are coming. Let us know if the VCS you&rsquo;re using now is not in the list and you want to see it soon!</p>
+
+<p>
+
+  <p>
+    ......
+  </p>
+  <p>
+    <a href="/integrate-version-control-system-with-pragmat">Read more →</a>
+  </p>
+</div>
+
+    </article>
+  
+    <article class="post">
+      <header>
+  <h2 class="title">
+    <a href="/improving-the-usability-on-tickets-readabilit">Improving the usability on tickets readability and team collaboration</a>
+  </h2>
+</header>
+
+<aside>
+  <ul class="meta">
+    <li class="author-photo">
+      <a href="http://yedingding.com">
+        <img alt="" width="120" height="120" src="/images/dingding-ye.png?1379005285" />
+      </a>
+    </li>
+    <li class="author">
+     by 叶玎玎
+    </li>
+    <li class="date">
+      Jan 17, 2013
+    </li>
+    <li class="tags">
+      
+        <a href="/tags/ui">UI</a>
+      
+        <a href="/tags/ticket-management">Ticket Management</a>
+      
+        <a href="/tags/usability">Usability</a>
+      
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <p>Steve Krug’s instant classic book “<a href="http://www.amazon.com/Dont-Make-Me-Think-Usability/dp/0321344758">Don’t Make Me Think</a>” is one of our favorite design books. Simplicity and usability is our lifetime of pursuit on products design. With regard to single page application like <a href="https://fengche.co">Pragmatic.ly</a>, balancing the complexity of features with the simplicity of design is indeed difficult, but we’re keep iterating. Here’re some improvements to the ticket details.</p>
+
+<h3>Markdown Supported</h3>
+
+<p>Last week is a sad week for IT world. One of the top talented internet genius <a href="http://en.wikipedia.org/wiki/Aaron_Swartz">Aaron Swartz</a> left us at 26. R.I.P Aaron Swartz! However, Aaron’s contributions to the world will live forever. One of them is <a href="http://en.wikipedia.org/wiki/Markdown">Markdown</a>, a lightweight markup language designed for easy-to-read and easy-to-write.</p>
+
+<p>Now you can write ticket description and comments with Markdown syntax. It’s easy to write and rendering...</p>
+
+  <p>
+    ......
+  </p>
+  <p>
+    <a href="/improving-the-usability-on-tickets-readabilit">Read more →</a>
+  </p>
+</div>
+
+    </article>
+  
+    <article class="post">
+      <header>
+  <h2 class="title">
+    <a href="/the-improvement-of-archive-iteration">The improvement of 'Archive Iteration'</a>
+  </h2>
+</header>
+
+<aside>
+  <ul class="meta">
+    <li class="author-photo">
+      <a href="http://terrytai.com">
+        <img alt="" width="120" height="120" src="/images/terry-tai.png?1379005285" />
       </a>
     </li>
     <li class="author">
@@ -111,9 +222,9 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
     </li>
     <li class="tags">
       
-        <a href="/blog/tags/changelog">ChangeLog</a>
+        <a href="/tags/changelog">ChangeLog</a>
       
-        <a href="/blog/tags/iterations">Iterations</a>
+        <a href="/tags/iterations">Iterations</a>
       
     </li>
   </ul>
@@ -130,7 +241,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
 
 <p>First you just need click the iteration name which you want to archive on the left sidebar.</p>
 
-<p><img alt="Click Iteration" width="241" height="223" src="/blog/images/the-improvement-of-archive-iteration/click-iteration.png?1364634235"></p>
+<p><img alt="Click Iteration" width="241" height="223" src="/images/the-improvement-of-archive-iteration/click-iteration.png?1364634235"></p>
 
 <p>Then click the toothed icon at the right sidebar and you will see the ‘Archive’ button. After clicking it, this iteration with  tickets in it will all be...</p>
 
@@ -138,7 +249,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
     ......
   </p>
   <p>
-    <a href="/blog/the-improvement-of-archive-iteration">Read more →</a>
+    <a href="/the-improvement-of-archive-iteration">Read more →</a>
   </p>
 </div>
 
@@ -147,7 +258,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
     <article class="post">
       <header>
   <h2 class="title">
-    <a href="/blog/the-presentations-we-made-on-rubyconfchina-20">Pragmatic.ly team on RubyConf China 2012</a>
+    <a href="/the-presentations-we-made-on-rubyconfchina-20">Pragmatic.ly team on RubyConf China 2012</a>
   </h2>
 </header>
 
@@ -155,7 +266,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
   <ul class="meta">
     <li class="author-photo">
       <a href="http://terrytai.com">
-        <img alt="" width="120" height="120" src="/blog/images/terry-tai.png?1379005285" />
+        <img alt="" width="120" height="120" src="/images/terry-tai.png?1379005285" />
       </a>
     </li>
     <li class="author">
@@ -166,11 +277,11 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
     </li>
     <li class="tags">
       
-        <a href="/blog/tags/rubyconfchina">RubyConfChina</a>
+        <a href="/tags/rubyconfchina">RubyConfChina</a>
       
-        <a href="/blog/tags/ruby">Ruby</a>
+        <a href="/tags/ruby">Ruby</a>
       
-        <a href="/blog/tags/event">Event</a>
+        <a href="/tags/event">Event</a>
       
     </li>
   </ul>
@@ -193,7 +304,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
     ......
   </p>
   <p>
-    <a href="/blog/the-presentations-we-made-on-rubyconfchina-20">Read more →</a>
+    <a href="/the-presentations-we-made-on-rubyconfchina-20">Read more →</a>
   </p>
 </div>
 
@@ -202,7 +313,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
     <article class="post">
       <header>
   <h2 class="title">
-    <a href="/blog/improving-ticket-interactive">Improving Ticket Interactive</a>
+    <a href="/improving-ticket-interactive">Improving Ticket Interactive</a>
   </h2>
 </header>
 
@@ -210,7 +321,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
   <ul class="meta">
     <li class="author-photo">
       <a href="http://beenhero.com">
-        <img alt="" width="120" height="120" src="/blog/images/ben-he.png?1379005285" />
+        <img alt="" width="120" height="120" src="/images/ben-he.png?1379005285" />
       </a>
     </li>
     <li class="author">
@@ -221,11 +332,11 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
     </li>
     <li class="tags">
       
-        <a href="/blog/tags/ticket-management">Ticket Management</a>
+        <a href="/tags/ticket-management">Ticket Management</a>
       
-        <a href="/blog/tags/ui">UI</a>
+        <a href="/tags/ui">UI</a>
       
-        <a href="/blog/tags/changelog">ChangeLog</a>
+        <a href="/tags/changelog">ChangeLog</a>
       
     </li>
   </ul>
@@ -245,7 +356,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
 <li>The ticket title was editable when focused.</li>
 <li>The tags would be a ticket filters immediately.</li>
 <li>The little right pointer had an onhover state.</li>
-</ol><p><img alt="Old Ticket Interactive" width="500" height="185" src="/blog/images/improving-ticket-interactive/old-ticket-interactive.jpg?1364634606"></p>
+</ol><p><img alt="Old Ticket Interactive" width="500" height="185" src="/images/improving-ticket-interactive/old-ticket-interactive.jpg?1364634606"></p>
 
 <p>This is quite a burden to users, we’d relieve it as soon as possible.</p>
 
@@ -257,129 +368,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
     ......
   </p>
   <p>
-    <a href="/blog/improving-ticket-interactive">Read more →</a>
-  </p>
-</div>
-
-    </article>
-  
-    <article class="post">
-      <header>
-  <h2 class="title">
-    <a href="/blog/due-date-is-showing-up-in-the-ticket-list">Showing up Due Date</a>
-  </h2>
-</header>
-
-<aside>
-  <ul class="meta">
-    <li class="author-photo">
-      <a href="http://beenhero.com">
-        <img alt="" width="120" height="120" src="/blog/images/ben-he.png?1379005285" />
-      </a>
-    </li>
-    <li class="author">
-     by 何斌
-    </li>
-    <li class="date">
-      Sep 24, 2012
-    </li>
-    <li class="tags">
-      
-        <a href="/blog/tags/announcement">Announcement</a>
-      
-        <a href="/blog/tags/changelog">ChangeLog</a>
-      
-        <a href="/blog/tags/ui">UI</a>
-      
-    </li>
-  </ul>
-</aside>
-
-<div class="content">
-  <p>Now you can see <em>due-date</em> on ticket list, and capture overdue tickets easily at a glance. Here is how and why we put it this way.</p>
-
-<p>Firstly, <em>due-date</em> can be input in the right form, easy click and go.</p>
-
-<p><img alt="Due Date Selector" width="356" height="196" src="/blog/images/due-date-is-showing-up-in-the-ticket-list/date-selector.jpg?1364632825"></p>
-
-<p>A ticket has <em>due-date</em> set will show up a date tag, the visual design is different from normal tags. Basically you’re notified that one ticket has due on priority.</p>
-
-<p><img alt="Due Date Tag" width="350" height="47" src="/blog/images/due-date-is-showing-up-in-the-ticket-list/due-date-tag.png?1364633449"></p>
-
-<p>Once a ticket is due on or overdue, this ticket item in tickets list will be highlighted and the date tag turns red. You can’t ignore it since the day is coming :) Hope this can push you a bit for getting things done.</p>
-
-<p><img alt="Overdue Tag" width="350" height="38" src="/blog/images/due-date-is-showing-up-in-the-ticket-list/overdue-tag.png?1364633479"></p>
-
-<p>When we were designing the interface of due-date, it actually came out a design like this,</p>
-
-<p><img alt="Due date draft" width="183" height="80" src="/blog/images/due-date-is-showing-up-in-the-ticket-list/due-date-draft.png?1364633388"></p>
-
-<p>Using the calendar icon (same from the editing form) to indicate that a ticket has a <em>due-date</em>. When hover on the icon...</p>
-
-  <p>
-    ......
-  </p>
-  <p>
-    <a href="/blog/due-date-is-showing-up-in-the-ticket-list">Read more →</a>
-  </p>
-</div>
-
-    </article>
-  
-    <article class="post">
-      <header>
-  <h2 class="title">
-    <a href="/blog/announcing-mailsviewer-a-rails-engine-to-view">Announcing mails_viewer - easiest way to test mails in Rails app</a>
-  </h2>
-</header>
-
-<aside>
-  <ul class="meta">
-    <li class="author-photo">
-      <a href="http://yedingding.com">
-        <img alt="" width="120" height="120" src="/blog/images/dingding-ye.png?1379005285" />
-      </a>
-    </li>
-    <li class="author">
-     by 叶玎玎
-    </li>
-    <li class="date">
-      Sep 20, 2012
-    </li>
-    <li class="tags">
-      
-        <a href="/blog/tags/open-source">open source</a>
-      
-        <a href="/blog/tags/rails">rails</a>
-      
-        <a href="/blog/tags/mail">mail</a>
-      
-        <a href="/blog/tags/engine">engine</a>
-      
-    </li>
-  </ul>
-</aside>
-
-<div class="content">
-  <p><em>Q:</em> “I implemented the mail template but how can I preview the mail in my machine?”</p>
-
-<p><em>Q:</em> “I’m running out of emails to test the signup on staging server. Do you have more?”</p>
-
-<p><em>Q:</em> “I accidently sent the mail to <a href="mailto:test@example.com">test@example.com</a>. I thought the email adress doesn’t exist!”</p>
-
-<p>Familiar? I have been asked many times of those questions these years. The requiremeent is simple. Write mailer model, send mail and then verify every part works as expected. But when we’re in non-production environment, either development machine or staging server, it’s always painful to test mails. Put simple, we just want:</p>
-
-<ul>
-<li>To preview all the sent mails easily</li>
-<li>To browse the mails easily, for everyone in the team.</li>
-<li>To allow conditioned mails to real sent out.</li>
-</ul><p>We feel the same pain at <a href="https://fengche.co">Pragmatic.ly</a> and that’s why we built <a href="https://github.com/pragmaticly/mails_viewer">mails_viewer</a></p>
-
-  <p>
-    ......
-  </p>
-  <p>
-    <a href="/blog/announcing-mailsviewer-a-rails-engine-to-view">Read more →</a>
+    <a href="/improving-ticket-interactive">Read more →</a>
   </p>
 </div>
 
@@ -389,10 +378,10 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
   
     <ul class="pager">
       
-        <li class="previous"><a href="/blog/page/3">&larr; Newer</a></li>
+        <li class="previous"><a href="/page/3">&larr; Newer</a></li>
       
       
-        <li class="next"><a href="/blog/page/5">Older &rarr;</a></li>
+        <li class="next"><a href="/page/5">Older &rarr;</a></li>
       
     </ul>
   

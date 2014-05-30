@@ -1,506 +1,530 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://fengche.co/blog/hello-world</loc>
+    <loc>http://fengche.co/hello-world</loc>
     <lastmod>2012-06-17T10:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://fengche.co/blog/ripoff-asana-we-say-no-and-why-were-here</loc>
+    <loc>http://fengche.co/ripoff-asana-we-say-no-and-why-were-here</loc>
     <lastmod>2012-07-16T21:21:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://fengche.co/blog/we-opened-source-smart-time-ago</loc>
+    <loc>http://fengche.co/we-opened-source-smart-time-ago</loc>
     <lastmod>2012-07-24T02:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://fengche.co/blog/its-not-perfect-but-its-time-to-integrate-web</loc>
+    <loc>http://fengche.co/its-not-perfect-but-its-time-to-integrate-web</loc>
     <lastmod>2012-08-01T20:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://fengche.co/blog/a-practical-guide-to-use-spinejs-in-real-worl</loc>
+    <loc>http://fengche.co/a-practical-guide-to-use-spinejs-in-real-worl</loc>
     <lastmod>2012-08-20T04:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://fengche.co/blog/158983791</loc>
+    <loc>http://fengche.co/158983791</loc>
     <lastmod>2012-09-06T08:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://fengche.co/blog/how-we-choose-the-right-video-service-for-us</loc>
+    <loc>http://fengche.co/how-we-choose-the-right-video-service-for-us</loc>
     <lastmod>2012-09-19T05:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://fengche.co/blog/announcing-mailsviewer-a-rails-engine-to-view</loc>
+    <loc>http://fengche.co/announcing-mailsviewer-a-rails-engine-to-view</loc>
     <lastmod>2012-09-20T06:30:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://fengche.co/blog/due-date-is-showing-up-in-the-ticket-list</loc>
+    <loc>http://fengche.co/due-date-is-showing-up-in-the-ticket-list</loc>
     <lastmod>2012-09-24T08:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://fengche.co/blog/improving-ticket-interactive</loc>
+    <loc>http://fengche.co/improving-ticket-interactive</loc>
     <lastmod>2012-12-10T19:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://fengche.co/blog/the-presentations-we-made-on-rubyconfchina-20</loc>
+    <loc>http://fengche.co/the-presentations-we-made-on-rubyconfchina-20</loc>
     <lastmod>2012-12-27T16:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://fengche.co/blog/the-improvement-of-archive-iteration</loc>
+    <loc>http://fengche.co/the-improvement-of-archive-iteration</loc>
     <lastmod>2013-01-12T10:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://fengche.co/blog/improving-the-usability-on-tickets-readabilit</loc>
+    <loc>http://fengche.co/improving-the-usability-on-tickets-readabilit</loc>
     <lastmod>2013-01-17T08:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://fengche.co/blog/integrate-version-control-system-with-pragmat</loc>
+    <loc>http://fengche.co/integrate-version-control-system-with-pragmat</loc>
     <lastmod>2013-01-29T10:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://fengche.co/blog/announcing-uploading-avatar</loc>
+    <loc>http://fengche.co/announcing-uploading-avatar</loc>
     <lastmod>2013-03-23T17:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://fengche.co/blog/we-are-back</loc>
+    <loc>http://fengche.co/we-are-back</loc>
     <lastmod>2013-09-12T13:50:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://fengche.co/blog/new-feature-comment-via-email</loc>
+    <loc>http://fengche.co/new-feature-comment-via-email</loc>
     <lastmod>2013-10-04T14:05:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://fengche.co/blog/introduce-the-new-dashboard</loc>
+    <loc>http://fengche.co/introduce-the-new-dashboard</loc>
     <lastmod>2013-10-16T08:43:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://fengche.co/blog/announcing-pic-pasting</loc>
+    <loc>http://fengche.co/announcing-pic-pasting</loc>
     <lastmod>2013-11-08T01:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://fengche.co/blog/invite-user-from-organization</loc>
+    <loc>http://fengche.co/invite-user-from-organization</loc>
     <lastmod>2013-11-19T12:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://fengche.co/blog/announcing-print-task-and-iteration</loc>
+    <loc>http://fengche.co/announcing-print-task-and-iteration</loc>
     <lastmod>2014-02-12T16:10:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://fengche.co/blog/new-year-new-branding</loc>
+    <loc>http://fengche.co/new-year-new-branding</loc>
     <lastmod>2014-02-12T08:43:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://fengche.co/blog/smart-notification-announcement</loc>
+    <loc>http://fengche.co/smart-notification-announcement</loc>
     <lastmod>2014-02-17T22:45:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://fengche.co/blog/updates-of-desktop-notification</loc>
+    <loc>http://fengche.co/updates-of-desktop-notification</loc>
     <lastmod>2014-03-12T17:45:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://fengche.co/blog/enhancement-of-email-management</loc>
+    <loc>http://fengche.co/enhancement-of-email-management</loc>
     <lastmod>2014-03-14T16:25:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://fengche.co/blog/server-324-maintenance</loc>
+    <loc>http://fengche.co/server-324-maintenance</loc>
     <lastmod>2014-03-24T20:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://fengche.co/blog/new-feature-task-followers</loc>
+    <loc>http://fengche.co/new-feature-task-followers</loc>
     <lastmod>2014-04-15T09:11:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://fengche.co/blog/404.html</loc>
-    <lastmod>2014-04-17T00:00:00+08:00</lastmod>
+    <loc>http://fengche.co/how-we-use-vcs-integration-with-fengcheco</loc>
+    <lastmod>2014-05-28T11:47:00+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://fengche.co/introducing_vcs_integration_with_fengcheco</loc>
+    <lastmod>2014-05-28T09:47:00+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://fengche.co/404.html</loc>
+    <lastmod>2014-05-31T00:00:00+08:00</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>http://fengche.co/blog/</loc>
-    <lastmod>2014-04-17T00:00:00+08:00</lastmod>
+    <loc>http://fengche.co/</loc>
+    <lastmod>2014-05-31T00:00:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1</priority>
   </url>
   <url>
-    <loc>http://fengche.co/blog/tags/announcement</loc>
-    <lastmod>2014-04-17T00:00:00+08:00</lastmod>
+    <loc>http://fengche.co/tags/announcement</loc>
+    <lastmod>2014-05-31T00:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://fengche.co/blog/tags/productivity</loc>
-    <lastmod>2014-04-17T00:00:00+08:00</lastmod>
+    <loc>http://fengche.co/tags/productivity</loc>
+    <lastmod>2014-05-31T00:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://fengche.co/blog/tags/product-design</loc>
-    <lastmod>2014-04-17T00:00:00+08:00</lastmod>
+    <loc>http://fengche.co/tags/product-design</loc>
+    <lastmod>2014-05-31T00:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://fengche.co/blog/tags/open-source</loc>
-    <lastmod>2014-04-17T00:00:00+08:00</lastmod>
+    <loc>http://fengche.co/tags/open-source</loc>
+    <lastmod>2014-05-31T00:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://fengche.co/blog/tags/javascript</loc>
-    <lastmod>2014-04-17T00:00:00+08:00</lastmod>
+    <loc>http://fengche.co/tags/javascript</loc>
+    <lastmod>2014-05-31T00:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://fengche.co/blog/tags/jquery</loc>
-    <lastmod>2014-04-17T00:00:00+08:00</lastmod>
+    <loc>http://fengche.co/tags/jquery</loc>
+    <lastmod>2014-05-31T00:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://fengche.co/blog/tags/smart-time-ago</loc>
-    <lastmod>2014-04-17T00:00:00+08:00</lastmod>
+    <loc>http://fengche.co/tags/smart-time-ago</loc>
+    <lastmod>2014-05-31T00:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://fengche.co/blog/tags/html5-notification</loc>
-    <lastmod>2014-04-17T00:00:00+08:00</lastmod>
+    <loc>http://fengche.co/tags/html5-notification</loc>
+    <lastmod>2014-05-31T00:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://fengche.co/blog/tags/web-notification</loc>
-    <lastmod>2014-04-17T00:00:00+08:00</lastmod>
+    <loc>http://fengche.co/tags/web-notification</loc>
+    <lastmod>2014-05-31T00:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://fengche.co/blog/tags/spinejs</loc>
-    <lastmod>2014-04-17T00:00:00+08:00</lastmod>
+    <loc>http://fengche.co/tags/spinejs</loc>
+    <lastmod>2014-05-31T00:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://fengche.co/blog/tags/javascript-mvc</loc>
-    <lastmod>2014-04-17T00:00:00+08:00</lastmod>
+    <loc>http://fengche.co/tags/javascript-mvc</loc>
+    <lastmod>2014-05-31T00:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://fengche.co/blog/tags/spine</loc>
-    <lastmod>2014-04-17T00:00:00+08:00</lastmod>
+    <loc>http://fengche.co/tags/spine</loc>
+    <lastmod>2014-05-31T00:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://fengche.co/blog/tags/changelog</loc>
-    <lastmod>2014-04-17T00:00:00+08:00</lastmod>
+    <loc>http://fengche.co/tags/changelog</loc>
+    <lastmod>2014-05-31T00:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://fengche.co/blog/tags/marketing</loc>
-    <lastmod>2014-04-17T00:00:00+08:00</lastmod>
+    <loc>http://fengche.co/tags/marketing</loc>
+    <lastmod>2014-05-31T00:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://fengche.co/blog/tags/video-service</loc>
-    <lastmod>2014-04-17T00:00:00+08:00</lastmod>
+    <loc>http://fengche.co/tags/video-service</loc>
+    <lastmod>2014-05-31T00:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://fengche.co/blog/tags/rails</loc>
-    <lastmod>2014-04-17T00:00:00+08:00</lastmod>
+    <loc>http://fengche.co/tags/rails</loc>
+    <lastmod>2014-05-31T00:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://fengche.co/blog/tags/mail</loc>
-    <lastmod>2014-04-17T00:00:00+08:00</lastmod>
+    <loc>http://fengche.co/tags/mail</loc>
+    <lastmod>2014-05-31T00:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://fengche.co/blog/tags/engine</loc>
-    <lastmod>2014-04-17T00:00:00+08:00</lastmod>
+    <loc>http://fengche.co/tags/engine</loc>
+    <lastmod>2014-05-31T00:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://fengche.co/blog/tags/ui</loc>
-    <lastmod>2014-04-17T00:00:00+08:00</lastmod>
+    <loc>http://fengche.co/tags/ui</loc>
+    <lastmod>2014-05-31T00:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://fengche.co/blog/tags/ticket-management</loc>
-    <lastmod>2014-04-17T00:00:00+08:00</lastmod>
+    <loc>http://fengche.co/tags/ticket-management</loc>
+    <lastmod>2014-05-31T00:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://fengche.co/blog/tags/rubyconfchina</loc>
-    <lastmod>2014-04-17T00:00:00+08:00</lastmod>
+    <loc>http://fengche.co/tags/rubyconfchina</loc>
+    <lastmod>2014-05-31T00:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://fengche.co/blog/tags/ruby</loc>
-    <lastmod>2014-04-17T00:00:00+08:00</lastmod>
+    <loc>http://fengche.co/tags/ruby</loc>
+    <lastmod>2014-05-31T00:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://fengche.co/blog/tags/event</loc>
-    <lastmod>2014-04-17T00:00:00+08:00</lastmod>
+    <loc>http://fengche.co/tags/event</loc>
+    <lastmod>2014-05-31T00:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://fengche.co/blog/tags/iterations</loc>
-    <lastmod>2014-04-17T00:00:00+08:00</lastmod>
+    <loc>http://fengche.co/tags/iterations</loc>
+    <lastmod>2014-05-31T00:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://fengche.co/blog/tags/usability</loc>
-    <lastmod>2014-04-17T00:00:00+08:00</lastmod>
+    <loc>http://fengche.co/tags/usability</loc>
+    <lastmod>2014-05-31T00:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://fengche.co/blog/tags/vcs</loc>
-    <lastmod>2014-04-17T00:00:00+08:00</lastmod>
+    <loc>http://fengche.co/tags/vcs</loc>
+    <lastmod>2014-05-31T00:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://fengche.co/blog/tags/integration</loc>
-    <lastmod>2014-04-17T00:00:00+08:00</lastmod>
+    <loc>http://fengche.co/tags/integration</loc>
+    <lastmod>2014-05-31T00:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://fengche.co/blog/tags/git</loc>
-    <lastmod>2014-04-17T00:00:00+08:00</lastmod>
+    <loc>http://fengche.co/tags/git</loc>
+    <lastmod>2014-05-31T00:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://fengche.co/blog/tags/new-feature</loc>
-    <lastmod>2014-04-17T00:00:00+08:00</lastmod>
+    <loc>http://fengche.co/tags/new-feature</loc>
+    <lastmod>2014-05-31T00:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://fengche.co/blog/tags/startup</loc>
-    <lastmod>2014-04-17T00:00:00+08:00</lastmod>
+    <loc>http://fengche.co/tags/startup</loc>
+    <lastmod>2014-05-31T00:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://fengche.co/blog/tags/thoughts</loc>
-    <lastmod>2014-04-17T00:00:00+08:00</lastmod>
+    <loc>http://fengche.co/tags/thoughts</loc>
+    <lastmod>2014-05-31T00:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://fengche.co/blog/tags/annoucement</loc>
-    <lastmod>2014-04-17T00:00:00+08:00</lastmod>
+    <loc>http://fengche.co/tags/annoucement</loc>
+    <lastmod>2014-05-31T00:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://fengche.co/blog/tags/new-feature</loc>
-    <lastmod>2014-04-17T00:00:00+08:00</lastmod>
+    <loc>http://fengche.co/tags/new-feature</loc>
+    <lastmod>2014-05-31T00:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://fengche.co/blog/tags/print</loc>
-    <lastmod>2014-04-17T00:00:00+08:00</lastmod>
+    <loc>http://fengche.co/tags/print</loc>
+    <lastmod>2014-05-31T00:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://fengche.co/blog/tags/改版</loc>
-    <lastmod>2014-04-17T00:00:00+08:00</lastmod>
+    <loc>http://fengche.co/tags/改版</loc>
+    <lastmod>2014-05-31T00:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://fengche.co/blog/tags/智能通知</loc>
-    <lastmod>2014-04-17T00:00:00+08:00</lastmod>
+    <loc>http://fengche.co/tags/智能通知</loc>
+    <lastmod>2014-05-31T00:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://fengche.co/blog/tags/通知</loc>
-    <lastmod>2014-04-17T00:00:00+08:00</lastmod>
+    <loc>http://fengche.co/tags/通知</loc>
+    <lastmod>2014-05-31T00:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://fengche.co/blog/tags/updates</loc>
-    <lastmod>2014-04-17T00:00:00+08:00</lastmod>
+    <loc>http://fengche.co/tags/updates</loc>
+    <lastmod>2014-05-31T00:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://fengche.co/blog/tags/notification</loc>
-    <lastmod>2014-04-17T00:00:00+08:00</lastmod>
+    <loc>http://fengche.co/tags/notification</loc>
+    <lastmod>2014-05-31T00:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://fengche.co/blog/tags/desktop-notification</loc>
-    <lastmod>2014-04-17T00:00:00+08:00</lastmod>
+    <loc>http://fengche.co/tags/desktop-notification</loc>
+    <lastmod>2014-05-31T00:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://fengche.co/blog/tags/notification</loc>
-    <lastmod>2014-04-17T00:00:00+08:00</lastmod>
+    <loc>http://fengche.co/tags/notification</loc>
+    <lastmod>2014-05-31T00:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://fengche.co/blog/tags/email</loc>
-    <lastmod>2014-04-17T00:00:00+08:00</lastmod>
+    <loc>http://fengche.co/tags/email</loc>
+    <lastmod>2014-05-31T00:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://fengche.co/blog/tags/maintenance</loc>
-    <lastmod>2014-04-17T00:00:00+08:00</lastmod>
+    <loc>http://fengche.co/tags/maintenance</loc>
+    <lastmod>2014-05-31T00:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://fengche.co/blog/tags/server</loc>
-    <lastmod>2014-04-17T00:00:00+08:00</lastmod>
+    <loc>http://fengche.co/tags/server</loc>
+    <lastmod>2014-05-31T00:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://fengche.co/blog/tags/announcement</loc>
-    <lastmod>2014-04-17T00:00:00+08:00</lastmod>
+    <loc>http://fengche.co/tags/announcement</loc>
+    <lastmod>2014-05-31T00:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://fengche.co/blog/tags/new-feature</loc>
-    <lastmod>2014-04-17T00:00:00+08:00</lastmod>
+    <loc>http://fengche.co/tags/new-feature</loc>
+    <lastmod>2014-05-31T00:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://fengche.co/blog/tags/follower</loc>
-    <lastmod>2014-04-17T00:00:00+08:00</lastmod>
+    <loc>http://fengche.co/tags/follower</loc>
+    <lastmod>2014-05-31T00:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://fengche.co/blog/tags/协作者</loc>
-    <lastmod>2014-04-17T00:00:00+08:00</lastmod>
+    <loc>http://fengche.co/tags/协作者</loc>
+    <lastmod>2014-05-31T00:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://fengche.co/blog/tags/新功能</loc>
-    <lastmod>2014-04-17T00:00:00+08:00</lastmod>
+    <loc>http://fengche.co/tags/新功能</loc>
+    <lastmod>2014-05-31T00:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://fengche.co/blog/tags/任务</loc>
-    <lastmod>2014-04-17T00:00:00+08:00</lastmod>
+    <loc>http://fengche.co/tags/任务</loc>
+    <lastmod>2014-05-31T00:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://fengche.co/blog/page/2</loc>
-    <lastmod>2014-04-17T00:00:00+08:00</lastmod>
+    <loc>http://fengche.co/tags/代码库</loc>
+    <lastmod>2014-05-31T00:00:00+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>http://fengche.co/tags/集成</loc>
+    <lastmod>2014-05-31T00:00:00+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>http://fengche.co/page/2</loc>
+    <lastmod>2014-05-31T00:00:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1</priority>
   </url>
   <url>
-    <loc>http://fengche.co/blog/page/3</loc>
-    <lastmod>2014-04-17T00:00:00+08:00</lastmod>
+    <loc>http://fengche.co/page/3</loc>
+    <lastmod>2014-05-31T00:00:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1</priority>
   </url>
   <url>
-    <loc>http://fengche.co/blog/page/4</loc>
-    <lastmod>2014-04-17T00:00:00+08:00</lastmod>
+    <loc>http://fengche.co/page/4</loc>
+    <lastmod>2014-05-31T00:00:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1</priority>
   </url>
   <url>
-    <loc>http://fengche.co/blog/page/5</loc>
-    <lastmod>2014-04-17T00:00:00+08:00</lastmod>
+    <loc>http://fengche.co/page/5</loc>
+    <lastmod>2014-05-31T00:00:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1</priority>
   </url>
   <url>
-    <loc>http://fengche.co/blog/page/6</loc>
-    <lastmod>2014-04-17T00:00:00+08:00</lastmod>
+    <loc>http://fengche.co/page/6</loc>
+    <lastmod>2014-05-31T00:00:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1</priority>
   </url>
