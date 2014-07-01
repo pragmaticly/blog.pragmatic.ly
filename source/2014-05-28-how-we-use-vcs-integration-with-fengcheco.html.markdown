@@ -9,7 +9,7 @@ author: roy
 
 像我们这样的开发者每天都使用 VCS (版本控制系统) 完成工作， 比如 Git 或者 SVN 。将 VCS 融入您目前的开发过程中，可以使您更加详细精确的了解到代码情况以及项目进度，使代码和项目管理融为一体。
 
-设置教程请看[这里](/introducing_vcs_integration_with_fengcheco)
+设置教程请看[这里](/blog/introducing_vcs_integration_with_fengcheco)
 
 READMORE
 

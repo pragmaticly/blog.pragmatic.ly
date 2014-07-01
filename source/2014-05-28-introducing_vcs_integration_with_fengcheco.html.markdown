@@ -13,7 +13,7 @@ author: roy
 
 目前我们已经支持了 [GitHub](https://github.com/), [BitBucket](https://bitbucket.org/) 以及 [Gitlab](http://gitlab.org/)，如果您正在使用的版本控制器我们还不支持，只需联系我们，我们回尽快帮您解决。
 
-使用方法请参考[这里](/how-we-use-vcs-integration-with-fengcheco)
+使用方法请参考[这里](/blog/how-we-use-vcs-integration-with-fengcheco)
 
 READMORE
 
@@ -25,8 +25,8 @@ READMORE
         $ git config user.email "roy@fengche.co"
 2. 在项目的设置选项中找到 Commit Hook URL
 
-    ![where to set](vcs_integration_with_fengcheco/where_to_set.png)
-    ![commit hook url](vcs_integration_with_fengcheco/commit_hook_url.png)
+    ![where to set](/images/vcs_integration_with_fengcheco/where_to_set.png)
+    ![commit hook url](/images/vcs_integration_with_fengcheco/commit_hook_url.png)
 
     这里我们得到的是
 

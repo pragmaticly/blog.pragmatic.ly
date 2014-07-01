@@ -6,7 +6,7 @@ author: roy
 disqus_identifier: 'enhancement-of-email-management'
 ---
 
-对于 Fengche.co 中[使用邮件集成来管理项目](/new-feature-comment-via-email)这个 Feature 应该大家已经不再陌生了。应用户要求，目前我们加强了邮件管理功能。现在您可以通过使用邮件创建任务的同时，把任务分配给某个团队成员，或者为任务设置标签。
+对于 Fengche.co 中[使用邮件集成来管理项目](/blog/new-feature-comment-via-email)这个 Feature 应该大家已经不再陌生了。应用户要求，目前我们加强了邮件管理功能。现在您可以通过使用邮件创建任务的同时，把任务分配给某个团队成员，或者为任务设置标签。
 
 ## 在特定任务列表下创建任务
 

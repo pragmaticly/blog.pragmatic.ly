@@ -55,7 +55,7 @@ READMORE
 
 **Email Notification**
 
-*如果您开启了[智能通知](/smart-notification-announcement)， 并且您的 Fengche.co 账号离线时。*
+*如果您开启了[智能通知](/blog/smart-notification-announcement)， 并且您的 Fengche.co 账号离线时。*
 
 * 当你是任务的*创建人*的时候，任务的更新会触发提醒。
 * 当你被加入 *协作成员* 列表后，只为你个人触发提醒。
@@ -70,8 +70,8 @@ READMORE
 
 > ###相关文章：
 
-> [更新：改进了桌面通知](/updates-of-desktop-notification)
+> [更新：改进了桌面通知](/blog/updates-of-desktop-notification)
 
-> [新功能：智能通知](/smart-notification-announcement)
+> [新功能：智能通知](/blog/smart-notification-announcement)
 
 *如果您对此次更新有任何意见或者建议，随时联系我们，我们将会持续为您提供更加理想的使用体验*
