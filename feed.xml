@@ -1,0 +1,2033 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]<!-->
+<html class="no-js" lang="zh">
+  <!--<![endif]-->
+  <head>
+    <meta charset="UTF-8">
+
+    <title>
+      风车官方博客 | 高效团队协作工具
+    </title>
+
+    <meta name="description" content="记录风车的产品更新和团队思考">
+    <meta name="keywords" content="项目管理工具,团队协作工具,项目管理工具,高效团队协作工具">
+    <meta name="author" content="The Fengche.co Team">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="cleartype" content="on">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="apple-touch-icon-precomposed" type="image/png" sizes="57x57" href="/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" type="image/png" sizes="72x72" href="/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" type="image/png" sizes="114x114" href="/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" type="image/png" href="/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" type="image/png" href="/apple-touch-icon.png">
+
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png">
+    <link rel="shortcut icon" sizes="16x16" href="/favicon.ico">
+    <link rel="alternate" type="application/rss+xml" title="Fengche.co Blog Feed" href="/blog/feed.xml" />
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link href="/stylesheets/application.css?1392193221" media="screen" rel="stylesheet" type="text/css" />
+    <script src="/javascripts/application.js?1392188988" type="text/javascript"></script>
+
+    
+    <script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script>
+    <script type="text/javascript">var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-4054156-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();</script>
+    
+
+    
+  </head>
+
+  <body class="feed">
+
+    <header class="navbar navbar-fixed-top" role="banner">
+      <div class="container">
+
+        <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
+
+        <a class="brand" href="https://fengcheco.com/" tabindex="-1">Fengche.co</a>
+
+        <nav class="nav-collapse collapse" role="navigation">
+        <ul class="nav pull-right">
+          <li><a href="https://fengcheco.com">首页</a></li>
+          <li><a href="https://fengcheco.com/tour">了解产品</a></li>
+          <li><a href="https://fengcheco.com/pricing">价格方案</a></li>
+          <li><a class="login" data-target="#login-modal" data-toggle="modal" href="https://fengcheco.com/login" role="button" type="button">登录</a></li>
+          <li class="action"><a class="signup" href="https://fengcheco.com/signup">免费注册</a></li>
+        </ul>
+        </nav>
+
+      </div>
+    </header>
+
+    <section class="hero wrap-blue">
+      <div class="container header">
+        
+           <h1 class="blog-name">「风车协作」官方博客</h1>
+           <p> 好好做产品，做好产品 </p>
+        
+      </div>
+    </section>
+
+    <section class="main">
+      <div class="container">
+        <?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <id>https://fengche.co/blog</id>
+    <title>Fengche.co Blog</title>
+    <link>https://fengche.co/blog</link>
+    <language>en-us</language>
+    <copyright>&amp;#x2117; &amp;amp; &amp;#xA9; 2012-2014 Fengche.co</copyright>
+    <link href="https://fengche.co/blog"/>
+    <link href="https://fengche.co/blog/feed.xml" rel="self"/>
+    <updated>2014-05-28T03:47:00Z</updated>
+    <lastBuildDate>2014-05-28T03:47:00Z</lastBuildDate>
+    <pubDate>2014-05-28T03:47:00Z</pubDate>
+    <description>The voice of The Fengche.co Team sharing News, Thoughts &amp; Fun.</description>
+    <author>
+      <name>The Fengche.co Team</name>
+    </author>
+    <item>
+      <title>如何使用 VCS 集成</title>
+      <link>https://fengche.co/blog/how-we-use-vcs-integration-with-fengcheco</link>
+      <description type="html">&lt;p&gt;&lt;img alt="audit commit" width="502" height="610" src="/images/vcs_integration_with_fengcheco/audit_commit.png?1401467189" /&gt;&lt;/p&gt;
+
+&lt;p&gt;像我们这样的开发者每天都使用 VCS (版本控制系统) 完成工作， 比如 Git 或者 SVN 。将 VCS 融入您目前的开发过程中，可以使您更加详细精确的了解到代码情况以及项目进度，使代码和项目管理融为一体。&lt;/p&gt;
+
+&lt;p&gt;设置教程请看&lt;a href="/blog/introducing_vcs_integration_with_fengcheco"&gt;这里&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h4&gt;如何使用&lt;/h4&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;将任务浏览和代码提交关联起来！&lt;/p&gt;
+
+&lt;p&gt;拿我们自己的实际应用来举例，现在有一个任务我需要完成，它的 id 是 909&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Ticket Example" width="442" height="56" src="/images/vcs_integration_with_fengcheco/ticket-example.png?1401467189" /&gt;&lt;/p&gt;
+
+&lt;p&gt;这里有两种方法可以让你的代码提交信息和相应的任务关联起来&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;如果你习惯于每一个新功能都新建一个新的 Branch 来完成，你可以使用这个任务的 id 作为开头来命名这个 branch ，比如 &lt;code&gt;909_downloading_all_attachments_of_a_ticket&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;如果你想要让单个代码提交信息和一个任务对应起来，并且不在乎代码的 branch 的话，你可以在 commit 信息中包含这个任务的 id，&amp;quot;#909&amp;quot;&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;$ git commit -m "Ref #909, Implemented downloading all attachments of a ticket."
+&lt;/pre&gt;
+&lt;p&gt;&lt;img alt="audit commit" width="502" height="610" src="/images/vcs_integration_with_fengcheco/audit_commit.png?1401467189" /&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;使用提交信息控制任务状态。&lt;/p&gt;
+
+&lt;p&gt;你可以使用提交信息中的“命令”来关闭后者完成任务，命令如下：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;完成任务 (&lt;em&gt;completes, completed, resolve, resolves, resolved, solve, solves, solved, fix, fixes, fixed&lt;/em&gt;) 这将会是特定任务状态改为“完成”&lt;/li&gt;
+&lt;li&gt;验收任务 (&lt;em&gt;acceptes, accepted, close, closes, closed&lt;/em&gt;) 这将会使特定任务状态变为“验收通过”&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;您可以在提交代码时，参照下面的示例：&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;$ git commit -m "Resolved #909, This will mark 909 as Completed"
+$ git comimt -m "Closed #909, This will mark 909 as Closed"
+&lt;/pre&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+
+&lt;p&gt;希望这个功能可以让您的团队协作变得更加高效，有任何反馈或建议，欢迎您联系我们！&lt;/p&gt;
+</description>
+      <guid>tag:blog.fengche.co,article.url</guid>
+      <pubDate>2014-05-28T03:47:00Z</pubDate>
+      <category>VCS, Integration, Git, 代码库, 集成</category>
+    </item>
+    <item>
+      <title>如何集成 VCS</title>
+      <link>https://fengche.co/blog/introducing_vcs_integration_with_fengcheco</link>
+      <description type="html">&lt;p&gt;我们致力于设计一款开发友好的工具，希望能够帮助使用者团队更加快速便捷的开发项目以及管理项目进度。&lt;/p&gt;
+
+&lt;p&gt;像我们这样的开发者每天都使用 VCS (版本控制系统) 完成工作， 比如 Git 或者 SVN 。将 VCS 融入您目前的开发过程中，可以使您更加详细精确的了解到代码情况以及项目进度，使代码和项目管理融为一体。&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="audit commit" width="502" height="610" src="/images/vcs_integration_with_fengcheco/audit_commit.png?1401467189" /&gt;&lt;/p&gt;
+
+&lt;p&gt;目前我们已经支持了 &lt;a href="https://github.com/"&gt;GitHub&lt;/a&gt;, &lt;a href="https://bitbucket.org/"&gt;BitBucket&lt;/a&gt; 以及 &lt;a href="http://gitlab.org/"&gt;Gitlab&lt;/a&gt;，如果您正在使用的版本控制器我们还不支持，只需联系我们，我们回尽快帮您解决。&lt;/p&gt;
+
+&lt;p&gt;使用方法请参考&lt;a href="/blog/how-we-use-vcs-integration-with-fengcheco"&gt;这里&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h4&gt;如何设置&lt;/h4&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;首先，你需要确认 Git 中所使用的用户名或者邮箱和您在 Fengche.co 账号中使用的保持一致。如果不一致，您可以在 Git 中做修改：&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;$ git config user.name "Roy Young"
+$ git config user.email "roy@fengche.co"
+&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;在项目的设置选项中找到 Commit Hook URL&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="where to set" width="361" height="130" src="/images/vcs_integration_with_fengcheco/where_to_set.png?1401467189" /&gt;
+&lt;img alt="commit hook url" width="584" height="703" src="/images/vcs_integration_with_fengcheco/commit_hook_url.png?1401467189" /&gt;&lt;/p&gt;
+
+&lt;p&gt;这里我们得到的是&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;https://fengche.co/projects/421d6f9a13e6/hooks?token=2d5af19ba281
+&lt;/pre&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4&gt;Github 设置&lt;/h4&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;打开 Github 项目设置界面，点击侧边栏中的 &amp;ldquo;Settings&amp;rdquo; 标签。&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="GitHub Project Setting" width="422" height="514" src="/images/vcs_integration_with_fengcheco/github-project-setting.png?1401467189" /&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;然后点击 &amp;ldquo;Webhooks &amp;amp; Services&amp;quot;，点击 &amp;quot;Add webhook&amp;quot;。&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="GitHub Project Add Webhook" width="1043" height="347" src="/images/vcs_integration_with_fengcheco/github-project-add-webhook.png?1401467189" /&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;在 Add Webhook 页面完成以下操作。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;把刚才从 Fengche.co 中获取的 Commit Hook URL 粘贴至页面的 &lt;strong&gt;Playload URL&lt;/strong&gt; 输入框。&lt;/li&gt;
+&lt;li&gt;在 &lt;strong&gt;Content type&lt;/strong&gt; 中选择 &lt;em&gt;application/x-www-form-urlencoded&lt;/em&gt;。&lt;/li&gt;
+&lt;li&gt;确保 &lt;strong&gt;Secret&lt;/strong&gt; 为空。&lt;/li&gt;
+&lt;li&gt;点击 &lt;strong&gt;Enable SSL verification&lt;/strong&gt;，如果默认为开启则不需操作。&lt;/li&gt;
+&lt;li&gt;选择 &lt;strong&gt;Just the push event&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;勾选 &lt;strong&gt;Active&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;完成以上操作后点击 &lt;strong&gt;Add Webhooks&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img alt="Github WebHook" width="1070" height="698" src="/images/vcs_integration_with_fengcheco/github-webhook.png?1401467189" /&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4&gt;BitBucket 设置&lt;/h4&gt;
+
+&lt;ol&gt;
+&lt;li&gt;打开 Bitbucket 中项目设置页面，在页面左下角点击 &amp;quot;Settings&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;在中间栏中点击 &amp;ldquo;Hooks&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;在右边栏中选择 &amp;ldquo;POST&amp;quot;，并且点击 &amp;quot;Add hook&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="BitBucket WebHook" width="971" height="577" src="/images/vcs_integration_with_fengcheco/bitbucket-webhook.png?1401467189" /&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;并且将 Fengche.co 中获取的 Comiit Hook HRL 粘贴至弹出窗口 &amp;ldquo;URL&amp;quot;。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;点击 &amp;quot;Save&amp;rdquo;
+&lt;img alt="BitBucket Setting" width="626" height="323" src="/images/vcs_integration_with_fengcheco/bitbucket-setting.png?1401467189" /&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4&gt;GitLab 设置&lt;/h4&gt;
+
+&lt;ol&gt;
+&lt;li&gt;打开 GitLab 项目页面，在右上角点击 &lt;strong&gt;Settings&lt;/strong&gt;
+&lt;img alt="GitLab Setting" width="647" height="183" src="/images/vcs_integration_with_fengcheco/gitlab-setting.png?1401467189" /&gt;&lt;/li&gt;
+&lt;li&gt;在左侧，侧边栏中点击 &lt;strong&gt;Web Hooks&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;把刚才从 Fengche.co 中获取的 Commit Hook URL 粘贴至页面的 &lt;strong&gt;URL&lt;/strong&gt; 输入框。&lt;/li&gt;
+&lt;li&gt;勾选 &lt;strong&gt;Pusher events&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;点击 &lt;strong&gt;Add Web Hook&lt;/strong&gt;
+&lt;img alt="GitLab Setting" width="1184" height="517" src="/images/vcs_integration_with_fengcheco/gitlab-webhook.png?1401467189" /&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;em&gt;希望这个功能可以让您的团队协作变得更加高效，有任何反馈或建议，欢迎您联系我们！&lt;/em&gt;&lt;/p&gt;
+</description>
+      <guid>tag:blog.fengche.co,article.url</guid>
+      <pubDate>2014-05-28T01:47:00Z</pubDate>
+      <category>VCS, Integration, Git, 代码库, 集成</category>
+    </item>
+    <item>
+      <title>新功能：协作者</title>
+      <link>https://fengche.co/blog/new-feature-task-followers</link>
+      <description type="html">&lt;p&gt;原先在 Fengche.co 中我们只可以把任务分配给一个团队成员，但是在我们与用户沟通过程中发现，很多团队需要一个任务由多个成员协同完成。现在，我们为您带来了新功能，您可以为任务添加&lt;em&gt;协作者&lt;/em&gt;。&lt;/p&gt;
+
+&lt;p&gt;当然，如果您的团队不需要使用这个功能的话，您可以忽略此功能，它不会对您原有的工作流程带来任何影响。&lt;strong&gt;但是您需要注意 &lt;a href="#notification_update"&gt;通知策略更新&lt;/a&gt;&lt;/strong&gt;。&lt;/p&gt;
+
+&lt;h2&gt;添加和删除协作者&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;在您打开一个任务的详细页面后，在右边栏便可以轻松找到协作者添加位置&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img alt="task followers" width="1274" height="438" src="/images/new-feature-task-followers/task_followers.png?1397735636" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;在您点击 &lt;em&gt;添加协作者&lt;/em&gt; 后，将会自动会为您弹出团队成员列表&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img alt="followers select list" width="462" height="397" src="/images/new-feature-task-followers/followers_select_list.png?1397735636" /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;您也可以通过输入用户姓名进行检索&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img alt="search follower name" width="462" height="402" src="/images/new-feature-task-followers/search_follower.png?1397735636" /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;移除 协作者&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img alt="remove followers" width="464" height="457" src="/images/new-feature-task-followers/remove_follower.png?1397735636" /&gt;&lt;/p&gt;
+
+&lt;h2&gt;添加附件位置改动&lt;/h2&gt;
+
+&lt;p&gt;我们将原先添加附件移动到了任务界面右上角工具栏内：&lt;/p&gt;
+
+&lt;div id="notification_update"&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;img alt="upload attachments" width="464" height="305" src="/images/new-feature-task-followers/upload_attachments.png?1397735636" /&gt;&lt;/p&gt;
+
+&lt;h2&gt;通知策略更新&lt;/h2&gt;
+
+&lt;p&gt;协作成员功能的另一个好处是把我们的 &lt;em&gt;通知&lt;/em&gt; 更加细分，这样将会更智能的减少对您整个团队的打扰，以及保证您不会错过任何一条重要信息。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Desktop Notification&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;与您无关的任务和任务列表中的动态将不会提醒你。&lt;/em&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;当你被加入 &lt;em&gt;协作成员&lt;/em&gt; 列表后，只为你个人触发提醒。&lt;/li&gt;
+&lt;li&gt;当你被 &lt;em&gt;分配任务&lt;/em&gt; 后，触发提醒。&lt;/li&gt;
+&lt;li&gt;当你是此任务 &lt;em&gt;协作成员&lt;/em&gt; 或者 &lt;em&gt;任务分配者&lt;/em&gt; 时，所有任务更新以及任务讨论将会触发提醒。&lt;/li&gt;
+&lt;li&gt;任务中有讨论 &lt;em&gt;@&lt;/em&gt; 你的时候，触发提醒。&lt;/li&gt;
+&lt;li&gt;任务列表中有讨论 &lt;em&gt;@&lt;/em&gt; 你的时候，触发提醒。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Email Notification&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;如果您开启了&lt;a href="/blog/smart-notification-announcement"&gt;智能通知&lt;/a&gt;， 并且您的 Fengche.co 账号离线时。&lt;/em&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;当你是任务的&lt;em&gt;创建人&lt;/em&gt;的时候，任务的更新会触发提醒。&lt;/li&gt;
+&lt;li&gt;当你被加入 &lt;em&gt;协作成员&lt;/em&gt; 列表后，只为你个人触发提醒。&lt;/li&gt;
+&lt;li&gt;当你被 &lt;em&gt;分配任务&lt;/em&gt; 后，触发提醒。&lt;/li&gt;
+&lt;li&gt;当你是此任务 &lt;em&gt;协作成员&lt;/em&gt; 或者 &lt;em&gt;任务分配者&lt;/em&gt; 时，所有任务更新以及任务讨论将会触发提醒。&lt;/li&gt;
+&lt;li&gt;任务中有讨论 &lt;em&gt;@&lt;/em&gt; 你的时候，触发提醒。&lt;/li&gt;
+&lt;li&gt;任务列表中有讨论 &lt;em&gt;@&lt;/em&gt; 你的时候，触发提醒。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Notification Center&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;保持原先策略，所有任务和任务列表动态都将会为您保存。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;h3&gt;相关文章：&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href="/blog/updates-of-desktop-notification"&gt;更新：改进了桌面通知&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="/blog/smart-notification-announcement"&gt;新功能：智能通知&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;em&gt;如果您对此次更新有任何意见或者建议，随时联系我们，我们将会持续为您提供更加理想的使用体验&lt;/em&gt;&lt;/p&gt;
+</description>
+      <guid>tag:blog.fengche.co,article.url</guid>
+      <pubDate>2014-04-15T01:11:00Z</pubDate>
+      <category>announcement, new feature, follower, 协作者, 新功能, 任务</category>
+    </item>
+    <item>
+      <title>3 月 23 号系统维护：风车迁移到国内服务器来加速访问</title>
+      <link>https://fengche.co/blog/server-324-maintenance</link>
+      <description type="html">&lt;p&gt;上周日凌晨我们对服务器进行了一次 2 小时的维护，不好意思，影响到了你们的正常使用。&lt;/p&gt;
+
+&lt;p&gt;此次维护，最主要的是把服务器从之前的 Linode Freemont 迁移到了 &lt;a href="http://www.ucloud.cn"&gt;UCloud&lt;/a&gt; 的北京数据中心并对数据进行了迁移，相信对于国内用户来说，会有非常明显的访问速度提升。如果你有发现任何问题，请随时联系我们，可以通过项目页面右上角的联系我们或者邮件联系 &lt;a href="mailto:support@fengche.co"&gt;support@fengche.co&lt;/a&gt;。&lt;/p&gt;
+
+&lt;p&gt;因为域名备案的问题，风车临时启用了新域名 fengcheco.com，目前 fengche.co 是重定向到了 fengcheco.com，我们计划在 4 月份备案域名 fengche.co，届时 fengche.co 域名会有一至两周的不可访问时间。不过，fengcheco.com 将依然可以访问，所以麻烦你使用新域名，对此带来的不便，希望能得到你的理解。同时，如果你启用了风车的 Github/Bitbucket /Gitlab 集成，请暂时更新你的 hook url 的域名到 fengcheco.com。关于对于代码版本控制系统的支持，可以查看这篇使用说明，&lt;a href="https://fengcheco.com/blog/integrate-version-control-system-with-pragmat"&gt;集成代码管理系统到风车&lt;/a&gt;。&lt;/p&gt;
+
+&lt;p&gt;希望你喜欢这个变化。我们会继续努力，给大家提高更好的协作工具和服务。&lt;/p&gt;
+</description>
+      <guid>tag:blog.fengche.co,article.url</guid>
+      <pubDate>2014-03-24T12:00:00Z</pubDate>
+      <category>maintenance, server</category>
+    </item>
+    <item>
+      <title>新功能：通过邮件完成创建任务、分配任务和设置标签</title>
+      <link>https://fengche.co/blog/enhancement-of-email-management</link>
+      <description type="html">&lt;p&gt;对于 Fengche.co 中&lt;a href="/blog/new-feature-comment-via-email"&gt;使用邮件集成来管理项目&lt;/a&gt;这个 Feature 应该大家已经不再陌生了。应用户要求，目前我们加强了邮件管理功能。现在您可以通过使用邮件创建任务的同时，把任务分配给某个团队成员，或者为任务设置标签。&lt;/p&gt;
+
+&lt;h2&gt;在特定任务列表下创建任务&lt;/h2&gt;
+
+&lt;p&gt;这里发送邮件的地址规则为 &lt;code&gt;project+PROJECT_ID+ITERATION_ID@info.fengche.co&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;首先在浏览器中打开你的 Project&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="find ids" width="627" height="386" src="/images/enhancement-of-email-management/find_iteration_and_project_id.png?1394735488" /&gt;&lt;/p&gt;
+
+&lt;p&gt;这里我们可以很清楚的找到当前项目的 PROJECT&lt;em&gt;ID 和 ITERATION&lt;/em&gt;ID.&lt;/p&gt;
+
+&lt;p&gt;所以示例中正确地址应该为 &lt;code&gt;project+421d6f9a13e6+3da3196195e1@info.fengche.co&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="email create ticket" width="826" height="230" src="/images/enhancement-of-email-management/email_create_ticket.png?1394901711" /&gt;&lt;/p&gt;
+
+&lt;p&gt;发送邮件后，Fengche.co 将会在对应的项目的任务列表中创建刚才设置的任务&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="create ticket" width="398" height="245" src="/images/enhancement-of-email-management/create_ticket_in_iteration.png?1394735488" /&gt;&lt;/p&gt;
+
+&lt;h2&gt;设置标签&lt;/h2&gt;
+
+&lt;p&gt;如果刚才的任务我们想设置一个标签，只需要在邮件标题后面加上 &lt;code&gt;#标签名称#&lt;/code&gt; 即可。&lt;strong&gt;注意空格哦&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="email set tag" width="824" height="218" src="/images/enhancement-of-email-management/email_set_tag.png?1394901711" /&gt;&lt;/p&gt;
+
+&lt;p&gt;创建任务时，设置标签&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="set tag" width="398" height="274" src="/images/enhancement-of-email-management/set_tag.png?1394735488" /&gt;&lt;/p&gt;
+
+&lt;h2&gt;分配给团队成员&lt;/h2&gt;
+
+&lt;p&gt;如果您想在创建任务同时分配给某个团队成员，只需要在邮件标题后面加上 &lt;code&gt;@成员&lt;/code&gt;。&lt;strong&gt;同样需要注意空格&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="email assign to member" width="826" height="255" src="/images/enhancement-of-email-management/email_assign_to_member.png?1394901711" /&gt;&lt;/p&gt;
+
+&lt;p&gt;创建时，自动分配给指定成员&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="assign to member" width="396" height="267" src="/images/enhancement-of-email-management/assign_to_member.png?1394735488" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;当然您也可以同时完成上述操作&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="email set tag and assign" width="826" height="262" src="/images/enhancement-of-email-management/email_set_tag_and_assign.png?1394901711" /&gt;&lt;/p&gt;
+
+&lt;p&gt;创建任务时，同时设置标签，并分配给团队成员&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="set tag and assign" width="397" height="275" src="/images/enhancement-of-email-management/set_tag_and_assign.png?1394735488" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;如果您有什么疑问，或者更好的建议的话，欢迎您与我们交流。&lt;/strong&gt;&lt;/p&gt;
+</description>
+      <guid>tag:blog.fengche.co,article.url</guid>
+      <pubDate>2014-03-14T08:25:00Z</pubDate>
+      <category>Announcement, New feature, Notification, Email</category>
+    </item>
+    <item>
+      <title>更新：改进了桌面通知</title>
+      <link>https://fengche.co/blog/updates-of-desktop-notification</link>
+      <description type="html">&lt;p&gt;桌面通知是用户很喜欢的一项功能，当项目中有事情发生时，会即时的通知到你，让你能专注做事，不用在风车里盯着项目，同时又不会错过任何一条重要信息。&lt;/p&gt;
+
+&lt;p&gt;然而在一个大的团队中，当短时间内团队其他人有密集操作或者在讨论任务的时候，如果这个任务跟你无关，那么方便的桌面通知将会变得非常恼人，这些不停地从桌面右上角跳出来的通知会打扰到你目前专注的状态。&lt;/p&gt;
+
+&lt;p&gt;所以为了解决这个问题，我们对桌面通知做了一些更新，希望你喜欢。&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Desktop Notification" width="383" height="129" src="/images/smart-notification-announcement/desktop-notification.png?1393271164" /&gt;&lt;/p&gt;
+
+&lt;p&gt;现在，默认情况下你将只收到跟你相关的桌面通知，包括以下这些情况：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;当有人分配了某个分配给你的时候，你会收到弹出的桌面通知。&lt;/li&gt;
+&lt;li&gt;当你负责的任务（分配给你）发生任何讨论时，你会收到弹出的桌面通知。&lt;/li&gt;
+&lt;li&gt;当任何一个留言里 @ 你的名字的时候，你会收到弹出的桌面通知。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;所以，如果讨论任务时，你希望团队某人能迅速的回应你的请求，最好的办法是在讨论中 @ 他。&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;如果您对此次更新有任何意见或者建议，随时联系我们，我们将会持续为您提供更加理想的使用体验&lt;/em&gt;&lt;/p&gt;
+</description>
+      <guid>tag:blog.fengche.co,article.url</guid>
+      <pubDate>2014-03-12T09:45:00Z</pubDate>
+      <category>updates, notification, desktop notification, 通知</category>
+    </item>
+    <item>
+      <title>新功能：智能通知</title>
+      <link>https://fengche.co/blog/smart-notification-announcement</link>
+      <description type="html">&lt;p&gt;关于这次的更新，也许你已经用上了。但是也许你对以前的提醒方式没有意见、也许你不在乎原来那样的提醒方式、或者也许你已经忍了很久&amp;hellip;&lt;/p&gt;
+
+&lt;h3&gt;问题&lt;/h3&gt;
+
+&lt;p&gt;虽然没有太多反馈，但是我可以很诚实的告诉你，随着项目的不断迭代长大，随着团队成员的不断增长，随着这个项目的活跃越来越高，终究有一天，你会忍无可忍的。&lt;/p&gt;
+
+&lt;p&gt;对于以前的方式是这样的，比如当有一个讨论被创建的时候，首先你的电脑会弹出桌面通知，然后你的邮箱会接受到邮件，如果你的其他移动设备绑定了邮箱的话，比如像我，iPad，iPhone 绑定了邮箱，并且开启实时推送的话，简直就是灾难&amp;hellip;一动四响&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;这绝对不是风车的目标。风车是希望“给你一个简洁的空间、不让你迷失在信息的海洋中、让你工作更加专注”！&lt;/p&gt;
+
+&lt;h3&gt;原因分析&lt;/h3&gt;
+
+&lt;p&gt;首先造成这样的“通知信息轰炸”的原因有两个。一个是重复通知，一个是通知间隔频率过快。&lt;/p&gt;
+
+&lt;h4&gt;A. 重复通知&lt;/h4&gt;
+
+&lt;p&gt;当一个提醒已经被用户看到以后，如果我们继续以其他形式给用户发送重复的提醒的话，我们认为这是一种打扰。比如我正在写代码，看到了桌面通知，而且我也通过这个通知点击进入了相应的页面，那么为什么还要发邮件给我？&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;解决方案：智能通知&lt;/strong&gt;&lt;br&gt;
+现在我们采用这样的处理方式：当用户登录 Fengche.co 并保持在线状态，我们只推送桌面通知；只有当你处于离线状态，我们才会发送邮件通知给你。不管是哪种形式，所有的提醒都会被记录在“通知中心”里面，保证你不会错过任何重要的事情。&lt;/p&gt;
+
+&lt;h4&gt;B. 通知间隔频率过快&lt;/h4&gt;
+
+&lt;p&gt;有没有这样的感觉，有时候当一个“任务”被新建的时候，在一分钟之内，或者仅仅几十秒内，你会突然收到好几封邮件。比如，第一封是新建任务，第二封是这个任务分配给了你&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;也许我只需要知道有个任务被创建了，也许我现在没有时间或者精力去看这些细节，也许我现在正专注做某件事情&amp;hellip; 总之我只需要知道有任务被创建了，但是目前不关心细节。那么这样高频率的信息轰炸对于我来说就是赤裸裸的干扰！它让我不再专注！&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;解决方案：延迟发送&lt;/strong&gt;&lt;br&gt;
+现在我们这样来处理：当一个任务被创建的时候，我们会延迟一分钟发送邮件提醒。如果在这个延迟的一分钟内这个相关的任务发生了其他变化，比如分配、设置优先级、设置截止日期之类的操作的话，一分钟延迟结束后我们会把所有信息汇总到一封邮件发给你。这样降低了提醒的频率，并且在这一封汇总信息的邮件中，你也不会错过任何重要信息。&lt;/p&gt;
+
+&lt;h3&gt;如何设置通知？&lt;/h3&gt;
+
+&lt;p&gt;目前在风车里面，我们有两种不同级别的通知设置：全站邮件通知和项目邮件通知。你可以随时根据自己的需求，来相应开启或者关闭某种通知设置。&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="setting smart notificaion" width="1085" height="612" src="/images/smart-notification-announcement/seting-smart-notification.png?1393271164" /&gt;&lt;/p&gt;
+
+&lt;h4&gt;全站邮件通知&lt;/h4&gt;
+
+&lt;p&gt;全站邮件通知设置目前安排在个人资料设置里面。默认全站邮件通知是开启的，这样你就可以通过邮件了解你参与的项目中发生的一切。一旦你关闭此项，那么你将不再收到任何邮件通知。&lt;/p&gt;
+
+&lt;p&gt;其中「智能通知」是辅助减少信息干扰，让你更加专注于工作。当你启用此项后，如果你使用浏览器登录了网页或者正在使用移动客户端，我们会停止发送邮件通知，而只为你提供桌面通知。&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Desktop Notification" width="383" height="129" src="/images/smart-notification-announcement/desktop-notification.png?1393271164" /&gt;&lt;/p&gt;
+
+&lt;p&gt;当然，所有重要的信息（例如：任务创建、任务分配的改变、评论信息等）仍然还是会保存在通知中心里面。&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Notification Center Details" width="374" height="359" src="/images/smart-notification-announcement/notification-center-detail.png?1393271164" /&gt;&lt;/p&gt;
+
+&lt;h4&gt;项目邮件通知&lt;/h4&gt;
+
+&lt;p&gt;如果你想关闭某一个项目的邮件通知，你可以在控制面板(Dashboard)那个项目卡片里去设置关闭/开启通知。当你关闭后，你将不再收到这个项目的通知邮件，但不会影响其它项目的通知。&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Project Notification" width="336" height="223" src="/images/smart-notification-announcement/project-notification.png?1393480657" /&gt;&lt;/p&gt;
+
+&lt;h3&gt;改进计划&lt;/h3&gt;
+
+&lt;p&gt;以上就是我们已有目前的通知功能，但是我们知道，它还是有不少可以改进的空间，比如一个统一的通知设置界面，比如更加细粒度的通知设置。所以，我们也正在做这些改进，下面是新的设计。&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Notification Mockup" width="469" height="475" src="/images/smart-notification-announcement/notification-mockup.png?1393271164" /&gt;&lt;/p&gt;
+
+&lt;p&gt;如果你有什么疑问，或者更好的建议的话，欢迎你与我们交流，谢谢！&lt;/p&gt;
+</description>
+      <guid>tag:blog.fengche.co,article.url</guid>
+      <pubDate>2014-02-17T14:45:00Z</pubDate>
+      <category>Announcement, 智能通知, 通知</category>
+    </item>
+    <item>
+      <title>新功能：打印任务和任务列表</title>
+      <link>https://fengche.co/blog/announcing-print-task-and-iteration</link>
+      <description type="html">&lt;p&gt;因为我们是一个远程团队，所以很多时候了解不到大家在一个办公室办公使用 Fengche.co 时的痛点。最近 &lt;a href="http://knewone.com"&gt;Knewone&lt;/a&gt; 团队反映他们在开会的时候经常需要对任务或者任务列表进行讨论，然后作出决定，分配任务或者改变完成期限等等。但是目前只能让大家抱着电脑，或者投影到墙上，不太方便。&lt;/p&gt;
+
+&lt;p&gt;我们认为开会时的高效率取决与是否于专注和整体流程是否简洁。不要大动干戈的使用投影，也不要人人抱着电脑挤在一起，最简单有效的方法是打印出来和大家一起讨论，然后散掉各回各位。&lt;/p&gt;
+
+&lt;h2&gt;打印任务&lt;/h2&gt;
+
+&lt;p&gt;您可以在任务右上角的操作中找到它&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="print-task" width="1083" height="303" src="/images/print-task-and-iteration/print-task.png?1392299296" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;打印任务效果图预览&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="review print task" width="797" height="630" src="/images/print-task-and-iteration/print-task-preview.png?1392299296" /&gt;&lt;/p&gt;
+
+&lt;h2&gt;打印任务列表&lt;/h2&gt;
+
+&lt;p&gt;您可以在任务列表右上角的操作中找到它&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="print-iteration" width="1084" height="270" src="/images/print-task-and-iteration/print-iteration.png?1392299296" /&gt;&lt;/p&gt;
+
+&lt;p&gt;打印任务列表效果图预览&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="review print iteration" width="801" height="1023" src="/images/print-task-and-iteration/print-iteration-preview.png?1392299296" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;在新的一年，我们期待大家的建议和意见，以更好的为您带来更加优质的产品和服务。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;“马”上&lt;a href="https://fengche.co"&gt;登录&lt;/a&gt;试试！&lt;/p&gt;
+</description>
+      <guid>tag:blog.fengche.co,article.url</guid>
+      <pubDate>2014-02-12T08:10:00Z</pubDate>
+      <category>Announcement, Print</category>
+    </item>
+    <item>
+      <title>新年新气象 -- Pragmatic.ly 全新改版</title>
+      <link>https://fengche.co/blog/new-year-new-branding</link>
+      <description type="html">&lt;p&gt;2014，风车(fengche.co) 全新启动了，我们期望她越转越快，为更多企业和团队提供源源不断的动力。&lt;/p&gt;
+
+&lt;h2&gt;新的名字，新的域名&lt;/h2&gt;
+
+&lt;p&gt;&lt;img alt="Logo Snapshot" width="360" height="49" src="/images/new-year-new-branding/logo-snapshot.png?1392188987" /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;新域名：Fengche.co&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;新名字：风车协作&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;大伙儿再不会记不住我们的域名了吧 :) 不过注意哦，是 .co 而不是 .com, co 除了代表 Corporation （公司）外，我们还寄予了 Collabration （协作）的意义。&lt;/p&gt;
+
+&lt;h2&gt;全新的设计&lt;/h2&gt;
+
+&lt;p&gt;&lt;img alt="App Snapshot" width="500" height="323" src="/images/new-year-new-branding/2014-version-app-snapshot.png?1392188987" /&gt;&lt;/p&gt;
+
+&lt;p&gt;新设计在保持现有信息架构基本不变的情况下，对于配色、图标和排版做了很多改进，不仅是一次视觉设计上的调优，也为之后我们的下阶段系统改进提供了基础。下面是一些功能上的更新细节:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;根据用户屏幕大小，左侧边栏可以缩进和弹出，这样能预留更多的空间给用户管理任务和讨论。&lt;/li&gt;
+&lt;li&gt;新的任务状态图标，圆形 icon 具有更合理的状态指示。&lt;/li&gt;
+&lt;li&gt;右栏任务的属性编辑被移到顶部排成一列，更有序的排列，更紧致的空间，达到操作和阅读的平衡性。&lt;/li&gt;
+&lt;li&gt;改进了任务动态的排版，没有之前那么局促。同时改进了评论框的交互，增大了输入空间。&lt;/li&gt;
+&lt;li&gt;智能通知，当你网页或移动端在线时，不发送邮件通知。目前属于测试功能，想尝试的可以到个人资料里设置开启。&lt;/li&gt;
+&lt;li&gt;控制面板，改进了UI。另外，你可以方便的在项目卡片里关闭或打开某个项目的邮件通知。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;移动客户端&lt;/h2&gt;
+
+&lt;p&gt;&lt;img alt="App Snapshot" width="480" height="360" src="/images/new-year-new-branding/new-mobile-snapshot.jpg?1392188987" /&gt;&lt;/p&gt;
+
+&lt;p&gt;全新的移动客户端，让你出门在外也可以保持和团队的协作。移动端的设计和交互，基本沿袭了 Web 新版的设计，所以新老用户应该很容易上手。&lt;/p&gt;
+
+&lt;p&gt;目前第一版的移动应用，是基于Web的混合式应用，在体验上不如纯原生应用（比如还没有手势滑动的操作），但是能让我们同时发布 iOS 和 Android 版，也让我们有了缓冲时间去做改进。 &lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://itunes.apple.com/cn/app/fengche.co-ke-hu-duan/id790013753?mt=8"&gt;iPhone 版下载&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://fengche.co/apps/fengche.apk"&gt;Android 版下载&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;欢迎大家使用，如果大家在使用过程中发现任何问题，或有任务建议，请随时反馈给我们（&lt;a href="mailto:support@fengche.co"&gt;Email&lt;/a&gt;或网页上的帮助里提交反馈）。&lt;/p&gt;
+
+&lt;p&gt;2014年，我们将坚持「专注」「有序」「高效」的方向，继续改进产品，给你们提供更好的产品和服务。&lt;/p&gt;
+
+&lt;p&gt;&lt;p style="text-align:center;margin: 2em auto;"&gt;
+  &lt;a href="https://fengche.co/login" style="color:#fff;background:#09c;padding:10px 30px;border-radius:5px;text-decoration:none" target="_blank"&gt;
+马上登录试试新版
+&lt;/a&gt;&lt;/p&gt;
+</description>
+      <guid>tag:blog.fengche.co,article.url</guid>
+      <pubDate>2014-02-12T00:43:00Z</pubDate>
+      <category>Annoucement, UI, 改版</category>
+    </item>
+    <item>
+      <title>新功能：直接邀请组织成员加入项目</title>
+      <link>https://fengche.co/blog/invite-user-from-organization</link>
+      <description type="html">&lt;p&gt;先向我们用户们表示歉意，这个功能来晚了。随着用户使用 Fengche.co 的时间越来越长，项目开始增多，重复输入团队成员邮件地址来邀请用户成了一个痛点，所以我们觉得是时候开始做直接邀请组织里的成员加入项目，更方便协作。这里先解释两个概念。&lt;/p&gt;
+
+&lt;h3&gt;项目团队&lt;/h3&gt;
+
+&lt;p&gt;指当前项目里的团队人员，见边栏的团队成员列表。&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Project Team" width="249" height="103" src="/images/invite-user-from-organization/project-team.png?1384835574" /&gt;&lt;/p&gt;
+
+&lt;h3&gt;组织团队&lt;/h3&gt;
+
+&lt;p&gt;指你的组织里的团队人员，是你创建的所有项目里的项目团队人员之和，算自然人。&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Organization Team" width="566" height="294" src="/images/invite-user-from-organization/organization-team.png?1384835574" /&gt;&lt;/p&gt;
+
+&lt;h3&gt;具体实现&lt;/h3&gt;
+
+&lt;p&gt;下图是我们的具体实现。&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="New Invite Modal" width="455" height="340" src="/images/invite-user-from-organization/new-invite.png?1384835574" /&gt;&lt;/p&gt;
+
+&lt;p&gt;在邀请现有成员区域点击邀请以后，会直接给这位成员发送邀请加入项目邮件，很简单。另外，我们目前正在做新的项目页面设计，到时候会有更加优秀的视觉设计和交互设计，包括这里，敬请期待！&lt;/p&gt;
+
+&lt;h3&gt;其他更新&lt;/h3&gt;
+
+&lt;p&gt;这次的发布还修复了下面几个 bug。&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;多附件情况下，删除一个附件后导致附件区域显示不全。&lt;/li&gt;
+&lt;li&gt;新成员加入后，无法通过 @ 来补全新成员。&lt;/li&gt;
+&lt;li&gt;在空间面板里面增加黑色的圆圈代表 “验收失败” 状态。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;如果你有任何问题和建议，随时联系我们，谢谢。&lt;/p&gt;
+</description>
+      <guid>tag:blog.fengche.co,article.url</guid>
+      <pubDate>2013-11-19T04:00:00Z</pubDate>
+      <category>Announcement, New Feature</category>
+    </item>
+    <item>
+      <title>新功能: 通过复制粘贴就能上传图片</title>
+      <link>https://fengche.co/blog/announcing-pic-pasting</link>
+      <description type="html">&lt;h2&gt;上传其它网页上的图&lt;/h2&gt;
+
+&lt;p&gt;我们深深的相信很多时候一图胜千言, 所以我们一直在简化我们的上传图片的方式.&lt;/p&gt;
+
+&lt;p&gt;如果你想上传你电脑上的图到 Fengche.o, 你已经可以通过简单的&amp;quot;拖拽&amp;quot;或&amp;quot;文件选择&amp;ldquo;来搞定.
+但是如果你想上传一张你在其他网站上的图片到 Fengche.co 就没那么容易了, 你还得先下载它们, 然后再上传到 Fengche.co 中.&lt;/p&gt;
+
+&lt;p&gt;现在你已经不用了, 有了这个新功能, 你可以直接复制其他网页上的图片, 并在浏览器中粘贴就可以把你复制的图片上传到当前的任务中.
+遗憾的是目前只有最新版的 Chrome 支持这个功能. 不过我相信很快其他浏览器也会跟上的, 不久的将来你应该可以在大多浏览器里享用这功能.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Update&lt;/strong&gt;: 现在邮件客户端里，也支持用“拷贝图片并粘贴”
+的方式来上传邮件里的图片到 Fengche.co 了。&lt;/p&gt;
+
+&lt;h2&gt;上传你的屏幕截图&lt;/h2&gt;
+
+&lt;p&gt;如果你使用 Mac 并且你想上传你的屏幕截图. 你只需要用 Command + Control + Shift + 4 来截图, 然后到 Fengche.co 用 Command + v 粘贴, 就能直接把你的屏幕截图上传到你当前的任务中了.&lt;/p&gt;
+
+&lt;h2&gt;别忘了我们的任务描述支持 Markdown&lt;/h2&gt;
+
+&lt;p&gt;如果你希望在你的任务描述中引入一些图片, 你完全可以使用 Markdown 来插入图片.
+格式也很简单:&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;   ![描述](图片地址)
+&lt;/pre&gt;
+&lt;p&gt;是不是很简单?&lt;/p&gt;
+
+&lt;p&gt;Enjoy!&lt;/p&gt;
+</description>
+      <guid>tag:blog.fengche.co,article.url</guid>
+      <pubDate>2013-11-07T17:00:00Z</pubDate>
+      <category>Announcement, New Feature</category>
+    </item>
+    <item>
+      <title>新功能: 控制面板</title>
+      <link>https://fengche.co/blog/introduce-the-new-dashboard</link>
+      <description type="html">&lt;h2&gt;为什么现在才有控制面板?&lt;/h2&gt;
+
+&lt;p&gt;我们一开始并没有去做这块, 除了为了保持我们产品精益化渐进外. 我们觉得控制面板不是初期用户所需的必要功能. 新用户来试用我们的产品, 最主要是要体验任务管理/团队协作的核心功能, 不放控制面板的好处是, 他创建帐户后, 可以直接了当地进入项目开始体验流程.&lt;/p&gt;
+
+&lt;p&gt;而当 Fengche.co 发展到现在, 已经有很大一部分用户拥有不止一个项目, 甚至同时拥有五六个项目的. 那么用户对所有的项目的统揽, 管理, 归档等需求就随之产生了.&lt;/p&gt;
+
+&lt;p&gt;好的, 那么来看看我们新打造的控制面板.&lt;/p&gt;
+
+&lt;h2&gt;卡片式布局方式&lt;/h2&gt;
+
+&lt;p&gt;&lt;img alt="Dashboard Snapshot" width="720" height="396" src="/images/introduce-the-new-dashboard/dashboard-snapshot.png?1384231969" /&gt;&lt;/p&gt;
+
+&lt;p&gt;如截图所见, 一个项目按一个卡片的形式展现, 上下两个区块用以区分「我的项目」和「参与的项目」. 「参与的项目」是你被邀请到他人的项目, 你不具有对项目的管理权限. 「我的项目」是你自己帐户下创建的项目, 你可以编辑/归档/删除项目.&lt;/p&gt;
+
+&lt;p&gt;之所以采用卡片式的展示方式, 一是项目是一个个独立单元, 相互之间数据和团队成员都是独立的, 所以用单独的卡片代表一个项目, UI上非常贴切; 二是, 控制面板作为项目入口, 快速进入项目是最常用的功能, 那么卡片这种大区块的导航, 你直接点击卡片就能进入项目, 使用起来是非常轻松愉快的.&lt;/p&gt;
+
+&lt;h2&gt;卡片的数据呈现及功能&lt;/h2&gt;
+
+&lt;p&gt;&lt;img alt="Card Annotation" width="550" height="506" src="/images/introduce-the-new-dashboard/project-card-annotation.png?1384231969" /&gt;&lt;/p&gt;
+
+&lt;p&gt;截图是控制面板里的项目卡片指示图, 你点击右上角的帮助按钮(?) 就可以看到.
+卡片上展示的信息和数据分别有:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;h4&gt;项目名称&lt;/h4&gt;
+
+&lt;p&gt;为你的项目取一个酷酷的代号, 是最具创造力的开始 :)&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;h4&gt;项目进度&lt;/h4&gt;
+
+&lt;p&gt;显而易见的进度图, 让你了解该项目的进度状况. 下面一行文字具体告知, 该项目总共有多少任务, 已经完成了多少任务.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;h4&gt;项目一周活跃度&lt;/h4&gt;
+
+&lt;p&gt;通过四种颜色(取决于你的项目模板, 可能只有三种或两种颜色), 代表任务活动的类型: 新建/开始/完成/通过审核.
+而圆圈的大小代表活跃度, 将一天24小时划分为: 凌晨/上午/下午/晚上, 在每个时间段里统计任务的活动次数, 次数越多, 相应颜色的圆圈就越大.&lt;/p&gt;
+
+&lt;p&gt;解释起来有点复杂, 但总得来的说, 圆圈越多越大, 说明项目的活跃度越高. 之所以剥离数据细节, 用抽象的图形和颜色来呈现, 是为了轻量化信息, 让用户用感官去感知信息, 而不是去「读」数据.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;h4&gt;项目编辑和归档&lt;/h4&gt;
+
+&lt;p&gt;目前我们提供对项目的编辑/归档/删除这几项基本操作, 当然对项目的管理权限只有项目管理员才具有. 归档之后是可以取消归档还原成活跃项目, 但是删除项目会清空相关数据, 所以请谨慎使用删除操作.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Edit Menu" width="440" height="294" src="/images/introduce-the-new-dashboard/project-edit-menu.png?1384231969" /&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;新的控制面板就这些, 我们没有做得很多, 但希望做的刚刚好, 有任何反馈建议请&lt;a href="mailto:support@fengche.co"&gt;Email&lt;/a&gt;我们, 持续改进是我们对产品的倾力注入.&lt;/p&gt;
+</description>
+      <guid>tag:blog.fengche.co,article.url</guid>
+      <pubDate>2013-10-16T00:43:00Z</pubDate>
+      <category>Annoucement, New Feature</category>
+    </item>
+    <item>
+      <title>新功能：更好的与邮件集成来管理项目</title>
+      <link>https://fengche.co/blog/new-feature-comment-via-email</link>
+      <description type="html">&lt;p&gt;当你听到这个功能的时候，相信很多人都会有这样的反映。&amp;quot;What?&amp;ldquo;, &amp;quot;这不是一种很土的方式么？&amp;rdquo;, &amp;ldquo;为什么又回归原始的项目管理工具？&amp;rdquo;&amp;hellip;&lt;/p&gt;
+
+&lt;h2&gt;使用 Email 管理项目是一个“土”方法&lt;/h2&gt;
+
+&lt;p&gt;在原始的单一通过 Email 来追踪项目管理的方式中，很多团队通过 Email 来发送附件、查看进度、讨论问题。。。 这种方式确实很“土”，甚至是反人类的。在这样的方式中，当团队为一个 project 使用 Email 来讨论的时候，email thread 会变的非常的长，在一个 thread 中可能包括了附件、状态更新等等不同目的的 Email，更严重的是这些重要信息会被混在各种各样问题讨论的 email 中。&lt;/p&gt;
+
+&lt;p&gt;作为一个项目管理者应该如何去做？在每天 meeting 开始前花数个小时，整理 Email，然后把他们归档分类到一个 excel 文件中？ 然后再提前几个小时把这个 excel 文件分发给团队中的所有成员？管理者的时间很宝贵，或许应该雇佣一个项目管理助理来做这些琐碎的事情？别逗了，Fengche.co 的存在就是为了帮你处理这些 Dirty Job.&lt;/p&gt;
+
+&lt;p&gt;你还在用邮件跟踪任务吗？是时候，使用 Fengche.co 井然有序地跟踪所有信息了！&lt;/p&gt;
+
+&lt;h2&gt;那为什么又要使用这用土办法?&lt;/h2&gt;
+
+&lt;p&gt;很多团队“乐此不疲”的使用这样的方法，甚至依依不舍，是因为 Email 是一个非常方便的非即时性沟通工具。对于项目问题讨论来说，用 Email 会变的非常方便。 我们可以通过手机在任何地方回复讨论，发起讨论，甚至我们可以发一封邮件告诉我们的项目助理，“嗨，麻烦你在 excel 中加一个任务，叫做 XXXXX，把详细描述写成 XXXXX”。It sounds funny, ha?&lt;/p&gt;
+
+&lt;p&gt;目前我们通过 email 提醒来通知团队成员项目的更新状态，以及最新的留言。但是如果当我们发现一个留言需要讨论的时候，我们需要在 email 中点击链接打开网页，输入帐号密码，然后留言。。。也许我们还要忍受手机网络的速度。。。也许就是坐在电脑前，也懒得去打开一个浏览器。&lt;/p&gt;
+
+&lt;p&gt;时间就是金钱，我的朋友。我们需要的是&lt;strong&gt;正确使用工具&lt;/strong&gt;。现在你可以直接通过回复 Email 提醒来直接参与讨论。而且当你在外出的路上突然有一个新想法冒出来的时候，你可以直接发送邮件来创建任务或者列表，另外你可以在团队中取消项目助理这个职位了。&lt;/p&gt;
+
+&lt;h2&gt;回复 Email 创建留言&lt;/h2&gt;
+
+&lt;p&gt;当收到一个 email 提醒时，直接回复&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="email_reply" width="821" height="819" src="/images/new-feature-comment-via-email/Email_Reply.png?1384231969" /&gt;&lt;/p&gt;
+
+&lt;p&gt;然后它会被自动添加到相关项目留言中&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="ply_reply" width="437" height="598" src="/images/new-feature-comment-via-email/PLY_screenshot.jpg?1384231969" /&gt;&lt;/p&gt;
+
+&lt;h2&gt;发送 Email 创建 任务列表 和 单一任务&lt;/h2&gt;
+
+&lt;p&gt;首先在浏览器中打开你的 Project&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="project_uid" width="892" height="539" src="/images/new-feature-comment-via-email/project_uid.png?1392299296" /&gt;&lt;/p&gt;
+
+&lt;p&gt;找到 project 后面的数字，这里是 “421d6f9a13e6”，然后在 email 中添加一个 &amp;ldquo;&lt;a href="mailto:project+421d6f9a13e6@info.fengche.co"&gt;project+421d6f9a13e6@info.fengche.co&lt;/a&gt;&amp;rdquo; 的联系人。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;在这个项目中创建 任务列表&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;发送一封邮件到 &amp;ldquo;&lt;a href="mailto:project+421d6f9a13e6@info.fengche.co"&gt;project+421d6f9a13e6@info.fengche.co&lt;/a&gt;&amp;quot;，格式如下：&lt;/p&gt;
+
+&lt;p&gt;主题(subject)&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;任务列表：任务列表名称&lt;/code&gt; 或者 &lt;code&gt;Task List: Your task list name&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;正文(content)&lt;/p&gt;
+
+&lt;p&gt;正文中的内容将作为此列表的描述内容。&lt;/p&gt;
+
+&lt;p&gt;发送邮箱&lt;/p&gt;
+
+&lt;p&gt;这里要用在 Fengche.co 账号中使用的注册邮箱。&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="email_create_list" width="825" height="269" src="/images/new-feature-comment-via-email/email_create_iteration.png?1392299296" /&gt;&lt;/p&gt;
+
+&lt;p&gt;发送成功后 Fengche.co 将会自动为您创建任务列表&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="ply_list" width="1069" height="386" src="/images/new-feature-comment-via-email/Ply_create_iteration.jpg?1384231969" /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;在项目中创建 单一任务&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;发送邮件到刚才设置的 project 邮件接收地址 &amp;rdquo;&lt;a href="mailto:project+421d6f9a13e6@info.fengche.co"&gt;project+421d6f9a13e6@info.fengche.co&lt;/a&gt;&amp;ldquo;，格式如下：&lt;/p&gt;
+
+&lt;p&gt;主题(subject)&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;任务：任务名称&lt;/code&gt; 或者 &lt;code&gt;Task: task name&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;正文(content)&lt;/p&gt;
+
+&lt;p&gt;正文中的内容将作为任务描述。&lt;/p&gt;
+
+&lt;p&gt;发送邮箱&lt;/p&gt;
+
+&lt;p&gt;这里要用在 Fengche.co 账号中使用的注册邮箱。&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="email_task" width="825" height="325" src="/images/new-feature-comment-via-email/email_create_ticket.png?1392299296" /&gt;&lt;/p&gt;
+
+&lt;p&gt;发送成功后 Fengche.co 将会自动创建这个单一任务&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="ply_task" width="1067" height="507" src="/images/new-feature-comment-via-email/ply_create_ticket.jpg?1384231969" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;方便么？还需要“项目助理”？&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;广而告之： 20人团队项目助理，月薪 286 元，真的只要 286 哦，亲！&lt;/strong&gt;&lt;/p&gt;
+</description>
+      <guid>tag:blog.fengche.co,article.url</guid>
+      <pubDate>2013-10-04T06:05:00Z</pubDate>
+      <category>Announcement, New feature</category>
+    </item>
+    <item>
+      <title>写在 Pragmatic.ly 即将两周年</title>
+      <link>https://fengche.co/blog/we-are-back</link>
+      <description type="html">&lt;p&gt;&lt;img alt="弯路和未来" width="586" height="500" src="/images/we-are-back/detour-and-sunshine.jpg?1384231969" /&gt;&lt;/p&gt;
+
+&lt;p&gt;准确说，Pragmatic.ly 从有这个想法到现在已经有 2 年了。11 年 10 月份的一个晚上跟 Daniel 和 Terry 在对我们所有用过的项目管理工具吐完槽以后，然后决定自己造一个，12 年春节前后真正当个事做，4 月底 Ben 加入，7 月份发布 Beta，先在海外做了差不多 8 个月，今年 4 月份开始调整方向，转向国内，6 月底重新上线到现在，整个过程各种状况各种弯路，但是每天都能感觉到变化，每天都是新的学习，乐在其中。&lt;/p&gt;
+
+&lt;h3&gt;那些年我们一起走过的弯路&lt;/h3&gt;
+
+&lt;p&gt;现在回过头看看，我们犯了好几个大的错误，当然，也许这些可能很多技术型团队必须得走的弯路。&lt;/p&gt;
+
+&lt;h4&gt;过早和过多地做开发&lt;/h4&gt;
+
+&lt;p&gt;我们创始团队的构成是两个开发和一个设计，技术能力很强，市场能力很弱。当我们决定要启动这个项目的时候，我们没有去找更多的用户聊天，聆听他们的想法，而是选择直接进入了开发阶段，美其名曰解决自己的问题。我们不停得去假想用户的需求，所有人都在做开发，直到发布。而整个过程，我们甚至没有去外界透露我们的产品目标，没有去收集潜在客户，这也造成了后面的被动。也就是说，我们在整个前期过程中，没有一个清晰的特定的用户群，没有去了解这个用户群到底存在什么问题，再去打造适合他们的产品，而是做出了产品后，再去寻找那个适应于我们产品的用户群体。所以当产品发布后，我们发现推广很难做，各种阻力，因为定位不清晰，也就很难传递合适的信息给适合的人。&lt;/p&gt;
+
+&lt;p&gt;在 YCombinator 有个理论，在产品发布前，你应该专注并只专注两件半事情，1 开发 + 1 跟用户聊天 + 0.5 锻炼身体。了解你的用户群体，很重要。&lt;/p&gt;
+
+&lt;h4&gt;太注重工程正确性&lt;/h4&gt;
+
+&lt;p&gt;对于一个技术型创业团队而言，而且是外包团队出身，技术研究总是能让人很兴奋，所以很容易就会沉迷于工程细节。开始编码时先设计个好的架构结构，看到不好的代码就忍不住来几下重构，用 TDD、BDD 恨不得 100% 测试覆盖率，Backbone.JS、Ember.JS、Angular.JS、Marionette，不停地调研哪个最适合自己的项目。总之，洁癖太重，不停地在追求工程上的正确性，没有把时间花在正确的地方，没有花在能给用户带来真正价值的地方。我们最需要的是什么？是能快速地发布快速地迭代，有反馈才能有改进，而代码写得再漂亮对你的用户也是没有价值的。&lt;/p&gt;
+
+&lt;p&gt;即使到今天，我们也很难做到非常 quick and dirty 的做事情。不过比起第一天开始的时候，我们已经&amp;quot;改进&amp;quot;了很多，Make it work, ship it and then improve it.&lt;/p&gt;
+
+&lt;h4&gt;天使用户获取成本太高&lt;/h4&gt;
+
+&lt;p&gt;从去年发布 Beta 到年初，我们一直在做国外市场，因为认为国外的市场成熟，教育用户的成本低，而且付费习惯也更好。这些都是对的，但是问题是为什么用户要选择你而不是其他产品。Pragmatic.ly 做为一个协作产品，在海外市场有很多的竞争者，所以做为市场上的新玩家，需要寻找到一个特定的用户群体，找差异化寻找突破口，也就是天使用户。而做为一个面向 B 端的产品，天使用户之所以选择你，是因为他们信任你，信任你这个人，信任你做的这个事。这种信任，有可能因为你们是朋友、或者朋友的朋友，有可能是因为你们在一个活动一次会议上相聊甚欢，有可能是因为你在们网上深度交流过，但是，当我们试图在中国做海外市场，语言差异，文化不同，认知度缺乏，用户获得的成本很高，更不要提客户了。&lt;/p&gt;
+
+&lt;p&gt;而当我们开始专注做国内，很多原来无从下手的一些问题就得到解决了，现在也有不少不错的天使用户，也有非常好的反馈，让我们对产品的改进有方向有目的可循。&lt;/p&gt;
+
+&lt;h4&gt;冷冰冰的文案&lt;/h4&gt;
+
+&lt;p&gt;去年，我们的文案很简单，介绍了 Pragmatic.ly 是什么，有哪些特性，而且还刻意限定在一个页面里，让用户不需要翻页就能了解所有信息，事实证明这是个非常糟糕的设计。我们假想着列出的一些特性就能吸引到用户，但是问题是用户永远不关心你在做啥，用户关心的是你做的东西能怎样帮助到他。所以，当一个真正的用户来到 Pragmatic.ly 上，我们应该让他看到的是 Pragmatic.ly 能怎么的帮助他更好地管理项目，更高效地工作，一个好的文案，应该要做到像在跟用户对话一样，非常有针对性，告诉目标群体我们是如何如何理解你的问题并是如何解决这些问题的，是另外一个层面的交流。&lt;/p&gt;
+
+&lt;p&gt;目前 Pragmatic.ly  的文案比起第一版时已经是很大的进步，信息传达更明确，也刻意有一些吸引用户的 tricks，可能还缺乏的是给用户更大信任和信心的成功案例，不过因为我们希望是真正的客户们在现身说法，所以还需要一段时间。&lt;/p&gt;
+
+&lt;h3&gt;Pragmatic.ly 的目标&lt;/h3&gt;
+
+&lt;p&gt;如同&lt;a href="http://www.36kr.com/p/205411.html"&gt;36氪的报道&lt;/a&gt;一样，我们不想打造一个企业平台的应用商店，而是以任务管理为基础，为小团队初创企业做一个真正提供价值的高效协作工具。目前国内企业级软件需求足够，但是进展行程却十分迟缓，尤其是在 Pragmatic.ly 面对的小团队市场来说，价值和价格没有做很好的匹配。人们习惯用自己看得到的能理解的来衡量一个东西的价值。比如，如果我今天买了一个游戏，那么只要今天这个游戏给我带来了快乐，我就觉得这钱花得没问题。但是像 Pragmatic.ly 这样的协作类软件，并不具有这个特性，它需要整个团队一段时间的试用，才能看到效果，才能知道是否是好东西。问题摆在眼前，在教育用户的同时，需要我们更专注，耐得住寂寞，做好长跑的准备，做精，做少，做美。&lt;/p&gt;
+
+&lt;p&gt;我们希望每一个购买 Pragmatic.ly 的客户，都是对我们产品满意的用户。如果你购买了我们的服务却没有使用起来，那么我宁愿不赚这个钱。所以，除了要让掏钱的人满意之外，我们也很注重使用者的体验感受。我们会继续保持着它的简单，没有定制，没有过多的配置，不需要培训，也能上手即用，即使是对一些非技术背景出身的人来说。在未来你可能还是不会在 Pragmatic.ly  看到知识管理系统、在线群组系统等等，但是我们会努力让任务管理体验做到极致，进度、状态，才是项目的真正立身之本。Pragmatic.ly  也不需要太聪明，限制用户做这做那。一个工具，不管怎样最终也只是一个工具，很多事情毕竟还是需要人来做，所以应该是工具去灵活地适应团队，而不是逼迫用户削履适足，反被其所俘。&lt;/p&gt;
+
+&lt;p&gt;&amp;ldquo;因为用了 Pragmatic.ly，我们更快更简单地做出了更好的产品。&amp;rdquo; 如果听到用户跟我们说这句话，将会是对我们的最大鼓励。面向挑战，我们已经准备好了。面对改变，你准备好了吗？&lt;/p&gt;
+</description>
+      <guid>tag:blog.fengche.co,article.url</guid>
+      <pubDate>2013-09-12T05:50:00Z</pubDate>
+      <category>startup, thoughts</category>
+    </item>
+    <item>
+      <title>Beyonds Gravatar and set your profile picture</title>
+      <link>https://fengche.co/blog/announcing-uploading-avatar</link>
+      <description type="html">&lt;p&gt;Today, we have released a minor update to our users which is you can upload your image and set as your profile picture in
+&lt;a title="Lean Collaborative Project Management Tool and Online Collaboration" href="http://pragmatic.ly"&gt;Pragmatic.ly&lt;/a&gt;
+instead of using &lt;a href="http://en.gravatar.com/"&gt;Gravatar&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The UX is very simple.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="" width="550" height="420" src="/images/announcing-uploading-avatar/update_avatar.jpg?1379005285" /&gt;&lt;/p&gt;
+
+&lt;h3&gt;Why is such a simple feature not included from the first day?&lt;/h3&gt;
+
+&lt;p&gt;You may have the question. We too! We spent some time debating whether we should include that before the public release. The
+goal of Pragmatic.ly is to provide the simplest and elegant project management experience to help you make better products easier.
+So we spent most of the time to achieve the goal and regarding to the profile picture part, we just integrated the Gravatar, the
+globally recognized avatars, in one hour.&lt;/p&gt;
+
+&lt;p&gt;Gravatr works perfectly and we enjoy the benifits very much! Even big services like &lt;a href="http://github.com"&gt;GitHub&lt;/a&gt; has only the Gravatar support till today.&lt;/p&gt;
+
+&lt;p&gt;However, when Pragmatic.ly grows, we learn a lot from our users. There are two main problems we heard with Gravatar.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Many users use the company email adress instead of personal to register on Pragmatic.ly and they don&amp;rsquo;t and won&amp;rsquo;t set an avatar on Gravatar.&lt;/li&gt;
+&lt;li&gt;We&amp;rsquo;re a team in China and lots of our users are chineses too. Gravatar is not widely used here.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;We found that a real avatar can improve the team&amp;rsquo;s collaboration and productivity. Yes, it&amp;rsquo;s true, :). So we think it&amp;rsquo;s the time to change now. It only
+took us few days to release it but we&amp;rsquo;re glad that we&amp;rsquo;re focusing on the core value and only doing those low priority features when user really needs that.&lt;/p&gt;
+
+&lt;p&gt;If you haven&amp;rsquo;t set your profile picture up on Pragmatic.ly yet, you should do it now. Enjoy!&lt;/p&gt;
+
+&lt;h3&gt;About Pragmatic.ly&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href="https://fengche.co"&gt;Pragmatic.ly&lt;/a&gt; is a lean collaborative project management tool aiming to help small teams make better products easier.
+It&amp;rsquo;s the ideal and elegant project management tool for tech startups.&lt;/p&gt;
+</description>
+      <guid>tag:blog.fengche.co,article.url</guid>
+      <pubDate>2013-03-23T09:00:00Z</pubDate>
+      <category>Announcement, New feature</category>
+    </item>
+    <item>
+      <title>Introducing VCS integration with Fengche.co</title>
+      <link>https://fengche.co/blog/integrate-version-control-system-with-pragmat</link>
+      <description type="html">&lt;p&gt;Today, we&amp;rsquo;re glad to introduce our new &lt;a href="http://en.wikipedia.org/wiki/Revision_control"&gt;VCS&lt;/a&gt;(Version Control System) integration with Fengche.co to the public. We have released this feature to some of our users in last two months and glad to hear how they love it. I&amp;rsquo;m sure you&amp;rsquo;ll love the feature too!&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://fengche.co"&gt;Fengche.co&lt;/a&gt; is a lean collaborative project management tool featuring real time collaboration. We design the tool to be developer friendly and hope to help startup teams deliver better products, easier and faster. Developers like us work with VCS such as Git or SVN every day. The new VCS integration can deeply integrate with your current development process and improve your team productivity.&lt;/p&gt;
+
+&lt;p&gt;With VCS integrated into Fengche.co, all the commits related to a ticket will be auto associated with that ticket and the commit message will be displayed in the activity timeline. As a result, your team will know the status update about that ticket immediately and go for a review if they want. It&amp;rsquo;s a big benefit to code collobration. What&amp;rsquo;s more, you can manipulate the status of tickets within your projects directly from the commit messages. There is no need to interrupt your work and visit Fengche.co to mark the ticket as Completed or Accepted. Instead, let the commit message do the work!&lt;/p&gt;
+
+&lt;p&gt;Feel free to try this feature by signing up at &lt;a href="https://fengche.co"&gt;Fengche.co&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="VCS Integration" width="507" height="512" src="/images/integrate-version-control-system-with-pragmat/vcs-integration.png?1364633909" /&gt;&lt;/p&gt;
+
+&lt;p&gt;So far, we have already supported three VCS services: &lt;a href="https://github.com"&gt;GitHub&lt;/a&gt;, &lt;a href="https://bitbucket.org"&gt;BitBucket&lt;/a&gt; and &lt;a href="http://gitlab.org"&gt;Gitlab&lt;/a&gt;. And more are coming. Let us know if the VCS you&amp;rsquo;re using now is not in the list and you want to see it soon!&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h3&gt;How to setup&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;First, you should make sure the user name or the email is the same with what you use in your Fengche.co account. If not, you can always set the setting in the project. For example:&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;$ git config user.name "Terry Tai"
+$ git config user.email "terry@fengche.co"
+&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Get the commit hook url on your Fengche.co project setting panel and copy this url to your clipboard. We will use it as the callback url latter. Only the administrators of the project can view the settings.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Project Setting" width="232" height="166" src="/images/integrate-version-control-system-with-pragmat/project-list.png?1364633835" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Edit Project" width="481" height="396" src="/images/integrate-version-control-system-with-pragmat/edit-project.png?1364633735" /&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;As said, now Fengche.co supports three services: Github, Bitbucket, Gitlab. Below are the integration steps for each service.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4&gt;&lt;strong&gt;Github&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Go to your project page on Github, click the &amp;lsquo;Setting&amp;rsquo; tag of the project to go to project setting page.(If you don&amp;rsquo;t see this tab, it means you don&amp;rsquo;t have this permission. Please contact the owner of this project on Github.)&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="GitHub Project Setting" width="209" height="147" src="/images/integrate-version-control-system-with-pragmat/github-project-setting.png?1364633765" /&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Then click the &amp;lsquo;Service Hooks&amp;rsquo;, and choose the &amp;lsquo;WebHook URLs&amp;rsquo;.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Paste the url to the field and click &amp;lsquo;Update settings&amp;rsquo;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Github WebHook" width="939" height="222" src="/images/integrate-version-control-system-with-pragmat/github-webhook.png?1364633801" /&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4&gt;Bitbucket&lt;/h4&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Go to your setting page of your project on Bitbucket and click the &amp;lsquo;Services&amp;rsquo; on side bar&lt;/li&gt;
+&lt;li&gt;Choose the the &amp;lsquo;POST&amp;rsquo; from the select box and paste the URL on the url field&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Click &amp;lsquo;Save&amp;rsquo;&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="BitBucket WebHook" width="932" height="335" src="/images/integrate-version-control-system-with-pragmat/bitbucket-webhook.png?1364633702" /&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4&gt;GitLab&lt;/h4&gt;
+
+&lt;p&gt;The Gitlab configuration is the same as GitHub. So you can refer to the section how to configure GitHub.&lt;/p&gt;
+
+&lt;h3&gt;How to use&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Associate the commits with your ticket on Fengche.co.&lt;/p&gt;
+
+&lt;p&gt;For example we have a ticket whose number is 529.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Ticket Example" width="472" height="42" src="/images/integrate-version-control-system-with-pragmat/ticket-example.png?1364633870" /&gt;&lt;/p&gt;
+
+&lt;p&gt;There are two ways to associate your commits with a specify ticket.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;If you prefer to implement every new feature in a new branch, you could name a branch starting with the ticket number, such as 529&lt;em&gt;regenerate&lt;/em&gt;token. Then all commits in this branch will be automatically associated with this ticket.&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;If you want to associate the commit to a ticket no matter which branch it&amp;rsquo;s in, you could alway include the hash tag with the ticket number such as &amp;lsquo;#529&amp;rsquo; in your commit message. For example:&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;$ git commit -m "#529 Associate the commit with ticket 529."
+&lt;/pre&gt;&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Manipulate the status of tickets directly from the commit message.&lt;/p&gt;
+
+&lt;p&gt;You can complete or close the tickets by using commands in your commit messages. The supported commands are as follows:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;complete (&lt;em&gt;completes, completed, resolve, resolves, resolved, solve, solves, solved, fix, fixes, fixed&lt;/em&gt;) will change the status of the specified ticket to Completed.&lt;/li&gt;
+&lt;li&gt;accept (&lt;em&gt;acceptes, accepted, close, closes, closed&lt;/em&gt;) will change the status of the specified ticket to Accepted.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Here are some examples of how to use this feature.&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;$ git commit -m "Resolved #529 This will mark 529 as Completed"
+$ git comimt -m "Closed #529 This will mark 529 as Closed"
+&lt;/pre&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+
+&lt;p&gt;We hope you enjoy this new feature, as always, any feedbacks are welcome!&lt;/p&gt;
+</description>
+      <guid>tag:blog.fengche.co,article.url</guid>
+      <pubDate>2013-01-29T02:00:00Z</pubDate>
+      <category>VCS, Integration, Git</category>
+    </item>
+    <item>
+      <title>Improving the usability on tickets readability and team collaboration</title>
+      <link>https://fengche.co/blog/improving-the-usability-on-tickets-readabilit</link>
+      <description type="html">&lt;p&gt;Steve Krug&amp;rsquo;s instant classic book &amp;ldquo;&lt;a href="http://www.amazon.com/Dont-Make-Me-Think-Usability/dp/0321344758"&gt;Don&amp;rsquo;t Make Me Think&lt;/a&gt;&amp;rdquo; is one of our favorite design books. Simplicity and usability is our lifetime of pursuit on products design. With regard to single page application like &lt;a href="https://fengche.co"&gt;Pragmatic.ly&lt;/a&gt;, balancing the complexity of features with the simplicity of design is indeed difficult, but we&amp;rsquo;re keep iterating. Here&amp;rsquo;re some improvements to the ticket details.&lt;/p&gt;
+
+&lt;h3&gt;Markdown Supported&lt;/h3&gt;
+
+&lt;p&gt;Last week is a sad week for IT world. One of the top talented internet genius &lt;a href="http://en.wikipedia.org/wiki/Aaron_Swartz"&gt;Aaron Swartz&lt;/a&gt; left us at 26. R.I.P Aaron Swartz! However, Aaron&amp;rsquo;s contributions to the world will live forever. One of them is &lt;a href="http://en.wikipedia.org/wiki/Markdown"&gt;Markdown&lt;/a&gt;, a lightweight markup language designed for easy-to-read and easy-to-write.&lt;/p&gt;
+
+&lt;p&gt;Now you can write ticket description and comments with Markdown syntax. It&amp;rsquo;s easy to write and rendering a good format for reading, sure supporting code highlight.&lt;/p&gt;
+
+&lt;p&gt;Get to know more about the markdown syntax, John Gruber&amp;rsquo;s &lt;a href="http://daringfireball.net/projects/markdown/"&gt;tutorial&lt;/a&gt; is an excellent guide. And we support &lt;a href="http://github.github.com/github-flavored-markdown/"&gt;github&amp;rsquo;s flavored markdown&lt;/a&gt; syntax too.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Markdown Example" width="500" height="359" src="/images/improving-the-usability-on-tickets-readabilit/markdown-example.jpg?1364634481" /&gt;&lt;/p&gt;
+
+&lt;h3&gt;Ticket fields rearranged&lt;/h3&gt;
+
+&lt;p&gt;Ticket attribute fields are mainly for manageing ticket, as well as showing what&amp;rsquo;s current statues of ticket. So both usability and readbility is considered when we&amp;rsquo;re polishing the UI.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Move tags field upper, make it into ticket content section, along with ticket titile, description, they are ticket descriptive content.&lt;/li&gt;
+&lt;li&gt;Make iteration/assignee/priority/due-date fields as visual blocks which are implicit in the editable. Also we have subtle improved the editing interactive experience.&lt;/li&gt;
+&lt;li&gt;Responsive design on ticket fields. No matter when you on extended monitor, laptop or tablet, the read and update experience of ticket keeps the same because the ticket fields will be adaptive to the resolution.&lt;/li&gt;
+&lt;li&gt;Make file drop zone a bit bigger. Much easier and comfortable to drag and drop files for uploading.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img alt="Ticket Attributes" width="500" height="278" src="/images/improving-the-usability-on-tickets-readabilit/ticket-attributes.jpg?1364634514" /&gt;&lt;/p&gt;
+
+&lt;h3&gt;Full-column scroll on ticket details&lt;/h3&gt;
+
+&lt;p&gt;We turn back to full-column scroll instead of seperated scroll.&lt;/p&gt;
+
+&lt;p&gt;Within the &lt;a href="https://fengche.co/blog/improving-ticket-interactive"&gt;Improving Ticket Interactive&lt;/a&gt; release, we changed the ticket detail column to a seperated, activity-only scroll. Thanks to our lovely users who give us the feedbacks on the changes and we learn more from them! What we expect is that we should be able to review ticket info while reading and posting comments. So we made them seperated. And the activity-only scroll works very good for big screen resolution.&lt;/p&gt;
+
+&lt;p&gt;However, smaller resolution like 1280x800 is not good due to the height limitation. As a result, we turn back to full-column scroll but with some extra improvements. Based on different screen resolution, the column will be smart balanced the two section of ticket information and its activities. So far it works good.&lt;/p&gt;
+
+&lt;h3&gt;Sticky comment form&lt;/h3&gt;
+
+&lt;p&gt;Now the comment form will always be sticky on the bottom. So you can always start to write comments with a single click. No scroll needed.&lt;/p&gt;
+
+&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+
+&lt;p&gt;We hope you enjoy the changes, as always, any feedbacks are welcome!&lt;/p&gt;
+</description>
+      <guid>tag:blog.fengche.co,article.url</guid>
+      <pubDate>2013-01-17T00:00:00Z</pubDate>
+      <category>UI, Ticket Management, Usability</category>
+    </item>
+    <item>
+      <title>The improvement of 'Archive Iteration'</title>
+      <link>https://fengche.co/blog/the-improvement-of-archive-iteration</link>
+      <description type="html">&lt;h3&gt;Background of &amp;lsquo;Archive Iteration&amp;rsquo; function&lt;/h3&gt;
+
+&lt;p&gt;We have released the &amp;lsquo;Archive Iteration&amp;rsquo; feature for some time.  This is a very useful feature if you use iterations the way like us. We create individual iteration for each week, and put the things we will work on in the corresponding iteration.&lt;/p&gt;
+
+&lt;p&gt;But with time growing, the Iteration List becomes longer and longer. And most cases the old iterations are not important any more and no need always display them in the Iteration list, that&amp;rsquo;s why &amp;lsquo;Archive Iteration&amp;rsquo; feature born.&lt;/p&gt;
+
+&lt;h3&gt;How to archive Iteration&lt;/h3&gt;
+
+&lt;p&gt;First you just need click the iteration name which you want to archive on the left sidebar.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Click Iteration" width="241" height="223" src="/images/the-improvement-of-archive-iteration/click-iteration.png?1364634235" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Then click the toothed icon at the right sidebar and you will see the &amp;lsquo;Archive&amp;rsquo; button. After clicking it, this iteration with  tickets in it will all be archived. A archived iteration with its tickets will all be hidden from your work space by default for reducing the interference to your current work.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Archive Iteration" width="193" height="165" src="/images/the-improvement-of-archive-iteration/archive-iteration.png?1364634170" /&gt;&lt;/p&gt;
+
+&lt;h3&gt;How to unarchive&lt;/h3&gt;
+
+&lt;p&gt;By default the archived iterations will be hidden. To bring them  back to your work space you just need click the toothed icon at the bottom of the left sidebar. Then click the &amp;lsquo;Show Archived Iterations&amp;rsquo; item.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Manage Iterations" width="371" height="119" src="/images/the-improvement-of-archive-iteration/manage-iterations.png?1364634267" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Then you will see the archived iterations back to your Iteration List.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Archived Iterations" width="240" height="91" src="/images/the-improvement-of-archive-iteration/archived-iterations.png?1364634201" /&gt;&lt;/p&gt;
+
+&lt;p&gt;You can do what you want like a normal iterations to them.&lt;/p&gt;
+
+&lt;p&gt;The only thing you might need care about is that when tickets move into an archived iteration they will be marked as archived. In a similar way when you move the tickets out of archived iteration, they will be marked as unarchived.&lt;/p&gt;
+
+&lt;p&gt;If you want totally unarchive a whole iteration with its tickets. Just simply click the &amp;lsquo;Unarchive&amp;rsquo; like before at the right sidebar after selecting a iteration.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Unarchive Iteration" width="225" height="161" src="/images/the-improvement-of-archive-iteration/unarchive-iteration.png?1364634298" /&gt;&lt;/p&gt;
+
+&lt;p&gt;That&amp;rsquo;s all. Hope this function help you organize your work better.&lt;/p&gt;
+
+&lt;p&gt;If you have any questions or feedback, feel free to let us know.&lt;/p&gt;
+
+&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+
+&lt;h3&gt;About Pragmatic.ly&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href="https://fengche.co"&gt;Pragmatic.ly&lt;/a&gt; is a lean collaborative project management tool aiming to help small teams make better products easier. It&amp;rsquo;s the ideal and elegant project management tool for tech startups.&lt;/p&gt;
+</description>
+      <guid>tag:blog.fengche.co,article.url</guid>
+      <pubDate>2013-01-12T02:00:00Z</pubDate>
+      <category>ChangeLog, Iterations</category>
+    </item>
+    <item>
+      <title>Pragmatic.ly team on RubyConf China 2012</title>
+      <link>https://fengche.co/blog/the-presentations-we-made-on-rubyconfchina-20</link>
+      <description type="html">&lt;p&gt;Last month the &lt;a href="https://fengche.co"&gt;Pragmatic.ly&lt;/a&gt; team attent the &lt;a href="http://rubyconfchina.org"&gt;RubyConfChina 2012&lt;/a&gt; and we really had a great time there with the ruby developers came from China and also across the world.&lt;/p&gt;
+
+&lt;p&gt;The conference is very good. It&amp;rsquo;s also the big party of rubyist. Everyone enjoyed that much. Thanks to the organizers!&lt;/p&gt;
+
+&lt;p&gt;We are very honored to present two talks on this event to share our experience in our work. And we&amp;rsquo;re very happy people love the talks very much.&lt;/p&gt;
+
+&lt;p&gt;Below are the two talks we present. Check them out!&lt;/p&gt;
+
+&lt;h3&gt;Real Time Web by Dingding Ye&lt;/h3&gt;
+
+&lt;p&gt;Dingding gave a brief introduction on real time web at the conference. As you know, &lt;a href="https://fengche.co"&gt;Pragmatic.ly&lt;/a&gt; is a project management tool featuring real time collaboration. Dingding spends latest three years on real time web products. In his talk, Dingding explains different solutions of making web real time and how to choose the right solution based on the different requirements. You can watch the talk &lt;a href="http://railscast-china.com/episodes/rubyconf-2012-yedingding"&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;And the PPT is here.&lt;/p&gt;
+
+&lt;script async class="speakerdeck-embed" data-id="a8fa0b60139201303b7512313d053576" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"&gt;&lt;/script&gt;
+
+&lt;h3&gt;How We Test Our Projects by Terry Tai&lt;/h3&gt;
+
+&lt;p&gt;Terry shared the practical experience about how we test our projects in Pragmatic.ly. We love TDD, BDD. Do things in right way! The video will release soon. Please concern about railscasts-china.com if you want to watch the video.&lt;/p&gt;
+
+&lt;p&gt;And the PPT is here.&lt;/p&gt;
+
+&lt;script async class="speakerdeck-embed" data-id="19e1abe013ca0130bc90123138154481" data-ratio="1.2518337408313" src="//speakerdeck.com/assets/embed.js"&gt;&lt;/script&gt;
+
+&lt;h3&gt;Enjoy the photos&lt;/h3&gt;
+
+&lt;p&gt;Dingding is presenting&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Dingding is Presenting" width="500" height="333" src="/images/the-presentations-we-made-on-rubyconfchina-20/dingding-presenting.jpg?1364634818" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Terry is presenting&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Terry is presenting" width="500" height="333" src="/images/the-presentations-we-made-on-rubyconfchina-20/terry-presenting.jpg?1364634931" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ben with Matz&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Ben with Matz" width="500" height="333" src="/images/the-presentations-we-made-on-rubyconfchina-20/ben-matz.jpg?1364634783" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Even food there is so RUBY&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="RUBY food" width="500" height="335" src="/images/the-presentations-we-made-on-rubyconfchina-20/ruby-food.jpg?1364634895" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Talking with Matz about Ruby when having dinner&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Dinner Talk" width="500" height="333" src="/images/the-presentations-we-made-on-rubyconfchina-20/dinner-talk.jpg?1364634857" /&gt;&lt;/p&gt;
+
+&lt;h3&gt;One more thing&lt;/h3&gt;
+
+&lt;p&gt;Pragmatic.ly team is a open team.&lt;/p&gt;
+
+&lt;p&gt;We&amp;rsquo;d love to share our experience and knowledge to the community, not only giving presentation, making screencasts, but also contributing to open source software.&lt;/p&gt;
+
+&lt;p&gt;RubyConf China is just beginning, hope we can meet in more conferences around the world next time.&lt;/p&gt;
+
+&lt;p&gt;See you. :)&lt;/p&gt;
+</description>
+      <guid>tag:blog.fengche.co,article.url</guid>
+      <pubDate>2012-12-27T08:00:00Z</pubDate>
+      <category>RubyConfChina, Ruby, Event</category>
+    </item>
+    <item>
+      <title>Improving Ticket Interactive</title>
+      <link>https://fengche.co/blog/improving-ticket-interactive</link>
+      <description type="html">&lt;h3&gt;Improve the stability of ticket item in the list&lt;/h3&gt;
+
+&lt;p&gt;Users informed us that the ticket list in the center column was unstable, and we were rushing into this problem immediately.&lt;/p&gt;
+
+&lt;p&gt;As shown in the screenshot, we found the old list item was a interactive savage, from left to right:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;The ticket number will change into movable knob when hovered.&lt;/li&gt;
+&lt;li&gt;The ticket status could be clicked to switch into the next.&lt;/li&gt;
+&lt;li&gt;The assignee was shown as a link.&lt;/li&gt;
+&lt;li&gt;The ticket title was editable when focused.&lt;/li&gt;
+&lt;li&gt;The tags would be a ticket filters immediately.&lt;/li&gt;
+&lt;li&gt;The little right pointer had an onhover state.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img alt="Old Ticket Interactive" width="500" height="185" src="/images/improving-ticket-interactive/old-ticket-interactive.jpg?1364634606" /&gt;&lt;/p&gt;
+
+&lt;p&gt;This is quite a burden to users, we&amp;rsquo;d relieve it as soon as possible.&lt;/p&gt;
+
+&lt;p&gt;Though the UI looks same as before, the current list item goes like this:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The Assignee is shown as text rather than a link, since we already have a handy sidebar that contains links to team members.&lt;/li&gt;
+&lt;li&gt;The ticket title&amp;rsquo;s Edit In Place feature has been removed, to prevent users&amp;#39; accidental editing.&lt;/li&gt;
+&lt;li&gt;When hovering on list item, only the left knob and the right pointer will change their statuses, while others stay calm.&lt;/li&gt;
+&lt;li&gt;What&amp;rsquo;s left is just simple click to select, drag&amp;amp;drop to move.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;We have also changed the status naming and their section order. Do they make sense to you? Let&amp;rsquo;s know about your thoughts.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="New Ticket Interactive" width="500" height="346" src="/images/improving-ticket-interactive/new-ticket-interactive.jpg?1364634547" /&gt;&lt;/p&gt;
+
+&lt;h3&gt;Ticket status switching become more handy&lt;/h3&gt;
+
+&lt;p&gt;Ticket status indicates how&amp;rsquo;s the ticket going, it drives our daily development work. Everyday we generate todo ticket , assign it to someone, start working on it, complet it, and someone review on it. Without doubt, ticket status switching is the most frequently used in our application. We need to polish it again and again to help you more productive, now it looks like this.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="New Ticket Switch" width="500" height="277" src="/images/improving-ticket-interactive/new-ticket-switch.jpg?1364634581" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Before the improvement, the status can only switch to next status by one click on the checkbox. Now by clicking outside of the checkbox, you will get a popup menu(To Do/Start/Complete/Accept), where you can change ticket to any status. By clicking inside of the checkbox, you are switching as the old way.&lt;/p&gt;
+
+&lt;p&gt;Note that we have some new icons for representing the status, and we hope you like them. We&amp;rsquo;d love to hear your inspiration with the status imagery.&lt;/p&gt;
+
+&lt;p&gt;Stay tuned, we will post improvements very soon.&lt;/p&gt;
+
+&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+
+&lt;h3&gt;About Pragmatic.ly&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href="https://fengche.co"&gt;Pragmatic.ly&lt;/a&gt; is a lean collaborative project management tool aiming to help small teams make better products easier. It&amp;rsquo;s the ideal and elegant project management tool for tech startups.&lt;/p&gt;
+</description>
+      <guid>tag:blog.fengche.co,article.url</guid>
+      <pubDate>2012-12-10T11:00:00Z</pubDate>
+      <category>Ticket Management, UI, ChangeLog</category>
+    </item>
+    <item>
+      <title>Showing up Due Date</title>
+      <link>https://fengche.co/blog/due-date-is-showing-up-in-the-ticket-list</link>
+      <description type="html">&lt;p&gt;Now you can see &lt;em&gt;due-date&lt;/em&gt; on ticket list, and capture overdue tickets easily at a glance. Here is how and why we put it this way.&lt;/p&gt;
+
+&lt;p&gt;Firstly, &lt;em&gt;due-date&lt;/em&gt; can be input in the right form, easy click and go.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Due Date Selector" width="356" height="196" src="/images/due-date-is-showing-up-in-the-ticket-list/date-selector.jpg?1364632825" /&gt;&lt;/p&gt;
+
+&lt;p&gt;A ticket has &lt;em&gt;due-date&lt;/em&gt; set will show up a date tag, the visual design is different from normal tags. Basically you&amp;rsquo;re notified that one ticket has due on priority.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Due Date Tag" width="350" height="47" src="/images/due-date-is-showing-up-in-the-ticket-list/due-date-tag.png?1364633449" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Once a ticket is due on or overdue, this ticket item in tickets list will be highlighted and the date tag turns red. You can&amp;rsquo;t ignore it since the day is coming :) Hope this can push you a bit for getting things done.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Overdue Tag" width="350" height="38" src="/images/due-date-is-showing-up-in-the-ticket-list/overdue-tag.png?1364633479" /&gt;&lt;/p&gt;
+
+&lt;p&gt;When we were designing the interface of due-date, it actually came out a design like this,&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Due date draft" width="183" height="80" src="/images/due-date-is-showing-up-in-the-ticket-list/due-date-draft.png?1364633388" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Using the calendar icon (same from the editing form) to indicate that a ticket has a &lt;em&gt;due-date&lt;/em&gt;. When hover on the icon, a tooltip will show up and tell you the &lt;em&gt;due-date&lt;/em&gt;. This looks good, the UI is clean and space saving, but we gave it up, why?&lt;/p&gt;
+
+&lt;p&gt;Baring the KISS design philosophy in mind, we think we should get rid of using two UI elements to delivery one piece of information, and the extra hover action is a hassle too. So why not just using plain text let the user easy to read and less hassle to use.&lt;/p&gt;
+
+&lt;p&gt;On the other hand, we&amp;rsquo;d like to make the &lt;em&gt;due-date&lt;/em&gt; the same way as tags do, both as filter to find out the qualified tickets when you clicked on them. So may be a tag-like style is good for the due-date.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Due Date Overview" width="501" height="241" src="/images/due-date-is-showing-up-in-the-ticket-list/due-date-overview.png?1364633419" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Let us know how this works for you.&lt;/p&gt;
+
+&lt;h3&gt;Coming soon&lt;/h3&gt;
+
+&lt;p&gt;We&amp;rsquo;re working on date priority filter, which can order your tickets by due-date. Help you make a decision which ticket should be working on first. Stay tuned, we&amp;rsquo;ll get you posted.&lt;/p&gt;
+</description>
+      <guid>tag:blog.fengche.co,article.url</guid>
+      <pubDate>2012-09-24T00:00:00Z</pubDate>
+      <category>Announcement, ChangeLog, UI</category>
+    </item>
+    <item>
+      <title>Announcing mails_viewer - easiest way to test mails in Rails app</title>
+      <link>https://fengche.co/blog/announcing-mailsviewer-a-rails-engine-to-view</link>
+      <description type="html">&lt;p&gt;&lt;em&gt;Q:&lt;/em&gt; &amp;ldquo;I implemented the mail template but how can I preview the mail in my machine?&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Q:&lt;/em&gt; &amp;ldquo;I&amp;rsquo;m running out of emails to test the signup on staging server. Do you have more?&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Q:&lt;/em&gt; &amp;ldquo;I accidently sent the mail to &lt;a href="mailto:test@example.com"&gt;test@example.com&lt;/a&gt;. I thought the email adress doesn&amp;rsquo;t exist!&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;Familiar? I have been asked many times of those questions these years. The requiremeent is simple. Write mailer model, send mail and then verify every part works as expected. But when we&amp;rsquo;re in non-production environment, either development machine or staging server, it&amp;rsquo;s always painful to test mails. Put simple, we just want:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;To preview all the sent mails easily&lt;/li&gt;
+&lt;li&gt;To browse the mails easily, for everyone in the team.&lt;/li&gt;
+&lt;li&gt;To allow conditioned mails to real sent out.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;We feel the same pain at &lt;a href="https://fengche.co"&gt;Pragmatic.ly&lt;/a&gt; and that&amp;rsquo;s why we built &lt;a href="https://github.com/pragmaticly/mails_viewer"&gt;mails_viewer&lt;/a&gt;, a mails preview Engine which provides a table view for all mails under tmp/mails. It&amp;rsquo;s a fork of tomlion&amp;rsquo;s &lt;a href="https://github.com/tomlion/mails_viewer"&gt;original code&lt;/a&gt; and I&amp;rsquo;m glad to be the maintainer. Thanks for tomlion for getting this thing started!&lt;/p&gt;
+
+&lt;p&gt;&lt;img title="Mails Viewer" alt="mails_viewer" width="680" height="30" src="/images/announcing-mailsviewer-a-rails-engine-to-view/mails-viewer.png?1364633119" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Generally speaking, mails_viewer is a Rails engine. So it&amp;rsquo;s very easy to integrate it into your rails apps. And it depends on the file delivery method of ActionMailer.&lt;/p&gt;
+
+&lt;h3&gt;Usage&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Add the gem to your Gemfile :&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;gem "mails_viewer"
+&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Set ActionMailer&amp;rsquo;s delivery method to :file :&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;config.action_mailer.delivery_method = :file
+&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Put this in your routes.rb:&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;mount MailsViewer::Engine =&amp;gt; '/delivered_mails'
+&lt;/pre&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Now just load up &lt;a href="http://localhost:3000/delivered_mails"&gt;http://localhost:3000/delivered_mails&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3&gt;Advanced&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Q:&lt;/em&gt; &amp;ldquo;I hope the mails sent to my own domain can send to my inbox and I can review it using my favorite client. Does mails_viewer support that?&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;We have the same requirement. You can just pass a send_if Proc to the configuration and detect whether the mail object satisfy the condition or not. For example,&lt;/p&gt;
+&lt;pre class="highlight ruby"&gt;&lt;span class="n"&gt;config&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;action_mailer&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;delivery_method&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="ss"&gt;:file&lt;/span&gt;
+&lt;span class="n"&gt;config&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;action_mailer&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;file_settings&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+  &lt;span class="ss"&gt;location: &lt;/span&gt;&lt;span class="s1"&gt;'tmp/mails'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+  &lt;span class="ss"&gt;smtp_settings: &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="ss"&gt;address:              &lt;/span&gt;&lt;span class="s2"&gt;"localhost"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+    &lt;span class="ss"&gt;port:                 &lt;/span&gt;&lt;span class="mi"&gt;25&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+    &lt;span class="ss"&gt;domain:               &lt;/span&gt;&lt;span class="s1"&gt;'localhost.localdomain'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+    &lt;span class="ss"&gt;user_name:            &lt;/span&gt;&lt;span class="kp"&gt;nil&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+    &lt;span class="ss"&gt;password:             &lt;/span&gt;&lt;span class="kp"&gt;nil&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+    &lt;span class="ss"&gt;authentication:       &lt;/span&gt;&lt;span class="kp"&gt;nil&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+    &lt;span class="ss"&gt;enable_starttls_auto: &lt;/span&gt;&lt;span class="kp"&gt;true&lt;/span&gt;
+  &lt;span class="p"&gt;},&lt;/span&gt;
+  &lt;span class="ss"&gt;send_if: &lt;/span&gt;&lt;span class="nb"&gt;lambda&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;&lt;span class="n"&gt;mail&lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;mail&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;destinations&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;select&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;&lt;span class="n"&gt;address&lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;address&lt;/span&gt; &lt;span class="o"&gt;=~&lt;/span&gt; &lt;span class="sr"&gt;/@pragmatic.ly$/&lt;/span&gt; &lt;span class="p"&gt;}.&lt;/span&gt;&lt;span class="nf"&gt;any?&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;
+&lt;p&gt;For more information, please check out the &lt;a href="https://github.com/pragmaticly/mails_viewer"&gt;project page&lt;/a&gt; on github.&lt;/p&gt;
+
+&lt;h3&gt;Other Gems&lt;/h3&gt;
+
+&lt;p&gt;We&amp;rsquo;re not alone. There are already several gems fixing the same problem, such as &lt;a href="https://github.com/37signals/mail_view"&gt;mail_view&lt;/a&gt; from 37signal, &lt;a href="https://github.com/ryanb/letter_opener"&gt;letter_opener&lt;/a&gt; by Ryan Bytes, &lt;a href="http://mailcatcher.me/"&gt;MailCatcher&lt;/a&gt; by Samuel Cochran and &lt;a href="https://github.com/myronmarston/mail_safe"&gt;mail_safe&lt;/a&gt; by Myron Marston. However, I would say mails&lt;em&gt;viewer is the best fit if you need the mails to be browsable, readable and sendable easily. Your QA will love you if you use mails&lt;/em&gt;viewer!&lt;/p&gt;
+
+&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+
+&lt;h3&gt;About Pragmatic.ly&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href="https://fengche.co"&gt;Pragmatic.ly&lt;/a&gt; is a lean collaborative project management tool aiming to help small teams make better products easier. It&amp;rsquo;s the ideal and elegant project management tool for tech startups.&lt;/p&gt;
+
+&lt;p&gt;Now that you&amp;rsquo;ve read so far, you should follow me &lt;a href="https://twitter.com/yedingding"&gt;@yedingding&lt;/a&gt;!&lt;/p&gt;
+</description>
+      <guid>tag:blog.fengche.co,article.url</guid>
+      <pubDate>2012-09-19T22:30:00Z</pubDate>
+      <category>open source, rails, mail, engine</category>
+    </item>
+    <item>
+      <title>Video matters! But which hosting service to use?</title>
+      <link>https://fengche.co/blog/how-we-choose-the-right-video-service-for-us</link>
+      <description type="html">&lt;p&gt;Nowadays video is used extensively for introducing the products or services to the public. It&amp;rsquo;s no doubt that a good video can increase the conversation rate a lot.&lt;/p&gt;
+
+&lt;p&gt;As a startup, it&amp;rsquo;s not easy to create a great product video like other big companies. So we recorded a toturial screencast when we launched &lt;a href="https://fengche.co"&gt;Pragmatic.ly&lt;/a&gt; instead. Meanwhile we are working on our new attracting product video and we love the process. It&amp;rsquo;s totally different experience than writing code. We will share more latter when the video is out. But in this post I will talk more about the experience about different video hosting service. We tried &lt;a href="http://vimeo.com/"&gt;Vimeo&lt;/a&gt;, &lt;a href="http://sublimevideo.net/"&gt;SublimeVideo&lt;/a&gt;, &lt;a href="http://wistia.com/"&gt;Wistia&lt;/a&gt; and &lt;a href="http://www.youtube.com/"&gt;YouTube&lt;/a&gt;.  The result is interesting and quite different than our common sense.&lt;/p&gt;
+
+&lt;p&gt;&lt;img title="Vimeo" alt="Vimeo" src="/images/how-we-choose-the-right-video-service-for-us/vimeologo.svg?1364632825" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://vimeo.com"&gt;Vimeo&lt;/a&gt; is our first choice because we heard many good words from others. It does act great. Both the video quality and play speed are good when watching it from Vimeo&amp;rsquo;s site. But after we use an embed player on our site to play the video, we have the problem. The basic account of Vimeo doesn&amp;rsquo;t have the HD embedding but that&amp;rsquo;s exactly what we want. I think each penny spent on the &lt;a href="http://vimeo.com/plus"&gt;Vimeo Plus&lt;/a&gt; account should be worth it but before we do that, we planned to give more solutions a try. If you have sites with HD embedding videos on Vimeo, please share and I&amp;rsquo;m eager to see how it works. Our video on Vimeo is &lt;a href="https://vimeo.com/44030280"&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img title="SublimeVideo" alt="SublimeVideo" width="162" height="40" src="/images/how-we-choose-the-right-video-service-for-us/slv.png?1364633603" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Strictly speaking &lt;a href="http://sublimevideo.net/"&gt;SublimeVideo&lt;/a&gt; is not a video hosting service. It&amp;rsquo;s just a video player service. If you use SublimeVideo, you have to host your video files yourself, no matter on your own server or S3. But the good part is that you can totally control your video yourself. Size, quality, anything about the video is under your control. SublimeVideo is really a nice video player. It supports both HTML5 and Flash, almost works on any platform. The control panel is simple, neat, and it also supports simple analytics by time. The integration is also very straightforward. You just need to load a JS file from SublimeVideo and use &amp;lt;video&amp;gt; tag to wrap your video url and SublimeVideo will work like magic.&lt;/p&gt;
+
+&lt;p&gt;&lt;img title="Wistia" alt="Wistia" width="115" height="25" src="/images/how-we-choose-the-right-video-service-for-us/wistia.png?1364633636" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://wistia.com"&gt;Wistia&lt;/a&gt; is a new video service focus on powerful analytics. It can show you how your audience is watching, second by second. So we gave it a try, but after we uploading our video on it. We found the quality is not good. You could check it out &lt;a href="http://poshboytl.wistia.com/medias/5jsseu9vom"&gt;here&lt;/a&gt; and compare it with the one on our homepage. I browsed their documents quickly but didn&amp;rsquo;t find the solution. So sorry, we quit.&lt;/p&gt;
+
+&lt;p&gt;&lt;img title="Youtube" alt="youtube" width="95" height="49" src="/images/how-we-choose-the-right-video-service-for-us/youtube.png?1364633667" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Before we trying &lt;a href="http://youtube.com"&gt;YouTube&lt;/a&gt;, we used to think YouTube might not be a good place to host high quality video. But after we uploaded our video, we&amp;rsquo;re shocked. The video quality is perfect, and YouTube help us to translate our video to servial copy from 240p to 720p. I think if our video has higher resolution, we will have a 1080p version too. You could watch the sample &lt;a href="http://www.youtube.com/watch?v=OMMDL7I_eaQ&amp;amp;amp;feature=youtu.be&amp;amp;amp;hd=1"&gt;here&lt;/a&gt;. To make a embed player on your site with Youtube is also very easy. We just use a iframe and set the src to video url with parameters &amp;ldquo;autoplay=1&amp;rdquo; and &amp;ldquo;hd=1&amp;rdquo;. All done. For more player customization you could check out the document &lt;a href="http://code.google.com/apis/youtube/player_parameters.html"&gt;here&lt;/a&gt;. And it&amp;rsquo;s free of charge!&lt;/p&gt;
+
+&lt;p&gt;So far we&amp;rsquo;re glad with YouTube and it&amp;rsquo;ll be our first choice to host Pragmatic.ly&amp;rsquo;s product video and video tutorials. You could watch the final &lt;a href="https://fengche.co/"&gt;embed video on our homepage&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;We hope our experience could give you some help. Do you have other recommendations? Please let us know! Thanks.&lt;/p&gt;
+</description>
+      <guid>tag:blog.fengche.co,article.url</guid>
+      <pubDate>2012-09-18T21:00:00Z</pubDate>
+      <category>marketing, video service</category>
+    </item>
+    <item>
+      <title>Released Features of Pragmatic.ly</title>
+      <link>https://fengche.co/blog/158983791</link>
+      <description type="html">&lt;p&gt;August 2012 has been a big month for &lt;a href="https://fengche.co"&gt;Pragmatic.ly&lt;/a&gt;. We did a lot of optimization and tried our best to give more benefits to our users. So we really hope our users will love what we did in last month.&lt;/p&gt;
+
+&lt;p&gt;So let me take an opportunity to introduce the cutting-edge main changes that we have made in month of August.&lt;/p&gt;
+
+&lt;h3&gt;Clear Pricing Policy&lt;/h3&gt;
+
+&lt;p&gt;We&amp;rsquo;re landing a dedicated pricing page now. It&amp;rsquo;s simple and vibrant. Please don&amp;rsquo;t hestigate to contacting us if you have anything more that you want to know.&lt;/p&gt;
+
+&lt;p&gt;&lt;img title="Clear Pricing Policy" alt="Clear Pricing Policy" width="240" height="160" src="/images/158983791/pricing.png?1364632825" /&gt;&lt;/p&gt;
+
+&lt;h3&gt;Organization Panel&lt;/h3&gt;
+
+&lt;p&gt;We created a brief panel to list organization information which allows you to create an admin account that can handle the status of the organization easily. You can view Billing Time, All Projects Info and Team Members Information there and further it also allows you to add or remove members from your organization with this unique feature.&lt;/p&gt;
+
+&lt;p&gt;&lt;img title="Organization Panel" alt="Organization Panel" width="454" height="495" src="/images/158983791/organization.png?1364632998" /&gt;&lt;/p&gt;
+
+&lt;h3&gt;Manage Iterations &amp;amp; Manage Team&lt;/h3&gt;
+
+&lt;p&gt;We added two simple panels for admin to see iterations and team information. Admin could also remove members from a project and delete an iteration of a project with this feature.&lt;/p&gt;
+
+&lt;p&gt;&lt;img title="Manage Iterations &amp;amp; Manage Team" alt="Management Iterations &amp;amp; Team" width="174" height="127" src="/images/158983791/management.png?1364632905" /&gt;&lt;/p&gt;
+
+&lt;h3&gt;Archive Iteration&lt;/h3&gt;
+
+&lt;p&gt;The iterations gradually increase as time goes on. So we have created archiving iteration function for the users to archive old iterations to make users focus on the recent working iterations. And also you could toggle to view or hide the archived iterations when you needed.&lt;/p&gt;
+
+&lt;p&gt;&lt;img title="Archive Iteration" alt="Archive Iteration" width="244" height="160" src="/images/158983791/archive.png?1364632875" /&gt;&lt;/p&gt;
+
+&lt;h3&gt;Relative timestamp in Notifications&lt;/h3&gt;
+
+&lt;p&gt;Now it&amp;rsquo;s possible for you to get up to the speed of your project with Notifications and Activity Feed. It&amp;rsquo;s simpler now! We have modified the notifications design to show the comparative timestamp which can give a quick peek to gear up. We also opened source the library on github.&lt;/p&gt;
+
+&lt;p&gt;&lt;img title="Relative timestamp in Notification" alt="Notifications" width="240" height="155" src="/images/158983791/notification.png?1364632825" /&gt;&lt;/p&gt;
+
+&lt;h3&gt;Clickable Web Notification&lt;/h3&gt;
+
+&lt;p&gt;Web notification is one of the best ways to improve the communication! It allows you to focus on the project by the same time you can receive instant notifications when anything is changed and updated. And now we move one step further, when you click these bubble notifications, it directs you to the iteration/ticket/comment where the notification is changed and updated.&lt;/p&gt;
+
+&lt;p&gt;&lt;img title="Clickable Web Notification" alt="Web Notification" width="240" height="80" src="/images/158983791/webnotification.png?1364632825" /&gt;&lt;/p&gt;
+
+&lt;h3&gt;Mention @somebody to bring people into the discussion&lt;/h3&gt;
+
+&lt;p&gt;Want to bring somebody into the discussion? Why to think how? When you mention ‘@’followed by the person’s name in the comment by the user; particular person will be notified instantly and will be subscribed for the future updates regarding the same discussion. Still we&amp;rsquo;re working on betterment of notification controls that can let the users receive the relevant events updates only.&lt;/p&gt;
+
+&lt;p&gt;&lt;img title="Mention" alt="Mention" width="240" height="117" src="/images/158983791/mention.png?1364632825" /&gt;&lt;/p&gt;
+
+&lt;h3&gt;Internal Connections among tickets&lt;/h3&gt;
+
+&lt;p&gt;Tickets are connected! Just by adding &amp;lsquo;#&amp;rsquo; with ticket ID into any descriptions or comments you can auto link the ticket. By connecting the tickets, you can easily see the dependencies, duplications and related tickets at a glance. It&amp;rsquo;s just a start and more is on its way.&lt;/p&gt;
+
+&lt;p&gt;&lt;img title="Internal Connections among tickets" alt="Connection among tickets" width="240" height="88" src="/images/158983791/ticket-link.png?1364632825" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+
+&lt;p&gt;Except for the main features that we created last month, we also did a lot of small improvements and bug fixing. If you continue using &lt;a href="https://fengche.co"&gt;Pragmatic.ly&lt;/a&gt; you will find more surprises that can wow you for sure!&lt;/p&gt;
+</description>
+      <guid>tag:blog.fengche.co,article.url</guid>
+      <pubDate>2012-09-06T00:00:00Z</pubDate>
+      <category>Announcement, ChangeLog</category>
+    </item>
+    <item>
+      <title>A Practical Guide to Use Spine.JS in Real World App</title>
+      <link>https://fengche.co/blog/a-practical-guide-to-use-spinejs-in-real-worl</link>
+      <description type="html">&lt;p&gt;To give users the best possible fluid experience, we designed &lt;a href="https://fengche.co"&gt;Pragmatic.ly&lt;/a&gt; and complied with the &lt;a href="http://en.wikipedia.org/wiki/Single-page_application"&gt;single page application&lt;/a&gt; standard. We believe that could make users focus on building product rather than spending time on project management itself. A wide range of technology solutions are available to make a single page application. Current trends suggest moving core application from server to client side and keeping server load at minimum for better performance by pure data APIs. &lt;a href="https://fengche.co"&gt;Pragmatic.ly&lt;/a&gt; took on the challange to cater to this need by developing server side in Rails, Spine.js at client side.&lt;/p&gt;
+
+&lt;h3&gt;Why Spine.JS&lt;/h3&gt;
+
+&lt;p&gt;There are many different JavaScript MVC frameworks such as &lt;a href="http://backbonejs.org/"&gt;Backbone.js&lt;/a&gt;, &lt;a href="http://spinejs.com/"&gt;Spine.js&lt;/a&gt;, &lt;a href="http://knockoutjs.com/"&gt;Knockout.js&lt;/a&gt;, &lt;a href="http://emberjs.com/"&gt;Ember.js&lt;/a&gt;, etc. There are too many choices and when I started Pragmatic.ly, I was struggling with the problem of which one I should pick up. Instead of wasting time on choosing I did a quick review by comparing the documents and then decided to choose Spine.js to start with. With months of development so far, I&amp;rsquo;m glad that Spine.js works pretty well and below are the great benefits I have found in using Spine.js.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Simple and lightweight&lt;/em&gt;. It&amp;rsquo;s easy to dive into the core and extend as you need to.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;MVC pattern at its core&lt;/em&gt;. It&amp;rsquo;s very similar to the Rails counterparts. So I&amp;rsquo;m very comfortable with it from the first day.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Rails integration&lt;/em&gt;. It can&amp;rsquo;t be easier to use Rails as the backend data API in Spine.js app. And the &lt;a href="https://github.com/maccman/spine-rails"&gt;spine-rails&lt;/a&gt; gem is another great addition.&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://alexmaccaw.com/posts/async_ui"&gt;&lt;em&gt;Asynchronous UI&lt;/em&gt;&lt;/a&gt;. Ideally UIs never block and it will automatically update the data in backend. This brings the fast and very responsive user interface.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If you want to get a brief review among different frameworks, check out &lt;a href="http://codebrief.com/2012/01/the-top-10-javascript-mvc-frameworks-reviewed/"&gt;this article&lt;/a&gt; written by Gordon L. Hemption.&lt;/p&gt;
+
+&lt;h3&gt;How we use Spine.js in Pragmatic.ly&lt;/h3&gt;
+
+&lt;p&gt;We use spine-rails to generate the Spine.app structure, very similar to Rails app structure.&lt;/p&gt;
+&lt;pre class="highlight shell"&gt;├── app
+│   ├── controllers
+│   │   ├── center
+│   │   │   ├── filter_controller.js.coffee
+│   │   │   └── tickets_controller.js.coffee
+│   │   ├── center_content_controller.coffee
+│   │   ├── comments_controller.js.coffee
+│   │   ├── header
+│   │   │   └── project_nav_controller.js.coffee
+│   │   ├── header_controller.coffee
+│   │   ├── iterations_controller.coffee
+│   │   ├── left_sidebar_controller.coffee
+│   │   ├── projects_controller.coffee
+│   │   ├── right_sidebar_controller.coffee
+│   │   ├── sidebars
+│   │   │   ├── left_iteration.js.coffee
+│   │   │   ├── left_people.js.coffee
+│   │   │   ├── right_activities.js.coffee
+│   │   │   └── right_detail_section.js.coffee
+│   │   ├── tickets_controller.coffee
+│   │   └── users_controller.js.coffee
+│   ├── index.js.coffee
+│   ├── lib
+│   │   ├── constants.js.coffee
+│   │   ├── eco-helpers.js
+│   │   └── view.js.coffee
+│   ├── models
+│   │   ├── comment.js.coffee
+│   │   ├── iteration.js.coffee
+│   │   ├── project.js.coffee
+│   │   ├── ticket.js.coffee
+│   │   └── user.js.coffee
+│   └── views
+│       ├── comments
+│       │   ├── audit.jst.eco
+│       │   ├── form.jst.eco
+│       │   └── plain.jst.eco
+│       ├── iterations
+│       │   ├── section.jst.eco
+│       │   └── show.jst.eco
+│       ├── projects
+│       │   ├── edit.jst.eco
+│       │   ├── form.jst.eco
+│       │   ├── new.jst.eco
+│       │   └── switch.jst.eco
+│       ├── tickets
+│       │   ├── section.jst.eco
+│       │   ├── show.jst.eco
+│       │   └── toolbar.jst.eco
+│       └── users
+│           ├── people.jst.eco
+│           └── show.jst.eco
+├── application.js
+├── bootstrap.js.coffee
+└── dashboard.js.coffee
+&lt;/pre&gt;
+&lt;p&gt;So basically it&amp;rsquo;s controllers, models and views.&lt;/p&gt;
+
+&lt;h3&gt;Controllers&lt;/h3&gt;
+
+&lt;p&gt;There are two kinds of Controllers in Pragmatic.ly. In Spine, Controllers are considered the glue of an application, adding and responding to DOM events, rendering templates and ensuring that views and models are kept in sync. For example,&lt;/p&gt;
+&lt;pre class="highlight coffeescript"&gt;&lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nx"&gt;App&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;LeftIterationController&lt;/span&gt; &lt;span class="k"&gt;extends&lt;/span&gt; &lt;span class="nx"&gt;Spine&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;Controller&lt;/span&gt;
+  &lt;span class="na"&gt;el&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s"&gt;'.sidebar #iterations'&lt;/span&gt;
+
+  &lt;span class="na"&gt;elements&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+    &lt;span class="s"&gt;'ul.list'&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s"&gt;'list'&lt;/span&gt;
+
+  &lt;span class="na"&gt;constructor&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&lt;/span&gt;
+    &lt;span class="k"&gt;super&lt;/span&gt;
+    &lt;span class="nx"&gt;App&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;Iteration&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;bind&lt;/span&gt; &lt;span class="s"&gt;'create'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="vi"&gt;@&lt;/span&gt;&lt;span class="na"&gt;addIteration&lt;/span&gt;
+    &lt;span class="nx"&gt;App&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;Iteration&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;bind&lt;/span&gt; &lt;span class="s"&gt;'refresh'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="vi"&gt;@&lt;/span&gt;&lt;span class="na"&gt;refreshIterations&lt;/span&gt;
+
+  &lt;span class="na"&gt;release&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&lt;/span&gt;
+    &lt;span class="k"&gt;super&lt;/span&gt;
+    &lt;span class="nx"&gt;App&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;Iteration&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;unbind&lt;/span&gt; &lt;span class="s"&gt;'create'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="vi"&gt;@&lt;/span&gt;&lt;span class="na"&gt;addIteration&lt;/span&gt;
+    &lt;span class="nx"&gt;App&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;Iteration&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;unbind&lt;/span&gt; &lt;span class="s"&gt;'refresh'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="vi"&gt;@&lt;/span&gt;&lt;span class="na"&gt;refreshIterations&lt;/span&gt;
+
+  &lt;span class="na"&gt;addIteration&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;iteration&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;=&amp;gt;&lt;/span&gt;
+    &lt;span class="nx"&gt;iteration&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;unbind&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+    &lt;span class="nx"&gt;view&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="nx"&gt;App&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;IterationItem&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="na"&gt;item&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nx"&gt;iteration&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="vi"&gt;@&lt;/span&gt;&lt;span class="na"&gt;list&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;append&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;view&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;render&lt;/span&gt;&lt;span class="p"&gt;().&lt;/span&gt;&lt;span class="na"&gt;el&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+  &lt;span class="na"&gt;refreshIterations&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;iterations&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;=&amp;gt;&lt;/span&gt;
+    &lt;span class="vi"&gt;@&lt;/span&gt;&lt;span class="na"&gt;addIteration&lt;/span&gt; &lt;span class="nx"&gt;iteration&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="nx"&gt;iteration&lt;/span&gt; &lt;span class="k"&gt;in&lt;/span&gt; &lt;span class="nx"&gt;iterations&lt;/span&gt;
+&lt;/pre&gt;
+&lt;p&gt;We split the page into multiple blocks and each block is a Spine Controller. Talking the above example, LeftIterationsController is the Controller to manage the iterations list in the left sidebar.&lt;/p&gt;
+
+&lt;p&gt;Then what&amp;rsquo;s the other kind? The answer is Routes! We extract the routes to the dedicated controllers now. It will setup the routes and respond to the navigation event. Then it will prepare the data and trigger the event to let another controller handle it to render templates. For example,&lt;/p&gt;
+&lt;pre class="highlight coffeescript"&gt;&lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nx"&gt;App&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;TicketsController&lt;/span&gt; &lt;span class="k"&gt;extends&lt;/span&gt; &lt;span class="nx"&gt;Spine&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;Controller&lt;/span&gt;
+  &lt;span class="na"&gt;constructor&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&lt;/span&gt;
+    &lt;span class="k"&gt;super&lt;/span&gt;
+    &lt;span class="vi"&gt;@&lt;/span&gt;&lt;span class="na"&gt;routes&lt;/span&gt;
+      &lt;span class="s"&gt;"/tickets"&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="vi"&gt;@&lt;/span&gt;&lt;span class="na"&gt;index&lt;/span&gt;
+      &lt;span class="s"&gt;"/tickets/:id"&lt;/span&gt; &lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;params&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&lt;/span&gt;
+        &lt;span class="vi"&gt;@&lt;/span&gt;&lt;span class="na"&gt;show&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;params&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;id&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+  &lt;span class="na"&gt;index&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&lt;/span&gt;
+    &lt;span class="nx"&gt;tickets&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;App&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;Ticket&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;all&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+    &lt;span class="nx"&gt;App&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;Ticket&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;trigger&lt;/span&gt; &lt;span class="s"&gt;"tickets:index"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;tickets&lt;/span&gt;
+
+  &lt;span class="na"&gt;show&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;id&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&lt;/span&gt;
+    &lt;span class="nx"&gt;ticket&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;App&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;Ticket&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;find&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;id&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;publish&lt;/span&gt; &lt;span class="s"&gt;'ticket:switch'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;ticket&lt;/span&gt;
+&lt;/pre&gt;
+&lt;h3&gt;Models&lt;/h3&gt;
+
+&lt;p&gt;Models manage data for the application. It&amp;rsquo;s very similar to Rails models. I just want to mention one thing though - as we moved the logic from server side to client side, there was no need to translate 1:1 on the client side. Instead, encapsulate the data into model which is suitable for the page based on the user.&lt;/p&gt;
+&lt;pre class="highlight coffeescript"&gt;&lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nx"&gt;App&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;Project&lt;/span&gt; &lt;span class="k"&gt;extends&lt;/span&gt; &lt;span class="nx"&gt;Spine&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;Model&lt;/span&gt;
+  &lt;span class="vi"&gt;@&lt;/span&gt;&lt;span class="na"&gt;configure&lt;/span&gt; &lt;span class="s"&gt;'Project'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;'id'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;'name'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;'description'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;'owner_id'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;'uid'&lt;/span&gt;
+  &lt;span class="vi"&gt;@&lt;/span&gt;&lt;span class="na"&gt;extend&lt;/span&gt; &lt;span class="nx"&gt;Spine&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;Model&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;Ajax&lt;/span&gt;
+  &lt;span class="vi"&gt;@&lt;/span&gt;&lt;span class="na"&gt;extend&lt;/span&gt; &lt;span class="nx"&gt;Spine&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;Model&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;Dirty&lt;/span&gt;
+
+  &lt;span class="na"&gt;validate&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&lt;/span&gt;
+    &lt;span class="s"&gt;'name required'&lt;/span&gt; &lt;span class="nx"&gt;unless&lt;/span&gt; &lt;span class="vi"&gt;@&lt;/span&gt;&lt;span class="na"&gt;name&lt;/span&gt;
+
+  &lt;span class="na"&gt;inviteUser&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;email&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&lt;/span&gt;
+    &lt;span class="nx"&gt;App&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;Invitation&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;create&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="na"&gt;project_id&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="vi"&gt;@&lt;/span&gt;&lt;span class="na"&gt;id&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="na"&gt;email&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nx"&gt;email&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;
+&lt;h3&gt;Views&lt;/h3&gt;
+
+&lt;p&gt;Views are about building and maintaining the DOM elements. Views in Spine are very simple and don&amp;rsquo;t have the built-in UI binding. So most of the time you should let Controller observe the Model and get notified when the model changes, then update the view accordingly.&lt;/p&gt;
+
+&lt;p&gt;By doing all the view rendering client-side, you should use JavaScript templating solution to define templates for views as markup containing tempalte variables. There are a number of good candidates, such as Mustache, jQuery.tmpl and Eco.&lt;/p&gt;
+
+&lt;p&gt;I use Eco in Pragmatic.ly. The Erb-like syntax and CoffeeScript support is a big triumph. However, you should know that every eco template generates the same helpers which will increase the file size. You can use this &lt;a href="https://gist.github.com/sishen/2360781"&gt;gist&lt;/a&gt; to avoid the problem which will register the global helpers and inject into the Eco templates.&lt;/p&gt;
+&lt;pre class="highlight ruby"&gt;&lt;span class="c1"&gt;# Put this file in lib/&lt;/span&gt;
+
+&lt;span class="nb"&gt;require&lt;/span&gt; &lt;span class="s1"&gt;'sprockets/eco_template'&lt;/span&gt;
+
+&lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;CleanEcoTemplate&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="no"&gt;Sprockets&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="no"&gt;EcoTemplate&lt;/span&gt;
+  &lt;span class="no"&gt;FROM&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;"  (function() {"&lt;/span&gt;
+  &lt;span class="no"&gt;TO&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;"}).call(__obj);"&lt;/span&gt;
+
+  &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;evaluate&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;scope&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;locals&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;&amp;amp;&lt;/span&gt;&lt;span class="n"&gt;block&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="n"&gt;content&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="no"&gt;Eco&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;compile&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="n"&gt;from&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;content&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;index&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="no"&gt;FROM&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="n"&gt;to&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;content&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;rindex&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="no"&gt;TO&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="n"&gt;content&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;content&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="n"&gt;from&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;.&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;to&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="no"&gt;TO&lt;/span&gt;
+    &lt;span class="o"&gt;&amp;lt;&amp;lt;-&lt;/span&gt;&lt;span class="no"&gt;JS&lt;/span&gt;&lt;span class="sh"&gt;
+function(__obj) {
+  if (!__obj) __obj = {};
+  var __helpers = window.ecoHelpers;
+  var __out = [];
+  var __sanitize = __helpers.sanitize;
+  var __capture = __helpers.captureFor(__obj, __out);
+  var __rememberSafe = __obj.safe;
+  var __rememberEscape = __obj.escape;
+  __obj.safe = __helpers.safe;
+  __obj.escape = __helpers.escape;
+&lt;/span&gt;&lt;span class="si"&gt;#{&lt;/span&gt;&lt;span class="n"&gt;content&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="sh"&gt;
+  __obj.safe = __rememberSafe;
+  __obj.escape = __rememberEscape;
+  return __out.join('');
+};
+&lt;/span&gt;&lt;span class="no"&gt;      JS&lt;/span&gt;
+  &lt;span class="k"&gt;end&lt;/span&gt;
+&lt;span class="k"&gt;end&lt;/span&gt;
+&lt;/pre&gt;&lt;pre class="highlight ruby"&gt;&lt;span class="c1"&gt;# Put this file in config/initializers&lt;/span&gt;
+
+&lt;span class="nb"&gt;require&lt;/span&gt; &lt;span class="s1"&gt;'clean_eco_template'&lt;/span&gt;
+
+&lt;span class="no"&gt;Rails&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;application&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;assets&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;register_engine&lt;/span&gt; &lt;span class="s1"&gt;'.eco'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="no"&gt;CleanEcoTemplate&lt;/span&gt;
+&lt;/pre&gt;&lt;pre class="highlight javascript"&gt;&lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="nx"&gt;Must&lt;/span&gt; &lt;span class="nx"&gt;include&lt;/span&gt; &lt;span class="nx"&gt;eco&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nx"&gt;helpers&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;js&lt;/span&gt; &lt;span class="nx"&gt;before&lt;/span&gt; &lt;span class="nx"&gt;eco&lt;/span&gt; &lt;span class="nx"&gt;files&lt;/span&gt;
+
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;global&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+  &lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;ecoHelpers&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="na"&gt;sanitize&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;value&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+      &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;value&lt;/span&gt; &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class="nx"&gt;value&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;ecoSafe&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="nx"&gt;value&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+      &lt;span class="p"&gt;}&lt;/span&gt; &lt;span class="k"&gt;else&lt;/span&gt; &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;typeof&lt;/span&gt; &lt;span class="nx"&gt;value&lt;/span&gt; &lt;span class="o"&gt;!==&lt;/span&gt; &lt;span class="s1"&gt;'undefined'&lt;/span&gt; &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class="nx"&gt;value&lt;/span&gt; &lt;span class="o"&gt;!=&lt;/span&gt; &lt;span class="kc"&gt;null&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="nx"&gt;ecoHelpers&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;escape&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;value&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+      &lt;span class="p"&gt;}&lt;/span&gt; &lt;span class="k"&gt;else&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="s1"&gt;''&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+      &lt;span class="p"&gt;}&lt;/span&gt;
+    &lt;span class="p"&gt;},&lt;/span&gt;
+
+    &lt;span class="na"&gt;safe&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;value&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+      &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;value&lt;/span&gt; &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class="nx"&gt;value&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;ecoSafe&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="nx"&gt;value&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+      &lt;span class="p"&gt;}&lt;/span&gt; &lt;span class="k"&gt;else&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+        &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;!&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;typeof&lt;/span&gt; &lt;span class="nx"&gt;value&lt;/span&gt; &lt;span class="o"&gt;!==&lt;/span&gt; &lt;span class="s1"&gt;'undefined'&lt;/span&gt; &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class="nx"&gt;value&lt;/span&gt; &lt;span class="o"&gt;!=&lt;/span&gt; &lt;span class="kc"&gt;null&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt; &lt;span class="nx"&gt;value&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;''&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+        &lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;result&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="nb"&gt;String&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;value&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+        &lt;span class="nx"&gt;result&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;ecoSafe&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kc"&gt;true&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="nx"&gt;result&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+      &lt;span class="p"&gt;}&lt;/span&gt;
+    &lt;span class="p"&gt;},&lt;/span&gt;
+
+    &lt;span class="na"&gt;escape&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;value&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+      &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;''&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="nx"&gt;value&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+        &lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;replace&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="sr"&gt;/&amp;amp;/g&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'&amp;amp;amp;'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+        &lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;replace&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="sr"&gt;/&amp;lt;/g&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'&amp;amp;lt;'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+        &lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;replace&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="sr"&gt;/&amp;gt;/g&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'&amp;amp;gt;'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+        &lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;replace&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="sr"&gt;/"/g&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'&amp;amp;quot;'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+    &lt;span class="p"&gt;},&lt;/span&gt;
+
+    &lt;span class="na"&gt;captureFor&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;obj&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;out&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+      &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;callback&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+        &lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;length&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;out&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;length&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+        &lt;span class="nx"&gt;callback&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;call&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;obj&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="nx"&gt;ecoHelpers&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;safe&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;out&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;splice&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;length&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;out&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;length&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="nx"&gt;length&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;join&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;''&lt;/span&gt;&lt;span class="p"&gt;));&lt;/span&gt;
+      &lt;span class="p"&gt;});&lt;/span&gt;
+    &lt;span class="p"&gt;}&lt;/span&gt;
+  &lt;span class="p"&gt;};&lt;/span&gt;
+
+  &lt;span class="nx"&gt;global&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;ecoHelpers&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;ecoHelpers&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;})(&lt;/span&gt;&lt;span class="nb"&gt;window&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;/pre&gt;
+&lt;h3&gt;Problems&lt;/h3&gt;
+
+&lt;p&gt;So that&amp;rsquo;s how we use Spine.js to power Pragmatic.ly. It works very well but still have some limitations.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;By default, you can only monitor the whole Model change event and update the view accordingly. For example, even the username is not changed, you still have to update the views containing that data. There is a &amp;ldquo;change:field&amp;rdquo; event in Backbone.js which allow you only to update the view when that field of data changed. I like that. So I made a plugin to support that. Check the Gist out.&lt;/p&gt;
+&lt;pre class="highlight coffeescript"&gt;&lt;span class="nx"&gt;Spine&lt;/span&gt; &lt;span class="o"&gt;?=&lt;/span&gt; &lt;span class="nx"&gt;require&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;'spine'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="nx"&gt;Include&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt;
+  &lt;span class="na"&gt;savePrevious&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&lt;/span&gt;
+  &lt;span class="vi"&gt;@&lt;/span&gt;&lt;span class="na"&gt;constructor&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;records&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="vi"&gt;@&lt;/span&gt;&lt;span class="na"&gt;id&lt;/span&gt;&lt;span class="p"&gt;].&lt;/span&gt;&lt;span class="na"&gt;previousAttributes&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="vi"&gt;@&lt;/span&gt;&lt;span class="na"&gt;attributes&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+
+&lt;span class="nx"&gt;Spine&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;Model&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;Dirty&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt;
+  &lt;span class="na"&gt;extended&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&lt;/span&gt;
+    &lt;span class="vi"&gt;@&lt;/span&gt;&lt;span class="na"&gt;bind&lt;/span&gt; &lt;span class="s"&gt;'refresh'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&lt;/span&gt;
+    &lt;span class="vi"&gt;@&lt;/span&gt;&lt;span class="na"&gt;each&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;record&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&lt;/span&gt; &lt;span class="nx"&gt;record&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;savePrevious&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+
+    &lt;span class="vi"&gt;@&lt;/span&gt;&lt;span class="na"&gt;bind&lt;/span&gt; &lt;span class="s"&gt;'save'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;record&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&lt;/span&gt;
+      &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="nx"&gt;record&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;previousAttributes&lt;/span&gt;&lt;span class="o"&gt;?&lt;/span&gt;
+        &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="nx"&gt;key&lt;/span&gt; &lt;span class="k"&gt;in&lt;/span&gt; &lt;span class="nx"&gt;record&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;constructor&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;attributes&lt;/span&gt; &lt;span class="k"&gt;when&lt;/span&gt; &lt;span class="nx"&gt;key&lt;/span&gt; &lt;span class="k"&gt;of&lt;/span&gt; &lt;span class="nx"&gt;record&lt;/span&gt;
+          &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="nx"&gt;record&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;key&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;isnt&lt;/span&gt; &lt;span class="nx"&gt;record&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;previousAttributes&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;key&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+            &lt;span class="nx"&gt;record&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;trigger&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;'change:'&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nx"&gt;key&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;record&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;key&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
+      &lt;span class="nx"&gt;record&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;savePrevious&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+
+    &lt;span class="vi"&gt;@&lt;/span&gt;&lt;span class="na"&gt;include&lt;/span&gt; &lt;span class="nx"&gt;Include&lt;/span&gt;
+&lt;/pre&gt;
+&lt;p&gt;So the model object can bind the event &amp;ldquo;change:#{field} to trigger event when the field value is changed.&lt;/p&gt;
+
+&lt;p&gt;By default it&amp;rsquo;s off and if need this feature, the model should extend Spine.Model.Dirty.&lt;/p&gt;
+
+&lt;p&gt;A sample case.&lt;/p&gt;
+&lt;pre class="highlight coffeescript"&gt;&lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nx"&gt;User&lt;/span&gt; &lt;span class="k"&gt;extends&lt;/span&gt; &lt;span class="nx"&gt;Spine&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;Model&lt;/span&gt;
+  &lt;span class="vi"&gt;@&lt;/span&gt;&lt;span class="na"&gt;extend&lt;/span&gt; &lt;span class="nx"&gt;Spine&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;Model&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;Dirty&lt;/span&gt;
+&lt;span class="nx"&gt;end&lt;/span&gt;
+&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;The Ajax plugin in Spine.js plays very nice with backend REST APIs, such as Rails. For example, creating the model will trigger a &amp;quot;CREATE /collections&amp;rdquo; event to the server and updating the model will trigger a &amp;ldquo;PUT /collections/id&amp;rdquo; event, seemlessly. However, nested resources in Rails is very common but Spine lacks to support that. Either you have to trigger requests to top-level URL or setup the request yourself. I have done a dirty hack to support scoping. It&amp;rsquo;s dirty but works.&lt;/p&gt;
+&lt;pre class="highlight coffeescript"&gt; &lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nx"&gt;App&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;Ticket&lt;/span&gt; &lt;span class="k"&gt;extends&lt;/span&gt; &lt;span class="nx"&gt;Spine&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;Model&lt;/span&gt;
+  &lt;span class="vi"&gt;@&lt;/span&gt;&lt;span class="na"&gt;configure&lt;/span&gt; &lt;span class="s"&gt;'Ticket'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;"id"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;"project_id"&lt;/span&gt;
+
+  &lt;span class="vi"&gt;@&lt;/span&gt;&lt;span class="na"&gt;scope&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&lt;/span&gt;
+    &lt;span class="s"&gt;"projects/&lt;/span&gt;&lt;span class="si"&gt;#{&lt;/span&gt;&lt;span class="nx"&gt;current&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;project_id&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s"&gt;"&lt;/span&gt;
+
+  &lt;span class="na"&gt;scope&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&lt;/span&gt;
+    &lt;span class="s"&gt;"projects/&lt;/span&gt;&lt;span class="si"&gt;#{&lt;/span&gt;&lt;span class="vi"&gt;@&lt;/span&gt;&lt;span class="na"&gt;project_id&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s"&gt;"&lt;/span&gt;
+&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Asynchronous UI is cool and works for 98% situations. But in a real world app you have to deal with errors like bugs or network failures. Spine doesn&amp;rsquo;t have the default error handling for this situation and leave all work to you. It&amp;rsquo;s fine but you should know that for that 2% situation, you have to spend lots of time to avoid the impact.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;Test&lt;/h3&gt;
+
+&lt;p&gt;I would like to cover how Test works in Pragmatic.ly in another post. To give a quick overview, we use &lt;a href="http://pivotal.github.com/jasmine/"&gt;Jasmine&lt;/a&gt; for JS test and &lt;a href="http://siliconforks.com/jscoverage/"&gt;JSCoverage&lt;/a&gt; for measuring code coverage. Nice pair!&lt;/p&gt;
+
+&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+
+&lt;h3&gt;About Pragmatic.ly&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href="https://fengche.co"&gt;Pragmatic.ly&lt;/a&gt; is a lean collaborative project management tool aiming to help small teams make better products easier. It&amp;rsquo;s the ideal and elegant project management tool for tech startups.&lt;/p&gt;
+
+&lt;p&gt;Now that you&amp;rsquo;ve read so far, you should follow me &lt;a href="https://twitter.com/yedingding"&gt;@yedingding&lt;/a&gt;!&lt;/p&gt;
+</description>
+      <guid>tag:blog.fengche.co,article.url</guid>
+      <pubDate>2012-08-19T20:00:00Z</pubDate>
+      <category>SpineJS, JavaScript MVC, JavaScript, Spine</category>
+    </item>
+    <item>
+      <title>It's not perfect but it's time to integrate web notifications</title>
+      <link>https://fengche.co/blog/its-not-perfect-but-its-time-to-integrate-web</link>
+      <description type="html">&lt;p&gt;One feature &lt;a href="https://fengche.co"&gt;Pragmatic.ly&lt;/a&gt; has had from the beginning is Web Notifications. When I first saw the feature in Gmail I was convinced it was a feature every web application should have. As a project management tool Pragmatic.ly should enhance collaboration and ease communication. Instant desktop-like notification is one way to achieve the goal.&lt;/p&gt;
+
+&lt;p&gt;&lt;img title="Chrome Web Notification" alt="Chrome Web Notification" width="332" height="127" src="/images/its-not-perfect-but-its-time-to-integrate-web/chrome-notification.png?1364633946" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img title="Safari Web Notification" alt="Safari Web Notification" width="331" height="92" src="/images/its-not-perfect-but-its-time-to-integrate-web/safari-notification.png?1364633980" /&gt;&lt;/p&gt;
+
+&lt;h3&gt;Browser Support&lt;/h3&gt;
+
+&lt;p&gt;For a long time only Chrome users have been able to benefit from such features. But the release of Safari 6 in Mountain Lion has changed things for the better and now it&amp;rsquo;s time to integrate web notification into your application.&lt;/p&gt;
+
+&lt;table&gt;&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align="center"&gt;&lt;strong&gt;Browser&lt;/strong&gt;&lt;/th&gt;
+&lt;th align="left"&gt;&lt;strong&gt;Whether Support&lt;/strong&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;Chrome&lt;/td&gt;
+&lt;td align="left"&gt;Yes&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;Safari&lt;/td&gt;
+&lt;td align="left"&gt;Yes. version 6 in Mountain Lion only&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;Firefox&lt;/td&gt;
+&lt;td align="left"&gt;Yes. Install Plugin &lt;a href="https://code.google.com/p/ff-html5notifications"&gt;ff-html5notifications&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;IE&lt;/td&gt;
+&lt;td align="left"&gt;No. But can work in &lt;a href="https://developers.google.com/chrome/chrome-frame/"&gt;Chrome Frame&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+
+&lt;p&gt;For more list, checkout &lt;a href="https://html5test.com/compare/feature/notifications-notifications.html"&gt;https://html5test.com/compare/feature/notifications-notifications.html&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Since different browsers support the notifications in different ways, there are two specs of web notifications we need to cover. One is the &lt;a href="http://www.chromium.org/developers/design-documents/desktop-notifications/api-specification"&gt;older version&lt;/a&gt; which is implemented in latest version of Chromium, and the other is the &lt;a href="http://www.w3.org/TR/notifications/"&gt;newer version&lt;/a&gt; at W3C which safari followed. (The Firefox plugin followed the Chromium implementation). Considering safari 6 also does support the old spec, I would say it&amp;rsquo;s better to still stick in the old spec, at least for now.&lt;/p&gt;
+
+&lt;h3&gt;How to Use&lt;/h3&gt;
+
+&lt;p&gt;Danger Cove wrote an awesome &lt;a href="http://dangercove.github.com/html5-notifications/"&gt;demo&lt;/a&gt; on how to use HTML5 web notifications, based on the old spec. If you&amp;rsquo;re looking for the samples of the new spec, &lt;a href="https://developer.apple.com/library/safari/#documentation/AppleApplications/Conceptual/SafariJSProgTopics/Articles/SendingNotifications.html"&gt;safari document&lt;/a&gt; definitely is a good resource. Below are several notes from the experience I added the integration.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;The request permission dialog only shows after user interactions. Automation such as usingJavascript to click the link/button doesn&amp;rsquo;t work.&lt;/li&gt;
+&lt;li&gt;requestPermission requires the callback to make it work with Safari&lt;/li&gt;
+&lt;li&gt;You can interact with your application using events such as onclick, by referring window.parent. For example as in Pragmatic.ly, when user clicks the popup notification, it will show you the ticket where event happens.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Check the &lt;a href="https://gist.github.com/3233112"&gt;Gist&lt;/a&gt; to see how &lt;a href="https://fengche.co"&gt;Pragmatic.ly&lt;/a&gt; integrates web notifications.&lt;/p&gt;
+&lt;pre class="highlight coffeescript"&gt;&lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nx"&gt;Notifier&lt;/span&gt;
+  &lt;span class="na"&gt;constructor&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&lt;/span&gt;
+    &lt;span class="vi"&gt;@&lt;/span&gt;&lt;span class="na"&gt;enableNotification&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="no"&gt;false&lt;/span&gt;
+    &lt;span class="vi"&gt;@&lt;/span&gt;&lt;span class="na"&gt;checkOrRequirePermission&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+
+  &lt;span class="na"&gt;hasSupport&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&lt;/span&gt;
+    &lt;span class="nb"&gt;window&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;webkitNotifications&lt;/span&gt;&lt;span class="o"&gt;?&lt;/span&gt;
+
+  &lt;span class="na"&gt;requestPermission&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;cb&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&lt;/span&gt;
+    &lt;span class="nb"&gt;window&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;webkitNotifications&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;requestPermission&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;cb&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+  &lt;span class="na"&gt;setPermission&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="o"&gt;=&amp;gt;&lt;/span&gt;
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="vi"&gt;@&lt;/span&gt;&lt;span class="na"&gt;hasPermission&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+      &lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;'body .notification-alert a.close'&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="na"&gt;click&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+      &lt;span class="vi"&gt;@&lt;/span&gt;&lt;span class="na"&gt;enableNotification&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="no"&gt;true&lt;/span&gt;
+    &lt;span class="k"&gt;else&lt;/span&gt; &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="nb"&gt;window&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;webkitNotifications&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;checkPermission&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="o"&gt;is&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;
+      &lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;'body .notification-alert a.close'&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="na"&gt;click&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+
+  &lt;span class="na"&gt;hasPermission&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&lt;/span&gt;
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="nb"&gt;window&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;webkitNotifications&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;checkPermission&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="o"&gt;is&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;
+      &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="no"&gt;true&lt;/span&gt;
+    &lt;span class="k"&gt;else&lt;/span&gt;
+      &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="no"&gt;false&lt;/span&gt;
+
+  &lt;span class="na"&gt;checkOrRequirePermission&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="o"&gt;=&amp;gt;&lt;/span&gt;
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="vi"&gt;@&lt;/span&gt;&lt;span class="na"&gt;hasSupport&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+      &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="vi"&gt;@&lt;/span&gt;&lt;span class="na"&gt;hasPermission&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+        &lt;span class="vi"&gt;@&lt;/span&gt;&lt;span class="na"&gt;enableNotification&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="no"&gt;true&lt;/span&gt;
+      &lt;span class="k"&gt;else&lt;/span&gt;
+        &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="nb"&gt;window&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;webkitNotifications&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;checkPermission&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="o"&gt;isnt&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;
+          &lt;span class="vi"&gt;@&lt;/span&gt;&lt;span class="na"&gt;showTooltip&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+    &lt;span class="k"&gt;else&lt;/span&gt;
+      &lt;span class="nx"&gt;console&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;log&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"Desktop notifications are not supported for this Browser/OS version yet."&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+  &lt;span class="na"&gt;showTooltip&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&lt;/span&gt;
+    &lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;'body'&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="na"&gt;append&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;JST&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s"&gt;"app/views/lib/notification_info"&lt;/span&gt;&lt;span class="p"&gt;]())&lt;/span&gt;
+    &lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;'body .notification-alert'&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="na"&gt;on&lt;/span&gt; &lt;span class="s"&gt;'click'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;'a#link_enable_notifications'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;e&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;=&amp;gt;&lt;/span&gt;
+      &lt;span class="nx"&gt;e&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;preventDefault&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+      &lt;span class="vi"&gt;@&lt;/span&gt;&lt;span class="na"&gt;requestPermission&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="vi"&gt;@&lt;/span&gt;&lt;span class="na"&gt;setPermission&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+  &lt;span class="na"&gt;visitUrl&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;url&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&lt;/span&gt;
+    &lt;span class="nx"&gt;Spine&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;Route&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;navigate&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;url&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+  &lt;span class="na"&gt;notify&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;avatar&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;title&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;content&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;url&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="no"&gt;null&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&lt;/span&gt;
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="vi"&gt;@&lt;/span&gt;&lt;span class="na"&gt;enableNotification&lt;/span&gt;
+      &lt;span class="nx"&gt;popup&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;window&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;webkitNotifications&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;createNotification&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;avatar&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;title&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;content&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+      &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="nx"&gt;url&lt;/span&gt;
+        &lt;span class="nx"&gt;popup&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;onclick&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&lt;/span&gt;
+          &lt;span class="nb"&gt;window&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;parent&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;focus&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+          &lt;span class="nb"&gt;window&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;parent&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;notifier&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;visitUrl&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;url&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+      &lt;span class="nx"&gt;popup&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;show&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+      &lt;span class="nx"&gt;setTimeout&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="o"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="nx"&gt;popup&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;cancel&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="mi"&gt;12000&lt;/span&gt;
+
+&lt;span class="nb"&gt;window&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;Notifier&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;Notifier&lt;/span&gt;
+&lt;/pre&gt;
+&lt;h3&gt;Limitation&lt;/h3&gt;
+
+&lt;p&gt;While Safari 6 in Mountain Lion brings the support, it also brings some limitations, for example,&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Custom icons aren&amp;rsquo;t supported any more in Mountain Lion, no matter which browser you use. It&amp;rsquo;s controlled by the Notification Center and will always show the application icon such as Safari, Chrome. However, users in other OS doesn&amp;rsquo;t have the problem. Hope Apple can fix it soon.&lt;/li&gt;
+&lt;li&gt;Title is truncated to 30 characters in Mountain Lion. So does body. However, you can view the whole body in the Notification Center.&lt;/li&gt;
+&lt;li&gt;You can&amp;rsquo;t control how the notifications close in Mountain Lion. It&amp;rsquo;s taken by the Notification Center setting.&lt;/li&gt;
+&lt;li&gt;HTML Notification doesn&amp;rsquo;t work in Safari because the new W3C spec only have simple notification. So I suggest using simple notification only in your application.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3&gt;One More Thing&lt;/h3&gt;
+
+&lt;p&gt;If you&amp;rsquo;re developing Chrome extensions, do remember to add the &amp;ldquo;notifications&amp;rdquo; permission in the manifest.json. So when users install the extensions, the permission will be automatically granted. For Safari extensions, nothing needs to be added since it&amp;rsquo;s handled by Safari with permission auto granted.&lt;/p&gt;
+
+&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+
+&lt;h3&gt;About Pragmatic.ly&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href="https://fengche.co"&gt;Pragmatic.ly&lt;/a&gt; is a lean collaborative project management tool aiming to help small teams make better products easier. It&amp;rsquo;s the ideal and elegant project management tool for tech startups.&lt;/p&gt;
+
+&lt;p&gt;Now that you&amp;rsquo;ve read so far, you should follow me &lt;a href="https://twitter.com/yedingding"&gt;@yedingding&lt;/a&gt;!&lt;/p&gt;
+</description>
+      <guid>tag:blog.fengche.co,article.url</guid>
+      <pubDate>2012-08-01T12:00:00Z</pubDate>
+      <category>html5 notification, JavaScript, web notification</category>
+    </item>
+    <item>
+      <title>Announcing Smart Time Ago</title>
+      <link>https://fengche.co/blog/we-opened-source-smart-time-ago</link>
+      <description type="html">&lt;p&gt;The relative timestamps like &amp;ldquo;5 minutes ago&amp;rdquo; are more and more used in web applications. So web frameworks like &lt;a href="http://rubyonrails.com"&gt;Ruby on Rails&lt;/a&gt; have a builtin helper method to change timestamps to relative timestamps easily on server side as following,&lt;/p&gt;
+&lt;pre class="highlight ruby"&gt;&lt;span class="n"&gt;time_ago_in_words&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;item&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;created_at&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;
+&lt;p&gt;But If you use relative timestamps, you should update them on the client side to make sure the users always seeing the correct relative timestamps. And there is already an awesome library to do this job, which is &lt;a href="http://timeago.yarp.com/"&gt;Timeago&lt;/a&gt;. Thanks to Yarp.com, the author of Timeago.&lt;/p&gt;
+
+&lt;p&gt;However, after trying the library in depth, we found that it doesn&amp;rsquo;t fit well in &lt;a href="https://fengche.co"&gt;Pragmatic.ly&lt;/a&gt;. As a real time single-page application, our users may not refresh the page for days, so refreshing the relative timestamps per minute is meaningless and wasteful.&lt;/p&gt;
+
+&lt;p&gt;We need a more efficient solution. So we built &lt;a href="http://pragmaticly.github.com/smart-time-ago/"&gt;Smart Time Ago&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3&gt;Why Smart&lt;/h3&gt;
+
+&lt;p&gt;Instead of updating the relative timestamps every minute, smart-time-ago can dynamically tune the checking time interval to a proper value depending on the newest time on the page.&lt;/p&gt;
+
+&lt;p&gt;For example, if the newest time is &amp;lsquo;2 hours ago&amp;rsquo;, there is no need to check and update the relative timestamps per minute. Instead, 30 minutes is a better choice.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://pragmaticly.github.com/smart-time-ago/"&gt;Smart Time Ago&lt;/a&gt; is hosted on github under MIT License. Check it out for more details and share your feedbacks and suggestions. Thanks!&lt;/p&gt;
+
+&lt;h3&gt;About Pragmatic.ly&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href="https://fengche.co"&gt;Pragmatic.ly&lt;/a&gt; is a lean collaborative project management tool aiming to help small teams make better products easier. It&amp;rsquo;s the ideal and elegant project management tool for tech startups.&lt;/p&gt;
+</description>
+      <guid>tag:blog.fengche.co,article.url</guid>
+      <pubDate>2012-07-23T18:00:00Z</pubDate>
+      <category>open source, JavaScript, jQuery, smart-time-ago</category>
+    </item>
+    <item>
+      <title>Pragmatic.ly an Asana Ripoff? We say no, read why.</title>
+      <link>https://fengche.co/blog/ripoff-asana-we-say-no-and-why-were-here</link>
+      <description type="html">&lt;p&gt;Last week was a big milestone for us. After a two month private beta period we publicly launched &lt;a title="Lean Collaborative Project Management Tool" href="https://fengche.co"&gt;Pragmatic.ly&lt;/a&gt;. Many thanks to our private beta users for their encouraging words and kind feedback which we used to improve Pragmatic.ly. Our users are always extremely important to us.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Pragmatic.ly is an elegant project management tool. It provides us just enough features for using with a very concise and clear interface, and makes project management more enjoyable.&lt;p&gt;
+    - Yuanyi Zhang, Co-founder of &lt;a href="http://mockingbot.com"&gt;MockingBot.com&lt;/a&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;It is the first time that I don&amp;rsquo;t end up using excel spreadsheet for doing tasks management.&lt;/p&gt;
+  - Marc-Alexandre Cartiant, project manager
+&lt;/blockquote&gt;
+
+&lt;p&gt;We shared the launch news through social media platforms such as Twitter, Facebook, HackerNews, IRC, etc. Thanks to all the new users giving their feedback. All are highly appreciated!&lt;/p&gt;
+
+&lt;p&gt;Something we&amp;rsquo;re hearing in the feedback is that Pragmatic.ly is a &amp;ldquo;ripoff of Asana&amp;rdquo;. We even appreciate this kind of feedback and still want to thank those people for visiting our site and spending some time trying out our product. Asana definitely is a genius product and an awesome service for group collaboration. We recommend the service to our friends a lot when they need a general task management tool. We love Asana when we saw it at first glance! If you need a general shared task list for your team, give &lt;a href="http://asana.com"&gt;Asana&lt;/a&gt; a try and you&amp;rsquo;ll love it too.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;But back to Pragmatic.ly - we were inspired by Asana but found it didn&amp;rsquo;t work well for us in the software project management field. Shared task list is not such productive espeically for small agile teams. Developers need more! But on flip side, most of the project management services built for developers looks old and complex. We wanted to build a simple, modern tool that would make project management blissful for our developers.&lt;/p&gt;
+
+&lt;p&gt;Keeping simplicity in mind, we started from scratch. Following the tips from &amp;ldquo;&lt;a href="http://bootstrappingdesign.com/"&gt;Bootstrapping Design&lt;/a&gt;&amp;rdquo;, using &lt;a href="http://rubyonrails.org/"&gt;Ruby on Rails&lt;/a&gt;, &lt;a href="http://spinejs.com/"&gt;Spine.JS&lt;/a&gt; and &lt;a href="http://twitter.github.com/bootstrap"&gt;Twitter Bootstrap&lt;/a&gt;, we finally created a pragmatic way for you to manage your software projects. It&amp;rsquo;s a learning process from Asana and we stood on the shoulders of giants, but it&amp;rsquo;s definitely not a ripoff.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://fengche.co/"&gt;Pragmatic.ly&lt;/a&gt; is still under heavy development and we&amp;rsquo;ll continue adding more value to it, such as git integration, project analytics, command line tools, etc.&lt;/p&gt;
+
+&lt;p&gt;If you&amp;rsquo;re looking for a project management tool to help your startup make better products easier, &lt;a href="https://fengche.co"&gt;try it today&lt;/a&gt; and follow &lt;a href="https://twitter.com/pragmatic_ly"&gt;@pragmatic_ly&lt;/a&gt; to keep up with what&amp;rsquo;s new. Please let us know what you think and what features you’d like to see next and feel free to contact us via &lt;a href="mailto:support@pragmatic.ly"&gt;support@pragmatic.ly&lt;/a&gt; or mention &lt;a href="https://twitter.com/pragmatic_ly"&gt;@pragmatic_ly&lt;/a&gt; on twitter.&lt;/p&gt;
+</description>
+      <guid>tag:blog.fengche.co,article.url</guid>
+      <pubDate>2012-07-16T13:21:00Z</pubDate>
+      <category>Productivity, Product Design</category>
+    </item>
+    <item>
+      <title>Hello World</title>
+      <link>https://fengche.co/blog/hello-world</link>
+      <description type="html">&lt;p&gt;Today, we&amp;rsquo;re excited to announce the beta version of &lt;a title="Lean Collaborative Product Management Tool" href="https://fengcheco.com"&gt;Fengche.co&lt;/a&gt;, our new product to simplify the project management process.&lt;/p&gt;
+
+&lt;p&gt;Fengche.co is a fast and easy to use project management tool featuring real time collaboration. For years of developing products, we have tried many different project management tools. However, as a small team(&amp;lt;= 10), we found that most of them are too complex to do lots of work about work and most of them don&amp;rsquo;t care about communication, histories which force us to use different tools for same purpose. We&amp;rsquo;re always imaging there will be a tool which will make the team focus on the work with maximum productivity. That&amp;rsquo;s why we created Pragmatic.ly.&lt;/p&gt;
+
+&lt;p&gt;Our vision for project management is a tool where you can plan, work, communicate and review in one place with great user experience. Below are some features of Fengche.co we want to share with you.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Single Page Interface&lt;/strong&gt; - Everything related to your project, including iterations, tickets, comments, are well organzied in one page. No anonying page loading, fast transition, the fluid experience of desktop app are bringing to web now. It’s clean, simple, easy and fast.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Real Time Collaboration&lt;/strong&gt; - Open the page and then you&amp;rsquo;re set, no reloading required. All the updates and actions related to the project such as iterations, tickets, comments will automatically shown to you in real time to keep everyone in the same page.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Notifications and Activity Feed&lt;/strong&gt; - Miss the activities while offline? It&amp;rsquo;s ok and you&amp;rsquo;re easy to catch up here. The in-page notifications will let you quickly browse what happened in the project when you&amp;rsquo;re away and the activity feed will let you quickly catch up what happened in an iteration and ticket.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Easy and Efficient Management&lt;/strong&gt; - The management about project is effortless and painless here to let you just focus on what matters. Stop wasting time to do &amp;lsquo;work about work&amp;rsquo; and instead work on the project itself!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Fengche.co is currently in beta release and we&amp;rsquo;re working hard to make it simple, elegant, useful and fun. So, if you&amp;rsquo;re looking for a project management tool to maximize your productivity, sign up for the beta today. There are more shiny features on the way, so make sure to check back often to keep up with what&amp;rsquo;s new. Please let us know what you think and what features you’d like to see next and feel free to contacts us via &lt;a href="mailto:support@fengche.co"&gt;support@fengche.co&lt;/a&gt; or mention &lt;a href="https://twitter.com/fengcheco"&gt;@fengcheco&lt;/a&gt; on twitter.&lt;/p&gt;
+</description>
+      <guid>tag:blog.fengche.co,article.url</guid>
+      <pubDate>2012-06-17T02:00:00Z</pubDate>
+      <category>Announcement</category>
+    </item>
+  </channel>
+</rss>
+
+      </div>
+    </section>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="container">
+        <div class="row">
+          <div class="span2 offset2">
+            <nav>
+            <h5>网站相关</h5>
+            <ul>
+              <li><a href="https://fengcheco.com/">首页</a></li>
+              <li><a href="https://fengcheco.com/tour">了解产品</a></li>
+              <li><a href="https://fengcheco.com/pricing">价格方案</a></li>
+              <li><a href="https://fengcheco.com/privacy">隐私政策</a></li>
+              <li><a href="https://fengcheco.com/terms">服务条款</a></li>
+            </ul>
+            </nav>
+          </div>
+
+          <div class="span2">
+            <nav>
+              <h5>服务支持</h5>
+              <ul>
+                <!--<li><a href="/help">帮助中心</a></li>-->
+                <li><a href="https://fengcheco.com/get-started">新手帮助</a></li>
+                <li><a href="mailto:support@fengche.co">联系我们</a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="span2">
+            <nav>
+              <h5>联系合作</h5>
+              <ul>
+                <li><a href="https://fengcheco.com/about">关于我们</a></li>
+                <li><a href="mailto:press@fengche.co">合作伙伴</a></li>
+                <li><a href="mailto:press@fengche.co">媒体报道</a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="span2">
+            <nav>
+              <h5>关注我们</h5>
+              <ul>
+                <li><a href="https://fengcheco.com/blog">官方博客</a></li>
+                <li><a class="social-weibo" href="http://weibo.com/fengcheco" target="_blank">微博</a></li>
+                <li>QQ群: 162278625</li>
+                <li><a class="social-facebook" href="https://facebook.com/fengcheco" target="_blank">Facebook</a></li>
+                <li><a class="social-twitter" href="https://twitter.com/#!/fengcheco" target="_blank">Twitter</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <div class="copyright">
+          <p>&copy; 2012-2014 Fengche.co (former Pragmatic.ly)</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- begin olark code -->
+    <script data-cfasync="false" type='text/javascript'>/*{literal}<![CDATA[*/
+      window.olark||(function(c){var f=window,d=document,l=f.location.protocol=="https:"?"https:":"http:",z=c.name,r="load";var nt=function(){f[z]=function(){(a.s=a.s||[]).push(arguments)};var a=f[z]._={},q=c.methods.length;while(q--){(function(n){f[z][n]=function(){f[z]("call",n,arguments)}})(c.methods[q])}a.l=c.loader;a.i=nt;a.p={0:+new Date};a.P=function(u){a.p[u]=new Date-a.p[0]};function s(){a.P(r);f[z](r)}f.addEventListener?f.addEventListener(r,s,false):f.attachEvent("on"+r,s);var ld=function(){function p(hd){hd="head";return["<",hd,"></",hd,"><",i,' onl' + 'oad="var d=',g,";d.getElementsByTagName('head')[0].",j,"(d.",h,"('script')).",k,"='",l,"//",a.l,"'",'"',"></",i,">"].join("")}var i="body",m=d[i];if(!m){return setTimeout(ld,100)}a.P(1);var j="appendChild",h="createElement",k="src",n=d[h]("div"),v=n[j](d[h](z)),b=d[h]("iframe"),g="document",e="domain",o;n.style.display="none";m.insertBefore(n,m.firstChild).id=z;b.frameBorder="0";b.id=z+"-loader";if(/MSIE[ ]+6/.test(navigator.userAgent)){b.src="javascript:false"}b.allowTransparency="true";v[j](b);try{b.contentWindow[g].open()}catch(w){c[e]=d[e];o="javascript:var d="+g+".open();d.domain='"+d.domain+"';";b[k]=o+"void(0);"}try{var t=b.contentWindow[g];t.write(p());t.close()}catch(x){b[k]=o+'d.write("'+p().replace(/"/g,String.fromCharCode(92)+'"')+'");d.close();'}a.P(2)};ld()};nt()})({loader: "static.olark.com/jsclient/loader0.js",name:"olark",methods:["configure","extend","declare","identify"]});
+/* custom configuration goes here (www.olark.com/documentation) */
+olark.identify('8594-504-10-6122');/*]]>{/literal}*/
+    </script>
+    <noscript><a
+      href="https://www.olark.com/site/8594-504-10-6122/contact"
+      title="Contact us" target="_blank">Questions? Feedback?</a>
+      powered by <a href="http://www.olark.com?welcome" title="Olark
+      live chat software">Olark live chat software</a></noscript>
+      <!-- end olark code -->
+  </body>
+</html>
