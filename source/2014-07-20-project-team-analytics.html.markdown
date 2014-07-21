@@ -1,5 +1,5 @@
 ---
-title: "团队分析和项目统计，迈出第一步"
+title: "团队分析和项目统计，开启智能工作"
 date: 2014-07-20 08:00 +08:00
 tags: analytics, dashboard
 author: dingding
