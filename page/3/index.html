@@ -35,19 +35,19 @@
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <link href="/blog/stylesheets/application.css?1392193221" media="screen" rel="stylesheet" type="text/css" />
-    <script src="/blog/javascripts/application.js?1392188988" type="text/javascript"></script>
+    <link href="/stylesheets/application.css?1405912777" rel="stylesheet" type="text/css" />
+    <script src="/javascripts/application.js?1405912779" type="text/javascript"></script>
 
-    
+    <script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script>
+    <script type="text/javascript">var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-4054156-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();</script>
 
-    
-    <!-- start Mixpanel -->
-    <script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f);b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==
-typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");for(g=0;g<i.length;g++)f(c,i[g]);
-b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
-    mixpanel.init("43a596021773ee49e7b13713d89c9875");</script>
-    <!-- end Mixpanel -->
-    
   </head>
 
   <body class="page page_3 page_3_index">
@@ -78,21 +78,90 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
 
     <section class="hero wrap-blue">
       <div class="container header">
-        
            <h1 class="blog-name">「风车协作」官方博客</h1>
            <p> 好好做产品，做好产品 </p>
-        
       </div>
     </section>
 
     <section class="main">
       <div class="container">
         <div id="posts">
-  
     <article class="post">
       <header>
   <h2 class="title">
-    <a href="/blog/announcing-pic-pasting">新功能: 通过复制粘贴就能上传图片</a>
+    <a href="/invite-user-from-organization">新功能：直接邀请组织成员加入项目</a>
+  </h2>
+</header>
+
+<aside>
+  <ul class="meta">
+    <li class="author-photo">
+      <a href="http://yedingding.com">
+        <img alt="" width="120" height="120" src="/images/dingding-ye.png?1379005285" />
+      </a>
+    </li>
+    <li class="author">
+     by 叶玎玎
+    </li>
+    <li class="date">
+      Nov 19, 2013
+    </li>
+    <li class="tags">
+        <a href="/tags/announcement">Announcement</a>
+        <a href="/tags/new-feature">New Feature</a>
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <p>先向我们用户们表示歉意，这个功能来晚了。随着用户使用 Fengche.co 的时间越来越长，项目开始增多，重复输入团队成员邮件地址来邀请用户成了一个痛点，所以我们觉得是时候开始做直接邀请组织里的成员加入项目，更方便协作。这里先解释两个概念。</p>
+
+<h3>项目团队</h3>
+
+<p>指当前项目里的团队人员，见边栏的团队成员列表。</p>
+
+<p><img alt="Project Team" width="249" height="103" src="/images/invite-user-from-organization/project-team.png?1384835574" /></p>
+
+<h3>组织团队</h3>
+
+<p>指你的组织里的团队人员，是你创建的所有项目里的项目团队人员之和，算自然人。</p>
+
+<p><img alt="Organization Team" width="566" height="294" src="/images/invite-user-from-organization/organization-team.png?1384835574" /></p>
+
+<h3>具体实现</h3>
+
+<p>下图是我们的具体实现。</p>
+
+<p><img alt="New Invite Modal" width="455" height="340" src="/images/invite-user-from-organization/new-invite.png?1384835574" /></p>
+
+<p>在邀请现有成员区域点击邀请以后，会直接给这位成员发送邀请加入项目邮件，很简单。另外，我们目前正在做新的项目页面设计，到时候会有更加优秀的视觉设计和交互设计，包括这里，敬请期待！</p>
+
+<h3>其他更新</h3>
+
+<p>这次的发布还修复了下面几个 bug。</p>
+
+<ol>
+<li>多附件情况下，删除一个附件后导致附件区域显示不全。</li>
+<li>新成员加入后，无法通过 @ 来补全新成员。</li>
+<li>在空间面板里面增加黑色的圆圈代表 “验收失败” 状态。</li>
+</ol>
+
+<p>如果你有任何问题和建议，随时联系我们，谢谢。</p>
+
+
+  <p>
+    ......
+  </p>
+  <p>
+    <a href="/invite-user-from-organization">Read more →</a>
+  </p>
+</div>
+
+    </article>
+    <article class="post">
+      <header>
+  <h2 class="title">
+    <a href="/announcing-pic-pasting">新功能: 通过复制粘贴就能上传图片</a>
   </h2>
 </header>
 
@@ -100,7 +169,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
   <ul class="meta">
     <li class="author-photo">
       <a href="http://terrytai.com">
-        <img alt="" width="120" height="120" src="/blog/images/terry-tai.png?1379005285" />
+        <img alt="" width="120" height="120" src="/images/terry-tai.png?1379005285" />
       </a>
     </li>
     <li class="author">
@@ -110,11 +179,8 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
       Nov 08, 2013
     </li>
     <li class="tags">
-      
-        <a href="/blog/tags/announcement">Announcement</a>
-      
-        <a href="/blog/tags/new-feature">New Feature</a>
-      
+        <a href="/tags/announcement">Announcement</a>
+        <a href="/tags/new-feature">New Feature</a>
     </li>
   </ul>
 </aside>
@@ -141,8 +207,9 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
 
 <p>如果你希望在你的任务描述中引入一些图片, 你完全可以使用 Markdown 来插入图片.
 格式也很简单:</p>
-<pre class="highlight plaintext">   ![描述](图片地址)
-</pre>
+<pre><code class="highlight plaintext">   ![描述](图片地址)
+</code></pre>
+
 <p>是不是很简单?</p>
 
 <p>Enjoy!</p>
@@ -152,16 +219,15 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
     ......
   </p>
   <p>
-    <a href="/blog/announcing-pic-pasting">Read more →</a>
+    <a href="/announcing-pic-pasting">Read more →</a>
   </p>
 </div>
 
     </article>
-  
     <article class="post">
       <header>
   <h2 class="title">
-    <a href="/blog/introduce-the-new-dashboard">新功能: 控制面板</a>
+    <a href="/introduce-the-new-dashboard">新功能: 控制面板</a>
   </h2>
 </header>
 
@@ -169,7 +235,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
   <ul class="meta">
     <li class="author-photo">
       <a href="http://beenhero.com">
-        <img alt="" width="120" height="120" src="/blog/images/ben-he.png?1379005285" />
+        <img alt="" width="120" height="120" src="/images/ben-he.png?1379005285" />
       </a>
     </li>
     <li class="author">
@@ -179,11 +245,8 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
       Oct 16, 2013
     </li>
     <li class="tags">
-      
-        <a href="/blog/tags/annoucement">Annoucement</a>
-      
-        <a href="/blog/tags/new-feature">New Feature</a>
-      
+        <a href="/tags/annoucement">Annoucement</a>
+        <a href="/tags/new-feature">New Feature</a>
     </li>
   </ul>
 </aside>
@@ -199,7 +262,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
 
 <h2>卡片式布局方式</h2>
 
-<p><img alt="Dashboard Snapshot" width="720" height="396" src="/blog/images/introduce-the-new-dashboard/dashboard-snapshot.png?1384231969"></p>
+<p><img alt="Dashboard Snapshot" width="720" height="396" src="/images/introduce-the-new-dashboard/dashboard-snapshot.png?1384231969"></p>
 
 <p>如截图所见, 一个项目按一个卡片的形式展现, 上下两个区块用以区分「我的项目」和「参与的项目」. 「参与的项目」是你被邀请到他人的项目, 你不具有对项目的管理权限. 「我的项目」是你自己帐户下创建的项目, 你可以编辑/归档/删除项目.</p>
 
@@ -207,7 +270,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
 
 <h2>卡片的数据呈现及功能</h2>
 
-<p><img alt="Card Annotation" width="550" height="506" src="/blog/images/introduce-the-new-dashboard/project-card-annotation.png?1384231969"></p>
+<p><img alt="Card Annotation" width="550" height="506" src="/images/introduce-the-new-dashboard/project-card-annotation.png?1384231969"></p>
 
 <p>截图是控制面板里的项目卡片指示图, 你点击右上角的帮助按钮(?) 就可以看到.
 卡片上展示的信息和数据分别有:</p>
@@ -227,7 +290,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
 <h4>项目一周活跃度</h4>
 
 <p>通过四种颜色(取决于你的项目模板, 可能只有三种或两种颜色), 代表任务活动的类型: 新建/开始/完成/通过审核.
-而圆圈的大小代表活跃度, 将一天24小时划分为: 凌晨/...</p>
+而圆圈的大小代表活跃度, 将一天24小时划分为: 凌晨...</p>
 </li>
 </ul>
 
@@ -235,16 +298,15 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
     ......
   </p>
   <p>
-    <a href="/blog/introduce-the-new-dashboard">Read more →</a>
+    <a href="/introduce-the-new-dashboard">Read more →</a>
   </p>
 </div>
 
     </article>
-  
     <article class="post">
       <header>
   <h2 class="title">
-    <a href="/blog/new-feature-comment-via-email">新功能：更好的与邮件集成来管理项目</a>
+    <a href="/new-feature-comment-via-email">新功能：更好的与邮件集成来管理项目</a>
   </h2>
 </header>
 
@@ -252,7 +314,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
   <ul class="meta">
     <li class="author-photo">
       <a href="http://poiyzy.github.io">
-        <img alt="" width="120" height="120" src="/blog/images/zhuoyu-yang.png?1379005285" />
+        <img alt="" width="120" height="120" src="/images/zhuoyu-yang.png?1379005285" />
       </a>
     </li>
     <li class="author">
@@ -262,11 +324,8 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
       Oct 04, 2013
     </li>
     <li class="tags">
-      
-        <a href="/blog/tags/announcement">Announcement</a>
-      
-        <a href="/blog/tags/new-feature">New feature</a>
-      
+        <a href="/tags/announcement">Announcement</a>
+        <a href="/tags/new-feature">New feature</a>
     </li>
   </ul>
 </aside>
@@ -292,16 +351,15 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
     ......
   </p>
   <p>
-    <a href="/blog/new-feature-comment-via-email">Read more →</a>
+    <a href="/new-feature-comment-via-email">Read more →</a>
   </p>
 </div>
 
     </article>
-  
     <article class="post">
       <header>
   <h2 class="title">
-    <a href="/blog/we-are-back">写在 Pragmatic.ly 即将两周年</a>
+    <a href="/we-are-back">写在 Pragmatic.ly 即将两周年</a>
   </h2>
 </header>
 
@@ -309,7 +367,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
   <ul class="meta">
     <li class="author-photo">
       <a href="http://yedingding.com">
-        <img alt="" width="120" height="120" src="/blog/images/dingding-ye.png?1379005285" />
+        <img alt="" width="120" height="120" src="/images/dingding-ye.png?1379005285" />
       </a>
     </li>
     <li class="author">
@@ -319,17 +377,14 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
       Sep 12, 2013
     </li>
     <li class="tags">
-      
-        <a href="/blog/tags/startup">startup</a>
-      
-        <a href="/blog/tags/thoughts">thoughts</a>
-      
+        <a href="/tags/startup">startup</a>
+        <a href="/tags/thoughts">thoughts</a>
     </li>
   </ul>
 </aside>
 
 <div class="content">
-  <p><img alt="弯路和未来" width="586" height="500" src="/blog/images/we-are-back/detour-and-sunshine.jpg?1384231969"></p>
+  <p><img alt="弯路和未来" width="586" height="500" src="/images/we-are-back/detour-and-sunshine.jpg?1384231969"></p>
 
 <p>准确说，Pragmatic.ly 从有这个想法到现在已经有 2 年了。11 年 10 月份的一个晚上跟 Daniel 和 Terry 在对我们所有用过的项目管理工具吐完槽以后，然后决定自己造一个，12 年春节前后真正当个事做，4 月底 Ben 加入，7 月份发布 Beta，先在海外做了差不多 8 个月，今年 4 月份开始调整方向，转向国内，6 月底重新上线到现在，整个过程各种状况各种弯路，但是每天都能感觉到变化，每天都是新的学习，乐在其中。</p>
 
@@ -351,85 +406,16 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
     ......
   </p>
   <p>
-    <a href="/blog/we-are-back">Read more →</a>
+    <a href="/we-are-back">Read more →</a>
   </p>
 </div>
 
     </article>
-  
-    <article class="post">
-      <header>
-  <h2 class="title">
-    <a href="/blog/announcing-uploading-avatar">Beyonds Gravatar and set your profile picture</a>
-  </h2>
-</header>
 
-<aside>
-  <ul class="meta">
-    <li class="author-photo">
-      <a href="http://terrytai.com">
-        <img alt="" width="120" height="120" src="/blog/images/terry-tai.png?1379005285" />
-      </a>
-    </li>
-    <li class="author">
-     by 太檑
-    </li>
-    <li class="date">
-      Mar 23, 2013
-    </li>
-    <li class="tags">
-      
-        <a href="/blog/tags/announcement">Announcement</a>
-      
-        <a href="/blog/tags/new-feature">New feature</a>
-      
-    </li>
-  </ul>
-</aside>
-
-<div class="content">
-  <p>Today, we have released a minor update to our users which is you can upload your image and set as your profile picture in
-<a title="Lean Collaborative Project Management Tool and Online Collaboration" href="http://pragmatic.ly">Pragmatic.ly</a>
-instead of using <a href="http://en.gravatar.com/">Gravatar</a>.</p>
-
-<p>The UX is very simple.</p>
-
-<p><img alt="" width="550" height="420" src="/blog/images/announcing-uploading-avatar/update_avatar.jpg?1379005285" /></p>
-
-<h3>Why is such a simple feature not included from the first day?</h3>
-
-<p>You may have the question. We too! We spent some time debating whether we should include that before the public release. The
-goal of Pragmatic.ly is to provide the simplest and elegant project management experience to help you make better products easier.
-So we spent most of the time to achieve the goal and regarding to the profile picture part, we just integrated the Gravatar, the
-globally recognized avatars, in one hour.</p>
-
-<p>Gravatr works perfectly and we enjoy the benifits very much! Even big services like <a href="http://github.com">GitHub</a> has only the Gravatar support till today.</p>
-
-<p>However, when Pragmatic.ly grows, we learn a lot from our users. There are two main problems we heard with Gravatar.</p>
-
-<p>
-
-  <p>
-    ......
-  </p>
-  <p>
-    <a href="/blog/announcing-uploading-avatar">Read more →</a>
-  </p>
-</div>
-
-    </article>
-  
-
-  
     <ul class="pager">
-      
-        <li class="previous"><a href="/blog/page/2">&larr; Newer</a></li>
-      
-      
-        <li class="next"><a href="/blog/page/4">Older &rarr;</a></li>
-      
+        <li class="previous"><a href="/page/2">&larr; Newer</a></li>
+        <li class="next"><a href="/page/4">Older &rarr;</a></li>
     </ul>
-  
 </div>
 
 <script type="text/javascript">

@@ -35,19 +35,19 @@
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <link href="/blog/stylesheets/application.css?1392193221" media="screen" rel="stylesheet" type="text/css" />
-    <script src="/blog/javascripts/application.js?1392188988" type="text/javascript"></script>
+    <link href="/stylesheets/application.css?1405912777" rel="stylesheet" type="text/css" />
+    <script src="/javascripts/application.js?1405912779" type="text/javascript"></script>
 
-    
+    <script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script>
+    <script type="text/javascript">var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-4054156-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();</script>
 
-    
-    <!-- start Mixpanel -->
-    <script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f);b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==
-typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");for(g=0;g<i.length;g++)f(c,i[g]);
-b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
-    mixpanel.init("43a596021773ee49e7b13713d89c9875");</script>
-    <!-- end Mixpanel -->
-    
   </head>
 
   <body class="index">
@@ -78,21 +78,77 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
 
     <section class="hero wrap-blue">
       <div class="container header">
-        
            <h1 class="blog-name">「风车协作」官方博客</h1>
            <p> 好好做产品，做好产品 </p>
-        
       </div>
     </section>
 
     <section class="main">
       <div class="container">
         <div id="posts">
-  
     <article class="post">
       <header>
   <h2 class="title">
-    <a href="/blog/how-we-use-vcs-integration-with-fengcheco">如何使用 VCS 集成</a>
+    <a href="/project-team-analytics">团队分析和项目统计，开启智能工作</a>
+  </h2>
+</header>
+
+<aside>
+  <ul class="meta">
+    <li class="author-photo">
+      <a href="http://yedingding.com">
+        <img alt="" width="120" height="120" src="/images/dingding-ye.png?1379005285" />
+      </a>
+    </li>
+    <li class="author">
+     by 叶玎玎
+    </li>
+    <li class="date">
+      Jul 20, 2014
+    </li>
+    <li class="tags">
+        <a href="/tags/analytics">analytics</a>
+        <a href="/tags/dashboard">dashboard</a>
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <p>风车从诞生的第一天开始，我们就给自己制定了目标，做一个最终用户非常喜欢使用的团队协作工具。目前市场上充斥着大量完全没有用户体验可谈的企业工具，购买软件的人根本无视使用者的体验感受，一般都是由上而下强制推行。作为一个曾经的受害者，我们知道，这对工作的积极性是多大的打击，对工作的效率是多大的损害。之所以这些企业软件能卖出，是因为他们向决策者鼓吹软件对管理的帮助。所以，我们在满足了最终用户之后，开始开发一些能给管理者带有巨大帮助的功能，而项目统计和成员状态分析，就是我们的第一步。</p>
+
+<p>对于项目管理者来说，最重要的工作就是计划安排和进度跟踪。计划的安排是否合理，在于对团队每个人的过往工作情况是否足够了解。进度的跟踪是否有效，在于对项目里任务的每天执行情况能否足够了解。所以，风车目前推出了统计三大块，一是团队工作情况，二是成员工作情况，三是项目执行情况。</p>
+
+<h3>团队工作情况</h3>
+
+<p>团队工作情况主要分成两部分，昨日状态和过去三周状态。这里的团队是你整个组织，包含了你所管理的所有项目的一个汇总。</p>
+
+<p><img alt="团队昨日状态" width="512" height="165" src="/images/project-team-analytics/team-stat-1.png?1405912777" /></p>
+
+<p>昨日状态包含了到期任务数、昨日完成数和昨日新增数。所有，我们能迅速的了解昨天整个团队的工作情况和今天需要处理多少事情。</p>
+
+<p><img alt="团队过去三周数据图" width="520" height="212" src="/images/project-team-analytics/team-stat-2.png?1405912777" /></p>
+
+<p>过去三周数据图是一个更加直观的图表。每一条柱的不同颜色从下到上分别代表了当然有多少任务创建、有多少任务在进行，多少任务完成以及多少任务被验收通过。三周的数据，让你对整个组织的工作状态了如指掌。</p>
+
+<h3>成员工作情况</h3>
+
+<p>成员工作情况也分成两部分，任务分析和项目内过去两周工作情况。</p>
+
+<p>
+
+  <p>
+    ......
+  </p>
+  <p>
+    <a href="/project-team-analytics">Read more →</a>
+  </p>
+</div>
+
+    </article>
+    <article class="post">
+      <header>
+  <h2 class="title">
+    <a href="/how-we-use-vcs-integration-with-fengcheco">如何使用 VCS 集成</a>
   </h2>
 </header>
 
@@ -100,7 +156,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
   <ul class="meta">
     <li class="author-photo">
       <a href="http://poiyzy.github.io">
-        <img alt="" width="120" height="120" src="/blog/images/zhuoyu-yang.png?1379005285" />
+        <img alt="" width="120" height="120" src="/images/zhuoyu-yang.png?1379005285" />
       </a>
     </li>
     <li class="author">
@@ -110,23 +166,17 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
       May 28, 2014
     </li>
     <li class="tags">
-      
-        <a href="/blog/tags/vcs">VCS</a>
-      
-        <a href="/blog/tags/integration">Integration</a>
-      
-        <a href="/blog/tags/git">Git</a>
-      
-        <a href="/blog/tags/代码库">代码库</a>
-      
-        <a href="/blog/tags/集成">集成</a>
-      
+        <a href="/tags/vcs">VCS</a>
+        <a href="/tags/integration">Integration</a>
+        <a href="/tags/git">Git</a>
+        <a href="/tags/代码库">代码库</a>
+        <a href="/tags/集成">集成</a>
     </li>
   </ul>
 </aside>
 
 <div class="content">
-  <p><img alt="audit commit" width="502" height="610" src="/blog/images/vcs_integration_with_fengcheco/audit_commit.png?1401467189" /></p>
+  <p><img alt="audit commit" width="502" height="610" src="/images/vcs_integration_with_fengcheco/audit_commit.png?1401467189" /></p>
 
 <p>像我们这样的开发者每天都使用 VCS (版本控制系统) 完成工作， 比如 Git 或者 SVN 。将 VCS 融入您目前的开发过程中，可以使您更加详细精确的了解到代码情况以及项目进度，使代码和项目管理融为一体。</p>
 
@@ -138,16 +188,15 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
     ......
   </p>
   <p>
-    <a href="/blog/how-we-use-vcs-integration-with-fengcheco">Read more →</a>
+    <a href="/how-we-use-vcs-integration-with-fengcheco">Read more →</a>
   </p>
 </div>
 
     </article>
-  
     <article class="post">
       <header>
   <h2 class="title">
-    <a href="/blog/introducing_vcs_integration_with_fengcheco">如何集成 VCS</a>
+    <a href="/introducing_vcs_integration_with_fengcheco">如何集成 VCS</a>
   </h2>
 </header>
 
@@ -155,7 +204,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
   <ul class="meta">
     <li class="author-photo">
       <a href="http://poiyzy.github.io">
-        <img alt="" width="120" height="120" src="/blog/images/zhuoyu-yang.png?1379005285" />
+        <img alt="" width="120" height="120" src="/images/zhuoyu-yang.png?1379005285" />
       </a>
     </li>
     <li class="author">
@@ -165,17 +214,11 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
       May 28, 2014
     </li>
     <li class="tags">
-      
-        <a href="/blog/tags/vcs">VCS</a>
-      
-        <a href="/blog/tags/integration">Integration</a>
-      
-        <a href="/blog/tags/git">Git</a>
-      
-        <a href="/blog/tags/代码库">代码库</a>
-      
-        <a href="/blog/tags/集成">集成</a>
-      
+        <a href="/tags/vcs">VCS</a>
+        <a href="/tags/integration">Integration</a>
+        <a href="/tags/git">Git</a>
+        <a href="/tags/代码库">代码库</a>
+        <a href="/tags/集成">集成</a>
     </li>
   </ul>
 </aside>
@@ -185,7 +228,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
 
 <p>像我们这样的开发者每天都使用 VCS (版本控制系统) 完成工作， 比如 Git 或者 SVN 。将 VCS 融入您目前的开发过程中，可以使您更加详细精确的了解到代码情况以及项目进度，使代码和项目管理融为一体。</p>
 
-<p><img alt="audit commit" width="502" height="610" src="/blog/images/vcs_integration_with_fengcheco/audit_commit.png?1401467189" /></p>
+<p><img alt="audit commit" width="502" height="610" src="/images/vcs_integration_with_fengcheco/audit_commit.png?1401467189" /></p>
 
 <p>目前我们已经支持了 <a href="https://github.com/">GitHub</a>, <a href="https://bitbucket.org/">BitBucket</a> 以及 <a href="http://gitlab.org/">Gitlab</a>，如果您正在使用的版本控制器我们还不支持，只需联系我们，我们回尽快帮您解决。</p>
 
@@ -197,16 +240,15 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
     ......
   </p>
   <p>
-    <a href="/blog/introducing_vcs_integration_with_fengcheco">Read more →</a>
+    <a href="/introducing_vcs_integration_with_fengcheco">Read more →</a>
   </p>
 </div>
 
     </article>
-  
     <article class="post">
       <header>
   <h2 class="title">
-    <a href="/blog/new-feature-task-followers">新功能：协作者</a>
+    <a href="/new-feature-task-followers">新功能：协作者</a>
   </h2>
 </header>
 
@@ -214,7 +256,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
   <ul class="meta">
     <li class="author-photo">
       <a href="http://poiyzy.github.io">
-        <img alt="" width="120" height="120" src="/blog/images/zhuoyu-yang.png?1379005285" />
+        <img alt="" width="120" height="120" src="/images/zhuoyu-yang.png?1379005285" />
       </a>
     </li>
     <li class="author">
@@ -224,19 +266,12 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
       Apr 15, 2014
     </li>
     <li class="tags">
-      
-        <a href="/blog/tags/announcement">announcement</a>
-      
-        <a href="/blog/tags/new-feature">new feature</a>
-      
-        <a href="/blog/tags/follower">follower</a>
-      
-        <a href="/blog/tags/协作者">协作者</a>
-      
-        <a href="/blog/tags/新功能">新功能</a>
-      
-        <a href="/blog/tags/任务">任务</a>
-      
+        <a href="/tags/announcement">announcement</a>
+        <a href="/tags/new-feature">new feature</a>
+        <a href="/tags/follower">follower</a>
+        <a href="/tags/协作者">协作者</a>
+        <a href="/tags/新功能">新功能</a>
+        <a href="/tags/任务">任务</a>
     </li>
   </ul>
 </aside>
@@ -252,7 +287,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
 <li>在您打开一个任务的详细页面后，在右边栏便可以轻松找到协作者添加位置</li>
 </ul>
 
-<p><img alt="task followers" width="1274" height="438" src="/blog/images/new-feature-task-followers/task_followers.png?1397735636" /></p>
+<p><img alt="task followers" width="1274" height="438" src="/images/new-feature-task-followers/task_followers.png?1397735636" /></p>
 
 <p>
 
@@ -260,16 +295,15 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
     ......
   </p>
   <p>
-    <a href="/blog/new-feature-task-followers">Read more →</a>
+    <a href="/new-feature-task-followers">Read more →</a>
   </p>
 </div>
 
     </article>
-  
     <article class="post">
       <header>
   <h2 class="title">
-    <a href="/blog/server-324-maintenance">3 月 23 号系统维护：风车迁移到国内服务器来加速访问</a>
+    <a href="/server-324-maintenance">3 月 23 号系统维护：风车迁移到国内服务器来加速访问</a>
   </h2>
 </header>
 
@@ -277,7 +311,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
   <ul class="meta">
     <li class="author-photo">
       <a href="http://yedingding.com">
-        <img alt="" width="120" height="120" src="/blog/images/dingding-ye.png?1379005285" />
+        <img alt="" width="120" height="120" src="/images/dingding-ye.png?1379005285" />
       </a>
     </li>
     <li class="author">
@@ -287,11 +321,8 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
       Mar 24, 2014
     </li>
     <li class="tags">
-      
-        <a href="/blog/tags/maintenance">maintenance</a>
-      
-        <a href="/blog/tags/server">server</a>
-      
+        <a href="/tags/maintenance">maintenance</a>
+        <a href="/tags/server">server</a>
     </li>
   </ul>
 </aside>
@@ -310,82 +341,15 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
     ......
   </p>
   <p>
-    <a href="/blog/server-324-maintenance">Read more →</a>
+    <a href="/server-324-maintenance">Read more →</a>
   </p>
 </div>
 
     </article>
-  
-    <article class="post">
-      <header>
-  <h2 class="title">
-    <a href="/blog/enhancement-of-email-management">新功能：通过邮件完成创建任务、分配任务和设置标签</a>
-  </h2>
-</header>
 
-<aside>
-  <ul class="meta">
-    <li class="author-photo">
-      <a href="http://poiyzy.github.io">
-        <img alt="" width="120" height="120" src="/blog/images/zhuoyu-yang.png?1379005285" />
-      </a>
-    </li>
-    <li class="author">
-     by 杨濯宇
-    </li>
-    <li class="date">
-      Mar 14, 2014
-    </li>
-    <li class="tags">
-      
-        <a href="/blog/tags/announcement">Announcement</a>
-      
-        <a href="/blog/tags/new-feature">New feature</a>
-      
-        <a href="/blog/tags/notification">Notification</a>
-      
-        <a href="/blog/tags/email">Email</a>
-      
-    </li>
-  </ul>
-</aside>
-
-<div class="content">
-  <p>对于 Fengche.co 中<a href="/blog/new-feature-comment-via-email">使用邮件集成来管理项目</a>这个 Feature 应该大家已经不再陌生了。应用户要求，目前我们加强了邮件管理功能。现在您可以通过使用邮件创建任务的同时，把任务分配给某个团队成员，或者为任务设置标签。</p>
-
-<h2>在特定任务列表下创建任务</h2>
-
-<p>这里发送邮件的地址规则为 <code>project+PROJECT_ID+ITERATION_ID@info.fengche.co</code></p>
-
-<p>首先在浏览器中打开你的 Project</p>
-
-<p><img alt="find ids" width="627" height="386" src="/blog/images/enhancement-of-email-management/find_iteration_and_project_id.png?1394735488" /></p>
-
-<p>这里我们可以很清楚的找到当前项目的 PROJECT<em>ID 和 ITERATION</em>ID.</p>
-
-<p>所以示例中正确地址应该为 <code>project+421d6f9a13e6+3da3196195e1@info.fengche.co</code></p>
-
-<p>
-
-  <p>
-    ......
-  </p>
-  <p>
-    <a href="/blog/enhancement-of-email-management">Read more →</a>
-  </p>
-</div>
-
-    </article>
-  
-
-  
     <ul class="pager">
-      
-      
-        <li class="next"><a href="/blog/page/2">Older &rarr;</a></li>
-      
+        <li class="next"><a href="/page/2">Older &rarr;</a></li>
     </ul>
-  
 </div>
 
 <script type="text/javascript">

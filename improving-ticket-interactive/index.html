@@ -40,19 +40,19 @@
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <link href="/blog/stylesheets/application.css?1392193221" media="screen" rel="stylesheet" type="text/css" />
-    <script src="/blog/javascripts/application.js?1392188988" type="text/javascript"></script>
+    <link href="/stylesheets/application.css?1405912777" rel="stylesheet" type="text/css" />
+    <script src="/javascripts/application.js?1405912779" type="text/javascript"></script>
 
-    
+    <script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script>
+    <script type="text/javascript">var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-4054156-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();</script>
 
-    
-    <!-- start Mixpanel -->
-    <script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f);b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==
-typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");for(g=0;g<i.length;g++)f(c,i[g]);
-b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
-    mixpanel.init("43a596021773ee49e7b13713d89c9875");</script>
-    <!-- end Mixpanel -->
-    
   </head>
 
   <body class="improving-ticket-interactive improving-ticket-interactive_index">
@@ -83,10 +83,8 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
 
     <section class="hero wrap-blue">
       <div class="container header">
-        
            <h1 class="blog-name">「风车协作」官方博客</h1>
            <p> 好好做产品，做好产品 </p>
-        
       </div>
     </section>
 
@@ -96,7 +94,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
 
     <header>
   <h2 class="title">
-    <a href="/blog/improving-ticket-interactive">Improving Ticket Interactive</a>
+    <a href="/improving-ticket-interactive">Improving Ticket Interactive</a>
   </h2>
 </header>
 
@@ -104,7 +102,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
   <ul class="meta">
     <li class="author-photo">
       <a href="http://beenhero.com">
-        <img alt="" width="120" height="120" src="/blog/images/ben-he.png?1379005285" />
+        <img alt="" width="120" height="120" src="/images/ben-he.png?1379005285" />
       </a>
     </li>
     <li class="author">
@@ -114,16 +112,12 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
       Dec 10, 2012
     </li>
     <li class="tags">
-      
-        <a href="/blog/tags/ticket-management">Ticket Management</a>
-      
-        <a href="/blog/tags/ui">UI</a>
-      
-        <a href="/blog/tags/changelog">ChangeLog</a>
-      
+        <a href="/tags/ticket-management">Ticket Management</a>
+        <a href="/tags/ui">UI</a>
+        <a href="/tags/changelog">ChangeLog</a>
     </li>
     <li class="back-link">
-      <a href="/blog">&lsaquo; 返回博客主页</a>
+      <a href="/">&lsaquo; 返回博客主页</a>
     </li>
   </ul>
 </aside>
@@ -144,7 +138,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
 <li>The little right pointer had an onhover state.</li>
 </ol>
 
-<p><img alt="Old Ticket Interactive" width="500" height="185" src="/blog/images/improving-ticket-interactive/old-ticket-interactive.jpg?1364634606" /></p>
+<p><img alt="Old Ticket Interactive" width="500" height="185" src="/images/improving-ticket-interactive/old-ticket-interactive.jpg?1364634606" /></p>
 
 <p>This is quite a burden to users, we&rsquo;d relieve it as soon as possible.</p>
 
@@ -159,13 +153,13 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
 
 <p>We have also changed the status naming and their section order. Do they make sense to you? Let&rsquo;s know about your thoughts.</p>
 
-<p><img alt="New Ticket Interactive" width="500" height="346" src="/blog/images/improving-ticket-interactive/new-ticket-interactive.jpg?1364634547" /></p>
+<p><img alt="New Ticket Interactive" width="500" height="346" src="/images/improving-ticket-interactive/new-ticket-interactive.jpg?1364634547" /></p>
 
 <h3>Ticket status switching become more handy</h3>
 
 <p>Ticket status indicates how&rsquo;s the ticket going, it drives our daily development work. Everyday we generate todo ticket , assign it to someone, start working on it, complet it, and someone review on it. Without doubt, ticket status switching is the most frequently used in our application. We need to polish it again and again to help you more productive, now it looks like this.</p>
 
-<p><img alt="New Ticket Switch" width="500" height="277" src="/blog/images/improving-ticket-interactive/new-ticket-switch.jpg?1364634581" /></p>
+<p><img alt="New Ticket Switch" width="500" height="277" src="/images/improving-ticket-interactive/new-ticket-switch.jpg?1364634581" /></p>
 
 <p>Before the improvement, the status can only switch to next status by one click on the checkbox. Now by clicking outside of the checkbox, you will get a popup menu(To Do/Start/Complete/Accept), where you can change ticket to any status. By clicking inside of the checkbox, you are switching as the old way.</p>
 

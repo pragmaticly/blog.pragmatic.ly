@@ -40,19 +40,19 @@
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <link href="/blog/stylesheets/application.css?1392193221" media="screen" rel="stylesheet" type="text/css" />
-    <script src="/blog/javascripts/application.js?1392188988" type="text/javascript"></script>
+    <link href="/stylesheets/application.css?1405912777" rel="stylesheet" type="text/css" />
+    <script src="/javascripts/application.js?1405912779" type="text/javascript"></script>
 
-    
+    <script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script>
+    <script type="text/javascript">var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-4054156-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();</script>
 
-    
-    <!-- start Mixpanel -->
-    <script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f);b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==
-typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");for(g=0;g<i.length;g++)f(c,i[g]);
-b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
-    mixpanel.init("43a596021773ee49e7b13713d89c9875");</script>
-    <!-- end Mixpanel -->
-    
   </head>
 
   <body class="a-practical-guide-to-use-spinejs-in-real-worl a-practical-guide-to-use-spinejs-in-real-worl_index">
@@ -83,10 +83,8 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
 
     <section class="hero wrap-blue">
       <div class="container header">
-        
            <h1 class="blog-name">「风车协作」官方博客</h1>
            <p> 好好做产品，做好产品 </p>
-        
       </div>
     </section>
 
@@ -96,7 +94,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
 
     <header>
   <h2 class="title">
-    <a href="/blog/a-practical-guide-to-use-spinejs-in-real-worl">A Practical Guide to Use Spine.JS in Real World App</a>
+    <a href="/a-practical-guide-to-use-spinejs-in-real-worl">A Practical Guide to Use Spine.JS in Real World App</a>
   </h2>
 </header>
 
@@ -104,7 +102,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
   <ul class="meta">
     <li class="author-photo">
       <a href="http://yedingding.com">
-        <img alt="" width="120" height="120" src="/blog/images/dingding-ye.png?1379005285" />
+        <img alt="" width="120" height="120" src="/images/dingding-ye.png?1379005285" />
       </a>
     </li>
     <li class="author">
@@ -114,18 +112,13 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
       Aug 20, 2012
     </li>
     <li class="tags">
-      
-        <a href="/blog/tags/spinejs">SpineJS</a>
-      
-        <a href="/blog/tags/javascript-mvc">JavaScript MVC</a>
-      
-        <a href="/blog/tags/javascript">JavaScript</a>
-      
-        <a href="/blog/tags/spine">Spine</a>
-      
+        <a href="/tags/spinejs">SpineJS</a>
+        <a href="/tags/javascript-mvc">JavaScript MVC</a>
+        <a href="/tags/javascript">JavaScript</a>
+        <a href="/tags/spine">Spine</a>
     </li>
     <li class="back-link">
-      <a href="/blog">&lsaquo; 返回博客主页</a>
+      <a href="/">&lsaquo; 返回博客主页</a>
     </li>
   </ul>
 </aside>
@@ -149,7 +142,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
 <h3>How we use Spine.js in Pragmatic.ly</h3>
 
 <p>We use spine-rails to generate the Spine.app structure, very similar to Rails app structure.</p>
-<pre class="highlight shell">├── app
+<pre><code class="highlight shell">├── app
 │   ├── controllers
 │   │   ├── center
 │   │   │   ├── filter_controller.js.coffee
@@ -204,13 +197,14 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
 ├── application.js
 ├── bootstrap.js.coffee
 └── dashboard.js.coffee
-</pre>
+</code></pre>
+
 <p>So basically it&rsquo;s controllers, models and views.</p>
 
 <h3>Controllers</h3>
 
 <p>There are two kinds of Controllers in Pragmatic.ly. In Spine, Controllers are considered the glue of an application, adding and responding to DOM events, rendering templates and ensuring that views and models are kept in sync. For example,</p>
-<pre class="highlight coffeescript"><span class="k">class</span> <span class="nx">App</span><span class="p">.</span><span class="na">LeftIterationController</span> <span class="k">extends</span> <span class="nx">Spine</span><span class="p">.</span><span class="na">Controller</span>
+<pre><code class="highlight coffeescript"><span class="k">class</span> <span class="nx">App</span><span class="p">.</span><span class="na">LeftIterationController</span> <span class="k">extends</span> <span class="nx">Spine</span><span class="p">.</span><span class="na">Controller</span>
   <span class="na">el</span><span class="o">:</span> <span class="s">'.sidebar #iterations'</span>
 
   <span class="na">elements</span><span class="o">:</span>
@@ -233,11 +227,12 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
 
   <span class="na">refreshIterations</span><span class="o">:</span> <span class="p">(</span><span class="nx">iterations</span><span class="p">)</span> <span class="o">=&gt;</span>
     <span class="vi">@</span><span class="na">addIteration</span> <span class="nx">iteration</span> <span class="k">for</span> <span class="nx">iteration</span> <span class="k">in</span> <span class="nx">iterations</span>
-</pre>
+</code></pre>
+
 <p>We split the page into multiple blocks and each block is a Spine Controller. Talking the above example, LeftIterationsController is the Controller to manage the iterations list in the left sidebar.</p>
 
 <p>Then what&rsquo;s the other kind? The answer is Routes! We extract the routes to the dedicated controllers now. It will setup the routes and respond to the navigation event. Then it will prepare the data and trigger the event to let another controller handle it to render templates. For example,</p>
-<pre class="highlight coffeescript"><span class="k">class</span> <span class="nx">App</span><span class="p">.</span><span class="na">TicketsController</span> <span class="k">extends</span> <span class="nx">Spine</span><span class="p">.</span><span class="na">Controller</span>
+<pre><code class="highlight coffeescript"><span class="k">class</span> <span class="nx">App</span><span class="p">.</span><span class="na">TicketsController</span> <span class="k">extends</span> <span class="nx">Spine</span><span class="p">.</span><span class="na">Controller</span>
   <span class="na">constructor</span><span class="o">:</span> <span class="o">-&gt;</span>
     <span class="k">super</span>
     <span class="vi">@</span><span class="na">routes</span>
@@ -252,11 +247,12 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
   <span class="na">show</span><span class="o">:</span> <span class="p">(</span><span class="nx">id</span><span class="p">)</span> <span class="o">-&gt;</span>
     <span class="nx">ticket</span> <span class="o">=</span> <span class="nx">App</span><span class="p">.</span><span class="na">Ticket</span><span class="p">.</span><span class="na">find</span><span class="p">(</span><span class="nx">id</span><span class="p">)</span>
     <span class="nx">$</span><span class="p">.</span><span class="na">publish</span> <span class="s">'ticket:switch'</span><span class="p">,</span> <span class="nx">ticket</span>
-</pre>
+</code></pre>
+
 <h3>Models</h3>
 
 <p>Models manage data for the application. It&rsquo;s very similar to Rails models. I just want to mention one thing though - as we moved the logic from server side to client side, there was no need to translate 1:1 on the client side. Instead, encapsulate the data into model which is suitable for the page based on the user.</p>
-<pre class="highlight coffeescript"><span class="k">class</span> <span class="nx">App</span><span class="p">.</span><span class="na">Project</span> <span class="k">extends</span> <span class="nx">Spine</span><span class="p">.</span><span class="na">Model</span>
+<pre><code class="highlight coffeescript"><span class="k">class</span> <span class="nx">App</span><span class="p">.</span><span class="na">Project</span> <span class="k">extends</span> <span class="nx">Spine</span><span class="p">.</span><span class="na">Model</span>
   <span class="vi">@</span><span class="na">configure</span> <span class="s">'Project'</span><span class="p">,</span> <span class="s">'id'</span><span class="p">,</span> <span class="s">'name'</span><span class="p">,</span> <span class="s">'description'</span><span class="p">,</span> <span class="s">'owner_id'</span><span class="p">,</span> <span class="s">'uid'</span>
   <span class="vi">@</span><span class="na">extend</span> <span class="nx">Spine</span><span class="p">.</span><span class="na">Model</span><span class="p">.</span><span class="na">Ajax</span>
   <span class="vi">@</span><span class="na">extend</span> <span class="nx">Spine</span><span class="p">.</span><span class="na">Model</span><span class="p">.</span><span class="na">Dirty</span>
@@ -266,7 +262,8 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
 
   <span class="na">inviteUser</span><span class="o">:</span> <span class="p">(</span><span class="nx">email</span><span class="p">)</span> <span class="o">-&gt;</span>
     <span class="nx">App</span><span class="p">.</span><span class="na">Invitation</span><span class="p">.</span><span class="na">create</span><span class="p">(</span><span class="na">project_id</span><span class="o">:</span> <span class="vi">@</span><span class="na">id</span><span class="p">,</span> <span class="na">email</span><span class="o">:</span> <span class="nx">email</span><span class="p">)</span>
-</pre>
+</code></pre>
+
 <h3>Views</h3>
 
 <p>Views are about building and maintaining the DOM elements. Views in Spine are very simple and don&rsquo;t have the built-in UI binding. So most of the time you should let Controller observe the Model and get notified when the model changes, then update the view accordingly.</p>
@@ -274,7 +271,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
 <p>By doing all the view rendering client-side, you should use JavaScript templating solution to define templates for views as markup containing tempalte variables. There are a number of good candidates, such as Mustache, jQuery.tmpl and Eco.</p>
 
 <p>I use Eco in Pragmatic.ly. The Erb-like syntax and CoffeeScript support is a big triumph. However, you should know that every eco template generates the same helpers which will increase the file size. You can use this <a href="https://gist.github.com/sishen/2360781">gist</a> to avoid the problem which will register the global helpers and inject into the Eco templates.</p>
-<pre class="highlight ruby"><span class="c1"># Put this file in lib/</span>
+<pre><code class="highlight ruby"><span class="c1"># Put this file in lib/</span>
 
 <span class="nb">require</span> <span class="s1">'sprockets/eco_template'</span>
 
@@ -286,7 +283,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
     <span class="n">content</span> <span class="o">=</span> <span class="no">Eco</span><span class="p">.</span><span class="nf">compile</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
     <span class="n">from</span> <span class="o">=</span> <span class="n">content</span><span class="p">.</span><span class="nf">index</span><span class="p">(</span><span class="no">FROM</span><span class="p">)</span>
     <span class="n">to</span> <span class="o">=</span> <span class="n">content</span><span class="p">.</span><span class="nf">rindex</span><span class="p">(</span><span class="no">TO</span><span class="p">)</span>
-    <span class="n">content</span> <span class="o">=</span> <span class="n">content</span><span class="o">[</span><span class="n">from</span><span class="p">.</span><span class="nf">.</span><span class="p">.</span><span class="nf">to</span><span class="o">]</span> <span class="o">+</span> <span class="no">TO</span>
+    <span class="n">content</span> <span class="o">=</span> <span class="n">content</span><span class="p">[</span><span class="n">from</span><span class="p">.</span><span class="nf">.</span><span class="p">.</span><span class="nf">to</span><span class="p">]</span> <span class="o">+</span> <span class="no">TO</span>
     <span class="o">&lt;&lt;-</span><span class="no">JS</span><span class="sh">
 function(__obj) {
   if (!__obj) __obj = {};
@@ -306,12 +303,14 @@ function(__obj) {
 </span><span class="no">      JS</span>
   <span class="k">end</span>
 <span class="k">end</span>
-</pre><pre class="highlight ruby"><span class="c1"># Put this file in config/initializers</span>
+</code></pre>
+<pre><code class="highlight ruby"><span class="c1"># Put this file in config/initializers</span>
 
 <span class="nb">require</span> <span class="s1">'clean_eco_template'</span>
 
 <span class="no">Rails</span><span class="p">.</span><span class="nf">application</span><span class="p">.</span><span class="nf">assets</span><span class="p">.</span><span class="nf">register_engine</span> <span class="s1">'.eco'</span><span class="p">,</span> <span class="no">CleanEcoTemplate</span>
-</pre><pre class="highlight javascript"><span class="err">#</span> <span class="nx">Must</span> <span class="nx">include</span> <span class="nx">eco</span><span class="o">-</span><span class="nx">helpers</span><span class="p">.</span><span class="nx">js</span> <span class="nx">before</span> <span class="nx">eco</span> <span class="nx">files</span>
+</code></pre>
+<pre><code class="highlight javascript"><span class="err">#</span> <span class="nx">Must</span> <span class="nx">include</span> <span class="nx">eco</span><span class="o">-</span><span class="nx">helpers</span><span class="p">.</span><span class="nx">js</span> <span class="nx">before</span> <span class="nx">eco</span> <span class="nx">files</span>
 
 <span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">global</span><span class="p">)</span> <span class="p">{</span>
   <span class="kd">var</span> <span class="nx">ecoHelpers</span> <span class="o">=</span> <span class="p">{</span>
@@ -355,14 +354,15 @@ function(__obj) {
 
   <span class="nx">global</span><span class="p">.</span><span class="nx">ecoHelpers</span> <span class="o">=</span> <span class="nx">ecoHelpers</span><span class="p">;</span>
 <span class="p">})(</span><span class="nb">window</span><span class="p">);</span>
-</pre>
+</code></pre>
+
 <h3>Problems</h3>
 
 <p>So that&rsquo;s how we use Spine.js to power Pragmatic.ly. It works very well but still have some limitations.</p>
 
 <ul>
 <li><p>By default, you can only monitor the whole Model change event and update the view accordingly. For example, even the username is not changed, you still have to update the views containing that data. There is a &ldquo;change:field&rdquo; event in Backbone.js which allow you only to update the view when that field of data changed. I like that. So I made a plugin to support that. Check the Gist out.</p>
-<pre class="highlight coffeescript"><span class="nx">Spine</span> <span class="o">?=</span> <span class="nx">require</span><span class="p">(</span><span class="s">'spine'</span><span class="p">)</span>
+<pre><code class="highlight coffeescript"><span class="nx">Spine</span> <span class="o">?=</span> <span class="nx">require</span><span class="p">(</span><span class="s">'spine'</span><span class="p">)</span>
 
 <span class="nx">Include</span> <span class="o">=</span>
   <span class="na">savePrevious</span><span class="o">:</span> <span class="o">-&gt;</span>
@@ -381,18 +381,19 @@ function(__obj) {
       <span class="nx">record</span><span class="p">.</span><span class="na">savePrevious</span><span class="p">()</span>
 
     <span class="vi">@</span><span class="na">include</span> <span class="nx">Include</span>
-</pre>
+</code></pre>
+
 <p>So the model object can bind the event &ldquo;change:#{field} to trigger event when the field value is changed.</p>
 
 <p>By default it&rsquo;s off and if need this feature, the model should extend Spine.Model.Dirty.</p>
 
 <p>A sample case.</p>
-<pre class="highlight coffeescript"><span class="k">class</span> <span class="nx">User</span> <span class="k">extends</span> <span class="nx">Spine</span><span class="p">.</span><span class="na">Model</span>
+<pre><code class="highlight coffeescript"><span class="k">class</span> <span class="nx">User</span> <span class="k">extends</span> <span class="nx">Spine</span><span class="p">.</span><span class="na">Model</span>
   <span class="vi">@</span><span class="na">extend</span> <span class="nx">Spine</span><span class="p">.</span><span class="na">Model</span><span class="p">.</span><span class="na">Dirty</span>
 <span class="nx">end</span>
-</pre></li>
+</code></pre></li>
 <li><p>The Ajax plugin in Spine.js plays very nice with backend REST APIs, such as Rails. For example, creating the model will trigger a &quot;CREATE /collections&rdquo; event to the server and updating the model will trigger a &ldquo;PUT /collections/id&rdquo; event, seemlessly. However, nested resources in Rails is very common but Spine lacks to support that. Either you have to trigger requests to top-level URL or setup the request yourself. I have done a dirty hack to support scoping. It&rsquo;s dirty but works.</p>
-<pre class="highlight coffeescript"> <span class="k">class</span> <span class="nx">App</span><span class="p">.</span><span class="na">Ticket</span> <span class="k">extends</span> <span class="nx">Spine</span><span class="p">.</span><span class="na">Model</span>
+<pre><code class="highlight coffeescript"> <span class="k">class</span> <span class="nx">App</span><span class="p">.</span><span class="na">Ticket</span> <span class="k">extends</span> <span class="nx">Spine</span><span class="p">.</span><span class="na">Model</span>
   <span class="vi">@</span><span class="na">configure</span> <span class="s">'Ticket'</span><span class="p">,</span> <span class="s">"id"</span><span class="p">,</span> <span class="s">"project_id"</span>
 
   <span class="vi">@</span><span class="na">scope</span><span class="o">:</span> <span class="o">-&gt;</span>
@@ -400,7 +401,7 @@ function(__obj) {
 
   <span class="na">scope</span><span class="o">:</span> <span class="o">-&gt;</span>
     <span class="s">"projects/</span><span class="si">#{</span><span class="vi">@</span><span class="na">project_id</span><span class="si">}</span><span class="s">"</span>
-</pre></li>
+</code></pre></li>
 <li><p>Asynchronous UI is cool and works for 98% situations. But in a real world app you have to deal with errors like bugs or network failures. Spine doesn&rsquo;t have the default error handling for this situation and leave all work to you. It&rsquo;s fine but you should know that for that 2% situation, you have to spend lots of time to avoid the impact.</p></li>
 </ul>
 
