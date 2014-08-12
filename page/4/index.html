@@ -35,16 +35,19 @@
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <link href="/blog/stylesheets/application.css?1405912777" rel="stylesheet" type="text/css" />
-    <script src="/blog/javascripts/application.js?1405912779" type="text/javascript"></script>
+    <link href="/stylesheets/application.css?1405912777" rel="stylesheet" type="text/css" />
+    <script src="/javascripts/application.js?1405912779" type="text/javascript"></script>
 
+    <script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script>
+    <script type="text/javascript">var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-4054156-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();</script>
 
-    <!-- start Mixpanel -->
-    <script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f);b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==
-typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");for(g=0;g<i.length;g++)f(c,i[g]);
-b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
-    mixpanel.init("43a596021773ee49e7b13713d89c9875");</script>
-    <!-- end Mixpanel -->
   </head>
 
   <body class="page page_4 page_4_index">
@@ -86,7 +89,62 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
     <article class="post">
       <header>
   <h2 class="title">
-    <a href="/blog/announcing-uploading-avatar">Beyonds Gravatar and set your profile picture</a>
+    <a href="/we-are-back">写在 Pragmatic.ly 即将两周年</a>
+  </h2>
+</header>
+
+<aside>
+  <ul class="meta">
+    <li class="author-photo">
+      <a href="http://yedingding.com">
+        <img alt="" width="120" height="120" src="/images/dingding-ye.png?1379005285" />
+      </a>
+    </li>
+    <li class="author">
+     by 叶玎玎
+    </li>
+    <li class="date">
+      Sep 12, 2013
+    </li>
+    <li class="tags">
+        <a href="/tags/startup">startup</a>
+        <a href="/tags/thoughts">thoughts</a>
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <p><img alt="弯路和未来" width="586" height="500" src="/images/we-are-back/detour-and-sunshine.jpg?1384231969"></p>
+
+<p>准确说，Pragmatic.ly 从有这个想法到现在已经有 2 年了。11 年 10 月份的一个晚上跟 Daniel 和 Terry 在对我们所有用过的项目管理工具吐完槽以后，然后决定自己造一个，12 年春节前后真正当个事做，4 月底 Ben 加入，7 月份发布 Beta，先在海外做了差不多 8 个月，今年 4 月份开始调整方向，转向国内，6 月底重新上线到现在，整个过程各种状况各种弯路，但是每天都能感觉到变化，每天都是新的学习，乐在其中。</p>
+
+<h3>那些年我们一起走过的弯路</h3>
+
+<p>现在回过头看看，我们犯了好几个大的错误，当然，也许这些可能很多技术型团队必须得走的弯路。</p>
+
+<h4>过早和过多地做开发</h4>
+
+<p>我们创始团队的构成是两个开发和一个设计，技术能力很强，市场能力很弱。当我们决定要启动这个项目的时候，我们没有去找更多的用户聊天，聆听他们的想法，而是选择直接进入了开发阶段，美其名曰解决自己的问题。我们不停得去假想用户的需求，所有人都在做开发，直到发布。而整个过程，我们甚至没有去外界透露我们的产品目标，没有去收集潜在客户，这也造成了后面的被动。也就是说，我们在整个前期过程中，没有一个清晰的特定的用户群，没有去了解这个用户群到底存在什么问题，再去打造适合他们的产品，而是做出了产品后，再去寻找那个适应于我们产品的用户群体。所以当产品发布后，我们发现推广很难做，各种阻力，因为定位不清晰，也就很难传递合适的信息给适合的人。</p>
+
+<p>在 YCombinator 有个理论，在产品发布前，你应该专注并只专注两件半事情，1 开发 + 1 跟用户聊天 + 0.5 锻炼身体。了解你的用户群体，很重要。</p>
+
+<h4>太注重工程正确性</h4>
+
+<p>对于一个技术型创业团队而言，而且是外包团队出身，技术研究总是能让人很兴奋，所以很容易就会沉迷于工程细节。开始编码时先设计个好的架构结构，看到不好的代码就忍不住来几下重构，用 TDD、BDD 恨...</p>
+
+  <p>
+    ......
+  </p>
+  <p>
+    <a href="/we-are-back">Read more →</a>
+  </p>
+</div>
+
+    </article>
+    <article class="post">
+      <header>
+  <h2 class="title">
+    <a href="/announcing-uploading-avatar">Beyonds Gravatar and set your profile picture</a>
   </h2>
 </header>
 
@@ -94,7 +152,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
   <ul class="meta">
     <li class="author-photo">
       <a href="http://terrytai.com">
-        <img alt="" width="120" height="120" src="/blog/images/terry-tai.png?1379005285" />
+        <img alt="" width="120" height="120" src="/images/terry-tai.png?1379005285" />
       </a>
     </li>
     <li class="author">
@@ -104,8 +162,8 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
       Mar 23, 2013
     </li>
     <li class="tags">
-        <a href="/blog/tags/announcement">Announcement</a>
-        <a href="/blog/tags/new-feature">New feature</a>
+        <a href="/tags/announcement">Announcement</a>
+        <a href="/tags/new-feature">New feature</a>
     </li>
   </ul>
 </aside>
@@ -117,7 +175,7 @@ instead of using <a href="http://en.gravatar.com/">Gravatar</a>.</p>
 
 <p>The UX is very simple.</p>
 
-<p><img alt="" width="550" height="420" src="/blog/images/announcing-uploading-avatar/update_avatar.jpg?1379005285" /></p>
+<p><img alt="" width="550" height="420" src="/images/announcing-uploading-avatar/update_avatar.jpg?1379005285" /></p>
 
 <h3>Why is such a simple feature not included from the first day?</h3>
 
@@ -136,7 +194,7 @@ globally recognized avatars, in one hour.</p>
     ......
   </p>
   <p>
-    <a href="/blog/announcing-uploading-avatar">Read more →</a>
+    <a href="/announcing-uploading-avatar">Read more →</a>
   </p>
 </div>
 
@@ -144,7 +202,7 @@ globally recognized avatars, in one hour.</p>
     <article class="post">
       <header>
   <h2 class="title">
-    <a href="/blog/integrate-version-control-system-with-pragmat">Introducing VCS integration with Fengche.co</a>
+    <a href="/integrate-version-control-system-with-pragmat">Introducing VCS integration with Fengche.co</a>
   </h2>
 </header>
 
@@ -152,7 +210,7 @@ globally recognized avatars, in one hour.</p>
   <ul class="meta">
     <li class="author-photo">
       <a href="http://terrytai.com">
-        <img alt="" width="120" height="120" src="/blog/images/terry-tai.png?1379005285" />
+        <img alt="" width="120" height="120" src="/images/terry-tai.png?1379005285" />
       </a>
     </li>
     <li class="author">
@@ -162,9 +220,9 @@ globally recognized avatars, in one hour.</p>
       Jan 29, 2013
     </li>
     <li class="tags">
-        <a href="/blog/tags/vcs">VCS</a>
-        <a href="/blog/tags/integration">Integration</a>
-        <a href="/blog/tags/git">Git</a>
+        <a href="/tags/vcs">VCS</a>
+        <a href="/tags/integration">Integration</a>
+        <a href="/tags/git">Git</a>
     </li>
   </ul>
 </aside>
@@ -178,7 +236,7 @@ globally recognized avatars, in one hour.</p>
 
 <p>Feel free to try this feature by signing up at <a href="https://fengche.co">Fengche.co</a>.</p>
 
-<p><img alt="VCS Integration" width="507" height="512" src="/blog/images/integrate-version-control-system-with-pragmat/vcs-integration.png?1364633909" /></p>
+<p><img alt="VCS Integration" width="507" height="512" src="/images/integrate-version-control-system-with-pragmat/vcs-integration.png?1364633909" /></p>
 
 <p>So far, we have already supported three VCS services: <a href="https://github.com">GitHub</a>, <a href="https://bitbucket.org">BitBucket</a> and <a href="http://gitlab.org">Gitlab</a>. And more are coming. Let us know if the VCS you&rsquo;re using now is not in the list and you want to see it soon!</p>
 
@@ -188,7 +246,7 @@ globally recognized avatars, in one hour.</p>
     ......
   </p>
   <p>
-    <a href="/blog/integrate-version-control-system-with-pragmat">Read more →</a>
+    <a href="/integrate-version-control-system-with-pragmat">Read more →</a>
   </p>
 </div>
 
@@ -196,7 +254,7 @@ globally recognized avatars, in one hour.</p>
     <article class="post">
       <header>
   <h2 class="title">
-    <a href="/blog/improving-the-usability-on-tickets-readabilit">Improving the usability on tickets readability and team collaboration</a>
+    <a href="/improving-the-usability-on-tickets-readabilit">Improving the usability on tickets readability and team collaboration</a>
   </h2>
 </header>
 
@@ -204,7 +262,7 @@ globally recognized avatars, in one hour.</p>
   <ul class="meta">
     <li class="author-photo">
       <a href="http://yedingding.com">
-        <img alt="" width="120" height="120" src="/blog/images/dingding-ye.png?1379005285" />
+        <img alt="" width="120" height="120" src="/images/dingding-ye.png?1379005285" />
       </a>
     </li>
     <li class="author">
@@ -214,9 +272,9 @@ globally recognized avatars, in one hour.</p>
       Jan 17, 2013
     </li>
     <li class="tags">
-        <a href="/blog/tags/ui">UI</a>
-        <a href="/blog/tags/ticket-management">Ticket Management</a>
-        <a href="/blog/tags/usability">Usability</a>
+        <a href="/tags/ui">UI</a>
+        <a href="/tags/ticket-management">Ticket Management</a>
+        <a href="/tags/usability">Usability</a>
     </li>
   </ul>
 </aside>
@@ -234,7 +292,7 @@ globally recognized avatars, in one hour.</p>
     ......
   </p>
   <p>
-    <a href="/blog/improving-the-usability-on-tickets-readabilit">Read more →</a>
+    <a href="/improving-the-usability-on-tickets-readabilit">Read more →</a>
   </p>
 </div>
 
@@ -242,7 +300,7 @@ globally recognized avatars, in one hour.</p>
     <article class="post">
       <header>
   <h2 class="title">
-    <a href="/blog/the-improvement-of-archive-iteration">The improvement of 'Archive Iteration'</a>
+    <a href="/the-improvement-of-archive-iteration">The improvement of 'Archive Iteration'</a>
   </h2>
 </header>
 
@@ -250,7 +308,7 @@ globally recognized avatars, in one hour.</p>
   <ul class="meta">
     <li class="author-photo">
       <a href="http://terrytai.com">
-        <img alt="" width="120" height="120" src="/blog/images/terry-tai.png?1379005285" />
+        <img alt="" width="120" height="120" src="/images/terry-tai.png?1379005285" />
       </a>
     </li>
     <li class="author">
@@ -260,8 +318,8 @@ globally recognized avatars, in one hour.</p>
       Jan 12, 2013
     </li>
     <li class="tags">
-        <a href="/blog/tags/changelog">ChangeLog</a>
-        <a href="/blog/tags/iterations">Iterations</a>
+        <a href="/tags/changelog">ChangeLog</a>
+        <a href="/tags/iterations">Iterations</a>
     </li>
   </ul>
 </aside>
@@ -277,7 +335,7 @@ globally recognized avatars, in one hour.</p>
 
 <p>First you just need click the iteration name which you want to archive on the left sidebar.</p>
 
-<p><img alt="Click Iteration" width="241" height="223" src="/blog/images/the-improvement-of-archive-iteration/click-iteration.png?1364634235"></p>
+<p><img alt="Click Iteration" width="241" height="223" src="/images/the-improvement-of-archive-iteration/click-iteration.png?1364634235"></p>
 
 <p>Then click the toothed icon at the right sidebar and you will see the ‘Archive’ button. After clicking it, this iteration with  tickets in it will all be...</p>
 
@@ -285,65 +343,15 @@ globally recognized avatars, in one hour.</p>
     ......
   </p>
   <p>
-    <a href="/blog/the-improvement-of-archive-iteration">Read more →</a>
-  </p>
-</div>
-
-    </article>
-    <article class="post">
-      <header>
-  <h2 class="title">
-    <a href="/blog/the-presentations-we-made-on-rubyconfchina-20">Pragmatic.ly team on RubyConf China 2012</a>
-  </h2>
-</header>
-
-<aside>
-  <ul class="meta">
-    <li class="author-photo">
-      <a href="http://terrytai.com">
-        <img alt="" width="120" height="120" src="/blog/images/terry-tai.png?1379005285" />
-      </a>
-    </li>
-    <li class="author">
-     by 太檑
-    </li>
-    <li class="date">
-      Dec 27, 2012
-    </li>
-    <li class="tags">
-        <a href="/blog/tags/rubyconfchina">RubyConfChina</a>
-        <a href="/blog/tags/ruby">Ruby</a>
-        <a href="/blog/tags/event">Event</a>
-    </li>
-  </ul>
-</aside>
-
-<div class="content">
-  <p>Last month the <a href="https://fengche.co">Pragmatic.ly</a> team attent the <a href="http://rubyconfchina.org">RubyConfChina 2012</a> and we really had a great time there with the ruby developers came from China and also across the world.</p>
-
-<p>The conference is very good. It’s also the big party of rubyist. Everyone enjoyed that much. Thanks to the organizers!</p>
-
-<p>We are very honored to present two talks on this event to share our experience in our work. And we’re very happy people love the talks very much.</p>
-
-<p>Below are the two talks we present. Check them out!</p>
-
-<h3>Real Time Web by Dingding Ye</h3>
-
-<p>Dingding gave a brief introduction on real time web at the conference. As you know, <a href="https://fengche.co">Pragmatic.ly</a> is a project management tool featuring real time collaboration. Dingding spends latest three years on real time web products. In his talk, Dingding explains different solutions of making...</p>
-
-  <p>
-    ......
-  </p>
-  <p>
-    <a href="/blog/the-presentations-we-made-on-rubyconfchina-20">Read more →</a>
+    <a href="/the-improvement-of-archive-iteration">Read more →</a>
   </p>
 </div>
 
     </article>
 
     <ul class="pager">
-        <li class="previous"><a href="/blog/page/3">&larr; Newer</a></li>
-        <li class="next"><a href="/blog/page/5">Older &rarr;</a></li>
+        <li class="previous"><a href="/page/3">&larr; Newer</a></li>
+        <li class="next"><a href="/page/5">Older &rarr;</a></li>
     </ul>
 </div>
 
