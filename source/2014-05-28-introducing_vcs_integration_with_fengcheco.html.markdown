@@ -1,19 +1,20 @@
 ---
 title: "如何集成 VCS"
 date: 2014-05-28 09:47 +08:00
-tags: VCS, Integration, Git, 代码库, 集成
+tags: VCS, Git 集成, 开发者, How-To
+keywords: 开发管理, 项目管理
 author: roy
 ---
 
-我们致力于设计一款开发友好的工具，希望能够帮助使用者团队更加快速便捷的开发项目以及管理项目进度。
+我们致力于设计一款开发者友好的工具，希望能够帮助使用者团队更加快速便捷地开发项目以及管理项目进度。
 
 像我们这样的开发者每天都使用 VCS (版本控制系统) 完成工作， 比如 Git 或者 SVN 。将 VCS 融入您目前的开发过程中，可以使您更加详细精确的了解到代码情况以及项目进度，使代码和项目管理融为一体。
 
 ![audit commit](/images/vcs_integration_with_fengcheco/audit_commit.png)
 
-目前我们已经支持了 [GitHub](https://github.com/), [BitBucket](https://bitbucket.org/) 以及 [Gitlab](http://gitlab.org/)，如果您正在使用的版本控制器我们还不支持，只需联系我们，我们回尽快帮您解决。
+目前我们已经支持了 [GitHub](https://github.com/), [BitBucket](https://bitbucket.org/) 以及 [Gitlab](http://gitlab.org/)，如果您正在使用的版本控制器我们还不支持，请联系我们，我们会尽快帮您解决。
 
-使用方法请参考[这里](/blog/how-we-use-vcs-integration-with-fengcheco)
+使用方法请参考[这里](/blog/how-we-use-vcs-integration-with-fengcheco)。
 
 READMORE
 
@@ -23,6 +24,7 @@ READMORE
 
         $ git config user.name "Roy Young"
         $ git config user.email "roy@fengche.co"
+
 2. 在项目的设置选项中找到 Commit Hook URL
 
     ![where to set](/images/vcs_integration_with_fengcheco/where_to_set.png)
@@ -60,19 +62,23 @@ READMORE
 3. 在右边栏中选择 "POST"，并且点击 "Add hook"
 
     ![BitBucket WebHook](/images/vcs_integration_with_fengcheco/bitbucket-webhook.png)
-4. 并且将 Fengche.co 中获取的 Comiit Hook HRL 粘贴至弹出窗口 "URL"。
+
+4. 并且将 Fengche.co 中获取的 Commit Hook HRL 粘贴至弹出窗口 "URL"。
 5. 点击 "Save"
+
     ![BitBucket Setting](/images/vcs_integration_with_fengcheco/bitbucket-setting.png)
 
 #### GitLab 设置 ####
 
 1. 打开 GitLab 项目页面，在右上角点击 **Settings**
+
     ![GitLab Setting](/images/vcs_integration_with_fengcheco/gitlab-setting.png)
+
 2. 在左侧，侧边栏中点击 **Web Hooks**
 3. 把刚才从 Fengche.co 中获取的 Commit Hook URL 粘贴至页面的 **URL** 输入框。
 4. 勾选 **Pusher events**
 5. 点击 **Add Web Hook**
+
     ![GitLab Setting](/images/vcs_integration_with_fengcheco/gitlab-webhook.png)
 
-
-*希望这个功能可以让您的团队协作变得更加高效，有任何反馈或建议，欢迎您联系我们！*
+希望这个功能可以让您的项目管理和团队协作变得更加高效，有任何反馈或建议，欢迎您联系我们！

@@ -1,7 +1,7 @@
 ---
 title: "新功能：更好的与邮件集成来管理项目"
 date: 2013-10-04 14:05 +08:00
-tags: Announcement, New feature
+tags: Announcement, 邮件集成
 author: roy
 disqus_identifier: 'comment-via-email'
 ---

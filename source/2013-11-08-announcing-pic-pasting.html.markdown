@@ -1,7 +1,8 @@
 ---
 title: "新功能: 通过复制粘贴就能上传图片"
 date: 2013-11-08 01:00 +08:00
-tags: Announcement, New Feature
+tags: Announcement, 任务管理
+keywords: 任务管理
 author: terry
 disqus_identifier: 'announcing-pic-pasting'
 ---
@@ -15,8 +16,7 @@ disqus_identifier: 'announcing-pic-pasting'
 现在你已经不用了, 有了这个新功能, 你可以直接复制其他网页上的图片, 并在浏览器中粘贴就可以把你复制的图片上传到当前的任务中.
 遗憾的是目前只有最新版的 Chrome 支持这个功能. 不过我相信很快其他浏览器也会跟上的, 不久的将来你应该可以在大多浏览器里享用这功能.
 
-**Update**: 现在邮件客户端里，也支持用“拷贝图片并粘贴”
-的方式来上传邮件里的图片到 Fengche.co 了。
+**更新**: 现在邮件客户端里，也支持用“拷贝图片并粘贴”的方式来上传邮件里的图片到 Fengche.co 了。
 
 ## 上传你的屏幕截图
 如果你使用 Mac 并且你想上传你的屏幕截图. 你只需要用 Command + Control + Shift + 4 来截图, 然后到 Fengche.co 用 Command + v 粘贴, 就能直接把你的屏幕截图上传到你当前的任务中了.

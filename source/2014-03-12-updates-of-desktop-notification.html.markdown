@@ -1,7 +1,8 @@
 ---
 title: 更新：改进了桌面通知
 date: 2014-03-12 17:45 +08:00
-tags: updates, notification, desktop notification, 通知
+tags: Announcement, 通知系统
+keywords: 项目管理, 通知系统
 author: roy
 disqus_identifier: 'updates-of-desktop-notification'
 ---

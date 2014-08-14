@@ -1,7 +1,8 @@
 ---
 title: 新功能：协作者
 date: 2014-04-15 09:11 +08:00
-tags: announcement, new feature, follower, 协作者, 新功能, 任务
+tags: Announcement, 任务管理
+keywords: 任务管理, 团队协作
 author: roy
 disqus_identifier: 'new-feature-task-followers'
 ---
@@ -74,4 +75,4 @@ READMORE
 
 > [新功能：智能通知](/blog/smart-notification-announcement)
 
-*如果您对此次更新有任何意见或者建议，随时联系我们，我们将会持续为您提供更加理想的使用体验*
+如果您对此次更新有任何意见或者建议，随时联系我们，我们将会持续为您提供更加理想的使用体验。

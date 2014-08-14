@@ -1,7 +1,7 @@
 ---
 title:  "新功能：直接邀请组织成员加入项目"
 date: 2013-11-19 12:00 +08:00
-tags: Announcement, New Feature
+tags: Announcement, 用户管理
 author: dingding
 disqus_identifier: 'announcing-invite-from-organization'
 ---

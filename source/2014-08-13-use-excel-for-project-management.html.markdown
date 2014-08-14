@@ -2,7 +2,9 @@
 title: "Excel，熟悉又不熟悉的项目管理工具"
 date: 2014-08-13 02:00 +08:00
 tags: excel, 项目管理
+keywords: 项目管理, excel
 author: dingding
+disqus_identifier: 'excel-pm'
 ---
 
 如果有人在市场上做个调查，目前使用最广泛的项目管理工具是啥，我估计结果不是  Microsoft Project，不是 Jira，不是 Redmine，而是 Excel。在做风车的过程中，接触到不少团队，包括一些跟互联网很近的技术创业公司，都在使用 Excel 管理项目，也有一些用户问我们如何能从 Excel 管理平滑地迁移过来。所以，风车在首页特别跟 Excel 做了对比，我们也的确有不少客户是从 Excel 管理转到风车。这篇文章就来谈谈用 Excel 做项目管理的利与弊。

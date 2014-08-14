@@ -1,7 +1,8 @@
 ---
 title: 如何使用 VCS 集成
 date: 2014-05-28 11:47 +08:00
-tags: VCS, Integration, Git, 代码库, 集成
+tags: VCS, Git 集成, 开发者, How-To
+keywords: 开发管理, 项目管理
 author: roy
 ---
 
@@ -9,7 +10,7 @@ author: roy
 
 像我们这样的开发者每天都使用 VCS (版本控制系统) 完成工作， 比如 Git 或者 SVN 。将 VCS 融入您目前的开发过程中，可以使您更加详细精确的了解到代码情况以及项目进度，使代码和项目管理融为一体。
 
-设置教程请看[这里](/blog/introducing_vcs_integration_with_fengcheco)
+设置教程请看[这里](/blog/introducing_vcs_integration_with_fengcheco)。
 
 READMORE
 
@@ -27,6 +28,7 @@ READMORE
     2. 如果你想要让单个代码提交信息和一个任务对应起来，并且不在乎代码的 branch 的话，你可以在 commit 信息中包含这个任务的 id，"#909"
 
             $ git commit -m "Ref #909, Implemented downloading all attachments of a ticket."
+
     ![audit commit](/images/vcs_integration_with_fengcheco/audit_commit.png)
 
 2. 使用提交信息控制任务状态。
@@ -41,6 +43,4 @@ READMORE
         $ git commit -m "Resolved #909, This will mark 909 as Completed"
         $ git comimt -m "Closed #909, This will mark 909 as Closed"
 
-<br/>
-
-希望这个功能可以让您的团队协作变得更加高效，有任何反馈或建议，欢迎您联系我们！
+希望这个功能可以让您的项目管理和团队协作变得更加高效，有任何反馈或建议，欢迎您联系我们！
