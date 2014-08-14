@@ -1,7 +1,7 @@
 ---
 title: "新年新气象 -- Pragmatic.ly 全新改版"
 date: 2014-2-12 08:43 +08:00
-tags: Annoucement, UI, 改版
+tags: Announcement, UI, 改版
 author: ben
 disqus_identifier: 'new-year-new-branding'
 ---
