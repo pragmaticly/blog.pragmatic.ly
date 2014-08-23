@@ -31,20 +31,24 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png">
     <link rel="shortcut icon" sizes="16x16" href="/favicon.ico">
     <link rel="alternate" type="application/rss+xml" title="Fengche.co Blog Feed" href="/blog/feed.xml" />
+
     <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <link href="/blog/stylesheets/application.css?1405912777" rel="stylesheet" type="text/css" />
-    <script src="/blog/javascripts/application.js?1405912779" type="text/javascript"></script>
+    <link href="/stylesheets/application.css?1405912777" rel="stylesheet" type="text/css" />
+    <script src="/javascripts/application.js?1405912779" type="text/javascript"></script>
 
+    <script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script>
+    <script type="text/javascript">var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-4054156-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();</script>
 
-    <!-- start Mixpanel -->
-    <script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f);b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==
-typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");for(g=0;g<i.length;g++)f(c,i[g]);
-b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
-    mixpanel.init("43a596021773ee49e7b13713d89c9875");</script>
-    <!-- end Mixpanel -->
   </head>
 
   <body class="tags tags_---- tags_----_index">
@@ -88,7 +92,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
     <article class="post">
       <header>
   <h2 class="title">
-    <a href="/blog/smart-notification-announcement">新功能：智能通知</a>
+    <a href="/smart-notification-announcement">新功能：智能通知</a>
   </h2>
 </header>
 
@@ -96,7 +100,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
   <ul class="meta">
     <li class="author-photo">
       <a href="http://poiyzy.github.io">
-        <img alt="" width="120" height="120" src="/blog/images/zhuoyu-yang.png?1379005285" />
+        <img alt="" width="120" height="120" src="/images/zhuoyu-yang.png?1379005285" />
       </a>
     </li>
     <li class="author">
@@ -106,9 +110,9 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
       Feb 17, 2014
     </li>
     <li class="tags">
-        <a href="/blog/tags/announcement">Announcement</a>
-        <a href="/blog/tags/智能通知">智能通知</a>
-        <a href="/blog/tags/通知">通知</a>
+        <a href="/tags/announcement">Announcement</a>
+        <a href="/tags/智能通知">智能通知</a>
+        <a href="/tags/通知系统">通知系统</a>
     </li>
   </ul>
 </aside>
@@ -132,7 +136,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
 
 <p>当一个提醒已经被用户看到以后，如果我们继续以其他形式给用户发送重复的提醒的话，我们认为这是一种打扰。比如我正在写代码，看到了桌面通知，而且我也通过这个通知点击进入了相应的页面，那么为什么还要发邮件给我？</p>
 
-<p><strong>解决方案：智能通知</strong><br>
+<p><strong>解决方案：智能通知</strong>
 现在我们采用这样的处理方式：当用户登录 Fengche.co 并保持在线状态，我们只推送桌面通知；只有当你处于离线状态，我们才会发送邮件通知给你。不管是哪种形式，所有的提醒都会被记录在“通知中心”里面，保证你不会错过任何重要的事情。</p>
 
 <h4>B. 通知间隔频率过快</h4>
@@ -145,7 +149,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
     ......
   </p>
   <p>
-    <a href="/blog/smart-notification-announcement">Read more →</a>
+    <a href="/smart-notification-announcement">Read more →</a>
   </p>
 </div>
 

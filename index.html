@@ -31,20 +31,24 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png">
     <link rel="shortcut icon" sizes="16x16" href="/favicon.ico">
     <link rel="alternate" type="application/rss+xml" title="Fengche.co Blog Feed" href="/blog/feed.xml" />
+
     <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <link href="/blog/stylesheets/application.css?1405912777" rel="stylesheet" type="text/css" />
-    <script src="/blog/javascripts/application.js?1405912779" type="text/javascript"></script>
+    <link href="/stylesheets/application.css?1405912777" rel="stylesheet" type="text/css" />
+    <script src="/javascripts/application.js?1405912779" type="text/javascript"></script>
 
+    <script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script>
+    <script type="text/javascript">var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-4054156-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();</script>
 
-    <!-- start Mixpanel -->
-    <script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f);b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==
-typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");for(g=0;g<i.length;g++)f(c,i[g]);
-b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
-    mixpanel.init("43a596021773ee49e7b13713d89c9875");</script>
-    <!-- end Mixpanel -->
   </head>
 
   <body class="index">
@@ -86,7 +90,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
     <article class="post">
       <header>
   <h2 class="title">
-    <a href="/blog/use-excel-for-project-management">Excel，熟悉又不熟悉的项目管理工具</a>
+    <a href="/attachments-updates">新功能：下载所有附件</a>
   </h2>
 </header>
 
@@ -94,7 +98,117 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
   <ul class="meta">
     <li class="author-photo">
       <a href="http://yedingding.com">
-        <img alt="" width="120" height="120" src="/blog/images/dingding-ye.png?1379005285" />
+        <img alt="" width="120" height="120" src="/images/dingding-ye.png?1379005285" />
+      </a>
+    </li>
+    <li class="author">
+     by 叶玎玎
+    </li>
+    <li class="date">
+      Aug 23, 2014
+    </li>
+    <li class="tags">
+        <a href="/tags/announcement">Announcement</a>
+        <a href="/tags/文档管理">文档管理</a>
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <p>作为一个以任务管理为核心的工具，风车是为了解决计划安排和进度跟踪的问题，所以在文档管理上目前还有不少欠缺，比如不像 Dropbox 能直接本地管理，也没有文件版本控制。但是相比用 QQ 文件传来传去的无序，在风车上基于任务主题分享文件协同管理还是非常方便的。今天我们发布了一个新功能，『下载所有附件』，同时也加强了文件管理上的安全性。</p>
+
+<p>一个任务附件太多，一个一个下载很麻烦，现在好了，我们提供了一键下载所有任务附件的功能，点击后会提供压缩包下载。当然，如果当前任务没有任何附件，你在菜单里是看不到这个操作的。</p>
+
+<p><img alt="Download All Attachments" width="200" height="271" src="/images/attachments-updates/download-all-attachments.png?1408772257" /></p>
+
+<p>在此之外，我们在安全性上也做了增强，现在文件的地址会是随机生成并且具有短时效性，超时将无法访问，这样大大减少了文件误分享的可能性。</p>
+
+<blockquote>
+<p>小贴士: 其实风车是可以拖拽上传文件的，直接选中文件拖进风车的应用或者页面就可以了。</p>
+</blockquote>
+
+<p>知识管理是团队协作中很重要的一环，风车虽然侧重任务管理，但是也会提供简单基础的文档协同功能。关于知识管理的下一步，我们计划提供团队文本协同编辑和统一的文件管理入口，敬请期待！</p>
+
+
+  <p>
+    ......
+  </p>
+  <p>
+    <a href="/attachments-updates">Read more →</a>
+  </p>
+</div>
+
+    </article>
+    <article class="post">
+      <header>
+  <h2 class="title">
+    <a href="/daily-recap-and-reminder-help-you-never-missing">新功能：「每日回顾」和「到期提醒」邮件让你不再错过</a>
+  </h2>
+</header>
+
+<aside>
+  <ul class="meta">
+    <li class="author-photo">
+      <a href="http://beenhero.com">
+        <img alt="" width="120" height="120" src="/images/ben-he.png?1379005285" />
+      </a>
+    </li>
+    <li class="author">
+     by 何斌
+    </li>
+    <li class="date">
+      Aug 14, 2014
+    </li>
+    <li class="tags">
+        <a href="/tags/新功能">新功能</a>
+        <a href="/tags/email">Email</a>
+        <a href="/tags/announcement">Announcement</a>
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <p>进入八月，距离我们「风车协作」发布中文版已过去一年多。这一年我们不停地听取用户意见，不停地改进产品，其中发现大家对 Email 的依赖程度还是非常高.我们有常规的任务更新与讨论的邮件通知，我们还做了 <a href="https://fengcheco.com/blog/new-feature-comment-via-email/">Email 来管理任务</a> 并且进行了<a href="https://fengcheco.com/blog/enhancement-of-email-management">加强</a>，今天向大家发布两个新的 Email 功能：「每日回顾」和「到期提醒」。</p>
+
+<h2>每日回顾</h2>
+
+<p>当你在外出差，或在休假途中，你可能不会一直开着我们的 App 来关心团队成员们在做些什么或讨论什么，但是你一定不想错过任何关键的信息。基于此，我们专门搜集和整理了每一天的更新动态，按照你参与的项目划分，罗列出该项目哪些成员参与了协同，哪些任务被谁做了什么更新。同时在最顶处，展示了每一天你所有项目的一个数据统计，包括「每天有多少个活跃项目」「每天新建了多少个任务」「每天完成了多少个任务」和「每天成员们新增的讨论数」。（见下图）</p>
+
+<p><img alt="Daily Recap Snapshot" width="754" height="755" src="/images/daily-recap-and-reminder-help-you-never-missing/daily-review-email-snapshot.jpg?1408772257"></p>
+
+<p>有了「每日回顾」，我想它应该是你或管理员，去查看一天团队或项目动态的最佳途径。当然，你可以选择关闭这个邮件通知，采用打开App 查看「通知中心」去了解动态。关于如何关闭邮件通知，我后面马上会提到。</p>
+
+<h2>到期提醒</h2>
+
+<p>从 <a href="http://zh.wikipedia.org/wiki/GTD">GTD</a> (Get Thing Done) 的角度出发，你应该充分清空大脑，把要做的事情都罗列到「风车协作」里面，然后一次就关心一件事情，大脑专注去做事。为了避免错过关键时间节点，你需要为任务设置一个到期时间，让系统帮你去记忆和提醒。虽然风车系统里有明显颜色区分的「到期时间」显示，但仍有错过的概率。所以我们学习 Calendar 日历的做法，让提醒更主动的推送到你面前：每天早上发送一封「当日到期任务的提醒邮件」，让你清楚知道今天需要做什么事情。此外，在「今天到期任务」下方我们还列出了「已逾期任务」，提醒你那些已经过期但仍未被处理的任务（还不赶紧去处理！) :)</p>
+
+<p><img alt="Reminder Snapshot" width="750" height="624" src="/images/daily-recap-and-reminder-help-you-never-missing/reminder-email-snapshot.jpg?1408772257"></p>
+
+<h2>关闭「每日回顾」和「到期提醒」</h2>
+
+<p>因为这两个...</p>
+
+  <p>
+    ......
+  </p>
+  <p>
+    <a href="/daily-recap-and-reminder-help-you-never-missing">Read more →</a>
+  </p>
+</div>
+
+    </article>
+    <article class="post">
+      <header>
+  <h2 class="title">
+    <a href="/use-excel-for-project-management">Excel，熟悉又不熟悉的项目管理工具</a>
+  </h2>
+</header>
+
+<aside>
+  <ul class="meta">
+    <li class="author-photo">
+      <a href="http://yedingding.com">
+        <img alt="" width="120" height="120" src="/images/dingding-ye.png?1379005285" />
       </a>
     </li>
     <li class="author">
@@ -104,8 +218,8 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
       Aug 13, 2014
     </li>
     <li class="tags">
-        <a href="/blog/tags/excel">excel</a>
-        <a href="/blog/tags/项目管理">项目管理</a>
+        <a href="/tags/excel">excel</a>
+        <a href="/tags/项目管理">项目管理</a>
     </li>
   </ul>
 </aside>
@@ -115,7 +229,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
 
 <p>要了解 Excel 管理项目的利与弊，得先了解如何用 Excel 来管理项目，Excel 能做什么，怎么做。项目管理，从本质上就是两件事情，计划安排和进度跟踪。计划安排包括计划和安排。计划是确定要做什么事情，并分解成一个个任务，比如在 Excel 里面按照 <a href="http://www.baike.com/wiki/WBS">WBS</a> 来做计划。而安排就是根据分解任务确定谁做什么事情以及什么时候做什么事情，比如在 Excel 里面制作<a href="http://baike.baidu.com/view/1653.htm">甘特图</a>来做安排。进度跟踪包括进度和跟踪。进度是了解项目的进展，哪些已经完成，哪些有待完成，比如可以在 Excel 里面绘制<a href="http://baike.baidu.com/view/3798770.htm">燃尽图</a>来展现进度。跟踪是及时了解团队每个人的状态，某个任务完成度如何了，这里更多的是通过沟通来更新到 Excel 中。</p>
 
-<p>关于具体可以怎么用 Excel 来做项目管理，我做了一个例子，在<a href="/blog/downloads/Excel-Project-Management.xlsx">这里</a>下载，有兴趣可以参考，基本上涵盖了我上面提到的这些事情。</p>
+<p>关于具体可以怎么用 Excel 来做项目管理，我做了一个例子，在<a href="/downloads/Excel-Project-Management.xlsx">这里</a>下载，有兴趣可以参考，基本上涵盖了我上面提到的这些事情。</p>
 
 <p>Excel 不是专业的项目管理工具，但是 Excel 又无所不能。在我心目中，Windows 并不是微软最成功的软件，Office 才是。使用 Excel，有下面这几点好处。</p>
 
@@ -128,7 +242,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
     ......
   </p>
   <p>
-    <a href="/blog/use-excel-for-project-management">Read more →</a>
+    <a href="/use-excel-for-project-management">Read more →</a>
   </p>
 </div>
 
@@ -136,7 +250,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
     <article class="post">
       <header>
   <h2 class="title">
-    <a href="/blog/project-team-analytics">团队分析和项目统计，开启智能工作</a>
+    <a href="/project-team-analytics">团队分析和项目统计，开启智能工作</a>
   </h2>
 </header>
 
@@ -144,7 +258,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
   <ul class="meta">
     <li class="author-photo">
       <a href="http://yedingding.com">
-        <img alt="" width="120" height="120" src="/blog/images/dingding-ye.png?1379005285" />
+        <img alt="" width="120" height="120" src="/images/dingding-ye.png?1379005285" />
       </a>
     </li>
     <li class="author">
@@ -154,8 +268,9 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
       Jul 20, 2014
     </li>
     <li class="tags">
-        <a href="/blog/tags/analytics">analytics</a>
-        <a href="/blog/tags/dashboard">dashboard</a>
+        <a href="/tags/announcement">Announcement</a>
+        <a href="/tags/统计分析">统计分析</a>
+        <a href="/tags/控制面板">控制面板</a>
     </li>
   </ul>
 </aside>
@@ -169,11 +284,11 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
 
 <p>团队工作情况主要分成两部分，昨日状态和过去三周状态。这里的团队是你整个组织，包含了你所管理的所有项目的一个汇总。</p>
 
-<p><img alt="团队昨日状态" width="512" height="165" src="/blog/images/project-team-analytics/team-stat-1.png?1405912777" /></p>
+<p><img alt="团队昨日状态" width="512" height="165" src="/images/project-team-analytics/team-stat-1.png?1405912777" /></p>
 
 <p>昨日状态包含了到期任务数、昨日完成数和昨日新增数。所有，我们能迅速的了解昨天整个团队的工作情况和今天需要处理多少事情。</p>
 
-<p><img alt="团队过去三周数据图" width="520" height="212" src="/blog/images/project-team-analytics/team-stat-2.png?1405912777" /></p>
+<p><img alt="团队过去三周数据图" width="520" height="212" src="/images/project-team-analytics/team-stat-2.png?1405912777" /></p>
 
 <p>过去三周数据图是一个更加直观的图表。每一条柱的不同颜色从下到上分别代表了当然有多少任务创建、有多少任务在进行，多少任务完成以及多少任务被验收通过。三周的数据，让你对整个组织的工作状态了如指掌。</p>
 
@@ -187,7 +302,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
     ......
   </p>
   <p>
-    <a href="/blog/project-team-analytics">Read more →</a>
+    <a href="/project-team-analytics">Read more →</a>
   </p>
 </div>
 
@@ -195,7 +310,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
     <article class="post">
       <header>
   <h2 class="title">
-    <a href="/blog/how-we-use-vcs-integration-with-fengcheco">如何使用 VCS 集成</a>
+    <a href="/how-we-use-vcs-integration-with-fengcheco">如何使用 VCS 集成</a>
   </h2>
 </header>
 
@@ -203,7 +318,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
   <ul class="meta">
     <li class="author-photo">
       <a href="http://poiyzy.github.io">
-        <img alt="" width="120" height="120" src="/blog/images/zhuoyu-yang.png?1379005285" />
+        <img alt="" width="120" height="120" src="/images/zhuoyu-yang.png?1379005285" />
       </a>
     </li>
     <li class="author">
@@ -213,21 +328,20 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
       May 28, 2014
     </li>
     <li class="tags">
-        <a href="/blog/tags/vcs">VCS</a>
-        <a href="/blog/tags/integration">Integration</a>
-        <a href="/blog/tags/git">Git</a>
-        <a href="/blog/tags/代码库">代码库</a>
-        <a href="/blog/tags/集成">集成</a>
+        <a href="/tags/vcs">VCS</a>
+        <a href="/tags/git-集成">Git 集成</a>
+        <a href="/tags/开发者">开发者</a>
+        <a href="/tags/how-to">How-To</a>
     </li>
   </ul>
 </aside>
 
 <div class="content">
-  <p><img alt="audit commit" width="502" height="610" src="/blog/images/vcs_integration_with_fengcheco/audit_commit.png?1401467189" /></p>
+  <p><img alt="audit commit" width="502" height="610" src="/images/vcs_integration_with_fengcheco/audit_commit.png?1401467189" /></p>
 
 <p>像我们这样的开发者每天都使用 VCS (版本控制系统) 完成工作， 比如 Git 或者 SVN 。将 VCS 融入您目前的开发过程中，可以使您更加详细精确的了解到代码情况以及项目进度，使代码和项目管理融为一体。</p>
 
-<p>设置教程请看<a href="/blog/introducing_vcs_integration_with_fengcheco">这里</a></p>
+<p>设置教程请看<a href="/blog/introducing_vcs_integration_with_fengcheco">这里</a>。</p>
 
 <p>
 
@@ -235,121 +349,14 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
     ......
   </p>
   <p>
-    <a href="/blog/how-we-use-vcs-integration-with-fengcheco">Read more →</a>
-  </p>
-</div>
-
-    </article>
-    <article class="post">
-      <header>
-  <h2 class="title">
-    <a href="/blog/introducing_vcs_integration_with_fengcheco">如何集成 VCS</a>
-  </h2>
-</header>
-
-<aside>
-  <ul class="meta">
-    <li class="author-photo">
-      <a href="http://poiyzy.github.io">
-        <img alt="" width="120" height="120" src="/blog/images/zhuoyu-yang.png?1379005285" />
-      </a>
-    </li>
-    <li class="author">
-     by 杨濯宇
-    </li>
-    <li class="date">
-      May 28, 2014
-    </li>
-    <li class="tags">
-        <a href="/blog/tags/vcs">VCS</a>
-        <a href="/blog/tags/integration">Integration</a>
-        <a href="/blog/tags/git">Git</a>
-        <a href="/blog/tags/代码库">代码库</a>
-        <a href="/blog/tags/集成">集成</a>
-    </li>
-  </ul>
-</aside>
-
-<div class="content">
-  <p>我们致力于设计一款开发友好的工具，希望能够帮助使用者团队更加快速便捷的开发项目以及管理项目进度。</p>
-
-<p>像我们这样的开发者每天都使用 VCS (版本控制系统) 完成工作， 比如 Git 或者 SVN 。将 VCS 融入您目前的开发过程中，可以使您更加详细精确的了解到代码情况以及项目进度，使代码和项目管理融为一体。</p>
-
-<p><img alt="audit commit" width="502" height="610" src="/blog/images/vcs_integration_with_fengcheco/audit_commit.png?1401467189" /></p>
-
-<p>目前我们已经支持了 <a href="https://github.com/">GitHub</a>, <a href="https://bitbucket.org/">BitBucket</a> 以及 <a href="http://gitlab.org/">Gitlab</a>，如果您正在使用的版本控制器我们还不支持，只需联系我们，我们回尽快帮您解决。</p>
-
-<p>使用方法请参考<a href="/blog/how-we-use-vcs-integration-with-fengcheco">这里</a></p>
-
-<p>
-
-  <p>
-    ......
-  </p>
-  <p>
-    <a href="/blog/introducing_vcs_integration_with_fengcheco">Read more →</a>
-  </p>
-</div>
-
-    </article>
-    <article class="post">
-      <header>
-  <h2 class="title">
-    <a href="/blog/new-feature-task-followers">新功能：协作者</a>
-  </h2>
-</header>
-
-<aside>
-  <ul class="meta">
-    <li class="author-photo">
-      <a href="http://poiyzy.github.io">
-        <img alt="" width="120" height="120" src="/blog/images/zhuoyu-yang.png?1379005285" />
-      </a>
-    </li>
-    <li class="author">
-     by 杨濯宇
-    </li>
-    <li class="date">
-      Apr 15, 2014
-    </li>
-    <li class="tags">
-        <a href="/blog/tags/announcement">announcement</a>
-        <a href="/blog/tags/new-feature">new feature</a>
-        <a href="/blog/tags/follower">follower</a>
-        <a href="/blog/tags/协作者">协作者</a>
-        <a href="/blog/tags/新功能">新功能</a>
-        <a href="/blog/tags/任务">任务</a>
-    </li>
-  </ul>
-</aside>
-
-<div class="content">
-  <p>原先在 Fengche.co 中我们只可以把任务分配给一个团队成员，但是在我们与用户沟通过程中发现，很多团队需要一个任务由多个成员协同完成。现在，我们为您带来了新功能，您可以为任务添加<em>协作者</em>。</p>
-
-<p>当然，如果您的团队不需要使用这个功能的话，您可以忽略此功能，它不会对您原有的工作流程带来任何影响。<strong>但是您需要注意 <a href="#notification_update">通知策略更新</a></strong>。</p>
-
-<h2>添加和删除协作者</h2>
-
-<ul>
-<li>在您打开一个任务的详细页面后，在右边栏便可以轻松找到协作者添加位置</li>
-</ul>
-
-<p><img alt="task followers" width="1274" height="438" src="/blog/images/new-feature-task-followers/task_followers.png?1397735636" /></p>
-
-<p>
-
-  <p>
-    ......
-  </p>
-  <p>
-    <a href="/blog/new-feature-task-followers">Read more →</a>
+    <a href="/how-we-use-vcs-integration-with-fengcheco">Read more →</a>
   </p>
 </div>
 
     </article>
 
     <ul class="pager">
-        <li class="next"><a href="/blog/page/2">Older &rarr;</a></li>
+        <li class="next"><a href="/page/2">Older &rarr;</a></li>
     </ul>
 </div>
 

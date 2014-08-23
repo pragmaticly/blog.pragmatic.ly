@@ -31,20 +31,24 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png">
     <link rel="shortcut icon" sizes="16x16" href="/favicon.ico">
     <link rel="alternate" type="application/rss+xml" title="Fengche.co Blog Feed" href="/blog/feed.xml" />
+
     <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <link href="/blog/stylesheets/application.css?1405912777" rel="stylesheet" type="text/css" />
-    <script src="/blog/javascripts/application.js?1405912779" type="text/javascript"></script>
+    <link href="/stylesheets/application.css?1405912777" rel="stylesheet" type="text/css" />
+    <script src="/javascripts/application.js?1405912779" type="text/javascript"></script>
 
+    <script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script>
+    <script type="text/javascript">var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-4054156-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();</script>
 
-    <!-- start Mixpanel -->
-    <script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f);b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==
-typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");for(g=0;g<i.length;g++)f(c,i[g]);
-b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
-    mixpanel.init("43a596021773ee49e7b13713d89c9875");</script>
-    <!-- end Mixpanel -->
   </head>
 
   <body class="tags tags_announcement tags_announcement_index">
@@ -82,13 +86,183 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
 
     <section class="main">
       <div class="container">
-        <h1 class="tag-page-title">Articles tagged '<em>announcement</em>'</h1>
+        <h1 class="tag-page-title">Articles tagged '<em>Announcement</em>'</h1>
 
 <div id="posts">
     <article class="post">
       <header>
   <h2 class="title">
-    <a href="/blog/new-feature-task-followers">新功能：协作者</a>
+    <a href="/attachments-updates">新功能：下载所有附件</a>
+  </h2>
+</header>
+
+<aside>
+  <ul class="meta">
+    <li class="author-photo">
+      <a href="http://yedingding.com">
+        <img alt="" width="120" height="120" src="/images/dingding-ye.png?1379005285" />
+      </a>
+    </li>
+    <li class="author">
+     by 叶玎玎
+    </li>
+    <li class="date">
+      Aug 23, 2014
+    </li>
+    <li class="tags">
+        <a href="/tags/announcement">Announcement</a>
+        <a href="/tags/文档管理">文档管理</a>
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <p>作为一个以任务管理为核心的工具，风车是为了解决计划安排和进度跟踪的问题，所以在文档管理上目前还有不少欠缺，比如不像 Dropbox 能直接本地管理，也没有文件版本控制。但是相比用 QQ 文件传来传去的无序，在风车上基于任务主题分享文件协同管理还是非常方便的。今天我们发布了一个新功能，『下载所有附件』，同时也加强了文件管理上的安全性。</p>
+
+<p>一个任务附件太多，一个一个下载很麻烦，现在好了，我们提供了一键下载所有任务附件的功能，点击后会提供压缩包下载。当然，如果当前任务没有任何附件，你在菜单里是看不到这个操作的。</p>
+
+<p><img alt="Download All Attachments" width="200" height="271" src="/images/attachments-updates/download-all-attachments.png?1408772257" /></p>
+
+<p>在此之外，我们在安全性上也做了增强，现在文件的地址会是随机生成并且具有短时效性，超时将无法访问，这样大大减少了文件误分享的可能性。</p>
+
+<blockquote>
+<p>小贴士: 其实风车是可以拖拽上传文件的，直接选中文件拖进风车的应用或者页面就可以了。</p>
+</blockquote>
+
+<p>知识管理是团队协作中很重要的一环，风车虽然侧重任务管理，但是也会提供简单基础的文档协同功能。关于知识管理的下一步，我们计划提供团队文本协同编辑和统一的文件管理入口，敬请期待！</p>
+
+
+  <p>
+    ......
+  </p>
+  <p>
+    <a href="/attachments-updates">Read more →</a>
+  </p>
+</div>
+
+    </article>
+    <article class="post">
+      <header>
+  <h2 class="title">
+    <a href="/daily-recap-and-reminder-help-you-never-missing">新功能：「每日回顾」和「到期提醒」邮件让你不再错过</a>
+  </h2>
+</header>
+
+<aside>
+  <ul class="meta">
+    <li class="author-photo">
+      <a href="http://beenhero.com">
+        <img alt="" width="120" height="120" src="/images/ben-he.png?1379005285" />
+      </a>
+    </li>
+    <li class="author">
+     by 何斌
+    </li>
+    <li class="date">
+      Aug 14, 2014
+    </li>
+    <li class="tags">
+        <a href="/tags/新功能">新功能</a>
+        <a href="/tags/email">Email</a>
+        <a href="/tags/announcement">Announcement</a>
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <p>进入八月，距离我们「风车协作」发布中文版已过去一年多。这一年我们不停地听取用户意见，不停地改进产品，其中发现大家对 Email 的依赖程度还是非常高.我们有常规的任务更新与讨论的邮件通知，我们还做了 <a href="https://fengcheco.com/blog/new-feature-comment-via-email/">Email 来管理任务</a> 并且进行了<a href="https://fengcheco.com/blog/enhancement-of-email-management">加强</a>，今天向大家发布两个新的 Email 功能：「每日回顾」和「到期提醒」。</p>
+
+<h2>每日回顾</h2>
+
+<p>当你在外出差，或在休假途中，你可能不会一直开着我们的 App 来关心团队成员们在做些什么或讨论什么，但是你一定不想错过任何关键的信息。基于此，我们专门搜集和整理了每一天的更新动态，按照你参与的项目划分，罗列出该项目哪些成员参与了协同，哪些任务被谁做了什么更新。同时在最顶处，展示了每一天你所有项目的一个数据统计，包括「每天有多少个活跃项目」「每天新建了多少个任务」「每天完成了多少个任务」和「每天成员们新增的讨论数」。（见下图）</p>
+
+<p><img alt="Daily Recap Snapshot" width="754" height="755" src="/images/daily-recap-and-reminder-help-you-never-missing/daily-review-email-snapshot.jpg?1408772257"></p>
+
+<p>有了「每日回顾」，我想它应该是你或管理员，去查看一天团队或项目动态的最佳途径。当然，你可以选择关闭这个邮件通知，采用打开App 查看「通知中心」去了解动态。关于如何关闭邮件通知，我后面马上会提到。</p>
+
+<h2>到期提醒</h2>
+
+<p>从 <a href="http://zh.wikipedia.org/wiki/GTD">GTD</a> (Get Thing Done) 的角度出发，你应该充分清空大脑，把要做的事情都罗列到「风车协作」里面，然后一次就关心一件事情，大脑专注去做事。为了避免错过关键时间节点，你需要为任务设置一个到期时间，让系统帮你去记忆和提醒。虽然风车系统里有明显颜色区分的「到期时间」显示，但仍有错过的概率。所以我们学习 Calendar 日历的做法，让提醒更主动的推送到你面前：每天早上发送一封「当日到期任务的提醒邮件」，让你清楚知道今天需要做什么事情。此外，在「今天到期任务」下方我们还列出了「已逾期任务」，提醒你那些已经过期但仍未被处理的任务（还不赶紧去处理！) :)</p>
+
+<p><img alt="Reminder Snapshot" width="750" height="624" src="/images/daily-recap-and-reminder-help-you-never-missing/reminder-email-snapshot.jpg?1408772257"></p>
+
+<h2>关闭「每日回顾」和「到期提醒」</h2>
+
+<p>因为这两个...</p>
+
+  <p>
+    ......
+  </p>
+  <p>
+    <a href="/daily-recap-and-reminder-help-you-never-missing">Read more →</a>
+  </p>
+</div>
+
+    </article>
+    <article class="post">
+      <header>
+  <h2 class="title">
+    <a href="/project-team-analytics">团队分析和项目统计，开启智能工作</a>
+  </h2>
+</header>
+
+<aside>
+  <ul class="meta">
+    <li class="author-photo">
+      <a href="http://yedingding.com">
+        <img alt="" width="120" height="120" src="/images/dingding-ye.png?1379005285" />
+      </a>
+    </li>
+    <li class="author">
+     by 叶玎玎
+    </li>
+    <li class="date">
+      Jul 20, 2014
+    </li>
+    <li class="tags">
+        <a href="/tags/announcement">Announcement</a>
+        <a href="/tags/统计分析">统计分析</a>
+        <a href="/tags/控制面板">控制面板</a>
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <p>风车从诞生的第一天开始，我们就给自己制定了目标，做一个最终用户非常喜欢使用的团队协作工具。目前市场上充斥着大量完全没有用户体验可谈的企业工具，购买软件的人根本无视使用者的体验感受，一般都是由上而下强制推行。作为一个曾经的受害者，我们知道，这对工作的积极性是多大的打击，对工作的效率是多大的损害。之所以这些企业软件能卖出，是因为他们向决策者鼓吹软件对管理的帮助。所以，我们在满足了最终用户之后，开始开发一些能给管理者带有巨大帮助的功能，而项目统计和成员状态分析，就是我们的第一步。</p>
+
+<p>对于项目管理者来说，最重要的工作就是计划安排和进度跟踪。计划的安排是否合理，在于对团队每个人的过往工作情况是否足够了解。进度的跟踪是否有效，在于对项目里任务的每天执行情况能否足够了解。所以，风车目前推出了统计三大块，一是团队工作情况，二是成员工作情况，三是项目执行情况。</p>
+
+<h3>团队工作情况</h3>
+
+<p>团队工作情况主要分成两部分，昨日状态和过去三周状态。这里的团队是你整个组织，包含了你所管理的所有项目的一个汇总。</p>
+
+<p><img alt="团队昨日状态" width="512" height="165" src="/images/project-team-analytics/team-stat-1.png?1405912777" /></p>
+
+<p>昨日状态包含了到期任务数、昨日完成数和昨日新增数。所有，我们能迅速的了解昨天整个团队的工作情况和今天需要处理多少事情。</p>
+
+<p><img alt="团队过去三周数据图" width="520" height="212" src="/images/project-team-analytics/team-stat-2.png?1405912777" /></p>
+
+<p>过去三周数据图是一个更加直观的图表。每一条柱的不同颜色从下到上分别代表了当然有多少任务创建、有多少任务在进行，多少任务完成以及多少任务被验收通过。三周的数据，让你对整个组织的工作状态了如指掌。</p>
+
+<h3>成员工作情况</h3>
+
+<p>成员工作情况也分成两部分，任务分析和项目内过去两周工作情况。</p>
+
+<p>
+
+  <p>
+    ......
+  </p>
+  <p>
+    <a href="/project-team-analytics">Read more →</a>
+  </p>
+</div>
+
+    </article>
+    <article class="post">
+      <header>
+  <h2 class="title">
+    <a href="/new-feature-task-followers">新功能：协作者</a>
   </h2>
 </header>
 
@@ -96,7 +270,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
   <ul class="meta">
     <li class="author-photo">
       <a href="http://poiyzy.github.io">
-        <img alt="" width="120" height="120" src="/blog/images/zhuoyu-yang.png?1379005285" />
+        <img alt="" width="120" height="120" src="/images/zhuoyu-yang.png?1379005285" />
       </a>
     </li>
     <li class="author">
@@ -106,12 +280,8 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
       Apr 15, 2014
     </li>
     <li class="tags">
-        <a href="/blog/tags/announcement">announcement</a>
-        <a href="/blog/tags/new-feature">new feature</a>
-        <a href="/blog/tags/follower">follower</a>
-        <a href="/blog/tags/协作者">协作者</a>
-        <a href="/blog/tags/新功能">新功能</a>
-        <a href="/blog/tags/任务">任务</a>
+        <a href="/tags/announcement">Announcement</a>
+        <a href="/tags/任务管理">任务管理</a>
     </li>
   </ul>
 </aside>
@@ -127,7 +297,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
 <li>在您打开一个任务的详细页面后，在右边栏便可以轻松找到协作者添加位置</li>
 </ul>
 
-<p><img alt="task followers" width="1274" height="438" src="/blog/images/new-feature-task-followers/task_followers.png?1397735636" /></p>
+<p><img alt="task followers" width="1274" height="438" src="/images/new-feature-task-followers/task_followers.png?1397735636" /></p>
 
 <p>
 
@@ -135,13 +305,511 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
     ......
   </p>
   <p>
-    <a href="/blog/new-feature-task-followers">Read more →</a>
+    <a href="/new-feature-task-followers">Read more →</a>
+  </p>
+</div>
+
+    </article>
+    <article class="post">
+      <header>
+  <h2 class="title">
+    <a href="/enhancement-of-email-management">新功能：通过邮件完成创建任务、分配任务和设置标签</a>
+  </h2>
+</header>
+
+<aside>
+  <ul class="meta">
+    <li class="author-photo">
+      <a href="http://poiyzy.github.io">
+        <img alt="" width="120" height="120" src="/images/zhuoyu-yang.png?1379005285" />
+      </a>
+    </li>
+    <li class="author">
+     by 杨濯宇
+    </li>
+    <li class="date">
+      Mar 14, 2014
+    </li>
+    <li class="tags">
+        <a href="/tags/announcement">Announcement</a>
+        <a href="/tags/notification">Notification</a>
+        <a href="/tags/邮件集成">邮件集成</a>
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <p>对于 Fengche.co 中<a href="/blog/new-feature-comment-via-email">使用邮件集成来管理项目</a>这个 Feature 应该大家已经不再陌生了。应用户要求，目前我们加强了邮件管理功能。现在您可以通过使用邮件创建任务的同时，把任务分配给某个团队成员，或者为任务设置标签。</p>
+
+<h2>在特定任务列表下创建任务</h2>
+
+<p>这里发送邮件的地址规则为 <code>project+PROJECT_ID+ITERATION_ID@info.fengche.co</code></p>
+
+<p>首先在浏览器中打开你的 Project</p>
+
+<p><img alt="find ids" width="627" height="386" src="/images/enhancement-of-email-management/find_iteration_and_project_id.png?1394735488" /></p>
+
+<p>这里我们可以很清楚的找到当前项目的 PROJECT<em>ID 和 ITERATION</em>ID.</p>
+
+<p>所以示例中正确地址应该为 <code>project+421d6f9a13e6+3da3196195e1@info.fengche.co</code></p>
+
+<p>
+
+  <p>
+    ......
+  </p>
+  <p>
+    <a href="/enhancement-of-email-management">Read more →</a>
+  </p>
+</div>
+
+    </article>
+    <article class="post">
+      <header>
+  <h2 class="title">
+    <a href="/updates-of-desktop-notification">更新：改进了桌面通知</a>
+  </h2>
+</header>
+
+<aside>
+  <ul class="meta">
+    <li class="author-photo">
+      <a href="http://poiyzy.github.io">
+        <img alt="" width="120" height="120" src="/images/zhuoyu-yang.png?1379005285" />
+      </a>
+    </li>
+    <li class="author">
+     by 杨濯宇
+    </li>
+    <li class="date">
+      Mar 12, 2014
+    </li>
+    <li class="tags">
+        <a href="/tags/announcement">Announcement</a>
+        <a href="/tags/通知系统">通知系统</a>
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <p>桌面通知是用户很喜欢的一项功能，当项目中有事情发生时，会即时的通知到你，让你能专注做事，不用在风车里盯着项目，同时又不会错过任何一条重要信息。</p>
+
+<p>然而在一个大的团队中，当短时间内团队其他人有密集操作或者在讨论任务的时候，如果这个任务跟你无关，那么方便的桌面通知将会变得非常恼人，这些不停地从桌面右上角跳出来的通知会打扰到你目前专注的状态。</p>
+
+<p>所以为了解决这个问题，我们对桌面通知做了一些更新，希望你喜欢。</p>
+
+<p><img alt="Desktop Notification" width="383" height="129" src="/images/smart-notification-announcement/desktop-notification.png?1393271164" /></p>
+
+<p>现在，默认情况下你将只收到跟你相关的桌面通知，包括以下这些情况：</p>
+
+<ul>
+<li>当有人分配了某个分配给你的时候，你会收到弹出的桌面通知。</li>
+<li>当你负责的任务（分配给你）发生任何讨论时，你会收到弹出的桌面通知。</li>
+<li>当任何一个留言里 @ 你的名字的时候，你会收到弹出的桌面通知。</li>
+</ul>
+
+<p>所以，如果讨论任务时，你希望团队某人能迅速的回应你的请求，最好的办法是在讨论中 @ 他。</p>
+
+<p><em>如果您对此次更新有任何意见或者建议，随时联系我们，我们将会持续为您提供更加理想的使用体验</em></p>
+
+
+  <p>
+    ......
+  </p>
+  <p>
+    <a href="/updates-of-desktop-notification">Read more →</a>
+  </p>
+</div>
+
+    </article>
+    <article class="post">
+      <header>
+  <h2 class="title">
+    <a href="/smart-notification-announcement">新功能：智能通知</a>
+  </h2>
+</header>
+
+<aside>
+  <ul class="meta">
+    <li class="author-photo">
+      <a href="http://poiyzy.github.io">
+        <img alt="" width="120" height="120" src="/images/zhuoyu-yang.png?1379005285" />
+      </a>
+    </li>
+    <li class="author">
+     by 杨濯宇
+    </li>
+    <li class="date">
+      Feb 17, 2014
+    </li>
+    <li class="tags">
+        <a href="/tags/announcement">Announcement</a>
+        <a href="/tags/智能通知">智能通知</a>
+        <a href="/tags/通知系统">通知系统</a>
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <p>关于这次的更新，也许你已经用上了。但是也许你对以前的提醒方式没有意见、也许你不在乎原来那样的提醒方式、或者也许你已经忍了很久…</p>
+
+<h3>问题</h3>
+
+<p>虽然没有太多反馈，但是我可以很诚实的告诉你，随着项目的不断迭代长大，随着团队成员的不断增长，随着这个项目的活跃越来越高，终究有一天，你会忍无可忍的。</p>
+
+<p>对于以前的方式是这样的，比如当有一个讨论被创建的时候，首先你的电脑会弹出桌面通知，然后你的邮箱会接受到邮件，如果你的其他移动设备绑定了邮箱的话，比如像我，iPad，iPhone 绑定了邮箱，并且开启实时推送的话，简直就是灾难…一动四响…</p>
+
+<p>这绝对不是风车的目标。风车是希望“给你一个简洁的空间、不让你迷失在信息的海洋中、让你工作更加专注”！</p>
+
+<h3>原因分析</h3>
+
+<p>首先造成这样的“通知信息轰炸”的原因有两个。一个是重复通知，一个是通知间隔频率过快。</p>
+
+<h4>A. 重复通知</h4>
+
+<p>当一个提醒已经被用户看到以后，如果我们继续以其他形式给用户发送重复的提醒的话，我们认为这是一种打扰。比如我正在写代码，看到了桌面通知，而且我也通过这个通知点击进入了相应的页面，那么为什么还要发邮件给我？</p>
+
+<p><strong>解决方案：智能通知</strong>
+现在我们采用这样的处理方式：当用户登录 Fengche.co 并保持在线状态，我们只推送桌面通知；只有当你处于离线状态，我们才会发送邮件通知给你。不管是哪种形式，所有的提醒都会被记录在“通知中心”里面，保证你不会错过任何重要的事情。</p>
+
+<h4>B. 通知间隔频率过快</h4>
+
+<p>有没有这样的感觉，有时候当一个“任务”被新建的时候，在一分钟之内，或者仅仅几十秒内，你会突然收到好几封邮件。比如，第一封是新建任务，第二封是这个任务分配给了你…</p>
+
+<p>也许我只需要知道有个任务被创建了，也许我现在没有时间或者精力去看这些细节，也许我现在正专注做某件事情… 总之我只需要知道有任务被创建了，但是目前不关心细节。那么这样高频率的信息轰炸对于我来说...</p>
+
+  <p>
+    ......
+  </p>
+  <p>
+    <a href="/smart-notification-announcement">Read more →</a>
+  </p>
+</div>
+
+    </article>
+    <article class="post">
+      <header>
+  <h2 class="title">
+    <a href="/announcing-print-task-and-iteration">新功能：打印任务和任务列表</a>
+  </h2>
+</header>
+
+<aside>
+  <ul class="meta">
+    <li class="author-photo">
+      <a href="http://poiyzy.github.io">
+        <img alt="" width="120" height="120" src="/images/zhuoyu-yang.png?1379005285" />
+      </a>
+    </li>
+    <li class="author">
+     by 杨濯宇
+    </li>
+    <li class="date">
+      Feb 12, 2014
+    </li>
+    <li class="tags">
+        <a href="/tags/announcement">Announcement</a>
+        <a href="/tags/print">Print</a>
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <p>因为我们是一个远程团队，所以很多时候了解不到大家在一个办公室办公使用 Fengche.co 时的痛点。最近 <a href="http://knewone.com">Knewone</a> 团队反映他们在开会的时候经常需要对任务或者任务列表进行讨论，然后作出决定，分配任务或者改变完成期限等等。但是目前只能让大家抱着电脑，或者投影到墙上，不太方便。</p>
+
+<p>我们认为开会时的高效率取决与是否于专注和整体流程是否简洁。不要大动干戈的使用投影，也不要人人抱着电脑挤在一起，最简单有效的方法是打印出来和大家一起讨论，然后散掉各回各位。</p>
+
+<h2>打印任务</h2>
+
+<p>您可以在任务右上角的操作中找到它</p>
+
+<p><img alt="print-task" width="1083" height="303" src="/images/print-task-and-iteration/print-task.png?1392299296" /></p>
+
+<p>
+
+  <p>
+    ......
+  </p>
+  <p>
+    <a href="/announcing-print-task-and-iteration">Read more →</a>
+  </p>
+</div>
+
+    </article>
+    <article class="post">
+      <header>
+  <h2 class="title">
+    <a href="/new-year-new-branding">新年新气象 -- Pragmatic.ly 全新改版</a>
+  </h2>
+</header>
+
+<aside>
+  <ul class="meta">
+    <li class="author-photo">
+      <a href="http://beenhero.com">
+        <img alt="" width="120" height="120" src="/images/ben-he.png?1379005285" />
+      </a>
+    </li>
+    <li class="author">
+     by 何斌
+    </li>
+    <li class="date">
+      Feb 12, 2014
+    </li>
+    <li class="tags">
+        <a href="/tags/announcement">Announcement</a>
+        <a href="/tags/ui">UI</a>
+        <a href="/tags/改版">改版</a>
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <p>2014，风车(fengche.co) 全新启动了，我们期望她越转越快，为更多企业和团队提供源源不断的动力。</p>
+
+<h2>新的名字，新的域名</h2>
+
+<p><img alt="Logo Snapshot" width="360" height="49" src="/images/new-year-new-branding/logo-snapshot.png?1392188987"></p>
+
+<ul>
+<li><em>新域名：Fengche.co</em></li>
+<li><em>新名字：风车协作</em></li>
+</ul>
+
+<p>大伙儿再不会记不住我们的域名了吧 :) 不过注意哦，是 .co 而不是 .com, co 除了代表 Corporation （公司）外，我们还寄予了 Collabration （协作）的意义。</p>
+
+<h2>全新的设计</h2>
+
+<p><img alt="App Snapshot" width="500" height="323" src="/images/new-year-new-branding/2014-version-app-snapshot.png?1392188987"></p>
+
+<p>新设计在保持现有信息架构基本不变的情况下，对于配色、图标和排版做了很多改进，不仅是一次视觉设计上的调优，也为之后我们的下阶段系统改进提供了基础。下面是一些功能上的更新细节:</p>
+
+<ul>
+<li>根据用户屏幕大小，左侧边栏可以缩进和弹出，这样能预留更多的空间给用户管理任务和讨论。</li>
+<li>新的任务状态图标，圆形 icon 具有更合理的状态指示。</li>
+<li>右栏任务的属性编辑被移到顶部排成一列，更有序的排列，更紧致的空间，达到操作和阅读的平衡性。</li>
+<li>改进了任务动态的排版，没有之前那么局促。同时改进了评论框的交互，增大了输入空间。</li>
+<li>智能通知，当你网页或移动端在线时，不发送邮件通知。目前属于测试功能，想尝试的可以到个人资料里设置开启。</li>
+<li>控制面板，改进了UI。另外，你可以方便的在项目卡片里关闭或打开某个项目的邮件通知。</li>
+</ul>
+
+<h2>移动客户端</h2>
+
+<p><img alt="App Snapshot" width="480" height="360" src="/images/new-year-new-branding/new-mobile-snapshot.jpg?1392188987"></p>
+
+<p>全新的移动客户端，让你出门在外也可以保持和团队的协作。移动端的设计和交互，基本沿袭了 Web 新版的设计，所以新老用户应该很容易上手。</p>
+
+<p>目前第一版的移动应用，是基于Web的混合式应用，在体验上不如纯原生应用（比如还没有手势滑动的操作），但是能让我们同时发布 iOS 和 Android 版，也让我们有了缓冲时间去做改进。 </p>
+
+<ul>
+<li><a href="https://itunes.apple.com/cn/app/fengche.co-ke-hu-duan/id790013753?mt=8">iPhone 版下载</a></li>
+<li><a href="https://fengche.co/apps/fengche.apk">Android 版下载</a></li>
+</ul>
+
+<p>欢迎大家使用，如果大家在使用过程中发现任何问题，或有任务建议，请随时反馈给我们（<a href="mailto:support@fengche.co">Email</a>或网页上的帮...</p>
+
+  <p>
+    ......
+  </p>
+  <p>
+    <a href="/new-year-new-branding">Read more →</a>
+  </p>
+</div>
+
+    </article>
+    <article class="post">
+      <header>
+  <h2 class="title">
+    <a href="/invite-user-from-organization">新功能：直接邀请组织成员加入项目</a>
+  </h2>
+</header>
+
+<aside>
+  <ul class="meta">
+    <li class="author-photo">
+      <a href="http://yedingding.com">
+        <img alt="" width="120" height="120" src="/images/dingding-ye.png?1379005285" />
+      </a>
+    </li>
+    <li class="author">
+     by 叶玎玎
+    </li>
+    <li class="date">
+      Nov 19, 2013
+    </li>
+    <li class="tags">
+        <a href="/tags/announcement">Announcement</a>
+        <a href="/tags/用户管理">用户管理</a>
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <p>先向我们用户们表示歉意，这个功能来晚了。随着用户使用 Fengche.co 的时间越来越长，项目开始增多，重复输入团队成员邮件地址来邀请用户成了一个痛点，所以我们觉得是时候开始做直接邀请组织里的成员加入项目，更方便协作。这里先解释两个概念。</p>
+
+<h3>项目团队</h3>
+
+<p>指当前项目里的团队人员，见边栏的团队成员列表。</p>
+
+<p><img alt="Project Team" width="249" height="103" src="/images/invite-user-from-organization/project-team.png?1384835574" /></p>
+
+<h3>组织团队</h3>
+
+<p>指你的组织里的团队人员，是你创建的所有项目里的项目团队人员之和，算自然人。</p>
+
+<p><img alt="Organization Team" width="566" height="294" src="/images/invite-user-from-organization/organization-team.png?1384835574" /></p>
+
+<h3>具体实现</h3>
+
+<p>下图是我们的具体实现。</p>
+
+<p><img alt="New Invite Modal" width="455" height="340" src="/images/invite-user-from-organization/new-invite.png?1384835574" /></p>
+
+<p>在邀请现有成员区域点击邀请以后，会直接给这位成员发送邀请加入项目邮件，很简单。另外，我们目前正在做新的项目页面设计，到时候会有更加优秀的视觉设计和交互设计，包括这里，敬请期待！</p>
+
+<h3>其他更新</h3>
+
+<p>这次的发布还修复了下面几个 bug。</p>
+
+<ol>
+<li>多附件情况下，删除一个附件后导致附件区域显示不全。</li>
+<li>新成员加入后，无法通过 @ 来补全新成员。</li>
+<li>在空间面板里面增加黑色的圆圈代表 “验收失败” 状态。</li>
+</ol>
+
+<p>如果你有任何问题和建议，随时联系我们，谢谢。</p>
+
+
+  <p>
+    ......
+  </p>
+  <p>
+    <a href="/invite-user-from-organization">Read more →</a>
+  </p>
+</div>
+
+    </article>
+    <article class="post">
+      <header>
+  <h2 class="title">
+    <a href="/announcing-pic-pasting">新功能: 通过复制粘贴就能上传图片</a>
+  </h2>
+</header>
+
+<aside>
+  <ul class="meta">
+    <li class="author-photo">
+      <a href="http://terrytai.com">
+        <img alt="" width="120" height="120" src="/images/terry-tai.png?1379005285" />
+      </a>
+    </li>
+    <li class="author">
+     by 太檑
+    </li>
+    <li class="date">
+      Nov 08, 2013
+    </li>
+    <li class="tags">
+        <a href="/tags/announcement">Announcement</a>
+        <a href="/tags/任务管理">任务管理</a>
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <h2>上传其它网页上的图</h2>
+
+<p>我们深深的相信很多时候一图胜千言, 所以我们一直在简化我们的上传图片的方式.</p>
+
+<p>如果你想上传你电脑上的图到 Fengche.o, 你已经可以通过简单的&quot;拖拽&quot;或&quot;文件选择&ldquo;来搞定.
+但是如果你想上传一张你在其他网站上的图片到 Fengche.co 就没那么容易了, 你还得先下载它们, 然后再上传到 Fengche.co 中.</p>
+
+<p>现在你已经不用了, 有了这个新功能, 你可以直接复制其他网页上的图片, 并在浏览器中粘贴就可以把你复制的图片上传到当前的任务中.
+遗憾的是目前只有最新版的 Chrome 支持这个功能. 不过我相信很快其他浏览器也会跟上的, 不久的将来你应该可以在大多浏览器里享用这功能.</p>
+
+<p><strong>更新</strong>: 现在邮件客户端里，也支持用“拷贝图片并粘贴”的方式来上传邮件里的图片到 Fengche.co 了。</p>
+
+<h2>上传你的屏幕截图</h2>
+
+<p>如果你使用 Mac 并且你想上传你的屏幕截图. 你只需要用 Command + Control + Shift + 4 来截图, 然后到 Fengche.co 用 Command + v 粘贴, 就能直接把你的屏幕截图上传到你当前的任务中了.</p>
+
+<h2>别忘了我们的任务描述支持 Markdown</h2>
+
+<p>如果你希望在你的任务描述中引入一些图片, 你完全可以使用 Markdown 来插入图片.
+格式也很简单:</p>
+<pre><code class="highlight plaintext">   ![描述](图片地址)
+</code></pre>
+
+<p>是不是很简单?</p>
+
+<p>Enjoy!</p>
+
+
+  <p>
+    ......
+  </p>
+  <p>
+    <a href="/announcing-pic-pasting">Read more →</a>
+  </p>
+</div>
+
+    </article>
+    <article class="post">
+      <header>
+  <h2 class="title">
+    <a href="/new-feature-comment-via-email">新功能：更好的与邮件集成来管理项目</a>
+  </h2>
+</header>
+
+<aside>
+  <ul class="meta">
+    <li class="author-photo">
+      <a href="http://poiyzy.github.io">
+        <img alt="" width="120" height="120" src="/images/zhuoyu-yang.png?1379005285" />
+      </a>
+    </li>
+    <li class="author">
+     by 杨濯宇
+    </li>
+    <li class="date">
+      Oct 04, 2013
+    </li>
+    <li class="tags">
+        <a href="/tags/announcement">Announcement</a>
+        <a href="/tags/邮件集成">邮件集成</a>
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <p>当你听到这个功能的时候，相信很多人都会有这样的反映。"What?“, "这不是一种很土的方式么？”, “为什么又回归原始的项目管理工具？”…</p>
+
+<h2>使用 Email 管理项目是一个“土”方法</h2>
+
+<p>在原始的单一通过 Email 来追踪项目管理的方式中，很多团队通过 Email 来发送附件、查看进度、讨论问题。。。 这种方式确实很“土”，甚至是反人类的。在这样的方式中，当团队为一个 project 使用 Email 来讨论的时候，email thread 会变的非常的长，在一个 thread 中可能包括了附件、状态更新等等不同目的的 Email，更严重的是这些重要信息会被混在各种各样问题讨论的 email 中。</p>
+
+<p>作为一个项目管理者应该如何去做？在每天 meeting 开始前花数个小时，整理 Email，然后把他们归档分类到一个 excel 文件中？ 然后再提前几个小时把这个 excel 文件分发给团队中的所有成员？管理者的时间很宝贵，或许应该雇佣一个项目管理助理来做这些琐碎的事情？别逗了，Fengche.co 的存在就是为了帮你处理这些 Dirty Job.</p>
+
+<p>你还在用邮件跟踪任务吗？是时候，使用 Fengche.co 井然有序地跟踪所有信息了！</p>
+
+<h2>那为什么又要使用这用土办法?</h2>
+
+<p>很多团队“乐此不疲”的使用这样的方法，甚至依依不舍，是因为 Email 是一个非常方便的非即时性沟通工具。对于项目问题讨论来说，用 Email 会变的非常方便。 我们可以通过手机在任何地方回复讨论，发起讨论，甚至我们可以发一封邮件告诉我们的项目助理，“嗨，麻烦你在 excel 中加一个任务，叫做 XXXXX，把详细描述写成 XXXXX”。It sounds funny, ha?</p>
+
+<p>目前我们通过 email 提醒来通知团队成员项目的更新状态，以及最新的留言。但是如果当我们发现一个留言需要讨论的时候，我...</p>
+
+  <p>
+    ......
+  </p>
+  <p>
+    <a href="/new-feature-comment-via-email">Read more →</a>
   </p>
 </div>
 
     </article>
   
     <ul class="pager">
+        <li class="next"><a href="/tags/announcement/page/2">Older &rarr;</a></li>
     </ul>
 </div>
 
