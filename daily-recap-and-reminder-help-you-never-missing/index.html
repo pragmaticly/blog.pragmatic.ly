@@ -41,19 +41,16 @@
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <link href="/stylesheets/application.css?1405912777" rel="stylesheet" type="text/css" />
-    <script src="/javascripts/application.js?1405912779" type="text/javascript"></script>
+    <link href="/blog/stylesheets/application.css?1405912777" rel="stylesheet" type="text/css" />
+    <script src="/blog/javascripts/application.js?1405912779" type="text/javascript"></script>
 
-    <script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script>
-    <script type="text/javascript">var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-4054156-1']);
-      _gaq.push(['_trackPageview']);
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();</script>
 
+    <!-- start Mixpanel -->
+    <script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f);b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==
+typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");for(g=0;g<i.length;g++)f(c,i[g]);
+b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
+    mixpanel.init("43a596021773ee49e7b13713d89c9875");</script>
+    <!-- end Mixpanel -->
   </head>
 
   <body class="daily-recap-and-reminder-help-you-never-missing daily-recap-and-reminder-help-you-never-missing_index">
@@ -95,7 +92,7 @@
 
     <header>
   <h2 class="title">
-    <a href="/daily-recap-and-reminder-help-you-never-missing">新功能：「每日回顾」和「到期提醒」邮件让你不再错过</a>
+    <a href="/blog/daily-recap-and-reminder-help-you-never-missing">新功能：「每日回顾」和「到期提醒」邮件让你不再错过</a>
   </h2>
 </header>
 
@@ -103,7 +100,7 @@
   <ul class="meta">
     <li class="author-photo">
       <a href="http://beenhero.com">
-        <img alt="" width="120" height="120" src="/images/ben-he.png?1379005285" />
+        <img alt="" width="120" height="120" src="/blog/images/ben-he.png?1379005285" />
       </a>
     </li>
     <li class="author">
@@ -113,12 +110,12 @@
       Aug 14, 2014
     </li>
     <li class="tags">
-        <a href="/tags/新功能">新功能</a>
-        <a href="/tags/email">Email</a>
-        <a href="/tags/announcement">Announcement</a>
+        <a href="/blog/tags/新功能">新功能</a>
+        <a href="/blog/tags/email">Email</a>
+        <a href="/blog/tags/announcement">Announcement</a>
     </li>
     <li class="back-link">
-      <a href="/">&lsaquo; 返回博客主页</a>
+      <a href="/blog">&lsaquo; 返回博客主页</a>
     </li>
   </ul>
 </aside>
@@ -130,7 +127,7 @@
 
 <p>当你在外出差，或在休假途中，你可能不会一直开着我们的 App 来关心团队成员们在做些什么或讨论什么，但是你一定不想错过任何关键的信息。基于此，我们专门搜集和整理了每一天的更新动态，按照你参与的项目划分，罗列出该项目哪些成员参与了协同，哪些任务被谁做了什么更新。同时在最顶处，展示了每一天你所有项目的一个数据统计，包括「每天有多少个活跃项目」「每天新建了多少个任务」「每天完成了多少个任务」和「每天成员们新增的讨论数」。（见下图）</p>
 
-<p><img alt="Daily Recap Snapshot" width="754" height="755" src="/images/daily-recap-and-reminder-help-you-never-missing/daily-review-email-snapshot.jpg?1408772257" /></p>
+<p><img alt="Daily Recap Snapshot" width="754" height="755" src="/blog/images/daily-recap-and-reminder-help-you-never-missing/daily-review-email-snapshot.jpg?1408772257" /></p>
 
 <p>有了「每日回顾」，我想它应该是你或管理员，去查看一天团队或项目动态的最佳途径。当然，你可以选择关闭这个邮件通知，采用打开App 查看「通知中心」去了解动态。关于如何关闭邮件通知，我后面马上会提到。</p>
 
@@ -138,13 +135,13 @@
 
 <p>从 <a href="http://zh.wikipedia.org/wiki/GTD">GTD</a> (Get Thing Done) 的角度出发，你应该充分清空大脑，把要做的事情都罗列到「风车协作」里面，然后一次就关心一件事情，大脑专注去做事。为了避免错过关键时间节点，你需要为任务设置一个到期时间，让系统帮你去记忆和提醒。虽然风车系统里有明显颜色区分的「到期时间」显示，但仍有错过的概率。所以我们学习 Calendar 日历的做法，让提醒更主动的推送到你面前：每天早上发送一封「当日到期任务的提醒邮件」，让你清楚知道今天需要做什么事情。此外，在「今天到期任务」下方我们还列出了「已逾期任务」，提醒你那些已经过期但仍未被处理的任务（还不赶紧去处理！) :)</p>
 
-<p><img alt="Reminder Snapshot" width="750" height="624" src="/images/daily-recap-and-reminder-help-you-never-missing/reminder-email-snapshot.jpg?1408772257" /></p>
+<p><img alt="Reminder Snapshot" width="750" height="624" src="/blog/images/daily-recap-and-reminder-help-you-never-missing/reminder-email-snapshot.jpg?1408772257" /></p>
 
 <h2>关闭「每日回顾」和「到期提醒」</h2>
 
 <p>因为这两个功能的重要性，我们已经默认帮你开启「每日回顾」和「到期提醒」的邮件通知，但你可以通过帐号中心的「通知设置」选项卡，去关闭或启用的设置。如图：</p>
 
-<p><img alt="Email Settings" width="580" height="447" src="/images/daily-recap-and-reminder-help-you-never-missing/email-settings.jpg?1408772257" /></p>
+<p><img alt="Email Settings" width="580" height="447" src="/blog/images/daily-recap-and-reminder-help-you-never-missing/email-settings.jpg?1408772257" /></p>
 
 <p>PS. 注意，当一天没有任何信息更新的情况下，我们不会向你发出「每日回顾」。同理，如果当天没有到期任务，我们也不会发出「到期提醒」邮件。</p>
 
