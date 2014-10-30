@@ -36,16 +36,19 @@
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <link href="/blog/stylesheets/application.css?1405912777" rel="stylesheet" type="text/css" />
-    <script src="/blog/javascripts/application.js?1405912779" type="text/javascript"></script>
+    <link href="/stylesheets/application.css?1405912777" rel="stylesheet" type="text/css" />
+    <script src="/javascripts/application.js?1405912779" type="text/javascript"></script>
 
+    <script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script>
+    <script type="text/javascript">var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-4054156-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();</script>
 
-    <!-- start Mixpanel -->
-    <script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f);b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==
-typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");for(g=0;g<i.length;g++)f(c,i[g]);
-b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
-    mixpanel.init("43a596021773ee49e7b13713d89c9875");</script>
-    <!-- end Mixpanel -->
   </head>
 
   <body class="tags tags_announcement tags_announcement_page tags_announcement_page_2 tags_announcement_page_2_index">
@@ -89,7 +92,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
     <article class="post">
       <header>
   <h2 class="title">
-    <a href="/blog/announcing-uploading-avatar">Beyonds Gravatar and set your profile picture</a>
+    <a href="/announcing-pic-pasting">新功能: 通过复制粘贴就能上传图片</a>
   </h2>
 </header>
 
@@ -97,7 +100,125 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
   <ul class="meta">
     <li class="author-photo">
       <a href="http://terrytai.com">
-        <img alt="" width="120" height="120" src="/blog/images/terry-tai.png?1379005285" />
+        <img alt="" width="120" height="120" src="/images/terry-tai.png?1379005285" />
+      </a>
+    </li>
+    <li class="author">
+     by 太檑
+    </li>
+    <li class="date">
+      Nov 08, 2013
+    </li>
+    <li class="tags">
+        <a href="/tags/announcement">Announcement</a>
+        <a href="/tags/任务管理">任务管理</a>
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <h2>上传其它网页上的图</h2>
+
+<p>我们深深的相信很多时候一图胜千言, 所以我们一直在简化我们的上传图片的方式.</p>
+
+<p>如果你想上传你电脑上的图到 Fengche.o, 你已经可以通过简单的&quot;拖拽&quot;或&quot;文件选择&ldquo;来搞定.
+但是如果你想上传一张你在其他网站上的图片到 Fengche.co 就没那么容易了, 你还得先下载它们, 然后再上传到 Fengche.co 中.</p>
+
+<p>现在你已经不用了, 有了这个新功能, 你可以直接复制其他网页上的图片, 并在浏览器中粘贴就可以把你复制的图片上传到当前的任务中.
+遗憾的是目前只有最新版的 Chrome 支持这个功能. 不过我相信很快其他浏览器也会跟上的, 不久的将来你应该可以在大多浏览器里享用这功能.</p>
+
+<p><strong>更新</strong>: 现在邮件客户端里，也支持用“拷贝图片并粘贴”的方式来上传邮件里的图片到 Fengche.co 了。</p>
+
+<h2>上传你的屏幕截图</h2>
+
+<p>如果你使用 Mac 并且你想上传你的屏幕截图. 你只需要用 Command + Control + Shift + 4 来截图, 然后到 Fengche.co 用 Command + v 粘贴, 就能直接把你的屏幕截图上传到你当前的任务中了.</p>
+
+<h2>别忘了我们的任务描述支持 Markdown</h2>
+
+<p>如果你希望在你的任务描述中引入一些图片, 你完全可以使用 Markdown 来插入图片.
+格式也很简单:</p>
+<pre><code class="highlight plaintext">   ![描述](图片地址)
+</code></pre>
+
+<p>是不是很简单?</p>
+
+<p>Enjoy!</p>
+
+
+  <p>
+    ......
+  </p>
+  <p>
+    <a href="/announcing-pic-pasting">Read more →</a>
+  </p>
+</div>
+
+    </article>
+    <article class="post">
+      <header>
+  <h2 class="title">
+    <a href="/new-feature-comment-via-email">新功能：更好的与邮件集成来管理项目</a>
+  </h2>
+</header>
+
+<aside>
+  <ul class="meta">
+    <li class="author-photo">
+      <a href="http://poiyzy.github.io">
+        <img alt="" width="120" height="120" src="/images/zhuoyu-yang.png?1379005285" />
+      </a>
+    </li>
+    <li class="author">
+     by 杨濯宇
+    </li>
+    <li class="date">
+      Oct 04, 2013
+    </li>
+    <li class="tags">
+        <a href="/tags/announcement">Announcement</a>
+        <a href="/tags/邮件集成">邮件集成</a>
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <p>当你听到这个功能的时候，相信很多人都会有这样的反映。"What?“, "这不是一种很土的方式么？”, “为什么又回归原始的项目管理工具？”…</p>
+
+<h2>使用 Email 管理项目是一个“土”方法</h2>
+
+<p>在原始的单一通过 Email 来追踪项目管理的方式中，很多团队通过 Email 来发送附件、查看进度、讨论问题。。。 这种方式确实很“土”，甚至是反人类的。在这样的方式中，当团队为一个 project 使用 Email 来讨论的时候，email thread 会变的非常的长，在一个 thread 中可能包括了附件、状态更新等等不同目的的 Email，更严重的是这些重要信息会被混在各种各样问题讨论的 email 中。</p>
+
+<p>作为一个项目管理者应该如何去做？在每天 meeting 开始前花数个小时，整理 Email，然后把他们归档分类到一个 excel 文件中？ 然后再提前几个小时把这个 excel 文件分发给团队中的所有成员？管理者的时间很宝贵，或许应该雇佣一个项目管理助理来做这些琐碎的事情？别逗了，Fengche.co 的存在就是为了帮你处理这些 Dirty Job.</p>
+
+<p>你还在用邮件跟踪任务吗？是时候，使用 Fengche.co 井然有序地跟踪所有信息了！</p>
+
+<h2>那为什么又要使用这用土办法?</h2>
+
+<p>很多团队“乐此不疲”的使用这样的方法，甚至依依不舍，是因为 Email 是一个非常方便的非即时性沟通工具。对于项目问题讨论来说，用 Email 会变的非常方便。 我们可以通过手机在任何地方回复讨论，发起讨论，甚至我们可以发一封邮件告诉我们的项目助理，“嗨，麻烦你在 excel 中加一个任务，叫做 XXXXX，把详细描述写成 XXXXX”。It sounds funny, ha?</p>
+
+<p>目前我们通过 email 提醒来通知团队成员项目的更新状态，以及最新的留言。但是如果当我们发现一个留言需要讨论的时候，我...</p>
+
+  <p>
+    ......
+  </p>
+  <p>
+    <a href="/new-feature-comment-via-email">Read more →</a>
+  </p>
+</div>
+
+    </article>
+    <article class="post">
+      <header>
+  <h2 class="title">
+    <a href="/announcing-uploading-avatar">Beyonds Gravatar and set your profile picture</a>
+  </h2>
+</header>
+
+<aside>
+  <ul class="meta">
+    <li class="author-photo">
+      <a href="http://terrytai.com">
+        <img alt="" width="120" height="120" src="/images/terry-tai.png?1379005285" />
       </a>
     </li>
     <li class="author">
@@ -107,8 +228,8 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
       Mar 23, 2013
     </li>
     <li class="tags">
-        <a href="/blog/tags/announcement">Announcement</a>
-        <a href="/blog/tags/用户管理">用户管理</a>
+        <a href="/tags/announcement">Announcement</a>
+        <a href="/tags/用户管理">用户管理</a>
     </li>
   </ul>
 </aside>
@@ -120,7 +241,7 @@ instead of using <a href="http://en.gravatar.com/">Gravatar</a>.</p>
 
 <p>The UX is very simple.</p>
 
-<p><img alt="" width="550" height="420" src="/blog/images/announcing-uploading-avatar/update_avatar.jpg?1379005285" /></p>
+<p><img alt="" width="550" height="420" src="/images/announcing-uploading-avatar/update_avatar.jpg?1379005285" /></p>
 
 <h3>Why is such a simple feature not included from the first day?</h3>
 
@@ -139,7 +260,7 @@ globally recognized avatars, in one hour.</p>
     ......
   </p>
   <p>
-    <a href="/blog/announcing-uploading-avatar">Read more →</a>
+    <a href="/announcing-uploading-avatar">Read more →</a>
   </p>
 </div>
 
@@ -147,7 +268,7 @@ globally recognized avatars, in one hour.</p>
     <article class="post">
       <header>
   <h2 class="title">
-    <a href="/blog/due-date-is-showing-up-in-the-ticket-list">Showing up Due Date</a>
+    <a href="/due-date-is-showing-up-in-the-ticket-list">Showing up Due Date</a>
   </h2>
 </header>
 
@@ -155,7 +276,7 @@ globally recognized avatars, in one hour.</p>
   <ul class="meta">
     <li class="author-photo">
       <a href="http://beenhero.com">
-        <img alt="" width="120" height="120" src="/blog/images/ben-he.png?1379005285" />
+        <img alt="" width="120" height="120" src="/images/ben-he.png?1379005285" />
       </a>
     </li>
     <li class="author">
@@ -165,9 +286,9 @@ globally recognized avatars, in one hour.</p>
       Sep 24, 2012
     </li>
     <li class="tags">
-        <a href="/blog/tags/announcement">Announcement</a>
-        <a href="/blog/tags/changelog">ChangeLog</a>
-        <a href="/blog/tags/ui">UI</a>
+        <a href="/tags/announcement">Announcement</a>
+        <a href="/tags/changelog">ChangeLog</a>
+        <a href="/tags/ui">UI</a>
     </li>
   </ul>
 </aside>
@@ -177,19 +298,19 @@ globally recognized avatars, in one hour.</p>
 
 <p>Firstly, <em>due-date</em> can be input in the right form, easy click and go.</p>
 
-<p><img alt="Due Date Selector" width="356" height="196" src="/blog/images/due-date-is-showing-up-in-the-ticket-list/date-selector.jpg?1364632825"></p>
+<p><img alt="Due Date Selector" width="356" height="196" src="/images/due-date-is-showing-up-in-the-ticket-list/date-selector.jpg?1364632825"></p>
 
 <p>A ticket has <em>due-date</em> set will show up a date tag, the visual design is different from normal tags. Basically you’re notified that one ticket has due on priority.</p>
 
-<p><img alt="Due Date Tag" width="350" height="47" src="/blog/images/due-date-is-showing-up-in-the-ticket-list/due-date-tag.png?1364633449"></p>
+<p><img alt="Due Date Tag" width="350" height="47" src="/images/due-date-is-showing-up-in-the-ticket-list/due-date-tag.png?1364633449"></p>
 
 <p>Once a ticket is due on or overdue, this ticket item in tickets list will be highlighted and the date tag turns red. You can’t ignore it since the day is coming :) Hope this can push you a bit for getting things done.</p>
 
-<p><img alt="Overdue Tag" width="350" height="38" src="/blog/images/due-date-is-showing-up-in-the-ticket-list/overdue-tag.png?1364633479"></p>
+<p><img alt="Overdue Tag" width="350" height="38" src="/images/due-date-is-showing-up-in-the-ticket-list/overdue-tag.png?1364633479"></p>
 
 <p>When we were designing the interface of due-date, it actually came out a design like this,</p>
 
-<p><img alt="Due date draft" width="183" height="80" src="/blog/images/due-date-is-showing-up-in-the-ticket-list/due-date-draft.png?1364633388"></p>
+<p><img alt="Due date draft" width="183" height="80" src="/images/due-date-is-showing-up-in-the-ticket-list/due-date-draft.png?1364633388"></p>
 
 <p>Using the calendar icon (same from the editing form) to indicate that a ticket has a <em>due-date</em>. When hover on the icon...</p>
 
@@ -197,7 +318,7 @@ globally recognized avatars, in one hour.</p>
     ......
   </p>
   <p>
-    <a href="/blog/due-date-is-showing-up-in-the-ticket-list">Read more →</a>
+    <a href="/due-date-is-showing-up-in-the-ticket-list">Read more →</a>
   </p>
 </div>
 
@@ -205,7 +326,7 @@ globally recognized avatars, in one hour.</p>
     <article class="post">
       <header>
   <h2 class="title">
-    <a href="/blog/158983791">Released Features of Pragmatic.ly</a>
+    <a href="/158983791">Released Features of Pragmatic.ly</a>
   </h2>
 </header>
 
@@ -213,7 +334,7 @@ globally recognized avatars, in one hour.</p>
   <ul class="meta">
     <li class="author-photo">
       <a href="http://terrytai.com">
-        <img alt="" width="120" height="120" src="/blog/images/terry-tai.png?1379005285" />
+        <img alt="" width="120" height="120" src="/images/terry-tai.png?1379005285" />
       </a>
     </li>
     <li class="author">
@@ -223,8 +344,8 @@ globally recognized avatars, in one hour.</p>
       Sep 06, 2012
     </li>
     <li class="tags">
-        <a href="/blog/tags/announcement">Announcement</a>
-        <a href="/blog/tags/changelog">ChangeLog</a>
+        <a href="/tags/announcement">Announcement</a>
+        <a href="/tags/changelog">ChangeLog</a>
     </li>
   </ul>
 </aside>
@@ -238,7 +359,7 @@ globally recognized avatars, in one hour.</p>
 
 <p>We’re landing a dedicated pricing page now. It’s simple and vibrant. Please don’t hestigate to contacting us if you have anything more that you want to know.</p>
 
-<p><img title="Clear Pricing Policy" alt="Clear Pricing Policy" width="240" height="160" src="/blog/images/158983791/pricing.png?1364632825"></p>
+<p><img title="Clear Pricing Policy" alt="Clear Pricing Policy" width="240" height="160" src="/images/158983791/pricing.png?1364632825"></p>
 
 <h3>Organization Panel</h3>
 
@@ -248,7 +369,7 @@ globally recognized avatars, in one hour.</p>
     ......
   </p>
   <p>
-    <a href="/blog/158983791">Read more →</a>
+    <a href="/158983791">Read more →</a>
   </p>
 </div>
 
@@ -256,7 +377,7 @@ globally recognized avatars, in one hour.</p>
     <article class="post">
       <header>
   <h2 class="title">
-    <a href="/blog/hello-world">Hello World</a>
+    <a href="/hello-world">Hello World</a>
   </h2>
 </header>
 
@@ -264,7 +385,7 @@ globally recognized avatars, in one hour.</p>
   <ul class="meta">
     <li class="author-photo">
       <a href="http://yedingding.com">
-        <img alt="" width="120" height="120" src="/blog/images/dingding-ye.png?1379005285" />
+        <img alt="" width="120" height="120" src="/images/dingding-ye.png?1379005285" />
       </a>
     </li>
     <li class="author">
@@ -274,7 +395,7 @@ globally recognized avatars, in one hour.</p>
       Jun 17, 2012
     </li>
     <li class="tags">
-        <a href="/blog/tags/announcement">Announcement</a>
+        <a href="/tags/announcement">Announcement</a>
     </li>
   </ul>
 </aside>
@@ -290,14 +411,14 @@ globally recognized avatars, in one hour.</p>
     ......
   </p>
   <p>
-    <a href="/blog/hello-world">Read more →</a>
+    <a href="/hello-world">Read more →</a>
   </p>
 </div>
 
     </article>
   
     <ul class="pager">
-        <li class="previous"><a href="/blog/tags/announcement">&larr; Newer</a></li>
+        <li class="previous"><a href="/tags/announcement">&larr; Newer</a></li>
     </ul>
 </div>
 

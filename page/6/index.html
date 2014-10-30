@@ -36,16 +36,19 @@
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <link href="/blog/stylesheets/application.css?1405912777" rel="stylesheet" type="text/css" />
-    <script src="/blog/javascripts/application.js?1405912779" type="text/javascript"></script>
+    <link href="/stylesheets/application.css?1405912777" rel="stylesheet" type="text/css" />
+    <script src="/javascripts/application.js?1405912779" type="text/javascript"></script>
 
+    <script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script>
+    <script type="text/javascript">var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-4054156-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();</script>
 
-    <!-- start Mixpanel -->
-    <script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f);b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==
-typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");for(g=0;g<i.length;g++)f(c,i[g]);
-b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
-    mixpanel.init("43a596021773ee49e7b13713d89c9875");</script>
-    <!-- end Mixpanel -->
   </head>
 
   <body class="page page_6 page_6_index">
@@ -87,7 +90,128 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
     <article class="post">
       <header>
   <h2 class="title">
-    <a href="/blog/announcing-mailsviewer-a-rails-engine-to-view">Announcing mails_viewer - easiest way to test mails in Rails app</a>
+    <a href="/improving-ticket-interactive">Improving Ticket Interactive</a>
+  </h2>
+</header>
+
+<aside>
+  <ul class="meta">
+    <li class="author-photo">
+      <a href="http://beenhero.com">
+        <img alt="" width="120" height="120" src="/images/ben-he.png?1379005285" />
+      </a>
+    </li>
+    <li class="author">
+     by 何斌
+    </li>
+    <li class="date">
+      Dec 10, 2012
+    </li>
+    <li class="tags">
+        <a href="/tags/ticket-management">Ticket Management</a>
+        <a href="/tags/ui">UI</a>
+        <a href="/tags/changelog">ChangeLog</a>
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <h3>Improve the stability of ticket item in the list</h3>
+
+<p>Users informed us that the ticket list in the center column was unstable, and we were rushing into this problem immediately.</p>
+
+<p>As shown in the screenshot, we found the old list item was a interactive savage, from left to right:</p>
+
+<ol>
+<li>The ticket number will change into movable knob when hovered.</li>
+<li>The ticket status could be clicked to switch into the next.</li>
+<li>The assignee was shown as a link.</li>
+<li>The ticket title was editable when focused.</li>
+<li>The tags would be a ticket filters immediately.</li>
+<li>The little right pointer had an onhover state.</li>
+</ol>
+
+<p><img alt="Old Ticket Interactive" width="500" height="185" src="/images/improving-ticket-interactive/old-ticket-interactive.jpg?1364634606"></p>
+
+<p>This is quite a burden to users, we’d relieve it as soon as possible.</p>
+
+<p>Though the UI looks same as before, the current list item goes like this:</p>
+
+<ul>
+<li>The Assignee is shown as text rather than a link, since we already have a...</li>
+</ul>
+
+  <p>
+    ......
+  </p>
+  <p>
+    <a href="/improving-ticket-interactive">Read more →</a>
+  </p>
+</div>
+
+    </article>
+    <article class="post">
+      <header>
+  <h2 class="title">
+    <a href="/due-date-is-showing-up-in-the-ticket-list">Showing up Due Date</a>
+  </h2>
+</header>
+
+<aside>
+  <ul class="meta">
+    <li class="author-photo">
+      <a href="http://beenhero.com">
+        <img alt="" width="120" height="120" src="/images/ben-he.png?1379005285" />
+      </a>
+    </li>
+    <li class="author">
+     by 何斌
+    </li>
+    <li class="date">
+      Sep 24, 2012
+    </li>
+    <li class="tags">
+        <a href="/tags/announcement">Announcement</a>
+        <a href="/tags/changelog">ChangeLog</a>
+        <a href="/tags/ui">UI</a>
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <p>Now you can see <em>due-date</em> on ticket list, and capture overdue tickets easily at a glance. Here is how and why we put it this way.</p>
+
+<p>Firstly, <em>due-date</em> can be input in the right form, easy click and go.</p>
+
+<p><img alt="Due Date Selector" width="356" height="196" src="/images/due-date-is-showing-up-in-the-ticket-list/date-selector.jpg?1364632825"></p>
+
+<p>A ticket has <em>due-date</em> set will show up a date tag, the visual design is different from normal tags. Basically you’re notified that one ticket has due on priority.</p>
+
+<p><img alt="Due Date Tag" width="350" height="47" src="/images/due-date-is-showing-up-in-the-ticket-list/due-date-tag.png?1364633449"></p>
+
+<p>Once a ticket is due on or overdue, this ticket item in tickets list will be highlighted and the date tag turns red. You can’t ignore it since the day is coming :) Hope this can push you a bit for getting things done.</p>
+
+<p><img alt="Overdue Tag" width="350" height="38" src="/images/due-date-is-showing-up-in-the-ticket-list/overdue-tag.png?1364633479"></p>
+
+<p>When we were designing the interface of due-date, it actually came out a design like this,</p>
+
+<p><img alt="Due date draft" width="183" height="80" src="/images/due-date-is-showing-up-in-the-ticket-list/due-date-draft.png?1364633388"></p>
+
+<p>Using the calendar icon (same from the editing form) to indicate that a ticket has a <em>due-date</em>. When hover on the icon...</p>
+
+  <p>
+    ......
+  </p>
+  <p>
+    <a href="/due-date-is-showing-up-in-the-ticket-list">Read more →</a>
+  </p>
+</div>
+
+    </article>
+    <article class="post">
+      <header>
+  <h2 class="title">
+    <a href="/announcing-mailsviewer-a-rails-engine-to-view">Announcing mails_viewer - easiest way to test mails in Rails app</a>
   </h2>
 </header>
 
@@ -95,7 +219,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
   <ul class="meta">
     <li class="author-photo">
       <a href="http://yedingding.com">
-        <img alt="" width="120" height="120" src="/blog/images/dingding-ye.png?1379005285" />
+        <img alt="" width="120" height="120" src="/images/dingding-ye.png?1379005285" />
       </a>
     </li>
     <li class="author">
@@ -105,10 +229,10 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
       Sep 20, 2012
     </li>
     <li class="tags">
-        <a href="/blog/tags/open-source">open source</a>
-        <a href="/blog/tags/rails">rails</a>
-        <a href="/blog/tags/mail">mail</a>
-        <a href="/blog/tags/engine">engine</a>
+        <a href="/tags/open-source">open source</a>
+        <a href="/tags/rails">rails</a>
+        <a href="/tags/mail">mail</a>
+        <a href="/tags/engine">engine</a>
     </li>
   </ul>
 </aside>
@@ -134,7 +258,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
     ......
   </p>
   <p>
-    <a href="/blog/announcing-mailsviewer-a-rails-engine-to-view">Read more →</a>
+    <a href="/announcing-mailsviewer-a-rails-engine-to-view">Read more →</a>
   </p>
 </div>
 
@@ -142,7 +266,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
     <article class="post">
       <header>
   <h2 class="title">
-    <a href="/blog/how-we-choose-the-right-video-service-for-us">Video matters! But which hosting service to use?</a>
+    <a href="/how-we-choose-the-right-video-service-for-us">Video matters! But which hosting service to use?</a>
   </h2>
 </header>
 
@@ -150,7 +274,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
   <ul class="meta">
     <li class="author-photo">
       <a href="http://terrytai.com">
-        <img alt="" width="120" height="120" src="/blog/images/terry-tai.png?1379005285" />
+        <img alt="" width="120" height="120" src="/images/terry-tai.png?1379005285" />
       </a>
     </li>
     <li class="author">
@@ -160,8 +284,8 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
       Sep 19, 2012
     </li>
     <li class="tags">
-        <a href="/blog/tags/marketing">marketing</a>
-        <a href="/blog/tags/video-service">video service</a>
+        <a href="/tags/marketing">marketing</a>
+        <a href="/tags/video-service">video service</a>
     </li>
   </ul>
 </aside>
@@ -171,7 +295,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
 
 <p>As a startup, it’s not easy to create a great product video like other big companies. So we recorded a toturial screencast when we launched <a href="https://fengche.co">Pragmatic.ly</a> instead. Meanwhile we are working on our new attracting product video and we love the process. It’s totally different experience than writing code. We will share more latter when the video is out. But in this post I will talk more about the experience about different video hosting service. We tried <a href="http://vimeo.com/">Vimeo</a>, <a href="http://sublimevideo.net/">SublimeVideo</a>, <a href="http://wistia.com/">Wistia</a> and <a href="http://www.youtube.com/">YouTube</a>.  The result is interesting and quite different than our common sense.</p>
 
-<p><img title="Vimeo" alt="Vimeo" src="/blog/images/how-we-choose-the-right-video-service-for-us/vimeologo.svg?1364632825"></p>
+<p><img title="Vimeo" alt="Vimeo" src="/images/how-we-choose-the-right-video-service-for-us/vimeologo.svg?1364632825"></p>
 
 <p><a href="http://vimeo.com">Vimeo</a> is our first choice because we heard many good words from others...</p>
 
@@ -179,7 +303,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
     ......
   </p>
   <p>
-    <a href="/blog/how-we-choose-the-right-video-service-for-us">Read more →</a>
+    <a href="/how-we-choose-the-right-video-service-for-us">Read more →</a>
   </p>
 </div>
 
@@ -187,7 +311,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
     <article class="post">
       <header>
   <h2 class="title">
-    <a href="/blog/158983791">Released Features of Pragmatic.ly</a>
+    <a href="/158983791">Released Features of Pragmatic.ly</a>
   </h2>
 </header>
 
@@ -195,7 +319,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
   <ul class="meta">
     <li class="author-photo">
       <a href="http://terrytai.com">
-        <img alt="" width="120" height="120" src="/blog/images/terry-tai.png?1379005285" />
+        <img alt="" width="120" height="120" src="/images/terry-tai.png?1379005285" />
       </a>
     </li>
     <li class="author">
@@ -205,8 +329,8 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
       Sep 06, 2012
     </li>
     <li class="tags">
-        <a href="/blog/tags/announcement">Announcement</a>
-        <a href="/blog/tags/changelog">ChangeLog</a>
+        <a href="/tags/announcement">Announcement</a>
+        <a href="/tags/changelog">ChangeLog</a>
     </li>
   </ul>
 </aside>
@@ -220,7 +344,7 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
 
 <p>We’re landing a dedicated pricing page now. It’s simple and vibrant. Please don’t hestigate to contacting us if you have anything more that you want to know.</p>
 
-<p><img title="Clear Pricing Policy" alt="Clear Pricing Policy" width="240" height="160" src="/blog/images/158983791/pricing.png?1364632825"></p>
+<p><img title="Clear Pricing Policy" alt="Clear Pricing Policy" width="240" height="160" src="/images/158983791/pricing.png?1364632825"></p>
 
 <h3>Organization Panel</h3>
 
@@ -230,139 +354,15 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
     ......
   </p>
   <p>
-    <a href="/blog/158983791">Read more →</a>
-  </p>
-</div>
-
-    </article>
-    <article class="post">
-      <header>
-  <h2 class="title">
-    <a href="/blog/a-practical-guide-to-use-spinejs-in-real-worl">A Practical Guide to Use Spine.JS in Real World App</a>
-  </h2>
-</header>
-
-<aside>
-  <ul class="meta">
-    <li class="author-photo">
-      <a href="http://yedingding.com">
-        <img alt="" width="120" height="120" src="/blog/images/dingding-ye.png?1379005285" />
-      </a>
-    </li>
-    <li class="author">
-     by 叶玎玎
-    </li>
-    <li class="date">
-      Aug 20, 2012
-    </li>
-    <li class="tags">
-        <a href="/blog/tags/spinejs">SpineJS</a>
-        <a href="/blog/tags/javascript-mvc">JavaScript MVC</a>
-        <a href="/blog/tags/javascript">JavaScript</a>
-        <a href="/blog/tags/spine">Spine</a>
-    </li>
-  </ul>
-</aside>
-
-<div class="content">
-  <p>To give users the best possible fluid experience, we designed <a href="https://fengche.co">Pragmatic.ly</a> and complied with the <a href="http://en.wikipedia.org/wiki/Single-page_application">single page application</a> standard. We believe that could make users focus on building product rather than spending time on project management itself. A wide range of technology solutions are available to make a single page application. Current trends suggest moving core application from server to client side and keeping server load at minimum for better performance by pure data APIs. <a href="https://fengche.co">Pragmatic.ly</a> took on the challange to cater to this need by developing server side in Rails, Spine.js at client side.</p>
-
-<h3>Why Spine.JS</h3>
-
-<p>There are many different JavaScript MVC frameworks such as <a href="http://backbonejs.org/">Backbone.js</a>, <a href="http://spinejs.com/">Spine.js</a>, <a href="http://knockoutjs.com/">Knockout.js</a>, <a href="http://emberjs.com/">Ember.js</a>, etc. There are too many choices and when I started Pragmatic.ly, I was struggling...</p>
-
-  <p>
-    ......
-  </p>
-  <p>
-    <a href="/blog/a-practical-guide-to-use-spinejs-in-real-worl">Read more →</a>
-  </p>
-</div>
-
-    </article>
-    <article class="post">
-      <header>
-  <h2 class="title">
-    <a href="/blog/its-not-perfect-but-its-time-to-integrate-web">It's not perfect but it's time to integrate web notifications</a>
-  </h2>
-</header>
-
-<aside>
-  <ul class="meta">
-    <li class="author-photo">
-      <a href="http://yedingding.com">
-        <img alt="" width="120" height="120" src="/blog/images/dingding-ye.png?1379005285" />
-      </a>
-    </li>
-    <li class="author">
-     by 叶玎玎
-    </li>
-    <li class="date">
-      Aug 01, 2012
-    </li>
-    <li class="tags">
-        <a href="/blog/tags/html5-notification">html5 notification</a>
-        <a href="/blog/tags/javascript">JavaScript</a>
-        <a href="/blog/tags/web-notification">web notification</a>
-    </li>
-  </ul>
-</aside>
-
-<div class="content">
-  <p>One feature <a href="https://fengche.co">Pragmatic.ly</a> has had from the beginning is Web Notifications. When I first saw the feature in Gmail I was convinced it was a feature every web application should have. As a project management tool Pragmatic.ly should enhance collaboration and ease communication. Instant desktop-like notification is one way to achieve the goal.</p>
-
-<p><img title="Chrome Web Notification" alt="Chrome Web Notification" width="332" height="127" src="/blog/images/its-not-perfect-but-its-time-to-integrate-web/chrome-notification.png?1364633946"></p>
-
-<p><img title="Safari Web Notification" alt="Safari Web Notification" width="331" height="92" src="/blog/images/its-not-perfect-but-its-time-to-integrate-web/safari-notification.png?1364633980"></p>
-
-<h3>Browser Support</h3>
-
-<p>For a long time only Chrome users have been able to benefit from such features. But the release of Safari 6 in Mountain Lion has changed things for the better and now it’s time to integrate web notification into your application.</p>
-
-<table>
-<thead>
-<tr>
-<th style="text-align: center"><strong>Browser</strong></th>
-<th style="text-align: left"><strong>Whether Support</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: center">Chrome</td>
-<td style="text-align: left">Yes</td>
-</tr>
-<tr>
-<td style="text-align: center">Safari</td>
-<td style="text-align: left">Yes. version 6 in Mountain Lion only</td>
-</tr>
-<tr>
-<td style="text-align: center">Firefox</td>
-<td style="text-align: left">Yes. Install Plugin <a href="https://code.google.com/p/ff-html5notifications">ff-html5notifications</a>
-</td>
-</tr>
-<tr>
-<td style="text-align: center">IE</td>
-<td style="text-align: left">No. But can work in <a href="https://developers.google.com/chrome/chrome-frame/">Chrome Frame</a>
-</td>
-</tr>
-</tbody>
-</table>
-
-<p>For more list, checkout </p>
-
-  <p>
-    ......
-  </p>
-  <p>
-    <a href="/blog/its-not-perfect-but-its-time-to-integrate-web">Read more →</a>
+    <a href="/158983791">Read more →</a>
   </p>
 </div>
 
     </article>
 
     <ul class="pager">
-        <li class="previous"><a href="/blog/page/5">&larr; Newer</a></li>
-        <li class="next"><a href="/blog/page/7">Older &rarr;</a></li>
+        <li class="previous"><a href="/page/5">&larr; Newer</a></li>
+        <li class="next"><a href="/page/7">Older &rarr;</a></li>
     </ul>
 </div>
 
